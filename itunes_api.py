@@ -117,6 +117,30 @@ def analyze_competition(apps, top_n=10):
     else:
         opportunity = "AVOID — dominated market"
 
+    # --- MATURE APPS in top 20 (older than 3 years) ---
+    top20 = apps[:20]
+    mature_count = 0
+    top20_with_date = 0
+    for a in top20:
+        try:
+            rel = datetime.strptime(a["released"], "%Y-%m-%d")
+            top20_with_date += 1
+            if (now - rel).days > 3 * 365:
+                mature_count += 1
+        except ValueError:
+            pass
+    mature_apps_pct = round(mature_count / top20_with_date * 100) if top20_with_date else None
+
+    # --- CONCENTRATION INDEX (Gini coefficient of ratings in top 20) ---
+    # 0 = perfectly equal, 1 = one app has everything
+    top20_ratings = sorted([a["rating_count"] for a in top20])
+    n = len(top20_ratings)
+    if n > 0 and sum(top20_ratings) > 0:
+        cumulative = sum((2 * (i + 1) - n - 1) * val for i, val in enumerate(top20_ratings))
+        gini = round(cumulative / (n * sum(top20_ratings)), 2)
+    else:
+        gini = None
+
     return {
         "total_results": len(apps),
         "top_n": len(top),
@@ -134,6 +158,9 @@ def analyze_competition(apps, top_n=10):
         "avg_age_months": round(sum(ages_months) / len(ages_months)) if ages_months else None,
         "stale_apps": stale_count,
         "low_rated_apps": sum(1 for s in star_ratings if s < 3.5),
+        # Market structure
+        "mature_apps_pct": mature_apps_pct,
+        "concentration_index": gini,
         # Verdict
         "opportunity": opportunity,
     }

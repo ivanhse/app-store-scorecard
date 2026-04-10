@@ -71,6 +71,9 @@ OPPORTUNITY_KEYWORDS = [
     ("fuel card", "Trucker"),
     ("settlement scanner", "Trucker"),
     ("truck maintenance", "Trucker"),
+    # Mental health & cognitive
+    ("anxiety app", "Mental health"),
+    ("memory training", "Cognitive"),
 ]
 
 # Rank opportunity verdict from best to worst for sorting

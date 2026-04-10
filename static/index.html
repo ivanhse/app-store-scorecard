@@ -395,6 +395,8 @@ function renderCardHtml(d, i, prefix) {
       <div class="metric"><span class="label">Avg reviews (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
       <div class="metric"><span class="label">Weakest top 10 app (reviews)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
       <div class="metric"><span class="label">Weak apps in top 25 (&lt;1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
+      <div class="metric"><span class="label">Mature apps in top 20 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
+      <div class="metric"><span class="label">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
       <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
       <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
       <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
@@ -480,6 +482,8 @@ function renderAll() {
         <div class="metric"><span class="label">Avg reviews (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
         <div class="metric"><span class="label">Weakest top 10 app (reviews)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
         <div class="metric"><span class="label">Weak apps in top 25 (<1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
+        <div class="metric"><span class="label">Mature apps in top 20 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
+        <div class="metric"><span class="label">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
         <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
         <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
         <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
@@ -525,6 +529,8 @@ function renderDetail(d, idx) {
     <div class="ds-stat"><span class="lbl">Weak apps in top 25 (<1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
     <div class="ds-stat"><span class="lbl">Stale apps (>1yr no update)</span><span class="val">${a.stale_apps}/${a.top_n}</span></div>
     <div class="ds-stat"><span class="lbl">Low-rated apps (<3.5 stars)</span><span class="val">${a.low_rated_apps}/${a.top_n}</span></div>
+    <div class="ds-stat"><span class="lbl">Mature apps in top 20 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
+    <div class="ds-stat"><span class="lbl">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
     <div class="ds-stat"><span class="lbl">Supply level</span><span class="val" style="color:var(--red)">${a.supply_level}</span></div>
   </div>`;
   html += '</div>';
@@ -561,6 +567,8 @@ function renderDetail(d, idx) {
   html += statBox(fmt(p.p75), 'P75 Ratings');
   html += statBox(d.free_vs_paid.free + '/10', 'Free Apps');
   html += statBox(a.avg_age_months ? a.avg_age_months + ' mo' : '—', 'Avg Age');
+  html += statBox(a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—', 'Mature (>3yr)');
+  html += statBox(a.concentration_index != null ? a.concentration_index.toFixed(2) : '—', 'Gini Index');
   html += '</div>';
 
 
