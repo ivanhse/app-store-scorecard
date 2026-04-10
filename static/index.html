@@ -110,6 +110,29 @@
   }
   .opp-group-label:first-child { margin-top: 0; }
 
+  /* Opportunities toolbar */
+  .opp-toolbar {
+    display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: flex-end;
+  }
+  .opp-toolbar .ctrl-group {
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .opp-toolbar label {
+    font-size: 10px; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); font-weight: 600;
+  }
+  .opp-toolbar select, .opp-toolbar input[type="number"] {
+    padding: 8px 10px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 6px; color: var(--text); font-size: 13px; outline: none;
+  }
+  .opp-toolbar select:focus, .opp-toolbar input[type="number"]:focus { border-color: var(--accent); }
+  .opp-toolbar input[type="number"] { width: 100px; }
+  .opp-toolbar .reset-btn {
+    padding: 8px 14px; background: transparent; border: 1px solid var(--border);
+    border-radius: 6px; color: var(--muted); font-size: 12px; cursor: pointer; font-weight: 600;
+  }
+  .opp-toolbar .reset-btn:hover { border-color: var(--accent); color: var(--text); }
+  .opp-filter-count { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+
   /* Detail panel */
   .detail { display: none; }
   .detail.visible { display: block; }
@@ -224,6 +247,77 @@
     <input type="text" id="oppCustomKeywords" placeholder="Add custom keywords (comma separated) — scored and merged into the list" />
     <button id="oppAddBtn" onclick="addCustomOpportunities()">Add</button>
   </div>
+
+  <div class="opp-toolbar" id="opp-toolbar" style="display:none">
+    <div class="ctrl-group">
+      <label>Sort by</label>
+      <select id="oppSortBy" onchange="applyOppFilters()">
+        <option value="opportunity">Opportunity tier</option>
+        <option value="demand">Demand level</option>
+        <option value="avg_reviews">Avg reviews (top 10)</option>
+        <option value="weak_apps">Weak apps in top 25</option>
+        <option value="max_reviews">#1 app reviews</option>
+        <option value="min_reviews">Weakest top-10 reviews</option>
+        <option value="gini">Concentration (Gini)</option>
+        <option value="meta_cpi">Est. CPI — Meta</option>
+        <option value="google_cpi">Est. CPI — Google</option>
+        <option value="mature_pct">Mature apps %</option>
+        <option value="theme">Theme</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Order</label>
+      <select id="oppSortDir" onchange="applyOppFilters()">
+        <option value="desc">High → Low</option>
+        <option value="asc">Low → High</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Min demand</label>
+      <select id="oppMinDemand" onchange="applyOppFilters()">
+        <option value="">Any</option>
+        <option value="1">LOW+</option>
+        <option value="2">MODERATE+</option>
+        <option value="3">HIGH+</option>
+        <option value="4">VERY HIGH</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Max supply</label>
+      <select id="oppMaxSupply" onchange="applyOppFilters()">
+        <option value="">Any</option>
+        <option value="4">VERY HIGH</option>
+        <option value="3">HIGH</option>
+        <option value="2">MODERATE</option>
+        <option value="1">LOW</option>
+        <option value="0">VERY LOW</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Max avg reviews</label>
+      <input type="number" id="oppMaxAvgReviews" placeholder="e.g. 50000" onchange="applyOppFilters()" />
+    </div>
+    <div class="ctrl-group">
+      <label>Min weak apps</label>
+      <input type="number" id="oppMinWeakApps" placeholder="e.g. 5" min="0" max="25" onchange="applyOppFilters()" />
+    </div>
+    <div class="ctrl-group">
+      <label>Max CPI (Meta)</label>
+      <input type="number" id="oppMaxMetaCpi" placeholder="e.g. 4.00" step="0.5" onchange="applyOppFilters()" />
+    </div>
+    <div class="ctrl-group">
+      <label>Theme</label>
+      <select id="oppThemeFilter" onchange="applyOppFilters()">
+        <option value="">All</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>&nbsp;</label>
+      <button class="reset-btn" onclick="resetOppFilters()">Reset</button>
+    </div>
+  </div>
+  <div class="opp-filter-count" id="opp-filter-count"></div>
+
   <div id="opp-results"><div class="loading"><div class="spinner"></div>Loading curated list — running 30 keywords through the framework (~60s)...</div></div>
 </div>
 
@@ -287,25 +381,6 @@ async function addCustomOpportunities() {
     const existingKeywords = new Set(newData.map(d => d.keyword.toLowerCase()));
     oppData = oppData.filter(d => !existingKeywords.has(d.keyword.toLowerCase())).concat(newData);
 
-    // Re-sort by opportunity tier then demand
-    const tierScore = {
-      "GREAT OPPORTUNITY": 5,
-      "GOOD OPPORTUNITY": 4,
-      "COMPETITIVE — differentiate to win": 3,
-      "SMALL NICHE — low risk, low reward": 2,
-      "OVERSUPPLIED — strong apps, limited demand": 1,
-      "AVOID — dominated market": 0,
-    };
-    const demandScore = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
-    oppData.sort((a, b) => {
-      if (a.error) return 1;
-      if (b.error) return -1;
-      const ta = tierScore[a.analysis.opportunity] ?? -1;
-      const tb = tierScore[b.analysis.opportunity] ?? -1;
-      if (tb !== ta) return tb - ta;
-      return (demandScore[b.analysis.demand_level] ?? 0) - (demandScore[a.analysis.demand_level] ?? 0);
-    });
-
     renderOpportunities();
     input.value = '';
   } catch (e) {
@@ -332,35 +407,144 @@ async function loadOpportunities() {
   }
 }
 
+const DEMAND_SCORES = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
+const SUPPLY_SCORES = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
+const TIER_SCORES = {
+  "GREAT OPPORTUNITY": 5, "GOOD OPPORTUNITY": 4,
+  "COMPETITIVE — differentiate to win": 3, "SMALL NICHE — low risk, low reward": 2,
+  "OVERSUPPLIED — strong apps, limited demand": 1, "AVOID — dominated market": 0,
+};
+
+function getSortValue(d, key) {
+  if (d.error) return -Infinity;
+  const a = d.analysis;
+  switch (key) {
+    case 'opportunity': return TIER_SCORES[a.opportunity] ?? -1;
+    case 'demand': return DEMAND_SCORES[a.demand_level] ?? 0;
+    case 'avg_reviews': return a.avg_rating_count;
+    case 'weak_apps': return a.weak_apps_in_top25;
+    case 'max_reviews': return a.max_rating_count;
+    case 'min_reviews': return a.min_rating_count;
+    case 'gini': return a.concentration_index ?? 0;
+    case 'meta_cpi': return d.benchmarks.meta_cpi;
+    case 'google_cpi': return d.benchmarks.google_cpi;
+    case 'mature_pct': return a.mature_apps_pct ?? 0;
+    case 'theme': return d.theme || '';
+    default: return 0;
+  }
+}
+
+function passesThresholds(d) {
+  if (d.error) return false;
+  const a = d.analysis;
+  const minDemand = document.getElementById('oppMinDemand').value;
+  if (minDemand && (DEMAND_SCORES[a.demand_level] ?? 0) < parseInt(minDemand)) return false;
+
+  const maxSupply = document.getElementById('oppMaxSupply').value;
+  if (maxSupply && (SUPPLY_SCORES[a.supply_level] ?? 0) > parseInt(maxSupply)) return false;
+
+  const maxAvg = document.getElementById('oppMaxAvgReviews').value;
+  if (maxAvg && a.avg_rating_count > parseFloat(maxAvg)) return false;
+
+  const minWeak = document.getElementById('oppMinWeakApps').value;
+  if (minWeak && a.weak_apps_in_top25 < parseInt(minWeak)) return false;
+
+  const maxCpi = document.getElementById('oppMaxMetaCpi').value;
+  if (maxCpi && d.benchmarks.meta_cpi > parseFloat(maxCpi)) return false;
+
+  const theme = document.getElementById('oppThemeFilter').value;
+  if (theme && d.theme !== theme) return false;
+
+  return true;
+}
+
+function applyOppFilters() {
+  renderOpportunities();
+}
+
+function resetOppFilters() {
+  document.getElementById('oppSortBy').value = 'opportunity';
+  document.getElementById('oppSortDir').value = 'desc';
+  document.getElementById('oppMinDemand').value = '';
+  document.getElementById('oppMaxSupply').value = '';
+  document.getElementById('oppMaxAvgReviews').value = '';
+  document.getElementById('oppMinWeakApps').value = '';
+  document.getElementById('oppMaxMetaCpi').value = '';
+  document.getElementById('oppThemeFilter').value = '';
+  renderOpportunities();
+}
+
+function populateThemeFilter() {
+  const themes = [...new Set(oppData.filter(d => !d.error && d.theme).map(d => d.theme))].sort();
+  const sel = document.getElementById('oppThemeFilter');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">All</option>';
+  themes.forEach(t => {
+    sel.innerHTML += `<option value="${t}" ${t === cur ? 'selected' : ''}>${t}</option>`;
+  });
+}
+
 function renderOpportunities() {
-  // Group by opportunity tier (already sorted best→worst by server)
-  const tiers = {};
-  oppData.forEach((d, i) => {
-    if (d.error) return;
-    const tier = d.analysis.opportunity;
-    if (!tiers[tier]) tiers[tier] = [];
-    tiers[tier].push({ d, i });
+  // Show toolbar
+  document.getElementById('opp-toolbar').style.display = 'flex';
+  populateThemeFilter();
+
+  const sortKey = document.getElementById('oppSortBy').value;
+  const sortDir = document.getElementById('oppSortDir').value;
+  const isGroupByTier = sortKey === 'opportunity';
+
+  // Build indexed list, filter, sort
+  let items = oppData.map((d, i) => ({ d, i })).filter(({ d }) => passesThresholds(d));
+
+  items.sort((a, b) => {
+    let va = getSortValue(a.d, sortKey);
+    let vb = getSortValue(b.d, sortKey);
+    // Secondary sort by demand when sorting by opportunity tier
+    if (isGroupByTier && va === vb) {
+      va = DEMAND_SCORES[a.d.analysis?.demand_level] ?? 0;
+      vb = DEMAND_SCORES[b.d.analysis?.demand_level] ?? 0;
+    }
+    if (sortKey === 'theme') {
+      const cmp = String(va).localeCompare(String(vb));
+      return sortDir === 'asc' ? cmp : -cmp;
+    }
+    return sortDir === 'asc' ? va - vb : vb - va;
   });
 
-  const tierOrder = [
-    "GREAT OPPORTUNITY",
-    "GOOD OPPORTUNITY",
-    "COMPETITIVE — differentiate to win",
-    "SMALL NICHE — low risk, low reward",
-    "OVERSUPPLIED — strong apps, limited demand",
-    "AVOID — dominated market",
-  ];
+  const total = oppData.filter(d => !d.error).length;
+  const shown = items.length;
+  const countEl = document.getElementById('opp-filter-count');
+  countEl.textContent = shown < total ? `Showing ${shown} of ${total} keywords` : '';
 
   let html = '';
-  tierOrder.forEach(tier => {
-    if (!tiers[tier]) return;
-    html += `<div class="opp-group-label">${tier} (${tiers[tier].length})</div>`;
-    html += '<div class="comparison">';
-    tiers[tier].forEach(({ d, i }) => {
-      html += renderCardHtml(d, i, 'opp');
+
+  if (isGroupByTier) {
+    // Group by tier
+    const tierOrder = [
+      "GREAT OPPORTUNITY", "GOOD OPPORTUNITY",
+      "COMPETITIVE — differentiate to win", "SMALL NICHE — low risk, low reward",
+      "OVERSUPPLIED — strong apps, limited demand", "AVOID — dominated market",
+    ];
+    const tiers = {};
+    items.forEach(item => {
+      const tier = item.d.analysis.opportunity;
+      if (!tiers[tier]) tiers[tier] = [];
+      tiers[tier].push(item);
     });
+    const order = sortDir === 'desc' ? tierOrder : [...tierOrder].reverse();
+    order.forEach(tier => {
+      if (!tiers[tier]) return;
+      html += `<div class="opp-group-label">${tier} (${tiers[tier].length})</div>`;
+      html += '<div class="comparison">';
+      tiers[tier].forEach(({ d, i }) => { html += renderCardHtml(d, i, 'opp'); });
+      html += '</div>';
+    });
+  } else {
+    // Flat sorted list
+    html += '<div class="comparison">';
+    items.forEach(({ d, i }) => { html += renderCardHtml(d, i, 'opp'); });
     html += '</div>';
-  });
+  }
 
   // Errors
   const errors = oppData.filter(d => d.error);
