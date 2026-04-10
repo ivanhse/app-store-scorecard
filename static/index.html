@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Store Scorecard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e1e4ed;
+    --muted: #8b8fa3;
+    --accent: #6c5ce7;
+    --green: #00b894;
+    --yellow: #fdcb6e;
+    --red: #e17055;
+    --orange: #e67e22;
+    --blue: #74b9ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Inter', sans-serif;
+    background: var(--bg); color: var(--text);
+    min-height: 100vh; padding: 24px;
+  }
+  h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+
+  /* Search */
+  .search-bar {
+    display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap;
+  }
+  .search-bar input[type="text"] {
+    flex: 1; min-width: 300px; padding: 12px 16px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text); font-size: 15px; outline: none;
+  }
+  .search-bar input:focus { border-color: var(--accent); }
+  .search-bar select {
+    padding: 12px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-size: 14px;
+  }
+  .search-bar button {
+    padding: 12px 28px; background: var(--accent); border: none; border-radius: 8px;
+    color: #fff; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  .search-bar button:hover { opacity: 0.9; }
+  .search-bar button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* Comparison cards */
+  .comparison {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px; margin-bottom: 28px;
+  }
+  .comp-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px; cursor: pointer; transition: border-color .15s;
+  }
+  .comp-card:hover, .comp-card.active { border-color: var(--accent); }
+  .comp-card .kw { font-weight: 600; font-size: 16px; margin-bottom: 12px; }
+
+  .ds-row { display: flex; gap: 12px; margin-bottom: 10px; }
+  .ds-box { flex: 1; padding: 10px; border-radius: 6px; text-align: center; }
+  .ds-box.demand { background: rgba(116,185,255,.1); border: 1px solid rgba(116,185,255,.2); }
+  .ds-box.supply { background: rgba(225,112,85,.1); border: 1px solid rgba(225,112,85,.2); }
+  .ds-box .ds-label { font-size: 10px; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 4px; }
+  .ds-box .ds-level { font-size: 14px; font-weight: 700; }
+  .ds-box.demand .ds-level { color: var(--blue); }
+  .ds-box.supply .ds-level { color: var(--red); }
+
+  .comp-card .metric { display: flex; justify-content: space-between; margin-bottom: 3px; font-size: 12px; }
+  .comp-card .metric .label { color: var(--muted); }
+  .comp-card .metric .val { font-weight: 600; }
+
+  .opportunity-badge {
+    display: inline-block; padding: 4px 10px; border-radius: 4px;
+    font-size: 11px; font-weight: 700; letter-spacing: .3px; margin-top: 8px;
+  }
+  .opportunity-badge.great { background: rgba(0,184,148,.15); color: var(--green); }
+  .opportunity-badge.good { background: rgba(0,184,148,.1); color: #55efc4; }
+  .opportunity-badge.competitive { background: rgba(253,203,110,.15); color: var(--yellow); }
+  .opportunity-badge.niche { background: rgba(116,185,255,.1); color: var(--blue); }
+  .opportunity-badge.oversupplied { background: rgba(230,126,34,.15); color: var(--orange); }
+  .opportunity-badge.avoid { background: rgba(225,112,85,.15); color: var(--red); }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+  .tab {
+    padding: 10px 18px; background: none; border: none; color: var(--muted);
+    font-size: 14px; font-weight: 600; cursor: pointer; border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .page { display: none; }
+  .page.visible { display: block; }
+
+  /* Theme tag on opportunity cards */
+  .theme-tag {
+    display: inline-block; padding: 2px 8px; border-radius: 4px;
+    font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
+    background: rgba(108,92,231,.15); color: var(--accent); margin-left: 8px;
+    vertical-align: middle;
+  }
+  .opp-group-label {
+    font-size: 11px; text-transform: uppercase; letter-spacing: .5px;
+    color: var(--muted); margin: 20px 0 10px; font-weight: 600;
+  }
+  .opp-group-label:first-child { margin-top: 0; }
+
+  /* Detail panel */
+  .detail { display: none; }
+  .detail.visible { display: block; }
+  .detail-header { font-size: 20px; font-weight: 700; margin-bottom: 20px; }
+  .detail-header span { color: var(--accent); }
+
+  /* Demand/Supply detail boxes */
+  .ds-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .ds-detail-box { background: var(--card); border-radius: 10px; padding: 18px; }
+  .ds-detail-box h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 14px; }
+  .ds-detail-box.demand-box h3 { color: var(--blue); }
+  .ds-detail-box.supply-box h3 { color: var(--red); }
+  .ds-stat { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+  .ds-stat:last-child { border-bottom: none; }
+  .ds-stat .lbl { color: var(--muted); }
+  .ds-stat .val { font-weight: 600; }
+
+  /* Unit economics */
+  .ue-section { margin-bottom: 24px; }
+  .ue-section h3 { font-size: 14px; font-weight: 600; margin-bottom: 14px; color: var(--green); }
+  .ue-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  }
+  .ue-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px;
+  }
+  .ue-box h4 { font-size: 12px; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 12px; }
+  .ue-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .ue-row:last-child { border-bottom: none; }
+  .ue-row .lbl { color: var(--muted); }
+  .ue-row .val { font-weight: 600; }
+  .ue-row .val.highlight { color: var(--green); font-size: 16px; }
+  .ue-category { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
+  .ue-note { font-size: 11px; color: var(--muted); margin-top: 8px; font-style: italic; }
+
+  /* Stats grid */
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px; margin-bottom: 24px;
+  }
+  .stat-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px; text-align: center;
+  }
+  .stat-box .num { font-size: 22px; font-weight: 700; }
+  .stat-box .lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  /* Charts */
+  .charts-row {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 28px;
+  }
+  .chart-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px;
+  }
+  .chart-box h3 { font-size: 13px; color: var(--muted); margin-bottom: 12px; font-weight: 500; }
+
+  /* Table */
+  .table-wrap {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    overflow-x: auto; margin-bottom: 28px;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    text-align: left; padding: 12px 14px; background: rgba(255,255,255,.03);
+    color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase;
+    letter-spacing: .5px; cursor: pointer; user-select: none; white-space: nowrap;
+  }
+  thead th:hover { color: var(--text); }
+  thead th.sorted-asc::after { content: " ▲"; }
+  thead th.sorted-desc::after { content: " ▼"; }
+  tbody td { padding: 10px 14px; border-top: 1px solid var(--border); white-space: nowrap; }
+  tbody tr:hover { background: rgba(108,92,231,.06); }
+  .app-name { font-weight: 600; max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-cell { width: 120px; }
+  .bar-bg { background: rgba(255,255,255,.06); border-radius: 3px; height: 8px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+  .star { color: var(--yellow); }
+  .est { color: var(--muted); font-size: 11px; }
+
+  /* Loading */
+  .loading { text-align: center; padding: 60px; color: var(--muted); }
+  .loading .spinner {
+    width: 32px; height: 32px; border: 3px solid var(--border);
+    border-top-color: var(--accent); border-radius: 50%;
+    animation: spin .8s linear infinite; margin: 0 auto 16px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 900px) {
+    .charts-row { grid-template-columns: 1fr; }
+    .ds-detail { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<h1>App Store Scorecard</h1>
+<p class="subtitle">Demand vs Supply analysis from real App Store data</p>
+
+<div class="tabs">
+  <button class="tab active" onclick="switchPage('opportunities')">Opportunities</button>
+  <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
+</div>
+
+<div class="page visible" id="page-opportunities">
+  <p class="subtitle" style="margin-bottom:16px">
+    Curated keyword candidates from the mobile-apps brainstorm research, scored through the
+    same Demand vs Supply framework and ordered by opportunity.
+  </p>
+  <div class="search-bar">
+    <input type="text" id="oppCustomKeywords" placeholder="Add custom keywords (comma separated) — scored and merged into the list" />
+    <button id="oppAddBtn" onclick="addCustomOpportunities()">Add</button>
+  </div>
+  <div id="opp-results"><div class="loading"><div class="spinner"></div>Loading curated list — running 30 keywords through the framework (~60s)...</div></div>
+</div>
+
+<div class="page" id="page-analyzer">
+  <div class="search-bar">
+    <input type="text" id="keywords" placeholder="Enter keywords separated by commas — e.g. habit tracker, sobriety app, fasting timer" />
+    <select id="country">
+      <option value="us">US</option>
+      <option value="gb">UK</option>
+      <option value="ca">Canada</option>
+      <option value="au">Australia</option>
+      <option value="de">Germany</option>
+      <option value="fr">France</option>
+      <option value="jp">Japan</option>
+    </select>
+    <button id="analyzeBtn" onclick="analyze()">Analyze</button>
+  </div>
+  <div id="results"></div>
+</div>
+
+<script>
+let allData = [];
+let oppData = [];
+let charts = {};
+let sortState = {};
+let oppLoaded = false;
+
+function switchPage(name) {
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    t.classList.toggle('active', (i === 0 && name === 'opportunities') || (i === 1 && name === 'analyzer'));
+  });
+  document.getElementById('page-analyzer').classList.toggle('visible', name === 'analyzer');
+  document.getElementById('page-opportunities').classList.toggle('visible', name === 'opportunities');
+  if (name === 'opportunities' && !oppLoaded) loadOpportunities();
+}
+
+async function addCustomOpportunities() {
+  const input = document.getElementById('oppCustomKeywords');
+  const raw = input.value.trim();
+  if (!raw) return;
+  const keywords = raw.split(',').map(k => k.trim()).filter(Boolean);
+  const btn = document.getElementById('oppAddBtn');
+  const container = document.getElementById('opp-results');
+
+  btn.disabled = true;
+  btn.textContent = 'Scoring...';
+  const prevHtml = container.innerHTML;
+  container.innerHTML = `<div class="loading"><div class="spinner"></div>Scoring ${keywords.length} custom keyword${keywords.length > 1 ? 's' : ''}...</div>`;
+
+  try {
+    const resp = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({keywords, country: 'us'})
+    });
+    const newData = await resp.json();
+    if (newData.error) throw new Error(newData.error);
+
+    // Tag as Custom and merge — replace existing entries with same keyword
+    newData.forEach(d => { d.theme = 'Custom'; });
+    const existingKeywords = new Set(newData.map(d => d.keyword.toLowerCase()));
+    oppData = oppData.filter(d => !existingKeywords.has(d.keyword.toLowerCase())).concat(newData);
+
+    // Re-sort by opportunity tier then demand
+    const tierScore = {
+      "GREAT OPPORTUNITY": 5,
+      "GOOD OPPORTUNITY": 4,
+      "COMPETITIVE — differentiate to win": 3,
+      "SMALL NICHE — low risk, low reward": 2,
+      "OVERSUPPLIED — strong apps, limited demand": 1,
+      "AVOID — dominated market": 0,
+    };
+    const demandScore = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
+    oppData.sort((a, b) => {
+      if (a.error) return 1;
+      if (b.error) return -1;
+      const ta = tierScore[a.analysis.opportunity] ?? -1;
+      const tb = tierScore[b.analysis.opportunity] ?? -1;
+      if (tb !== ta) return tb - ta;
+      return (demandScore[b.analysis.demand_level] ?? 0) - (demandScore[a.analysis.demand_level] ?? 0);
+    });
+
+    renderOpportunities();
+    input.value = '';
+  } catch (e) {
+    container.innerHTML = prevHtml;
+    alert('Error scoring custom keywords: ' + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Add';
+  }
+}
+
+async function loadOpportunities() {
+  oppLoaded = true;
+  const container = document.getElementById('opp-results');
+  container.innerHTML = `<div class="loading"><div class="spinner"></div>Running 30 keywords through the framework — this can take ~60s...</div>`;
+  try {
+    const resp = await fetch('/api/opportunities?country=us');
+    oppData = await resp.json();
+    if (oppData.error) throw new Error(oppData.error);
+    renderOpportunities();
+  } catch (e) {
+    container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
+    oppLoaded = false;
+  }
+}
+
+function renderOpportunities() {
+  // Group by opportunity tier (already sorted best→worst by server)
+  const tiers = {};
+  oppData.forEach((d, i) => {
+    if (d.error) return;
+    const tier = d.analysis.opportunity;
+    if (!tiers[tier]) tiers[tier] = [];
+    tiers[tier].push({ d, i });
+  });
+
+  const tierOrder = [
+    "GREAT OPPORTUNITY",
+    "GOOD OPPORTUNITY",
+    "COMPETITIVE — differentiate to win",
+    "SMALL NICHE — low risk, low reward",
+    "OVERSUPPLIED — strong apps, limited demand",
+    "AVOID — dominated market",
+  ];
+
+  let html = '';
+  tierOrder.forEach(tier => {
+    if (!tiers[tier]) return;
+    html += `<div class="opp-group-label">${tier} (${tiers[tier].length})</div>`;
+    html += '<div class="comparison">';
+    tiers[tier].forEach(({ d, i }) => {
+      html += renderCardHtml(d, i, 'opp');
+    });
+    html += '</div>';
+  });
+
+  // Errors
+  const errors = oppData.filter(d => d.error);
+  if (errors.length) {
+    html += `<div class="opp-group-label">Errors (${errors.length})</div>`;
+    errors.forEach(d => {
+      html += `<div style="color:var(--muted);font-size:12px;margin-bottom:4px">${d.keyword} — ${d.error}</div>`;
+    });
+  }
+
+  document.getElementById('opp-results').innerHTML = html;
+}
+
+function renderCardHtml(d, i, prefix) {
+  const a = d.analysis;
+  const theme = d.theme ? `<span class="theme-tag">${d.theme}</span>` : '';
+  return `
+    <div class="comp-card" onclick="showOppDetail(${i})">
+      <div class="kw">${d.keyword}${theme}</div>
+      <div class="ds-row">
+        <div class="ds-box demand">
+          <div class="ds-label">Demand</div>
+          <div class="ds-level">${a.demand_level}</div>
+        </div>
+        <div class="ds-box supply">
+          <div class="ds-label">Supply</div>
+          <div class="ds-level">${a.supply_level}</div>
+        </div>
+      </div>
+      <div class="metric"><span class="label">Total reviews (all 25 apps)</span><span class="val">${fmt(a.total_ratings_all)}</span></div>
+      <div class="metric"><span class="label">#1 app reviews</span><span class="val">${fmt(a.max_rating_count)}</span></div>
+      <div class="metric"><span class="label">Avg reviews (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
+      <div class="metric"><span class="label">Weakest top 10 app (reviews)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
+      <div class="metric"><span class="label">Weak apps in top 25 (&lt;1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
+      <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
+      <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
+      <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
+    </div>`;
+}
+
+function showOppDetail(i) {
+  const d = oppData[i];
+  if (!d || d.error) return;
+  // Pipe through the analyzer detail view
+  allData = [d];
+  document.getElementById('keywords').value = d.keyword;
+  switchPage('analyzer');
+  renderAll();
+}
+
+async function analyze() {
+  const input = document.getElementById('keywords').value.trim();
+  if (!input) return;
+  const keywords = input.split(',').map(k => k.trim()).filter(Boolean);
+  const country = document.getElementById('country').value;
+  const btn = document.getElementById('analyzeBtn');
+  const results = document.getElementById('results');
+
+  btn.disabled = true;
+  btn.textContent = 'Analyzing...';
+  results.innerHTML = `<div class="loading"><div class="spinner"></div>Querying App Store for ${keywords.length} keyword${keywords.length > 1 ? 's' : ''}...</div>`;
+
+  try {
+    const resp = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({keywords, country})
+    });
+    allData = await resp.json();
+    if (allData.error) throw new Error(allData.error);
+    renderAll();
+  } catch (e) {
+    results.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Analyze';
+  }
+}
+
+function fmt(n) {
+  if (n >= 1e6) return (n/1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
+  return String(n);
+}
+
+function opportunityClass(opp) {
+  if (opp.startsWith('GREAT')) return 'great';
+  if (opp.startsWith('GOOD')) return 'good';
+  if (opp.startsWith('COMPETITIVE')) return 'competitive';
+  if (opp.startsWith('SMALL')) return 'niche';
+  if (opp.startsWith('OVERSUPPLIED')) return 'oversupplied';
+  return 'avoid';
+}
+
+function renderAll() {
+  const results = document.getElementById('results');
+
+  // Comparison cards
+  let html = '<div class="comparison">';
+  allData.forEach((d, i) => {
+    const a = d.analysis;
+    html += `
+      <div class="comp-card ${i === 0 ? 'active' : ''}" onclick="showDetail(${i})">
+        <div class="kw">${d.keyword}</div>
+        <div class="ds-row">
+          <div class="ds-box demand">
+            <div class="ds-label">Demand</div>
+            <div class="ds-level">${a.demand_level}</div>
+          </div>
+          <div class="ds-box supply">
+            <div class="ds-label">Supply</div>
+            <div class="ds-level">${a.supply_level}</div>
+          </div>
+        </div>
+        <div class="metric"><span class="label">Total reviews (all 25 apps)</span><span class="val">${fmt(a.total_ratings_all)}</span></div>
+        <div class="metric"><span class="label">#1 app reviews</span><span class="val">${fmt(a.max_rating_count)}</span></div>
+        <div class="metric"><span class="label">Avg reviews (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
+        <div class="metric"><span class="label">Weakest top 10 app (reviews)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
+        <div class="metric"><span class="label">Weak apps in top 25 (<1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
+        <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
+        <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
+        <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
+      </div>`;
+  });
+  html += '</div>';
+
+  // Detail panels
+  allData.forEach((d, i) => {
+    html += `<div class="detail ${i === 0 ? 'visible' : ''}" id="detail-${i}">`;
+    html += renderDetail(d, i);
+    html += '</div>';
+  });
+
+  results.innerHTML = html;
+  allData.forEach((_, i) => renderCharts(i));
+}
+
+function showDetail(idx) {
+  document.querySelectorAll('.comp-card').forEach((c, i) => c.classList.toggle('active', i === idx));
+  document.querySelectorAll('.detail').forEach((d, i) => d.classList.toggle('visible', i === idx));
+}
+
+function renderDetail(d, idx) {
+  const a = d.analysis;
+  const p = d.percentiles;
+  const maxRating = d.apps.length ? Math.max(...d.apps.map(a => a.rating_count)) : 1;
+
+  let html = `<div class="detail-header">Results for <span>"${d.keyword}"</span></div>`;
+
+  // Demand vs Supply detail
+  html += '<div class="ds-detail">';
+  html += `<div class="ds-detail-box demand-box">
+    <h3>Demand (are people looking for this?)</h3>
+    <div class="ds-stat"><span class="lbl">Total reviews (all 25 apps)</span><span class="val">${fmt(a.total_ratings_all)}</span></div>
+    <div class="ds-stat"><span class="lbl">#1 app reviews</span><span class="val">${fmt(a.max_rating_count)}</span></div>
+    <div class="ds-stat"><span class="lbl">Demand level</span><span class="val" style="color:var(--blue)">${a.demand_level}</span></div>
+  </div>`;
+  html += `<div class="ds-detail-box supply-box">
+    <h3>Supply (how strong is the competition?)</h3>
+    <div class="ds-stat"><span class="lbl">Avg ratings (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
+    <div class="ds-stat"><span class="lbl">Weakest top 10 app (reviews)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
+    <div class="ds-stat"><span class="lbl">Weak apps in top 25 (<1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
+    <div class="ds-stat"><span class="lbl">Stale apps (>1yr no update)</span><span class="val">${a.stale_apps}/${a.top_n}</span></div>
+    <div class="ds-stat"><span class="lbl">Low-rated apps (<3.5 stars)</span><span class="val">${a.low_rated_apps}/${a.top_n}</span></div>
+    <div class="ds-stat"><span class="lbl">Supply level</span><span class="val" style="color:var(--red)">${a.supply_level}</span></div>
+  </div>`;
+  html += '</div>';
+
+  // Unit Economics
+  const b = d.benchmarks;
+  const cat = d.category;
+  html += `<div class="ue-section">
+    <h3>Unit Economics (industry benchmarks)</h3>
+    <div class="ue-category">Category: ${cat} — benchmarks from Liftoff, AppsFlyer, Revealbot 2025 reports</div>
+    <div class="ue-grid">
+      <div class="ue-box">
+        <h4>Meta Ads</h4>
+        <div class="ue-row"><span class="lbl">CPM (cost per 1K impressions)</span><span class="val">$${b.meta_cpm.toFixed(2)}</span></div>
+        <div class="ue-row"><span class="lbl">Conversion rate (impression → install)</span><span class="val">${b.meta_cvr}%</span></div>
+        <div class="ue-row"><span class="lbl">CPI (cost per install)</span><span class="val highlight">$${b.meta_cpi.toFixed(2)}</span></div>
+        <div class="ue-note">CPI = CPM / (CVR × 10)</div>
+      </div>
+      <div class="ue-box">
+        <h4>Google Ads</h4>
+        <div class="ue-row"><span class="lbl">CPC (cost per click)</span><span class="val">$${b.google_cpc.toFixed(2)}</span></div>
+        <div class="ue-row"><span class="lbl">Conversion rate (click → install)</span><span class="val">${b.google_cvr}%</span></div>
+        <div class="ue-row"><span class="lbl">CPI (cost per install)</span><span class="val highlight">$${b.google_cpi.toFixed(2)}</span></div>
+        <div class="ue-note">CPI = CPC / CVR</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Additional stats
+  html += '<div class="stats-grid">';
+  html += statBox(a.avg_star_rating + ' ★', 'Avg Stars');
+  html += statBox(fmt(p.p25), 'P25 Ratings');
+  html += statBox(fmt(p.p50), 'P50 (Median)');
+  html += statBox(fmt(p.p75), 'P75 Ratings');
+  html += statBox(d.free_vs_paid.free + '/10', 'Free Apps');
+  html += statBox(a.avg_age_months ? a.avg_age_months + ' mo' : '—', 'Avg Age');
+  html += '</div>';
+
+
+  // Table
+  html += `<div class="table-wrap"><table id="table-${idx}">
+    <thead><tr>
+      <th data-col="rank" title="Apple's search rank position">Rank</th>
+      <th data-col="name">App</th>
+      <th data-col="developer">Developer</th>
+      <th data-col="rating_count" data-type="num">Reviews</th>
+      <th>Volume</th>
+      <th data-col="star_rating" data-type="num">Stars</th>
+      <th data-col="price" data-type="num">Price</th>
+      <th data-col="released">Released</th>
+      <th data-col="last_updated">Updated</th>
+      <th data-col="category">Category</th>
+    </tr></thead><tbody>`;
+
+  d.apps.forEach((app, i) => {
+    const pct = maxRating > 0 ? (app.rating_count / maxRating * 100) : 0;
+    html += `<tr>
+      <td>${i + 1}</td>
+      <td class="app-name" title="${app.name}">${app.name}</td>
+      <td style="color:var(--muted);max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${app.developer}">${app.developer}</td>
+      <td>${fmt(app.rating_count)}</td>
+      <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div></td>
+      <td><span class="star">★</span> ${app.star_rating}</td>
+      <td>${app.price === 0 ? 'Free' : '$' + app.price}</td>
+      <td style="color:var(--muted)">${app.released}</td>
+      <td style="color:var(--muted)">${app.last_updated}</td>
+      <td style="color:var(--muted)">${app.category}</td>
+    </tr>`;
+  });
+  html += '</tbody></table></div>';
+  return html;
+}
+
+function statBox(num, lbl) {
+  return `<div class="stat-box"><div class="num">${num}</div><div class="lbl">${lbl}</div></div>`;
+}
+
+function renderCharts(idx) {
+  const d = allData[idx];
+  if (!d) return;
+
+  ['ratings'].forEach(t => {
+    const key = `${t}-${idx}`;
+    if (charts[key]) charts[key].destroy();
+  });
+
+  const ctx1 = document.getElementById(`chart-ratings-${idx}`);
+  if (!ctx1) return;
+
+  const top10 = d.apps.slice(0, 10);
+  const gridColor = 'rgba(255,255,255,.06)';
+
+  charts[`ratings-${idx}`] = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: top10.map((a, i) => `#${i+1}`),
+      datasets: [{
+        data: top10.map(a => a.rating_count),
+        backgroundColor: top10.map((_, i) => i === 0 ? '#e17055' : 'rgba(108,92,231,.6)'),
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false },
+        tooltip: { callbacks: { label: ctx => fmt(ctx.raw) + ' reviews',
+          title: ctx => top10[ctx[0].dataIndex].name } }
+      },
+      scales: {
+        y: { ticks: { color: '#8b8fa3', callback: v => fmt(v) }, grid: { color: gridColor } },
+        x: { ticks: { color: '#8b8fa3' }, grid: { display: false } }
+      }
+    }
+  });
+
+}
+
+// Sortable columns
+document.addEventListener('click', e => {
+  const th = e.target.closest('th[data-col]');
+  if (!th) return;
+  const table = th.closest('table');
+  const tbody = table.querySelector('tbody');
+  const col = th.dataset.col;
+  const isNum = th.dataset.type === 'num';
+
+  const key = table.id + '-' + col;
+  sortState[key] = sortState[key] === 'asc' ? 'desc' : 'asc';
+  const dir = sortState[key];
+
+  table.querySelectorAll('th').forEach(t => t.classList.remove('sorted-asc', 'sorted-desc'));
+  th.classList.add('sorted-' + dir);
+
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  const colIdx = Array.from(th.parentNode.children).indexOf(th);
+
+  rows.sort((a, b) => {
+    let va = a.children[colIdx].textContent.trim();
+    let vb = b.children[colIdx].textContent.trim();
+    if (isNum) {
+      va = parseFloat(va.replace(/[^0-9.\-]/g, '')) || 0;
+      vb = parseFloat(vb.replace(/[^0-9.\-]/g, '')) || 0;
+    }
+    if (va < vb) return dir === 'asc' ? -1 : 1;
+    if (va > vb) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+});
+
+document.getElementById('keywords').addEventListener('keydown', e => {
+  if (e.key === 'Enter') analyze();
+});
+document.getElementById('oppCustomKeywords').addEventListener('keydown', e => {
+  if (e.key === 'Enter') addCustomOpportunities();
+});
+
+// Auto-load the curated opportunities list on first page load
+loadOpportunities();
+</script>
+</body>
+</html>
