@@ -1,3 +1,4 @@
 requests>=2.28
 PyJWT[crypto]>=2.6
 flask>=3.0
+gunicorn>=21.2
