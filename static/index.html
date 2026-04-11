@@ -235,7 +235,7 @@
 
 <div class="tabs">
   <button class="tab active" onclick="switchPage('opportunities')">Opportunities</button>
-  <button class="tab" onclick="switchPage('research')">Research (500)</button>
+  <button class="tab" onclick="switchPage('research')">Research (1,000)</button>
   <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
 </div>
 
@@ -326,9 +326,11 @@
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
     <h3 style="font-size:16px;margin-bottom:10px">How this was generated</h3>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      500 app keyword ideas were generated across 25+ domains (health, finance, productivity, food, parenting,
+      1,000 app keyword ideas were generated across 40+ domains (health, finance, productivity, food, parenting,
       pets, home, automotive, mental health, education, social, travel, sports, creative hobbies, real estate,
-      business, niche professional, seniors, sustainability, dating, weather, legal, faith, and more).
+      business, niche professional, seniors, sustainability, dating, weather, legal, faith, trades, outdoor adventure,
+      music, cooking, student life, elderly care, pregnancy, financial planning, home improvement, fashion, language,
+      games, events, transportation, wellness, writing, community, science, and more).
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
       Each keyword was searched on the iTunes Search API (US App Store, top 25 results) and scored using the
@@ -342,42 +344,60 @@
       concentration (Gini &lt;0.4), and a high ratio of weak apps in the top 25.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
-      Below are the <strong style="color:var(--green)">44 GREAT</strong> and <strong style="color:#55efc4">136
-      GOOD</strong> opportunity ideas — the top 36% of all 500 keywords tested. Sorted by composite score
-      descending.
+      Click any column header to sort. Use the filters below to narrow results. Click a keyword to run a full analysis.
     </p>
   </div>
 
   <div class="opp-toolbar" id="research-toolbar" style="display:none">
     <div class="ctrl-group">
-      <label>Filter</label>
+      <label>Verdict</label>
       <select id="researchTierFilter" onchange="renderResearch()">
-        <option value="great+good">GREAT + GOOD (180)</option>
-        <option value="great">GREAT only (44)</option>
-        <option value="good">GOOD only (136)</option>
-        <option value="all">All 500</option>
-      </select>
-    </div>
-    <div class="ctrl-group">
-      <label>Sort by</label>
-      <select id="researchSortBy" onchange="renderResearch()">
-        <option value="score">Composite Score</option>
-        <option value="demand">Demand Level</option>
-        <option value="supply">Supply Level (low first)</option>
-        <option value="total_ratings">Total Market Ratings</option>
-        <option value="avg_ratings">Avg Incumbent Ratings</option>
-        <option value="stale">Stale Apps</option>
-        <option value="weak">Weak Apps in Top 25</option>
+        <option value="great+good">GREAT + GOOD</option>
+        <option value="great">GREAT only</option>
+        <option value="good">GOOD only</option>
+        <option value="competitive">COMPETITIVE</option>
+        <option value="all">All</option>
       </select>
     </div>
     <div class="ctrl-group">
       <label>Min demand</label>
       <select id="researchMinDemand" onchange="renderResearch()">
         <option value="">Any</option>
+        <option value="1">LOW+</option>
         <option value="2">MODERATE+</option>
         <option value="3">HIGH+</option>
         <option value="4">VERY HIGH</option>
       </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Max supply</label>
+      <select id="researchMaxSupply" onchange="renderResearch()">
+        <option value="">Any</option>
+        <option value="0">VERY LOW</option>
+        <option value="1">LOW</option>
+        <option value="2">MODERATE</option>
+        <option value="3">HIGH</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Min score</label>
+      <input type="number" id="researchMinScore" placeholder="e.g. 90" onchange="renderResearch()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:80px" />
+    </div>
+    <div class="ctrl-group">
+      <label>Min stale</label>
+      <input type="number" id="researchMinStale" placeholder="e.g. 3" min="0" onchange="renderResearch()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
+    </div>
+    <div class="ctrl-group">
+      <label>Min weak</label>
+      <input type="number" id="researchMinWeak" placeholder="e.g. 15" min="0" onchange="renderResearch()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
+    </div>
+    <div class="ctrl-group">
+      <label>Keyword search</label>
+      <input type="text" id="researchKeywordSearch" placeholder="e.g. tracker" oninput="renderResearch()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:140px" />
+    </div>
+    <div class="ctrl-group">
+      <label>&nbsp;</label>
+      <button class="reset-btn" onclick="resetResearchFilters()">Reset</button>
     </div>
   </div>
   <div class="opp-filter-count" id="research-filter-count"></div>
@@ -666,10 +686,12 @@ function showOppDetail(i) {
   renderAll();
 }
 
+let researchSort = { col: 'score', dir: 'desc' };
+
 async function loadResearch() {
   researchLoaded = true;
   const container = document.getElementById('research-results');
-  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading 500-keyword research data...</div>';
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading research data...</div>';
   try {
     const resp = await fetch('/api/research?tier=all');
     researchData = await resp.json();
@@ -681,71 +703,137 @@ async function loadResearch() {
   }
 }
 
+function resetResearchFilters() {
+  document.getElementById('researchTierFilter').value = 'great+good';
+  document.getElementById('researchMinDemand').value = '';
+  document.getElementById('researchMaxSupply').value = '';
+  document.getElementById('researchMinScore').value = '';
+  document.getElementById('researchMinStale').value = '';
+  document.getElementById('researchMinWeak').value = '';
+  document.getElementById('researchKeywordSearch').value = '';
+  researchSort = { col: 'score', dir: 'desc' };
+  renderResearch();
+}
+
+function researchSortBy(col) {
+  if (researchSort.col === col) {
+    researchSort.dir = researchSort.dir === 'desc' ? 'asc' : 'desc';
+  } else {
+    researchSort.col = col;
+    researchSort.dir = (col === 'keyword' || col === 'supply_level') ? 'asc' : 'desc';
+  }
+  renderResearch();
+}
+
+function getResearchSortVal(r, col) {
+  switch (col) {
+    case 'score': return r.score || 0;
+    case 'keyword': return r.keyword || '';
+    case 'opportunity': return TIER_SCORES[r.opportunity] ?? -1;
+    case 'demand_level': return DEMAND_SCORES[r.demand_level] ?? 0;
+    case 'supply_level': return SUPPLY_SCORES[r.supply_level] ?? 0;
+    case 'total_ratings_all': return r.total_ratings_all || 0;
+    case 'avg_rating_count': return r.avg_rating_count || 0;
+    case 'avg_star_rating': return r.avg_star_rating || 0;
+    case 'stale_apps': return r.stale_apps || 0;
+    case 'low_rated_apps': return r.low_rated_apps || 0;
+    case 'weak_apps_in_top25': return r.weak_apps_in_top25 || 0;
+    case 'mature_apps_pct': return r.mature_apps_pct ?? -1;
+    case 'concentration_index': return r.concentration_index ?? -1;
+    default: return 0;
+  }
+}
+
 function renderResearch() {
   document.getElementById('research-toolbar').style.display = 'flex';
+
   const tierFilter = document.getElementById('researchTierFilter').value;
-  const sortBy = document.getElementById('researchSortBy').value;
   const minDemand = document.getElementById('researchMinDemand').value;
+  const maxSupply = document.getElementById('researchMaxSupply').value;
+  const minScore = document.getElementById('researchMinScore').value;
+  const minStale = document.getElementById('researchMinStale').value;
+  const minWeak = document.getElementById('researchMinWeak').value;
+  const kwSearch = document.getElementById('researchKeywordSearch').value.toLowerCase().trim();
 
   let items = researchData.filter(r => !r.error);
 
   if (tierFilter === 'great') {
-    items = items.filter(r => r.opportunity && r.opportunity.includes('GREAT'));
+    items = items.filter(r => (r.opportunity || '').includes('GREAT'));
   } else if (tierFilter === 'good') {
-    items = items.filter(r => r.opportunity && r.opportunity.includes('GOOD') && !r.opportunity.includes('GREAT'));
+    items = items.filter(r => (r.opportunity || '').includes('GOOD') && !(r.opportunity || '').includes('GREAT'));
   } else if (tierFilter === 'great+good') {
-    items = items.filter(r => r.opportunity && (r.opportunity.includes('GREAT') || (r.opportunity.includes('GOOD') && !r.opportunity.includes('GREAT'))));
+    items = items.filter(r => (r.opportunity || '').includes('GREAT') || (r.opportunity || '').includes('GOOD'));
+  } else if (tierFilter === 'competitive') {
+    items = items.filter(r => (r.opportunity || '').includes('COMPETITIVE'));
   }
 
-  if (minDemand) {
-    const minVal = parseInt(minDemand);
-    items = items.filter(r => (DEMAND_SCORES[r.demand_level] ?? 0) >= minVal);
-  }
+  if (minDemand) items = items.filter(r => (DEMAND_SCORES[r.demand_level] ?? 0) >= parseInt(minDemand));
+  if (maxSupply) items = items.filter(r => (SUPPLY_SCORES[r.supply_level] ?? 0) <= parseInt(maxSupply));
+  if (minScore) items = items.filter(r => (r.score || 0) >= parseFloat(minScore));
+  if (minStale) items = items.filter(r => (r.stale_apps || 0) >= parseInt(minStale));
+  if (minWeak) items = items.filter(r => (r.weak_apps_in_top25 || 0) >= parseInt(minWeak));
+  if (kwSearch) items = items.filter(r => r.keyword.toLowerCase().includes(kwSearch));
 
-  const sortFns = {
-    score: (a, b) => (b.score || 0) - (a.score || 0),
-    demand: (a, b) => (DEMAND_SCORES[b.demand_level] ?? 0) - (DEMAND_SCORES[a.demand_level] ?? 0),
-    supply: (a, b) => (SUPPLY_SCORES[a.supply_level] ?? 0) - (SUPPLY_SCORES[b.supply_level] ?? 0),
-    total_ratings: (a, b) => (b.total_ratings_all || 0) - (a.total_ratings_all || 0),
-    avg_ratings: (a, b) => (a.avg_rating_count || 0) - (b.avg_rating_count || 0),
-    stale: (a, b) => (b.stale_apps || 0) - (a.stale_apps || 0),
-    weak: (a, b) => (b.weak_apps_in_top25 || 0) - (a.weak_apps_in_top25 || 0),
-  };
-  items.sort(sortFns[sortBy] || sortFns.score);
+  const { col, dir } = researchSort;
+  items.sort((a, b) => {
+    let va = getResearchSortVal(a, col);
+    let vb = getResearchSortVal(b, col);
+    if (col === 'keyword') {
+      const cmp = String(va).localeCompare(String(vb));
+      return dir === 'asc' ? cmp : -cmp;
+    }
+    return dir === 'asc' ? va - vb : vb - va;
+  });
 
   const countEl = document.getElementById('research-filter-count');
   countEl.textContent = `Showing ${items.length} of ${researchData.length} keywords`;
 
-  let html = '<div style="overflow-x:auto"><table style="width:100%;font-size:13px;border-collapse:collapse">';
-  html += `<thead><tr>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">#</th>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Score</th>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Keyword</th>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Verdict</th>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Demand</th>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Supply</th>
-    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Market Ratings</th>
-    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Avg Incumbent</th>
-    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Stale</th>
-    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Weak</th>
-    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Top 3 Apps</th>
-  </tr></thead><tbody>`;
+  const thStyle = 'padding:10px 12px;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap';
+  function thHtml(label, colName, align) {
+    const arrow = researchSort.col === colName ? (researchSort.dir === 'asc' ? ' ▲' : ' ▼') : '';
+    const al = align || 'left';
+    return `<th style="${thStyle};text-align:${al}" onclick="researchSortBy('${colName}')">${label}${arrow}</th>`;
+  }
+
+  let html = '<div class="table-wrap"><table style="width:100%;font-size:13px;border-collapse:collapse">';
+  html += '<thead><tr>';
+  html += `<th style="${thStyle};text-align:left">#</th>`;
+  html += thHtml('Score', 'score', 'left');
+  html += thHtml('Keyword', 'keyword', 'left');
+  html += thHtml('Verdict', 'opportunity', 'left');
+  html += thHtml('Demand', 'demand_level', 'left');
+  html += thHtml('Supply', 'supply_level', 'left');
+  html += thHtml('Market Ratings', 'total_ratings_all', 'right');
+  html += thHtml('Avg Incumbent', 'avg_rating_count', 'right');
+  html += thHtml('Avg Stars', 'avg_star_rating', 'right');
+  html += thHtml('Stale', 'stale_apps', 'right');
+  html += thHtml('Low Rated', 'low_rated_apps', 'right');
+  html += thHtml('Weak', 'weak_apps_in_top25', 'right');
+  html += thHtml('Mature %', 'mature_apps_pct', 'right');
+  html += thHtml('Gini', 'concentration_index', 'right');
+  html += `<th style="${thStyle};text-align:left">Top 3 Apps</th>`;
+  html += '</tr></thead><tbody>';
 
   items.forEach((r, i) => {
     const oppClass = opportunityClass(r.opportunity || '');
-    const top3 = (r.top_3_apps || []).map(a => `${a.name.substring(0, 22)}${a.name.length > 22 ? '…' : ''} (${fmt(a.ratings)})`).join(', ');
-    html += `<tr style="border-top:1px solid var(--border);cursor:pointer" onmouseover="this.style.background='rgba(108,92,231,.06)'" onmouseout="this.style.background=''">
-      <td style="padding:8px 12px;color:var(--muted)">${i + 1}</td>
-      <td style="padding:8px 12px;font-weight:700">${r.score}</td>
-      <td style="padding:8px 12px;font-weight:600"><a href="#" onclick="analyzeFromResearch('${r.keyword.replace(/'/g, "\\'")}');return false" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${r.keyword}</a></td>
-      <td style="padding:8px 12px"><span class="opportunity-badge ${oppClass}" style="white-space:nowrap">${r.opportunity}</span></td>
-      <td style="padding:8px 12px;color:var(--blue);font-weight:600">${r.demand_level}</td>
-      <td style="padding:8px 12px;color:var(--red);font-weight:600">${r.supply_level}</td>
-      <td style="padding:8px 12px;text-align:right">${fmt(r.total_ratings_all || 0)}</td>
-      <td style="padding:8px 12px;text-align:right">${fmt(r.avg_rating_count || 0)}</td>
-      <td style="padding:8px 12px;text-align:right">${r.stale_apps || 0}</td>
-      <td style="padding:8px 12px;text-align:right">${r.weak_apps_in_top25 || 0}</td>
-      <td style="padding:8px 12px;color:var(--muted);font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
+    const top3 = (r.top_3_apps || []).map(a => `${a.name.substring(0, 20)}${a.name.length > 20 ? '…' : ''} (${fmt(a.ratings)})`).join(', ');
+    const kw = r.keyword.replace(/'/g, "\\'");
+    html += `<tr style="border-top:1px solid var(--border)" onmouseover="this.style.background='rgba(108,92,231,.06)'" onmouseout="this.style.background=''">
+      <td style="padding:8px 10px;color:var(--muted)">${i + 1}</td>
+      <td style="padding:8px 10px;font-weight:700">${r.score}</td>
+      <td style="padding:8px 10px;font-weight:600"><a href="#" onclick="analyzeFromResearch('${kw}');return false" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${r.keyword}</a></td>
+      <td style="padding:8px 10px"><span class="opportunity-badge ${oppClass}" style="white-space:nowrap;font-size:10px">${r.opportunity}</span></td>
+      <td style="padding:8px 10px;color:var(--blue);font-weight:600;white-space:nowrap">${r.demand_level}</td>
+      <td style="padding:8px 10px;color:var(--red);font-weight:600;white-space:nowrap">${r.supply_level}</td>
+      <td style="padding:8px 10px;text-align:right">${fmt(r.total_ratings_all || 0)}</td>
+      <td style="padding:8px 10px;text-align:right">${fmt(r.avg_rating_count || 0)}</td>
+      <td style="padding:8px 10px;text-align:right">${r.avg_star_rating || '—'}</td>
+      <td style="padding:8px 10px;text-align:right">${r.stale_apps || 0}</td>
+      <td style="padding:8px 10px;text-align:right">${r.low_rated_apps || 0}</td>
+      <td style="padding:8px 10px;text-align:right">${r.weak_apps_in_top25 || 0}</td>
+      <td style="padding:8px 10px;text-align:right">${r.mature_apps_pct != null ? r.mature_apps_pct + '%' : '—'}</td>
+      <td style="padding:8px 10px;text-align:right;color:${r.concentration_index != null ? (r.concentration_index > 0.7 ? 'var(--red)' : r.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
+      <td style="padding:8px 10px;color:var(--muted);font-size:11px;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
     </tr>`;
   });
 
