@@ -4,6 +4,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 from itunes_api import search_apps, analyze_competition
 import os
+import json
 
 app = Flask(__name__, static_folder="static")
 
@@ -168,6 +169,24 @@ def analyze():
 
     results = [_analyze_keyword(kw, country, limit) for kw in keywords]
     return jsonify(results)
+
+
+@app.route("/api/research", methods=["GET"])
+def research():
+    tier = request.args.get("tier", "all")
+    results_path = os.path.join(os.path.dirname(__file__), "batch_results.json")
+    if not os.path.exists(results_path):
+        return jsonify({"error": "batch_results.json not found — run batch_evaluate.py first"}), 404
+    with open(results_path) as f:
+        data = json.load(f)
+    tier = tier.replace(" ", "+")
+    if tier == "great":
+        data = [r for r in data if "GREAT" in r.get("opportunity", "")]
+    elif tier == "good":
+        data = [r for r in data if "GOOD" in r.get("opportunity", "") and "GREAT" not in r.get("opportunity", "")]
+    elif tier == "great+good":
+        data = [r for r in data if "GREAT" in r.get("opportunity", "") or "GOOD" in r.get("opportunity", "")]
+    return jsonify(data)
 
 
 if __name__ == "__main__":

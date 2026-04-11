@@ -235,6 +235,7 @@
 
 <div class="tabs">
   <button class="tab active" onclick="switchPage('opportunities')">Opportunities</button>
+  <button class="tab" onclick="switchPage('research')">Research (500)</button>
   <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
 </div>
 
@@ -321,6 +322,68 @@
   <div id="opp-results"><div class="loading"><div class="spinner"></div>Loading curated list — running 30 keywords through the framework (~60s)...</div></div>
 </div>
 
+<div class="page" id="page-research">
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
+    <h3 style="font-size:16px;margin-bottom:10px">How this was generated</h3>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
+      500 app keyword ideas were generated across 25+ domains (health, finance, productivity, food, parenting,
+      pets, home, automotive, mental health, education, social, travel, sports, creative hobbies, real estate,
+      business, niche professional, seniors, sustainability, dating, weather, legal, faith, and more).
+    </p>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
+      Each keyword was searched on the iTunes Search API (US App Store, top 25 results) and scored using the
+      same Demand vs Supply framework: <strong style="color:var(--blue)">Demand</strong> = total ratings across
+      all 25 visible apps, <strong style="color:var(--red)">Supply</strong> = average rating count of the top 10
+      incumbents. The gap between demand rank and supply rank determines the opportunity verdict.
+    </p>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
+      A composite score (0–110) adds bonuses for stale competitors (&gt;3 not updated in a year), low-rated
+      incumbents (&gt;3 below 3.5 stars), weak average ratings (&lt;1K), high demand level, low market
+      concentration (Gini &lt;0.4), and a high ratio of weak apps in the top 25.
+    </p>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6">
+      Below are the <strong style="color:var(--green)">44 GREAT</strong> and <strong style="color:#55efc4">136
+      GOOD</strong> opportunity ideas — the top 36% of all 500 keywords tested. Sorted by composite score
+      descending.
+    </p>
+  </div>
+
+  <div class="opp-toolbar" id="research-toolbar" style="display:none">
+    <div class="ctrl-group">
+      <label>Filter</label>
+      <select id="researchTierFilter" onchange="renderResearch()">
+        <option value="great+good">GREAT + GOOD (180)</option>
+        <option value="great">GREAT only (44)</option>
+        <option value="good">GOOD only (136)</option>
+        <option value="all">All 500</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Sort by</label>
+      <select id="researchSortBy" onchange="renderResearch()">
+        <option value="score">Composite Score</option>
+        <option value="demand">Demand Level</option>
+        <option value="supply">Supply Level (low first)</option>
+        <option value="total_ratings">Total Market Ratings</option>
+        <option value="avg_ratings">Avg Incumbent Ratings</option>
+        <option value="stale">Stale Apps</option>
+        <option value="weak">Weak Apps in Top 25</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Min demand</label>
+      <select id="researchMinDemand" onchange="renderResearch()">
+        <option value="">Any</option>
+        <option value="2">MODERATE+</option>
+        <option value="3">HIGH+</option>
+        <option value="4">VERY HIGH</option>
+      </select>
+    </div>
+  </div>
+  <div class="opp-filter-count" id="research-filter-count"></div>
+  <div id="research-results"><div class="loading"><div class="spinner"></div>Loading research data...</div></div>
+</div>
+
 <div class="page" id="page-analyzer">
   <div class="search-bar">
     <input type="text" id="keywords" placeholder="Enter keywords separated by commas — e.g. habit tracker, sobriety app, fasting timer" />
@@ -341,17 +404,23 @@
 <script>
 let allData = [];
 let oppData = [];
+let researchData = [];
 let charts = {};
 let sortState = {};
 let oppLoaded = false;
+let researchLoaded = false;
+
+const PAGE_NAMES = ['opportunities', 'research', 'analyzer'];
 
 function switchPage(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
-    t.classList.toggle('active', (i === 0 && name === 'opportunities') || (i === 1 && name === 'analyzer'));
+    t.classList.toggle('active', PAGE_NAMES[i] === name);
   });
-  document.getElementById('page-analyzer').classList.toggle('visible', name === 'analyzer');
-  document.getElementById('page-opportunities').classList.toggle('visible', name === 'opportunities');
+  PAGE_NAMES.forEach(p => {
+    document.getElementById('page-' + p).classList.toggle('visible', p === name);
+  });
   if (name === 'opportunities' && !oppLoaded) loadOpportunities();
+  if (name === 'research' && !researchLoaded) loadResearch();
 }
 
 async function addCustomOpportunities() {
@@ -595,6 +664,99 @@ function showOppDetail(i) {
   document.getElementById('keywords').value = d.keyword;
   switchPage('analyzer');
   renderAll();
+}
+
+async function loadResearch() {
+  researchLoaded = true;
+  const container = document.getElementById('research-results');
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading 500-keyword research data...</div>';
+  try {
+    const resp = await fetch('/api/research?tier=all');
+    researchData = await resp.json();
+    if (researchData.error) throw new Error(researchData.error);
+    renderResearch();
+  } catch (e) {
+    container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
+    researchLoaded = false;
+  }
+}
+
+function renderResearch() {
+  document.getElementById('research-toolbar').style.display = 'flex';
+  const tierFilter = document.getElementById('researchTierFilter').value;
+  const sortBy = document.getElementById('researchSortBy').value;
+  const minDemand = document.getElementById('researchMinDemand').value;
+
+  let items = researchData.filter(r => !r.error);
+
+  if (tierFilter === 'great') {
+    items = items.filter(r => r.opportunity && r.opportunity.includes('GREAT'));
+  } else if (tierFilter === 'good') {
+    items = items.filter(r => r.opportunity && r.opportunity.includes('GOOD') && !r.opportunity.includes('GREAT'));
+  } else if (tierFilter === 'great+good') {
+    items = items.filter(r => r.opportunity && (r.opportunity.includes('GREAT') || (r.opportunity.includes('GOOD') && !r.opportunity.includes('GREAT'))));
+  }
+
+  if (minDemand) {
+    const minVal = parseInt(minDemand);
+    items = items.filter(r => (DEMAND_SCORES[r.demand_level] ?? 0) >= minVal);
+  }
+
+  const sortFns = {
+    score: (a, b) => (b.score || 0) - (a.score || 0),
+    demand: (a, b) => (DEMAND_SCORES[b.demand_level] ?? 0) - (DEMAND_SCORES[a.demand_level] ?? 0),
+    supply: (a, b) => (SUPPLY_SCORES[a.supply_level] ?? 0) - (SUPPLY_SCORES[b.supply_level] ?? 0),
+    total_ratings: (a, b) => (b.total_ratings_all || 0) - (a.total_ratings_all || 0),
+    avg_ratings: (a, b) => (a.avg_rating_count || 0) - (b.avg_rating_count || 0),
+    stale: (a, b) => (b.stale_apps || 0) - (a.stale_apps || 0),
+    weak: (a, b) => (b.weak_apps_in_top25 || 0) - (a.weak_apps_in_top25 || 0),
+  };
+  items.sort(sortFns[sortBy] || sortFns.score);
+
+  const countEl = document.getElementById('research-filter-count');
+  countEl.textContent = `Showing ${items.length} of ${researchData.length} keywords`;
+
+  let html = '<div style="overflow-x:auto"><table style="width:100%;font-size:13px;border-collapse:collapse">';
+  html += `<thead><tr>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">#</th>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Score</th>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Keyword</th>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Verdict</th>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Demand</th>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Supply</th>
+    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Market Ratings</th>
+    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Avg Incumbent</th>
+    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Stale</th>
+    <th style="padding:10px 12px;text-align:right;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Weak</th>
+    <th style="padding:10px 12px;text-align:left;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px">Top 3 Apps</th>
+  </tr></thead><tbody>`;
+
+  items.forEach((r, i) => {
+    const oppClass = opportunityClass(r.opportunity || '');
+    const top3 = (r.top_3_apps || []).map(a => `${a.name.substring(0, 22)}${a.name.length > 22 ? '…' : ''} (${fmt(a.ratings)})`).join(', ');
+    html += `<tr style="border-top:1px solid var(--border);cursor:pointer" onmouseover="this.style.background='rgba(108,92,231,.06)'" onmouseout="this.style.background=''">
+      <td style="padding:8px 12px;color:var(--muted)">${i + 1}</td>
+      <td style="padding:8px 12px;font-weight:700">${r.score}</td>
+      <td style="padding:8px 12px;font-weight:600"><a href="#" onclick="analyzeFromResearch('${r.keyword.replace(/'/g, "\\'")}');return false" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${r.keyword}</a></td>
+      <td style="padding:8px 12px"><span class="opportunity-badge ${oppClass}" style="white-space:nowrap">${r.opportunity}</span></td>
+      <td style="padding:8px 12px;color:var(--blue);font-weight:600">${r.demand_level}</td>
+      <td style="padding:8px 12px;color:var(--red);font-weight:600">${r.supply_level}</td>
+      <td style="padding:8px 12px;text-align:right">${fmt(r.total_ratings_all || 0)}</td>
+      <td style="padding:8px 12px;text-align:right">${fmt(r.avg_rating_count || 0)}</td>
+      <td style="padding:8px 12px;text-align:right">${r.stale_apps || 0}</td>
+      <td style="padding:8px 12px;text-align:right">${r.weak_apps_in_top25 || 0}</td>
+      <td style="padding:8px 12px;color:var(--muted);font-size:11px;max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
+    </tr>`;
+  });
+
+  html += '</tbody></table></div>';
+  document.getElementById('research-results').innerHTML = html;
+}
+
+function analyzeFromResearch(keyword) {
+  document.getElementById('keywords').value = keyword;
+  switchPage('analyzer');
+  analyze();
 }
 
 async function analyze() {
