@@ -632,6 +632,13 @@ function fmt(n) {
   return String(n);
 }
 
+function parseFmtNum(s) {
+  s = s.replace(/[^0-9.\-KMkm]/g, '');
+  if (/[Kk]$/.test(s)) return parseFloat(s) * 1e3 || 0;
+  if (/[Mm]$/.test(s)) return parseFloat(s) * 1e6 || 0;
+  return parseFloat(s) || 0;
+}
+
 function opportunityClass(opp) {
   if (opp.startsWith('GREAT')) return 'great';
   if (opp.startsWith('GOOD')) return 'good';
@@ -856,8 +863,8 @@ document.addEventListener('click', e => {
     let va = a.children[colIdx].textContent.trim();
     let vb = b.children[colIdx].textContent.trim();
     if (isNum) {
-      va = parseFloat(va.replace(/[^0-9.\-]/g, '')) || 0;
-      vb = parseFloat(vb.replace(/[^0-9.\-]/g, '')) || 0;
+      va = parseFmtNum(va);
+      vb = parseFmtNum(vb);
     }
     if (va < vb) return dir === 'asc' ? -1 : 1;
     if (va > vb) return dir === 'asc' ? 1 : -1;
