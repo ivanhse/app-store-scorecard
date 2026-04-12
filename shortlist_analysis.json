@@ -13,9 +13,9 @@
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
-    "total_ratings_all": 1356214,
-    "avg_rating_count": 8927,
-    "weak_apps_in_top25": 13,
+    "total_ratings_all": 781909,
+    "avg_rating_count": 8919,
+    "weak_apps_in_top25": 14,
     "concentration_index": 0.88,
     "competitors": [
       {
@@ -57,9 +57,9 @@
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
-    "total_ratings_all": 1040462,
-    "avg_rating_count": 8503,
-    "weak_apps_in_top25": 9,
+    "total_ratings_all": 1030338,
+    "avg_rating_count": 8495,
+    "weak_apps_in_top25": 10,
     "concentration_index": 0.89,
     "competitors": [
       {
@@ -100,9 +100,9 @@
     "why_money": "GREAT opportunity score with very low build complexity \u2014 best ROI ratio on the list. Every car owner needs maintenance reminders. The #1 direct competitor has only 153 ratings. Monetize via freemium (track multiple vehicles) + affiliate partnerships with Valvoline, Jiffy Lube etc. Push notification reminders create recurring engagement.",
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
-    "supply_level": "MODERATE",
-    "total_ratings_all": 776998,
-    "avg_rating_count": 5945,
+    "supply_level": "VERY LOW",
+    "total_ratings_all": 776596,
+    "avg_rating_count": 494,
     "weak_apps_in_top25": 14,
     "concentration_index": 0.92,
     "competitors": [
@@ -145,8 +145,8 @@
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
-    "total_ratings_all": 888183,
-    "avg_rating_count": 6232,
+    "total_ratings_all": 887676,
+    "avg_rating_count": 6228,
     "weak_apps_in_top25": 17,
     "concentration_index": 0.88,
     "competitors": [
@@ -189,8 +189,8 @@
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
-    "total_ratings_all": 1634525,
-    "avg_rating_count": 7675,
+    "total_ratings_all": 1634146,
+    "avg_rating_count": 7668,
     "weak_apps_in_top25": 11,
     "concentration_index": 0.75,
     "competitors": [
@@ -233,10 +233,10 @@
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "MODERATE",
     "supply_level": "VERY LOW",
-    "total_ratings_all": 65184,
-    "avg_rating_count": 28,
+    "total_ratings_all": 65683,
+    "avg_rating_count": 405,
     "weak_apps_in_top25": 19,
-    "concentration_index": 0.92,
+    "concentration_index": 0.91,
     "competitors": [
       {
         "name": "Coffee brew timers",
@@ -277,8 +277,8 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 613264,
-    "avg_rating_count": 12480,
+    "total_ratings_all": 613156,
+    "avg_rating_count": 12479,
     "weak_apps_in_top25": 15,
     "concentration_index": 0.89,
     "competitors": [
@@ -321,10 +321,10 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 2081491,
-    "avg_rating_count": 15383,
+    "total_ratings_all": 2081114,
+    "avg_rating_count": 15060,
     "weak_apps_in_top25": 10,
-    "concentration_index": 0.9,
+    "concentration_index": 0.81,
     "competitors": [
       {
         "name": "iRoofing Phone App",
@@ -365,10 +365,10 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 896901,
-    "avg_rating_count": 27810,
-    "weak_apps_in_top25": 8,
-    "concentration_index": 0.74,
+    "total_ratings_all": 900866,
+    "avg_rating_count": 27785,
+    "weak_apps_in_top25": 7,
+    "concentration_index": 0.76,
     "competitors": [
       {
         "name": "Honeydue: Couples Finance",
@@ -409,9 +409,9 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "HIGH",
     "supply_level": "MODERATE",
-    "total_ratings_all": 127529,
-    "avg_rating_count": 9901,
-    "weak_apps_in_top25": 12,
+    "total_ratings_all": 123668,
+    "avg_rating_count": 9891,
+    "weak_apps_in_top25": 13,
     "concentration_index": 0.79,
     "competitors": [
       {
@@ -453,8 +453,8 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 881491,
-    "avg_rating_count": 30096,
+    "total_ratings_all": 881293,
+    "avg_rating_count": 30089,
     "weak_apps_in_top25": 5,
     "concentration_index": 0.82,
     "competitors": [
@@ -497,9 +497,9 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 565125,
-    "avg_rating_count": 39212,
-    "weak_apps_in_top25": 8,
+    "total_ratings_all": 549011,
+    "avg_rating_count": 39334,
+    "weak_apps_in_top25": 9,
     "concentration_index": 0.77,
     "competitors": [
       {
@@ -541,8 +541,8 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 1723411,
-    "avg_rating_count": 18617,
+    "total_ratings_all": 1722510,
+    "avg_rating_count": 18611,
     "weak_apps_in_top25": 6,
     "concentration_index": 0.91,
     "competitors": [
@@ -585,10 +585,10 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 797126,
-    "avg_rating_count": 36484,
+    "total_ratings_all": 785718,
+    "avg_rating_count": 36473,
     "weak_apps_in_top25": 2,
-    "concentration_index": 0.65,
+    "concentration_index": 0.66,
     "competitors": [
       {
         "name": "Day One",
@@ -629,10 +629,10 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 1868773,
-    "avg_rating_count": 47664,
-    "weak_apps_in_top25": 14,
-    "concentration_index": 0.85,
+    "total_ratings_all": 1868334,
+    "avg_rating_count": 47662,
+    "weak_apps_in_top25": 15,
+    "concentration_index": 0.86,
     "competitors": [
       {
         "name": "GasBuddy",
@@ -673,10 +673,10 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 560314,
-    "avg_rating_count": 29074,
-    "weak_apps_in_top25": 4,
-    "concentration_index": 0.69,
+    "total_ratings_all": 565993,
+    "avg_rating_count": 14979,
+    "weak_apps_in_top25": 5,
+    "concentration_index": 0.74,
     "competitors": [
       {
         "name": "QuizTime - Trivia",
@@ -717,8 +717,8 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 878323,
-    "avg_rating_count": 47548,
+    "total_ratings_all": 877958,
+    "avg_rating_count": 47535,
     "weak_apps_in_top25": 7,
     "concentration_index": 0.78,
     "competitors": [
@@ -748,10 +748,54 @@
     "build_notes": "Audio file playback in background mode (AVAudioSession). Ship a sound library (rain, white noise, brown noise, etc.). No DSP or signal processing \u2014 just play audio files. Standard media player pattern."
   },
   {
+    "name": "Rent vs Buy Calculator",
+    "keyword": "rent vs buy calculator",
+    "tier": "Tier 3",
+    "rank": 18,
+    "money_score": 52,
+    "market_opportunity": 55,
+    "build_complexity": 3,
+    "monetization_model": "Free with ads or affiliate (mortgage leads)",
+    "estimated_arpu": "$1-2/month or affiliate leads",
+    "why_money": "GOOD opportunity \u2014 VERY HIGH demand with HIGH (not VERY HIGH) supply. The two dedicated rent-vs-buy apps have only 3 ratings each, so the direct niche is wide open. But search results are dominated by massive real estate platforms (Rent.com at 205K ratings). Monetization via mortgage affiliate leads or one-time purchase. Users need this tool once or twice, limiting recurring revenue.",
+    "opportunity_verdict": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 2859563,
+    "avg_rating_count": 21849,
+    "weak_apps_in_top25": 10,
+    "concentration_index": 0.92,
+    "competitors": [
+      {
+        "name": "Roby: Rent vs. Buy Calculator",
+        "ratings": 3,
+        "stars": 5.0,
+        "price": "Free",
+        "weakness": "Brand new, zero traction"
+      },
+      {
+        "name": "Buy vs. Rent Calculator",
+        "ratings": 3,
+        "stars": 4.0,
+        "price": "Free",
+        "weakness": "Not updated since 2018, abandoned"
+      },
+      {
+        "name": "Rent. Apartments and Homes",
+        "ratings": 205146,
+        "stars": 4.7,
+        "price": "Free",
+        "weakness": "Not a calculator \u2014 rental listing platform"
+      }
+    ],
+    "differentiators": "Actually, the direct niche IS open \u2014 both dedicated calculators have only 3 ratings. But search results are pulled by real estate giants. Could succeed with excellent ASO and a genuinely useful calculator with local market data.",
+    "build_notes": "Financial formulas (mortgage amortization, tax benefits, opportunity cost). Low complexity. The challenge is marketing/ASO against real estate platform dominance."
+  },
+  {
     "name": "ROI Calculator",
     "keyword": "roi calculator app",
     "tier": "Tier 3",
-    "rank": 18,
+    "rank": 19,
     "money_score": 48,
     "market_opportunity": 50,
     "build_complexity": 2,
@@ -761,8 +805,8 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 2310636,
-    "avg_rating_count": 35848,
+    "total_ratings_all": 2302797,
+    "avg_rating_count": 35841,
     "weak_apps_in_top25": 6,
     "concentration_index": 0.88,
     "competitors": [
@@ -795,7 +839,7 @@
     "name": "pH Calculator",
     "keyword": "ph calculator app",
     "tier": "Tier 3",
-    "rank": 19,
+    "rank": 20,
     "money_score": 42,
     "market_opportunity": 45,
     "build_complexity": 2,
@@ -805,10 +849,10 @@
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
-    "total_ratings_all": 2417526,
-    "avg_rating_count": 46602,
-    "weak_apps_in_top25": 5,
-    "concentration_index": 0.88,
+    "total_ratings_all": 2362345,
+    "avg_rating_count": 46503,
+    "weak_apps_in_top25": 7,
+    "concentration_index": 0.89,
     "competitors": [
       {
         "name": "Calculator #",
@@ -839,7 +883,7 @@
     "name": "What Was Accomplished Today",
     "keyword": "daily accomplishment app",
     "tier": "Tier 3",
-    "rank": 20,
+    "rank": 21,
     "money_score": 40,
     "market_opportunity": 42,
     "build_complexity": 2,
@@ -878,49 +922,5 @@
     ],
     "differentiators": "Ultra-simple: just log what you did today. End-of-day reflection prompt. Weekly/monthly accomplishment summaries. Shareable accomplishment reports for managers/teams.",
     "build_notes": "Text input + list display + local storage. Daily reset. About as simple as an app can get."
-  },
-  {
-    "name": "Rent vs Buy Calculator",
-    "keyword": "rent vs buy calculator",
-    "tier": "Tier 3",
-    "rank": 21,
-    "money_score": 38,
-    "market_opportunity": 40,
-    "build_complexity": 3,
-    "monetization_model": "Free with ads or affiliate (mortgage leads)",
-    "estimated_arpu": "$1-2/month or affiliate leads",
-    "why_money": "COMPETITIVE verdict \u2014 the market is dominated by massive real estate platforms. Rent.com (205K ratings) and Zillow/Redfin pull the search results. The two direct rent-vs-buy calculators have only 3 ratings each, suggesting the keyword has demand but users end up in general real estate apps. Very high concentration (0.92 Gini). Mortgage affiliate leads could be lucrative but require significant traffic.",
-    "opportunity_verdict": "COMPETITIVE \u2014 differentiate to win",
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
-    "total_ratings_all": 2865160,
-    "avg_rating_count": 124287,
-    "weak_apps_in_top25": 10,
-    "concentration_index": 0.92,
-    "competitors": [
-      {
-        "name": "Roby: Rent vs. Buy Calculator",
-        "ratings": 3,
-        "stars": 5.0,
-        "price": "Free",
-        "weakness": "Brand new, zero traction"
-      },
-      {
-        "name": "Buy vs. Rent Calculator",
-        "ratings": 3,
-        "stars": 4.0,
-        "price": "Free",
-        "weakness": "Not updated since 2018, abandoned"
-      },
-      {
-        "name": "Rent. Apartments and Homes",
-        "ratings": 205146,
-        "stars": 4.7,
-        "price": "Free",
-        "weakness": "Not a calculator \u2014 rental listing platform"
-      }
-    ],
-    "differentiators": "Actually, the direct niche IS open \u2014 both dedicated calculators have only 3 ratings. But search results are pulled by real estate giants. Could succeed with excellent ASO and a genuinely useful calculator with local market data.",
-    "build_notes": "Financial formulas (mortgage amortization, tax benefits, opportunity cost). Low complexity. The challenge is marketing/ASO against real estate platform dominance."
   }
 ]
