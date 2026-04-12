@@ -9,7 +9,7 @@
     "build_complexity": 7,
     "monetization_model": "Freemium + affiliate commissions on visa services",
     "estimated_arpu": "$4-8/month",
-    "why_money": "Travel is high-intent spending. Users checking visa requirements are actively planning trips. Affiliate revenue from visa processing services (iVisa charges $30-80 per application). Subscription for premium features (multi-trip planning, alerts). The top direct competitor (Atlys) has only 3.3K ratings — massive gap vs demand.",
+    "why_money": "Travel is high-intent spending. Users checking visa requirements are actively planning trips. Affiliate revenue from visa processing services (iVisa charges $30-80 per application). Subscription for premium features (multi-trip planning, alerts). The top direct competitor (Atlys) has only 3.3K ratings \u2014 massive gap vs demand.",
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
@@ -18,12 +18,30 @@
     "weak_apps_in_top25": 13,
     "concentration_index": 0.88,
     "competitors": [
-      {"name": "Atlys - Visas on Time", "ratings": 3307, "stars": 4.6, "price": "Free + visa processing fees", "weakness": "Focused on visa processing sales, not pure info tool"},
-      {"name": "iVisa", "ratings": 10680, "stars": 4.8, "price": "Free + $30-80 per visa", "weakness": "Upsells aggressively, poor UX for quick checks"},
-      {"name": "VisaHQ", "ratings": 432, "stars": 3.2, "price": "Free + service fees", "weakness": "Low ratings, dated interface, slow updates"}
+      {
+        "name": "Atlys - Visas on Time",
+        "ratings": 3307,
+        "stars": 4.6,
+        "price": "Free + visa processing fees",
+        "weakness": "Focused on visa processing sales, not pure info tool"
+      },
+      {
+        "name": "iVisa",
+        "ratings": 10680,
+        "stars": 4.8,
+        "price": "Free + $30-80 per visa",
+        "weakness": "Upsells aggressively, poor UX for quick checks"
+      },
+      {
+        "name": "VisaHQ",
+        "ratings": 432,
+        "stars": 3.2,
+        "price": "Free + service fees",
+        "weakness": "Low ratings, dated interface, slow updates"
+      }
     ],
-    "differentiators": "Clean offline database with 200+ countries, real-time policy alerts, passport-specific requirements, visa timeline estimator. No existing app does simple 'do I need a visa?' checks well — they all push visa processing services.",
-    "build_notes": "Requires comprehensive visa database (196+ countries × passport types). Data must be kept current — embassy policy changes. Could use government APIs + web scraping. Medium-high maintenance burden."
+    "differentiators": "Clean offline database with 200+ countries, real-time policy alerts, passport-specific requirements, visa timeline estimator. No existing app does simple 'do I need a visa?' checks well \u2014 they all push visa processing services.",
+    "build_notes": "Requires comprehensive visa database (196+ countries \u00d7 passport types). Data must be kept current \u2014 embassy policy changes. Could use government APIs + web scraping. Medium-high maintenance burden."
   },
   {
     "name": "Music Theory",
@@ -44,9 +62,27 @@
     "weak_apps_in_top25": 9,
     "concentration_index": 0.89,
     "competitors": [
-      {"name": "MyMusicTheory", "ratings": 854, "stars": 4.7, "price": "Free + IAP", "weakness": "Small team, limited content depth, no audio integration"},
-      {"name": "Tenuto (musictheory.net)", "ratings": 640, "stars": 4.7, "price": "$4.99 one-time", "weakness": "No subscription model, companion to website, limited interactivity"},
-      {"name": "Music Tutor (Sight-reading)", "ratings": 2127, "stars": 4.2, "price": "Free + IAP", "weakness": "Focused on sight-reading only, not comprehensive theory"}
+      {
+        "name": "MyMusicTheory",
+        "ratings": 854,
+        "stars": 4.7,
+        "price": "Free + IAP",
+        "weakness": "Small team, limited content depth, no audio integration"
+      },
+      {
+        "name": "Tenuto (musictheory.net)",
+        "ratings": 640,
+        "stars": 4.7,
+        "price": "$4.99 one-time",
+        "weakness": "No subscription model, companion to website, limited interactivity"
+      },
+      {
+        "name": "Music Tutor (Sight-reading)",
+        "ratings": 2127,
+        "stars": 4.2,
+        "price": "Free + IAP",
+        "weakness": "Focused on sight-reading only, not comprehensive theory"
+      }
     ],
     "differentiators": "Comprehensive curriculum from beginner to advanced. Interactive exercises with audio feedback. Progress tracking. Gamification. No current app combines theory lessons + ear training + notation exercises in one polished package.",
     "build_notes": "Audio engine for playback and recognition. Interactive music notation renderer. Extensive content creation (lessons, exercises, quizzes). Consider using MIDI.js or Tone.js for web audio. Significant upfront content investment."
@@ -54,14 +90,14 @@
   {
     "name": "Oil Change Reminder",
     "keyword": "oil change reminder",
-    "tier": "Unlisted",
+    "tier": "Tier 1",
     "rank": 3,
     "money_score": 85,
     "market_opportunity": 86,
     "build_complexity": 3,
     "monetization_model": "Freemium + local service provider partnerships",
     "estimated_arpu": "$2-5/month or affiliate revenue",
-    "why_money": "GREAT opportunity score with very low build complexity — best ROI ratio on the list. Every car owner needs maintenance reminders. The #1 direct competitor has only 153 ratings. Monetize via freemium (track multiple vehicles) + affiliate partnerships with Valvoline, Jiffy Lube etc. Push notification reminders create recurring engagement.",
+    "why_money": "GREAT opportunity score with very low build complexity \u2014 best ROI ratio on the list. Every car owner needs maintenance reminders. The #1 direct competitor has only 153 ratings. Monetize via freemium (track multiple vehicles) + affiliate partnerships with Valvoline, Jiffy Lube etc. Push notification reminders create recurring engagement.",
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
@@ -70,24 +106,42 @@
     "weak_apps_in_top25": 14,
     "concentration_index": 0.92,
     "competitors": [
-      {"name": "Car Maintenance Reminders", "ratings": 153, "stars": 4.5, "price": "Free", "weakness": "Tiny user base, limited features"},
-      {"name": "Valvoline Instant Oil Change", "ratings": 2084, "stars": 4.6, "price": "Free", "weakness": "Brand-locked to Valvoline, not a general tool"},
-      {"name": "CARFAX Car Care", "ratings": 52431, "stars": 4.8, "price": "Free", "weakness": "Broad car history tool, oil change is secondary feature"}
+      {
+        "name": "Car Maintenance Reminders",
+        "ratings": 153,
+        "stars": 4.5,
+        "price": "Free",
+        "weakness": "Tiny user base, limited features"
+      },
+      {
+        "name": "Valvoline Instant Oil Change",
+        "ratings": 2084,
+        "stars": 4.6,
+        "price": "Free",
+        "weakness": "Brand-locked to Valvoline, not a general tool"
+      },
+      {
+        "name": "CARFAX Car Care",
+        "ratings": 52431,
+        "stars": 4.8,
+        "price": "Free",
+        "weakness": "Broad car history tool, oil change is secondary feature"
+      }
     ],
     "differentiators": "Dedicated oil change + basic maintenance tracker. Mileage-based smart reminders. Price comparison for nearby oil change services. Simple, focused UX vs bloated car apps. OBD2 integration for automatic mileage tracking.",
-    "build_notes": "Simple local storage + notifications. Optional location API for nearby service shops. Very low complexity — could MVP in 2-3 weeks."
+    "build_notes": "Simple local storage + notifications. Optional location API for nearby service shops. Very low complexity \u2014 could MVP in 2-3 weeks."
   },
   {
     "name": "Concrete Calculator",
     "keyword": "concrete calculator app",
-    "tier": "Unlisted",
+    "tier": "Tier 1",
     "rank": 4,
     "money_score": 84,
     "market_opportunity": 90,
     "build_complexity": 2,
     "monetization_model": "Freemium ($3-5/month pro) + contractor tool upsells",
     "estimated_arpu": "$3-5/month",
-    "why_money": "Highest opportunity score on the list with the lowest build complexity — exceptional ROI. Construction professionals need quick calculations daily. Only 1 real competitor (Concrete Calculator Plus at 23.6K ratings) and several brand-specific apps with tiny user bases. 17 weak apps in top 25. Professionals will pay for reliability and accuracy. Can expand to full construction calculator suite.",
+    "why_money": "Highest opportunity score on the list with the lowest build complexity \u2014 exceptional ROI. Construction professionals need quick calculations daily. Only 1 real competitor (Concrete Calculator Plus at 23.6K ratings) and several brand-specific apps with tiny user bases. 17 weak apps in top 25. Professionals will pay for reliability and accuracy. Can expand to full construction calculator suite.",
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
@@ -96,24 +150,42 @@
     "weak_apps_in_top25": 17,
     "concentration_index": 0.88,
     "competitors": [
-      {"name": "Concrete Calculator Plus", "ratings": 23642, "stars": 4.8, "price": "Free + ads", "weakness": "Ad-supported, basic UI, no project management"},
-      {"name": "Concrete and Agg Calculator", "ratings": 37, "stars": 3.4, "price": "Free", "weakness": "Brand-locked (Chaney Enterprises), poor ratings"},
-      {"name": "Ozinga Concrete Calculator", "ratings": 18, "stars": 4.8, "price": "Free", "weakness": "Brand-locked, tiny audience"}
+      {
+        "name": "Concrete Calculator Plus",
+        "ratings": 23642,
+        "stars": 4.8,
+        "price": "Free + ads",
+        "weakness": "Ad-supported, basic UI, no project management"
+      },
+      {
+        "name": "Concrete and Agg Calculator",
+        "ratings": 37,
+        "stars": 3.4,
+        "price": "Free",
+        "weakness": "Brand-locked (Chaney Enterprises), poor ratings"
+      },
+      {
+        "name": "Ozinga Concrete Calculator",
+        "ratings": 18,
+        "stars": 4.8,
+        "price": "Free",
+        "weakness": "Brand-locked, tiny audience"
+      }
     ],
     "differentiators": "Modern UI with visual shape selector. Save/export project estimates. Support for various concrete types and mixes. Material cost estimation with local pricing. Expandable to full construction calculator suite (rebar, forms, etc.).",
-    "build_notes": "Pure math calculations — no API needed. Shape-based volume formulas. Could add local material pricing database. Extremely simple to build — 1-2 week MVP."
+    "build_notes": "Pure math calculations \u2014 no API needed. Shape-based volume formulas. Could add local material pricing database. Extremely simple to build \u2014 1-2 week MVP."
   },
   {
     "name": "Stress Level Tracker",
     "keyword": "stress level tracker",
-    "tier": "Unlisted",
+    "tier": "Tier 1",
     "rank": 5,
     "money_score": 82,
     "market_opportunity": 83,
     "build_complexity": 5,
     "monetization_model": "Subscription ($5-8/month) with free basic tier",
     "estimated_arpu": "$5-8/month",
-    "why_money": "Health & Fitness subscriptions have the highest retention rates. Mental health awareness is growing rapidly. Apple Watch HRV data integration creates a technical moat. Top competitor (StressWatch) has 17.3K ratings — room for differentiation. The market is fragmented (Gini 0.75) meaning no single dominant player.",
+    "why_money": "Health & Fitness subscriptions have the highest retention rates. Mental health awareness is growing rapidly. Apple Watch HRV data integration creates a technical moat. Top competitor (StressWatch) has 17.3K ratings \u2014 room for differentiation. The market is fragmented (Gini 0.75) meaning no single dominant player.",
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "MODERATE",
@@ -122,9 +194,27 @@
     "weak_apps_in_top25": 11,
     "concentration_index": 0.75,
     "competitors": [
-      {"name": "StressWatch: AI Stress Monitor", "ratings": 17370, "stars": 4.7, "price": "Free + $5/mo subscription", "weakness": "Watch-only focus, limited journaling/insights"},
-      {"name": "Stress Monitor for Watch", "ratings": 8758, "stars": 4.5, "price": "Free + IAP", "weakness": "Basic data display, no actionable recommendations"},
-      {"name": "MoodyWatch", "ratings": 134, "stars": 4.8, "price": "Free + subscription", "weakness": "Tiny user base, new entrant"}
+      {
+        "name": "StressWatch: AI Stress Monitor",
+        "ratings": 17370,
+        "stars": 4.7,
+        "price": "Free + $5/mo subscription",
+        "weakness": "Watch-only focus, limited journaling/insights"
+      },
+      {
+        "name": "Stress Monitor for Watch",
+        "ratings": 8758,
+        "stars": 4.5,
+        "price": "Free + IAP",
+        "weakness": "Basic data display, no actionable recommendations"
+      },
+      {
+        "name": "MoodyWatch",
+        "ratings": 134,
+        "stars": 4.8,
+        "price": "Free + subscription",
+        "weakness": "Tiny user base, new entrant"
+      }
     ],
     "differentiators": "Combine HRV data + mood journaling + AI-powered stress insights. Personalized breathing exercises triggered by stress spikes. Weekly stress reports with actionable tips. Corporate wellness angle for B2B.",
     "build_notes": "HealthKit/Apple Watch integration for HRV data. Chart/visualization library. AI/ML for stress pattern detection optional but differentiating. Medium complexity."
@@ -139,7 +229,7 @@
     "build_complexity": 2,
     "monetization_model": "One-time purchase ($2-4) or freemium with premium recipes",
     "estimated_arpu": "$2-4 one-time or $2/month",
-    "why_money": "GREAT opportunity with almost zero competition — the #1 competitor has 0 ratings and hasn't been updated since 2023. Specialty coffee enthusiasts are a passionate niche willing to pay for quality tools. The market is small (MODERATE demand) but you'd own it entirely. Low build cost means excellent ROI even with smaller revenue.",
+    "why_money": "GREAT opportunity with almost zero competition \u2014 the #1 competitor has 0 ratings and hasn't been updated since 2023. Specialty coffee enthusiasts are a passionate niche willing to pay for quality tools. The market is small (MODERATE demand) but you'd own it entirely. Low build cost means excellent ROI even with smaller revenue.",
     "opportunity_verdict": "GREAT OPPORTUNITY",
     "demand_level": "MODERATE",
     "supply_level": "VERY LOW",
@@ -148,24 +238,42 @@
     "weak_apps_in_top25": 19,
     "concentration_index": 0.92,
     "competitors": [
-      {"name": "Coffee brew timers", "ratings": 0, "stars": 0, "price": "Free", "weakness": "Zero ratings, abandoned since 2023"},
-      {"name": "Brew Timer - Coffee Recipes", "ratings": 54, "stars": 4.7, "price": "$2.99", "weakness": "Not updated since 2022, minimal features"},
-      {"name": "Brew Timer: Make Great Coffee", "ratings": 23, "stars": 4.4, "price": "Free", "weakness": "Basic functionality, small user base"}
+      {
+        "name": "Coffee brew timers",
+        "ratings": 0,
+        "stars": 0,
+        "price": "Free",
+        "weakness": "Zero ratings, abandoned since 2023"
+      },
+      {
+        "name": "Brew Timer - Coffee Recipes",
+        "ratings": 54,
+        "stars": 4.7,
+        "price": "$2.99",
+        "weakness": "Not updated since 2022, minimal features"
+      },
+      {
+        "name": "Brew Timer: Make Great Coffee",
+        "ratings": 23,
+        "stars": 4.4,
+        "price": "Free",
+        "weakness": "Basic functionality, small user base"
+      }
     ],
     "differentiators": "Beautiful timer UI with method-specific guides (V60, AeroPress, French Press, Chemex, etc.). Grind size recommendations. Water-to-coffee ratio calculator. Brew journal to save favorites. Apple Watch companion.",
-    "build_notes": "Simple timer + recipe database. No backend needed. Very low complexity — could build in 1-2 weeks. Content (brew guides) is the main investment."
+    "build_notes": "Simple timer + recipe database. No backend needed. Very low complexity \u2014 could build in 1-2 weeks. Content (brew guides) is the main investment."
   },
   {
     "name": "Co-parenting Schedule",
     "keyword": "co-parenting schedule",
-    "tier": "Unlisted",
+    "tier": "Tier 2",
     "rank": 7,
     "money_score": 76,
     "market_opportunity": 68,
     "build_complexity": 6,
-    "monetization_model": "Subscription ($10-15/month) — court-admissible records justify premium pricing",
+    "monetization_model": "Subscription ($10-15/month) \u2014 court-admissible records justify premium pricing",
     "estimated_arpu": "$10-15/month",
-    "why_money": "High willingness to pay — parents in custody situations often have court-mandated communication requirements. OurFamilyWizard charges $100/year and has 44.5K ratings. Court admissibility creates a strong value proposition. Despite HIGH supply, the top direct apps are highly concentrated (Gini 0.89) and 15 weak apps in top 25 shows fragmentation below the top 2.",
+    "why_money": "High willingness to pay \u2014 parents in custody situations often have court-mandated communication requirements. OurFamilyWizard charges $100/year and has 44.5K ratings. Court admissibility creates a strong value proposition. Despite HIGH supply, the top direct apps are highly concentrated (Gini 0.89) and 15 weak apps in top 25 shows fragmentation below the top 2.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -174,9 +282,27 @@
     "weak_apps_in_top25": 15,
     "concentration_index": 0.89,
     "competitors": [
-      {"name": "OurFamilyWizard", "ratings": 44492, "stars": 4.6, "price": "Free + $100/yr", "weakness": "Expensive, complex UI, corporate feel"},
-      {"name": "AppClose", "ratings": 37598, "stars": 4.7, "price": "Free + $15/mo premium", "weakness": "Broad co-parenting tool, schedule is just one feature"},
-      {"name": "Co-parenting: Shared Parenting", "ratings": 28, "stars": 4.6, "price": "Free + subscription", "weakness": "Brand new, tiny adoption"}
+      {
+        "name": "OurFamilyWizard",
+        "ratings": 44492,
+        "stars": 4.6,
+        "price": "Free + $100/yr",
+        "weakness": "Expensive, complex UI, corporate feel"
+      },
+      {
+        "name": "AppClose",
+        "ratings": 37598,
+        "stars": 4.7,
+        "price": "Free + $15/mo premium",
+        "weakness": "Broad co-parenting tool, schedule is just one feature"
+      },
+      {
+        "name": "Co-parenting: Shared Parenting",
+        "ratings": 28,
+        "stars": 4.6,
+        "price": "Free + subscription",
+        "weakness": "Brand new, tiny adoption"
+      }
     ],
     "differentiators": "Simpler, friendlier UX than OurFamilyWizard. Lower price point. Focus on schedule visualization with drag-and-drop. Expense tracking for child costs. Export court-ready reports. Less adversarial design language.",
     "build_notes": "Multi-user sync (Firebase/Supabase). Calendar UI with custody patterns. Messaging system. PDF report generation. Medium-high complexity due to real-time sync and legal compliance considerations."
@@ -191,7 +317,7 @@
     "build_complexity": 3,
     "monetization_model": "Freemium ($5-10/month pro) + material supplier partnerships",
     "estimated_arpu": "$5-10/month",
-    "why_money": "Trade professionals use these daily and will pay for accuracy. The top direct competitor (iRoofing) has only 40 ratings — the search results are dominated by generic calculators. 6 stale apps and 10 weak apps. Roofing contractors are a high-value B2B audience. Can expand to include supplier ordering integration.",
+    "why_money": "Trade professionals use these daily and will pay for accuracy. The top direct competitor (iRoofing) has only 40 ratings \u2014 the search results are dominated by generic calculators. 6 stale apps and 10 weak apps. Roofing contractors are a high-value B2B audience. Can expand to include supplier ordering integration.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -200,9 +326,27 @@
     "weak_apps_in_top25": 10,
     "concentration_index": 0.9,
     "competitors": [
-      {"name": "iRoofing Phone App", "ratings": 40, "stars": 4.5, "price": "Free", "weakness": "Tiny adoption, limited calculations"},
-      {"name": "Concrete Calculator Plus", "ratings": 23642, "stars": 4.8, "price": "Free + ads", "weakness": "Not roofing-specific, shows up due to keyword overlap"},
-      {"name": "Digits Tape Calculator", "ratings": 1104, "stars": 4.8, "price": "$1.99", "weakness": "Generic tape calculator, not trade-specific"}
+      {
+        "name": "iRoofing Phone App",
+        "ratings": 40,
+        "stars": 4.5,
+        "price": "Free",
+        "weakness": "Tiny adoption, limited calculations"
+      },
+      {
+        "name": "Concrete Calculator Plus",
+        "ratings": 23642,
+        "stars": 4.8,
+        "price": "Free + ads",
+        "weakness": "Not roofing-specific, shows up due to keyword overlap"
+      },
+      {
+        "name": "Digits Tape Calculator",
+        "ratings": 1104,
+        "stars": 4.8,
+        "price": "$1.99",
+        "weakness": "Generic tape calculator, not trade-specific"
+      }
     ],
     "differentiators": "Roof-specific: pitch calculator, square footage from measurements, material lists (shingles, underlayment, flashing, nails). Photo measurement with AR. Waste factor calculations. Job estimate PDF export.",
     "build_notes": "Math formulas + materials database. Optional AR measurement (ARKit). Low base complexity, medium if adding AR features."
@@ -210,14 +354,14 @@
   {
     "name": "Couples Budget",
     "keyword": "couples budget app",
-    "tier": "Unlisted",
+    "tier": "Tier 2",
     "rank": 9,
     "money_score": 72,
     "market_opportunity": 65,
     "build_complexity": 6,
     "monetization_model": "Subscription ($5-8/month)",
     "estimated_arpu": "$5-8/month",
-    "why_money": "Finance apps have strong monetization. Couples managing money together is a growing need. Honeydue (the top dedicated competitor) has only 9.9K ratings — the broader finance apps (Monarch at 85K) dominate search results but aren't couples-specific. Real opportunity to own the niche.",
+    "why_money": "Finance apps have strong monetization. Couples managing money together is a growing need. Honeydue (the top dedicated competitor) has only 9.9K ratings \u2014 the broader finance apps (Monarch at 85K) dominate search results but aren't couples-specific. Real opportunity to own the niche.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -226,9 +370,27 @@
     "weak_apps_in_top25": 8,
     "concentration_index": 0.74,
     "competitors": [
-      {"name": "Honeydue: Couples Finance", "ratings": 9935, "stars": 4.5, "price": "Free + premium", "weakness": "Not updated since Sep 2025, feature bloat"},
-      {"name": "Monarch Money", "ratings": 85111, "stars": 4.9, "price": "Free + $10/mo", "weakness": "Not couples-focused, general budgeting tool"},
-      {"name": "Goodbudget", "ratings": 13188, "stars": 4.6, "price": "Free + $8/mo", "weakness": "Envelope method only, not specifically for couples"}
+      {
+        "name": "Honeydue: Couples Finance",
+        "ratings": 9935,
+        "stars": 4.5,
+        "price": "Free + premium",
+        "weakness": "Not updated since Sep 2025, feature bloat"
+      },
+      {
+        "name": "Monarch Money",
+        "ratings": 85111,
+        "stars": 4.9,
+        "price": "Free + $10/mo",
+        "weakness": "Not couples-focused, general budgeting tool"
+      },
+      {
+        "name": "Goodbudget",
+        "ratings": 13188,
+        "stars": 4.6,
+        "price": "Free + $8/mo",
+        "weakness": "Envelope method only, not specifically for couples"
+      }
     ],
     "differentiators": "Built for two: split view showing each partner's spending. Shared goals (vacation, house). Fair split calculator (proportional to income). Date night budget category. Couples financial health score.",
     "build_notes": "Multi-user sync, bank integration (Plaid API adds cost and complexity), budget tracking, charts. Medium-high complexity."
@@ -236,14 +398,14 @@
   {
     "name": "Music Sight Reading",
     "keyword": "music sight reading app",
-    "tier": "Unlisted",
+    "tier": "Tier 2",
     "rank": 10,
     "money_score": 70,
     "market_opportunity": 72,
     "build_complexity": 7,
     "monetization_model": "Subscription ($5-8/month)",
     "estimated_arpu": "$5-8/month",
-    "why_money": "Music education is a proven subscription category. The market is smaller (HIGH not VERY HIGH demand) but dedicated. Top competitor Notevision has 3K ratings — reasonable traction but beatable. 4 stale apps and 95% mature apps indicate an aging competitive landscape.",
+    "why_money": "Music education is a proven subscription category. The market is smaller (HIGH not VERY HIGH demand) but dedicated. Top competitor Notevision has 3K ratings \u2014 reasonable traction but beatable. 4 stale apps and 95% mature apps indicate an aging competitive landscape.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "HIGH",
     "supply_level": "MODERATE",
@@ -252,9 +414,27 @@
     "weak_apps_in_top25": 12,
     "concentration_index": 0.79,
     "competitors": [
-      {"name": "Notevision - Sight Reading", "ratings": 3037, "stars": 4.8, "price": "Free + subscription", "weakness": "Limited to note identification, no full passage reading"},
-      {"name": "Music Tutor (Sight-reading)", "ratings": 2127, "stars": 4.2, "price": "Free + IAP", "weakness": "4.2 stars suggests UX issues, limited instruments"},
-      {"name": "Notes Teacher", "ratings": 9864, "stars": 4.8, "price": "Free + IAP", "weakness": "Not updated since 2021, likely abandoned"}
+      {
+        "name": "Notevision - Sight Reading",
+        "ratings": 3037,
+        "stars": 4.8,
+        "price": "Free + subscription",
+        "weakness": "Limited to note identification, no full passage reading"
+      },
+      {
+        "name": "Music Tutor (Sight-reading)",
+        "ratings": 2127,
+        "stars": 4.2,
+        "price": "Free + IAP",
+        "weakness": "4.2 stars suggests UX issues, limited instruments"
+      },
+      {
+        "name": "Notes Teacher",
+        "ratings": 9864,
+        "stars": 4.8,
+        "price": "Free + IAP",
+        "weakness": "Not updated since 2021, likely abandoned"
+      }
     ],
     "differentiators": "Progressive difficulty system. Multiple instruments (piano, guitar, violin, etc.). Real-time pitch detection via microphone. Rhythm training alongside note reading. Daily practice streaks.",
     "build_notes": "Sheet music rendering engine. Audio input processing for pitch detection. Progressive content generation. High complexity due to audio processing and music notation."
@@ -278,9 +458,27 @@
     "weak_apps_in_top25": 5,
     "concentration_index": 0.82,
     "competitors": [
-      {"name": "AnyList", "ratings": 77518, "stars": 4.9, "price": "Free + $12/yr", "weakness": "Premium features locked, recipe integration basic"},
-      {"name": "Our Groceries", "ratings": 80961, "stars": 4.8, "price": "Free + $8/yr", "weakness": "Functional but dated design"},
-      {"name": "Shopping List: Grocery To Do", "ratings": 27912, "stars": 4.8, "price": "Free + ads", "weakness": "Ad-supported, less polished"}
+      {
+        "name": "AnyList",
+        "ratings": 77518,
+        "stars": 4.9,
+        "price": "Free + $12/yr",
+        "weakness": "Premium features locked, recipe integration basic"
+      },
+      {
+        "name": "Our Groceries",
+        "ratings": 80961,
+        "stars": 4.8,
+        "price": "Free + $8/yr",
+        "weakness": "Functional but dated design"
+      },
+      {
+        "name": "Shopping List: Grocery To Do",
+        "ratings": 27912,
+        "stars": 4.8,
+        "price": "Free + ads",
+        "weakness": "Ad-supported, less polished"
+      }
     ],
     "differentiators": "AI-powered suggestions based on purchase history. Recipe-to-list conversion. Store aisle mapping. Price tracking across stores. Meal planning integration.",
     "build_notes": "List management, cloud sync for sharing, category organization. Medium complexity. Competing with well-established apps makes differentiation critical."
@@ -288,7 +486,7 @@
   {
     "name": "Baby Feeding Schedule",
     "keyword": "baby feeding schedule",
-    "tier": "Unlisted",
+    "tier": "Tier 2",
     "rank": 12,
     "money_score": 64,
     "market_opportunity": 60,
@@ -304,24 +502,42 @@
     "weak_apps_in_top25": 8,
     "concentration_index": 0.77,
     "competitors": [
-      {"name": "Huckleberry", "ratings": 59916, "stars": 4.9, "price": "Free + $5/mo", "weakness": "Subscription fatigue, some parents want simpler"},
-      {"name": "Baby Tracker - Newborn Log", "ratings": 227015, "stars": 4.8, "price": "Free + IAP", "weakness": "Feature-heavy, overwhelming for new parents"},
-      {"name": "Baby Feed Timer", "ratings": 23880, "stars": 4.9, "price": "Free + IAP", "weakness": "Narrow focus, no sleep/diaper integration"}
+      {
+        "name": "Huckleberry",
+        "ratings": 59916,
+        "stars": 4.9,
+        "price": "Free + $5/mo",
+        "weakness": "Subscription fatigue, some parents want simpler"
+      },
+      {
+        "name": "Baby Tracker - Newborn Log",
+        "ratings": 227015,
+        "stars": 4.8,
+        "price": "Free + IAP",
+        "weakness": "Feature-heavy, overwhelming for new parents"
+      },
+      {
+        "name": "Baby Feed Timer",
+        "ratings": 23880,
+        "stars": 4.9,
+        "price": "Free + IAP",
+        "weakness": "Narrow focus, no sleep/diaper integration"
+      }
     ],
-    "differentiators": "Simplified UX — one-tap logging. Smart schedule predictions. Partner sharing without accounts. Pediatrician-ready export reports. Widget for quick access.",
+    "differentiators": "Simplified UX \u2014 one-tap logging. Smart schedule predictions. Partner sharing without accounts. Pediatrician-ready export reports. Widget for quick access.",
     "build_notes": "Timer, logging, basic charts. Cloud sync for partner sharing. Medium-low complexity. The challenge is competing with very polished incumbents."
   },
   {
     "name": "Homework Tracker",
     "keyword": "homework tracker app",
-    "tier": "Unlisted",
+    "tier": "Tier 2",
     "rank": 13,
     "money_score": 62,
     "market_opportunity": 63,
     "build_complexity": 4,
     "monetization_model": "Freemium with premium ($2-4/month)",
     "estimated_arpu": "$2-4/month",
-    "why_money": "Large student market but low willingness to pay (students are price-sensitive). Top competitor Egenda hasn't been updated since 2018 — stale. 4 stale apps total. The market refreshes annually as new students join. Could monetize through school/district licensing (B2B2C).",
+    "why_money": "Large student market but low willingness to pay (students are price-sensitive). Top competitor Egenda hasn't been updated since 2018 \u2014 stale. 4 stale apps total. The market refreshes annually as new students join. Could monetize through school/district licensing (B2B2C).",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -330,9 +546,27 @@
     "weak_apps_in_top25": 6,
     "concentration_index": 0.91,
     "competitors": [
-      {"name": "Egenda - Homework Manager", "ratings": 3044, "stars": 4.7, "price": "Free", "weakness": "Not updated since 2018, likely abandoned"},
-      {"name": "School Assistant - Planner", "ratings": 4279, "stars": 4.8, "price": "Free + IAP", "weakness": "Broad school planner, homework tracking is secondary"},
-      {"name": "myHomework Student Planner", "ratings": 4312, "stars": 4.5, "price": "Free + premium", "weakness": "Dated design, limited modern features"}
+      {
+        "name": "Egenda - Homework Manager",
+        "ratings": 3044,
+        "stars": 4.7,
+        "price": "Free",
+        "weakness": "Not updated since 2018, likely abandoned"
+      },
+      {
+        "name": "School Assistant - Planner",
+        "ratings": 4279,
+        "stars": 4.8,
+        "price": "Free + IAP",
+        "weakness": "Broad school planner, homework tracking is secondary"
+      },
+      {
+        "name": "myHomework Student Planner",
+        "ratings": 4312,
+        "stars": 4.5,
+        "price": "Free + premium",
+        "weakness": "Dated design, limited modern features"
+      }
     ],
     "differentiators": "Modern Gen-Z friendly design. Photo capture of written assignments. AI-powered due date reminders. Class schedule integration. Study time tracking. Social features (study groups).",
     "build_notes": "Calendar, notifications, task management. Optional OCR for assignment photos. Medium complexity."
@@ -340,14 +574,14 @@
   {
     "name": "Daily Journal",
     "keyword": "daily journal app",
-    "tier": "Unlisted",
+    "tier": "Tier 2",
     "rank": 14,
     "money_score": 60,
     "market_opportunity": 58,
     "build_complexity": 4,
     "monetization_model": "Subscription ($3-5/month)",
     "estimated_arpu": "$3-5/month",
-    "why_money": "Journal apps have proven subscription models. But Day One (115.8K ratings, 4.8 stars) dominates the space completely. Low Gini (0.65) means the market is relatively spread out, but incumbents are all very strong — only 2 weak apps in top 25. Hard to differentiate enough to capture share.",
+    "why_money": "Journal apps have proven subscription models. But Day One (115.8K ratings, 4.8 stars) dominates the space completely. Low Gini (0.65) means the market is relatively spread out, but incumbents are all very strong \u2014 only 2 weak apps in top 25. Hard to differentiate enough to capture share.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -356,9 +590,27 @@
     "weak_apps_in_top25": 2,
     "concentration_index": 0.65,
     "competitors": [
-      {"name": "Day One", "ratings": 115816, "stars": 4.8, "price": "Free + $3/mo", "weakness": "Recent privacy concerns, increasingly complex"},
-      {"name": "DailyBean", "ratings": 68686, "stars": 4.8, "price": "Free + IAP", "weakness": "Very simple, may lack depth for serious journalers"},
-      {"name": "Diary With Password", "ratings": 26456, "stars": 4.7, "price": "Free + IAP", "weakness": "Security-focused, limited journaling features"}
+      {
+        "name": "Day One",
+        "ratings": 115816,
+        "stars": 4.8,
+        "price": "Free + $3/mo",
+        "weakness": "Recent privacy concerns, increasingly complex"
+      },
+      {
+        "name": "DailyBean",
+        "ratings": 68686,
+        "stars": 4.8,
+        "price": "Free + IAP",
+        "weakness": "Very simple, may lack depth for serious journalers"
+      },
+      {
+        "name": "Diary With Password",
+        "ratings": 26456,
+        "stars": 4.7,
+        "price": "Free + IAP",
+        "weakness": "Security-focused, limited journaling features"
+      }
     ],
     "differentiators": "Privacy-first (local-only encryption). AI-powered mood insights. Prompt suggestions. Beautiful minimalist design. Export to PDF book format.",
     "build_notes": "Rich text editor, photo support, local/cloud storage, encryption. Medium complexity. Main challenge is competing with Day One's polish."
@@ -366,7 +618,7 @@
   {
     "name": "Fuel Price Tracker",
     "keyword": "fuel price tracker",
-    "tier": "Tier 2",
+    "tier": "Tier 3",
     "rank": 15,
     "money_score": 55,
     "market_opportunity": 55,
@@ -382,9 +634,27 @@
     "weak_apps_in_top25": 14,
     "concentration_index": 0.85,
     "competitors": [
-      {"name": "GasBuddy", "ratings": 447311, "stars": 4.7, "price": "Free + GasBuddy+ $10/yr", "weakness": "Ads, Pay with GasBuddy has friction, bloated features"},
-      {"name": "Fuelly", "ratings": 28773, "stars": 4.7, "price": "Free + $6/yr", "weakness": "More of a mileage tracker than price finder"},
-      {"name": "FuelUp", "ratings": 75, "stars": 4.5, "price": "Free", "weakness": "New, tiny user base, data coverage unknown"}
+      {
+        "name": "GasBuddy",
+        "ratings": 447311,
+        "stars": 4.7,
+        "price": "Free + GasBuddy+ $10/yr",
+        "weakness": "Ads, Pay with GasBuddy has friction, bloated features"
+      },
+      {
+        "name": "Fuelly",
+        "ratings": 28773,
+        "stars": 4.7,
+        "price": "Free + $6/yr",
+        "weakness": "More of a mileage tracker than price finder"
+      },
+      {
+        "name": "FuelUp",
+        "ratings": 75,
+        "stars": 4.5,
+        "price": "Free",
+        "weakness": "New, tiny user base, data coverage unknown"
+      }
     ],
     "differentiators": "Hard to differentiate. Would need a unique angle: EV charging + gas hybrid, trip cost optimizer, fleet management for small businesses.",
     "build_notes": "Real-time fuel price data requires API ($$$) or crowdsourcing infrastructure. Location services, maps integration, background refresh. Very high complexity."
@@ -392,14 +662,14 @@
   {
     "name": "Trivia Quiz Maker",
     "keyword": "trivia quiz maker",
-    "tier": "Unlisted",
+    "tier": "Tier 3",
     "rank": 16,
     "money_score": 54,
     "market_opportunity": 55,
     "build_complexity": 5,
     "monetization_model": "Freemium + ad revenue",
     "estimated_arpu": "$1-3/month",
-    "why_money": "Entertainment/games category has high downloads but low willingness to pay for subscriptions. Ad-supported model is standard. QuizTime has 52.7K ratings showing market interest. But engagement and retention are challenges — quiz fatigue is real.",
+    "why_money": "Entertainment/games category has high downloads but low willingness to pay for subscriptions. Ad-supported model is standard. QuizTime has 52.7K ratings showing market interest. But engagement and retention are challenges \u2014 quiz fatigue is real.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -408,9 +678,27 @@
     "weak_apps_in_top25": 4,
     "concentration_index": 0.69,
     "competitors": [
-      {"name": "QuizTime - Trivia", "ratings": 52711, "stars": 4.5, "price": "Free + IAP", "weakness": "Play-focused, limited quiz creation tools"},
-      {"name": "Quiz Maker", "ratings": 647, "stars": 4.3, "price": "Free", "weakness": "Not updated since 2022, basic features"},
-      {"name": "That's so...Trivia", "ratings": 4378, "stars": 3.8, "price": "Free + IAP", "weakness": "Low ratings, niche Disney/pop culture focus"}
+      {
+        "name": "QuizTime - Trivia",
+        "ratings": 52711,
+        "stars": 4.5,
+        "price": "Free + IAP",
+        "weakness": "Play-focused, limited quiz creation tools"
+      },
+      {
+        "name": "Quiz Maker",
+        "ratings": 647,
+        "stars": 4.3,
+        "price": "Free",
+        "weakness": "Not updated since 2022, basic features"
+      },
+      {
+        "name": "That's so...Trivia",
+        "ratings": 4378,
+        "stars": 3.8,
+        "price": "Free + IAP",
+        "weakness": "Low ratings, niche Disney/pop culture focus"
+      }
     ],
     "differentiators": "AI-generated quiz suggestions. Social sharing and multiplayer. Custom quiz templates for teachers. Leaderboards and tournaments.",
     "build_notes": "Quiz creation UI, content database, sharing/multiplayer, leaderboards. Medium complexity."
@@ -418,14 +706,14 @@
   {
     "name": "Noise Cancellation App",
     "keyword": "noise cancellation app",
-    "tier": "Unlisted",
+    "tier": "Tier 3",
     "rank": 17,
     "money_score": 52,
     "market_opportunity": 55,
     "build_complexity": 7,
     "monetization_model": "Subscription ($3-5/month)",
     "estimated_arpu": "$3-5/month",
-    "why_money": "White Noise Lite (265K ratings) and Deep Sleep Sounds (201K ratings) dominate with enormous user bases. True noise cancellation requires hardware — apps can only do white noise/masking. The technical moat is low since sound libraries are commodity. Subscription fatigue in this category.",
+    "why_money": "White Noise Lite (265K ratings) and Deep Sleep Sounds (201K ratings) dominate with enormous user bases. True noise cancellation requires hardware \u2014 apps can only do white noise/masking. The technical moat is low since sound libraries are commodity. Subscription fatigue in this category.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -434,9 +722,27 @@
     "weak_apps_in_top25": 7,
     "concentration_index": 0.78,
     "competitors": [
-      {"name": "White Noise Lite", "ratings": 265408, "stars": 4.8, "price": "Free + $2 pro", "weakness": "Dated interface, basic sound library"},
-      {"name": "White Noise Deep Sleep Sounds", "ratings": 201182, "stars": 4.8, "price": "Free + subscription", "weakness": "Focused on sleep, not general noise cancellation"},
-      {"name": "Noise Reducer", "ratings": 3054, "stars": 4.5, "price": "Free + subscription", "weakness": "Actual noise reduction (call quality), different market"}
+      {
+        "name": "White Noise Lite",
+        "ratings": 265408,
+        "stars": 4.8,
+        "price": "Free + $2 pro",
+        "weakness": "Dated interface, basic sound library"
+      },
+      {
+        "name": "White Noise Deep Sleep Sounds",
+        "ratings": 201182,
+        "stars": 4.8,
+        "price": "Free + subscription",
+        "weakness": "Focused on sleep, not general noise cancellation"
+      },
+      {
+        "name": "Noise Reducer",
+        "ratings": 3054,
+        "stars": 4.5,
+        "price": "Free + subscription",
+        "weakness": "Actual noise reduction (call quality), different market"
+      }
     ],
     "differentiators": "AI-adaptive noise masking. Environmental sound detection. Focus/sleep/meditation modes. Mix custom soundscapes. Integration with HomePod/speakers.",
     "build_notes": "Audio processing, large sound library, background audio playback, audio session management. Medium-high complexity for quality audio processing."
@@ -444,14 +750,14 @@
   {
     "name": "ROI Calculator",
     "keyword": "roi calculator app",
-    "tier": "Unlisted",
+    "tier": "Tier 3",
     "rank": 18,
     "money_score": 48,
     "market_opportunity": 50,
     "build_complexity": 2,
     "monetization_model": "Free with ads or one-time purchase ($1-2)",
     "estimated_arpu": "$0.50-1/month",
-    "why_money": "Search results are dominated by generic calculator apps — not dedicated ROI tools. This means the keyword has demand but users are finding general calculators instead. Low differentiation potential. Calculator for iPad has 60.7K ratings. Building another calculator is easy but monetizing is very hard.",
+    "why_money": "Search results are dominated by generic calculator apps \u2014 not dedicated ROI tools. This means the keyword has demand but users are finding general calculators instead. Low differentiation potential. Calculator for iPad has 60.7K ratings. Building another calculator is easy but monetizing is very hard.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -460,9 +766,27 @@
     "weak_apps_in_top25": 6,
     "concentration_index": 0.88,
     "competitors": [
-      {"name": "Calculator for iPad!", "ratings": 60746, "stars": 4.7, "price": "Free + IAP", "weakness": "Generic calculator, not ROI-specific"},
-      {"name": "ClevCalc", "ratings": 11909, "stars": 4.7, "price": "Free", "weakness": "Generic multi-calculator, ROI is one of many"},
-      {"name": "Digits Tape Calculator", "ratings": 1104, "stars": 4.8, "price": "$1.99", "weakness": "Tape calculator, not financial analysis"}
+      {
+        "name": "Calculator for iPad!",
+        "ratings": 60746,
+        "stars": 4.7,
+        "price": "Free + IAP",
+        "weakness": "Generic calculator, not ROI-specific"
+      },
+      {
+        "name": "ClevCalc",
+        "ratings": 11909,
+        "stars": 4.7,
+        "price": "Free",
+        "weakness": "Generic multi-calculator, ROI is one of many"
+      },
+      {
+        "name": "Digits Tape Calculator",
+        "ratings": 1104,
+        "stars": 4.8,
+        "price": "$1.99",
+        "weakness": "Tape calculator, not financial analysis"
+      }
     ],
     "differentiators": "Dedicated ROI for real estate, stocks, business investments. Scenario comparison. Historical data tracking. Visual charts.",
     "build_notes": "Simple math formulas, basic UI. Very low complexity. But very low monetization potential."
@@ -470,14 +794,14 @@
   {
     "name": "pH Calculator",
     "keyword": "ph calculator app",
-    "tier": "Unlisted",
+    "tier": "Tier 3",
     "rank": 19,
     "money_score": 42,
     "market_opportunity": 45,
     "build_complexity": 2,
     "monetization_model": "Free with ads or one-time purchase ($1-2)",
     "estimated_arpu": "$0.50-1/month",
-    "why_money": "Search results return generic calculator apps — no dedicated pH calculator dominates. Very small actual niche (pool/aquarium/lab users). The keyword pulls in general calculator traffic inflating apparent demand. Real target audience is tiny. Low monetization in science/utility niche.",
+    "why_money": "Search results return generic calculator apps \u2014 no dedicated pH calculator dominates. Very small actual niche (pool/aquarium/lab users). The keyword pulls in general calculator traffic inflating apparent demand. Real target audience is tiny. Low monetization in science/utility niche.",
     "opportunity_verdict": "GOOD OPPORTUNITY",
     "demand_level": "VERY HIGH",
     "supply_level": "HIGH",
@@ -486,9 +810,27 @@
     "weak_apps_in_top25": 5,
     "concentration_index": 0.88,
     "competitors": [
-      {"name": "Calculator #", "ratings": 35592, "stars": 4.6, "price": "Free + IAP", "weakness": "Generic calculator, not pH-specific"},
-      {"name": "Calculator ∞", "ratings": 6215, "stars": 4.7, "price": "$5.99", "weakness": "Scientific calculator, pH is incidental"},
-      {"name": "ClevCalc", "ratings": 11909, "stars": 4.7, "price": "Free", "weakness": "Multi-tool calculator, no pH focus"}
+      {
+        "name": "Calculator #",
+        "ratings": 35592,
+        "stars": 4.6,
+        "price": "Free + IAP",
+        "weakness": "Generic calculator, not pH-specific"
+      },
+      {
+        "name": "Calculator \u221e",
+        "ratings": 6215,
+        "stars": 4.7,
+        "price": "$5.99",
+        "weakness": "Scientific calculator, pH is incidental"
+      },
+      {
+        "name": "ClevCalc",
+        "ratings": 11909,
+        "stars": 4.7,
+        "price": "Free",
+        "weakness": "Multi-tool calculator, no pH focus"
+      }
     ],
     "differentiators": "Dedicated pH/chemistry calculator with buffer calculations, dilution curves, and solution mixing. Could target pool/spa maintenance niche specifically.",
     "build_notes": "Simple chemistry formulas. Very low complexity but very limited market."
@@ -496,15 +838,15 @@
   {
     "name": "What Was Accomplished Today",
     "keyword": "daily accomplishment app",
-    "tier": "Unlisted",
+    "tier": "Tier 3",
     "rank": 20,
     "money_score": 40,
     "market_opportunity": 42,
     "build_complexity": 3,
     "monetization_model": "Freemium ($2-3/month)",
     "estimated_arpu": "$2-3/month",
-    "why_money": "COMPETITIVE verdict — both demand and supply are HIGH. Search results show powerful habit tracking apps (Strides at 18.8K ratings, 4.8 stars). A 'daily accomplishment' app is essentially a simplified habit tracker or journal — highly overlapping categories. Differentiation is very hard. Only 5 weak apps in top 25.",
-    "opportunity_verdict": "COMPETITIVE — differentiate to win",
+    "why_money": "COMPETITIVE verdict \u2014 both demand and supply are HIGH. Search results show powerful habit tracking apps (Strides at 18.8K ratings, 4.8 stars). A 'daily accomplishment' app is essentially a simplified habit tracker or journal \u2014 highly overlapping categories. Differentiation is very hard. Only 5 weak apps in top 25.",
+    "opportunity_verdict": "COMPETITIVE \u2014 differentiate to win",
     "demand_level": "HIGH",
     "supply_level": "HIGH",
     "total_ratings_all": 364321,
@@ -512,9 +854,27 @@
     "weak_apps_in_top25": 5,
     "concentration_index": 0.74,
     "competitors": [
-      {"name": "Strides: Habit Tracker + Goals", "ratings": 18852, "stars": 4.8, "price": "Free + $5/mo", "weakness": "Complex, more than just accomplishments"},
-      {"name": "Dear Me: Daily Routine Tracker", "ratings": 4190, "stars": 4.9, "price": "Free + subscription", "weakness": "Routine-focused, not accomplishment-focused"},
-      {"name": "Habit - Daily Tracker", "ratings": 2412, "stars": 3.7, "price": "Free + IAP", "weakness": "Low ratings, poor retention"}
+      {
+        "name": "Strides: Habit Tracker + Goals",
+        "ratings": 18852,
+        "stars": 4.8,
+        "price": "Free + $5/mo",
+        "weakness": "Complex, more than just accomplishments"
+      },
+      {
+        "name": "Dear Me: Daily Routine Tracker",
+        "ratings": 4190,
+        "stars": 4.9,
+        "price": "Free + subscription",
+        "weakness": "Routine-focused, not accomplishment-focused"
+      },
+      {
+        "name": "Habit - Daily Tracker",
+        "ratings": 2412,
+        "stars": 3.7,
+        "price": "Free + IAP",
+        "weakness": "Low ratings, poor retention"
+      }
     ],
     "differentiators": "Ultra-simple: just log what you did today. End-of-day reflection prompt. Weekly/monthly accomplishment summaries. Shareable accomplishment reports for managers/teams.",
     "build_notes": "Simple text input + list storage. Very low complexity but very hard to stand out in a crowded productivity space."
@@ -522,15 +882,15 @@
   {
     "name": "Rent vs Buy Calculator",
     "keyword": "rent vs buy calculator",
-    "tier": "Tier 1",
+    "tier": "Tier 3",
     "rank": 21,
     "money_score": 38,
     "market_opportunity": 40,
     "build_complexity": 3,
     "monetization_model": "Free with ads or affiliate (mortgage leads)",
     "estimated_arpu": "$1-2/month or affiliate leads",
-    "why_money": "COMPETITIVE verdict — the market is dominated by massive real estate platforms. Rent.com (205K ratings) and Zillow/Redfin pull the search results. The two direct rent-vs-buy calculators have only 3 ratings each, suggesting the keyword has demand but users end up in general real estate apps. Very high concentration (0.92 Gini). Mortgage affiliate leads could be lucrative but require significant traffic.",
-    "opportunity_verdict": "COMPETITIVE — differentiate to win",
+    "why_money": "COMPETITIVE verdict \u2014 the market is dominated by massive real estate platforms. Rent.com (205K ratings) and Zillow/Redfin pull the search results. The two direct rent-vs-buy calculators have only 3 ratings each, suggesting the keyword has demand but users end up in general real estate apps. Very high concentration (0.92 Gini). Mortgage affiliate leads could be lucrative but require significant traffic.",
+    "opportunity_verdict": "COMPETITIVE \u2014 differentiate to win",
     "demand_level": "VERY HIGH",
     "supply_level": "VERY HIGH",
     "total_ratings_all": 2865160,
@@ -538,11 +898,29 @@
     "weak_apps_in_top25": 10,
     "concentration_index": 0.92,
     "competitors": [
-      {"name": "Roby: Rent vs. Buy Calculator", "ratings": 3, "stars": 5.0, "price": "Free", "weakness": "Brand new, zero traction"},
-      {"name": "Buy vs. Rent Calculator", "ratings": 3, "stars": 4.0, "price": "Free", "weakness": "Not updated since 2018, abandoned"},
-      {"name": "Rent. Apartments and Homes", "ratings": 205146, "stars": 4.7, "price": "Free", "weakness": "Not a calculator — rental listing platform"}
+      {
+        "name": "Roby: Rent vs. Buy Calculator",
+        "ratings": 3,
+        "stars": 5.0,
+        "price": "Free",
+        "weakness": "Brand new, zero traction"
+      },
+      {
+        "name": "Buy vs. Rent Calculator",
+        "ratings": 3,
+        "stars": 4.0,
+        "price": "Free",
+        "weakness": "Not updated since 2018, abandoned"
+      },
+      {
+        "name": "Rent. Apartments and Homes",
+        "ratings": 205146,
+        "stars": 4.7,
+        "price": "Free",
+        "weakness": "Not a calculator \u2014 rental listing platform"
+      }
     ],
-    "differentiators": "Actually, the direct niche IS open — both dedicated calculators have only 3 ratings. But search results are pulled by real estate giants. Could succeed with excellent ASO and a genuinely useful calculator with local market data.",
+    "differentiators": "Actually, the direct niche IS open \u2014 both dedicated calculators have only 3 ratings. But search results are pulled by real estate giants. Could succeed with excellent ASO and a genuinely useful calculator with local market data.",
     "build_notes": "Financial formulas (mortgage amortization, tax benefits, opportunity cost). Low complexity. The challenge is marketing/ASO against real estate platform dominance."
   }
 ]
