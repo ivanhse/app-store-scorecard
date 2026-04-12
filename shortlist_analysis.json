@@ -41,7 +41,14 @@
       }
     ],
     "differentiators": "Clean offline database with 200+ countries, real-time policy alerts, passport-specific requirements, visa timeline estimator. No existing app does simple 'do I need a visa?' checks well \u2014 they all push visa processing services.",
-    "build_notes": "Static JSON lookup table (passport \u00d7 destination). No backend or API needed for MVP. Compile visa data once from government sources, ship as bundled data. The ongoing data maintenance is operational work, not engineering."
+    "build_notes": "Static JSON lookup table (passport \u00d7 destination). No backend or API needed for MVP. Compile visa data once from government sources, ship as bundled data. The ongoing data maintenance is operational work, not engineering.",
+    "pain_points": [
+      "Confusing visa requirements that differ by nationality and destination",
+      "Lengthy, error-prone government application forms",
+      "Uncertainty about whether a visa is even needed for a trip",
+      "Difficulty finding available embassy/consulate appointment slots",
+      "No single source to compare visa rules across countries"
+    ]
   },
   {
     "name": "Music Theory",
@@ -85,7 +92,14 @@
       }
     ],
     "differentiators": "Comprehensive curriculum from beginner to advanced. Interactive exercises with audio feedback. Progress tracking. Gamification. No current app combines theory lessons + ear training + notation exercises in one polished package.",
-    "build_notes": "Audio playback via AVAudioEngine/MIDI, music notation rendering (VexFlow or similar library). Significant content creation (lessons, exercises). No backend needed. Libraries handle the hard parts but integration is still substantial."
+    "build_notes": "Audio playback via AVAudioEngine/MIDI, music notation rendering (VexFlow or similar library). Significant content creation (lessons, exercises). No backend needed. Libraries handle the hard parts but integration is still substantial.",
+    "pain_points": [
+      "Can't read sheet music or identify notes on sight",
+      "Difficulty recognizing intervals, chords, and scales by ear",
+      "No structured curriculum to learn theory from scratch",
+      "Trouble connecting theory knowledge to actual instrument playing",
+      "Rhythm and timing weaknesses with no way to practice"
+    ]
   },
   {
     "name": "Oil Change Reminder",
@@ -129,7 +143,14 @@
       }
     ],
     "differentiators": "Dedicated oil change + basic maintenance tracker. Mileage-based smart reminders. Price comparison for nearby oil change services. Simple, focused UX vs bloated car apps. OBD2 integration for automatic mileage tracking.",
-    "build_notes": "Date/mileage tracker + local notifications. One data model (vehicle + service records). No API or backend needed."
+    "build_notes": "Date/mileage tracker + local notifications. One data model (vehicle + service records). No API or backend needed.",
+    "pain_points": [
+      "Forgetting when the next oil change is due",
+      "No centralized log of vehicle maintenance history",
+      "Not knowing which oil type/grade the car actually needs",
+      "Managing maintenance schedules across multiple vehicles",
+      "Getting upsold at service centers due to lack of knowledge"
+    ]
   },
   {
     "name": "Concrete Calculator",
@@ -173,7 +194,14 @@
       }
     ],
     "differentiators": "Modern UI with visual shape selector. Save/export project estimates. Support for various concrete types and mixes. Material cost estimation with local pricing. Expandable to full construction calculator suite (rebar, forms, etc.).",
-    "build_notes": "Pure math calculations \u2014 no API needed. Shape-based volume formulas. Could add local material pricing database. Extremely simple to build \u2014 1-2 week MVP."
+    "build_notes": "Pure math calculations \u2014 no API needed. Shape-based volume formulas. Could add local material pricing database. Extremely simple to build \u2014 1-2 week MVP.",
+    "pain_points": [
+      "Estimating cubic yards/bags needed for slabs, footings, columns",
+      "Over-ordering or under-ordering material (costly waste or delays)",
+      "Converting between imperial/metric measurements on job sites",
+      "Calculating material costs before starting a project",
+      "Accounting for waste, spillage, and over-excavation"
+    ]
   },
   {
     "name": "Stress Level Tracker",
@@ -217,7 +245,14 @@
       }
     ],
     "differentiators": "Combine HRV data + mood journaling + AI-powered stress insights. Personalized breathing exercises triggered by stress spikes. Weekly stress reports with actionable tips. Corporate wellness angle for B2B.",
-    "build_notes": "HealthKit API for HRV/heart rate (well-documented). Mood logging UI. Basic charting library. No ML needed for MVP \u2014 show trends and correlations."
+    "build_notes": "HealthKit API for HRV/heart rate (well-documented). Mood logging UI. Basic charting library. No ML needed for MVP \u2014 show trends and correlations.",
+    "pain_points": [
+      "Not aware of stress levels until physical symptoms appear",
+      "No objective measurement \u2014 only subjective feeling",
+      "Can't correlate stress patterns with daily activities or sleep",
+      "Difficulty building consistent stress-reducing habits",
+      "Apple Watch collects HRV data but no app to interpret it meaningfully"
+    ]
   },
   {
     "name": "Coffee Brew Timer",
@@ -261,7 +296,14 @@
       }
     ],
     "differentiators": "Beautiful timer UI with method-specific guides (V60, AeroPress, French Press, Chemex, etc.). Grind size recommendations. Water-to-coffee ratio calculator. Brew journal to save favorites. Apple Watch companion.",
-    "build_notes": "Simple timer + recipe database. No backend needed. Very low complexity \u2014 could build in 1-2 weeks. Content (brew guides) is the main investment."
+    "build_notes": "Simple timer + recipe database. No backend needed. Very low complexity \u2014 could build in 1-2 weeks. Content (brew guides) is the main investment.",
+    "pain_points": [
+      "Inconsistent coffee quality \u2014 can't replicate a great cup",
+      "Wrong water-to-coffee ratios for different brew methods",
+      "Forgetting the exact timing and pour schedule that worked",
+      "No guided step-by-step process for pour-over, French press, etc.",
+      "Tracking which beans and recipes produce the best results"
+    ]
   },
   {
     "name": "Co-parenting Schedule",
@@ -305,7 +347,14 @@
       }
     ],
     "differentiators": "Simpler, friendlier UX than OurFamilyWizard. Lower price point. Focus on schedule visualization with drag-and-drop. Expense tracking for child costs. Export court-ready reports. Less adversarial design language.",
-    "build_notes": "Calendar UI with repeating custody patterns. Firebase/CloudKit for multi-user sync. Messaging is optional for MVP \u2014 start with shared calendar only."
+    "build_notes": "Calendar UI with repeating custody patterns. Firebase/CloudKit for multi-user sync. Messaging is optional for MVP \u2014 start with shared calendar only.",
+    "pain_points": [
+      "Custody schedule miscommunication between separated parents",
+      "Tracking shared expenses and who owes what",
+      "Need for court-admissible documentation of communication",
+      "Coordinating pickups, drop-offs, and schedule swaps",
+      "Reducing conflict by keeping all parenting communication in one place"
+    ]
   },
   {
     "name": "Roofing Calculator",
@@ -349,7 +398,14 @@
       }
     ],
     "differentiators": "Roof-specific: pitch calculator, square footage from measurements, material lists (shingles, underlayment, flashing, nails). Photo measurement with AR. Waste factor calculations. Job estimate PDF export.",
-    "build_notes": "Math formulas + materials database. Optional AR measurement (ARKit). Low base complexity, medium if adding AR features."
+    "build_notes": "Math formulas + materials database. Optional AR measurement (ARKit). Low base complexity, medium if adding AR features.",
+    "pain_points": [
+      "Estimating roof area and materials without climbing on the roof",
+      "Calculating pitch, slope, and angles for accurate measurements",
+      "Generating professional estimates and reports for clients",
+      "Managing roofing jobs, scheduling, and contractor workflows",
+      "Quickly pricing materials (shingles, underlayment, flashing) on site"
+    ]
   },
   {
     "name": "Couples Budget",
@@ -393,7 +449,14 @@
       }
     ],
     "differentiators": "Built for two: split view showing each partner's spending. Shared goals (vacation, house). Fair split calculator (proportional to income). Date night budget category. Couples financial health score.",
-    "build_notes": "Shared budget tracker with Firebase sync. No bank integration (Plaid) needed for MVP \u2014 manual entry. Charts and categories. Similar to a standard budgeting app with two-user sync."
+    "build_notes": "Shared budget tracker with Firebase sync. No bank integration (Plaid) needed for MVP \u2014 manual entry. Charts and categories. Similar to a standard budgeting app with two-user sync.",
+    "pain_points": [
+      "No shared visibility into partner's spending and accounts",
+      "Arguments about money due to lack of transparency",
+      "Difficulty splitting shared bills and tracking who paid what",
+      "No joint budgeting tool \u2014 existing apps are single-user",
+      "Can't track progress toward shared financial goals (house, vacation)"
+    ]
   },
   {
     "name": "Music Sight Reading",
@@ -437,7 +500,14 @@
       }
     ],
     "differentiators": "Progressive difficulty system. Multiple instruments (piano, guitar, violin, etc.). Real-time pitch detection via microphone. Rhythm training alongside note reading. Daily practice streaks.",
-    "build_notes": "Music notation rendering + audio input for pitch detection (AudioKit library). Progressive exercise generation. Similar technical stack to Music Theory app."
+    "build_notes": "Music notation rendering + audio input for pitch detection (AudioKit library). Progressive exercise generation. Similar technical stack to Music Theory app.",
+    "pain_points": [
+      "Slow at identifying notes on the staff under time pressure",
+      "No way to practice reading music without a teacher present",
+      "Gap between knowing theory and being able to play on sight",
+      "Limited sight-reading exercises for specific instruments or clefs",
+      "Can't track progress or see improvement over time"
+    ]
   },
   {
     "name": "Grocery List App",
@@ -481,7 +551,14 @@
       }
     ],
     "differentiators": "AI-powered suggestions based on purchase history. Recipe-to-list conversion. Store aisle mapping. Price tracking across stores. Meal planning integration.",
-    "build_notes": "Shared list with CloudKit or Firebase. Category auto-sort. Standard CRUD app with real-time sync \u2014 well-solved problem with many tutorials and templates."
+    "build_notes": "Shared list with CloudKit or Firebase. Category auto-sort. Standard CRUD app with real-time sync \u2014 well-solved problem with many tutorials and templates.",
+    "pain_points": [
+      "Forgetting items \u2014 returning from store without essentials",
+      "No shared list between family members or roommates",
+      "Disorganized lists that don't group items by store aisle",
+      "Can't quickly add items or reuse frequent purchases",
+      "Paper lists get lost, damaged, or left at home"
+    ]
   },
   {
     "name": "Baby Feeding Schedule",
@@ -525,7 +602,14 @@
       }
     ],
     "differentiators": "Simplified UX \u2014 one-tap logging. Smart schedule predictions. Partner sharing without accounts. Pediatrician-ready export reports. Widget for quick access.",
-    "build_notes": "Timer + logging with timestamps. Basic charts (daily/weekly summaries). Optional CloudKit sync for partner. Simple data model."
+    "build_notes": "Timer + logging with timestamps. Basic charts (daily/weekly summaries). Optional CloudKit sync for partner. Simple data model.",
+    "pain_points": [
+      "Sleep-deprived parents can't remember which side they last nursed on",
+      "No log of feeding times, durations, and amounts for pediatrician visits",
+      "Difficulty establishing a consistent feeding routine for newborns",
+      "Tracking bottle vs. breast, pumping sessions, and milk storage",
+      "Multiple caregivers need to sync on baby's feeding status"
+    ]
   },
   {
     "name": "Homework Tracker",
@@ -569,7 +653,14 @@
       }
     ],
     "differentiators": "Modern Gen-Z friendly design. Photo capture of written assignments. AI-powered due date reminders. Class schedule integration. Study time tracking. Social features (study groups).",
-    "build_notes": "Todo list with due dates, class categories, and local notifications. Standard task management pattern. No backend needed."
+    "build_notes": "Todo list with due dates, class categories, and local notifications. Standard task management pattern. No backend needed.",
+    "pain_points": [
+      "Forgetting assignments and due dates across multiple classes",
+      "No clear daily view of what's due today vs. this week",
+      "Difficulty prioritizing tasks when overwhelmed with schoolwork",
+      "Paper planners get lost or aren't always accessible",
+      "Parents can't see what homework their child has pending"
+    ]
   },
   {
     "name": "Daily Journal",
@@ -613,7 +704,14 @@
       }
     ],
     "differentiators": "Privacy-first (local-only encryption). AI-powered mood insights. Prompt suggestions. Beautiful minimalist design. Export to PDF book format.",
-    "build_notes": "Text editor with photo attachment. Local storage (Core Data or SwiftData). Date-based entries. Optional iCloud sync. Very standard pattern."
+    "build_notes": "Text editor with photo attachment. Local storage (Core Data or SwiftData). Date-based entries. Optional iCloud sync. Very standard pattern.",
+    "pain_points": [
+      "Want to journal but find it too time-consuming to write every day",
+      "No structured prompts to overcome blank-page anxiety",
+      "Can't look back and track emotional patterns over time",
+      "Privacy concerns \u2014 need password/lock protection for entries",
+      "Existing note apps lack journaling features (streaks, mood, photos)"
+    ]
   },
   {
     "name": "Fuel Price Tracker",
@@ -657,7 +755,14 @@
       }
     ],
     "differentiators": "Hard to differentiate. Would need a unique angle: EV charging + gas hybrid, trip cost optimizer, fleet management for small businesses.",
-    "build_notes": "Fuel price API integration + MapKit for station display + location services. Standard API-to-map pattern."
+    "build_notes": "Fuel price API integration + MapKit for station display + location services. Standard API-to-map pattern.",
+    "pain_points": [
+      "Price differences of 40+ cents/litre between nearby stations",
+      "No real-time visibility into which station is cheapest right now",
+      "Can't track personal fuel spending and mileage efficiency",
+      "Missing the cheapest window to fill up (prices change daily)",
+      "No alerts when nearby prices drop below a threshold"
+    ]
   },
   {
     "name": "Trivia Quiz Maker",
@@ -701,7 +806,14 @@
       }
     ],
     "differentiators": "AI-generated quiz suggestions. Social sharing and multiplayer. Custom quiz templates for teachers. Leaderboards and tournaments.",
-    "build_notes": "Form builder for quiz creation, display engine for taking quizzes, local storage or share via link. No multiplayer or backend needed for MVP."
+    "build_notes": "Form builder for quiz creation, display engine for taking quizzes, local storage or share via link. No multiplayer or backend needed for MVP.",
+    "pain_points": [
+      "Teachers and presenters need custom quizzes but tools are clunky",
+      "Can't easily create and share quizzes with friends or students",
+      "Limited question formats \u2014 need photos, audio, and multiple types",
+      "No way to host live trivia events from a phone",
+      "Existing quiz apps have fixed content \u2014 can't add own questions"
+    ]
   },
   {
     "name": "Noise Cancellation App",
@@ -745,7 +857,14 @@
       }
     ],
     "differentiators": "AI-adaptive noise masking. Environmental sound detection. Focus/sleep/meditation modes. Mix custom soundscapes. Integration with HomePod/speakers.",
-    "build_notes": "Audio file playback in background mode (AVAudioSession). Ship a sound library (rain, white noise, brown noise, etc.). No DSP or signal processing \u2014 just play audio files. Standard media player pattern."
+    "build_notes": "Audio file playback in background mode (AVAudioSession). Ship a sound library (rain, white noise, brown noise, etc.). No DSP or signal processing \u2014 just play audio files. Standard media player pattern.",
+    "pain_points": [
+      "Background noise ruins audio/video recordings",
+      "Can't clean up recorded interviews, podcasts, or voice memos",
+      "Need white/brown noise for sleep or focus but don't want hardware",
+      "No way to isolate vocals or remove specific noise frequencies",
+      "Existing tools are desktop-only \u2014 need mobile noise reduction"
+    ]
   },
   {
     "name": "Rent vs Buy Calculator",
@@ -789,7 +908,14 @@
       }
     ],
     "differentiators": "Actually, the direct niche IS open \u2014 both dedicated calculators have only 3 ratings. But search results are pulled by real estate giants. Could succeed with excellent ASO and a genuinely useful calculator with local market data.",
-    "build_notes": "Financial formulas (mortgage amortization, tax benefits, opportunity cost). Low complexity. The challenge is marketing/ASO against real estate platform dominance."
+    "build_notes": "Financial formulas (mortgage amortization, tax benefits, opportunity cost). Low complexity. The challenge is marketing/ASO against real estate platform dominance.",
+    "pain_points": [
+      "Family says buying is always better but the math doesn't add up",
+      "Can't factor in all hidden costs (taxes, insurance, maintenance, opportunity cost)",
+      "No way to compare total cost of renting vs. buying over 5-30 years",
+      "Difficulty understanding how interest rates affect affordability",
+      "Need to know break-even point \u2014 how long until buying pays off"
+    ]
   },
   {
     "name": "ROI Calculator",
@@ -833,7 +959,14 @@
       }
     ],
     "differentiators": "Dedicated ROI for real estate, stocks, business investments. Scenario comparison. Historical data tracking. Visual charts.",
-    "build_notes": "Simple math formulas, basic UI. Very low complexity. But very low monetization potential."
+    "build_notes": "Simple math formulas, basic UI. Very low complexity. But very low monetization potential.",
+    "pain_points": [
+      "Can't quickly calculate return on investment for deals or projects",
+      "No annualized ROI \u2014 raw percentage doesn't account for time",
+      "Need cash-on-cash return for real estate investment decisions",
+      "Comparing ROI across different investment opportunities",
+      "Complex financial formulas that are hard to remember and compute"
+    ]
   },
   {
     "name": "pH Calculator",
@@ -877,7 +1010,14 @@
       }
     ],
     "differentiators": "Dedicated pH/chemistry calculator with buffer calculations, dilution curves, and solution mixing. Could target pool/spa maintenance niche specifically.",
-    "build_notes": "Simple chemistry formulas. Very low complexity but very limited market."
+    "build_notes": "Simple chemistry formulas. Very low complexity but very limited market.",
+    "pain_points": [
+      "Calculating pH of mixed solutions in lab or field settings",
+      "No quick reference for pH values and their practical meaning",
+      "Converting between pH, pOH, and hydrogen ion concentration",
+      "Pool/aquarium owners need pH calculations without chemistry knowledge",
+      "Students need a tool for chemistry homework and lab work"
+    ]
   },
   {
     "name": "What Was Accomplished Today",
@@ -921,6 +1061,13 @@
       }
     ],
     "differentiators": "Ultra-simple: just log what you did today. End-of-day reflection prompt. Weekly/monthly accomplishment summaries. Shareable accomplishment reports for managers/teams.",
-    "build_notes": "Text input + list display + local storage. Daily reset. About as simple as an app can get."
+    "build_notes": "Text input + list display + local storage. Daily reset. About as simple as an app can get.",
+    "pain_points": [
+      "End the day feeling unproductive despite actually getting things done",
+      "No record of small wins \u2014 only focus on what's left undone",
+      "Difficulty maintaining motivation without visible progress",
+      "Existing habit trackers focus on inputs, not accomplishments",
+      "Can't look back at what was achieved over weeks or months"
+    ]
   }
 ]

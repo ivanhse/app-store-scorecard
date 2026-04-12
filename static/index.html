@@ -490,25 +490,8 @@
 
   <div id="shortlist-results"><div class="loading"><div class="spinner"></div>Loading shortlist analysis...</div></div>
 
-  <!-- App Types Explorer: top 10 app names for all 1000 keywords -->
-  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-top:24px">
-    <h3 style="font-size:16px;margin-bottom:6px">App Types Explorer</h3>
-    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px">
-      What types of apps actually rank in the top 10 for each keyword? Browse all 1,000 keywords to see the competitive landscape at a glance.
-    </p>
-    <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
-      <input type="text" id="appTypesSearch" placeholder="Search keywords..." oninput="renderAppTypes()" style="flex:1;min-width:200px;padding:8px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px">
-      <select id="appTypesVerdict" onchange="renderAppTypes()" style="padding:8px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px">
-        <option value="all">All Verdicts</option>
-        <option value="great">GREAT only</option>
-        <option value="good">GOOD only</option>
-        <option value="great+good">GREAT + GOOD</option>
-        <option value="competitive">COMPETITIVE</option>
-      </select>
-      <span id="appTypesCount" style="font-size:12px;color:var(--muted);align-self:center"></span>
-    </div>
-    <div id="app-types-results"><div class="loading"><div class="spinner"></div>Loading app types...</div></div>
-  </div>
+  <!-- Pain Points: what problems each shortlisted app solves -->
+  <div id="shortlist-pain-points"></div>
 </div>
 
 <div class="page" id="page-analyzer">
@@ -549,7 +532,6 @@ function switchPage(name) {
   if (name === 'opportunities' && !oppLoaded) loadOpportunities();
   if (name === 'research' && !researchLoaded) loadResearch();
   if (name === 'shortlist' && !shortlistLoaded) loadShortlist();
-  if (name === 'shortlist' && !appTypesLoaded) loadAppTypes();
 }
 
 async function addCustomOpportunities() {
@@ -922,6 +904,7 @@ function renderShortlist() {
 
   // Render scatter chart
   setTimeout(() => renderShortlistChart(sorted), 100);
+  renderPainPoints();
 }
 
 function renderShortlistChart(sorted) {
@@ -1042,72 +1025,37 @@ function renderShortlistChart(sorted) {
   });
 }
 
-// --- App Types Explorer (loaded alongside shortlist) ---
-let appTypesData = [];
-let appTypesLoaded = false;
+// --- Pain Points (rendered as part of shortlist) ---
+function renderPainPoints() {
+  const container = document.getElementById('shortlist-pain-points');
+  if (!container || !shortlistData.length) return;
 
-async function loadAppTypes() {
-  if (appTypesLoaded) return;
-  appTypesLoaded = true;
-  try {
-    const resp = await fetch('/api/research?tier=all');
-    appTypesData = await resp.json();
-    if (appTypesData.error) throw new Error(appTypesData.error);
-    renderAppTypes();
-  } catch (e) {
-    document.getElementById('app-types-results').innerHTML =
-      `<div class="loading" style="color:var(--red)">Error loading app types: ${e.message}</div>`;
-    appTypesLoaded = false;
-  }
-}
+  const items = shortlistData.filter(d => d.pain_points && d.pain_points.length > 0);
+  if (!items.length) return;
 
-function renderAppTypes() {
-  const container = document.getElementById('app-types-results');
-  const search = (document.getElementById('appTypesSearch').value || '').toLowerCase().trim();
-  const verdict = document.getElementById('appTypesVerdict').value;
+  const sorted = [...items].sort((a, b) => b.money_score - a.money_score);
 
-  let items = appTypesData.filter(r => !r.error && r.top_10_names && r.top_10_names.length > 0);
+  let html = '<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-top:24px">';
+  html += '<h3 style="font-size:16px;margin-bottom:6px">Top Pain Points by App</h3>';
+  html += '<p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:16px">Key user problems each shortlisted app solves, derived from analyzing top 10 competitor descriptions.</p>';
+  html += '<div style="display:grid;gap:10px">';
 
-  if (verdict === 'great') items = items.filter(r => (r.opportunity || '').includes('GREAT'));
-  else if (verdict === 'good') items = items.filter(r => (r.opportunity || '').includes('GOOD') && !(r.opportunity || '').includes('GREAT'));
-  else if (verdict === 'great+good') items = items.filter(r => (r.opportunity || '').includes('GREAT') || (r.opportunity || '').includes('GOOD'));
-  else if (verdict === 'competitive') items = items.filter(r => (r.opportunity || '').includes('COMPETITIVE'));
+  sorted.forEach(d => {
+    const oppClass = opportunityClass(d.opportunity_verdict || '');
+    const bullets = d.pain_points.map(p => `<li style="margin-bottom:4px;color:var(--text);font-size:12px;line-height:1.5">${p}</li>`).join('');
 
-  if (search) {
-    items = items.filter(r =>
-      r.keyword.toLowerCase().includes(search) ||
-      (r.top_10_names || []).some(n => n.toLowerCase().includes(search))
-    );
-  }
-
-  // Sort by score descending
-  items.sort((a, b) => (b.score || 0) - (a.score || 0));
-
-  document.getElementById('appTypesCount').textContent = `${items.length} keywords`;
-
-  if (items.length === 0) {
-    container.innerHTML = '<p style="color:var(--muted);font-size:13px;padding:10px">No keywords with app type data found. Run <code>python enrich_app_types.py</code> to fetch top 10 app names.</p>';
-    return;
-  }
-
-  let html = '<div style="display:grid;gap:10px">';
-  items.forEach(r => {
-    const oppClass = opportunityClass(r.opportunity || '');
-    const names = r.top_10_names || [];
-    const bullets = names.map(n => `<span style="display:inline-block;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:11px;color:var(--text);white-space:nowrap">${n}</span>`).join(' ');
-
-    html += `<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px">`;
+    html += `<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 18px">`;
     html += `<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">`;
-    html += `<span style="font-weight:700;font-size:14px;color:var(--text)">${r.keyword}</span>`;
-    html += `<span style="font-size:11px;font-weight:600;color:var(--muted)">[${r.score}]</span>`;
-    html += `<span class="opportunity-badge ${oppClass}" style="font-size:10px;white-space:nowrap">${r.opportunity}</span>`;
-    html += `<span style="font-size:11px;color:var(--blue)">${r.demand_level}</span>`;
-    html += `<span style="font-size:11px;color:var(--red)">${r.supply_level}</span>`;
+    html += `<span style="font-weight:700;font-size:14px;color:var(--text)">${d.name}</span>`;
+    html += `<span class="tag tier-tag">${d.tier}</span>`;
+    html += `<span class="opportunity-badge ${oppClass}" style="font-size:10px">${d.opportunity_verdict}</span>`;
+    html += `<span style="font-size:11px;color:var(--muted)">Money: ${d.money_score} · Complexity: ${d.build_complexity}</span>`;
     html += `</div>`;
-    html += `<div style="display:flex;flex-wrap:wrap;gap:4px">${bullets}</div>`;
+    html += `<ul style="margin:0;padding-left:18px">${bullets}</ul>`;
     html += `</div>`;
   });
-  html += '</div>';
+
+  html += '</div></div>';
   container.innerHTML = html;
 }
 
