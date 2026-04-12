@@ -97,20 +97,7 @@
   .page { display: none; }
   .page.visible { display: block; }
 
-  /* Theme tag on opportunity cards */
-  .theme-tag {
-    display: inline-block; padding: 2px 8px; border-radius: 4px;
-    font-size: 10px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase;
-    background: rgba(108,92,231,.15); color: var(--accent); margin-left: 8px;
-    vertical-align: middle;
-  }
-  .opp-group-label {
-    font-size: 11px; text-transform: uppercase; letter-spacing: .5px;
-    color: var(--muted); margin: 20px 0 10px; font-weight: 600;
-  }
-  .opp-group-label:first-child { margin-top: 0; }
-
-  /* Opportunities toolbar */
+  /* Toolbar */
   .opp-toolbar {
     display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: flex-end;
   }
@@ -298,93 +285,9 @@
 <p class="subtitle">Demand vs Supply analysis from real App Store data</p>
 
 <div class="tabs">
-  <button class="tab active" onclick="switchPage('opportunities')">Opportunities</button>
+  <button class="tab active" onclick="switchPage('analyzer')">Analyzer</button>
   <button class="tab" onclick="switchPage('research')">Research (1,000)</button>
   <button class="tab" onclick="switchPage('shortlist')">Shortlist Analysis</button>
-  <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
-</div>
-
-<div class="page visible" id="page-opportunities">
-  <p class="subtitle" style="margin-bottom:16px">
-    Curated keyword candidates from the mobile-apps brainstorm research, scored through the
-    same Demand vs Supply framework and ordered by opportunity.
-  </p>
-  <div class="search-bar">
-    <input type="text" id="oppCustomKeywords" placeholder="Add custom keywords (comma separated) — scored and merged into the list" />
-    <button id="oppAddBtn" onclick="addCustomOpportunities()">Add</button>
-  </div>
-
-  <div class="opp-toolbar" id="opp-toolbar" style="display:none">
-    <div class="ctrl-group">
-      <label>Sort by</label>
-      <select id="oppSortBy" onchange="applyOppFilters()">
-        <option value="opportunity">Opportunity tier</option>
-        <option value="demand">Demand level</option>
-        <option value="avg_reviews">Avg ratings (top 10)</option>
-        <option value="weak_apps">Weak apps in top 10</option>
-        <option value="max_reviews">#1 app ratings</option>
-        <option value="min_reviews">Weakest top-10 ratings</option>
-        <option value="gini">Concentration (Gini)</option>
-        <option value="meta_cpi">Est. CPI — Meta</option>
-        <option value="google_cpi">Est. CPI — Google</option>
-        <option value="mature_pct">Mature apps %</option>
-        <option value="theme">Theme</option>
-      </select>
-    </div>
-    <div class="ctrl-group">
-      <label>Order</label>
-      <select id="oppSortDir" onchange="applyOppFilters()">
-        <option value="desc">High → Low</option>
-        <option value="asc">Low → High</option>
-      </select>
-    </div>
-    <div class="ctrl-group">
-      <label>Min demand</label>
-      <select id="oppMinDemand" onchange="applyOppFilters()">
-        <option value="">Any</option>
-        <option value="1">LOW+</option>
-        <option value="2">MODERATE+</option>
-        <option value="3">HIGH+</option>
-        <option value="4">VERY HIGH</option>
-      </select>
-    </div>
-    <div class="ctrl-group">
-      <label>Max supply</label>
-      <select id="oppMaxSupply" onchange="applyOppFilters()">
-        <option value="">Any</option>
-        <option value="4">VERY HIGH</option>
-        <option value="3">HIGH</option>
-        <option value="2">MODERATE</option>
-        <option value="1">LOW</option>
-        <option value="0">VERY LOW</option>
-      </select>
-    </div>
-    <div class="ctrl-group">
-      <label>Max avg ratings</label>
-      <input type="number" id="oppMaxAvgReviews" placeholder="e.g. 50000" onchange="applyOppFilters()" />
-    </div>
-    <div class="ctrl-group">
-      <label>Min weak apps</label>
-      <input type="number" id="oppMinWeakApps" placeholder="e.g. 5" min="0" max="10" onchange="applyOppFilters()" />
-    </div>
-    <div class="ctrl-group">
-      <label>Max CPI (Meta)</label>
-      <input type="number" id="oppMaxMetaCpi" placeholder="e.g. 4.00" step="0.5" onchange="applyOppFilters()" />
-    </div>
-    <div class="ctrl-group">
-      <label>Theme</label>
-      <select id="oppThemeFilter" onchange="applyOppFilters()">
-        <option value="">All</option>
-      </select>
-    </div>
-    <div class="ctrl-group">
-      <label>&nbsp;</label>
-      <button class="reset-btn" onclick="resetOppFilters()">Reset</button>
-    </div>
-  </div>
-  <div class="opp-filter-count" id="opp-filter-count"></div>
-
-  <div id="opp-results"><div class="loading"><div class="spinner"></div>Loading curated list — running 30 keywords through the framework (~60s)...</div></div>
 </div>
 
 <div class="page" id="page-research">
@@ -494,7 +397,7 @@
   <div id="shortlist-pain-points"></div>
 </div>
 
-<div class="page" id="page-analyzer">
+<div class="page visible" id="page-analyzer">
   <div class="search-bar">
     <input type="text" id="keywords" placeholder="Enter keywords separated by commas — e.g. habit tracker, sobriety app, fasting timer" />
     <select id="country">
@@ -513,14 +416,12 @@
 
 <script>
 let allData = [];
-let oppData = [];
 let researchData = [];
 let charts = {};
 let sortState = {};
-let oppLoaded = false;
 let researchLoaded = false;
 
-const PAGE_NAMES = ['opportunities', 'research', 'shortlist', 'analyzer'];
+const PAGE_NAMES = ['analyzer', 'research', 'shortlist'];
 
 function switchPage(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
@@ -529,253 +430,12 @@ function switchPage(name) {
   PAGE_NAMES.forEach(p => {
     document.getElementById('page-' + p).classList.toggle('visible', p === name);
   });
-  if (name === 'opportunities' && !oppLoaded) loadOpportunities();
   if (name === 'research' && !researchLoaded) loadResearch();
   if (name === 'shortlist' && !shortlistLoaded) loadShortlist();
 }
 
-async function addCustomOpportunities() {
-  const input = document.getElementById('oppCustomKeywords');
-  const raw = input.value.trim();
-  if (!raw) return;
-  const keywords = raw.split(',').map(k => k.trim()).filter(Boolean);
-  const btn = document.getElementById('oppAddBtn');
-  const container = document.getElementById('opp-results');
-
-  btn.disabled = true;
-  btn.textContent = 'Scoring...';
-  const prevHtml = container.innerHTML;
-  container.innerHTML = `<div class="loading"><div class="spinner"></div>Scoring ${keywords.length} custom keyword${keywords.length > 1 ? 's' : ''}...</div>`;
-
-  try {
-    const resp = await fetch('/api/analyze', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({keywords, country: 'us'})
-    });
-    const newData = await resp.json();
-    if (newData.error) throw new Error(newData.error);
-
-    // Tag as Custom and merge — replace existing entries with same keyword
-    newData.forEach(d => { d.theme = 'Custom'; });
-    const existingKeywords = new Set(newData.map(d => d.keyword.toLowerCase()));
-    oppData = oppData.filter(d => !existingKeywords.has(d.keyword.toLowerCase())).concat(newData);
-
-    renderOpportunities();
-    input.value = '';
-  } catch (e) {
-    container.innerHTML = prevHtml;
-    alert('Error scoring custom keywords: ' + e.message);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = 'Add';
-  }
-}
-
-async function loadOpportunities() {
-  oppLoaded = true;
-  const container = document.getElementById('opp-results');
-  container.innerHTML = `<div class="loading"><div class="spinner"></div>Running 30 keywords through the framework — this can take ~60s...</div>`;
-  try {
-    const resp = await fetch('/api/opportunities?country=us');
-    oppData = await resp.json();
-    if (oppData.error) throw new Error(oppData.error);
-    renderOpportunities();
-  } catch (e) {
-    container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
-    oppLoaded = false;
-  }
-}
-
 const DEMAND_SCORES = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
 const SUPPLY_SCORES = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
-const TIER_SCORES = {
-  "GREAT OPPORTUNITY": 5, "GOOD OPPORTUNITY": 4,
-  "COMPETITIVE — differentiate to win": 3, "SMALL NICHE — low risk, low reward": 2,
-  "OVERSUPPLIED — strong apps, limited demand": 1, "AVOID — dominated market": 0,
-};
-
-function getSortValue(d, key) {
-  if (d.error) return -Infinity;
-  const a = d.analysis;
-  switch (key) {
-    case 'opportunity': return TIER_SCORES[a.opportunity] ?? -1;
-    case 'demand': return DEMAND_SCORES[a.demand_level] ?? 0;
-    case 'avg_reviews': return a.avg_rating_count;
-    case 'weak_apps': return a.weak_apps_in_top10 || a.weak_apps_in_top25;
-    case 'max_reviews': return a.max_rating_count;
-    case 'min_reviews': return a.min_rating_count;
-    case 'gini': return a.concentration_index ?? 0;
-    case 'meta_cpi': return d.benchmarks.meta_cpi;
-    case 'google_cpi': return d.benchmarks.google_cpi;
-    case 'mature_pct': return a.mature_apps_pct ?? 0;
-    case 'theme': return d.theme || '';
-    default: return 0;
-  }
-}
-
-function passesThresholds(d) {
-  if (d.error) return false;
-  const a = d.analysis;
-  const minDemand = document.getElementById('oppMinDemand').value;
-  if (minDemand && (DEMAND_SCORES[a.demand_level] ?? 0) < parseInt(minDemand)) return false;
-
-  const maxSupply = document.getElementById('oppMaxSupply').value;
-  if (maxSupply && (SUPPLY_SCORES[a.supply_level] ?? 0) > parseInt(maxSupply)) return false;
-
-  const maxAvg = document.getElementById('oppMaxAvgReviews').value;
-  if (maxAvg && a.avg_rating_count > parseFloat(maxAvg)) return false;
-
-  const minWeak = document.getElementById('oppMinWeakApps').value;
-  if (minWeak && (a.weak_apps_in_top10 || a.weak_apps_in_top25 || 0) < parseInt(minWeak)) return false;
-
-  const maxCpi = document.getElementById('oppMaxMetaCpi').value;
-  if (maxCpi && d.benchmarks.meta_cpi > parseFloat(maxCpi)) return false;
-
-  const theme = document.getElementById('oppThemeFilter').value;
-  if (theme && d.theme !== theme) return false;
-
-  return true;
-}
-
-function applyOppFilters() {
-  renderOpportunities();
-}
-
-function resetOppFilters() {
-  document.getElementById('oppSortBy').value = 'opportunity';
-  document.getElementById('oppSortDir').value = 'desc';
-  document.getElementById('oppMinDemand').value = '';
-  document.getElementById('oppMaxSupply').value = '';
-  document.getElementById('oppMaxAvgReviews').value = '';
-  document.getElementById('oppMinWeakApps').value = '';
-  document.getElementById('oppMaxMetaCpi').value = '';
-  document.getElementById('oppThemeFilter').value = '';
-  renderOpportunities();
-}
-
-function populateThemeFilter() {
-  const themes = [...new Set(oppData.filter(d => !d.error && d.theme).map(d => d.theme))].sort();
-  const sel = document.getElementById('oppThemeFilter');
-  const cur = sel.value;
-  sel.innerHTML = '<option value="">All</option>';
-  themes.forEach(t => {
-    sel.innerHTML += `<option value="${t}" ${t === cur ? 'selected' : ''}>${t}</option>`;
-  });
-}
-
-function renderOpportunities() {
-  // Show toolbar
-  document.getElementById('opp-toolbar').style.display = 'flex';
-  populateThemeFilter();
-
-  const sortKey = document.getElementById('oppSortBy').value;
-  const sortDir = document.getElementById('oppSortDir').value;
-  const isGroupByTier = sortKey === 'opportunity';
-
-  // Build indexed list, filter, sort
-  let items = oppData.map((d, i) => ({ d, i })).filter(({ d }) => passesThresholds(d));
-
-  items.sort((a, b) => {
-    let va = getSortValue(a.d, sortKey);
-    let vb = getSortValue(b.d, sortKey);
-    // Secondary sort by demand when sorting by opportunity tier
-    if (isGroupByTier && va === vb) {
-      va = DEMAND_SCORES[a.d.analysis?.demand_level] ?? 0;
-      vb = DEMAND_SCORES[b.d.analysis?.demand_level] ?? 0;
-    }
-    if (sortKey === 'theme') {
-      const cmp = String(va).localeCompare(String(vb));
-      return sortDir === 'asc' ? cmp : -cmp;
-    }
-    return sortDir === 'asc' ? va - vb : vb - va;
-  });
-
-  const total = oppData.filter(d => !d.error).length;
-  const shown = items.length;
-  const countEl = document.getElementById('opp-filter-count');
-  countEl.textContent = shown < total ? `Showing ${shown} of ${total} keywords` : '';
-
-  let html = '';
-
-  if (isGroupByTier) {
-    // Group by tier
-    const tierOrder = [
-      "GREAT OPPORTUNITY", "GOOD OPPORTUNITY",
-      "COMPETITIVE — differentiate to win", "SMALL NICHE — low risk, low reward",
-      "OVERSUPPLIED — strong apps, limited demand", "AVOID — dominated market",
-    ];
-    const tiers = {};
-    items.forEach(item => {
-      const tier = item.d.analysis.opportunity;
-      if (!tiers[tier]) tiers[tier] = [];
-      tiers[tier].push(item);
-    });
-    const order = sortDir === 'desc' ? tierOrder : [...tierOrder].reverse();
-    order.forEach(tier => {
-      if (!tiers[tier]) return;
-      html += `<div class="opp-group-label">${tier} (${tiers[tier].length})</div>`;
-      html += '<div class="comparison">';
-      tiers[tier].forEach(({ d, i }) => { html += renderCardHtml(d, i, 'opp'); });
-      html += '</div>';
-    });
-  } else {
-    // Flat sorted list
-    html += '<div class="comparison">';
-    items.forEach(({ d, i }) => { html += renderCardHtml(d, i, 'opp'); });
-    html += '</div>';
-  }
-
-  // Errors
-  const errors = oppData.filter(d => d.error);
-  if (errors.length) {
-    html += `<div class="opp-group-label">Errors (${errors.length})</div>`;
-    errors.forEach(d => {
-      html += `<div style="color:var(--muted);font-size:12px;margin-bottom:4px">${d.keyword} — ${d.error}</div>`;
-    });
-  }
-
-  document.getElementById('opp-results').innerHTML = html;
-}
-
-function renderCardHtml(d, i, prefix) {
-  const a = d.analysis;
-  const theme = d.theme ? `<span class="theme-tag">${d.theme}</span>` : '';
-  return `
-    <div class="comp-card" onclick="showOppDetail(${i})">
-      <div class="kw">${d.keyword}${theme}</div>
-      <div class="ds-row">
-        <div class="ds-box demand">
-          <div class="ds-label">Demand</div>
-          <div class="ds-level">${a.demand_level}</div>
-        </div>
-        <div class="ds-box supply">
-          <div class="ds-label">Supply</div>
-          <div class="ds-level">${a.supply_level}</div>
-        </div>
-      </div>
-      <div class="metric"><span class="label">Total ratings (top 10)</span><span class="val">${fmt(a.total_ratings_top10 || a.total_ratings_all)}</span></div>
-      <div class="metric"><span class="label">#1 app ratings</span><span class="val">${fmt(a.max_rating_count)}</span></div>
-      <div class="metric"><span class="label">Avg ratings (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
-      <div class="metric"><span class="label">Weakest top 10 app (ratings)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
-      <div class="metric"><span class="label">Weak apps in top 10 (&lt;1K)</span><span class="val">${a.weak_apps_in_top10 || a.weak_apps_in_top25}</span></div>
-      <div class="metric"><span class="label">Mature apps in top 10 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
-      <div class="metric"><span class="label">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
-      <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
-      <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
-      <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
-    </div>`;
-}
-
-function showOppDetail(i) {
-  const d = oppData[i];
-  if (!d || d.error) return;
-  // Pipe through the analyzer detail view
-  allData = [d];
-  document.getElementById('keywords').value = d.keyword;
-  switchPage('analyzer');
-  renderAll();
-}
 
 let shortlistData = [];
 let shortlistLoaded = false;
@@ -1499,12 +1159,6 @@ document.addEventListener('click', e => {
 document.getElementById('keywords').addEventListener('keydown', e => {
   if (e.key === 'Enter') analyze();
 });
-document.getElementById('oppCustomKeywords').addEventListener('keydown', e => {
-  if (e.key === 'Enter') addCustomOpportunities();
-});
-
-// Auto-load the curated opportunities list on first page load
-loadOpportunities();
 </script>
 </body>
 </html>
