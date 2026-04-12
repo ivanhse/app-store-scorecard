@@ -6,7 +6,7 @@ from datetime import datetime
 ITUNES_SEARCH_URL = "https://itunes.apple.com/search"
 
 
-def search_apps(keyword, country="us", limit=25):
+def search_apps(keyword, country="us", limit=10):
     """Search App Store for a keyword, return top apps with competition data."""
     resp = requests.get(ITUNES_SEARCH_URL, params={
         "term": keyword,
@@ -45,7 +45,6 @@ def analyze_competition(apps, top_n=10):
         return {"error": "No apps found"}
 
     rating_counts = [a["rating_count"] for a in top]
-    all_rating_counts = [a["rating_count"] for a in apps]
     star_ratings = [a["star_rating"] for a in top if a["star_rating"] > 0]
 
     now = datetime.now()
@@ -71,23 +70,21 @@ def analyze_competition(apps, top_n=10):
     min_ratings = min(rating_counts)
     avg_stars = round(sum(star_ratings) / len(star_ratings), 1) if star_ratings else 0
 
-    # --- DEMAND signals ---
-    total_ratings_all = sum(all_rating_counts)
-    # How big is this market (sum of all visible apps' reviews)
-    if total_ratings_all > 500000:
+    # --- DEMAND signals (based on top 10 only) ---
+    total_ratings_top10 = sum(rating_counts)
+    if total_ratings_top10 > 300000:
         demand_level = "VERY HIGH"
-    elif total_ratings_all > 100000:
+    elif total_ratings_top10 > 60000:
         demand_level = "HIGH"
-    elif total_ratings_all > 30000:
+    elif total_ratings_top10 > 15000:
         demand_level = "MODERATE"
-    elif total_ratings_all > 5000:
+    elif total_ratings_top10 > 3000:
         demand_level = "LOW"
     else:
         demand_level = "VERY LOW"
 
     # --- SUPPLY signals ---
-    # How strong are the incumbents you'd compete against
-    weak_apps_in_top25 = sum(1 for r in all_rating_counts if r < 1000)
+    weak_apps_in_top10 = sum(1 for r in rating_counts if r < 1000)
     if avg_ratings > 50000:
         supply_level = "VERY HIGH"
     elif avg_ratings > 10000:
@@ -117,27 +114,25 @@ def analyze_competition(apps, top_n=10):
     else:
         opportunity = "AVOID — dominated market"
 
-    # --- MATURE APPS in top 20 (older than 3 years) ---
-    top20 = apps[:20]
+    # --- MATURE APPS in top 10 (older than 3 years) ---
     mature_count = 0
-    top20_with_date = 0
-    for a in top20:
+    top_with_date = 0
+    for a in top:
         try:
             rel = datetime.strptime(a["released"], "%Y-%m-%d")
-            top20_with_date += 1
+            top_with_date += 1
             if (now - rel).days > 3 * 365:
                 mature_count += 1
         except ValueError:
             pass
-    mature_apps_pct = round(mature_count / top20_with_date * 100) if top20_with_date else None
+    mature_apps_pct = round(mature_count / top_with_date * 100) if top_with_date else None
 
-    # --- CONCENTRATION INDEX (Gini coefficient of ratings in top 20) ---
-    # 0 = perfectly equal, 1 = one app has everything
-    top20_ratings = sorted([a["rating_count"] for a in top20])
-    n = len(top20_ratings)
-    if n > 0 and sum(top20_ratings) > 0:
-        cumulative = sum((2 * (i + 1) - n - 1) * val for i, val in enumerate(top20_ratings))
-        gini = round(cumulative / (n * sum(top20_ratings)), 2)
+    # --- CONCENTRATION INDEX (Gini coefficient of ratings in top 10) ---
+    sorted_ratings = sorted(rating_counts)
+    n = len(sorted_ratings)
+    if n > 0 and sum(sorted_ratings) > 0:
+        cumulative = sum((2 * (i + 1) - n - 1) * val for i, val in enumerate(sorted_ratings))
+        gini = round(cumulative / (n * sum(sorted_ratings)), 2)
     else:
         gini = None
 
@@ -146,13 +141,13 @@ def analyze_competition(apps, top_n=10):
         "top_n": len(top),
         # Demand
         "demand_level": demand_level,
-        "total_ratings_all": total_ratings_all,
+        "total_ratings_top10": total_ratings_top10,
         "max_rating_count": max_ratings,
         # Supply
         "supply_level": supply_level,
         "avg_rating_count": int(avg_ratings),
         "min_rating_count": min_ratings,
-        "weak_apps_in_top25": weak_apps_in_top25,
+        "weak_apps_in_top10": weak_apps_in_top10,
         # Quality
         "avg_star_rating": avg_stars,
         "avg_age_months": round(sum(ages_months) / len(ages_months)) if ages_months else None,

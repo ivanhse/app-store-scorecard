@@ -88,7 +88,7 @@ def main():
     parser = argparse.ArgumentParser(description="App Store Keyword Scorecard")
     parser.add_argument("keywords", nargs="+", help="Keywords to analyze")
     parser.add_argument("--country", default="us", help="Country code (default: us)")
-    parser.add_argument("--limit", type=int, default=25, help="Max apps per keyword (default: 25)")
+    parser.add_argument("--limit", type=int, default=10, help="Max apps per keyword (default: 10)")
     parser.add_argument("--json", action="store_true", help="Output as JSON")
     args = parser.parse_args()
 

@@ -98,15 +98,15 @@ def _analyze_keyword(kw, country, limit):
     apps = search_apps(kw, country=country, limit=limit)
     analysis = analyze_competition(apps)
 
-    rating_counts = sorted([a["rating_count"] for a in apps[:10]])
+    rating_counts = sorted([a["rating_count"] for a in apps])
     p25 = rating_counts[len(rating_counts) // 4] if len(rating_counts) >= 4 else 0
     p50 = rating_counts[len(rating_counts) // 2] if len(rating_counts) >= 2 else 0
     p75 = rating_counts[3 * len(rating_counts) // 4] if len(rating_counts) >= 4 else 0
 
-    free_count = sum(1 for a in apps[:10] if a["price"] == 0)
+    free_count = sum(1 for a in apps if a["price"] == 0)
 
     star_buckets = {"4.5+": 0, "4.0-4.4": 0, "3.5-3.9": 0, "<3.5": 0}
-    for a in apps[:10]:
+    for a in apps:
         s = a["star_rating"]
         if s >= 4.5:
             star_buckets["4.5+"] += 1
@@ -118,7 +118,7 @@ def _analyze_keyword(kw, country, limit):
             star_buckets["<3.5"] += 1
 
     cat_counts = {}
-    for a in apps[:10]:
+    for a in apps:
         c = a.get("category", "")
         cat_counts[c] = cat_counts.get(c, 0) + 1
     dominant_cat = max(cat_counts, key=cat_counts.get) if cat_counts else "_default"
@@ -126,10 +126,10 @@ def _analyze_keyword(kw, country, limit):
 
     return {
         "keyword": kw,
-        "apps": apps[:25],
+        "apps": apps[:10],
         "analysis": analysis,
         "percentiles": {"p25": p25, "p50": p50, "p75": p75},
-        "free_vs_paid": {"free": free_count, "paid": 10 - free_count},
+        "free_vs_paid": {"free": free_count, "paid": len(apps) - free_count},
         "star_distribution": star_buckets,
         "category": dominant_cat,
         "benchmarks": benchmarks,
@@ -147,7 +147,7 @@ def opportunities():
     results = []
     for kw, theme in OPPORTUNITY_KEYWORDS:
         try:
-            r = _analyze_keyword(kw, country, 25)
+            r = _analyze_keyword(kw, country, 10)
             r["theme"] = theme
             results.append(r)
         except Exception as e:
@@ -162,7 +162,7 @@ def analyze():
     data = request.json
     keywords = data.get("keywords", [])
     country = data.get("country", "us")
-    limit = data.get("limit", 25)
+    limit = data.get("limit", 10)
 
     if not keywords:
         return jsonify({"error": "No keywords provided"}), 400

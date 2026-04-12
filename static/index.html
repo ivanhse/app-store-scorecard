@@ -321,7 +321,7 @@
         <option value="opportunity">Opportunity tier</option>
         <option value="demand">Demand level</option>
         <option value="avg_reviews">Avg ratings (top 10)</option>
-        <option value="weak_apps">Weak apps in top 25</option>
+        <option value="weak_apps">Weak apps in top 10</option>
         <option value="max_reviews">#1 app ratings</option>
         <option value="min_reviews">Weakest top-10 ratings</option>
         <option value="gini">Concentration (Gini)</option>
@@ -365,7 +365,7 @@
     </div>
     <div class="ctrl-group">
       <label>Min weak apps</label>
-      <input type="number" id="oppMinWeakApps" placeholder="e.g. 5" min="0" max="25" onchange="applyOppFilters()" />
+      <input type="number" id="oppMinWeakApps" placeholder="e.g. 5" min="0" max="10" onchange="applyOppFilters()" />
     </div>
     <div class="ctrl-group">
       <label>Max CPI (Meta)</label>
@@ -398,15 +398,15 @@
       games, events, transportation, wellness, writing, community, science, and more).
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      Each keyword was searched on the iTunes Search API (US App Store, top 25 results) and scored using the
+      Each keyword was searched on the iTunes Search API (US App Store, top 10 results) and scored using the
       same Demand vs Supply framework: <strong style="color:var(--blue)">Demand</strong> = total ratings across
-      all 25 visible apps, <strong style="color:var(--red)">Supply</strong> = average rating count of the top 10
+      the top 10 apps, <strong style="color:var(--red)">Supply</strong> = average rating count of the top 10
       incumbents. The gap between demand rank and supply rank determines the opportunity verdict.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
       A composite score (0–110) adds bonuses for stale competitors (&gt;3 not updated in a year), low-rated
       incumbents (&gt;3 below 3.5 stars), weak average ratings (&lt;1K), high demand level, low market
-      concentration (Gini &lt;0.4), and a high ratio of weak apps in the top 25.
+      concentration (Gini &lt;0.4), and a high ratio of weak apps in the top 10.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
       Click any column header to sort. Use the filters below to narrow results. Click a keyword to run a full analysis.
@@ -489,6 +489,26 @@
   </div>
 
   <div id="shortlist-results"><div class="loading"><div class="spinner"></div>Loading shortlist analysis...</div></div>
+
+  <!-- App Types Explorer: top 10 app names for all 1000 keywords -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-top:24px">
+    <h3 style="font-size:16px;margin-bottom:6px">App Types Explorer</h3>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px">
+      What types of apps actually rank in the top 10 for each keyword? Browse all 1,000 keywords to see the competitive landscape at a glance.
+    </p>
+    <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+      <input type="text" id="appTypesSearch" placeholder="Search keywords..." oninput="renderAppTypes()" style="flex:1;min-width:200px;padding:8px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px">
+      <select id="appTypesVerdict" onchange="renderAppTypes()" style="padding:8px 12px;background:var(--bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px">
+        <option value="all">All Verdicts</option>
+        <option value="great">GREAT only</option>
+        <option value="good">GOOD only</option>
+        <option value="great+good">GREAT + GOOD</option>
+        <option value="competitive">COMPETITIVE</option>
+      </select>
+      <span id="appTypesCount" style="font-size:12px;color:var(--muted);align-self:center"></span>
+    </div>
+    <div id="app-types-results"><div class="loading"><div class="spinner"></div>Loading app types...</div></div>
+  </div>
 </div>
 
 <div class="page" id="page-analyzer">
@@ -529,6 +549,7 @@ function switchPage(name) {
   if (name === 'opportunities' && !oppLoaded) loadOpportunities();
   if (name === 'research' && !researchLoaded) loadResearch();
   if (name === 'shortlist' && !shortlistLoaded) loadShortlist();
+  if (name === 'shortlist' && !appTypesLoaded) loadAppTypes();
 }
 
 async function addCustomOpportunities() {
@@ -599,7 +620,7 @@ function getSortValue(d, key) {
     case 'opportunity': return TIER_SCORES[a.opportunity] ?? -1;
     case 'demand': return DEMAND_SCORES[a.demand_level] ?? 0;
     case 'avg_reviews': return a.avg_rating_count;
-    case 'weak_apps': return a.weak_apps_in_top25;
+    case 'weak_apps': return a.weak_apps_in_top10 || a.weak_apps_in_top25;
     case 'max_reviews': return a.max_rating_count;
     case 'min_reviews': return a.min_rating_count;
     case 'gini': return a.concentration_index ?? 0;
@@ -624,7 +645,7 @@ function passesThresholds(d) {
   if (maxAvg && a.avg_rating_count > parseFloat(maxAvg)) return false;
 
   const minWeak = document.getElementById('oppMinWeakApps').value;
-  if (minWeak && a.weak_apps_in_top25 < parseInt(minWeak)) return false;
+  if (minWeak && (a.weak_apps_in_top10 || a.weak_apps_in_top25 || 0) < parseInt(minWeak)) return false;
 
   const maxCpi = document.getElementById('oppMaxMetaCpi').value;
   if (maxCpi && d.benchmarks.meta_cpi > parseFloat(maxCpi)) return false;
@@ -751,12 +772,12 @@ function renderCardHtml(d, i, prefix) {
           <div class="ds-level">${a.supply_level}</div>
         </div>
       </div>
-      <div class="metric"><span class="label">Total ratings (all 25 apps)</span><span class="val">${fmt(a.total_ratings_all)}</span></div>
+      <div class="metric"><span class="label">Total ratings (top 10)</span><span class="val">${fmt(a.total_ratings_top10 || a.total_ratings_all)}</span></div>
       <div class="metric"><span class="label">#1 app ratings</span><span class="val">${fmt(a.max_rating_count)}</span></div>
       <div class="metric"><span class="label">Avg ratings (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
       <div class="metric"><span class="label">Weakest top 10 app (ratings)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
-      <div class="metric"><span class="label">Weak apps in top 25 (&lt;1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
-      <div class="metric"><span class="label">Mature apps in top 20 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
+      <div class="metric"><span class="label">Weak apps in top 10 (&lt;1K)</span><span class="val">${a.weak_apps_in_top10 || a.weak_apps_in_top25}</span></div>
+      <div class="metric"><span class="label">Mature apps in top 10 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
       <div class="metric"><span class="label">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
       <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
       <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
@@ -877,9 +898,9 @@ function renderShortlist() {
     html += '<h4>Market Data (Live App Store)</h4>';
     html += `<div class="ds-row"><div class="ds-box demand"><div class="ds-label">Demand</div><div class="ds-level">${d.demand_level}</div></div>`;
     html += `<div class="ds-box supply"><div class="ds-label">Supply</div><div class="ds-level">${d.supply_level}</div></div></div>`;
-    html += `<div class="metric"><span class="label">Total ratings (all 25)</span><span class="val">${fmt(d.total_ratings_all)}</span></div>`;
+    html += `<div class="metric"><span class="label">Total ratings (top 10)</span><span class="val">${fmt(d.total_ratings_top10 || d.total_ratings_all)}</span></div>`;
     html += `<div class="metric"><span class="label">Avg incumbent ratings (top 10)</span><span class="val">${fmt(d.avg_rating_count)}</span></div>`;
-    html += `<div class="metric"><span class="label">Weak apps in top 25 (<1K)</span><span class="val">${d.weak_apps_in_top25}</span></div>`;
+    html += `<div class="metric"><span class="label">Weak apps in top 10 (<1K)</span><span class="val">${d.weak_apps_in_top10 || d.weak_apps_in_top25}</span></div>`;
     html += `<div class="metric"><span class="label">Concentration (Gini)</span><span class="val" style="color:${d.concentration_index > 0.7 ? 'var(--red)' : d.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)'}">${d.concentration_index.toFixed(2)}</span></div>`;
     html += '</div>';
 
@@ -1021,6 +1042,75 @@ function renderShortlistChart(sorted) {
   });
 }
 
+// --- App Types Explorer (loaded alongside shortlist) ---
+let appTypesData = [];
+let appTypesLoaded = false;
+
+async function loadAppTypes() {
+  if (appTypesLoaded) return;
+  appTypesLoaded = true;
+  try {
+    const resp = await fetch('/api/research?tier=all');
+    appTypesData = await resp.json();
+    if (appTypesData.error) throw new Error(appTypesData.error);
+    renderAppTypes();
+  } catch (e) {
+    document.getElementById('app-types-results').innerHTML =
+      `<div class="loading" style="color:var(--red)">Error loading app types: ${e.message}</div>`;
+    appTypesLoaded = false;
+  }
+}
+
+function renderAppTypes() {
+  const container = document.getElementById('app-types-results');
+  const search = (document.getElementById('appTypesSearch').value || '').toLowerCase().trim();
+  const verdict = document.getElementById('appTypesVerdict').value;
+
+  let items = appTypesData.filter(r => !r.error && r.top_10_names && r.top_10_names.length > 0);
+
+  if (verdict === 'great') items = items.filter(r => (r.opportunity || '').includes('GREAT'));
+  else if (verdict === 'good') items = items.filter(r => (r.opportunity || '').includes('GOOD') && !(r.opportunity || '').includes('GREAT'));
+  else if (verdict === 'great+good') items = items.filter(r => (r.opportunity || '').includes('GREAT') || (r.opportunity || '').includes('GOOD'));
+  else if (verdict === 'competitive') items = items.filter(r => (r.opportunity || '').includes('COMPETITIVE'));
+
+  if (search) {
+    items = items.filter(r =>
+      r.keyword.toLowerCase().includes(search) ||
+      (r.top_10_names || []).some(n => n.toLowerCase().includes(search))
+    );
+  }
+
+  // Sort by score descending
+  items.sort((a, b) => (b.score || 0) - (a.score || 0));
+
+  document.getElementById('appTypesCount').textContent = `${items.length} keywords`;
+
+  if (items.length === 0) {
+    container.innerHTML = '<p style="color:var(--muted);font-size:13px;padding:10px">No keywords with app type data found. Run <code>python enrich_app_types.py</code> to fetch top 10 app names.</p>';
+    return;
+  }
+
+  let html = '<div style="display:grid;gap:10px">';
+  items.forEach(r => {
+    const oppClass = opportunityClass(r.opportunity || '');
+    const names = r.top_10_names || [];
+    const bullets = names.map(n => `<span style="display:inline-block;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:11px;color:var(--text);white-space:nowrap">${n}</span>`).join(' ');
+
+    html += `<div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px">`;
+    html += `<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">`;
+    html += `<span style="font-weight:700;font-size:14px;color:var(--text)">${r.keyword}</span>`;
+    html += `<span style="font-size:11px;font-weight:600;color:var(--muted)">[${r.score}]</span>`;
+    html += `<span class="opportunity-badge ${oppClass}" style="font-size:10px;white-space:nowrap">${r.opportunity}</span>`;
+    html += `<span style="font-size:11px;color:var(--blue)">${r.demand_level}</span>`;
+    html += `<span style="font-size:11px;color:var(--red)">${r.supply_level}</span>`;
+    html += `</div>`;
+    html += `<div style="display:flex;flex-wrap:wrap;gap:4px">${bullets}</div>`;
+    html += `</div>`;
+  });
+  html += '</div>';
+  container.innerHTML = html;
+}
+
 let researchSort = { col: 'score', dir: 'desc' };
 
 async function loadResearch() {
@@ -1067,12 +1157,12 @@ function getResearchSortVal(r, col) {
     case 'opportunity': return TIER_SCORES[r.opportunity] ?? -1;
     case 'demand_level': return DEMAND_SCORES[r.demand_level] ?? 0;
     case 'supply_level': return SUPPLY_SCORES[r.supply_level] ?? 0;
-    case 'total_ratings_all': return r.total_ratings_all || 0;
+    case 'total_ratings_top10': return r.total_ratings_top10 || r.total_ratings_all || 0;
     case 'avg_rating_count': return r.avg_rating_count || 0;
     case 'avg_star_rating': return r.avg_star_rating || 0;
     case 'stale_apps': return r.stale_apps || 0;
     case 'low_rated_apps': return r.low_rated_apps || 0;
-    case 'weak_apps_in_top25': return r.weak_apps_in_top25 || 0;
+    case 'weak_apps_in_top10': return r.weak_apps_in_top10 || r.weak_apps_in_top25 || 0;
     case 'mature_apps_pct': return r.mature_apps_pct ?? -1;
     case 'concentration_index': return r.concentration_index ?? -1;
     default: return 0;
@@ -1106,7 +1196,7 @@ function renderResearch() {
   if (maxSupply) items = items.filter(r => (SUPPLY_SCORES[r.supply_level] ?? 0) <= parseInt(maxSupply));
   if (minScore) items = items.filter(r => (r.score || 0) >= parseFloat(minScore));
   if (minStale) items = items.filter(r => (r.stale_apps || 0) >= parseInt(minStale));
-  if (minWeak) items = items.filter(r => (r.weak_apps_in_top25 || 0) >= parseInt(minWeak));
+  if (minWeak) items = items.filter(r => (r.weak_apps_in_top10 || r.weak_apps_in_top25 || 0) >= parseInt(minWeak));
   if (kwSearch) items = items.filter(r => r.keyword.toLowerCase().includes(kwSearch));
 
   const { col, dir } = researchSort;
@@ -1138,12 +1228,12 @@ function renderResearch() {
   html += thHtml('Verdict', 'opportunity', 'left');
   html += thHtml('Demand', 'demand_level', 'left');
   html += thHtml('Supply', 'supply_level', 'left');
-  html += thHtml('Market Ratings', 'total_ratings_all', 'right');
+  html += thHtml('Market Ratings', 'total_ratings_top10', 'right');
   html += thHtml('Avg Incumbent', 'avg_rating_count', 'right');
   html += thHtml('Avg Stars', 'avg_star_rating', 'right');
   html += thHtml('Stale', 'stale_apps', 'right');
   html += thHtml('Low Rated', 'low_rated_apps', 'right');
-  html += thHtml('Weak', 'weak_apps_in_top25', 'right');
+  html += thHtml('Weak', 'weak_apps_in_top10', 'right');
   html += thHtml('Mature %', 'mature_apps_pct', 'right');
   html += thHtml('Gini', 'concentration_index', 'right');
   html += `<th style="${thStyle};text-align:left">Top 3 Apps</th>`;
@@ -1160,12 +1250,12 @@ function renderResearch() {
       <td style="padding:8px 10px"><span class="opportunity-badge ${oppClass}" style="white-space:nowrap;font-size:10px">${r.opportunity}</span></td>
       <td style="padding:8px 10px;color:var(--blue);font-weight:600;white-space:nowrap">${r.demand_level}</td>
       <td style="padding:8px 10px;color:var(--red);font-weight:600;white-space:nowrap">${r.supply_level}</td>
-      <td style="padding:8px 10px;text-align:right">${fmt(r.total_ratings_all || 0)}</td>
+      <td style="padding:8px 10px;text-align:right">${fmt(r.total_ratings_top10 || r.total_ratings_all || 0)}</td>
       <td style="padding:8px 10px;text-align:right">${fmt(r.avg_rating_count || 0)}</td>
       <td style="padding:8px 10px;text-align:right">${r.avg_star_rating || '—'}</td>
       <td style="padding:8px 10px;text-align:right">${r.stale_apps || 0}</td>
       <td style="padding:8px 10px;text-align:right">${r.low_rated_apps || 0}</td>
-      <td style="padding:8px 10px;text-align:right">${r.weak_apps_in_top25 || 0}</td>
+      <td style="padding:8px 10px;text-align:right">${r.weak_apps_in_top10 || r.weak_apps_in_top25 || 0}</td>
       <td style="padding:8px 10px;text-align:right">${r.mature_apps_pct != null ? r.mature_apps_pct + '%' : '—'}</td>
       <td style="padding:8px 10px;text-align:right;color:${r.concentration_index != null ? (r.concentration_index > 0.7 ? 'var(--red)' : r.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
       <td style="padding:8px 10px;color:var(--muted);font-size:11px;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
@@ -1253,12 +1343,12 @@ function renderAll() {
             <div class="ds-level">${a.supply_level}</div>
           </div>
         </div>
-        <div class="metric"><span class="label">Total ratings (all 25 apps)</span><span class="val">${fmt(a.total_ratings_all)}</span></div>
+        <div class="metric"><span class="label">Total ratings (top 10)</span><span class="val">${fmt(a.total_ratings_top10 || a.total_ratings_all)}</span></div>
         <div class="metric"><span class="label">#1 app ratings</span><span class="val">${fmt(a.max_rating_count)}</span></div>
         <div class="metric"><span class="label">Avg ratings (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
         <div class="metric"><span class="label">Weakest top 10 app (ratings)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
-        <div class="metric"><span class="label">Weak apps in top 25 (<1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
-        <div class="metric"><span class="label">Mature apps in top 20 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
+        <div class="metric"><span class="label">Weak apps in top 10 (<1K)</span><span class="val">${a.weak_apps_in_top10 || a.weak_apps_in_top25}</span></div>
+        <div class="metric"><span class="label">Mature apps in top 10 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
         <div class="metric"><span class="label">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
         <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
         <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
@@ -1294,7 +1384,7 @@ function renderDetail(d, idx) {
   html += '<div class="ds-detail">';
   html += `<div class="ds-detail-box demand-box">
     <h3>Demand (are people looking for this?)</h3>
-    <div class="ds-stat"><span class="lbl">Total ratings (all 25 apps)</span><span class="val">${fmt(a.total_ratings_all)}</span></div>
+    <div class="ds-stat"><span class="lbl">Total ratings (top 10)</span><span class="val">${fmt(a.total_ratings_top10 || a.total_ratings_all)}</span></div>
     <div class="ds-stat"><span class="lbl">#1 app ratings</span><span class="val">${fmt(a.max_rating_count)}</span></div>
     <div class="ds-stat"><span class="lbl">Demand level</span><span class="val" style="color:var(--blue)">${a.demand_level}</span></div>
   </div>`;
@@ -1302,10 +1392,10 @@ function renderDetail(d, idx) {
     <h3>Supply (how strong is the competition?)</h3>
     <div class="ds-stat"><span class="lbl">Avg ratings (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
     <div class="ds-stat"><span class="lbl">Weakest top 10 app (ratings)</span><span class="val">${fmt(a.min_rating_count)}</span></div>
-    <div class="ds-stat"><span class="lbl">Weak apps in top 25 (<1K)</span><span class="val">${a.weak_apps_in_top25}</span></div>
+    <div class="ds-stat"><span class="lbl">Weak apps in top 10 (<1K)</span><span class="val">${a.weak_apps_in_top10 || a.weak_apps_in_top25}</span></div>
     <div class="ds-stat"><span class="lbl">Stale apps (>1yr no update)</span><span class="val">${a.stale_apps}/${a.top_n}</span></div>
     <div class="ds-stat"><span class="lbl">Low-rated apps (<3.5 stars)</span><span class="val">${a.low_rated_apps}/${a.top_n}</span></div>
-    <div class="ds-stat"><span class="lbl">Mature apps in top 20 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
+    <div class="ds-stat"><span class="lbl">Mature apps in top 10 (>3yr)</span><span class="val">${a.mature_apps_pct != null ? a.mature_apps_pct + '%' : '—'}</span></div>
     <div class="ds-stat"><span class="lbl">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
     <div class="ds-stat"><span class="lbl">Supply level</span><span class="val" style="color:var(--red)">${a.supply_level}</span></div>
   </div>`;

@@ -270,7 +270,7 @@ def score_opportunity(analysis):
     if gini is not None and gini < 0.4:
         bonus += 3
     # Bonus for lots of weak apps in results
-    weak = analysis.get("weak_apps_in_top25", 0)
+    weak = analysis.get("weak_apps_in_top10", 0)
     total = analysis.get("total_results", 1)
     if total > 0 and weak / max(total, 1) > 0.5:
         bonus += 3
@@ -287,7 +287,7 @@ def main():
     for i, kw in enumerate(KEYWORDS):
         print(f"[{i+1}/{total}] {kw}...", file=sys.stderr, end=" ", flush=True)
         try:
-            apps = search_apps(kw, country="us", limit=25)
+            apps = search_apps(kw, country="us", limit=10)
             analysis = analyze_competition(apps)
             sc = score_opportunity(analysis)
             results.append({
@@ -296,18 +296,19 @@ def main():
                 "opportunity": analysis.get("opportunity", "?"),
                 "demand_level": analysis.get("demand_level", "?"),
                 "supply_level": analysis.get("supply_level", "?"),
-                "total_ratings_all": analysis.get("total_ratings_all", 0),
+                "total_ratings_top10": analysis.get("total_ratings_top10", 0),
                 "avg_rating_count": analysis.get("avg_rating_count", 0),
                 "avg_star_rating": analysis.get("avg_star_rating", 0),
                 "stale_apps": analysis.get("stale_apps", 0),
                 "low_rated_apps": analysis.get("low_rated_apps", 0),
-                "weak_apps_in_top25": analysis.get("weak_apps_in_top25", 0),
+                "weak_apps_in_top10": analysis.get("weak_apps_in_top10", 0),
                 "mature_apps_pct": analysis.get("mature_apps_pct"),
                 "concentration_index": analysis.get("concentration_index"),
                 "top_3_apps": [
                     {"name": a["name"], "ratings": a["rating_count"], "stars": a["star_rating"]}
                     for a in apps[:3]
                 ],
+                "top_10_names": [a["name"] for a in apps[:10]],
             })
             print(f"score={sc} ({analysis.get('opportunity', '?')})", file=sys.stderr)
         except Exception as e:
