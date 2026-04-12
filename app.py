@@ -171,6 +171,16 @@ def analyze():
     return jsonify(results)
 
 
+@app.route("/api/shortlist", methods=["GET"])
+def shortlist():
+    results_path = os.path.join(os.path.dirname(__file__), "shortlist_analysis.json")
+    if not os.path.exists(results_path):
+        return jsonify({"error": "shortlist_analysis.json not found"}), 404
+    with open(results_path) as f:
+        data = json.load(f)
+    return jsonify(data)
+
+
 @app.route("/api/research", methods=["GET"])
 def research():
     tier = request.args.get("tier", "all")

@@ -1,0 +1,905 @@
+[
+  {
+    "keyword": "rent vs buy calculator",
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_all": 2865160,
+    "avg_rating_count": 124287,
+    "avg_star_rating": 4.6,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 10,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.92,
+    "top_3_apps": [
+      {
+        "name": "Roby: Rent vs. Buy Calculator",
+        "developer": "Joshua Hart",
+        "ratings": 3,
+        "stars": 5,
+        "price": 0.0,
+        "category": "Finance",
+        "updated": "2026-04-12"
+      },
+      {
+        "name": "Buy vs. Rent Calculator",
+        "developer": "Evan Winograd",
+        "ratings": 3,
+        "stars": 4,
+        "price": 0.0,
+        "category": "Finance",
+        "updated": "2018-01-17"
+      },
+      {
+        "name": "Rent. Apartments and Homes",
+        "developer": "Rent Group Inc.",
+        "ratings": 205146,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Lifestyle",
+        "updated": "2026-04-10"
+      }
+    ]
+  },
+  {
+    "keyword": "visa requirement checker",
+    "opportunity": "GREAT OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_all": 1356214,
+    "avg_rating_count": 8927,
+    "avg_star_rating": 4.1,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top25": 13,
+    "mature_apps_pct": 65,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Atlys - Visas on Time",
+        "developer": "VDC, Legal Liability Corporation",
+        "ratings": 3307,
+        "stars": 4.6,
+        "price": 0.0,
+        "category": "Travel",
+        "updated": "2026-04-11"
+      },
+      {
+        "name": "iVisa: ETA, eVisa, NZeTA, Visa",
+        "developer": "Document Advisor LLC",
+        "ratings": 10680,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Travel",
+        "updated": "2026-03-17"
+      },
+      {
+        "name": "Check US Visa Slots",
+        "developer": "TWIPPY TECHNOLOGIES PRIVATE LIMITED",
+        "ratings": 32,
+        "stars": 3.9,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2026-03-18"
+      }
+    ]
+  },
+  {
+    "keyword": "music theory app",
+    "opportunity": "GREAT OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_all": 1040462,
+    "avg_rating_count": 8503,
+    "avg_star_rating": 4.7,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 9,
+    "mature_apps_pct": 95,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "MyMusicTheory - Music Theory",
+        "developer": "myrApps",
+        "ratings": 854,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Education",
+        "updated": "2024-11-08"
+      },
+      {
+        "name": "Music Tutor (Sight-reading)",
+        "developer": "JSplash Apps",
+        "ratings": 2127,
+        "stars": 4.2,
+        "price": 0.0,
+        "category": "Music",
+        "updated": "2025-02-24"
+      },
+      {
+        "name": "Tenuto",
+        "developer": "musictheory.net",
+        "ratings": 640,
+        "stars": 4.7,
+        "price": 4.99,
+        "category": "Music",
+        "updated": "2025-12-08"
+      }
+    ]
+  },
+  {
+    "keyword": "grocery list app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 881491,
+    "avg_rating_count": 30096,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 5,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.82,
+    "top_3_apps": [
+      {
+        "name": "AnyList: Grocery Shopping List",
+        "developer": "Purple Cover, Inc.",
+        "ratings": 77518,
+        "stars": 4.9,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2025-12-23"
+      },
+      {
+        "name": "Our Groceries Shopping List",
+        "developer": "OurGroceries, Inc.",
+        "ratings": 80961,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Shopping",
+        "updated": "2026-04-07"
+      },
+      {
+        "name": "Shopping List: Grocery To Do",
+        "developer": "Komorebi Inc.",
+        "ratings": 27912,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Shopping",
+        "updated": "2025-12-24"
+      }
+    ]
+  },
+  {
+    "keyword": "coffee brew timer",
+    "opportunity": "GREAT OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "VERY LOW",
+    "total_ratings_all": 65184,
+    "avg_rating_count": 28,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 19,
+    "mature_apps_pct": 45,
+    "concentration_index": 0.92,
+    "top_3_apps": [
+      {
+        "name": "Coffee brew timers",
+        "developer": "Vladislav Zhirnov",
+        "ratings": 0,
+        "stars": 0,
+        "price": 0.0,
+        "category": "Food & Drink",
+        "updated": "2023-09-13"
+      },
+      {
+        "name": "Brew Timer - Coffee Recipes",
+        "developer": "Stephen Panaro",
+        "ratings": 54,
+        "stars": 4.7,
+        "price": 2.99,
+        "category": "Food & Drink",
+        "updated": "2022-12-08"
+      },
+      {
+        "name": "Brew Timer : Make Great Coffee",
+        "developer": "Durali Guder",
+        "ratings": 23,
+        "stars": 4.4,
+        "price": 0.0,
+        "category": "Food & Drink",
+        "updated": "2025-07-29"
+      }
+    ]
+  },
+  {
+    "keyword": "roofing calculator app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 2081491,
+    "avg_rating_count": 15383,
+    "avg_star_rating": 4.6,
+    "stale_apps": 6,
+    "low_rated_apps": 1,
+    "weak_apps_in_top25": 10,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.9,
+    "top_3_apps": [
+      {
+        "name": "iRoofing Phone App",
+        "developer": "Applosophy, LLC",
+        "ratings": 40,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-03-26"
+      },
+      {
+        "name": "Digits Tape Calculator",
+        "developer": "Shift",
+        "ratings": 1104,
+        "stars": 4.8,
+        "price": 1.99,
+        "category": "Utilities",
+        "updated": "2019-09-17"
+      },
+      {
+        "name": "Concrete Calculator Plus",
+        "developer": "Calc Hub, LLC",
+        "ratings": 23642,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2024-03-15"
+      }
+    ]
+  },
+  {
+    "keyword": "fuel price tracker",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 1868773,
+    "avg_rating_count": 47664,
+    "avg_star_rating": 3.9,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top25": 14,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.85,
+    "top_3_apps": [
+      {
+        "name": "GasBuddy: Find & Pay for Gas",
+        "developer": "GasBuddy Organization Inc",
+        "ratings": 447311,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Travel",
+        "updated": "2026-04-08"
+      },
+      {
+        "name": "FuelUp: Gas Prices",
+        "developer": "SHUBHAM SHAH",
+        "ratings": 75,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2026-03-25"
+      },
+      {
+        "name": "Fuelly: MPG & Service Tracker",
+        "developer": "Fuelly, LLC",
+        "ratings": 28773,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Finance",
+        "updated": "2024-06-03"
+      }
+    ]
+  },
+  {
+    "keyword": "oil change reminder",
+    "opportunity": "GREAT OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_all": 776998,
+    "avg_rating_count": 5945,
+    "avg_star_rating": 4.1,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top25": 14,
+    "mature_apps_pct": 65,
+    "concentration_index": 0.92,
+    "top_3_apps": [
+      {
+        "name": "Car Maintenance Reminders",
+        "developer": "Sebastien Gamache",
+        "ratings": 153,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2026-01-15"
+      },
+      {
+        "name": "Car oil change tracker",
+        "developer": "FatimaH Deeb",
+        "ratings": 1,
+        "stars": 1,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2025-08-04"
+      },
+      {
+        "name": "Valvoline Instant Oil Change",
+        "developer": "Valvoline Instant Oil Change",
+        "ratings": 2084,
+        "stars": 4.6,
+        "price": 0.0,
+        "category": "Shopping",
+        "updated": "2026-01-20"
+      }
+    ]
+  },
+  {
+    "keyword": "concrete calculator app",
+    "opportunity": "GREAT OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_all": 888183,
+    "avg_rating_count": 6232,
+    "avg_star_rating": 4.7,
+    "stale_apps": 5,
+    "low_rated_apps": 1,
+    "weak_apps_in_top25": 17,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Concrete Calculator Plus",
+        "developer": "Calc Hub, LLC",
+        "ratings": 23642,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2024-03-15"
+      },
+      {
+        "name": "Concrete and Agg Calculator",
+        "developer": "Chaney Enterprises",
+        "ratings": 37,
+        "stars": 3.4,
+        "price": 0.0,
+        "category": "Business",
+        "updated": "2024-09-10"
+      },
+      {
+        "name": "Ozinga Concrete Calculator",
+        "developer": "Ozinga Ready Mix Concrete, Inc.",
+        "ratings": 18,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2025-08-25"
+      }
+    ]
+  },
+  {
+    "keyword": "stress level tracker",
+    "opportunity": "GREAT OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_all": 1634525,
+    "avg_rating_count": 7675,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 11,
+    "mature_apps_pct": 45,
+    "concentration_index": 0.75,
+    "top_3_apps": [
+      {
+        "name": "Stress Monitor for Watch",
+        "developer": "ActiveAce",
+        "ratings": 8758,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-03-04"
+      },
+      {
+        "name": "StressWatch: AI Stress Monitor",
+        "developer": "One Hundred Bad Ideas Limited",
+        "ratings": 17370,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-04-10"
+      },
+      {
+        "name": "MoodyWatch - Stress Tracker",
+        "developer": "Shutong Technology",
+        "ratings": 134,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-03-15"
+      }
+    ]
+  },
+  {
+    "keyword": "music sight reading app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_all": 127529,
+    "avg_rating_count": 9901,
+    "avg_star_rating": 4.5,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top25": 12,
+    "mature_apps_pct": 95,
+    "concentration_index": 0.79,
+    "top_3_apps": [
+      {
+        "name": "Notevision - Sight Reading",
+        "developer": "Ryan Newsome",
+        "ratings": 3037,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Education",
+        "updated": "2026-04-11"
+      },
+      {
+        "name": "Music Tutor (Sight-reading)",
+        "developer": "JSplash Apps",
+        "ratings": 2127,
+        "stars": 4.2,
+        "price": 0.0,
+        "category": "Music",
+        "updated": "2025-02-24"
+      },
+      {
+        "name": "Notes Teacher",
+        "developer": "Yannis RICHARD",
+        "ratings": 9864,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Education",
+        "updated": "2021-04-23"
+      }
+    ]
+  },
+  {
+    "keyword": "ph calculator app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 2417526,
+    "avg_rating_count": 46602,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 5,
+    "mature_apps_pct": 95,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Calculator #",
+        "developer": "Incpt.Mobis",
+        "ratings": 35592,
+        "stars": 4.6,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2026-03-12"
+      },
+      {
+        "name": "Calculator \u221e",
+        "developer": "Incpt.Mobis",
+        "ratings": 6215,
+        "stars": 4.7,
+        "price": 5.99,
+        "category": "Education",
+        "updated": "2026-03-12"
+      },
+      {
+        "name": "ClevCalc - Calculator",
+        "developer": "Cleveni Inc.",
+        "ratings": 11909,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-03-18"
+      }
+    ]
+  },
+  {
+    "keyword": "roi calculator app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 2310636,
+    "avg_rating_count": 35848,
+    "avg_star_rating": 4.7,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 6,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Calculator for iPad!",
+        "developer": "7th Gear",
+        "ratings": 60746,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2020-12-09"
+      },
+      {
+        "name": "Digits Tape Calculator",
+        "developer": "Shift",
+        "ratings": 1104,
+        "stars": 4.8,
+        "price": 1.99,
+        "category": "Utilities",
+        "updated": "2019-09-17"
+      },
+      {
+        "name": "ClevCalc - Calculator",
+        "developer": "Cleveni Inc.",
+        "ratings": 11909,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-03-18"
+      }
+    ]
+  },
+  {
+    "keyword": "homework tracker app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 1723411,
+    "avg_rating_count": 18617,
+    "avg_star_rating": 4.3,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top25": 6,
+    "mature_apps_pct": 85,
+    "concentration_index": 0.91,
+    "top_3_apps": [
+      {
+        "name": "Egenda - Homework Manager",
+        "developer": "Ari Cohn",
+        "ratings": 3044,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Education",
+        "updated": "2018-10-01"
+      },
+      {
+        "name": "School Assistant \u2013\u00a0Planner",
+        "developer": "Sun Apps, LLC",
+        "ratings": 4279,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Education",
+        "updated": "2026-03-24"
+      },
+      {
+        "name": "myHomework Student Planner",
+        "developer": "Rodrigo Neri",
+        "ratings": 4312,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Education",
+        "updated": "2025-02-05"
+      }
+    ]
+  },
+  {
+    "keyword": "daily accomplishment app",
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 364321,
+    "avg_rating_count": 23666,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 5,
+    "mature_apps_pct": 65,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Strides: Habit Tracker + Goals",
+        "developer": "Goals LLC",
+        "ratings": 18852,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-04-12"
+      },
+      {
+        "name": "Dear Me: Daily Routine Tracker",
+        "developer": "Fitself",
+        "ratings": 4190,
+        "stars": 4.9,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-03-23"
+      },
+      {
+        "name": "Habit \u2014 Daily Tracker",
+        "developer": "Kodeon, Inc.",
+        "ratings": 2412,
+        "stars": 3.7,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2025-03-17"
+      }
+    ]
+  },
+  {
+    "keyword": "couples budget app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 896901,
+    "avg_rating_count": 27810,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 8,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Honeydue: Couples Finance",
+        "developer": "WalletIQ, Inc.",
+        "ratings": 9935,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Finance",
+        "updated": "2025-09-15"
+      },
+      {
+        "name": "Monarch: Budget & Track Money",
+        "developer": "Monarch Money, Inc.",
+        "ratings": 85111,
+        "stars": 4.9,
+        "price": 0.0,
+        "category": "Finance",
+        "updated": "2026-04-07"
+      },
+      {
+        "name": "Goodbudget Budget Planner",
+        "developer": "Dayspring Technologies",
+        "ratings": 13188,
+        "stars": 4.6,
+        "price": 0.0,
+        "category": "Finance",
+        "updated": "2026-03-09"
+      }
+    ]
+  },
+  {
+    "keyword": "noise cancellation app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 878323,
+    "avg_rating_count": 47548,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 7,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "Noise Reducer - audio enhancer",
+        "developer": "Arthur Eduardo Skaetta Alvarez Desenvolvimento de Software LTDA.",
+        "ratings": 3054,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Utilities",
+        "updated": "2026-04-06"
+      },
+      {
+        "name": "White Noise Lite",
+        "developer": "TMSOFT",
+        "ratings": 265408,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-01-07"
+      },
+      {
+        "name": "White Noise Deep Sleep Sounds",
+        "developer": "Slumber Studios, LLC",
+        "ratings": 201182,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-03-27"
+      }
+    ]
+  },
+  {
+    "keyword": "daily journal app",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 797126,
+    "avg_rating_count": 36484,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 2,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.65,
+    "top_3_apps": [
+      {
+        "name": "Day One: Daily Journal & Diary",
+        "developer": "Bloom Built Inc",
+        "ratings": 115816,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Health & Fitness",
+        "updated": "2026-04-08"
+      },
+      {
+        "name": "Diary With Password",
+        "developer": "\u5e06 \u6768",
+        "ratings": 26456,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2025-12-13"
+      },
+      {
+        "name": "DailyBean - simplest journal",
+        "developer": "BlueSignum Corp.",
+        "ratings": 68686,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Lifestyle",
+        "updated": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "keyword": "co-parenting schedule",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 613264,
+    "avg_rating_count": 12480,
+    "avg_star_rating": 4.4,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 15,
+    "mature_apps_pct": 55,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "Co-parenting: Shared Parenting",
+        "developer": "Happy Parents AB",
+        "ratings": 28,
+        "stars": 4.6,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-03-26"
+      },
+      {
+        "name": "OurFamilyWizard Co-Parent App",
+        "developer": "OurFamilyWizard, LLC",
+        "ratings": 44492,
+        "stars": 4.6,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-04-09"
+      },
+      {
+        "name": "AppClose",
+        "developer": "AppClose, Inc",
+        "ratings": 37598,
+        "stars": 4.7,
+        "price": 0.0,
+        "category": "Productivity",
+        "updated": "2026-02-17"
+      }
+    ]
+  },
+  {
+    "keyword": "trivia quiz maker",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 560314,
+    "avg_rating_count": 29074,
+    "avg_star_rating": 4.5,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 4,
+    "mature_apps_pct": 85,
+    "concentration_index": 0.69,
+    "top_3_apps": [
+      {
+        "name": "That's so...Trivia",
+        "developer": "Magmic Inc.",
+        "ratings": 4378,
+        "stars": 3.8,
+        "price": 0.0,
+        "category": "Games",
+        "updated": "2025-10-07"
+      },
+      {
+        "name": "Quiz Maker - Make a quiz",
+        "developer": "Peter Morris274922875",
+        "ratings": 647,
+        "stars": 4.3,
+        "price": 0.0,
+        "category": "Entertainment",
+        "updated": "2022-04-03"
+      },
+      {
+        "name": "QuizTime - Trivia",
+        "developer": "Hundred Years Limited",
+        "ratings": 52711,
+        "stars": 4.5,
+        "price": 0.0,
+        "category": "Entertainment",
+        "updated": "2026-03-27"
+      }
+    ]
+  },
+  {
+    "keyword": "baby feeding schedule",
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 565125,
+    "avg_rating_count": 39212,
+    "avg_star_rating": 4.8,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top25": 8,
+    "mature_apps_pct": 85,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Huckleberry: Baby & Child",
+        "developer": "Huckleberry Labs Inc.",
+        "ratings": 59916,
+        "stars": 4.9,
+        "price": 0.0,
+        "category": "Medical",
+        "updated": "2026-04-03"
+      },
+      {
+        "name": "Baby Tracker - Newborn Log",
+        "developer": "Nighp Software LLC",
+        "ratings": 227015,
+        "stars": 4.8,
+        "price": 0.0,
+        "category": "Medical",
+        "updated": "2026-03-26"
+      },
+      {
+        "name": "Baby Feed Timer, breastfeeding",
+        "developer": "Fehners Software LLP",
+        "ratings": 23880,
+        "stars": 4.9,
+        "price": 0.0,
+        "category": "Lifestyle",
+        "updated": "2026-02-25"
+      }
+    ]
+  }
+]

@@ -222,6 +222,70 @@
   }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* Shortlist styles */
+  .shortlist-chart-wrap {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 24px; margin-bottom: 24px; position: relative;
+  }
+  .shortlist-chart-wrap h3 { font-size: 15px; margin-bottom: 4px; font-weight: 600; }
+  .shortlist-chart-wrap .chart-subtitle { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
+  .shortlist-ranking { margin-bottom: 28px; }
+  .shortlist-ranking h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+  .rank-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px; margin-bottom: 12px; cursor: pointer; transition: border-color .15s;
+  }
+  .rank-card:hover { border-color: var(--accent); }
+  .rank-card.expanded { border-color: var(--accent); }
+  .rank-header { display: flex; align-items: center; gap: 14px; }
+  .rank-number {
+    font-size: 20px; font-weight: 800; color: var(--accent); min-width: 36px; text-align: center;
+  }
+  .rank-number.top3 { color: var(--green); }
+  .rank-info { flex: 1; }
+  .rank-name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .rank-meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
+  .rank-meta .tag {
+    padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 11px;
+  }
+  .rank-meta .tier-tag { background: rgba(108,92,231,.15); color: var(--accent); }
+  .rank-scores { display: flex; gap: 16px; align-items: center; }
+  .rank-score-box { text-align: center; min-width: 70px; }
+  .rank-score-box .score-val { font-size: 22px; font-weight: 800; }
+  .rank-score-box .score-val.money { color: var(--green); }
+  .rank-score-box .score-val.opp { color: var(--blue); }
+  .rank-score-box .score-val.complex { color: var(--yellow); }
+  .rank-score-box .score-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .3px; }
+
+  .rank-detail { display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .rank-card.expanded .rank-detail { display: block; }
+  .rank-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .rank-detail-box { background: rgba(255,255,255,.02); border-radius: 8px; padding: 14px; }
+  .rank-detail-box h4 {
+    font-size: 11px; text-transform: uppercase; letter-spacing: .5px;
+    color: var(--muted); margin-bottom: 10px; font-weight: 600;
+  }
+  .rank-detail-box p { font-size: 13px; line-height: 1.6; color: var(--text); }
+  .competitor-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;
+  }
+  .competitor-row:last-child { border-bottom: none; }
+  .competitor-name { font-weight: 600; flex: 1; }
+  .competitor-stats { display: flex; gap: 12px; color: var(--muted); font-size: 12px; }
+  .competitor-weakness { font-size: 12px; color: var(--orange); margin-top: 2px; }
+  .rank-why { font-size: 13px; line-height: 1.6; color: var(--text); margin-bottom: 12px; }
+  .shortlist-summary-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px; margin-bottom: 24px;
+  }
+  .summary-stat {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 16px; text-align: center;
+  }
+  .summary-stat .num { font-size: 28px; font-weight: 800; }
+  .summary-stat .lbl { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
   @media (max-width: 900px) {
     .charts-row { grid-template-columns: 1fr; }
     .ds-detail { grid-template-columns: 1fr; }
@@ -236,6 +300,7 @@
 <div class="tabs">
   <button class="tab active" onclick="switchPage('opportunities')">Opportunities</button>
   <button class="tab" onclick="switchPage('research')">Research (1,000)</button>
+  <button class="tab" onclick="switchPage('shortlist')">Shortlist Analysis</button>
   <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
 </div>
 
@@ -404,6 +469,25 @@
   <div id="research-results"><div class="loading"><div class="spinner"></div>Loading research data...</div></div>
 </div>
 
+<div class="page" id="page-shortlist">
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
+    <h3 style="font-size:16px;margin-bottom:10px">Shortlist Competitive Analysis</h3>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
+      Deep competitive analysis of 21 shortlisted mobile app candidates across Tier 1, Tier 2, and unlisted ideas.
+      Each app is scored on <strong style="color:var(--green)">Money-Making Potential</strong> (0-100),
+      <strong style="color:var(--blue)">Market Opportunity</strong> (compound of demand/supply gap, weak incumbents, stale apps),
+      and <strong style="color:var(--yellow)">Build Complexity</strong> (1-10).
+    </p>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6">
+      The 2D chart plots Market Opportunity (Y-axis) vs Build Complexity (X-axis). The best ideas are in the
+      <strong style="color:var(--green)">top-left quadrant</strong> — high opportunity, low complexity.
+      Each app includes analysis of 3 competitors, monetization model, estimated ARPU, and specific differentiators.
+    </p>
+  </div>
+
+  <div id="shortlist-results"><div class="loading"><div class="spinner"></div>Loading shortlist analysis...</div></div>
+</div>
+
 <div class="page" id="page-analyzer">
   <div class="search-bar">
     <input type="text" id="keywords" placeholder="Enter keywords separated by commas — e.g. habit tracker, sobriety app, fasting timer" />
@@ -430,7 +514,7 @@ let sortState = {};
 let oppLoaded = false;
 let researchLoaded = false;
 
-const PAGE_NAMES = ['opportunities', 'research', 'analyzer'];
+const PAGE_NAMES = ['opportunities', 'research', 'shortlist', 'analyzer'];
 
 function switchPage(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
@@ -441,6 +525,7 @@ function switchPage(name) {
   });
   if (name === 'opportunities' && !oppLoaded) loadOpportunities();
   if (name === 'research' && !researchLoaded) loadResearch();
+  if (name === 'shortlist' && !shortlistLoaded) loadShortlist();
 }
 
 async function addCustomOpportunities() {
@@ -684,6 +769,253 @@ function showOppDetail(i) {
   document.getElementById('keywords').value = d.keyword;
   switchPage('analyzer');
   renderAll();
+}
+
+let shortlistData = [];
+let shortlistLoaded = false;
+let shortlistChart = null;
+
+async function loadShortlist() {
+  shortlistLoaded = true;
+  const container = document.getElementById('shortlist-results');
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading shortlist analysis...</div>';
+  try {
+    const resp = await fetch('/api/shortlist');
+    shortlistData = await resp.json();
+    if (shortlistData.error) throw new Error(shortlistData.error);
+    renderShortlist();
+  } catch (e) {
+    container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
+    shortlistLoaded = false;
+  }
+}
+
+function renderShortlist() {
+  const container = document.getElementById('shortlist-results');
+  const sorted = [...shortlistData].sort((a, b) => b.money_score - a.money_score);
+
+  const greatCount = sorted.filter(d => d.opportunity_verdict.includes('GREAT')).length;
+  const goodCount = sorted.filter(d => d.opportunity_verdict.includes('GOOD')).length;
+  const avgMoney = Math.round(sorted.reduce((s, d) => s + d.money_score, 0) / sorted.length);
+  const avgComplexity = (sorted.reduce((s, d) => s + d.build_complexity, 0) / sorted.length).toFixed(1);
+  const bestRoi = sorted.reduce((best, d) => {
+    const roi = d.market_opportunity / d.build_complexity;
+    return roi > best.roi ? { name: d.name, roi } : best;
+  }, { name: '', roi: 0 });
+
+  let html = '';
+
+  // Summary stats
+  html += '<div class="shortlist-summary-grid">';
+  html += `<div class="summary-stat"><div class="num" style="color:var(--green)">${sorted.length}</div><div class="lbl">Apps Analyzed</div></div>`;
+  html += `<div class="summary-stat"><div class="num" style="color:var(--green)">${greatCount}</div><div class="lbl">GREAT Opportunities</div></div>`;
+  html += `<div class="summary-stat"><div class="num" style="color:#55efc4">${goodCount}</div><div class="lbl">GOOD Opportunities</div></div>`;
+  html += `<div class="summary-stat"><div class="num" style="color:var(--blue)">${avgMoney}</div><div class="lbl">Avg Money Score</div></div>`;
+  html += `<div class="summary-stat"><div class="num" style="color:var(--yellow)">${avgComplexity}</div><div class="lbl">Avg Build Complexity</div></div>`;
+  html += `<div class="summary-stat"><div class="num" style="color:var(--accent)">${bestRoi.name.split(' ').slice(0,2).join(' ')}</div><div class="lbl">Best ROI (Opportunity/Complexity)</div></div>`;
+  html += '</div>';
+
+  // 2D Scatter Chart
+  html += '<div class="shortlist-chart-wrap">';
+  html += '<h3>Market Opportunity vs Build Complexity</h3>';
+  html += '<p class="chart-subtitle">Top-left quadrant = best ideas (high opportunity, low complexity). Bubble size = money-making score.</p>';
+  html += '<canvas id="shortlist-scatter" height="400"></canvas>';
+  html += '</div>';
+
+  // Ranking
+  html += '<div class="shortlist-ranking">';
+  html += '<h3>Ranked by Money-Making Potential</h3>';
+
+  sorted.forEach((d, i) => {
+    const rank = i + 1;
+    const rankClass = rank <= 3 ? 'top3' : '';
+    const oppClass = opportunityClass(d.opportunity_verdict);
+
+    html += `<div class="rank-card" onclick="this.classList.toggle('expanded')">`;
+    html += '<div class="rank-header">';
+    html += `<div class="rank-number ${rankClass}">#${rank}</div>`;
+    html += '<div class="rank-info">';
+    html += `<div class="rank-name">${d.name}</div>`;
+    html += '<div class="rank-meta">';
+    html += `<span class="tag tier-tag">${d.tier}</span>`;
+    html += `<span class="opportunity-badge ${oppClass}">${d.opportunity_verdict}</span>`;
+    html += `<span>${d.monetization_model.split('+')[0].trim()}</span>`;
+    html += `<span>ARPU: ${d.estimated_arpu}</span>`;
+    html += '</div></div>';
+    html += '<div class="rank-scores">';
+    html += `<div class="rank-score-box"><div class="score-val money">${d.money_score}</div><div class="score-lbl">Money</div></div>`;
+    html += `<div class="rank-score-box"><div class="score-val opp">${d.market_opportunity}</div><div class="score-lbl">Opportunity</div></div>`;
+    html += `<div class="rank-score-box"><div class="score-val complex">${d.build_complexity}</div><div class="score-lbl">Complexity</div></div>`;
+    html += '</div></div>';
+
+    // Expandable detail
+    html += '<div class="rank-detail">';
+    html += `<div class="rank-why">${d.why_money}</div>`;
+
+    html += '<div class="rank-detail-grid">';
+
+    // Competitors
+    html += '<div class="rank-detail-box">';
+    html += '<h4>Top 3 Competitors</h4>';
+    d.competitors.forEach(c => {
+      html += '<div class="competitor-row"><div>';
+      html += `<div class="competitor-name">${c.name}</div>`;
+      html += `<div class="competitor-weakness">${c.weakness}</div>`;
+      html += '</div><div class="competitor-stats">';
+      html += `<span>${fmt(c.ratings)} ratings</span>`;
+      html += `<span>★ ${c.stars}</span>`;
+      html += `<span>${c.price}</span>`;
+      html += '</div></div>';
+    });
+    html += '</div>';
+
+    // Market data
+    html += '<div class="rank-detail-box">';
+    html += '<h4>Market Data (Live App Store)</h4>';
+    html += `<div class="ds-row"><div class="ds-box demand"><div class="ds-label">Demand</div><div class="ds-level">${d.demand_level}</div></div>`;
+    html += `<div class="ds-box supply"><div class="ds-label">Supply</div><div class="ds-level">${d.supply_level}</div></div></div>`;
+    html += `<div class="metric"><span class="label">Total ratings (all 25)</span><span class="val">${fmt(d.total_ratings_all)}</span></div>`;
+    html += `<div class="metric"><span class="label">Avg incumbent ratings (top 10)</span><span class="val">${fmt(d.avg_rating_count)}</span></div>`;
+    html += `<div class="metric"><span class="label">Weak apps in top 25 (<1K)</span><span class="val">${d.weak_apps_in_top25}</span></div>`;
+    html += `<div class="metric"><span class="label">Concentration (Gini)</span><span class="val" style="color:${d.concentration_index > 0.7 ? 'var(--red)' : d.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)'}">${d.concentration_index.toFixed(2)}</span></div>`;
+    html += '</div>';
+
+    html += '</div>'; // rank-detail-grid
+
+    // Differentiators & Build notes
+    html += '<div class="rank-detail-grid">';
+    html += `<div class="rank-detail-box"><h4>Key Differentiators</h4><p>${d.differentiators}</p></div>`;
+    html += `<div class="rank-detail-box"><h4>Build Notes</h4><p>${d.build_notes}</p></div>`;
+    html += '</div>';
+
+    html += '</div>'; // rank-detail
+    html += '</div>'; // rank-card
+  });
+
+  html += '</div>'; // shortlist-ranking
+
+  container.innerHTML = html;
+
+  // Render scatter chart
+  setTimeout(() => renderShortlistChart(sorted), 100);
+}
+
+function renderShortlistChart(sorted) {
+  const ctx = document.getElementById('shortlist-scatter');
+  if (!ctx) return;
+  if (shortlistChart) shortlistChart.destroy();
+
+  const tierColors = {
+    'Tier 1': '#6c5ce7',
+    'Tier 2': '#74b9ff',
+    'Unlisted': '#fdcb6e',
+  };
+
+  const datasets = {};
+  sorted.forEach(d => {
+    const tier = d.tier;
+    if (!datasets[tier]) datasets[tier] = { label: tier, data: [], backgroundColor: tierColors[tier] || '#8b8fa3', borderColor: 'rgba(255,255,255,.3)', borderWidth: 1 };
+    datasets[tier].data.push({
+      x: d.build_complexity,
+      y: d.market_opportunity,
+      r: Math.max(8, d.money_score / 6),
+      label: d.name,
+      money: d.money_score,
+      rank: d.rank,
+    });
+  });
+
+  shortlistChart = new Chart(ctx, {
+    type: 'bubble',
+    data: { datasets: Object.values(datasets) },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          title: { display: true, text: 'Build Complexity →', color: '#fdcb6e', font: { weight: 'bold' } },
+          min: 0, max: 10,
+          ticks: { color: '#8b8fa3', stepSize: 1 },
+          grid: { color: 'rgba(255,255,255,.06)' },
+        },
+        y: {
+          title: { display: true, text: '← Market Opportunity', color: '#74b9ff', font: { weight: 'bold' } },
+          min: 30, max: 100,
+          ticks: { color: '#8b8fa3', stepSize: 10 },
+          grid: { color: 'rgba(255,255,255,.06)' },
+        }
+      },
+      plugins: {
+        legend: { labels: { color: '#e1e4ed', usePointStyle: true, pointStyle: 'circle' } },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              const p = ctx.raw;
+              return [
+                p.label,
+                `Market Opportunity: ${p.y}`,
+                `Build Complexity: ${p.x}`,
+                `Money Score: ${p.money}`,
+                `Rank: #${p.rank}`,
+              ];
+            }
+          }
+        },
+        annotation: undefined,
+      },
+    },
+    plugins: [{
+      id: 'quadrants',
+      beforeDraw(chart) {
+        const { ctx, chartArea: { left, right, top, bottom }, scales: { x, y } } = chart;
+        const midX = x.getPixelForValue(5);
+        const midY = y.getPixelForValue(65);
+
+        // Top-left: best (green tint)
+        ctx.fillStyle = 'rgba(0,184,148,.04)';
+        ctx.fillRect(left, top, midX - left, midY - top);
+
+        // Top-right: good but hard
+        ctx.fillStyle = 'rgba(108,92,231,.03)';
+        ctx.fillRect(midX, top, right - midX, midY - top);
+
+        // Bottom-left: easy but meh
+        ctx.fillStyle = 'rgba(253,203,110,.03)';
+        ctx.fillRect(left, midY, midX - left, bottom - midY);
+
+        // Bottom-right: avoid
+        ctx.fillStyle = 'rgba(225,112,85,.04)';
+        ctx.fillRect(midX, midY, right - midX, bottom - midY);
+
+        // Labels
+        ctx.font = '11px -apple-system, sans-serif';
+        ctx.fillStyle = 'rgba(0,184,148,.4)';
+        ctx.fillText('★ SWEET SPOT', left + 8, top + 16);
+        ctx.fillStyle = 'rgba(108,92,231,.4)';
+        ctx.fillText('HIGH OPPORTUNITY / COMPLEX', midX + 8, top + 16);
+        ctx.fillStyle = 'rgba(253,203,110,.4)';
+        ctx.fillText('EASY BUILD / LOW UPSIDE', left + 8, bottom - 8);
+        ctx.fillStyle = 'rgba(225,112,85,.4)';
+        ctx.fillText('AVOID', right - 50, bottom - 8);
+      }
+    }, {
+      id: 'datalabels',
+      afterDatasetsDraw(chart) {
+        const { ctx } = chart;
+        chart.data.datasets.forEach((dataset, di) => {
+          const meta = chart.getDatasetMeta(di);
+          meta.data.forEach((element, i) => {
+            const d = dataset.data[i];
+            ctx.font = '10px -apple-system, sans-serif';
+            ctx.fillStyle = '#e1e4ed';
+            ctx.textAlign = 'center';
+            const shortName = d.label.length > 15 ? d.label.substring(0, 13) + '…' : d.label;
+            ctx.fillText(shortName, element.x, element.y - d.r - 4);
+          });
+        });
+      }
+    }]
+  });
 }
 
 let researchSort = { col: 'score', dir: 'desc' };
