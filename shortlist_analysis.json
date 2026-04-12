@@ -622,7 +622,7 @@
     "rank": 15,
     "money_score": 55,
     "market_opportunity": 55,
-    "build_complexity": 8,
+    "build_complexity": 4,
     "monetization_model": "Freemium + gas station advertising",
     "estimated_arpu": "$1-3/month",
     "why_money": "GasBuddy completely dominates with 447K ratings and a massive crowdsourced database. Breaking into this market is nearly impossible without equivalent data infrastructure. High demand but extremely strong #1 player. Fuel price APIs are expensive or require crowdsourcing infrastructure.",
@@ -657,7 +657,7 @@
       }
     ],
     "differentiators": "Hard to differentiate. Would need a unique angle: EV charging + gas hybrid, trip cost optimizer, fleet management for small businesses.",
-    "build_notes": "Real-time fuel price data requires API ($$$) or crowdsourcing infrastructure. Location services, maps integration, background refresh. Very high complexity."
+    "build_notes": "Fuel price API integration (e.g. CollectAPI, government open data), MapKit/Google Maps for station display, location services, favorites. Standard API-backed app \u2014 no need to build crowdsourcing infrastructure."
   },
   {
     "name": "Trivia Quiz Maker",
