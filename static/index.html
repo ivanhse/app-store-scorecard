@@ -253,6 +253,12 @@
     color: var(--muted); margin-bottom: 10px; font-weight: 600;
   }
   .rank-detail-box p { font-size: 13px; line-height: 1.6; color: var(--text); }
+  .build-dims { display: flex; flex-direction: column; gap: 6px; }
+  .build-dim-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .build-dim-label { width: 110px; color: var(--muted); flex-shrink: 0; }
+  .build-dim-bar-bg { flex: 1; height: 8px; background: rgba(255,255,255,.06); border-radius: 4px; overflow: hidden; }
+  .build-dim-bar { height: 100%; border-radius: 4px; transition: width .3s; }
+  .build-dim-val { width: 16px; text-align: right; color: var(--muted); font-size: 11px; }
   .competitor-row {
     display: flex; justify-content: space-between; align-items: center;
     padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;
@@ -548,10 +554,41 @@ function renderShortlist() {
 
     html += '</div>'; // rank-detail-grid
 
-    // Differentiators & Build notes
+    // Build Complexity Breakdown & Differentiators
     html += '<div class="rank-detail-grid">';
     html += `<div class="rank-detail-box"><h4>Key Differentiators</h4><p>${d.differentiators}</p></div>`;
-    html += `<div class="rank-detail-box"><h4>Build Notes</h4><p>${d.build_notes}</p></div>`;
+    if (d.build_dimensions) {
+      const dims = d.build_dimensions;
+      const dimLabels = {
+        backend_sync: 'Backend & Sync',
+        external_apis: 'External APIs',
+        hardware_sensors: 'Hardware',
+        rich_media: 'Rich Media',
+        content_creation: 'Content Work',
+        ui_complexity: 'UI Complexity'
+      };
+      const dimColors = ['#6c5ce7','#0984e3','#00b894','#fdcb6e','#e17055','#fd79a8'];
+      const total = Object.values(dims).reduce((s,v) => s+v, 0);
+      html += '<div class="rank-detail-box"><h4>Build Complexity Breakdown</h4>';
+      html += `<div style="font-size:12px;color:var(--muted);margin-bottom:8px">Score: ${total}/12 → Complexity ${d.build_complexity}/10</div>`;
+      html += '<div class="build-dims">';
+      let ci = 0;
+      for (const [key, label] of Object.entries(dimLabels)) {
+        const val = dims[key] || 0;
+        const pct = (val / 2) * 100;
+        const color = dimColors[ci++ % dimColors.length];
+        html += `<div class="build-dim-row">`;
+        html += `<div class="build-dim-label">${label}</div>`;
+        html += `<div class="build-dim-bar-bg"><div class="build-dim-bar" style="width:${pct}%;background:${color}"></div></div>`;
+        html += `<div class="build-dim-val">${val}</div>`;
+        html += `</div>`;
+      }
+      html += '</div>';
+      html += `<p style="margin-top:10px">${d.build_notes}</p>`;
+      html += '</div>';
+    } else {
+      html += `<div class="rank-detail-box"><h4>Build Notes</h4><p>${d.build_notes}</p></div>`;
+    }
     html += '</div>';
 
     html += '</div>'; // rank-detail

@@ -48,7 +48,15 @@
       "Uncertainty about whether a visa is even needed for a trip",
       "Difficulty finding available embassy/consulate appointment slots",
       "No single source to compare visa rules across countries"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 2,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "Music Theory",
@@ -99,7 +107,15 @@
       "No structured curriculum to learn theory from scratch",
       "Trouble connecting theory knowledge to actual instrument playing",
       "Rhythm and timing weaknesses with no way to practice"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 2,
+      "rich_media": 0,
+      "content_creation": 2,
+      "ui_complexity": 2
+    }
   },
   {
     "name": "Oil Change Reminder",
@@ -150,7 +166,15 @@
       "Not knowing which oil type/grade the car actually needs",
       "Managing maintenance schedules across multiple vehicles",
       "Getting upsold at service centers due to lack of knowledge"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 1,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "Concrete Calculator",
@@ -201,7 +225,15 @@
       "Converting between imperial/metric measurements on job sites",
       "Calculating material costs before starting a project",
       "Accounting for waste, spillage, and over-excavation"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "Stress Level Tracker",
@@ -252,7 +284,15 @@
       "Can't correlate stress patterns with daily activities or sleep",
       "Difficulty building consistent stress-reducing habits",
       "Apple Watch collects HRV data but no app to interpret it meaningfully"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 2,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Coffee Brew Timer",
@@ -303,7 +343,15 @@
       "Forgetting the exact timing and pour schedule that worked",
       "No guided step-by-step process for pour-over, French press, etc.",
       "Tracking which beans and recipes produce the best results"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 1,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "Co-parenting Schedule",
@@ -354,7 +402,15 @@
       "Need for court-admissible documentation of communication",
       "Coordinating pickups, drop-offs, and schedule swaps",
       "Reducing conflict by keeping all parenting communication in one place"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 2,
+      "external_apis": 0,
+      "hardware_sensors": 1,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 2
+    }
   },
   {
     "name": "Roofing Calculator",
@@ -405,7 +461,15 @@
       "Generating professional estimates and reports for clients",
       "Managing roofing jobs, scheduling, and contractor workflows",
       "Quickly pricing materials (shingles, underlayment, flashing) on site"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 1,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Couples Budget",
@@ -456,7 +520,15 @@
       "Difficulty splitting shared bills and tracking who paid what",
       "No joint budgeting tool \u2014 existing apps are single-user",
       "Can't track progress toward shared financial goals (house, vacation)"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 2,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Music Sight Reading",
@@ -507,7 +579,15 @@
       "Gap between knowing theory and being able to play on sight",
       "Limited sight-reading exercises for specific instruments or clefs",
       "Can't track progress or see improvement over time"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 2,
+      "rich_media": 0,
+      "content_creation": 2,
+      "ui_complexity": 2
+    }
   },
   {
     "name": "Grocery List App",
@@ -558,7 +638,15 @@
       "Disorganized lists that don't group items by store aisle",
       "Can't quickly add items or reuse frequent purchases",
       "Paper lists get lost, damaged, or left at home"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 1,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Baby Feeding Schedule",
@@ -609,7 +697,15 @@
       "Difficulty establishing a consistent feeding routine for newborns",
       "Tracking bottle vs. breast, pumping sessions, and milk storage",
       "Multiple caregivers need to sync on baby's feeding status"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 1,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Homework Tracker",
@@ -660,7 +756,15 @@
       "Difficulty prioritizing tasks when overwhelmed with schoolwork",
       "Paper planners get lost or aren't always accessible",
       "Parents can't see what homework their child has pending"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 1,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Daily Journal",
@@ -711,7 +815,15 @@
       "Can't look back and track emotional patterns over time",
       "Privacy concerns \u2014 need password/lock protection for entries",
       "Existing note apps lack journaling features (streaks, mood, photos)"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 1,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 1,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "Fuel Price Tracker",
@@ -762,7 +874,15 @@
       "Can't track personal fuel spending and mileage efficiency",
       "Missing the cheapest window to fill up (prices change daily)",
       "No alerts when nearby prices drop below a threshold"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 1,
+      "hardware_sensors": 1,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Trivia Quiz Maker",
@@ -813,7 +933,15 @@
       "Limited question formats \u2014 need photos, audio, and multiple types",
       "No way to host live trivia events from a phone",
       "Existing quiz apps have fixed content \u2014 can't add own questions"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 1,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "Noise Cancellation App",
@@ -864,7 +992,15 @@
       "Need white/brown noise for sleep or focus but don't want hardware",
       "No way to isolate vocals or remove specific noise frequencies",
       "Existing tools are desktop-only \u2014 need mobile noise reduction"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 1,
+      "content_creation": 1,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "Rent vs Buy Calculator",
@@ -915,7 +1051,15 @@
       "No way to compare total cost of renting vs. buying over 5-30 years",
       "Difficulty understanding how interest rates affect affordability",
       "Need to know break-even point \u2014 how long until buying pays off"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 1,
+      "ui_complexity": 1
+    }
   },
   {
     "name": "ROI Calculator",
@@ -966,7 +1110,15 @@
       "Need cash-on-cash return for real estate investment decisions",
       "Comparing ROI across different investment opportunities",
       "Complex financial formulas that are hard to remember and compute"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "pH Calculator",
@@ -1017,7 +1169,15 @@
       "Converting between pH, pOH, and hydrogen ion concentration",
       "Pool/aquarium owners need pH calculations without chemistry knowledge",
       "Students need a tool for chemistry homework and lab work"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
   },
   {
     "name": "What Was Accomplished Today",
@@ -1068,6 +1228,14 @@
       "Difficulty maintaining motivation without visible progress",
       "Existing habit trackers focus on inputs, not accomplishments",
       "Can't look back at what was achieved over weeks or months"
-    ]
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 0,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
   }
 ]
