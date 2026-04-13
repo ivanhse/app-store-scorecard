@@ -59,7 +59,7 @@ KEYWORDS = [
     "co-parenting schedule", "baby name finder", "pregnancy week tracker",
     "contraction timer app", "potty training tracker", "kids allowance app",
     "family chore app", "screen time kids", "kids reward chart",
-    "baby feeding schedule", "growth chart tracker", "vaccination tracker app",
+    "baby tracker", "growth chart tracker", "vaccination tracker app",
     "school pickup reminder", "nanny cam viewer app",
 
     # ---- PET CARE (15) ----
