@@ -490,7 +490,7 @@ function renderShortlist() {
   // 2D Scatter Chart
   html += '<div class="shortlist-chart-wrap">';
   html += '<h3>Market Opportunity vs Build Complexity</h3>';
-  html += '<p class="chart-subtitle">Top-left quadrant = best ideas (high opportunity, low complexity). Bubble size = money-making score.</p>';
+  html += '<p class="chart-subtitle">Top-left = sweet spot. Complexity scored across 6 dimensions: backend, APIs, hardware, media, content, UI (hover for breakdown). Bubble size = money score.</p>';
   html += '<div style="position:relative;height:420px"><canvas id="shortlist-scatter"></canvas></div>';
   html += '</div>';
 
@@ -626,6 +626,7 @@ function renderShortlistChart(sorted) {
       label: d.name,
       money: d.money_score,
       rank: d.rank,
+      dims: d.build_dimensions || null,
     });
   });
 
@@ -637,8 +638,8 @@ function renderShortlistChart(sorted) {
       maintainAspectRatio: false,
       scales: {
         x: {
-          title: { display: true, text: 'Build Complexity →', color: '#fdcb6e', font: { weight: 'bold' } },
-          min: 0, max: 10,
+          title: { display: true, text: 'Build Complexity (6 dimensions) →', color: '#fdcb6e', font: { weight: 'bold' } },
+          min: 1, max: 8,
           ticks: { color: '#8b8fa3', stepSize: 1 },
           grid: { color: 'rgba(255,255,255,.06)' },
         },
@@ -655,13 +656,32 @@ function renderShortlistChart(sorted) {
           callbacks: {
             label: function(ctx) {
               const p = ctx.raw;
-              return [
+              const lines = [
                 p.label,
-                `Market Opportunity: ${p.y}`,
-                `Build Complexity: ${p.x}`,
-                `Money Score: ${p.money}`,
-                `Rank: #${p.rank}`,
+                `Market Opportunity: ${p.y}  |  Money: ${p.money}  |  Rank #${p.rank}`,
+                '',
+                `Build Complexity: ${p.x}/10`,
               ];
+              if (p.dims) {
+                const dimLabels = {
+                  backend_sync: 'Backend & Sync',
+                  external_apis: 'External APIs',
+                  hardware_sensors: 'Hardware',
+                  rich_media: 'Rich Media',
+                  content_creation: 'Content Work',
+                  ui_complexity: 'UI Complexity'
+                };
+                const total = Object.values(p.dims).reduce((s,v) => s+v, 0);
+                lines.push(`Raw score: ${total}/12`);
+                for (const [key, label] of Object.entries(dimLabels)) {
+                  const v = p.dims[key] || 0;
+                  if (v > 0) {
+                    const bar = '■'.repeat(v) + '□'.repeat(2-v);
+                    lines.push(`  ${bar}  ${label}`);
+                  }
+                }
+              }
+              return lines;
             }
           }
         },
@@ -672,7 +692,7 @@ function renderShortlistChart(sorted) {
       id: 'quadrants',
       beforeDraw(chart) {
         const { ctx, chartArea: { left, right, top, bottom }, scales: { x, y } } = chart;
-        const midX = x.getPixelForValue(5);
+        const midX = x.getPixelForValue(4);
         const midY = y.getPixelForValue(65);
 
         // Top-left: best (green tint)
