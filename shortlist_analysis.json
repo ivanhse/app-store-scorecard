@@ -118,10 +118,69 @@
     }
   },
   {
+    "name": "Couple Games",
+    "keyword": "couple games app",
+    "tier": "Tier 2",
+    "rank": 3,
+    "money_score": 72,
+    "market_opportunity": 65,
+    "build_complexity": 2,
+    "monetization_model": "Subscription ($6-10/month) + one-time lifetime unlock ($30-50)",
+    "estimated_arpu": "$6-10/month",
+    "why_money": "Validated category: Paired (Kevin Hart-backed) reportedly passed $5M ARR in 18 months. Content-first app \u2014 decks of conversation starters, date-night ideas, intimacy questions. OpenAI can generate personalized decks. Viral organic TikTok tailwind means you can bootstrap without paid UA. Top incumbent (2 Player Games) is generic, not couples-focused \u2014 room for a premium psychologist-reviewed positioning.",
+    "opportunity_verdict": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 497481,
+    "avg_rating_count": 49748,
+    "weak_apps_in_top25": 1,
+    "concentration_index": 0.71,
+    "competitors": [
+      {
+        "name": "2 Player Games: Offline Games",
+        "ratings": 342712,
+        "stars": 4.8,
+        "price": "Free + ads",
+        "weakness": "Generic 2-player (friends / roommates), not couples-specific; ad-heavy UX; no intimacy or relationship angle"
+      },
+      {
+        "name": "Wavelength",
+        "ratings": 53073,
+        "stars": 4.9,
+        "price": "Free + IAP",
+        "weakness": "Single-game format (guessing); not a broad couples app; needs 2 devices physically nearby"
+      },
+      {
+        "name": "Games for Couples - Spicy",
+        "ratings": 22580,
+        "stars": 4.9,
+        "price": "Free + paywall",
+        "weakness": "Narrow 'spicy' positioning, fewer SFW decks for new couples; dated branding"
+      }
+    ],
+    "differentiators": "Psychologist-reviewed content (Gottman / attachment-theory framing). AI-generated personalized decks based on relationship stage (new, dating, long-term, parents). Dual SFW/NSFW modes. Progress tracking ('you've done 47 questions together'). Couples-both-pay model (one Apple ID, two logins) prevents split-churn.",
+    "build_notes": "Extremely simple build. Core loop: swipe through curated prompt deck. Content is JSON bundles (no backend required for MVP). Add OpenAI API for dynamic deck generation in v2. 1-2 week MVP.",
+    "pain_points": [
+      "Running out of things to talk about in long-term relationships",
+      "Date-night fatigue \u2014 same dinner-and-movie routine",
+      "Hard to bring up intimate/vulnerable topics without a prompt",
+      "New couples want low-pressure conversation starters to build connection",
+      "Bored during long drives or waiting at restaurants"
+    ],
+    "build_dimensions": {
+      "backend_sync": 0,
+      "external_apis": 1,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 0,
+      "ui_complexity": 0
+    }
+  },
+  {
     "name": "Baby Tracker",
     "keyword": "baby tracker",
     "tier": "Tier 2",
-    "rank": 3,
+    "rank": 4,
     "money_score": 64,
     "market_opportunity": 60,
     "build_complexity": 3,
@@ -180,7 +239,7 @@
     "name": "Homework Tracker",
     "keyword": "homework tracker app",
     "tier": "Tier 2",
-    "rank": 4,
+    "rank": 5,
     "money_score": 62,
     "market_opportunity": 63,
     "build_complexity": 3,
@@ -239,7 +298,7 @@
     "name": "Daily Journal",
     "keyword": "daily journal app",
     "tier": "Tier 2",
-    "rank": 5,
+    "rank": 6,
     "money_score": 60,
     "market_opportunity": 58,
     "build_complexity": 3,
@@ -295,10 +354,69 @@
     }
   },
   {
+    "name": "AI Journal Prompts",
+    "keyword": "journal prompt app",
+    "tier": "Tier 2",
+    "rank": 7,
+    "money_score": 60,
+    "market_opportunity": 55,
+    "build_complexity": 3,
+    "monetization_model": "Subscription ($5-10/month) \u2014 AI-powered daily prompts and insights",
+    "estimated_arpu": "$5-10/month",
+    "why_money": "Rosebud Journal reportedly hit $1M ARR in year one as a pure AI-journal wrapper. Day One, Stoic, and Gratitude validate the category but are feature-heavy. The opening: shallow vibe-codeable AI-first journal with daily push prompts + weekly AI reflection summaries. Wellness CPI is cheap ($3 Meta). Risk is retention \u2014 people download journals and ghost. Streak mechanics + emotional AI summaries are the retention levers.",
+    "opportunity_verdict": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_all": 474087,
+    "avg_rating_count": 47408,
+    "weak_apps_in_top25": 1,
+    "concentration_index": 0.72,
+    "competitors": [
+      {
+        "name": "Day One: Daily Journal & Diary",
+        "ratings": 115884,
+        "stars": 4.8,
+        "price": "Free + $35/yr subscription",
+        "weakness": "Feature-heavy 'diary' positioning; no AI reflection, no guided prompts, complex UI overwhelms casual users"
+      },
+      {
+        "name": "Journal (Apple)",
+        "ratings": 258631,
+        "stars": 4.8,
+        "price": "Free (built-in)",
+        "weakness": "iOS 17+ only, no Android, no AI insights, no cross-device memory, static prompt library"
+      },
+      {
+        "name": "Stoic: Journal & Mental Health",
+        "ratings": 34152,
+        "stars": 4.8,
+        "price": "Free + $50/yr",
+        "weakness": "Stoicism-specific positioning limits appeal; no personalized AI, rigid exercise flow"
+      }
+    ],
+    "differentiators": "AI-first: every daily prompt is personalized to recent entries. Weekly 'what you've been thinking about' AI summary drives re-engagement. Voice-to-text primary input (vs. Day One's typing focus). Non-denominational \u2014 appeals broader than Stoic or Christian journals. Beats Apple's Journal on cross-platform + AI.",
+    "build_notes": "1-2 week MVP. Tech: OpenAI API + curated prompt library + SQLite + push notifications. Main engineering cost is prompt engineering for quality AI reflections. Server-side LLM calls to protect API key. Cross-platform via React Native or Flutter.",
+    "pain_points": [
+      "Staring at a blank page \u2014 no idea what to write",
+      "Forgetting to journal consistently without a nudge",
+      "Wanting insights from past entries without re-reading everything",
+      "Therapy is expensive; self-reflection tools are a cheaper complement",
+      "Apple's built-in Journal is fine but offers zero AI help or insights"
+    ],
+    "build_dimensions": {
+      "backend_sync": 1,
+      "external_apis": 1,
+      "hardware_sensors": 0,
+      "rich_media": 0,
+      "content_creation": 1,
+      "ui_complexity": 0
+    }
+  },
+  {
     "name": "Trivia Quiz Maker",
     "keyword": "trivia quiz maker",
     "tier": "Tier 3",
-    "rank": 6,
+    "rank": 8,
     "money_score": 54,
     "market_opportunity": 55,
     "build_complexity": 3,
@@ -357,7 +475,7 @@
     "name": "Noise Cancellation App",
     "keyword": "noise cancellation app",
     "tier": "Tier 3",
-    "rank": 7,
+    "rank": 9,
     "money_score": 52,
     "market_opportunity": 55,
     "build_complexity": 3,
