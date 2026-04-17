@@ -309,20 +309,21 @@
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
       <strong style="color:var(--green)">Deep mode (default)</strong>: 1000 keywords re-searched without
       the "app" suffix (people don't type "photos app" in the App Store), with 25 top results each.
-      Re-ranked by <strong style="color:#fd79a8">Vibe-ROI</strong> — an LTV × demand × supply_room score
-      modulated by kill/win patterns: one-shot calculators, iOS built-in kills, incumbent locks
-      (Splitwise / Forest / Calm / etc.) drag score toward zero; sticky trackers, parent / hobby /
-      vertical-AI WTP boost it. Category → ARPU → payback math is baked in, not eyeballed.
+      Re-ranked by <strong style="color:#fd79a8">Vibe-ROI</strong> — an LTV × demand × supply_room score.
+      Category → ARPU → payback math is baked in, not eyeballed.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      <strong>Kill flags</strong> (red) mean "skip, here's why": <code>one_shot_calc</code>,
-      <code>ios_builtin</code>, <code>incumbent:splitwise</code>, <code>liability</code>, <code>fuzzy_intent</code>.
-      <strong>Win flags</strong> (green) compound retention / conversion:
-      <code>sticky_tracker</code>, <code>parent_wtp</code>, <code>hobby_wtp</code>, <code>vertical_ai</code>.
+      <strong style="color:var(--red)">Relevance filter</strong>: each top-10 result is scored against the
+      keyword's domain tokens. Demand / Gini / weak-app counts are recomputed using <em>only relevant apps</em>,
+      so fuzzy matches like "jury duty tracker" → USCIS case trackers can't inflate the signal.
+      Keywords whose top-10 is &lt;30% relevant get verdict <strong>OFF-INTENT</strong>; 30–50% get a weak-intent penalty.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
-      Click column headers to sort. Switch to "Original batch" mode to see the old demand/supply ranking.
-      Click a keyword to run a full analyzer pass on it.
+      Verdicts map from Vibe-ROI: <strong style="color:var(--green)">GREAT</strong> (≥8),
+      <strong style="color:#55efc4">GOOD</strong> (≥4), <strong style="color:var(--yellow)">COMPETITIVE</strong> (≥1.5),
+      <strong style="color:var(--blue)">NICHE</strong> (≥0.5), <strong style="color:var(--red)">AVOID</strong> (below),
+      <strong style="color:var(--orange)">OFF-INTENT</strong> (App Store returns fuzzy matches).
+      Click column headers to sort; click a keyword to run the analyzer.
     </p>
   </div>
 
@@ -337,11 +338,13 @@
     <div class="ctrl-group">
       <label>Verdict</label>
       <select id="researchTierFilter" onchange="renderResearch()">
+        <option value="all">All</option>
         <option value="great+good">GREAT + GOOD</option>
         <option value="great">GREAT only</option>
         <option value="good">GOOD only</option>
         <option value="competitive">COMPETITIVE</option>
-        <option value="all">All</option>
+        <option value="niche">NICHE</option>
+        <option value="avoid">AVOID / OFF-INTENT</option>
       </select>
     </div>
     <div class="ctrl-group">
@@ -989,7 +992,7 @@ async function switchResearchMode() {
 }
 
 function resetResearchFilters() {
-  document.getElementById('researchTierFilter').value = 'great+good';
+  document.getElementById('researchTierFilter').value = 'all';
   document.getElementById('researchMinDemand').value = '';
   document.getElementById('researchMaxSupply').value = '';
   document.getElementById('researchMinScore').value = '';
@@ -1029,6 +1032,7 @@ function getResearchSortVal(r, col) {
     case 'weak_apps_in_top10': return r.weak_apps_in_top10 || r.weak_apps_in_top25 || 0;
     case 'mature_apps_pct': return r.mature_apps_pct ?? -1;
     case 'concentration_index': return r.concentration_index ?? -1;
+    case 'verdict': return DEEP_VERDICT_RANK[deepVerdict(r)] ?? 0;
     default: return 0;
   }
 }
@@ -1142,11 +1146,19 @@ function renderDeepResearch() {
 
   let items = deepResearchData.filter(r => !r.error);
 
-  // Verdict filter → map to vibe_roi thresholds
-  if (tierFilter === 'great') items = items.filter(r => (r.vibe_roi || 0) >= 8);
-  else if (tierFilter === 'good') items = items.filter(r => (r.vibe_roi || 0) >= 4 && (r.vibe_roi || 0) < 8);
-  else if (tierFilter === 'great+good') items = items.filter(r => (r.vibe_roi || 0) >= 4);
-  else if (tierFilter === 'competitive') items = items.filter(r => (r.vibe_roi || 0) >= 1 && (r.vibe_roi || 0) < 4);
+  // Verdict filter → map to deepVerdict labels
+  if (tierFilter !== 'all') {
+    items = items.filter(r => {
+      const v = deepVerdict(r);
+      if (tierFilter === 'great') return v === 'GREAT OPPORTUNITY';
+      if (tierFilter === 'good') return v === 'GOOD OPPORTUNITY';
+      if (tierFilter === 'great+good') return v === 'GREAT OPPORTUNITY' || v === 'GOOD OPPORTUNITY';
+      if (tierFilter === 'competitive') return v === 'COMPETITIVE';
+      if (tierFilter === 'niche') return v === 'NICHE';
+      if (tierFilter === 'avoid') return v === 'AVOID' || v === 'OFF-INTENT';
+      return true;
+    });
+  }
 
   if (minScore) items = items.filter(r => (r.vibe_roi || 0) >= parseFloat(minScore));
   if (kwSearch) items = items.filter(r =>
@@ -1187,7 +1199,7 @@ function renderDeepResearch() {
   html += thHtml('Supply', 'supply_level', 'left');
   html += thHtml('Gini', 'concentration_index', 'right');
   html += thHtml('Weak', 'weak_apps_in_top10', 'right');
-  html += `<th style="${thStyle};text-align:left">Kill / Win flags</th>`;
+  html += thHtml('Verdict', 'verdict', 'left');
   html += `<th style="${thStyle};text-align:left">Top 3</th>`;
   html += '</tr></thead><tbody>';
 
@@ -1197,12 +1209,8 @@ function renderDeepResearch() {
       return `${name}${(a.name || '').length > 22 ? '…' : ''} (${fmt(a.rating_count || 0)})`;
     }).join(', ');
     const kw = (r.keyword_normalized || '').replace(/'/g, "\\'");
-    const killBadges = (r.kills || []).map(k =>
-      `<span style="display:inline-block;padding:1px 6px;margin:1px 2px 1px 0;border-radius:3px;font-size:10px;background:rgba(225,112,85,.15);color:var(--red)">${k}</span>`
-    ).join('');
-    const winBadges = (r.wins || []).map(w =>
-      `<span style="display:inline-block;padding:1px 6px;margin:1px 2px 1px 0;border-radius:3px;font-size:10px;background:rgba(0,184,148,.15);color:var(--green)">${w}</span>`
-    ).join('');
+    const vLabel = deepVerdict(r);
+    const vClass = deepVerdictClass(vLabel);
     const roiColor = (r.vibe_roi || 0) >= 8 ? 'var(--green)' :
                      (r.vibe_roi || 0) >= 4 ? '#55efc4' :
                      (r.vibe_roi || 0) >= 1 ? 'var(--yellow)' : 'var(--muted)';
@@ -1220,7 +1228,7 @@ function renderDeepResearch() {
       <td style="padding:8px 10px;color:var(--red);font-weight:600;white-space:nowrap">${r.supply_level || '—'}</td>
       <td style="padding:8px 10px;text-align:right">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
       <td style="padding:8px 10px;text-align:right">${r.weak_apps_in_top10 ?? 0}</td>
-      <td style="padding:8px 10px;max-width:260px">${killBadges}${winBadges}</td>
+      <td style="padding:8px 10px"><span class="opportunity-badge ${vClass}" style="white-space:nowrap;font-size:10px">${vLabel}</span></td>
       <td style="padding:8px 10px;color:var(--muted);font-size:11px;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
     </tr>`;
   });
@@ -1283,6 +1291,34 @@ function opportunityClass(opp) {
   if (opp.startsWith('COMPETITIVE')) return 'competitive';
   if (opp.startsWith('SMALL')) return 'niche';
   if (opp.startsWith('OVERSUPPLIED')) return 'oversupplied';
+  return 'avoid';
+}
+
+// Map a deep-research row to a single verdict label derived from vibe_roi,
+// intent_relevance, and the off_intent/weak_intent kills written by
+// apply_relevance_to_deep_research.py.
+function deepVerdict(r) {
+  const kills = r.kills || [];
+  if (kills.includes('off_intent')) return 'OFF-INTENT';
+  const v = r.vibe_roi || 0;
+  if (v >= 8) return 'GREAT OPPORTUNITY';
+  if (v >= 4) return 'GOOD OPPORTUNITY';
+  if (v >= 1.5) return 'COMPETITIVE';
+  if (v >= 0.5) return 'NICHE';
+  return 'AVOID';
+}
+
+const DEEP_VERDICT_RANK = {
+  'GREAT OPPORTUNITY': 6, 'GOOD OPPORTUNITY': 5, 'COMPETITIVE': 4,
+  'NICHE': 3, 'AVOID': 2, 'OFF-INTENT': 1,
+};
+
+function deepVerdictClass(label) {
+  if (label === 'GREAT OPPORTUNITY') return 'great';
+  if (label === 'GOOD OPPORTUNITY') return 'good';
+  if (label === 'COMPETITIVE') return 'competitive';
+  if (label === 'NICHE') return 'niche';
+  if (label === 'OFF-INTENT') return 'oversupplied';
   return 'avoid';
 }
 
