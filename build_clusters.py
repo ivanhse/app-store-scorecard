@@ -25,6 +25,7 @@ import json
 import os
 import sys
 from collections import defaultdict
+from itertools import combinations
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
@@ -45,6 +46,11 @@ MAX_DF = 25
 MIN_CLUSTER_SIZE = 2
 # A secondary-token subgroup inside a primary cluster is surfaced only if >= this many members.
 MIN_SUBGROUP = 3
+# A bigram theme (unordered pair of tokens) is kept if it co-occurs in >= this
+# many keywords. Set low because bigrams are naturally rarer and more specific:
+# "car+rental" in 1 kw is already a narrow intent; pairs that appear in 2+
+# keywords are the sweet spot.
+BIGRAM_MIN_DF = 2
 
 
 def verdict_for(row: dict) -> str:
@@ -107,28 +113,50 @@ def primary_buckets(
     return emitted
 
 
+def bigram_buckets(token_by_kw: dict[str, set]) -> list[tuple[list[str], list[str]]]:
+    """Return (theme_tokens, members) pairs — one per bigram cluster.
+
+    A bigram is an unordered pair of two domain tokens that co-occur in the
+    same keyword. We emit any bigram that appears in >= BIGRAM_MIN_DF
+    keywords. No category split: bigrams are already narrow, so splitting
+    by category tends to leave 1-keyword fragments.
+    """
+    bigram_idx: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for kw, toks in token_by_kw.items():
+        tokens = sorted(toks)
+        for a, b in combinations(tokens, 2):
+            bigram_idx[(a, b)].add(kw)
+
+    emitted: list[tuple[list[str], list[str]]] = []
+    for (a, b), kws in bigram_idx.items():
+        if len(kws) >= BIGRAM_MIN_DF:
+            emitted.append(([a, b], sorted(kws)))
+    return emitted
+
+
 def find_subgroups(
     members: list[str],
     token_by_kw: dict[str, set],
-    primary_token: str,
+    primary_tokens: list[str],
 ) -> tuple[list[dict], list[str]]:
     """Inside a primary cluster, split members into sub-groups of >=
-    MIN_SUBGROUP that share a second distinctive token.
+    MIN_SUBGROUP that share a further distinctive token (not in the
+    cluster's primary tokens).
 
     Returns (subgroups, orphans) where each subgroup is
     {token: str, members: [str]} and orphans are members that didn't fit.
     Greedy: pick the largest subgroup first; each member assigned once.
     """
+    primary_set = set(primary_tokens)
     sub_idx: dict[str, list[str]] = defaultdict(list)
     for m in members:
         for t in token_by_kw.get(m, set()):
-            if t == primary_token:
+            if t in primary_set:
                 continue
             sub_idx[t].append(m)
 
     subgroups: list[dict] = []
     assigned: set[str] = set()
-    # Greedy: prefer larger subgroups, then rarer tokens (less overlap).
     candidates = sorted(sub_idx.items(), key=lambda x: (-len(x[1]), len(x[0])))
     for tok, kws in candidates:
         free = [k for k in kws if k not in assigned]
@@ -141,7 +169,7 @@ def find_subgroups(
 
 
 def build_cluster(
-    theme_token: str,
+    theme_tokens: list[str],
     category: str,
     members: list[str],
     deep_by_norm: dict,
@@ -207,7 +235,7 @@ def build_cluster(
     member_rows.sort(key=lambda x: -(x["vibe_roi"] or 0))
 
     # Secondary subgroups
-    subgroups, orphans = find_subgroups(members, token_by_kw, theme_token)
+    subgroups, orphans = find_subgroups(members, token_by_kw, theme_tokens)
     # Project subgroups into the member_rows form (keep ordering by vibe_roi)
     row_by_kw = {r["keyword"]: r for r in member_rows}
     sub_blocks = []
@@ -229,11 +257,17 @@ def build_cluster(
         key=lambda r: -(r["vibe_roi"] or 0),
     )
 
-    cluster_id = f"{theme_token}·{category}" if category else theme_token
+    theme_label = " + ".join(theme_tokens) if theme_tokens else ""
+    if theme_label and category:
+        cluster_id = f"{theme_label}·{category}"
+    else:
+        cluster_id = theme_label or category or "(unclustered)"
 
     return {
         "id": cluster_id,
-        "theme_token": theme_token,
+        "theme_tokens": theme_tokens,
+        "theme_token": theme_tokens[0] if theme_tokens else "",
+        "theme_length": len(theme_tokens),
         "category": category,
         "size": len(members),
         "unique_relevant_apps": len(unique_apps),
@@ -269,52 +303,66 @@ def main():
         token_by_kw[norm] = toks
         category_by_kw[norm] = (deep_by_norm.get(norm) or {}).get("dominant_category") or "—"
 
+    # 1-word clusters (token · category, with category split)
     buckets = primary_buckets(token_by_kw, category_by_kw)
-    print(f"Built {len(buckets)} primary (token · category) buckets "
-          f"covering {len({m for _,_,ms in buckets for m in ms})} keywords "
-          f"(from {len(token_by_kw)} total).")
-
-    clusters = [
-        build_cluster(tok, cat, members, deep_by_norm, rel_by_norm, token_by_kw)
+    clusters_1w = [
+        build_cluster([tok], cat, members, deep_by_norm, rel_by_norm, token_by_kw)
         for tok, cat, members in buckets
     ]
-
-    covered = {m for _, _, ms in buckets for m in ms}
-    singletons = sorted(k for k in token_by_kw if k not in covered)
+    covered_1w = {m for _, _, ms in buckets for m in ms}
+    singletons = sorted(k for k in token_by_kw if k not in covered_1w)
     if singletons:
-        clusters.append(build_cluster(
-            "(unclustered)", "", singletons,
+        clusters_1w.append(build_cluster(
+            [], "(unclustered)", singletons,
             deep_by_norm, rel_by_norm, token_by_kw,
         ))
 
-    clusters.sort(key=lambda c: (-c["best_verdict_rank"], -c["best_vibe_roi"], -c["size"]))
+    # 2-word clusters (bigram theme, no category split)
+    bg = bigram_buckets(token_by_kw)
+    clusters_2w = [
+        build_cluster(tokens, "", members, deep_by_norm, rel_by_norm, token_by_kw)
+        for tokens, members in bg
+    ]
+    covered_2w = {m for _, ms in bg for m in ms}
+    singletons_2w = sorted(k for k in token_by_kw if k not in covered_2w)
+    if singletons_2w:
+        clusters_2w.append(build_cluster(
+            [], "(unclustered)", singletons_2w,
+            deep_by_norm, rel_by_norm, token_by_kw,
+        ))
+
+    clusters = clusters_1w + clusters_2w
+    print(f"Built {len(clusters_1w)} one-word and {len(clusters_2w)} two-word clusters "
+          f"(from {len(token_by_kw)} keywords).")
+
+    clusters.sort(key=lambda c: (-c["theme_length"], -c["best_verdict_rank"],
+                                  -c["best_vibe_roi"], -c["size"]))
 
     with open(OUT_PATH, "w") as f:
         json.dump(clusters, f, indent=2)
 
     print(f"Saved {len(clusters)} clusters → {OUT_PATH}")
 
-    print("\nTop 10 clusters by best vibe_roi:")
-    multi = [c for c in clusters if c["id"] != "(unclustered)"]
+    print("\nTop 10 two-word clusters by best vibe_roi:")
+    multi = [c for c in clusters if c["theme_length"] == 2]
     multi.sort(key=lambda c: -c["best_vibe_roi"])
     for c in multi[:10]:
         subs = ", ".join(f"+{s['token']}({s['size']})" for s in c["subgroups"])
         print(f"  [{c['id']:40}] size={c['size']:2} best={c['best_vibe_roi']:<5} "
               f"verdict={c['best_verdict']:17} subs=[{subs}]")
 
-    print("\nSpot checks:")
-    for target in ("car·Finance", "car·Travel", "car·Utilities",
-                   "health·Utilities", "health·Health & Fitness",
-                   "baby·Health & Fitness", "noise·Utilities"):
-        c = next((c for c in clusters if c["id"] == target), None)
+    print("\nSpot checks (2-word):")
+    for target in ("car + rental", "car + wash", "car + insurance", "car + compare",
+                   "baby + sleep", "baby + food", "baby + milestone",
+                   "noise + white", "noise + sleep", "health + battery", "health + cat"):
+        c = next((c for c in clusters
+                  if c["theme_length"] == 2
+                  and sorted(c["theme_tokens"]) == sorted(target.split(" + "))), None)
         if c:
-            kws = ", ".join(m["keyword"] for m in c["members"][:6])
-            more = f" +{c['size']-6}" if c["size"] > 6 else ""
-            subs = " | ".join(f"+{s['token']}→{','.join(r['keyword'] for r in s['members'])}"
-                              for s in c["subgroups"])
-            print(f"  [{c['id']}] size={c['size']} → {kws}{more}")
-            if subs:
-                print(f"      subs: {subs}")
+            kws = ", ".join(m["keyword"] for m in c["members"])
+            print(f"  [{c['id']}] size={c['size']} → {kws}")
+        else:
+            print(f"  [{target}] — no bigram cluster (below MIN_DF={BIGRAM_MIN_DF})")
 
 
 if __name__ == "__main__":

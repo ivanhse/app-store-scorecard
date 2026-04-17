@@ -397,21 +397,27 @@
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
     <h3 style="font-size:16px;margin-bottom:10px">Keyword clusters — grouped by theme · category</h3>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      Primary split is <code>&lt;theme token&gt; · &lt;App Store category&gt;</code>, so
-      <code>health · Utilities</code> (battery health) doesn't mix with
-      <code>health · Health &amp; Fitness</code> (pet health). A keyword can appear under multiple themes —
-      <em>"baby sleep tracker"</em> shows up under <code>baby · Medical</code> and <code>sleep · Medical</code>.
+      Two theme modes: <strong>2-word</strong> (default) groups keywords by a <em>bigram</em> of two shared
+      domain tokens — e.g. <code>#baby + milestone</code>, <code>#noise + white</code>,
+      <code>#blood + pressure</code>. <strong>1-word</strong> mode groups by a single token and splits by
+      App Store category (<code>car · Finance</code> separates from <code>car · Utilities</code>).
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
-      Inside each cluster we also surface <strong style="color:var(--blue)">sub-groups</strong> of ≥3
-      members that share a <em>second</em> common token — e.g. inside <code>#car · Finance</code> the
-      <code>+insurance</code> sub-group shows car insurance compare alongside car cost calculator.
-      Top apps are aggregated across all members (dedup by name + developer) for the real competitive
-      footprint; best Vibe-ROI flags whether <em>any</em> angle on the theme is worth attacking.
+      Bigrams need at least 2 keywords sharing the pair to cluster; a one-off like
+      "car rental compare" stays as a singleton unless another keyword contains both
+      <em>car</em> and <em>rental</em>. Top apps and rating volume are aggregated across all members for
+      real competitive footprint; best Vibe-ROI flags whether any angle is worth attacking.
     </p>
   </div>
 
   <div class="opp-toolbar" id="clusters-toolbar" style="display:none">
+    <div class="ctrl-group">
+      <label>Theme length</label>
+      <select id="clustersThemeLen" onchange="renderClusters()">
+        <option value="2">2 words (bigrams)</option>
+        <option value="1">1 word</option>
+      </select>
+    </div>
     <div class="ctrl-group">
       <label>Sort by</label>
       <select id="clustersSort" onchange="renderClusters()">
@@ -1318,6 +1324,7 @@ async function loadClusters() {
 }
 
 function resetClusterFilters() {
+  document.getElementById('clustersThemeLen').value = '2';
   document.getElementById('clustersSort').value = 'best_vibe_roi';
   document.getElementById('clustersMinSize').value = '2';
   document.getElementById('clustersMinVerdict').value = '0';
@@ -1339,12 +1346,13 @@ function memberPill(m) {
 }
 
 function renderClusters() {
+  const themeLen = parseInt(document.getElementById('clustersThemeLen').value) || 2;
   const sortKey = document.getElementById('clustersSort').value;
   const minSize = parseInt(document.getElementById('clustersMinSize').value) || 1;
   const minVerdict = parseInt(document.getElementById('clustersMinVerdict').value) || 0;
   const search = document.getElementById('clustersSearch').value.trim().toLowerCase();
 
-  let items = clustersData.filter(c => c.size >= minSize);
+  let items = clustersData.filter(c => (c.theme_length || 1) === themeLen && c.size >= minSize);
   if (minVerdict > 0) items = items.filter(c => (c.best_verdict_rank || 0) >= minVerdict);
   if (search) {
     items = items.filter(c =>
@@ -1415,9 +1423,12 @@ function renderClusters() {
           ? `<span style="color:var(--muted);font-size:12px;font-weight:500;font-style:italic">· mixed categories</span>`
           : '');
 
+    const themeLabel = (c.theme_tokens && c.theme_tokens.length)
+      ? c.theme_tokens.join(' + ')
+      : (c.theme_token || c.id);
     html += `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
-        <div style="font-size:18px;font-weight:700;color:var(--text)">#${c.theme_token || c.id} ${catLabel}</div>
+        <div style="font-size:18px;font-weight:700;color:var(--text)">#${themeLabel} ${catLabel}</div>
         <span class="opportunity-badge ${vClass}" style="font-size:10px">${c.best_verdict}</span>
         <span style="color:var(--muted);font-size:12px">${c.size} keywords · ${c.unique_relevant_apps} unique apps · ${totalRatings} ratings</span>
       </div>
