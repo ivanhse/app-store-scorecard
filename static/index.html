@@ -421,7 +421,7 @@
     </div>
     <div class="ctrl-group">
       <label>Min size</label>
-      <input type="number" id="clustersMinSize" value="2" min="1" onchange="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
+      <input type="number" id="clustersMinSize" value="3" min="1" onchange="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
     </div>
     <div class="ctrl-group">
       <label>Verdict ≥</label>
@@ -1317,7 +1317,7 @@ async function loadClusters() {
 
 function resetClusterFilters() {
   document.getElementById('clustersSort').value = 'best_vibe_roi';
-  document.getElementById('clustersMinSize').value = '2';
+  document.getElementById('clustersMinSize').value = '3';
   document.getElementById('clustersMinVerdict').value = '0';
   document.getElementById('clustersSearch').value = '';
   renderClusters();
