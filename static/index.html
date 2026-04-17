@@ -288,12 +288,12 @@
 <body>
 
 <h1>App Store Scorecard</h1>
-<p class="subtitle">Demand vs Supply analysis from real App Store data</p>
+<p class="subtitle">Find the fastest-to-build, highest-ROI app for a paid-ads playbook.</p>
 
 <div class="tabs">
-  <button class="tab active" onclick="switchPage('analyzer')">Analyzer</button>
+  <button class="tab active" onclick="switchPage('shortlist')">Top Picks</button>
   <button class="tab" onclick="switchPage('research')">Research (1,000)</button>
-  <button class="tab" onclick="switchPage('shortlist')">Shortlist Analysis</button>
+  <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
 </div>
 
 <div class="page" id="page-research">
@@ -378,23 +378,38 @@
   <div id="research-results"><div class="loading"><div class="spinner"></div>Loading research data...</div></div>
 </div>
 
-<div class="page" id="page-shortlist">
+<div class="page visible" id="page-shortlist">
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
-    <h3 style="font-size:16px;margin-bottom:10px">Shortlist Competitive Analysis</h3>
+    <h3 style="font-size:16px;margin-bottom:10px">Picks, ranked for vibe-code + paid-ads</h3>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      Deep competitive analysis of 21 shortlisted mobile app candidates, ranked into data-driven tiers.
-      <strong style="color:var(--green)">Tier 1</strong> (money score 80+),
-      <strong style="color:var(--blue)">Tier 2</strong> (60-79),
-      <strong style="color:var(--red)">Tier 3</strong> (&lt;60).
-      Scored on Money-Making Potential (0-100),
-      Market Opportunity (compound of demand/supply gap, weak incumbents, stale apps),
-      and Build Complexity (1-10).
+      Each pick scores <strong style="color:var(--green)">Money Score</strong> (LTV potential, 0-100),
+      <strong style="color:var(--blue)">Market Opportunity</strong>, and <strong style="color:var(--yellow)">Build Complexity</strong> (1-10, lower = faster to ship).
+      The <strong style="color:#fd79a8">Vibe-ROI</strong> score combines all three with the paid-ads math below:
+      <em>money_score × (11 − complexity) / payback_months</em>.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
-      The 2D chart plots Market Opportunity (Y-axis) vs Build Complexity (X-axis). The best ideas are in the
-      <strong style="color:var(--green)">top-left quadrant</strong> — high opportunity, low complexity.
-      Each app includes analysis of 3 competitors, monetization model, estimated ARPU, and specific differentiators.
+      <strong>Payback months</strong> assume the cheaper of Meta/Google CPI, a 5% install→paying conversion, and midpoint ARPU.
+      Use the sort dropdown to re-rank. Click any card to expand competitors, pain points, and build breakdown.
     </p>
+  </div>
+
+  <div id="shortlist-top-pick"></div>
+
+  <div class="opp-toolbar" id="shortlist-toolbar" style="display:none">
+    <div class="ctrl-group">
+      <label>Sort by</label>
+      <select id="shortlistSort" onchange="renderShortlist()">
+        <option value="vibe_roi">Vibe-ROI (recommended)</option>
+        <option value="payback">Fastest payback</option>
+        <option value="money_score">Money Score</option>
+        <option value="build_complexity">Easiest to build</option>
+        <option value="market_opportunity">Market Opportunity</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Ad budget ($)</label>
+      <input type="number" id="shortlistBudget" value="5000" min="500" step="500" onchange="renderShortlist()" />
+    </div>
   </div>
 
   <div id="shortlist-results"><div class="loading"><div class="spinner"></div>Loading shortlist analysis...</div></div>
@@ -403,7 +418,7 @@
   <div id="shortlist-pain-points"></div>
 </div>
 
-<div class="page visible" id="page-analyzer">
+<div class="page" id="page-analyzer">
   <div class="search-bar">
     <input type="text" id="keywords" placeholder="Enter keywords separated by commas — e.g. habit tracker, sobriety app, fasting timer" />
     <select id="country">
@@ -427,7 +442,7 @@ let charts = {};
 let sortState = {};
 let researchLoaded = false;
 
-const PAGE_NAMES = ['analyzer', 'research', 'shortlist'];
+const PAGE_NAMES = ['shortlist', 'research', 'analyzer'];
 
 function switchPage(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
@@ -447,6 +462,55 @@ let shortlistData = [];
 let shortlistLoaded = false;
 let shortlistChart = null;
 
+// Per-app ad CPI estimates (Meta/Google) derived from the closest App Store category
+// benchmarks in app.py (Liftoff / AppsFlyer / Revealbot 2025 blended).
+const APP_CPI = {
+  "concrete calculator app":   { meta: 3.00, google: 3.50, category: "Business / Utilities" },
+  "co-parenting schedule":     { meta: 3.50, google: 4.00, category: "Lifestyle" },
+  "couples budget app":        { meta: 7.00, google: 12.50, category: "Finance" },
+  "baby tracker":              { meta: 4.00, google: 4.80, category: "Health & Fitness" },
+  "homework tracker app":      { meta: 2.67, google: 3.33, category: "Education" },
+  "daily journal app":         { meta: 3.21, google: 3.57, category: "Lifestyle" },
+  "trivia quiz maker":         { meta: 3.43, google: 2.00, category: "Games" },
+  "noise cancellation app":    { meta: 2.33, google: 2.29, category: "Utilities" },
+  "rent vs buy calculator":    { meta: 7.00, google: 12.50, category: "Finance" },
+};
+
+// Heuristics: the ads funnel below assumes what a vibe-coded app can realistically do.
+const PAYING_CONV = 0.05;   // 5% of installs convert to paying subscriber
+const RETENTION_MONTHS = 6; // mean lifetime of a paying sub
+
+function parseArpuMid(s) {
+  // "$3-5/month" -> 4.  "$1-2/month or affiliate leads" -> 1.5.  "$10-15/month" -> 12.5.
+  const nums = (s.match(/\d+(\.\d+)?/g) || []).map(parseFloat);
+  if (!nums.length) return 0;
+  if (nums.length === 1) return nums[0];
+  return (nums[0] + nums[1]) / 2;
+}
+
+function appEconomics(d) {
+  const cpi = APP_CPI[d.keyword] || { meta: 4.0, google: 5.0, category: "—" };
+  const bestChannel = cpi.meta <= cpi.google ? "Meta" : "Google";
+  const bestCpi = Math.min(cpi.meta, cpi.google);
+  const arpu = parseArpuMid(d.estimated_arpu);
+  // Revenue per install = ARPU × retention × conversion (paying users only).
+  const revPerInstall = arpu * RETENTION_MONTHS * PAYING_CONV;
+  const paybackMonths = revPerInstall > 0 ? (bestCpi / (arpu * PAYING_CONV)) : 99;
+  const roas6mo = bestCpi > 0 ? revPerInstall / bestCpi : 0;
+  // Vibe-ROI: reward money potential, low complexity, and fast payback. Normalized roughly 0-1000.
+  const vibeRoi = (d.money_score * (11 - d.build_complexity)) / Math.max(paybackMonths, 0.5);
+  return { cpi, bestChannel, bestCpi, arpu, revPerInstall, paybackMonths, roas6mo, vibeRoi };
+}
+
+function simulateBudget(d, budget) {
+  const e = appEconomics(d);
+  const installs = Math.floor(budget / e.bestCpi);
+  const payingUsers = installs * PAYING_CONV;
+  const rev12mo = payingUsers * e.arpu * Math.min(RETENTION_MONTHS, 12);
+  const profit = rev12mo - budget;
+  return { installs, payingUsers, rev12mo, profit, e };
+}
+
 async function loadShortlist() {
   shortlistLoaded = true;
   const container = document.getElementById('shortlist-results');
@@ -464,16 +528,75 @@ async function loadShortlist() {
 
 function renderShortlist() {
   const container = document.getElementById('shortlist-results');
-  const sorted = [...shortlistData].sort((a, b) => b.money_score - a.money_score);
+  document.getElementById('shortlist-toolbar').style.display = 'flex';
+
+  const sortMode = (document.getElementById('shortlistSort')?.value) || 'vibe_roi';
+  const budget = parseInt(document.getElementById('shortlistBudget')?.value || '5000', 10);
+
+  // Enrich each entry with economics, then sort by the selected mode.
+  const enriched = shortlistData.map(d => ({ ...d, _econ: appEconomics(d) }));
+  const sortFns = {
+    vibe_roi:            (a, b) => b._econ.vibeRoi - a._econ.vibeRoi,
+    payback:             (a, b) => a._econ.paybackMonths - b._econ.paybackMonths,
+    money_score:         (a, b) => b.money_score - a.money_score,
+    build_complexity:    (a, b) => a.build_complexity - b.build_complexity,
+    market_opportunity:  (a, b) => b.market_opportunity - a.market_opportunity,
+  };
+  const sorted = enriched.sort(sortFns[sortMode] || sortFns.vibe_roi);
+
+  // --- Top-pick hero ---
+  const topPickHost = document.getElementById('shortlist-top-pick');
+  const top = [...enriched].sort(sortFns.vibe_roi)[0];
+  if (top) {
+    const sim = simulateBudget(top, budget);
+    topPickHost.innerHTML = `
+      <div style="background:linear-gradient(135deg,rgba(0,184,148,.12),rgba(108,92,231,.08));border:1px solid rgba(0,184,148,.4);border-radius:12px;padding:20px 22px;margin-bottom:20px">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap">
+          <div style="flex:1;min-width:260px">
+            <div style="font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:6px">★ Top vibe-code pick</div>
+            <div style="font-size:24px;font-weight:800;margin-bottom:6px">${top.name}</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px">${top.why_money}</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <span class="opportunity-badge ${opportunityClass(top.opportunity_verdict)}">${top.opportunity_verdict}</span>
+              <span class="tag tier-tag" style="padding:2px 8px;border-radius:4px;font-weight:600;font-size:11px;background:rgba(108,92,231,.15);color:var(--accent)">${top.tier}</span>
+              <span style="padding:2px 8px;border-radius:4px;font-size:11px;background:rgba(253,121,168,.15);color:#fd79a8;font-weight:600">Vibe-ROI ${Math.round(top._econ.vibeRoi)}</span>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:10px;min-width:280px">
+            <div style="background:rgba(0,0,0,.25);border-radius:8px;padding:10px 12px">
+              <div style="font-size:10px;text-transform:uppercase;color:var(--muted);letter-spacing:.4px">Best channel</div>
+              <div style="font-size:18px;font-weight:700">${top._econ.bestChannel} · $${top._econ.bestCpi.toFixed(2)}/install</div>
+            </div>
+            <div style="background:rgba(0,0,0,.25);border-radius:8px;padding:10px 12px">
+              <div style="font-size:10px;text-transform:uppercase;color:var(--muted);letter-spacing:.4px">Payback</div>
+              <div style="font-size:18px;font-weight:700;color:${top._econ.paybackMonths < 6 ? 'var(--green)' : top._econ.paybackMonths < 12 ? 'var(--yellow)' : 'var(--red)'}">${top._econ.paybackMonths.toFixed(1)} mo</div>
+            </div>
+            <div style="background:rgba(0,0,0,.25);border-radius:8px;padding:10px 12px">
+              <div style="font-size:10px;text-transform:uppercase;color:var(--muted);letter-spacing:.4px">6-mo ROAS</div>
+              <div style="font-size:18px;font-weight:700;color:${top._econ.roas6mo > 1 ? 'var(--green)' : 'var(--yellow)'}">${top._econ.roas6mo.toFixed(2)}×</div>
+            </div>
+            <div style="background:rgba(0,0,0,.25);border-radius:8px;padding:10px 12px">
+              <div style="font-size:10px;text-transform:uppercase;color:var(--muted);letter-spacing:.4px">Build</div>
+              <div style="font-size:18px;font-weight:700;color:var(--yellow)">${top.build_complexity}/10</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08);font-size:13px;line-height:1.6">
+          <strong style="color:var(--accent)">If you spend $${budget.toLocaleString()} on ${top._econ.bestChannel}:</strong>
+          ~<strong>${sim.installs.toLocaleString()}</strong> installs →
+          ~<strong>${Math.round(sim.payingUsers).toLocaleString()}</strong> paying subs (5% conv) →
+          ~<strong style="color:var(--green)">$${Math.round(sim.rev12mo).toLocaleString()}</strong> gross over 6 mo of retention →
+          <strong style="color:${sim.profit > 0 ? 'var(--green)' : 'var(--red)'}">${sim.profit >= 0 ? '+' : ''}$${Math.round(sim.profit).toLocaleString()} profit</strong>.
+          <span style="color:var(--muted)">Assumes midpoint ARPU ($${top._econ.arpu.toFixed(2)}/mo), 5% install→pay, 6-mo retention.</span>
+        </div>
+      </div>`;
+  }
 
   const greatCount = sorted.filter(d => d.opportunity_verdict.includes('GREAT')).length;
   const goodCount = sorted.filter(d => d.opportunity_verdict.includes('GOOD')).length;
   const avgMoney = Math.round(sorted.reduce((s, d) => s + d.money_score, 0) / sorted.length);
   const avgComplexity = (sorted.reduce((s, d) => s + d.build_complexity, 0) / sorted.length).toFixed(1);
-  const bestRoi = sorted.reduce((best, d) => {
-    const roi = d.market_opportunity / d.build_complexity;
-    return roi > best.roi ? { name: d.name, roi } : best;
-  }, { name: '', roi: 0 });
+  const fastestPayback = [...enriched].sort((a,b) => a._econ.paybackMonths - b._econ.paybackMonths)[0];
 
   let html = '';
 
@@ -484,7 +607,7 @@ function renderShortlist() {
   html += `<div class="summary-stat"><div class="num" style="color:#55efc4">${goodCount}</div><div class="lbl">GOOD Opportunities</div></div>`;
   html += `<div class="summary-stat"><div class="num" style="color:var(--blue)">${avgMoney}</div><div class="lbl">Avg Money Score</div></div>`;
   html += `<div class="summary-stat"><div class="num" style="color:var(--yellow)">${avgComplexity}</div><div class="lbl">Avg Build Complexity</div></div>`;
-  html += `<div class="summary-stat"><div class="num" style="color:var(--accent)">${bestRoi.name.split(' ').slice(0,2).join(' ')}</div><div class="lbl">Best ROI (Opportunity/Complexity)</div></div>`;
+  html += `<div class="summary-stat"><div class="num" style="color:#fd79a8;font-size:14px;line-height:1.2;padding-top:6px">${fastestPayback.name}</div><div class="lbl">Fastest Payback (${fastestPayback._econ.paybackMonths.toFixed(1)} mo)</div></div>`;
   html += '</div>';
 
   // 2D Scatter Chart
@@ -495,13 +618,22 @@ function renderShortlist() {
   html += '</div>';
 
   // Ranking
+  const sortLabels = {
+    vibe_roi: 'Vibe-ROI (money × ease ÷ payback)',
+    payback: 'Fastest ad-payback',
+    money_score: 'Money-Making Potential',
+    build_complexity: 'Easiest to Build',
+    market_opportunity: 'Market Opportunity',
+  };
   html += '<div class="shortlist-ranking">';
-  html += '<h3>Ranked by Money-Making Potential</h3>';
+  html += `<h3>Ranked by ${sortLabels[sortMode] || 'Vibe-ROI'}</h3>`;
 
   sorted.forEach((d, i) => {
     const rank = i + 1;
     const rankClass = rank <= 3 ? 'top3' : '';
     const oppClass = opportunityClass(d.opportunity_verdict);
+    const e = d._econ;
+    const paybackColor = e.paybackMonths < 6 ? 'var(--green)' : e.paybackMonths < 12 ? 'var(--yellow)' : 'var(--red)';
 
     html += `<div class="rank-card" onclick="this.classList.toggle('expanded')">`;
     html += '<div class="rank-header">';
@@ -513,10 +645,12 @@ function renderShortlist() {
     html += `<span class="opportunity-badge ${oppClass}">${d.opportunity_verdict}</span>`;
     html += `<span>${d.monetization_model.split('+')[0].trim()}</span>`;
     html += `<span>ARPU: ${d.estimated_arpu}</span>`;
+    html += `<span style="color:var(--muted)">${e.bestChannel} CPI: <strong style="color:var(--text)">$${e.bestCpi.toFixed(2)}</strong></span>`;
     html += '</div></div>';
     html += '<div class="rank-scores">';
+    html += `<div class="rank-score-box"><div class="score-val" style="color:#fd79a8">${Math.round(e.vibeRoi)}</div><div class="score-lbl">Vibe-ROI</div></div>`;
+    html += `<div class="rank-score-box"><div class="score-val" style="color:${paybackColor}">${e.paybackMonths.toFixed(1)}</div><div class="score-lbl">Payback mo</div></div>`;
     html += `<div class="rank-score-box"><div class="score-val money">${d.money_score}</div><div class="score-lbl">Money</div></div>`;
-    html += `<div class="rank-score-box"><div class="score-val opp">${d.market_opportunity}</div><div class="score-lbl">Opportunity</div></div>`;
     html += `<div class="rank-score-box"><div class="score-val complex">${d.build_complexity}</div><div class="score-lbl">Complexity</div></div>`;
     html += '</div></div>';
 
@@ -1216,6 +1350,9 @@ document.addEventListener('click', e => {
 document.getElementById('keywords').addEventListener('keydown', e => {
   if (e.key === 'Enter') analyze();
 });
+
+// Shortlist is the default landing tab — kick off its load immediately.
+loadShortlist();
 </script>
 </body>
 </html>
