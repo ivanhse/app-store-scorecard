@@ -191,6 +191,16 @@ def deep_research():
     return jsonify(data)
 
 
+@app.route("/api/clusters", methods=["GET"])
+def clusters():
+    results_path = os.path.join(os.path.dirname(__file__), "clusters.json")
+    if not os.path.exists(results_path):
+        return jsonify({"error": "clusters.json not found — run build_clusters.py first"}), 404
+    with open(results_path) as f:
+        data = json.load(f)
+    return jsonify(data)
+
+
 @app.route("/api/research", methods=["GET"])
 def research():
     tier = request.args.get("tier", "all")

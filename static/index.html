@@ -292,6 +292,7 @@
 
 <div class="tabs">
   <button class="tab active" onclick="switchPage('research')">Research (1,000)</button>
+  <button class="tab" onclick="switchPage('clusters')">Clusters</button>
   <button class="tab" onclick="switchPage('shortlist')">Top Picks</button>
   <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
 </div>
@@ -392,6 +393,59 @@
   <div id="research-results"><div class="loading"><div class="spinner"></div>Loading research data...</div></div>
 </div>
 
+<div class="page" id="page-clusters">
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
+    <h3 style="font-size:16px;margin-bottom:10px">Keyword clusters — grouped by theme</h3>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
+      Every distinctive domain token (e.g. <code>baby</code>, <code>noise</code>, <code>blood</code>)
+      appearing in 2–25 keywords becomes a cluster. A keyword like <em>"baby sleep tracker"</em> shows
+      up under both the <code>baby</code> and <code>sleep</code> clusters, since it's relevant to each.
+    </p>
+    <p style="font-size:13px;color:var(--muted);line-height:1.6">
+      For each cluster we aggregate the <strong style="color:var(--red)">unique relevant apps</strong>
+      across all member keywords (dedup by name + developer) so you see the real competitive footprint.
+      The <strong style="color:var(--green)">best Vibe-ROI</strong> inside a cluster tells you whether
+      <em>any</em> angle on that theme is worth attacking.
+    </p>
+  </div>
+
+  <div class="opp-toolbar" id="clusters-toolbar" style="display:none">
+    <div class="ctrl-group">
+      <label>Sort by</label>
+      <select id="clustersSort" onchange="renderClusters()">
+        <option value="best_vibe_roi">Best Vibe-ROI</option>
+        <option value="size">Cluster size</option>
+        <option value="unique_apps">Unique relevant apps</option>
+        <option value="avg_intent">Avg intent relevance</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Min size</label>
+      <input type="number" id="clustersMinSize" value="2" min="1" onchange="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
+    </div>
+    <div class="ctrl-group">
+      <label>Verdict ≥</label>
+      <select id="clustersMinVerdict" onchange="renderClusters()">
+        <option value="0">Any</option>
+        <option value="3">NICHE</option>
+        <option value="4">COMPETITIVE</option>
+        <option value="5">GOOD</option>
+        <option value="6">GREAT</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
+      <label>Theme search</label>
+      <input type="text" id="clustersSearch" placeholder="e.g. baby, sleep, noise" oninput="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:180px" />
+    </div>
+    <div class="ctrl-group">
+      <label>&nbsp;</label>
+      <button class="reset-btn" onclick="resetClusterFilters()">Reset</button>
+    </div>
+  </div>
+  <div class="opp-filter-count" id="clusters-filter-count"></div>
+  <div id="clusters-results"><div class="loading"><div class="spinner"></div>Loading clusters...</div></div>
+</div>
+
 <div class="page" id="page-shortlist">
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
     <h3 style="font-size:16px;margin-bottom:10px">Picks, ranked for vibe-code + paid-ads</h3>
@@ -455,8 +509,10 @@ let researchData = [];
 let charts = {};
 let sortState = {};
 let researchLoaded = false;
+let clustersData = [];
+let clustersLoaded = false;
 
-const PAGE_NAMES = ['research', 'shortlist', 'analyzer'];
+const PAGE_NAMES = ['research', 'clusters', 'shortlist', 'analyzer'];
 
 function switchPage(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
@@ -466,6 +522,7 @@ function switchPage(name) {
     document.getElementById('page-' + p).classList.toggle('visible', p === name);
   });
   if (name === 'research' && !researchLoaded) loadResearch();
+  if (name === 'clusters' && !clustersLoaded) loadClusters();
   if (name === 'shortlist' && !shortlistLoaded) loadShortlist();
 }
 
@@ -1241,6 +1298,119 @@ function analyzeFromResearch(keyword) {
   document.getElementById('keywords').value = keyword;
   switchPage('analyzer');
   analyze();
+}
+
+async function loadClusters() {
+  clustersLoaded = true;
+  const container = document.getElementById('clusters-results');
+  try {
+    const resp = await fetch('/api/clusters');
+    const data = await resp.json();
+    if (data.error) throw new Error(data.error);
+    clustersData = data.filter(c => c.id !== '(unclustered)');
+    document.getElementById('clusters-toolbar').style.display = 'flex';
+    renderClusters();
+  } catch (e) {
+    container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
+  }
+}
+
+function resetClusterFilters() {
+  document.getElementById('clustersSort').value = 'best_vibe_roi';
+  document.getElementById('clustersMinSize').value = '2';
+  document.getElementById('clustersMinVerdict').value = '0';
+  document.getElementById('clustersSearch').value = '';
+  renderClusters();
+}
+
+function renderClusters() {
+  const sortKey = document.getElementById('clustersSort').value;
+  const minSize = parseInt(document.getElementById('clustersMinSize').value) || 1;
+  const minVerdict = parseInt(document.getElementById('clustersMinVerdict').value) || 0;
+  const search = document.getElementById('clustersSearch').value.trim().toLowerCase();
+
+  let items = clustersData.filter(c => c.size >= minSize);
+  if (minVerdict > 0) items = items.filter(c => (c.best_verdict_rank || 0) >= minVerdict);
+  if (search) {
+    items = items.filter(c =>
+      c.id.toLowerCase().includes(search) ||
+      (c.members || []).some(m => (m.keyword || '').toLowerCase().includes(search))
+    );
+  }
+
+  items.sort((a, b) => {
+    if (sortKey === 'size') return b.size - a.size;
+    if (sortKey === 'unique_apps') return (b.unique_relevant_apps || 0) - (a.unique_relevant_apps || 0);
+    if (sortKey === 'avg_intent') return (b.avg_intent_relevance || 0) - (a.avg_intent_relevance || 0);
+    return (b.best_vibe_roi || 0) - (a.best_vibe_roi || 0);
+  });
+
+  document.getElementById('clusters-filter-count').textContent =
+    `${items.length} cluster${items.length === 1 ? '' : 's'} of ${clustersData.length} total`;
+
+  if (!items.length) {
+    document.getElementById('clusters-results').innerHTML =
+      '<div class="loading">No clusters match these filters.</div>';
+    return;
+  }
+
+  let html = '';
+  items.forEach(c => {
+    const vClass = deepVerdictClass(c.best_verdict);
+    const bestRoi = (c.best_vibe_roi || 0).toFixed(2);
+    const worstRoi = (c.worst_vibe_roi || 0).toFixed(2);
+    const avgIntent = c.avg_intent_relevance != null ? c.avg_intent_relevance.toFixed(2) : '—';
+    const totalRatings = fmt(c.unique_total_ratings || 0);
+    const roiColor = (c.best_vibe_roi || 0) >= 4 ? 'var(--green)' :
+                     (c.best_vibe_roi || 0) >= 1.5 ? 'var(--yellow)' : 'var(--muted)';
+
+    const memberPills = (c.members || []).map(m => {
+      const kw = (m.keyword || '').replace(/'/g, "\\'");
+      const mClass = deepVerdictClass(m.verdict);
+      const mRoi = (m.vibe_roi || 0).toFixed(2);
+      return `<a href="#" onclick="analyzeFromResearch('${kw}');return false"
+        class="opportunity-badge ${mClass}"
+        style="display:inline-flex;align-items:center;gap:6px;margin:3px 4px 0 0;font-size:11px;text-decoration:none;padding:4px 9px"
+        title="${m.verdict} · vibe_roi ${mRoi} · demand ${m.demand_level || '—'} · supply ${m.supply_level || '—'}">
+        ${m.keyword}
+        <span style="opacity:.7;font-weight:500">${mRoi}</span>
+      </a>`;
+    }).join('');
+
+    const topApps = (c.top_apps || []).slice(0, 6).map(a => {
+      const nm = (a.name || '').substring(0, 30);
+      const appearsIn = (a.appears_in || []).length;
+      return `<div style="display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dashed var(--border);font-size:12px">
+        <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${nm}${(a.name || '').length > 30 ? '…' : ''}
+          <span style="color:var(--muted);font-size:10px">· ${appearsIn}×</span></span>
+        <span style="color:var(--muted);white-space:nowrap">${fmt(a.rating_count || 0)} · ${(a.star_rating || 0).toFixed(1)}★</span>
+      </div>`;
+    }).join('');
+
+    html += `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:14px">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+        <div style="font-size:18px;font-weight:700;color:var(--text)">#${c.id}</div>
+        <span class="opportunity-badge ${vClass}" style="font-size:10px">${c.best_verdict}</span>
+        <span style="color:var(--muted);font-size:12px">${c.size} keywords · ${c.unique_relevant_apps} unique apps · ${totalRatings} ratings · ${c.dominant_category || '—'}</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div>
+          <div style="display:flex;gap:14px;margin-bottom:10px;font-size:12px;color:var(--muted)">
+            <span>Best Vibe-ROI <strong style="color:${roiColor}">${bestRoi}</strong></span>
+            <span>Worst <strong style="color:var(--text)">${worstRoi}</strong></span>
+            <span>Avg intent <strong style="color:var(--text)">${avgIntent}</strong></span>
+          </div>
+          <div>${memberPills}</div>
+        </div>
+        <div>
+          <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Top apps across cluster (× = # keywords it appears in)</div>
+          ${topApps || '<div style="color:var(--muted);font-size:12px">No relevant apps.</div>'}
+        </div>
+      </div>
+    </div>`;
+  });
+
+  document.getElementById('clusters-results').innerHTML = html;
 }
 
 async function analyze() {
