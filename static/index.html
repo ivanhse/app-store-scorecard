@@ -1352,7 +1352,12 @@ function renderClusters() {
   const minVerdict = parseInt(document.getElementById('clustersMinVerdict').value) || 0;
   const search = document.getElementById('clustersSearch').value.trim().toLowerCase();
 
-  let items = clustersData.filter(c => (c.theme_length || 1) === themeLen && c.size >= minSize);
+  // When the user is searching, ignore the theme-length filter so that a
+  // keyword like "noise cancellation" (not in any bigram cluster, only in the
+  // 1-word #noise·Utilities one) is still reachable from the default 2-word view.
+  let items = clustersData.filter(c =>
+    (search || (c.theme_length || 1) === themeLen) && c.size >= minSize
+  );
   if (minVerdict > 0) items = items.filter(c => (c.best_verdict_rank || 0) >= minVerdict);
   if (search) {
     items = items.filter(c =>
@@ -1426,9 +1431,11 @@ function renderClusters() {
     const themeLabel = (c.theme_tokens && c.theme_tokens.length)
       ? c.theme_tokens.join(' + ')
       : (c.theme_token || c.id);
+    const tlBadge = `<span style="font-size:10px;padding:2px 6px;border:1px solid var(--border);border-radius:4px;color:var(--muted);font-weight:600">${c.theme_length || 1}w</span>`;
     html += `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
         <div style="font-size:18px;font-weight:700;color:var(--text)">#${themeLabel} ${catLabel}</div>
+        ${tlBadge}
         <span class="opportunity-badge ${vClass}" style="font-size:10px">${c.best_verdict}</span>
         <span style="color:var(--muted);font-size:12px">${c.size} keywords · ${c.unique_relevant_apps} unique apps · ${totalRatings} ratings</span>
       </div>
