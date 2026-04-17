@@ -1,48 +1,50 @@
 #!/usr/bin/env python3
 """Group the 1000 keywords into theme clusters.
 
-Each distinctive domain token (intent modifiers like "tracker"/"app"
-stripped, and with document frequency between MIN_DF and MAX_DF) becomes
-a cluster theme. A keyword appears in every theme bucket it qualifies for,
-so "baby sleep tracker" is visible under both the `baby` and `sleep`
-themes. No transitive closure, so unrelated topics can't chain-merge.
+Two levels of grouping:
 
-Singleton keywords (no qualifying theme token) are grouped into a
-`(unclustered)` bucket purely so the total is traceable, but hidden from
-the UI by default.
+1. Primary split: `<theme_token> · <dominant_category>`. A theme token is a
+   non-generic domain token with document frequency in [MIN_DF, MAX_DF].
+   We split by category so "health" doesn't merge battery-health (Utilities)
+   with pet-health (Health & Fitness). A (token, category) bucket becomes
+   a cluster only if it has >= MIN_CLUSTER_SIZE members.
 
-For each cluster we surface:
-  - size, theme token(s)
-  - union of top-10 relevant apps across member keywords (dedupe by name+dev)
-  - aggregate rating volume and #unique relevant apps (real competitive footprint)
-  - best / worst vibe_roi inside cluster, avg intent_relevance
-  - dominant category, best verdict
+2. Inside each primary cluster, we look for sub-groups of >= MIN_SUBGROUP
+   members that share a second distinctive token. E.g. inside `#car`, we
+   surface `+insurance` (car insurance compare, car value estimator...),
+   `+rental` (car rental compare...), `+maintenance` (car maintenance
+   tracker, car wash finder...). This gives the user the nested "close
+   topics" view inside a large cluster.
+
+Keywords with no qualifying primary bucket go to `(unclustered)`.
 
 Output: clusters.json (consumed by /api/clusters).
 """
 
 import json
 import os
-import re
 import sys
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
-from relevance_rescore import (
-    normalize_keyword, domain_tokens, stem_lite,
-)
+from relevance_rescore import domain_tokens
 
 DEEP_PATH = os.path.join(ROOT, "deep_research.json")
 REL_PATH = os.path.join(ROOT, "relevance_rescored.json")
 OUT_PATH = os.path.join(ROOT, "clusters.json")
 
-# A token becomes a theme if it appears in [MIN_DF, MAX_DF] keywords.
-# <2 means nothing to cluster. >25 is too broad (e.g. "train", "exercise"
-# span unrelated niches and would swallow everything).
+# A theme token must appear in [MIN_DF, MAX_DF] keywords.
 MIN_DF = 2
 MAX_DF = 25
+# A primary (token, category) bucket is kept only if it has >= this many members.
+# Kept at 2 because splitting by category already narrows the theme a lot, and
+# a 2-keyword pair inside one category still represents a coherent mini-niche
+# (e.g. `health · H&F` = goat + cat health trackers — same pet-care intent).
+MIN_CLUSTER_SIZE = 2
+# A secondary-token subgroup inside a primary cluster is surfaced only if >= this many members.
+MIN_SUBGROUP = 3
 
 
 def verdict_for(row: dict) -> str:
@@ -68,30 +70,184 @@ VERDICT_RANK = {
 }
 
 
-def cluster(token_by_kw: dict[str, set]) -> dict[str, list[str]]:
-    """Group keywords by each qualifying theme token.
+def primary_buckets(
+    token_by_kw: dict[str, set],
+    category_by_kw: dict[str, str],
+) -> list[tuple[str, str, list[str]]]:
+    """Return (theme_token, category, members) tuples — one per primary cluster.
 
-    Returns a dict: theme_token -> list of keyword members. A keyword can
-    appear under multiple themes. Keywords with no qualifying token go
-    under a single "(unclustered)" bucket so nothing is silently dropped.
+    A bucket is emitted only if it has >= MIN_CLUSTER_SIZE members.
     """
     tok_idx: dict[str, list[str]] = defaultdict(list)
     for kw, toks in token_by_kw.items():
         for t in toks:
             tok_idx[t].append(kw)
 
-    groups: dict[str, list[str]] = {}
-    covered: set[str] = set()
+    emitted: list[tuple[str, str, list[str]]] = []
     for tok, kws in tok_idx.items():
         if len(kws) < MIN_DF or len(kws) > MAX_DF:
             continue
-        groups[tok] = sorted(set(kws))
-        covered.update(kws)
+        by_cat: dict[str, list[str]] = defaultdict(list)
+        for kw in kws:
+            cat = category_by_kw.get(kw) or "—"
+            by_cat[cat].append(kw)
 
-    singles = [k for k in token_by_kw if k not in covered]
-    if singles:
-        groups["(unclustered)"] = sorted(singles)
-    return groups
+        leftover: list[str] = []
+        for cat, members in by_cat.items():
+            if len(members) >= MIN_CLUSTER_SIZE:
+                emitted.append((tok, cat, sorted(set(members))))
+            else:
+                leftover.extend(members)
+
+        # If a token has members that didn't fit into any per-category cluster
+        # (e.g. `speed` has 1 keyword in each of 5 different categories), keep
+        # them together in a `<token> · (mixed)` cluster so they're not lost.
+        if len(leftover) >= MIN_CLUSTER_SIZE:
+            emitted.append((tok, "(mixed)", sorted(set(leftover))))
+    return emitted
+
+
+def find_subgroups(
+    members: list[str],
+    token_by_kw: dict[str, set],
+    primary_token: str,
+) -> tuple[list[dict], list[str]]:
+    """Inside a primary cluster, split members into sub-groups of >=
+    MIN_SUBGROUP that share a second distinctive token.
+
+    Returns (subgroups, orphans) where each subgroup is
+    {token: str, members: [str]} and orphans are members that didn't fit.
+    Greedy: pick the largest subgroup first; each member assigned once.
+    """
+    sub_idx: dict[str, list[str]] = defaultdict(list)
+    for m in members:
+        for t in token_by_kw.get(m, set()):
+            if t == primary_token:
+                continue
+            sub_idx[t].append(m)
+
+    subgroups: list[dict] = []
+    assigned: set[str] = set()
+    # Greedy: prefer larger subgroups, then rarer tokens (less overlap).
+    candidates = sorted(sub_idx.items(), key=lambda x: (-len(x[1]), len(x[0])))
+    for tok, kws in candidates:
+        free = [k for k in kws if k not in assigned]
+        if len(free) >= MIN_SUBGROUP:
+            subgroups.append({"token": tok, "members": sorted(free)})
+            assigned.update(free)
+
+    orphans = sorted(m for m in members if m not in assigned)
+    return subgroups, orphans
+
+
+def build_cluster(
+    theme_token: str,
+    category: str,
+    members: list[str],
+    deep_by_norm: dict,
+    rel_by_norm: dict,
+    token_by_kw: dict[str, set],
+) -> dict:
+    # Aggregate relevant apps across all members, dedupe by (name, developer)
+    seen_apps: dict[tuple, dict] = {}
+    for m in members:
+        rrel = rel_by_norm.get(m, {})
+        for a in rrel.get("top10_scored") or []:
+            if a.get("relevance", 0) < 0.5:
+                continue
+            key = (a.get("name", ""), a.get("developer", ""))
+            prev = seen_apps.get(key)
+            if prev is None or a.get("rating_count", 0) > prev.get("rating_count", 0):
+                seen_apps[key] = {
+                    "name": a.get("name", ""),
+                    "developer": a.get("developer", ""),
+                    "rating_count": int(a.get("rating_count") or 0),
+                    "star_rating": a.get("star_rating", 0),
+                    "category": a.get("category", ""),
+                    "appears_in": [],
+                }
+            seen_apps[key]["appears_in"].append(m)
+
+    unique_apps = sorted(seen_apps.values(), key=lambda x: -x["rating_count"])
+    unique_total_ratings = sum(a["rating_count"] for a in unique_apps)
+
+    member_rows: list[dict] = []
+    intent_sum, intent_n = 0.0, 0
+    best_verdict_rank, best_verdict_label = 0, "AVOID"
+    best_vibe, worst_vibe = 0.0, 999.0
+
+    for m in members:
+        d = deep_by_norm.get(m) or {}
+        rrel = rel_by_norm.get(m) or {}
+        v = verdict_for(d)
+        vr = d.get("vibe_roi") or 0
+        intent = rrel.get("intent_relevance")
+        if intent is not None:
+            intent_sum += intent
+            intent_n += 1
+        if VERDICT_RANK.get(v, 0) > best_verdict_rank:
+            best_verdict_rank = VERDICT_RANK[v]
+            best_verdict_label = v
+        best_vibe = max(best_vibe, vr)
+        worst_vibe = min(worst_vibe, vr)
+        member_rows.append({
+            "keyword": m,
+            "verdict": v,
+            "vibe_roi": round(vr, 2),
+            "payback_months": d.get("payback_months"),
+            "ltv": d.get("ltv"),
+            "demand_level": d.get("demand_level"),
+            "supply_level": d.get("supply_level"),
+            "concentration_index": d.get("concentration_index"),
+            "intent_relevance": intent,
+            "dominant_category": d.get("dominant_category") or "",
+        })
+
+    avg_intent = round(intent_sum / intent_n, 2) if intent_n else None
+    member_rows.sort(key=lambda x: -(x["vibe_roi"] or 0))
+
+    # Secondary subgroups
+    subgroups, orphans = find_subgroups(members, token_by_kw, theme_token)
+    # Project subgroups into the member_rows form (keep ordering by vibe_roi)
+    row_by_kw = {r["keyword"]: r for r in member_rows}
+    sub_blocks = []
+    for sg in subgroups:
+        rows = sorted(
+            (row_by_kw[k] for k in sg["members"] if k in row_by_kw),
+            key=lambda r: -(r["vibe_roi"] or 0),
+        )
+        best = max((VERDICT_RANK.get(r["verdict"], 0) for r in rows), default=0)
+        sub_blocks.append({
+            "token": sg["token"],
+            "size": len(rows),
+            "best_verdict_rank": best,
+            "members": rows,
+        })
+    sub_blocks.sort(key=lambda b: (-b["best_verdict_rank"], -b["size"]))
+    orphan_rows = sorted(
+        (row_by_kw[k] for k in orphans if k in row_by_kw),
+        key=lambda r: -(r["vibe_roi"] or 0),
+    )
+
+    cluster_id = f"{theme_token}·{category}" if category else theme_token
+
+    return {
+        "id": cluster_id,
+        "theme_token": theme_token,
+        "category": category,
+        "size": len(members),
+        "unique_relevant_apps": len(unique_apps),
+        "unique_total_ratings": unique_total_ratings,
+        "best_verdict": best_verdict_label,
+        "best_verdict_rank": best_verdict_rank,
+        "best_vibe_roi": round(best_vibe, 2),
+        "worst_vibe_roi": round(worst_vibe, 2) if worst_vibe < 999 else 0,
+        "avg_intent_relevance": avg_intent,
+        "members": member_rows,
+        "subgroups": sub_blocks,
+        "orphans": orphan_rows,
+        "top_apps": unique_apps[:10],
+    }
 
 
 def main():
@@ -103,114 +259,34 @@ def main():
     deep_by_norm = {r["keyword_normalized"]: r for r in deep}
     rel_by_norm = {r["keyword_normalized"]: r for r in rel}
 
-    # Build domain-token sets
     token_by_kw: dict[str, set] = {}
+    category_by_kw: dict[str, str] = {}
     for r in rel:
         norm = r.get("keyword_normalized")
         if not norm or "error" in r:
             continue
         toks = set(r.get("domain_tokens") or domain_tokens(norm))
         token_by_kw[norm] = toks
+        category_by_kw[norm] = (deep_by_norm.get(norm) or {}).get("dominant_category") or "—"
 
-    groups = cluster(token_by_kw)
-    print(f"Built {len(groups)} theme clusters from {len(token_by_kw)} keywords.")
+    buckets = primary_buckets(token_by_kw, category_by_kw)
+    print(f"Built {len(buckets)} primary (token · category) buckets "
+          f"covering {len({m for _,_,ms in buckets for m in ms})} keywords "
+          f"(from {len(token_by_kw)} total).")
 
-    clusters = []
-    for theme_token, members in groups.items():
-        if not members:
-            continue
+    clusters = [
+        build_cluster(tok, cat, members, deep_by_norm, rel_by_norm, token_by_kw)
+        for tok, cat, members in buckets
+    ]
 
-        if theme_token == "(unclustered)":
-            theme = set()
-        else:
-            theme = {theme_token}
+    covered = {m for _, _, ms in buckets for m in ms}
+    singletons = sorted(k for k in token_by_kw if k not in covered)
+    if singletons:
+        clusters.append(build_cluster(
+            "(unclustered)", "", singletons,
+            deep_by_norm, rel_by_norm, token_by_kw,
+        ))
 
-        # Aggregate relevant apps across all members, dedupe by (name, developer)
-        seen_apps = {}
-        for m in members:
-            rrel = rel_by_norm.get(m, {})
-            for a in rrel.get("top10_scored") or []:
-                if a.get("relevance", 0) < 0.5:
-                    continue
-                key = (a.get("name", ""), a.get("developer", ""))
-                prev = seen_apps.get(key)
-                if prev is None or a.get("rating_count", 0) > prev.get("rating_count", 0):
-                    seen_apps[key] = {
-                        "name": a.get("name", ""),
-                        "developer": a.get("developer", ""),
-                        "rating_count": int(a.get("rating_count") or 0),
-                        "star_rating": a.get("star_rating", 0),
-                        "category": a.get("category", ""),
-                        "appears_in": [],
-                    }
-                seen_apps[key]["appears_in"].append(m)
-
-        unique_apps = sorted(seen_apps.values(), key=lambda x: -x["rating_count"])
-        unique_total_ratings = sum(a["rating_count"] for a in unique_apps)
-
-        # Member-level metrics
-        member_rows = []
-        intent_sum = 0
-        intent_n = 0
-        best_verdict_rank = 0
-        best_verdict_label = "AVOID"
-        best_vibe = 0.0
-        worst_vibe = 999.0
-        categories = defaultdict(int)
-
-        for m in members:
-            d = deep_by_norm.get(m) or {}
-            rrel = rel_by_norm.get(m) or {}
-            v = verdict_for(d)
-            vr = d.get("vibe_roi") or 0
-            cat = d.get("dominant_category") or ""
-            intent = rrel.get("intent_relevance")
-            if intent is not None:
-                intent_sum += intent
-                intent_n += 1
-            if VERDICT_RANK.get(v, 0) > best_verdict_rank:
-                best_verdict_rank = VERDICT_RANK[v]
-                best_verdict_label = v
-            best_vibe = max(best_vibe, vr)
-            worst_vibe = min(worst_vibe, vr)
-            if cat:
-                categories[cat] += 1
-            member_rows.append({
-                "keyword": m,
-                "verdict": v,
-                "vibe_roi": round(vr, 2),
-                "payback_months": d.get("payback_months"),
-                "ltv": d.get("ltv"),
-                "demand_level": d.get("demand_level"),
-                "supply_level": d.get("supply_level"),
-                "concentration_index": d.get("concentration_index"),
-                "intent_relevance": intent,
-                "dominant_category": cat,
-            })
-
-        dominant_cat = max(categories, key=categories.get) if categories else ""
-        avg_intent = round(intent_sum / intent_n, 2) if intent_n else None
-
-        member_rows.sort(key=lambda x: -(x["vibe_roi"] or 0))
-        cluster_id = theme_token
-
-        clusters.append({
-            "id": cluster_id,
-            "theme_tokens": sorted(theme),
-            "size": len(members),
-            "unique_relevant_apps": len(unique_apps),
-            "unique_total_ratings": unique_total_ratings,
-            "best_verdict": best_verdict_label,
-            "best_verdict_rank": best_verdict_rank,
-            "best_vibe_roi": round(best_vibe, 2),
-            "worst_vibe_roi": round(worst_vibe, 2) if worst_vibe < 999 else 0,
-            "avg_intent_relevance": avg_intent,
-            "dominant_category": dominant_cat,
-            "members": member_rows,
-            "top_apps": unique_apps[:10],
-        })
-
-    # Sort: clusters with better verdict + more members first
     clusters.sort(key=lambda c: (-c["best_verdict_rank"], -c["best_vibe_roi"], -c["size"]))
 
     with open(OUT_PATH, "w") as f:
@@ -218,24 +294,27 @@ def main():
 
     print(f"Saved {len(clusters)} clusters → {OUT_PATH}")
 
-    # Preview
-    print("\nTop 10 multi-member clusters by best vibe_roi:")
-    multi = [c for c in clusters if c["size"] > 1]
+    print("\nTop 10 clusters by best vibe_roi:")
+    multi = [c for c in clusters if c["id"] != "(unclustered)"]
     multi.sort(key=lambda c: -c["best_vibe_roi"])
     for c in multi[:10]:
-        mbrs = ", ".join(m["keyword"] for m in c["members"][:4])
-        more = f" +{c['size']-4}" if c["size"] > 4 else ""
-        print(f"  size={c['size']:2}  best={c['best_vibe_roi']:<5}  "
-              f"verdict={c['best_verdict']:17}  apps={c['unique_relevant_apps']:<3}  "
-              f"[{c['id']}]  → {mbrs}{more}")
+        subs = ", ".join(f"+{s['token']}({s['size']})" for s in c["subgroups"])
+        print(f"  [{c['id']:40}] size={c['size']:2} best={c['best_vibe_roi']:<5} "
+              f"verdict={c['best_verdict']:17} subs=[{subs}]")
 
-    print("\nExamples matching user hints:")
-    for theme in ("baby", "sleep", "noise"):
-        c = next((c for c in clusters if c["id"] == theme), None)
+    print("\nSpot checks:")
+    for target in ("car·Finance", "car·Travel", "car·Utilities",
+                   "health·Utilities", "health·Health & Fitness",
+                   "baby·Health & Fitness", "noise·Utilities"):
+        c = next((c for c in clusters if c["id"] == target), None)
         if c:
-            mbrs = ", ".join(m["keyword"] for m in c["members"][:8])
-            more = f" +{c['size']-8}" if c["size"] > 8 else ""
-            print(f"  [{c['id']}] size={c['size']} → {mbrs}{more}")
+            kws = ", ".join(m["keyword"] for m in c["members"][:6])
+            more = f" +{c['size']-6}" if c["size"] > 6 else ""
+            subs = " | ".join(f"+{s['token']}→{','.join(r['keyword'] for r in s['members'])}"
+                              for s in c["subgroups"])
+            print(f"  [{c['id']}] size={c['size']} → {kws}{more}")
+            if subs:
+                print(f"      subs: {subs}")
 
 
 if __name__ == "__main__":

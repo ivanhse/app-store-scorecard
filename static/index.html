@@ -395,17 +395,19 @@
 
 <div class="page" id="page-clusters">
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
-    <h3 style="font-size:16px;margin-bottom:10px">Keyword clusters — grouped by theme</h3>
+    <h3 style="font-size:16px;margin-bottom:10px">Keyword clusters — grouped by theme · category</h3>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      Every distinctive domain token (e.g. <code>baby</code>, <code>noise</code>, <code>blood</code>)
-      appearing in 2–25 keywords becomes a cluster. A keyword like <em>"baby sleep tracker"</em> shows
-      up under both the <code>baby</code> and <code>sleep</code> clusters, since it's relevant to each.
+      Primary split is <code>&lt;theme token&gt; · &lt;App Store category&gt;</code>, so
+      <code>health · Utilities</code> (battery health) doesn't mix with
+      <code>health · Health &amp; Fitness</code> (pet health). A keyword can appear under multiple themes —
+      <em>"baby sleep tracker"</em> shows up under <code>baby · Medical</code> and <code>sleep · Medical</code>.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
-      For each cluster we aggregate the <strong style="color:var(--red)">unique relevant apps</strong>
-      across all member keywords (dedup by name + developer) so you see the real competitive footprint.
-      The <strong style="color:var(--green)">best Vibe-ROI</strong> inside a cluster tells you whether
-      <em>any</em> angle on that theme is worth attacking.
+      Inside each cluster we also surface <strong style="color:var(--blue)">sub-groups</strong> of ≥3
+      members that share a <em>second</em> common token — e.g. inside <code>#car · Finance</code> the
+      <code>+insurance</code> sub-group shows car insurance compare alongside car cost calculator.
+      Top apps are aggregated across all members (dedup by name + developer) for the real competitive
+      footprint; best Vibe-ROI flags whether <em>any</em> angle on the theme is worth attacking.
     </p>
   </div>
 
@@ -421,7 +423,7 @@
     </div>
     <div class="ctrl-group">
       <label>Min size</label>
-      <input type="number" id="clustersMinSize" value="3" min="1" onchange="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
+      <input type="number" id="clustersMinSize" value="2" min="1" onchange="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
     </div>
     <div class="ctrl-group">
       <label>Verdict ≥</label>
@@ -1317,10 +1319,23 @@ async function loadClusters() {
 
 function resetClusterFilters() {
   document.getElementById('clustersSort').value = 'best_vibe_roi';
-  document.getElementById('clustersMinSize').value = '3';
+  document.getElementById('clustersMinSize').value = '2';
   document.getElementById('clustersMinVerdict').value = '0';
   document.getElementById('clustersSearch').value = '';
   renderClusters();
+}
+
+function memberPill(m) {
+  const kw = (m.keyword || '').replace(/'/g, "\\'");
+  const mClass = deepVerdictClass(m.verdict);
+  const mRoi = (m.vibe_roi || 0).toFixed(2);
+  return `<a href="#" onclick="analyzeFromResearch('${kw}');return false"
+    class="opportunity-badge ${mClass}"
+    style="display:inline-flex;align-items:center;gap:6px;margin:3px 4px 0 0;font-size:11px;text-decoration:none;padding:4px 9px"
+    title="${m.verdict} · vibe_roi ${mRoi} · demand ${m.demand_level || '—'} · supply ${m.supply_level || '—'}">
+    ${m.keyword}
+    <span style="opacity:.7;font-weight:500">${mRoi}</span>
+  </a>`;
 }
 
 function renderClusters() {
@@ -1364,18 +1379,25 @@ function renderClusters() {
     const roiColor = (c.best_vibe_roi || 0) >= 4 ? 'var(--green)' :
                      (c.best_vibe_roi || 0) >= 1.5 ? 'var(--yellow)' : 'var(--muted)';
 
-    const memberPills = (c.members || []).map(m => {
-      const kw = (m.keyword || '').replace(/'/g, "\\'");
-      const mClass = deepVerdictClass(m.verdict);
-      const mRoi = (m.vibe_roi || 0).toFixed(2);
-      return `<a href="#" onclick="analyzeFromResearch('${kw}');return false"
-        class="opportunity-badge ${mClass}"
-        style="display:inline-flex;align-items:center;gap:6px;margin:3px 4px 0 0;font-size:11px;text-decoration:none;padding:4px 9px"
-        title="${m.verdict} · vibe_roi ${mRoi} · demand ${m.demand_level || '—'} · supply ${m.supply_level || '—'}">
-        ${m.keyword}
-        <span style="opacity:.7;font-weight:500">${mRoi}</span>
-      </a>`;
-    }).join('');
+    const hasSubgroups = (c.subgroups || []).length > 0;
+    const leftPane = hasSubgroups
+      ? (c.subgroups.map(sg => `
+          <div style="margin-bottom:10px">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">
+              +${sg.token} <span style="opacity:.6;text-transform:none;letter-spacing:0">· ${sg.size}</span>
+            </div>
+            <div>${sg.members.map(memberPill).join('')}</div>
+          </div>
+        `).join('') +
+        (((c.orphans || []).length) ? `
+          <div style="margin-top:10px">
+            <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">
+              other <span style="opacity:.6;text-transform:none;letter-spacing:0">· ${c.orphans.length}</span>
+            </div>
+            <div>${c.orphans.map(memberPill).join('')}</div>
+          </div>
+        ` : ''))
+      : `<div>${(c.members || []).map(memberPill).join('')}</div>`;
 
     const topApps = (c.top_apps || []).slice(0, 6).map(a => {
       const nm = (a.name || '').substring(0, 30);
@@ -1387,11 +1409,17 @@ function renderClusters() {
       </div>`;
     }).join('');
 
+    const catLabel = c.category && c.category !== '—' && c.category !== '(mixed)'
+      ? `<span style="color:var(--muted);font-size:14px;font-weight:500">· ${c.category}</span>`
+      : (c.category === '(mixed)'
+          ? `<span style="color:var(--muted);font-size:12px;font-weight:500;font-style:italic">· mixed categories</span>`
+          : '');
+
     html += `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
-        <div style="font-size:18px;font-weight:700;color:var(--text)">#${c.id}</div>
+        <div style="font-size:18px;font-weight:700;color:var(--text)">#${c.theme_token || c.id} ${catLabel}</div>
         <span class="opportunity-badge ${vClass}" style="font-size:10px">${c.best_verdict}</span>
-        <span style="color:var(--muted);font-size:12px">${c.size} keywords · ${c.unique_relevant_apps} unique apps · ${totalRatings} ratings · ${c.dominant_category || '—'}</span>
+        <span style="color:var(--muted);font-size:12px">${c.size} keywords · ${c.unique_relevant_apps} unique apps · ${totalRatings} ratings</span>
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
         <div>
@@ -1400,7 +1428,7 @@ function renderClusters() {
             <span>Worst <strong style="color:var(--text)">${worstRoi}</strong></span>
             <span>Avg intent <strong style="color:var(--text)">${avgIntent}</strong></span>
           </div>
-          <div>${memberPills}</div>
+          ${leftPane}
         </div>
         <div>
           <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Top apps across cluster (× = # keywords it appears in)</div>
