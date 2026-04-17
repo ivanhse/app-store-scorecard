@@ -1,68 +1,9 @@
 [
   {
-    "name": "Concrete Calculator",
-    "keyword": "concrete calculator app",
-    "tier": "Tier 1",
-    "rank": 1,
-    "money_score": 84,
-    "market_opportunity": 90,
-    "build_complexity": 2,
-    "monetization_model": "Freemium ($3-5/month pro) + contractor tool upsells",
-    "estimated_arpu": "$3-5/month",
-    "why_money": "Highest opportunity score on the list with the lowest build complexity \u2014 exceptional ROI. Construction professionals need quick calculations daily. Only 1 real competitor (Concrete Calculator Plus at 23.6K ratings) and several brand-specific apps with tiny user bases. 17 weak apps in top 25. Professionals will pay for reliability and accuracy. Can expand to full construction calculator suite.",
-    "opportunity_verdict": "GREAT OPPORTUNITY",
-    "demand_level": "VERY HIGH",
-    "supply_level": "MODERATE",
-    "total_ratings_all": 887676,
-    "avg_rating_count": 6228,
-    "weak_apps_in_top25": 17,
-    "concentration_index": 0.88,
-    "competitors": [
-      {
-        "name": "Concrete Calculator Plus",
-        "ratings": 23642,
-        "stars": 4.8,
-        "price": "Free + ads",
-        "weakness": "Ad-supported, basic UI, no project management"
-      },
-      {
-        "name": "Concrete and Agg Calculator",
-        "ratings": 37,
-        "stars": 3.4,
-        "price": "Free",
-        "weakness": "Brand-locked (Chaney Enterprises), poor ratings"
-      },
-      {
-        "name": "Ozinga Concrete Calculator",
-        "ratings": 18,
-        "stars": 4.8,
-        "price": "Free",
-        "weakness": "Brand-locked, tiny audience"
-      }
-    ],
-    "differentiators": "Modern UI with visual shape selector. Save/export project estimates. Support for various concrete types and mixes. Material cost estimation with local pricing. Expandable to full construction calculator suite (rebar, forms, etc.).",
-    "build_notes": "Pure math calculations \u2014 no API needed. Shape-based volume formulas. Could add local material pricing database. Extremely simple to build \u2014 1-2 week MVP.",
-    "pain_points": [
-      "Estimating cubic yards/bags needed for slabs, footings, columns",
-      "Over-ordering or under-ordering material (costly waste or delays)",
-      "Converting between imperial/metric measurements on job sites",
-      "Calculating material costs before starting a project",
-      "Accounting for waste, spillage, and over-excavation"
-    ],
-    "build_dimensions": {
-      "backend_sync": 0,
-      "external_apis": 0,
-      "hardware_sensors": 0,
-      "rich_media": 0,
-      "content_creation": 0,
-      "ui_complexity": 0
-    }
-  },
-  {
     "name": "Co-parenting Schedule",
     "keyword": "co-parenting schedule",
     "tier": "Tier 2",
-    "rank": 2,
+    "rank": 1,
     "money_score": 76,
     "market_opportunity": 68,
     "build_complexity": 5,
@@ -121,7 +62,7 @@
     "name": "Couples Budget",
     "keyword": "couples budget app",
     "tier": "Tier 2",
-    "rank": 3,
+    "rank": 2,
     "money_score": 72,
     "market_opportunity": 65,
     "build_complexity": 4,
@@ -180,7 +121,7 @@
     "name": "Baby Tracker",
     "keyword": "baby tracker",
     "tier": "Tier 2",
-    "rank": 4,
+    "rank": 3,
     "money_score": 64,
     "market_opportunity": 60,
     "build_complexity": 3,
@@ -239,7 +180,7 @@
     "name": "Homework Tracker",
     "keyword": "homework tracker app",
     "tier": "Tier 2",
-    "rank": 5,
+    "rank": 4,
     "money_score": 62,
     "market_opportunity": 63,
     "build_complexity": 3,
@@ -298,7 +239,7 @@
     "name": "Daily Journal",
     "keyword": "daily journal app",
     "tier": "Tier 2",
-    "rank": 6,
+    "rank": 5,
     "money_score": 60,
     "market_opportunity": 58,
     "build_complexity": 3,
@@ -357,7 +298,7 @@
     "name": "Trivia Quiz Maker",
     "keyword": "trivia quiz maker",
     "tier": "Tier 3",
-    "rank": 7,
+    "rank": 6,
     "money_score": 54,
     "market_opportunity": 55,
     "build_complexity": 3,
@@ -416,7 +357,7 @@
     "name": "Noise Cancellation App",
     "keyword": "noise cancellation app",
     "tier": "Tier 3",
-    "rank": 8,
+    "rank": 7,
     "money_score": 52,
     "market_opportunity": 55,
     "build_complexity": 3,
@@ -469,65 +410,6 @@
       "rich_media": 1,
       "content_creation": 1,
       "ui_complexity": 0
-    }
-  },
-  {
-    "name": "Rent vs Buy Calculator",
-    "keyword": "rent vs buy calculator",
-    "tier": "Tier 3",
-    "rank": 9,
-    "money_score": 52,
-    "market_opportunity": 55,
-    "build_complexity": 3,
-    "monetization_model": "Free with ads or affiliate (mortgage leads)",
-    "estimated_arpu": "$1-2/month or affiliate leads",
-    "why_money": "GOOD opportunity \u2014 VERY HIGH demand with HIGH (not VERY HIGH) supply. The two dedicated rent-vs-buy apps have only 3 ratings each, so the direct niche is wide open. But search results are dominated by massive real estate platforms (Rent.com at 205K ratings). Monetization via mortgage affiliate leads or one-time purchase. Users need this tool once or twice, limiting recurring revenue.",
-    "opportunity_verdict": "GOOD OPPORTUNITY",
-    "demand_level": "VERY HIGH",
-    "supply_level": "HIGH",
-    "total_ratings_all": 2859563,
-    "avg_rating_count": 21849,
-    "weak_apps_in_top25": 10,
-    "concentration_index": 0.92,
-    "competitors": [
-      {
-        "name": "Roby: Rent vs. Buy Calculator",
-        "ratings": 3,
-        "stars": 5.0,
-        "price": "Free",
-        "weakness": "Brand new, zero traction"
-      },
-      {
-        "name": "Buy vs. Rent Calculator",
-        "ratings": 3,
-        "stars": 4.0,
-        "price": "Free",
-        "weakness": "Not updated since 2018, abandoned"
-      },
-      {
-        "name": "Rent. Apartments and Homes",
-        "ratings": 205146,
-        "stars": 4.7,
-        "price": "Free",
-        "weakness": "Not a calculator \u2014 rental listing platform"
-      }
-    ],
-    "differentiators": "Actually, the direct niche IS open \u2014 both dedicated calculators have only 3 ratings. But search results are pulled by real estate giants. Could succeed with excellent ASO and a genuinely useful calculator with local market data.",
-    "build_notes": "Financial formulas (mortgage amortization, tax benefits, opportunity cost). Low complexity. The challenge is marketing/ASO against real estate platform dominance.",
-    "pain_points": [
-      "Family says buying is always better but the math doesn't add up",
-      "Can't factor in all hidden costs (taxes, insurance, maintenance, opportunity cost)",
-      "No way to compare total cost of renting vs. buying over 5-30 years",
-      "Difficulty understanding how interest rates affect affordability",
-      "Need to know break-even point \u2014 how long until buying pays off"
-    ],
-    "build_dimensions": {
-      "backend_sync": 0,
-      "external_apis": 0,
-      "hardware_sensors": 0,
-      "rich_media": 0,
-      "content_creation": 1,
-      "ui_complexity": 1
     }
   }
 ]
