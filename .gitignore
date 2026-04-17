@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .env
 .claude/
+deep_research.log
+deep_research_cache.json
+.gitignore.add

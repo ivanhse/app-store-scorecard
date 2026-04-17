@@ -181,6 +181,16 @@ def shortlist():
     return jsonify(data)
 
 
+@app.route("/api/deep-research", methods=["GET"])
+def deep_research():
+    results_path = os.path.join(os.path.dirname(__file__), "deep_research.json")
+    if not os.path.exists(results_path):
+        return jsonify({"error": "deep_research.json not found — run deep_research.py first"}), 404
+    with open(results_path) as f:
+        data = json.load(f)
+    return jsonify(data)
+
+
 @app.route("/api/research", methods=["GET"])
 def research():
     tier = request.args.get("tier", "all")

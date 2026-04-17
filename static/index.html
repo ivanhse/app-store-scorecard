@@ -307,22 +307,33 @@
       games, events, transportation, wellness, writing, community, science, and more).
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      Each keyword was searched on the iTunes Search API (US App Store, top 10 results) and scored using the
-      same Demand vs Supply framework: <strong style="color:var(--blue)">Demand</strong> = total ratings across
-      the top 10 apps, <strong style="color:var(--red)">Supply</strong> = average rating count of the top 10
-      incumbents. The gap between demand rank and supply rank determines the opportunity verdict.
+      <strong style="color:var(--green)">Deep mode (default)</strong>: 1000 keywords re-searched without
+      the "app" suffix (people don't type "photos app" in the App Store), with 25 top results each.
+      Re-ranked by <strong style="color:#fd79a8">Vibe-ROI</strong> — an LTV × demand × supply_room score
+      modulated by kill/win patterns: one-shot calculators, iOS built-in kills, incumbent locks
+      (Splitwise / Forest / Calm / etc.) drag score toward zero; sticky trackers, parent / hobby /
+      vertical-AI WTP boost it. Category → ARPU → payback math is baked in, not eyeballed.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
-      A composite score (0–110) adds bonuses for stale competitors (&gt;3 not updated in a year), low-rated
-      incumbents (&gt;3 below 3.5 stars), weak average ratings (&lt;1K), high demand level, low market
-      concentration (Gini &lt;0.4), and a high ratio of weak apps in the top 10.
+      <strong>Kill flags</strong> (red) mean "skip, here's why": <code>one_shot_calc</code>,
+      <code>ios_builtin</code>, <code>incumbent:splitwise</code>, <code>liability</code>, <code>fuzzy_intent</code>.
+      <strong>Win flags</strong> (green) compound retention / conversion:
+      <code>sticky_tracker</code>, <code>parent_wtp</code>, <code>hobby_wtp</code>, <code>vertical_ai</code>.
     </p>
     <p style="font-size:13px;color:var(--muted);line-height:1.6">
-      Click any column header to sort. Use the filters below to narrow results. Click a keyword to run a full analysis.
+      Click column headers to sort. Switch to "Original batch" mode to see the old demand/supply ranking.
+      Click a keyword to run a full analyzer pass on it.
     </p>
   </div>
 
   <div class="opp-toolbar" id="research-toolbar" style="display:none">
+    <div class="ctrl-group">
+      <label>Data</label>
+      <select id="researchMode" onchange="switchResearchMode()">
+        <option value="deep">Deep (re-ranked, vibe-ROI)</option>
+        <option value="batch">Original batch (demand/supply)</option>
+      </select>
+    </div>
     <div class="ctrl-group">
       <label>Verdict</label>
       <select id="researchTierFilter" onchange="renderResearch()">
@@ -911,20 +922,69 @@ function renderPainPoints() {
   container.innerHTML = html;
 }
 
-let researchSort = { col: 'score', dir: 'desc' };
+let researchSort = { col: 'vibe_roi', dir: 'desc' };
+let researchMode = 'deep';
+let deepResearchData = null;
+let batchResearchData = null;
 
 async function loadResearch() {
   researchLoaded = true;
   const container = document.getElementById('research-results');
-  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading research data...</div>';
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading deep research...</div>';
   try {
-    const resp = await fetch('/api/research?tier=all');
-    researchData = await resp.json();
-    if (researchData.error) throw new Error(researchData.error);
+    const resp = await fetch('/api/deep-research');
+    const data = await resp.json();
+    if (data.error) {
+      // Fall back to batch results if deep not available
+      researchMode = 'batch';
+      document.getElementById('researchMode').value = 'batch';
+      await loadBatchResearch();
+      return;
+    }
+    deepResearchData = data;
+    researchData = data;
+    researchSort = { col: 'vibe_roi', dir: 'desc' };
     renderResearch();
   } catch (e) {
     container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
     researchLoaded = false;
+  }
+}
+
+async function loadBatchResearch() {
+  if (batchResearchData) {
+    researchData = batchResearchData;
+    renderResearch();
+    return;
+  }
+  const container = document.getElementById('research-results');
+  container.innerHTML = '<div class="loading"><div class="spinner"></div>Loading batch data...</div>';
+  try {
+    const resp = await fetch('/api/research?tier=all');
+    const data = await resp.json();
+    if (data.error) throw new Error(data.error);
+    batchResearchData = data;
+    researchData = data;
+    renderResearch();
+  } catch (e) {
+    container.innerHTML = `<div class="loading" style="color:var(--red)">Error: ${e.message}</div>`;
+  }
+}
+
+async function switchResearchMode() {
+  researchMode = document.getElementById('researchMode').value;
+  if (researchMode === 'deep') {
+    if (deepResearchData) {
+      researchData = deepResearchData;
+      researchSort = { col: 'vibe_roi', dir: 'desc' };
+      renderResearch();
+    } else {
+      researchLoaded = false;
+      await loadResearch();
+    }
+  } else {
+    researchSort = { col: 'score', dir: 'desc' };
+    await loadBatchResearch();
   }
 }
 
@@ -952,8 +1012,12 @@ function researchSortBy(col) {
 
 function getResearchSortVal(r, col) {
   switch (col) {
+    case 'vibe_roi': return r.vibe_roi ?? -1;
+    case 'payback_months': return r.payback_months ?? 9999;
+    case 'roas_6mo': return r.roas_6mo ?? -1;
+    case 'ltv': return r.ltv ?? -1;
     case 'score': return r.score || 0;
-    case 'keyword': return r.keyword || '';
+    case 'keyword': return r.keyword_normalized || r.keyword || '';
     case 'opportunity': return TIER_SCORES[r.opportunity] ?? -1;
     case 'demand_level': return DEMAND_SCORES[r.demand_level] ?? 0;
     case 'supply_level': return SUPPLY_SCORES[r.supply_level] ?? 0;
@@ -971,6 +1035,11 @@ function getResearchSortVal(r, col) {
 
 function renderResearch() {
   document.getElementById('research-toolbar').style.display = 'flex';
+
+  if (researchMode === 'deep' && deepResearchData) {
+    renderDeepResearch();
+    return;
+  }
 
   const tierFilter = document.getElementById('researchTierFilter').value;
   const minDemand = document.getElementById('researchMinDemand').value;
@@ -1059,6 +1128,100 @@ function renderResearch() {
       <td style="padding:8px 10px;text-align:right">${r.mature_apps_pct != null ? r.mature_apps_pct + '%' : '—'}</td>
       <td style="padding:8px 10px;text-align:right;color:${r.concentration_index != null ? (r.concentration_index > 0.7 ? 'var(--red)' : r.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
       <td style="padding:8px 10px;color:var(--muted);font-size:11px;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
+    </tr>`;
+  });
+
+  html += '</tbody></table></div>';
+  document.getElementById('research-results').innerHTML = html;
+}
+
+function renderDeepResearch() {
+  const minScore = document.getElementById('researchMinScore').value;
+  const kwSearch = document.getElementById('researchKeywordSearch').value.toLowerCase().trim();
+  const tierFilter = document.getElementById('researchTierFilter').value;
+
+  let items = deepResearchData.filter(r => !r.error);
+
+  // Verdict filter → map to vibe_roi thresholds
+  if (tierFilter === 'great') items = items.filter(r => (r.vibe_roi || 0) >= 8);
+  else if (tierFilter === 'good') items = items.filter(r => (r.vibe_roi || 0) >= 4 && (r.vibe_roi || 0) < 8);
+  else if (tierFilter === 'great+good') items = items.filter(r => (r.vibe_roi || 0) >= 4);
+  else if (tierFilter === 'competitive') items = items.filter(r => (r.vibe_roi || 0) >= 1 && (r.vibe_roi || 0) < 4);
+
+  if (minScore) items = items.filter(r => (r.vibe_roi || 0) >= parseFloat(minScore));
+  if (kwSearch) items = items.filter(r =>
+    (r.keyword_normalized || '').includes(kwSearch) ||
+    (r.keyword_original || '').toLowerCase().includes(kwSearch));
+
+  const { col, dir } = researchSort;
+  items.sort((a, b) => {
+    let va = getResearchSortVal(a, col);
+    let vb = getResearchSortVal(b, col);
+    if (col === 'keyword') {
+      const cmp = String(va).localeCompare(String(vb));
+      return dir === 'asc' ? cmp : -cmp;
+    }
+    return dir === 'asc' ? va - vb : vb - va;
+  });
+
+  document.getElementById('research-filter-count').textContent =
+    `Showing ${items.length} of ${deepResearchData.length} keywords (re-searched without "app" suffix)`;
+
+  const thStyle = 'padding:10px 12px;background:rgba(255,255,255,.03);color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap';
+  function thHtml(label, colName, align) {
+    const arrow = researchSort.col === colName ? (researchSort.dir === 'asc' ? ' ▲' : ' ▼') : '';
+    const al = align || 'left';
+    return `<th style="${thStyle};text-align:${al}" onclick="researchSortBy('${colName}')">${label}${arrow}</th>`;
+  }
+
+  let html = '<div class="table-wrap"><table style="width:100%;font-size:13px;border-collapse:collapse">';
+  html += '<thead><tr>';
+  html += `<th style="${thStyle};text-align:left">#</th>`;
+  html += thHtml('Vibe-ROI', 'vibe_roi', 'right');
+  html += thHtml('Payback', 'payback_months', 'right');
+  html += thHtml('ROAS 6mo', 'roas_6mo', 'right');
+  html += thHtml('LTV', 'ltv', 'right');
+  html += thHtml('Keyword', 'keyword', 'left');
+  html += `<th style="${thStyle};text-align:left">Category</th>`;
+  html += thHtml('Demand', 'demand_level', 'left');
+  html += thHtml('Supply', 'supply_level', 'left');
+  html += thHtml('Gini', 'concentration_index', 'right');
+  html += thHtml('Weak', 'weak_apps_in_top10', 'right');
+  html += `<th style="${thStyle};text-align:left">Kill / Win flags</th>`;
+  html += `<th style="${thStyle};text-align:left">Top 3</th>`;
+  html += '</tr></thead><tbody>';
+
+  items.forEach((r, i) => {
+    const top3 = (r.top3 || []).map(a => {
+      const name = (a.name || '').substring(0, 22);
+      return `${name}${(a.name || '').length > 22 ? '…' : ''} (${fmt(a.rating_count || 0)})`;
+    }).join(', ');
+    const kw = (r.keyword_normalized || '').replace(/'/g, "\\'");
+    const killBadges = (r.kills || []).map(k =>
+      `<span style="display:inline-block;padding:1px 6px;margin:1px 2px 1px 0;border-radius:3px;font-size:10px;background:rgba(225,112,85,.15);color:var(--red)">${k}</span>`
+    ).join('');
+    const winBadges = (r.wins || []).map(w =>
+      `<span style="display:inline-block;padding:1px 6px;margin:1px 2px 1px 0;border-radius:3px;font-size:10px;background:rgba(0,184,148,.15);color:var(--green)">${w}</span>`
+    ).join('');
+    const roiColor = (r.vibe_roi || 0) >= 8 ? 'var(--green)' :
+                     (r.vibe_roi || 0) >= 4 ? '#55efc4' :
+                     (r.vibe_roi || 0) >= 1 ? 'var(--yellow)' : 'var(--muted)';
+    const paybackColor = (r.payback_months || 999) < 6 ? 'var(--green)' :
+                         (r.payback_months || 999) < 12 ? 'var(--yellow)' : 'var(--red)';
+    html += `<tr style="border-top:1px solid var(--border)" onmouseover="this.style.background='rgba(108,92,231,.06)'" onmouseout="this.style.background=''">
+      <td style="padding:8px 10px;color:var(--muted)">${i + 1}</td>
+      <td style="padding:8px 10px;text-align:right;font-weight:700;color:${roiColor}">${(r.vibe_roi || 0).toFixed(2)}</td>
+      <td style="padding:8px 10px;text-align:right;color:${paybackColor}">${(r.payback_months || 0).toFixed(1)}mo</td>
+      <td style="padding:8px 10px;text-align:right">${(r.roas_6mo || 0).toFixed(2)}x</td>
+      <td style="padding:8px 10px;text-align:right">$${(r.ltv || 0).toFixed(2)}</td>
+      <td style="padding:8px 10px;font-weight:600"><a href="#" onclick="analyzeFromResearch('${kw}');return false" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${r.keyword_normalized}</a></td>
+      <td style="padding:8px 10px;color:var(--muted);font-size:11px">${r.dominant_category || '—'}</td>
+      <td style="padding:8px 10px;color:var(--blue);font-weight:600;white-space:nowrap">${r.demand_level || '—'}</td>
+      <td style="padding:8px 10px;color:var(--red);font-weight:600;white-space:nowrap">${r.supply_level || '—'}</td>
+      <td style="padding:8px 10px;text-align:right">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
+      <td style="padding:8px 10px;text-align:right">${r.weak_apps_in_top10 ?? 0}</td>
+      <td style="padding:8px 10px;max-width:260px">${killBadges}${winBadges}</td>
+      <td style="padding:8px 10px;color:var(--muted);font-size:11px;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
     </tr>`;
   });
 
