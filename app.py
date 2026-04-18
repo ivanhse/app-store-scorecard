@@ -97,6 +97,7 @@ def _score_result(r):
 def _analyze_keyword(kw, country, limit):
     apps = search_apps(kw, country=country, limit=limit)
     analysis = analyze_competition(apps)
+    display_apps = apps[:limit]
 
     rating_counts = sorted([a["rating_count"] for a in apps])
     p25 = rating_counts[len(rating_counts) // 4] if len(rating_counts) >= 4 else 0
@@ -126,7 +127,7 @@ def _analyze_keyword(kw, country, limit):
 
     return {
         "keyword": kw,
-        "apps": apps[:10],
+        "apps": display_apps,
         "analysis": analysis,
         "percentiles": {"p25": p25, "p50": p50, "p75": p75},
         "free_vs_paid": {"free": free_count, "paid": len(apps) - free_count},
@@ -147,7 +148,7 @@ def opportunities():
     results = []
     for kw, theme in OPPORTUNITY_KEYWORDS:
         try:
-            r = _analyze_keyword(kw, country, 10)
+            r = _analyze_keyword(kw, country, 25)
             r["theme"] = theme
             results.append(r)
         except Exception as e:
@@ -162,7 +163,7 @@ def analyze():
     data = request.json
     keywords = data.get("keywords", [])
     country = data.get("country", "us")
-    limit = data.get("limit", 10)
+    limit = data.get("limit", 25)
 
     if not keywords:
         return jsonify({"error": "No keywords provided"}), 400
