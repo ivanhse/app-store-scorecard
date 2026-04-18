@@ -7,3 +7,5 @@ deep_research_cache.json
 relevance_rescore.log
 relevance_cache.json
 .gitignore.add
+pipeline.log
+retry_pipeline.log

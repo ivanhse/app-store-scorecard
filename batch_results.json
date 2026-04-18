@@ -611,6 +611,94 @@
     ]
   },
   {
+    "keyword": "exposure calculator app",
+    "score": 83,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 4922,
+    "avg_rating_count": 492,
+    "avg_star_rating": 4.4,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Lghtmtr",
+        "ratings": 39,
+        "stars": 3.8
+      },
+      {
+        "name": "Photo Light & Exposure Meter",
+        "ratings": 3154,
+        "stars": 4.5
+      },
+      {
+        "name": "Long Exposure Calculator",
+        "ratings": 64,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Lghtmtr",
+      "Photo Light & Exposure Meter",
+      "Long Exposure Calculator",
+      "Lightme - Lightmeter",
+      "Film Exposure Calculator",
+      "Light Meter Ultra",
+      "Exposure Calculator",
+      "Exposure Meter and Learning",
+      "Photo Friend exposure and DoF",
+      "SetMyCamera"
+    ]
+  },
+  {
+    "keyword": "fake call maker",
+    "score": 83,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 91140,
+    "avg_rating_count": 9114,
+    "avg_star_rating": 4.0,
+    "stale_apps": 7,
+    "low_rated_apps": 3,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.76,
+    "top_3_apps": [
+      {
+        "name": "#1 Fake Call",
+        "ratings": 1209,
+        "stars": 4.6
+      },
+      {
+        "name": "Fake Call Practice & Training",
+        "ratings": 48410,
+        "stars": 4.5
+      },
+      {
+        "name": "Fake Call",
+        "ratings": 12347,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "#1 Fake Call",
+      "Fake Call Practice & Training",
+      "Fake Call",
+      "StoryAll: Chat, Voice & Music",
+      "Fake Call Pro !!!",
+      "Fake Call- Prank Caller IDs",
+      "Fake-A-Call Free \u2122",
+      "Fake Call LITE",
+      "Simple Fake Call",
+      "Fake phone call from girl"
+    ]
+  },
+  {
     "keyword": "skateboard trick tracker",
     "score": 81,
     "opportunity": "GOOD OPPORTUNITY",
@@ -1130,6 +1218,94 @@
       "Gift Plan",
       "Greeting card for mother's day",
       "Mothers Day Quotes & Editor"
+    ]
+  },
+  {
+    "keyword": "bingo number generator",
+    "score": 81,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 60454,
+    "avg_rating_count": 6045,
+    "avg_star_rating": 4.1,
+    "stale_apps": 3,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 8,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Bingo Caller",
+        "ratings": 71,
+        "stars": 4.1
+      },
+      {
+        "name": "Bingo Machine",
+        "ratings": 4,
+        "stars": 2.8
+      },
+      {
+        "name": "Bingo Number Caller",
+        "ratings": 3,
+        "stars": 3.7
+      }
+    ],
+    "top_10_names": [
+      "Bingo Caller",
+      "Bingo Machine",
+      "Bingo Number Caller",
+      "Bingo!!",
+      "Bingo Caller at Home",
+      "Bingo Call",
+      "Tambola Generator",
+      "Random Number App",
+      "Random Number Generator. RNG",
+      "Bingo Go - Caller & Boards"
+    ]
+  },
+  {
+    "keyword": "raffle drawer app",
+    "score": 81,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 95241,
+    "avg_rating_count": 9524,
+    "avg_star_rating": 4.6,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.87,
+    "top_3_apps": [
+      {
+        "name": "Random generator number",
+        "ratings": 68,
+        "stars": 4.8
+      },
+      {
+        "name": "Raffle Name",
+        "ratings": 5457,
+        "stars": 4.7
+      },
+      {
+        "name": "Daily Raffle App",
+        "ratings": 503,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Random generator number",
+      "Raffle Name",
+      "Daily Raffle App",
+      "Random name picker for raffles",
+      "Raffle Wheel +",
+      "Raffle Wheel: Name Picker",
+      "Raffle Tickets",
+      "Riffle Raffle",
+      "Easy Raffle",
+      "Spin The Wheel - Random Picker"
     ]
   },
   {
@@ -2398,6 +2574,180 @@
       "Butterfly Knife",
       "Slice It All!",
       "Blade City"
+    ]
+  },
+  {
+    "keyword": "chromatic tuner",
+    "score": 80,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 333147,
+    "avg_rating_count": 33314,
+    "avg_star_rating": 4.6,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.7,
+    "top_3_apps": [
+      {
+        "name": "Tuner T1",
+        "ratings": 9645,
+        "stars": 4.5
+      },
+      {
+        "name": "Guitar Tuner - Chromatic",
+        "ratings": 7879,
+        "stars": 4.6
+      },
+      {
+        "name": "Pano Tuner Lite",
+        "ratings": 7527,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Tuner T1",
+      "Guitar Tuner - Chromatic",
+      "Pano Tuner Lite",
+      "Chromatic tuner - FlashTune",
+      "insTuner Free - Chromatic Tuner",
+      "Pitched Tuner - Tuning App",
+      "Fender Tune: Guitar Tuner App",
+      "Bandmate Chromatic Tuner",
+      "Tuner Lite by Piascore",
+      "GuitarTuna: Tune & Play Guitar"
+    ]
+  },
+  {
+    "keyword": "lan scanner app",
+    "score": 80,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 325917,
+    "avg_rating_count": 40739,
+    "avg_star_rating": 4.7,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.67,
+    "top_3_apps": [
+      {
+        "name": "JotNot Scanner App Pro",
+        "ratings": 29974,
+        "stars": 4.9
+      },
+      {
+        "name": "Scanner \u2013 Scan PDF & Document",
+        "ratings": 219459,
+        "stars": 4.7
+      },
+      {
+        "name": "Scanner: Scan Documents",
+        "ratings": 6856,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "JotNot Scanner App Pro",
+      "Scanner \u2013 Scan PDF & Document",
+      "Scanner: Scan Documents",
+      "xScan : Document Scanner App",
+      "Photo to PDF Convert Scanner +",
+      "Network Toolbox Net security",
+      "Network Analyzer: net tools",
+      "iNet - Network Scanner"
+    ]
+  },
+  {
+    "keyword": "custom fonts keyboard",
+    "score": 80,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 383546,
+    "avg_rating_count": 38354,
+    "avg_star_rating": 4.5,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Fonts\uff0bFont Keyboard for iPhone",
+        "ratings": 19299,
+        "stars": 4.2
+      },
+      {
+        "name": "Fonts - AI Stickers",
+        "ratings": 279757,
+        "stars": 4.5
+      },
+      {
+        "name": "Sprezz - Custom Keyboard Themes and Fonts",
+        "ratings": 8940,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Fonts\uff0bFont Keyboard for iPhone",
+      "Fonts - AI Stickers",
+      "Sprezz - Custom Keyboard Themes and Fonts",
+      "Fonts: Aesthetic Font Keyboard",
+      "Text Fonts, Emojis & Symbols",
+      "Color Text Messages+ Customize Keyboard Free Now",
+      "Custom Fancy Fonts Keyboard",
+      "Font: Cool Design Keyboard App",
+      "Symbolizer Fonts Keyboard with Fancy Emoji Symbols for Facebook and Instagram",
+      "Fonts: Keyboard & Font Art"
+    ]
+  },
+  {
+    "keyword": "mirror app real",
+    "score": 80,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 311592,
+    "avg_rating_count": 31159,
+    "avg_star_rating": 4.1,
+    "stale_apps": 4,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.73,
+    "top_3_apps": [
+      {
+        "name": "@Mirror",
+        "ratings": 8052,
+        "stars": 4.6
+      },
+      {
+        "name": "Mirror \u30c4",
+        "ratings": 342,
+        "stars": 3.8
+      },
+      {
+        "name": "Cider Casino - Real Money",
+        "ratings": 14552,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "@Mirror",
+      "Mirror \u30c4",
+      "Cider Casino - Real Money",
+      "Mirror \u25ce",
+      "True Mirror!",
+      "Screen Mirroring | Smart TV",
+      "Screen Mirroring+ App",
+      "Screen Mirroring\u30fbSmart View TV",
+      "Mirror for iPhone",
+      "Mirror Deluxe"
     ]
   },
   {
@@ -4937,6 +5287,357 @@
     ]
   },
   {
+    "keyword": "phone speaker cleaner",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 96148,
+    "avg_rating_count": 9614,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.63,
+    "top_3_apps": [
+      {
+        "name": "Clear Tune - Clean Speaker",
+        "ratings": 198,
+        "stars": 4.6
+      },
+      {
+        "name": "Clean Tune - Speaker Cleaner",
+        "ratings": 8222,
+        "stars": 4.6
+      },
+      {
+        "name": "Clear Wave",
+        "ratings": 33358,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Clear Tune - Clean Speaker",
+      "Clean Tune - Speaker Cleaner",
+      "Clear Wave",
+      "Speaker Cleaner - Clear Wave",
+      "Wave Clean - Speaker Cleaner",
+      "Clean Wave - Clear Speaker",
+      "Clear Wave : Speaker Test",
+      "Water Eject \u2012 Speaker Cleaner",
+      "Sonic | Water Eject",
+      "SpeakClean - Speaker Cleaner"
+    ]
+  },
+  {
+    "keyword": "battery capacity tester",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 22507,
+    "avg_rating_count": 2250,
+    "avg_star_rating": 4.3,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.76,
+    "top_3_apps": [
+      {
+        "name": "Battery Testing",
+        "ratings": 12116,
+        "stars": 4.5
+      },
+      {
+        "name": "Battery and charger test",
+        "ratings": 1574,
+        "stars": 3.7
+      },
+      {
+        "name": "Battery Life Health Doctor Pro",
+        "ratings": 7561,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Battery Testing",
+      "Battery and charger test",
+      "Battery Life Health Doctor Pro",
+      "Ampere Battery Charging Check",
+      "Amperes 4- battery charge info",
+      "Valvoline Battery Tester",
+      "Mashin Battery Tester",
+      "Battery Testing Master",
+      "BAST: Battery Status",
+      "Leagend Auto battery tester"
+    ]
+  },
+  {
+    "keyword": "frequency generator app",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 64974,
+    "avg_rating_count": 6497,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.7,
+    "top_3_apps": [
+      {
+        "name": "Frequency: Sound Generator",
+        "ratings": 752,
+        "stars": 4.7
+      },
+      {
+        "name": "Frequency Sound Generator App",
+        "ratings": 4835,
+        "stars": 4.5
+      },
+      {
+        "name": "Tone Generator: Audio Sound Hz",
+        "ratings": 2561,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Frequency: Sound Generator",
+      "Frequency Sound Generator App",
+      "Tone Generator: Audio Sound Hz",
+      "Frequency: Healing Sounds",
+      "Frequency Generator App",
+      "Sonic | Water Eject",
+      "Audio Function Generator",
+      "Frequency Sound Wave Generator",
+      "Frequency Generator: HZ",
+      "Clear Wave"
+    ]
+  },
+  {
+    "keyword": "rar extractor app",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 70347,
+    "avg_rating_count": 7034,
+    "avg_star_rating": 4.3,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "RAR Unzip-Zip File Opener 7Zip",
+        "ratings": 2981,
+        "stars": 4.6
+      },
+      {
+        "name": "RAR Extractor - Unarchiver",
+        "ratings": 523,
+        "stars": 4.6
+      },
+      {
+        "name": "ZIP Extractor \uff0d Unzip, Unrar",
+        "ratings": 3659,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "RAR Unzip-Zip File Opener 7Zip",
+      "RAR Extractor - Unarchiver",
+      "ZIP Extractor \uff0d Unzip, Unrar",
+      "Unzip \u2013 ZIP RAR 7Z Extractor",
+      "Unzip - zip,rar,7z file opener",
+      "Zip & Rar",
+      "Zip & RAR Extractor - Unzip 7z",
+      "Unzip - Zip & RAR Extractor",
+      "Zip Extractor & RAR Opener App",
+      "RarExtractor - Extract RAR,ZIP"
+    ]
+  },
+  {
+    "keyword": "compass app pro",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 90773,
+    "avg_rating_count": 9077,
+    "avg_star_rating": 4.3,
+    "stale_apps": 3,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.7,
+    "top_3_apps": [
+      {
+        "name": "Compass Pro - GPS Altimeter",
+        "ratings": 8,
+        "stars": 4.5
+      },
+      {
+        "name": "Compass - Professional",
+        "ratings": 2291,
+        "stars": 4.7
+      },
+      {
+        "name": "Compass & GPS",
+        "ratings": 11298,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Compass Pro - GPS Altimeter",
+      "Compass - Professional",
+      "Compass & GPS",
+      "Compass & Altimeter",
+      "Altimeter-Compass,GPS Altitude",
+      "The Best Compass & GPS",
+      "Compass\u221e",
+      "Compass\u00b0",
+      "Compass \u2298",
+      "Compass"
+    ]
+  },
+  {
+    "keyword": "watermark photo app",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 95353,
+    "avg_rating_count": 9535,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.64,
+    "top_3_apps": [
+      {
+        "name": "eZy Watermark Photos",
+        "ratings": 32213,
+        "stars": 4.8
+      },
+      {
+        "name": "Watermark+ Photo.",
+        "ratings": 2471,
+        "stars": 4.4
+      },
+      {
+        "name": "Add Watermark -Batch Process",
+        "ratings": 5819,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "eZy Watermark Photos",
+      "Watermark+ Photo.",
+      "Add Watermark -Batch Process",
+      "Watermark Maker: Add Signature",
+      "Watermark: Watermark Maker X",
+      "Watermark Maker\u30fbEraser Objects",
+      "Watermark Maker Watermarkify",
+      "Watermark: Photo & Videos",
+      "iWatermark - Watermark Photos",
+      "Watermark Photos & Copyright"
+    ]
+  },
+  {
+    "keyword": "lux light meter",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 16612,
+    "avg_rating_count": 1661,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.6,
+    "top_3_apps": [
+      {
+        "name": "Lux Light Meter for Mobile",
+        "ratings": 218,
+        "stars": 4.5
+      },
+      {
+        "name": "Light Meter LM-3000",
+        "ratings": 2432,
+        "stars": 4.5
+      },
+      {
+        "name": "Lux Light Meter Pro",
+        "ratings": 5073,
+        "stars": 3.9
+      }
+    ],
+    "top_10_names": [
+      "Lux Light Meter for Mobile",
+      "Light Meter LM-3000",
+      "Lux Light Meter Pro",
+      "Lux Light Meter & Photometer",
+      "Photone - Grow Light Meter",
+      "Lux Light Meter Pro for Photo",
+      "Libre Light Sensor",
+      "Luxmeter - Lux Light Meter",
+      "LUX Meter - Photo Light Meter",
+      "Photo Light & Exposure Meter"
+    ]
+  },
+  {
+    "keyword": "magic 8 ball",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 19421,
+    "avg_rating_count": 2157,
+    "avg_star_rating": 4.4,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "Magic 8 bit 8 ball",
+        "ratings": 14709,
+        "stars": 4.5
+      },
+      {
+        "name": "Magic 8 Ball Fortune Teller",
+        "ratings": 1027,
+        "stars": 4.7
+      },
+      {
+        "name": "Magic (8) Ball",
+        "ratings": 51,
+        "stars": 3.9
+      }
+    ],
+    "top_10_names": [
+      "Magic 8 bit 8 ball",
+      "Magic 8 Ball Fortune Teller",
+      "Magic (8) Ball",
+      "Magic Ball: Fortune Teller 3D",
+      "Magic 8 Ball x Destiny Fantasy",
+      "Lucky Wheel - Decision Maker",
+      "Magic 8 Ball 3D",
+      "Magic Ball 8: Crystal Ball",
+      "AI8: AI Magic 8 Ball"
+    ]
+  },
+  {
     "keyword": "tinnitus relief app",
     "score": 76,
     "opportunity": "GOOD OPPORTUNITY",
@@ -5506,6 +6207,94 @@
       "Volleyball Score Simple",
       "ScoreStream Sports Scores",
       "APA Scorekeeper"
+    ]
+  },
+  {
+    "keyword": "photo compressor app",
+    "score": 76,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 78129,
+    "avg_rating_count": 7812,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.69,
+    "top_3_apps": [
+      {
+        "name": "Photo Compress - Shrink Pics",
+        "ratings": 3485,
+        "stars": 4.6
+      },
+      {
+        "name": "Compress Photos & Pictures",
+        "ratings": 21975,
+        "stars": 4.7
+      },
+      {
+        "name": "Photo Compressor & Resize",
+        "ratings": 246,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Photo Compress - Shrink Pics",
+      "Compress Photos & Pictures",
+      "Photo Compressor & Resize",
+      "Compressor: Photos & Pictures",
+      "Easy Photo Compressor",
+      "Compress image size in kb & mb",
+      "Image Size",
+      "Image Compress & Resize Easily",
+      "Photo Compress: Compress Photo",
+      "Photo Scanner Plus"
+    ]
+  },
+  {
+    "keyword": "pdf compressor app",
+    "score": 76,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 65975,
+    "avg_rating_count": 6597,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "PDF Compressor App",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "PDF Compressor - Compress PDF",
+        "ratings": 530,
+        "stars": 4.3
+      },
+      {
+        "name": "PDF Compressor : Compress PDF",
+        "ratings": 714,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "PDF Compressor App",
+      "PDF Compressor - Compress PDF",
+      "PDF Compressor : Compress PDF",
+      "PDF it All Document Converter",
+      "PDF Compressor - Reduce Size",
+      "PDF Compressor\uff0dCompress PDF",
+      "Compress It! PDF Compressor",
+      "iLovePDF - PDF Editor & Scan",
+      "pdf compressor & compress pdf",
+      "PDF Gear - PDF Editor & Reader"
     ]
   },
   {
@@ -8916,6 +9705,181 @@
     ]
   },
   {
+    "keyword": "image upscaler ai",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 434835,
+    "avg_rating_count": 43483,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 30,
+    "concentration_index": 0.85,
+    "top_3_apps": [
+      {
+        "name": "Remini - AI Photo Enhancer",
+        "ratings": 336335,
+        "stars": 4.6
+      },
+      {
+        "name": "PhotoApp - AI Photo Enhancer",
+        "ratings": 85725,
+        "stars": 4.6
+      },
+      {
+        "name": "Image Upscaler AI",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Remini - AI Photo Enhancer",
+      "PhotoApp - AI Photo Enhancer",
+      "Image Upscaler AI",
+      "AI Enlarger \u2013 Image Upscaler",
+      "Leonardo.Ai - Image Generator",
+      "Image Upscaler - AI Upscale",
+      "AI Photo Enhancer - Upscaler",
+      "Photo Enhancer: Gigapixel AI",
+      "Upscale 4x AI:Photo Enlarger",
+      "Pixelo : AI Image Upscaler"
+    ]
+  },
+  {
+    "keyword": "incognito browser app",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 474407,
+    "avg_rating_count": 47440,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.71,
+    "top_3_apps": [
+      {
+        "name": "Private Browsing Web Browser",
+        "ratings": 126508,
+        "stars": 4.7
+      },
+      {
+        "name": "Private Browser Deluxe",
+        "ratings": 13739,
+        "stars": 4.5
+      },
+      {
+        "name": "TOR Browser: OrNET Onion + VPN",
+        "ratings": 64969,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Private Browsing Web Browser",
+      "Private Browser Deluxe",
+      "TOR Browser: OrNET Onion + VPN",
+      "Private Browser,Incognito VPN",
+      "Secret Browser",
+      "Opera: AI browser with VPN",
+      "UPX Private Browser",
+      "Private Web Incognito Browser",
+      "Private Web Browser Incognito",
+      "TOR Browser: Phantom"
+    ]
+  },
+  {
+    "keyword": "hotspot monitor app",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 365671,
+    "avg_rating_count": 40630,
+    "avg_star_rating": 4.3,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.86,
+    "top_3_apps": [
+      {
+        "name": "Hotspot Monitor Data Usage",
+        "ratings": 85,
+        "stars": 4.1
+      },
+      {
+        "name": "HeliumGeek - for your hotspot",
+        "ratings": 2483,
+        "stars": 4.7
+      },
+      {
+        "name": "System Status: hw monitor",
+        "ratings": 2420,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Hotspot Monitor Data Usage",
+      "HeliumGeek - for your hotspot",
+      "System Status: hw monitor",
+      "VPN Hotspot Shield: Secure VPN",
+      "System Status Pro: hw monitor",
+      "Helium Hotspot",
+      "NETGEAR Mobile",
+      "Portable WiFi - Mobile Hotspot",
+      "spacedesk - USB Display for PC"
+    ]
+  },
+  {
+    "keyword": "interval timer workout",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 313398,
+    "avg_rating_count": 31339,
+    "avg_star_rating": 4.8,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.44,
+    "top_3_apps": [
+      {
+        "name": "Interval Timer \u25a1 HIIT Timer",
+        "ratings": 83159,
+        "stars": 4.8
+      },
+      {
+        "name": "Interval Timer - Tabata Timer",
+        "ratings": 18777,
+        "stars": 4.5
+      },
+      {
+        "name": "Intervals Pro: HIIT Timer",
+        "ratings": 13228,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Interval Timer \u25a1 HIIT Timer",
+      "Interval Timer - Tabata Timer",
+      "Intervals Pro: HIIT Timer",
+      "Interval Timer ++",
+      "Tabata Timer: Interval Timer.",
+      "Seconds Interval Timer",
+      "Timer Plus - Workouts Timer",
+      "Tabata Timer and HIIT Timer",
+      "Interval Timer Plus",
+      "Tabata Pro HIIT Interval Timer"
+    ]
+  },
+  {
     "keyword": "side hustle income tracker",
     "score": 73,
     "opportunity": "GOOD OPPORTUNITY",
@@ -10879,6 +11843,616 @@
     ]
   },
   {
+    "keyword": "speaker cleaner",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 87586,
+    "avg_rating_count": 8758,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.68,
+    "top_3_apps": [
+      {
+        "name": "Speaker Cleaner \u00b7 Water Eject",
+        "ratings": 126,
+        "stars": 4.0
+      },
+      {
+        "name": "Dust Cleaner - Speaker Cleaner",
+        "ratings": 4,
+        "stars": 4
+      },
+      {
+        "name": "Clean Wave - Clear Speaker",
+        "ratings": 2423,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Speaker Cleaner \u00b7 Water Eject",
+      "Dust Cleaner - Speaker Cleaner",
+      "Clean Wave - Clear Speaker",
+      "Clear Wave",
+      "SpeakClean - Speaker Cleaner",
+      "Water Eject \u2012 Speaker Cleaner",
+      "Speaker Cleaner - Clear Wave",
+      "Sonic | Water Eject",
+      "Speaker Cleaner: Remove Water",
+      "Wave Clean - Speaker Cleaner"
+    ]
+  },
+  {
+    "keyword": "water eject phone",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 94599,
+    "avg_rating_count": 9459,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 20,
+    "concentration_index": 0.64,
+    "top_3_apps": [
+      {
+        "name": "Water Eject \u06ec",
+        "ratings": 3287,
+        "stars": 4.8
+      },
+      {
+        "name": "Sonic | Water Eject",
+        "ratings": 18566,
+        "stars": 4.7
+      },
+      {
+        "name": "Water Eject",
+        "ratings": 759,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Water Eject \u06ec",
+      "Sonic | Water Eject",
+      "Water Eject",
+      "Water Eject \u00b7",
+      "Water Eject\u00b0",
+      "Clear Wave",
+      "Water Eject Airpods: WaterDrop",
+      "Water Eject \u2012 Speaker Cleaner",
+      "Water Eject - Clear Wave PRO",
+      "Water Eject: Eject Water"
+    ]
+  },
+  {
+    "keyword": "dust cleaner phone",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 26192,
+    "avg_rating_count": 2910,
+    "avg_star_rating": 4.2,
+    "stale_apps": 1,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 11,
+    "concentration_index": 0.59,
+    "top_3_apps": [
+      {
+        "name": "Dust Cleaner - Speaker Cleaner",
+        "ratings": 4,
+        "stars": 4
+      },
+      {
+        "name": "Cleaner - Smart Cleanup",
+        "ratings": 8387,
+        "stars": 4.4
+      },
+      {
+        "name": "Speaker Cleaner: Water & Dust",
+        "ratings": 2,
+        "stars": 3
+      }
+    ],
+    "top_10_names": [
+      "Dust Cleaner - Speaker Cleaner",
+      "Cleaner - Smart Cleanup",
+      "Speaker Cleaner: Water & Dust",
+      "Speaker Cleaner: Remove Water",
+      "Dust Remover - Speaker Cleaner",
+      "Auto Cleanup:gallery cleaner",
+      "Phone Cleaner:AI Clean Storage",
+      "Cleaner Master:ai cleaner",
+      "AI Cleaner : Clean Storage"
+    ]
+  },
+  {
+    "keyword": "earbuds cleaner",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 86472,
+    "avg_rating_count": 8647,
+    "avg_star_rating": 4.1,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "Bose QC Earbuds",
+        "ratings": 27689,
+        "stars": 4.8
+      },
+      {
+        "name": "Bebird",
+        "ratings": 1629,
+        "stars": 2.5
+      },
+      {
+        "name": "Xiaomi Earbuds",
+        "ratings": 1445,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Bose QC Earbuds",
+      "Bebird",
+      "Xiaomi Earbuds",
+      "Dust Cleaner - Speaker Cleaner",
+      "SpeakClean - Speaker Cleaner",
+      "Cleanfox - Email Cleaner",
+      "Cleaner - Smart Cleanup",
+      "Suear",
+      "Clean Wave - Clear Speaker",
+      "Sonic | Water Eject"
+    ]
+  },
+  {
+    "keyword": "dead pixel fixer",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 79129,
+    "avg_rating_count": 8792,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 67,
+    "concentration_index": 0.56,
+    "top_3_apps": [
+      {
+        "name": "Pixel Control",
+        "ratings": 4,
+        "stars": 3.5
+      },
+      {
+        "name": "Speed Test+ -HW Test,Toolbox",
+        "ratings": 57,
+        "stars": 4.5
+      },
+      {
+        "name": "Divoom: Pixel art community",
+        "ratings": 11111,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Pixel Control",
+      "Speed Test+ -HW Test,Toolbox",
+      "Divoom: Pixel art community",
+      "Pixel Studio for pixel art",
+      "Cops N Robbers:Pixel Craft Gun",
+      "Pixel Art Maker",
+      "Pixquare - Pixel Art Studio",
+      "Pixelable - Pixel Art Editor",
+      "Realms of Pixel"
+    ]
+  },
+  {
+    "keyword": "tinnitus tone app",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 23855,
+    "avg_rating_count": 2385,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Tinnitus Aid: ringing relief",
+        "ratings": 1018,
+        "stars": 4.6
+      },
+      {
+        "name": "ReSound Tinnitus Relief",
+        "ratings": 18004,
+        "stars": 4.7
+      },
+      {
+        "name": "Beltone Tinnitus Calmer",
+        "ratings": 3359,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Tinnitus Aid: ringing relief",
+      "ReSound Tinnitus Relief",
+      "Beltone Tinnitus Calmer",
+      "TinniSound: Tinnitus Relief",
+      "\u2122Tinnitus Relief Sound Masking",
+      "Widex Zen, Tinnitus Management",
+      "Tinnitus Tone Generator",
+      "Oto: Tinnitus Program & Skills",
+      "Quieten : Tinnitus Relief",
+      "Tinnitus Sound Therapy RngAway"
+    ]
+  },
+  {
+    "keyword": "audio extractor mp3",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 70154,
+    "avg_rating_count": 7015,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "MP3 Converter -Audio Extractor",
+        "ratings": 45202,
+        "stars": 4.7
+      },
+      {
+        "name": "MP3 Converter: Video to Audio",
+        "ratings": 6966,
+        "stars": 4.7
+      },
+      {
+        "name": "Audio Extractor, Video to Mp3",
+        "ratings": 309,
+        "stars": 4.2
+      }
+    ],
+    "top_10_names": [
+      "MP3 Converter -Audio Extractor",
+      "MP3 Converter: Video to Audio",
+      "Audio Extractor, Video to Mp3",
+      "Video to MP3 Audio Extractor",
+      "Audio Extractor &MP3 Converter",
+      "Video to MP3: Audio Extractor",
+      "Audio Extractor - MP4 To MP3",
+      "EasyMp3 Video to mp3 Converter",
+      "Music Editor Cut MP3 Converter",
+      "The Audio Converter"
+    ]
+  },
+  {
+    "keyword": "wifi signal strength",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 99367,
+    "avg_rating_count": 9936,
+    "avg_star_rating": 4.2,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.63,
+    "top_3_apps": [
+      {
+        "name": "Wifi Analizer Signal Strength",
+        "ratings": 14272,
+        "stars": 3.9
+      },
+      {
+        "name": "Ubiquiti WiFiman",
+        "ratings": 36303,
+        "stars": 4.8
+      },
+      {
+        "name": "iWifi - AR speed & signal test",
+        "ratings": 17884,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Wifi Analizer Signal Strength",
+      "Ubiquiti WiFiman",
+      "iWifi - AR speed & signal test",
+      "Wifi Signal Strength Meter",
+      "Wi-Fi SweetSpots",
+      "Wifi Signal Strength Analyzer",
+      "NetSpot WiFi Analyzer",
+      "Wifi Speed and Strength Test",
+      "Speed Test & Wifi Analyzer +",
+      "Wifi Analyser"
+    ]
+  },
+  {
+    "keyword": "plumb bob app",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 16166,
+    "avg_rating_count": 2694,
+    "avg_star_rating": 4.4,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Plumb Bob: Vertical Level",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Level Tool \u00b7 Angle Finder",
+        "ratings": 177,
+        "stars": 4.5
+      },
+      {
+        "name": "Bubble Level Plus+",
+        "ratings": 14941,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Plumb Bob: Vertical Level",
+      "Level Tool \u00b7 Angle Finder",
+      "Bubble Level Plus+",
+      "Level Tool - Angle Finder App",
+      "Bubble Level Mini",
+      "ToolBox: AR Ruler, Level Tool"
+    ]
+  },
+  {
+    "keyword": "magnetometer app",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 15293,
+    "avg_rating_count": 1529,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.79,
+    "top_3_apps": [
+      {
+        "name": "Magnetometer \u221e",
+        "ratings": 21,
+        "stars": 4.1
+      },
+      {
+        "name": "Physics Toolbox Magnetometer",
+        "ratings": 6,
+        "stars": 5
+      },
+      {
+        "name": "EMF & Magnetic Detector",
+        "ratings": 340,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Magnetometer \u221e",
+      "Physics Toolbox Magnetometer",
+      "EMF & Magnetic Detector",
+      "Physics Toolbox Sensor Suite",
+      "Magnetized Wristwatch Checker",
+      "phyphox",
+      "Magnetometer",
+      "Metal Detector EMF",
+      "Metal Detector and Spy Camera",
+      "Magnetometer+"
+    ]
+  },
+  {
+    "keyword": "floor plan scanner",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 98141,
+    "avg_rating_count": 9814,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.72,
+    "top_3_apps": [
+      {
+        "name": "magicplan",
+        "ratings": 40102,
+        "stars": 4.7
+      },
+      {
+        "name": "Polycam 3D Scans & Floor Plans",
+        "ratings": 41412,
+        "stars": 4.7
+      },
+      {
+        "name": "Room Scanner - Easy Measure Rm",
+        "ratings": 75,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "magicplan",
+      "Polycam 3D Scans & Floor Plans",
+      "Room Scanner - Easy Measure Rm",
+      "RoomScan Classic",
+      "Floor Plan Scanner: PanoRoom",
+      "ArcSite: Floor Plans and CAD",
+      "Room Planner - Dream Home AI",
+      "CubiCasa | 2D & 3D Floor Plans",
+      "CamToPlan - 3D Scanner & LiDAR",
+      "LiDAR Room Scanner: Floor Plan"
+    ]
+  },
+  {
+    "keyword": "m4a to mp3 converter",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 95431,
+    "avg_rating_count": 9543,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.68,
+    "top_3_apps": [
+      {
+        "name": "The Audio Converter",
+        "ratings": 13053,
+        "stars": 4.6
+      },
+      {
+        "name": "M4A to MP3 Converter \u2122",
+        "ratings": 26,
+        "stars": 4.8
+      },
+      {
+        "name": "M4A Converter, M4A to MP3",
+        "ratings": 16,
+        "stars": 2.9
+      }
+    ],
+    "top_10_names": [
+      "The Audio Converter",
+      "M4A to MP3 Converter \u2122",
+      "M4A Converter, M4A to MP3",
+      "Media Converter - video to mp3",
+      "MP3 Converter -Audio Extractor",
+      "Audio Converter - MP4 to MP3",
+      "MP3 Converter: Video to Audio",
+      "Any MP3 Converter -Extract MP3",
+      "EasyMp3 Video to mp3 Converter",
+      "Audio Converter: convert mp3"
+    ]
+  },
+  {
+    "keyword": "protractor app",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 27487,
+    "avg_rating_count": 2748,
+    "avg_star_rating": 4.2,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.76,
+    "top_3_apps": [
+      {
+        "name": "Protractor for Angle Measuring",
+        "ratings": 952,
+        "stars": 4.5
+      },
+      {
+        "name": "Protractor+",
+        "ratings": 10356,
+        "stars": 4.1
+      },
+      {
+        "name": "Protractor Smart",
+        "ratings": 224,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Protractor for Angle Measuring",
+      "Protractor+",
+      "Protractor Smart",
+      "Protractor (Angle measurement)",
+      "Measure Angles - Bubble Level",
+      "Smart Protractor",
+      "Toolbox - Smart Meter Tools",
+      "Angle Meter 360",
+      "Protractor - Angle Measure",
+      "Protractor Edge-angle measure"
+    ]
+  },
+  {
+    "keyword": "room scanner 3d",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 75486,
+    "avg_rating_count": 7548,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.72,
+    "top_3_apps": [
+      {
+        "name": "Polycam 3D Scans & Floor Plans",
+        "ratings": 41412,
+        "stars": 4.7
+      },
+      {
+        "name": "LiDAR Room Scanner: Floor Plan",
+        "ratings": 116,
+        "stars": 4.7
+      },
+      {
+        "name": "3D Snap: LiDAR Scanner & Ruler",
+        "ratings": 2177,
+        "stars": 3.9
+      }
+    ],
+    "top_10_names": [
+      "Polycam 3D Scans & Floor Plans",
+      "LiDAR Room Scanner: Floor Plan",
+      "3D Snap: LiDAR Scanner & Ruler",
+      "3d Scanner App\u2122",
+      "Scaniverse - 3D Scanner",
+      "AR Plan: Measure, Room Scanner",
+      "Metaroom - 3D Room Scanner",
+      "The Tape Measure & 3D Scanner",
+      "ScanSphere - Scan PDF 3D Room",
+      "Room Scanner - Easy Measure Rm"
+    ]
+  },
+  {
     "keyword": "skin condition tracker",
     "score": 70,
     "opportunity": "GOOD OPPORTUNITY",
@@ -11313,6 +12887,136 @@
       "Dart Scores",
       "Score Darts Scoreboard",
       "Dart Meister"
+    ]
+  },
+  {
+    "keyword": "light meter photo",
+    "score": 70,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 19119,
+    "avg_rating_count": 1911,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.49,
+    "top_3_apps": [
+      {
+        "name": "Photo Light & Exposure Meter",
+        "ratings": 3154,
+        "stars": 4.5
+      },
+      {
+        "name": "Lux Light Meter for Mobile",
+        "ratings": 218,
+        "stars": 4.5
+      },
+      {
+        "name": "Lightme - Lightmeter",
+        "ratings": 790,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "Photo Light & Exposure Meter",
+      "Lux Light Meter for Mobile",
+      "Lightme - Lightmeter",
+      "Light Meter LM-3000",
+      "Photone - Grow Light Meter",
+      "myLightMeter PRO",
+      "Lux Light Meter Pro",
+      "Lux Light Meter Pro for Photo",
+      "Pocket Light Meter",
+      "Lux Light Meter & Photometer"
+    ]
+  },
+  {
+    "keyword": "ar height measure",
+    "score": 70,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 23324,
+    "avg_rating_count": 2332,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.42,
+    "top_3_apps": [
+      {
+        "name": "Measuring Tape, Photo Ruler",
+        "ratings": 2529,
+        "stars": 4.2
+      },
+      {
+        "name": "Ruler AR - Tape Measure Camera",
+        "ratings": 3473,
+        "stars": 4.3
+      },
+      {
+        "name": "Measuring Tape +\u3164",
+        "ratings": 4896,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Measuring Tape, Photo Ruler",
+      "Ruler AR - Tape Measure Camera",
+      "Measuring Tape +\u3164",
+      "EasyMeasure \u2013 Camera Ruler",
+      "AR Measure",
+      "Measuring Tape+ Measure AR app",
+      "AR Ruler: Digital Tape Measure",
+      "AR Plan: Measure, Room Scanner",
+      "Measure - AR",
+      "Tape Measure Camera AR Ruler"
+    ]
+  },
+  {
+    "keyword": "whistle finder app",
+    "score": 70,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 20394,
+    "avg_rating_count": 2549,
+    "avg_star_rating": 4.4,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 25,
+    "concentration_index": 0.42,
+    "top_3_apps": [
+      {
+        "name": "Clap to Find My phone, Finder",
+        "ratings": 3004,
+        "stars": 4.5
+      },
+      {
+        "name": "Find my phone - Device Finder",
+        "ratings": 3190,
+        "stars": 4.4
+      },
+      {
+        "name": "Whistle - Find phone by clap",
+        "ratings": 201,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Clap to Find My phone, Finder",
+      "Find my phone - Device Finder",
+      "Whistle - Find phone by clap",
+      "Clap to Find My Phone & Finder",
+      "Find My Phone By Clapping",
+      "ClapFind: Phone Finder",
+      "Whistle for Sport & SOS",
+      "Dog Whistle & Clicker App"
     ]
   },
   {
@@ -12615,6 +14319,50 @@
       "Axe Throwing - Viking Valhalla",
       "Archery! King of bowmasters skill shooting games",
       "Axes vs Arrows"
+    ]
+  },
+  {
+    "keyword": "stopwatch lap app",
+    "score": 51,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 104672,
+    "avg_rating_count": 10467,
+    "avg_star_rating": 4.6,
+    "stale_apps": 8,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.82,
+    "top_3_apps": [
+      {
+        "name": "Stopwatch\u2030",
+        "ratings": 31853,
+        "stars": 4.9
+      },
+      {
+        "name": "Stopwatch \u065e",
+        "ratings": 1366,
+        "stars": 4.5
+      },
+      {
+        "name": "Opal: Screen Time Control",
+        "ratings": 70318,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Stopwatch\u2030",
+      "Stopwatch \u065e",
+      "Opal: Screen Time Control",
+      "Best Stopwatch",
+      "Big Stopwatch\u2122",
+      "Stopwatch\u00b4",
+      "Best Multi Stopwatch Lite",
+      "Multi-Stopwatch",
+      "Stopwatch \u2013 Simple & Beautiful",
+      "Stopwatch\u00b0"
     ]
   },
   {
@@ -15243,6 +16991,270 @@
       "Walkmeter Walking & Hiking GPS",
       "onX Backcountry: Trail GPS App",
       "Elevation Tracker: Altitude"
+    ]
+  },
+  {
+    "keyword": "gif maker app",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 2219582,
+    "avg_rating_count": 221958,
+    "avg_star_rating": 4.7,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "ImgPlay: GIF Maker & Meme",
+        "ratings": 44864,
+        "stars": 4.8
+      },
+      {
+        "name": "GIPHY: The GIF Search Engine",
+        "ratings": 679225,
+        "stars": 4.8
+      },
+      {
+        "name": "GIF Maker - Memes & GIFs",
+        "ratings": 87326,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "ImgPlay: GIF Maker & Meme",
+      "GIPHY: The GIF Search Engine",
+      "GIF Maker - Memes & GIFs",
+      "GIF Maker \u25d0",
+      "GIF Maker by Momento",
+      "GIF Keyboard",
+      "Video to GIF - GIF Maker",
+      "GIF Toaster - GIF Maker",
+      "Convert: GIF Maker & Wallpaper",
+      "GIF Maker \u2013 GIFs for Texting"
+    ]
+  },
+  {
+    "keyword": "router login helper",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 649640,
+    "avg_rating_count": 64964,
+    "avg_star_rating": 4.4,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.69,
+    "top_3_apps": [
+      {
+        "name": "Dashlane Password Manager",
+        "ratings": 102524,
+        "stars": 4.8
+      },
+      {
+        "name": "LastPass Password Manager",
+        "ratings": 56846,
+        "stars": 4.4
+      },
+      {
+        "name": "Router Admin Setup",
+        "ratings": 347,
+        "stars": 3.5
+      }
+    ],
+    "top_10_names": [
+      "Dashlane Password Manager",
+      "LastPass Password Manager",
+      "Router Admin Setup",
+      "Linksys",
+      "Router Admin Control",
+      "Router Setup Page",
+      "Router Keygen: WiFi Passwords",
+      "Bitwarden Password Manager",
+      "1Password: Password Manager",
+      "NETGEAR Orbi - WiFi System App"
+    ]
+  },
+  {
+    "keyword": "big file finder",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 688478,
+    "avg_rating_count": 68847,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.86,
+    "top_3_apps": [
+      {
+        "name": "FileBrowser: Documents Manager",
+        "ratings": 5606,
+        "stars": 4.7
+      },
+      {
+        "name": "My File Organizer",
+        "ratings": 6530,
+        "stars": 4.5
+      },
+      {
+        "name": "FE File Explorer Pro",
+        "ratings": 5751,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "FileBrowser: Documents Manager",
+      "My File Organizer",
+      "FE File Explorer Pro",
+      "File Manager & Browser",
+      "FSharing - Files, File Manager",
+      "Documents: File Manager & Docs",
+      "Easy FileManager",
+      "iFolder-File organizer",
+      "FileBrowserGO: File Manager",
+      "File Hub by imoreapps"
+    ]
+  },
+  {
+    "keyword": "offline translator app",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1146695,
+    "avg_rating_count": 114669,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.71,
+    "top_3_apps": [
+      {
+        "name": "AR Translator: Translate Photo",
+        "ratings": 3775,
+        "stars": 4.7
+      },
+      {
+        "name": "Arabic Translator Offline",
+        "ratings": 6115,
+        "stars": 4.6
+      },
+      {
+        "name": "Translate Now - AI Translator",
+        "ratings": 342414,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "AR Translator: Translate Photo",
+      "Arabic Translator Offline",
+      "Translate Now - AI Translator",
+      "iTranslate Translator",
+      "Offline Translator: Phrasify",
+      "Dictionary Offline - Dict Box",
+      "Spanish Translator Offline",
+      "Google Translate",
+      "Translator Offline",
+      "Microsoft Translator"
+    ]
+  },
+  {
+    "keyword": "medicine barcode scanner",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 858327,
+    "avg_rating_count": 85832,
+    "avg_star_rating": 4.3,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Barcode Scanner - QR Scanner",
+        "ratings": 41695,
+        "stars": 4.5
+      },
+      {
+        "name": "QR Code Barcode Scanner & Read",
+        "ratings": 3477,
+        "stars": 4.3
+      },
+      {
+        "name": "QR Code & Barcode Scanner \u30fb",
+        "ratings": 90969,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Barcode Scanner - QR Scanner",
+      "QR Code Barcode Scanner & Read",
+      "QR Code & Barcode Scanner \u30fb",
+      "QR Code Reader & Code Scanner",
+      "Code Scanner by ScanLife",
+      "Bar-Code",
+      "Barcode Scanners",
+      "QR Code Reader \u00b7",
+      "QR Code Reader, Scan Barcode",
+      "QR Code & Barcode Scanner app."
+    ]
+  },
+  {
+    "keyword": "duplicate contact cleaner",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1035160,
+    "avg_rating_count": 103516,
+    "avg_star_rating": 4.4,
+    "stale_apps": 3,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Duplicate Contact Cleaner \u24c4",
+        "ratings": 140,
+        "stars": 4.6
+      },
+      {
+        "name": "Cleanup Duplicate Contacts!",
+        "ratings": 8517,
+        "stars": 4.4
+      },
+      {
+        "name": "Easy Cleaner.",
+        "ratings": 28670,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Duplicate Contact Cleaner \u24c4",
+      "Cleanup Duplicate Contacts!",
+      "Easy Cleaner.",
+      "Cleanup: Phone Storage Cleaner",
+      "Contact Cleanup",
+      "Duplicate Contacts Remover - Contact Manager And Cleaner",
+      "Duplicate Cleaner App-Softices",
+      "Cleaner - Merge Contacts",
+      "Master Cleanup Contact Cleaner",
+      "Cleaner Kit - Clean Up Storage"
     ]
   },
   {
@@ -18695,6 +20707,750 @@
     ]
   },
   {
+    "keyword": "haptic tester app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 787641,
+    "avg_rating_count": 78764,
+    "avg_star_rating": 4.3,
+    "stale_apps": 1,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 8,
+    "mature_apps_pct": 40,
+    "concentration_index": 0.9,
+    "top_3_apps": [
+      {
+        "name": "Haptics presets - Pulsar",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Haptic Haven",
+        "ratings": 183,
+        "stars": 4.8
+      },
+      {
+        "name": "TestFlight",
+        "ratings": 783718,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Haptics presets - Pulsar",
+      "Haptic Haven",
+      "TestFlight",
+      "Haptics Touch: Vibration Test",
+      "Strong Vibration",
+      "Haptic Hero",
+      "Userlytics",
+      "Haptics - Test Device Feedback",
+      "Vibrator: Haptic Vibration App",
+      "Haptic Testing: Developer Tool"
+    ]
+  },
+  {
+    "keyword": "decibel meter app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 274461,
+    "avg_rating_count": 27446,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.72,
+    "top_3_apps": [
+      {
+        "name": "Decibel Meter Sound Detector",
+        "ratings": 51971,
+        "stars": 4.7
+      },
+      {
+        "name": "Decibel X:dB Sound Level Meter",
+        "ratings": 155973,
+        "stars": 4.7
+      },
+      {
+        "name": "NIOSH Sound Level Meter",
+        "ratings": 16118,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Decibel Meter Sound Detector",
+      "Decibel X:dB Sound Level Meter",
+      "NIOSH Sound Level Meter",
+      "Sound Meter (Decibel)",
+      "Decibel : dB sound level meter",
+      "Decibel dB Sound Meter Ultra",
+      "Decibel Meter Master",
+      "Decibel Meter dB (Sound Meter)",
+      "Decibel - sound level meter",
+      "Decibel - Accurate dB Meter"
+    ]
+  },
+  {
+    "keyword": "rain sound generator",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 169042,
+    "avg_rating_count": 16904,
+    "avg_star_rating": 4.4,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Sleepmaker Rain 1",
+        "ratings": 28,
+        "stars": 2.7
+      },
+      {
+        "name": "Rain Sounds - Relax and Focus",
+        "ratings": 1232,
+        "stars": 4.5
+      },
+      {
+        "name": "Sonic Pitch Sound Generator",
+        "ratings": 1822,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Sleepmaker Rain 1",
+      "Rain Sounds - Relax and Focus",
+      "Sonic Pitch Sound Generator",
+      "Audio Function Generator",
+      "ColorSleep: Green, Brown Noise",
+      "Frequency Sound Generator App",
+      "Rain Sounds FREE",
+      "Rain Rain Sleep Sounds",
+      "White Noise Sound Machine",
+      "Louder Sound App"
+    ]
+  },
+  {
+    "keyword": "ocean wave sounds",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 279095,
+    "avg_rating_count": 27909,
+    "avg_star_rating": 4.7,
+    "stale_apps": 6,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Ocean Wave Sounds for Sleep",
+        "ratings": 6529,
+        "stars": 4.7
+      },
+      {
+        "name": "Ocean Waves - Sleep Sounds",
+        "ratings": 1925,
+        "stars": 4.7
+      },
+      {
+        "name": "Ocean Wave Sounds \u2014 Premium",
+        "ratings": 82,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Ocean Wave Sounds for Sleep",
+      "Ocean Waves - Sleep Sounds",
+      "Ocean Wave Sounds \u2014 Premium",
+      "Ocean Sounds FREE",
+      "Ocean Sounds - Relaxing Music",
+      "Ocean Sound Effects",
+      "White Noise Lite",
+      "Sleepmaker Waves",
+      "Ocean Sound",
+      "Sleep Orbit: Relaxing 3D Sound"
+    ]
+  },
+  {
+    "keyword": "audio level meter",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 214320,
+    "avg_rating_count": 21432,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Decibel X:dB Sound Level Meter",
+        "ratings": 155973,
+        "stars": 4.7
+      },
+      {
+        "name": "NIOSH Sound Level Meter",
+        "ratings": 16118,
+        "stars": 4.7
+      },
+      {
+        "name": "Decibel : dB sound level meter",
+        "ratings": 36057,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Decibel X:dB Sound Level Meter",
+      "NIOSH Sound Level Meter",
+      "Decibel : dB sound level meter",
+      "Decibel dB Sound Meter Ultra",
+      "Decibel : dB Noise Level Meter",
+      "Audio Spectrum Analyzer dB RTA",
+      "Decibel Sound Level Meter",
+      "Noise Guru: Decibel Meter",
+      "SPL Meter",
+      "Decibels: dB Sound Level Meter"
+    ]
+  },
+  {
+    "keyword": "live photo to video",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 135220,
+    "avg_rating_count": 13522,
+    "avg_star_rating": 4.4,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "LP - Live Image to Video & GIF",
+        "ratings": 516,
+        "stars": 4.5
+      },
+      {
+        "name": "VideoToLive - Live Wallpapers",
+        "ratings": 5417,
+        "stars": 4.1
+      },
+      {
+        "name": "intoLive - Live Wallpapers",
+        "ratings": 109791,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "LP - Live Image to Video & GIF",
+      "VideoToLive - Live Wallpapers",
+      "intoLive - Live Wallpapers",
+      "Lively - Photos to GIF",
+      "Live Photo Converter .",
+      "Video to Live \u25e6",
+      "Live Photo to Video \u2122",
+      "VideoToLive",
+      "Video to Live Wallpapers Maker",
+      "Wuta Camera - Nice Shot Always"
+    ]
+  },
+  {
+    "keyword": "video to gif converter",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 142632,
+    "avg_rating_count": 14263,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Video To GIF Converter - GIFit",
+        "ratings": 258,
+        "stars": 4.9
+      },
+      {
+        "name": "GIF Maker - Memes & GIFs",
+        "ratings": 87326,
+        "stars": 4.6
+      },
+      {
+        "name": "Convert: GIF Maker & Wallpaper",
+        "ratings": 3761,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Video To GIF Converter - GIFit",
+      "GIF Maker - Memes & GIFs",
+      "Convert: GIF Maker & Wallpaper",
+      "Video to GIF - GIF Maker",
+      "ImgPlay: GIF Maker & Meme",
+      "GIF to Video",
+      "Video To GIF Converter - PyMax",
+      "Video to GIF Maker & Editor",
+      "Video to GIF Converter ,Maker",
+      "Video to gif Converter - Convert Gif from Video"
+    ]
+  },
+  {
+    "keyword": "internet speed test app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 263193,
+    "avg_rating_count": 26319,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.56,
+    "top_3_apps": [
+      {
+        "name": "Speedtest by Ookla",
+        "ratings": 27631,
+        "stars": 4.5
+      },
+      {
+        "name": "Internet Speed Test Speedcheck",
+        "ratings": 98144,
+        "stars": 4.9
+      },
+      {
+        "name": "Speed Test SpeedSmart Internet",
+        "ratings": 63769,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Speedtest by Ookla",
+      "Internet Speed Test Speedcheck",
+      "Speed Test SpeedSmart Internet",
+      "Speed Test | HighSpeedInternet",
+      "Speed Test & Wifi Analyzer +",
+      "FAST Speed Test",
+      "WIFI & Internet Speed Test",
+      "Opensignal Speed Test Ad Free",
+      "SpeedTest\u2022",
+      "V-SPEED Speed Test"
+    ]
+  },
+  {
+    "keyword": "ping tester app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 212311,
+    "avg_rating_count": 21231,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.68,
+    "top_3_apps": [
+      {
+        "name": "WIFI & Internet Speed Test",
+        "ratings": 6566,
+        "stars": 4.4
+      },
+      {
+        "name": "Ping - network utility",
+        "ratings": 370,
+        "stars": 4.3
+      },
+      {
+        "name": "Opensignal Speed Test Ad Free",
+        "ratings": 17374,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "WIFI & Internet Speed Test",
+      "Ping - network utility",
+      "Opensignal Speed Test Ad Free",
+      "Internet Speed Test Speedcheck",
+      "Wifi Analizer Signal Strength",
+      "Speed Test SpeedSmart Internet",
+      "Speed Test: Network Ping Check",
+      "iNetTools - Ping,DNS,Port Scan",
+      "Network Ping Lite",
+      "Meteor Speed Test - Ad Free"
+    ]
+  },
+  {
+    "keyword": "wifi password share",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 138230,
+    "avg_rating_count": 17278,
+    "avg_star_rating": 4.2,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 88,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Wifi Share Manager - Wifi QR",
+        "ratings": 18,
+        "stars": 4.6
+      },
+      {
+        "name": "WiFi Share Helper - QR code",
+        "ratings": 8,
+        "stars": 4.6
+      },
+      {
+        "name": "Wifi Share: internet & hotspot",
+        "ratings": 432,
+        "stars": 4.1
+      }
+    ],
+    "top_10_names": [
+      "Wifi Share Manager - Wifi QR",
+      "WiFi Share Helper - QR code",
+      "Wifi Share: internet & hotspot",
+      "Wifi Password: Share free wifi passwords chua key",
+      "Dashlane Password Manager",
+      "Wifi Widget - See, Test, Share",
+      "WiFi Photo Transfer",
+      "WiFi Map: Internet + eSIM"
+    ]
+  },
+  {
+    "keyword": "hidden notes app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 107504,
+    "avg_rating_count": 10750,
+    "avg_star_rating": 4.7,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.66,
+    "top_3_apps": [
+      {
+        "name": "Secure Notepad",
+        "ratings": 12884,
+        "stars": 4.7
+      },
+      {
+        "name": "CalcPlus - Hidden Notes",
+        "ratings": 3,
+        "stars": 5
+      },
+      {
+        "name": "Calculator# Hide Photos Videos",
+        "ratings": 28709,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Secure Notepad",
+      "CalcPlus - Hidden Notes",
+      "Calculator# Hide Photos Videos",
+      "n+otes",
+      "Lock Notes - Passcode Protect",
+      "Notebook - Diary & Journal App",
+      "Locked Notes\u00b0",
+      "Standard Notes",
+      "Safety Note+",
+      "Note!"
+    ]
+  },
+  {
+    "keyword": "altimeter app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 109901,
+    "avg_rating_count": 10990,
+    "avg_star_rating": 4.7,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.6,
+    "top_3_apps": [
+      {
+        "name": "Current Altitude",
+        "ratings": 17534,
+        "stars": 4.8
+      },
+      {
+        "name": "My Altitude",
+        "ratings": 26099,
+        "stars": 4.8
+      },
+      {
+        "name": "Barometer & Altimeter & Thermo",
+        "ratings": 9109,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Current Altitude",
+      "My Altitude",
+      "Barometer & Altimeter & Thermo",
+      "Travel Altimeter & Elevation",
+      "Altimeter+",
+      "Altimeter \u221e Current Altitude",
+      "My Altitude: GPS Altimeter",
+      "Altimeter GPS & Barometer",
+      "Compass & Altimeter",
+      "Altimeter for Aviators"
+    ]
+  },
+  {
+    "keyword": "digital clock widget",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 182537,
+    "avg_rating_count": 20281,
+    "avg_star_rating": 4.4,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.66,
+    "top_3_apps": [
+      {
+        "name": "The Clocks: Alarm, World Clock",
+        "ratings": 18763,
+        "stars": 4.5
+      },
+      {
+        "name": "Clock \u2013 Simple & Customizable",
+        "ratings": 136,
+        "stars": 4.3
+      },
+      {
+        "name": "Digital Clock - Bedside Alarm",
+        "ratings": 67809,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "The Clocks: Alarm, World Clock",
+      "Clock \u2013 Simple & Customizable",
+      "Digital Clock - Bedside Alarm",
+      "ClockPhone big digital clocks",
+      "Flip Clock - digital widgets",
+      "My widget clock +",
+      "Digital Clock Widget & Standby",
+      "SeClock for Widget",
+      "Clock Widget: Custom Clock App"
+    ]
+  },
+  {
+    "keyword": "bluetooth signal meter",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 178551,
+    "avg_rating_count": 17855,
+    "avg_star_rating": 4.4,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Find Bluetooth Device Tracker",
+        "ratings": 1747,
+        "stars": 4.4
+      },
+      {
+        "name": "Bluetooth Inspector",
+        "ratings": 1485,
+        "stars": 4.6
+      },
+      {
+        "name": "Toolbox - Smart Meter Tools",
+        "ratings": 13792,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Find Bluetooth Device Tracker",
+      "Bluetooth Inspector",
+      "Toolbox - Smart Meter Tools",
+      "Find Bluetooth: device tracker",
+      "Wifi Analizer Signal Strength",
+      "Decibel X PRO: dBA Noise Meter",
+      "Blue Sniff - Bluetooth Scanner",
+      "Wifi Signal Strength Meter",
+      "MEATER\u00ae Smart Meat Thermometer",
+      "Bluetooth Developer"
+    ]
+  },
+  {
+    "keyword": "spirit level app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 140775,
+    "avg_rating_count": 14077,
+    "avg_star_rating": 4.7,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Pocket Bubble Level XXL",
+        "ratings": 15084,
+        "stars": 4.8
+      },
+      {
+        "name": "Bubble Level for iPhone",
+        "ratings": 111473,
+        "stars": 4.7
+      },
+      {
+        "name": "Spirit Level - Bubble Level",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Pocket Bubble Level XXL",
+      "Bubble Level for iPhone",
+      "Spirit Level - Bubble Level",
+      "Bubble Level - Spirit Level",
+      "Bubble Level 2022",
+      "Spirit Level Plus",
+      "Spirit Level: Pro",
+      "Bubble Level: AR, Angle Finder",
+      "Spirit Level X",
+      "Bubble Level Tool - Digital"
+    ]
+  },
+  {
+    "keyword": "wine label scanner",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 276707,
+    "avg_rating_count": 30745,
+    "avg_star_rating": 4.8,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 67,
+    "concentration_index": 0.66,
+    "top_3_apps": [
+      {
+        "name": "Vivino: Drink The Right Wine",
+        "ratings": 127917,
+        "stars": 4.8
+      },
+      {
+        "name": "InVintory: Wine Cellar Manager",
+        "ratings": 3617,
+        "stars": 4.7
+      },
+      {
+        "name": "Delectable - Scan & Rate Wine",
+        "ratings": 25737,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Vivino: Drink The Right Wine",
+      "InVintory: Wine Cellar Manager",
+      "Delectable - Scan & Rate Wine",
+      "CellarTracker: #1 Wine Tracker",
+      "Wine Identifier Wine Scanner",
+      "Wine.com",
+      "Wine-Searcher",
+      "Wine Label Scan Log",
+      "Hello Vino: Wine Assistant"
+    ]
+  },
+  {
+    "keyword": "flashlight strobe app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 194040,
+    "avg_rating_count": 19404,
+    "avg_star_rating": 4.5,
+    "stale_apps": 6,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.47,
+    "top_3_apps": [
+      {
+        "name": "Flashlight \u24c4",
+        "ratings": 30576,
+        "stars": 4.5
+      },
+      {
+        "name": "Flashlight \u25cb",
+        "ratings": 26210,
+        "stars": 4.7
+      },
+      {
+        "name": "iLights Flashlight for iPhone",
+        "ratings": 5137,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Flashlight \u24c4",
+      "Flashlight \u25cb",
+      "iLights Flashlight for iPhone",
+      "Flashlight \u00a4",
+      "Flashlight \u229c",
+      "Flashlight.\u00ae",
+      "Flashlight\u25c9 - Magnifying Glass",
+      "Best Flash Light - Flashlight",
+      "Strobe Light - Flash Beats",
+      "Flashlight \u00d7"
+    ]
+  },
+  {
     "keyword": "posture corrector app",
     "score": 46,
     "opportunity": "COMPETITIVE \u2014 differentiate to win",
@@ -20173,6 +22929,50 @@
       "Vehicle Maintenance Tracker",
       "Boat Trader - Boats for Sale",
       "Argo - Boating Navigation"
+    ]
+  },
+  {
+    "keyword": "angle finder app",
+    "score": 46,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 126428,
+    "avg_rating_count": 12642,
+    "avg_star_rating": 4.4,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.86,
+    "top_3_apps": [
+      {
+        "name": "Measure Angles - Bubble Level",
+        "ratings": 1808,
+        "stars": 4.3
+      },
+      {
+        "name": "Bubble Level: AR, Angle Finder",
+        "ratings": 657,
+        "stars": 4.5
+      },
+      {
+        "name": "Protractor for Angle Measuring",
+        "ratings": 952,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Measure Angles - Bubble Level",
+      "Bubble Level: AR, Angle Finder",
+      "Protractor for Angle Measuring",
+      "Bubble Level for iPhone",
+      "Angle Finder: Level Tool",
+      "Angle Meter 360",
+      "Level Home",
+      "Protractor+",
+      "Angle Gradient Inclinometer",
+      "Digital Angle Finder: 3D Meter"
     ]
   },
   {
@@ -29196,6 +31996,1093 @@
     ]
   },
   {
+    "keyword": "phone cooler app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 834814,
+    "avg_rating_count": 83481,
+    "avg_star_rating": 4.2,
+    "stale_apps": 1,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.83,
+    "top_3_apps": [
+      {
+        "name": "Razer Phone Cooler",
+        "ratings": 28,
+        "stars": 4.3
+      },
+      {
+        "name": "Cleaner Neat: Clean Up Storage",
+        "ratings": 113681,
+        "stars": 4.6
+      },
+      {
+        "name": "Cooler Pro",
+        "ratings": 1,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "Razer Phone Cooler",
+      "Cleaner Neat: Clean Up Storage",
+      "Cooler Pro",
+      "Arctic Cooler",
+      "Device Monitor\u00b2",
+      "Boost Cleaner - Clean Up Smart",
+      "Truma Cooler",
+      "Cleanup: Phone Storage Cleaner",
+      "Smart Cooler",
+      "CCleaner \u2013 Phone Cleaner"
+    ]
+  },
+  {
+    "keyword": "refresh rate tester",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 676402,
+    "avg_rating_count": 75155,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 67,
+    "concentration_index": 0.59,
+    "top_3_apps": [
+      {
+        "name": "Speedtest by Ookla",
+        "ratings": 27631,
+        "stars": 4.5
+      },
+      {
+        "name": "Instant Heart Rate: HR Monitor",
+        "ratings": 228786,
+        "stars": 4.9
+      },
+      {
+        "name": "InPulse - Heart Rate Monitor",
+        "ratings": 174102,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Speedtest by Ookla",
+      "Instant Heart Rate: HR Monitor",
+      "InPulse - Heart Rate Monitor",
+      "Heart Rate Monitor - Pulse BPM",
+      "120 FPS Meter",
+      "Measure Heart Rate",
+      "Fps Meter",
+      "Heart Rate Monitor - Pulse HR",
+      "Playtest Pro by BestPlay"
+    ]
+  },
+  {
+    "keyword": "microphone tester app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1096809,
+    "avg_rating_count": 109680,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.86,
+    "top_3_apps": [
+      {
+        "name": "Mic Test - Instant Audio Check",
+        "ratings": 66,
+        "stars": 4.5
+      },
+      {
+        "name": "Microphone Live",
+        "ratings": 5010,
+        "stars": 4.4
+      },
+      {
+        "name": "Voice recorder - Voz",
+        "ratings": 25528,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Mic Test - Instant Audio Check",
+      "Microphone Live",
+      "Voice recorder - Voz",
+      "Voice Recorder Lite: Record HD",
+      "MicVerify",
+      "Voice Memos",
+      "Pro Microphone: Voice Record",
+      "Mic to Speaker - Virtual Mic",
+      "My Microphone: Voice Amplifier",
+      "Bluetooth Microphone Live"
+    ]
+  },
+  {
+    "keyword": "brown noise generator",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 502858,
+    "avg_rating_count": 50285,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Brown Noise for Sleep",
+        "ratings": 7559,
+        "stars": 4.8
+      },
+      {
+        "name": "Noise Generator: Full Spectrum",
+        "ratings": 1952,
+        "stars": 4.7
+      },
+      {
+        "name": "Sleep Noise Machine",
+        "ratings": 148,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Brown Noise for Sleep",
+      "Noise Generator: Full Spectrum",
+      "Sleep Noise Machine",
+      "White Noise Lite",
+      "Noise Machine - Brown, White",
+      "ColorSleep: Green, Brown Noise",
+      "White Noise Deep Sleep Sounds",
+      "Sound Machine - White Noise",
+      "Brown Noise to relax",
+      "Audio Function Generator"
+    ]
+  },
+  {
+    "keyword": "background remover photo",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 2130543,
+    "avg_rating_count": 236727,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "Magic Eraser Background Editor",
+        "ratings": 102312,
+        "stars": 4.8
+      },
+      {
+        "name": "Bazaart AI Photo Editor Design",
+        "ratings": 257025,
+        "stars": 4.8
+      },
+      {
+        "name": "Pixelcut AI Photo Editor",
+        "ratings": 212465,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Magic Eraser Background Editor",
+      "Bazaart AI Photo Editor Design",
+      "Pixelcut AI Photo Editor",
+      "Background Eraser \u301c Stickers",
+      "Photoroom: AI Photo Editor",
+      "Picsart AI Photo Editor, Video",
+      "ProKnockOut-Cut Paste Photos",
+      "Background Remover - PNG Maker",
+      "Pixomatic - AI Photo BG Eraser"
+    ]
+  },
+  {
+    "keyword": "photo enhancer ai",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1041459,
+    "avg_rating_count": 115717,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 67,
+    "concentration_index": 0.61,
+    "top_3_apps": [
+      {
+        "name": "PhotoApp - AI Photo Enhancer",
+        "ratings": 85725,
+        "stars": 4.6
+      },
+      {
+        "name": "Remini - AI Photo Enhancer",
+        "ratings": 336335,
+        "stars": 4.6
+      },
+      {
+        "name": "Photo Enhancer AI",
+        "ratings": 1033,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "PhotoApp - AI Photo Enhancer",
+      "Remini - AI Photo Enhancer",
+      "Photo Enhancer AI",
+      "Pixelup: AI Photo Enhancer App",
+      "AI Photo Video Editor, Enhance",
+      "Magic Eraser Background Editor",
+      "Ai Photo Enhancer - Editor RA",
+      "Lensa AI: Photo Editor",
+      "Visify: AI Photo Generator"
+    ]
+  },
+  {
+    "keyword": "zip extractor app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 778873,
+    "avg_rating_count": 77887,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Zip & RAR File Extractor",
+        "ratings": 27940,
+        "stars": 4.7
+      },
+      {
+        "name": "Unzip - zip,rar,7z file opener",
+        "ratings": 53112,
+        "stars": 4.6
+      },
+      {
+        "name": "iZip \u2013  Zip Unzip Unrar",
+        "ratings": 61923,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Zip & RAR File Extractor",
+      "Unzip - zip,rar,7z file opener",
+      "iZip \u2013  Zip Unzip Unrar",
+      "Unzip Tool & File Extractor",
+      "ZIP Extractor \uff0d Unzip, Unrar",
+      "iRAR - zip,rar,7z file opener",
+      "Unzip \u2013 ZIP RAR 7Z Extractor",
+      "Zip & Rar",
+      "Documents: File Manager & Docs",
+      "ZArchiver"
+    ]
+  },
+  {
+    "keyword": "password vault app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 2198700,
+    "avg_rating_count": 244300,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.64,
+    "top_3_apps": [
+      {
+        "name": "Passwords",
+        "ratings": 677905,
+        "stars": 4.7
+      },
+      {
+        "name": "Keeper Password Manager",
+        "ratings": 224300,
+        "stars": 4.9
+      },
+      {
+        "name": "Bitwarden Password Manager",
+        "ratings": 25657,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Passwords",
+      "Keeper Password Manager",
+      "Bitwarden Password Manager",
+      "LastPass Password Manager",
+      "1Password: Password Manager",
+      "Private Photo Vault - Pic Safe",
+      "Norton Password Manager",
+      "Password Manager - mSecure",
+      "Dashlane Password Manager"
+    ]
+  },
+  {
+    "keyword": "secret photo vault",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1604066,
+    "avg_rating_count": 160406,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.73,
+    "top_3_apps": [
+      {
+        "name": "Secret Photo Vault: Keepsafe",
+        "ratings": 372521,
+        "stars": 4.7
+      },
+      {
+        "name": "Calculator# Hide Photos Videos",
+        "ratings": 28709,
+        "stars": 4.4
+      },
+      {
+        "name": "Private Photo Vault - Pic Safe",
+        "ratings": 1002145,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Secret Photo Vault: Keepsafe",
+      "Calculator# Hide Photos Videos",
+      "Private Photo Vault - Pic Safe",
+      "Secret Photo Album ++",
+      "Converter: Hidden Photo Vault",
+      "SPV - Photo Vault",
+      "Secret Photo Vault Lock Photos",
+      "Secret Photo Album - SA",
+      "Safe Lock - Hidden Photo Vault",
+      "Hide Photos Video -Hide it Pro"
+    ]
+  },
+  {
+    "keyword": "2fa authenticator app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 3937865,
+    "avg_rating_count": 393786,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "2FA Authenticator (2FAS)",
+        "ratings": 33453,
+        "stars": 4.7
+      },
+      {
+        "name": "Google Authenticator",
+        "ratings": 1075375,
+        "stars": 4.9
+      },
+      {
+        "name": "Microsoft Authenticator",
+        "ratings": 630769,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "2FA Authenticator (2FAS)",
+      "Google Authenticator",
+      "Microsoft Authenticator",
+      "Authenticator App",
+      "Authenticator \u00b7",
+      "Authenticator app - 2FA, MFA",
+      "Epic Authenticator",
+      "Duo Mobile",
+      "Authenticator App+",
+      "Twilio Authy"
+    ]
+  },
+  {
+    "keyword": "call blocker app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1508988,
+    "avg_rating_count": 167665,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.46,
+    "top_3_apps": [
+      {
+        "name": "Robokiller: Spam Call Blocker",
+        "ratings": 413071,
+        "stars": 4.5
+      },
+      {
+        "name": "Verizon Call Filter",
+        "ratings": 291407,
+        "stars": 4.7
+      },
+      {
+        "name": "Hiya: Spam Blocker & Caller ID",
+        "ratings": 236304,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Robokiller: Spam Call Blocker",
+      "Verizon Call Filter",
+      "Hiya: Spam Blocker & Caller ID",
+      "Call Blocker",
+      "Truecaller: Premium Caller ID",
+      "T-Mobile Scam Shield",
+      "Simple Call Blocker",
+      "AT&T ActiveArmor\u00ae",
+      "RealCall - Spam Call Blocker"
+    ]
+  },
+  {
+    "keyword": "spam text blocker",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1104631,
+    "avg_rating_count": 122736,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.61,
+    "top_3_apps": [
+      {
+        "name": "Robokiller: Spam Call Blocker",
+        "ratings": 413071,
+        "stars": 4.5
+      },
+      {
+        "name": "Textkiller - Spam Text Blocker",
+        "ratings": 13014,
+        "stars": 4.3
+      },
+      {
+        "name": "Verizon Call Filter",
+        "ratings": 291407,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Robokiller: Spam Call Blocker",
+      "Textkiller - Spam Text Blocker",
+      "Verizon Call Filter",
+      "YouMail: Block Spam on iPhone",
+      "Spam Killer: Scam Text Blocker",
+      "T-Mobile Scam Shield",
+      "Spam Call and Text Blocker",
+      "AT&T ActiveArmor\u00ae",
+      "Block Spam Texts | Dont Text"
+    ]
+  },
+  {
+    "keyword": "sticker maker app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 533968,
+    "avg_rating_count": 53396,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.45,
+    "top_3_apps": [
+      {
+        "name": "Sticker Maker Studio",
+        "ratings": 80127,
+        "stars": 4.7
+      },
+      {
+        "name": "Sticker.ly - Sticker Maker",
+        "ratings": 147908,
+        "stars": 4.8
+      },
+      {
+        "name": "Top Sticker Maker - WaSticker",
+        "ratings": 98535,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Sticker Maker Studio",
+      "Sticker.ly - Sticker Maker",
+      "Top Sticker Maker - WaSticker",
+      "HelloBlink",
+      "WaSticker - Sticker Maker",
+      "AI Sticker Maker - Funny Memes",
+      "Sticker Maker :INDIAS Trending",
+      "Sticker Maker + Stickers",
+      "Sticker Maker - Top Stickers",
+      "WhatSticker - Sticker Maker"
+    ]
+  },
+  {
+    "keyword": "handwriting to text",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1057201,
+    "avg_rating_count": 105720,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Handwriting to Text Converter",
+        "ratings": 85,
+        "stars": 4.5
+      },
+      {
+        "name": "Handwriting To Text Recognizer",
+        "ratings": 3575,
+        "stars": 4.6
+      },
+      {
+        "name": "Handwriting to Text PenToPrint",
+        "ratings": 3868,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Handwriting to Text Converter",
+      "Handwriting To Text Recognizer",
+      "Handwriting to Text PenToPrint",
+      "Fontmaker - Font Keyboard App",
+      "Handwriting To Text",
+      "Fonts Art: Keyboard for iPhone",
+      "Goodnotes: AI Notes, Docs, PDF",
+      "MyScript Notes: AI Handwriting",
+      "AI Scanner : Image to Text",
+      "Handwriting to Text & Speech"
+    ]
+  },
+  {
+    "keyword": "ocr text scanner",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 6034480,
+    "avg_rating_count": 754310,
+    "avg_star_rating": 4.8,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 75,
+    "concentration_index": 0.53,
+    "top_3_apps": [
+      {
+        "name": "Adobe Scan: PDF & OCR Scanner",
+        "ratings": 1539779,
+        "stars": 4.9
+      },
+      {
+        "name": "AI Scanner : Image to Text",
+        "ratings": 9133,
+        "stars": 4.6
+      },
+      {
+        "name": "QuickScan:PDF OCR Text Scanner",
+        "ratings": 3702,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "Adobe Scan: PDF & OCR Scanner",
+      "AI Scanner : Image to Text",
+      "QuickScan:PDF OCR Text Scanner",
+      "CamScanner - PDF Scanner App",
+      "DocuOCR Scanner-Image to text",
+      "iScanner: PDF Document Scanner",
+      "Scanner App: Genius Scan",
+      "Scan.Plus - Doc & PDF Scanner"
+    ]
+  },
+  {
+    "keyword": "screenshot cleaner",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 755445,
+    "avg_rating_count": 75544,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.85,
+    "top_3_apps": [
+      {
+        "name": "Slidebox: Photo Cleaner App",
+        "ratings": 15841,
+        "stars": 4.8
+      },
+      {
+        "name": "Gallery Cleaner: Screenshots",
+        "ratings": 2,
+        "stars": 5
+      },
+      {
+        "name": "Screenshot Cleaner",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Slidebox: Photo Cleaner App",
+      "Gallery Cleaner: Screenshots",
+      "Screenshot Cleaner",
+      "Photo Cleaner: Swipewipe",
+      "Screenshot PRO Screenshots App",
+      "Screenshot Cleaner: Free Space",
+      "Hyper Cleaner: Clean Up Photos",
+      "AI CleanKit: Phone Cleaner Pro",
+      "Cleanup: Phone Storage Cleaner",
+      "Nano Cleaner: Clean Up Storage"
+    ]
+  },
+  {
+    "keyword": "photo album organizer",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1480497,
+    "avg_rating_count": 148049,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.86,
+    "top_3_apps": [
+      {
+        "name": "MyPics - A Powerful PhotoAlbum",
+        "ratings": 2129,
+        "stars": 4.5
+      },
+      {
+        "name": "Google Photos: Backup & Edit",
+        "ratings": 1233306,
+        "stars": 4.8
+      },
+      {
+        "name": "Slidebox: Photo Cleaner App",
+        "ratings": 15841,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "MyPics - A Powerful PhotoAlbum",
+      "Google Photos: Backup & Edit",
+      "Slidebox: Photo Cleaner App",
+      "PicFlick - Swipe Photo Cleaner",
+      "Photo Organizer: Picnic",
+      "Picto: Photo Moments & Albums",
+      "Utiful: Move & Organize Photos",
+      "Amazon Photos: Photo & Video",
+      "Albumizer",
+      "Gallery - Photo Vault"
+    ]
+  },
+  {
+    "keyword": "private browser app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 3223762,
+    "avg_rating_count": 358195,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.75,
+    "top_3_apps": [
+      {
+        "name": "Private Browsing Web Browser",
+        "ratings": 126508,
+        "stars": 4.7
+      },
+      {
+        "name": "Firefox: Private Web Browser",
+        "ratings": 207897,
+        "stars": 4.6
+      },
+      {
+        "name": "DuckDuckGo, Duck.ai, & VPN",
+        "ratings": 2315653,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Private Browsing Web Browser",
+      "Firefox: Private Web Browser",
+      "DuckDuckGo, Duck.ai, & VPN",
+      "Private Browser Deluxe",
+      "Aloha Browser - Private VPN",
+      "Private Browser - VPN Proxy",
+      "Opera: AI browser with VPN",
+      "UPX Private Browser",
+      "Dark Browser- Private&Secure"
+    ]
+  },
+  {
+    "keyword": "emoji maker app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 859006,
+    "avg_rating_count": 95445,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.56,
+    "top_3_apps": [
+      {
+        "name": "Facemoji AI Emoji Keyboard",
+        "ratings": 324454,
+        "stars": 4.7
+      },
+      {
+        "name": "Emoji Maker: Emoji Up",
+        "ratings": 49342,
+        "stars": 4.8
+      },
+      {
+        "name": "Emoji+",
+        "ratings": 66549,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Facemoji AI Emoji Keyboard",
+      "Emoji Maker: Emoji Up",
+      "Emoji+",
+      "Gmoji: AI Emoji Maker",
+      "Bitmoji",
+      "Moji Maker\u2122 | Emoji Messenger",
+      "Emoji Maker, Avatar Creator",
+      "Emoji Me Sticker Maker",
+      "Genmoji: AI Emoji Maker - Mix"
+    ]
+  },
+  {
+    "keyword": "voice to text app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 627096,
+    "avg_rating_count": 62709,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Otter Transcribe Voice Notes",
+        "ratings": 50161,
+        "stars": 4.7
+      },
+      {
+        "name": "Transcribe - Speech to Text",
+        "ratings": 10481,
+        "stars": 4.5
+      },
+      {
+        "name": "Speechify \u2013 Text to Speech PDF",
+        "ratings": 466033,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Otter Transcribe Voice Notes",
+      "Transcribe - Speech to Text",
+      "Speechify \u2013 Text to Speech PDF",
+      "Voice Memo Dictation to Text",
+      "SpeakApp AI: Voice Notes",
+      "Text to Speech!",
+      "Voice recorder - Voz",
+      "Live Transcribe",
+      "Transcribe Audio to Text Notes",
+      "Speak4Me Text to Speech Reader"
+    ]
+  },
+  {
+    "keyword": "translator camera app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1025288,
+    "avg_rating_count": 113920,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.71,
+    "top_3_apps": [
+      {
+        "name": "iTranslate Translator",
+        "ratings": 521718,
+        "stars": 4.7
+      },
+      {
+        "name": "Google Translate",
+        "ratings": 82525,
+        "stars": 4.3
+      },
+      {
+        "name": "Camera Translator - AI OCR +",
+        "ratings": 22803,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "iTranslate Translator",
+      "Google Translate",
+      "Camera Translator - AI OCR +",
+      "Photo Translator - Translate",
+      "Translate Now - AI Translator",
+      "Translate Photo & Camera Scan",
+      "AR Translator: Translate Photo",
+      "DeepL Translate",
+      "Translate -  Camera Translator"
+    ]
+  },
+  {
+    "keyword": "nutrition label scanner",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 513390,
+    "avg_rating_count": 57043,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 67,
+    "concentration_index": 0.54,
+    "top_3_apps": [
+      {
+        "name": "Yuka - Food & Cosmetic Scanner",
+        "ratings": 90749,
+        "stars": 4.8
+      },
+      {
+        "name": "Bobby Approved - Food Scanner",
+        "ratings": 141553,
+        "stars": 4.9
+      },
+      {
+        "name": "OneLabel - Product Scanner",
+        "ratings": 3380,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Yuka - Food & Cosmetic Scanner",
+      "Bobby Approved - Food Scanner",
+      "OneLabel - Product Scanner",
+      "Fooducate: Nutrition Coach",
+      "Calorie Counter - MyNetDiary",
+      "AI Calorie Tracker by Yazio",
+      "Nutrition Tracker: Foodnoms",
+      "Label AI: Food & Cosmetic Scan",
+      "Munched: Nutrition Scanner"
+    ]
+  },
+  {
+    "keyword": "plant identifier ai",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1082209,
+    "avg_rating_count": 108220,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 30,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "PictureThis - Plant Identifier",
+        "ratings": 1049505,
+        "stars": 4.8
+      },
+      {
+        "name": "PlantFix: Plant Identifier App",
+        "ratings": 152,
+        "stars": 4.6
+      },
+      {
+        "name": "AI Plant Identifier",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "PictureThis - Plant Identifier",
+      "PlantFix: Plant Identifier App",
+      "AI Plant Identifier",
+      "Plant Identifier: ChatPlant AI",
+      "Plant Identifier: PlantRobot",
+      "Plant Identifier AI: Tree Care",
+      "PlantAI: Identifier & Diagnose",
+      "AI Plant Identifier\u30fbCare\uff0dLily",
+      "Plant Identifier AI: Fylora",
+      "Plantify: AI Plant Identifier"
+    ]
+  },
+  {
+    "keyword": "duplicate photo cleaner",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 853590,
+    "avg_rating_count": 94843,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.79,
+    "top_3_apps": [
+      {
+        "name": "Cleanup: Phone Storage Cleaner",
+        "ratings": 642659,
+        "stars": 4.7
+      },
+      {
+        "name": "Duplicate Cleaner App-Softices",
+        "ratings": 3395,
+        "stars": 4.7
+      },
+      {
+        "name": "Remo Duplicate Photos Remover",
+        "ratings": 13469,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Cleanup: Phone Storage Cleaner",
+      "Duplicate Cleaner App-Softices",
+      "Remo Duplicate Photos Remover",
+      "Cleansmith: Photo Cleaner",
+      "DPC-Duplicate Photo Cleaner",
+      "Clever Cleaner: AI CleanUp App",
+      "Photo Cleaner \u00ae",
+      "Hyper Cleaner: Clean Up Photos",
+      "Cleaner Neat: Clean Up Storage"
+    ]
+  },
+  {
+    "keyword": "countdown widget app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 508642,
+    "avg_rating_count": 50864,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "Countdown - Widget & Reminders",
+        "ratings": 19180,
+        "stars": 4.6
+      },
+      {
+        "name": "Countdown Buddy",
+        "ratings": 23669,
+        "stars": 4.7
+      },
+      {
+        "name": "Countdown",
+        "ratings": 164254,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Countdown - Widget & Reminders",
+      "Countdown Buddy",
+      "Countdown",
+      "Countdown  \u200e",
+      "Countdown@",
+      "Days \u2022 Countdown & Widgets",
+      "Countdown: Event Countdown",
+      "Countdown Star",
+      "Countdown Widget & Counter",
+      "Widget | Countdown to birthday"
+    ]
+  },
+  {
     "keyword": "wrist pain exercises",
     "score": 43,
     "opportunity": "COMPETITIVE \u2014 differentiate to win",
@@ -37280,6 +41167,922 @@
     ]
   },
   {
+    "keyword": "charge port cleaner",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 119192,
+    "avg_rating_count": 13243,
+    "avg_star_rating": 4.3,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 33,
+    "concentration_index": 0.64,
+    "top_3_apps": [
+      {
+        "name": "WaveGuard: Sound Clean",
+        "ratings": 12,
+        "stars": 3.2
+      },
+      {
+        "name": "Cleaner PRO:photos cleaner",
+        "ratings": 4264,
+        "stars": 4.6
+      },
+      {
+        "name": "Cleaner - Smart Cleanup",
+        "ratings": 8387,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "WaveGuard: Sound Clean",
+      "Cleaner PRO:photos cleaner",
+      "Cleaner - Smart Cleanup",
+      "Phone Cleaner:AI Clean Storage",
+      "Boost Cleaner - Clean Up Smart",
+      "Auto Cleanup:gallery cleaner",
+      "AI Cleaner : Clean Storage",
+      "Phone Cleaner for iPhone, iPad",
+      "Ultra Cleaner-Storage Cleaner"
+    ]
+  },
+  {
+    "keyword": "phone heat alert",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 130403,
+    "avg_rating_count": 13040,
+    "avg_star_rating": 4.2,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 40,
+    "concentration_index": 0.7,
+    "top_3_apps": [
+      {
+        "name": "Dont Touch My Phone: Antitheft",
+        "ratings": 21208,
+        "stars": 4.7
+      },
+      {
+        "name": "Don\u2019t Touch My Phone: Alarm",
+        "ratings": 2160,
+        "stars": 4.6
+      },
+      {
+        "name": "ClapRing: Find Phone By Clap",
+        "ratings": 11106,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Dont Touch My Phone: Antitheft",
+      "Don\u2019t Touch My Phone: Alarm",
+      "ClapRing: Find Phone By Clap",
+      "Phone Temperature",
+      "Clap to Find My Phone & Finder",
+      "Smart911",
+      "OSHA-NIOSH Heat Safety Tool",
+      "Heat Safety",
+      "Burglar Alarm... FREE!",
+      "Thermometer++ App"
+    ]
+  },
+  {
+    "keyword": "screen burn in test",
+    "score": 43,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 687,
+    "avg_rating_count": 76,
+    "avg_star_rating": 4.3,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 56,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "ScreenTest - Dead Pixel Check",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Dead Pixel Test - Screen Check",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "ScreenDoctor",
+        "ratings": 1,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "ScreenTest - Dead Pixel Check",
+      "Dead Pixel Test - Screen Check",
+      "ScreenDoctor",
+      "Speed Test+ -HW Test,Toolbox",
+      "Touchscreen Test",
+      "TouchScreenCheck",
+      "Colorblind Eye Exam Test",
+      "Doctor OLED X",
+      "Eye Test & Vision Checker"
+    ]
+  },
+  {
+    "keyword": "charging speed tester",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 264922,
+    "avg_rating_count": 26492,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.68,
+    "top_3_apps": [
+      {
+        "name": "Amperes Battery Charging Lite",
+        "ratings": 542,
+        "stars": 4.2
+      },
+      {
+        "name": "Ampere Battery Charging Check",
+        "ratings": 369,
+        "stars": 3.6
+      },
+      {
+        "name": "Charger Master",
+        "ratings": 5887,
+        "stars": 4.3
+      }
+    ],
+    "top_10_names": [
+      "Amperes Battery Charging Lite",
+      "Ampere Battery Charging Check",
+      "Charger Master",
+      "WIFI & Internet Speed Test",
+      "Speedometer Simple",
+      "Opensignal Speed Test Ad Free",
+      "Speed Test | HighSpeedInternet",
+      "V-SPEED Speed Test",
+      "nPerf internet speed test",
+      "Internet Speed Test Speedcheck"
+    ]
+  },
+  {
+    "keyword": "proximity sensor test",
+    "score": 43,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 721,
+    "avg_rating_count": 72,
+    "avg_star_rating": 4.2,
+    "stale_apps": 5,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 10,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.56,
+    "top_3_apps": [
+      {
+        "name": "Check My Device : 40+ Tests",
+        "ratings": 65,
+        "stars": 4.5
+      },
+      {
+        "name": "phyphox",
+        "ratings": 253,
+        "stars": 4.6
+      },
+      {
+        "name": "Phone Checker - Test My Device",
+        "ratings": 7,
+        "stars": 4
+      }
+    ],
+    "top_10_names": [
+      "Check My Device : 40+ Tests",
+      "phyphox",
+      "Phone Checker - Test My Device",
+      "Touchscreen Test",
+      "Temp Stick",
+      "Test & Check for iPhone",
+      "Necto Sensor",
+      "Acceleration sensor logger",
+      "Test Pro: protection & check",
+      "TI SensorTag"
+    ]
+  },
+  {
+    "keyword": "touchscreen test",
+    "score": 43,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "total_ratings_top10": 9401,
+    "avg_rating_count": 940,
+    "avg_star_rating": 4.2,
+    "stale_apps": 5,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.86,
+    "top_3_apps": [
+      {
+        "name": "TouchScreenCheck",
+        "ratings": 46,
+        "stars": 4.7
+      },
+      {
+        "name": "Phone Diagnostics",
+        "ratings": 85,
+        "stars": 3.7
+      },
+      {
+        "name": "MultiTouch Visualizer",
+        "ratings": 6,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "TouchScreenCheck",
+      "Phone Diagnostics",
+      "MultiTouch Visualizer",
+      "NSYS-Test",
+      "Phone Tester",
+      "Device Monitor\u00b2",
+      "Touchscreen Test",
+      "Speed Test+ -HW Test,Toolbox",
+      "Test & Check for iPhone",
+      "Phone Doctor Plus"
+    ]
+  },
+  {
+    "keyword": "vibration motor test",
+    "score": 43,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 1097,
+    "avg_rating_count": 121,
+    "avg_star_rating": 4.0,
+    "stale_apps": 4,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.75,
+    "top_3_apps": [
+      {
+        "name": "Strong Vibration",
+        "ratings": 674,
+        "stars": 4.0
+      },
+      {
+        "name": "VR Mobile - Vibration Testing",
+        "ratings": 11,
+        "stars": 4.7
+      },
+      {
+        "name": "Vibration Utilities",
+        "ratings": 6,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "Strong Vibration",
+      "VR Mobile - Vibration Testing",
+      "Vibration Utilities",
+      "Vibration analysis",
+      "Vibra Test",
+      "Haptics Touch: Vibration Test",
+      "ZOONZOON - Gamepad Vibration",
+      "Quick Vibrator",
+      "Vibration"
+    ]
+  },
+  {
+    "keyword": "sound level meter",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 272806,
+    "avg_rating_count": 27280,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.73,
+    "top_3_apps": [
+      {
+        "name": "NIOSH Sound Level Meter",
+        "ratings": 16118,
+        "stars": 4.7
+      },
+      {
+        "name": "Decibel X:dB Sound Level Meter",
+        "ratings": 155973,
+        "stars": 4.7
+      },
+      {
+        "name": "Sound Meter (Decibel)",
+        "ratings": 2792,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "NIOSH Sound Level Meter",
+      "Decibel X:dB Sound Level Meter",
+      "Sound Meter (Decibel)",
+      "Decibel Meter Sound Detector",
+      "Decibel : dB sound level meter",
+      "Decibel - sound level meter",
+      "Sound Meter (dB) - dBShift",
+      "Decibel Meter- dB Noise TT",
+      "Decibel Meter Master",
+      "Decibel dB Sound Meter Ultra"
+    ]
+  },
+  {
+    "keyword": "fan sound generator",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 291311,
+    "avg_rating_count": 29131,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Fan Noise Generator",
+        "ratings": 648,
+        "stars": 4.8
+      },
+      {
+        "name": "Fan Noise: White Noise Machine",
+        "ratings": 874,
+        "stars": 4.8
+      },
+      {
+        "name": "Bedtime Fan: White Noise Baby",
+        "ratings": 193892,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Fan Noise Generator",
+      "Fan Noise: White Noise Machine",
+      "Bedtime Fan: White Noise Baby",
+      "Sleep Aid Fan - White Noise",
+      "Fan Noise - Sleep Sounds",
+      "Sleep Fan",
+      "Audio Function Generator",
+      "Sonic Pitch Sound Generator",
+      "Sound Machine - White Noise",
+      "Louder Sound App"
+    ]
+  },
+  {
+    "keyword": "photo date stamp",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 110040,
+    "avg_rating_count": 12226,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.54,
+    "top_3_apps": [
+      {
+        "name": "DateStamper",
+        "ratings": 8436,
+        "stars": 4.8
+      },
+      {
+        "name": "Timestamp Camera Basic",
+        "ratings": 32306,
+        "stars": 4.8
+      },
+      {
+        "name": "Photo Date Stamp",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "DateStamper",
+      "Timestamp Camera Basic",
+      "Photo Date Stamp",
+      "1998 Cam - Vintage Camera",
+      "Timemark: #1 Job Photo App",
+      "Timestamp It - Proof Camera",
+      "Timestamp Camera: Photo Date",
+      "Timestamp Camera: Photo&Video",
+      "Timestamp photo and video"
+    ]
+  },
+  {
+    "keyword": "webp to jpg converter",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 159985,
+    "avg_rating_count": 15998,
+    "avg_star_rating": 4.3,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.58,
+    "top_3_apps": [
+      {
+        "name": "The Image Converter \u25a1",
+        "ratings": 16419,
+        "stars": 4.6
+      },
+      {
+        "name": "Image Converter: JPEG PDF HEIC",
+        "ratings": 9043,
+        "stars": 4.7
+      },
+      {
+        "name": "WEBP to JPG Converter",
+        "ratings": 1,
+        "stars": 1
+      }
+    ],
+    "top_10_names": [
+      "The Image Converter \u25a1",
+      "Image Converter: JPEG PDF HEIC",
+      "WEBP to JPG Converter",
+      "Photos PDF : Scanner Converter",
+      "JPEG-PNG Image file converter",
+      "PDF Converter - Word to PDF",
+      "Photo to PDF Converter Scanner",
+      "WebP to PNG & JPEG Converter",
+      "Image Converter: photos to PDF",
+      "The Vector Converter"
+    ]
+  },
+  {
+    "keyword": "ar tape measure",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 161457,
+    "avg_rating_count": 17939,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.68,
+    "top_3_apps": [
+      {
+        "name": "Tape Measure\u00ae",
+        "ratings": 43993,
+        "stars": 4.6
+      },
+      {
+        "name": "Measuring Tape+ Measure AR app",
+        "ratings": 1897,
+        "stars": 4.5
+      },
+      {
+        "name": "Tape Measure\u2122",
+        "ratings": 85241,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Tape Measure\u00ae",
+      "Measuring Tape+ Measure AR app",
+      "Tape Measure\u2122",
+      "CamToPlan - AR tape measure",
+      "Measuring Tape +\u3164",
+      "Tape Measure & Ruler \u0410\u0440\u0440",
+      "AR Ruler: Digital Tape Measure",
+      "Ruler AR - Tape Measure Camera",
+      "AR Ruler: Measuring tape ruler"
+    ]
+  },
+  {
+    "keyword": "ar ruler app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 190349,
+    "avg_rating_count": 19034,
+    "avg_star_rating": 4.4,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.67,
+    "top_3_apps": [
+      {
+        "name": "M\u0117asuring Tape",
+        "ratings": 30,
+        "stars": 3.9
+      },
+      {
+        "name": "AR Measure",
+        "ratings": 934,
+        "stars": 4.6
+      },
+      {
+        "name": "Ruler AR - Tape Measure Camera",
+        "ratings": 3473,
+        "stars": 4.3
+      }
+    ],
+    "top_10_names": [
+      "M\u0117asuring Tape",
+      "AR Measure",
+      "Ruler AR - Tape Measure Camera",
+      "CamToPlan - AR tape measure",
+      "Measuring Tape, Photo Ruler",
+      "AR Ruler: Digital Tape Measure",
+      "Measuring Tape+ Measure AR app",
+      "Ruler\u00ae",
+      "Tape Measure\u00ae",
+      "Tape Measure\u2122"
+    ]
+  },
+  {
+    "keyword": "bubble level app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 274319,
+    "avg_rating_count": 30479,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.69,
+    "top_3_apps": [
+      {
+        "name": "Bubble Level for iPhone",
+        "ratings": 111473,
+        "stars": 4.7
+      },
+      {
+        "name": "Pocket Bubble Level XXL",
+        "ratings": 15084,
+        "stars": 4.8
+      },
+      {
+        "name": "Bubble Level 2022",
+        "ratings": 6036,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Bubble Level for iPhone",
+      "Pocket Bubble Level XXL",
+      "Bubble Level 2022",
+      "Bubble Level Plus+",
+      "Bubble Level Tool - Digital",
+      "Bubble Level: AR, Angle Finder",
+      "Bubble Level - Spirit Level",
+      "Bubble Level ( Water level )",
+      "Bubble Shooter Pop!"
+    ]
+  },
+  {
+    "keyword": "storage analyzer app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 256360,
+    "avg_rating_count": 25636,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.67,
+    "top_3_apps": [
+      {
+        "name": "Diskspace 3",
+        "ratings": 941,
+        "stars": 4.7
+      },
+      {
+        "name": "Extra Space Storage",
+        "ratings": 18589,
+        "stars": 4.5
+      },
+      {
+        "name": "Storage Smart Entry by Nok\u0113",
+        "ratings": 6852,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "Diskspace 3",
+      "Extra Space Storage",
+      "Storage Smart Entry by Nok\u0113",
+      "Public Storage",
+      "Cleaner Mate: Clean Storage",
+      "Neighbor",
+      "Phone Cleaner:AI Clean Storage",
+      "MEGA",
+      "Turbo Cleaner: Clean Storage",
+      "Mini U Storage"
+    ]
+  },
+  {
+    "keyword": "network monitor app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 157742,
+    "avg_rating_count": 15774,
+    "avg_star_rating": 4.7,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Network Analyzer: net tools",
+        "ratings": 6519,
+        "stars": 4.6
+      },
+      {
+        "name": "UniFi",
+        "ratings": 13392,
+        "stars": 4.6
+      },
+      {
+        "name": "Fing - Network Scanner",
+        "ratings": 114465,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Network Analyzer: net tools",
+      "UniFi",
+      "Fing - Network Scanner",
+      "Network Analyzer Pro",
+      "Network Utility",
+      "PRTG - Monitoring",
+      "iNet - Network Scanner",
+      "iNetTools - Ping,DNS,Port Scan",
+      "Ping \u2013 Network Tools",
+      "Usage Device Monitor"
+    ]
+  },
+  {
+    "keyword": "spinner wheel app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 237983,
+    "avg_rating_count": 26442,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.59,
+    "top_3_apps": [
+      {
+        "name": "Spin The Wheel - Random Picker",
+        "ratings": 87441,
+        "stars": 4.9
+      },
+      {
+        "name": "Tiny Decisions",
+        "ratings": 88720,
+        "stars": 4.7
+      },
+      {
+        "name": "Wheel Spinner \u2013 Random Picker",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Spin The Wheel - Random Picker",
+      "Tiny Decisions",
+      "Wheel Spinner \u2013 Random Picker",
+      "Spin Wheel Decisions",
+      "Spin the Wheel - Pick Me",
+      "Wheel +: Spin Roulette Picker",
+      "Daily Decision Wheel",
+      "Spin The Wheel Spinner Picker",
+      "Wheel of Names - Twirly"
+    ]
+  },
+  {
+    "keyword": "name picker random",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 119699,
+    "avg_rating_count": 11969,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.79,
+    "top_3_apps": [
+      {
+        "name": "Spin The Wheel - Random Picker",
+        "ratings": 87441,
+        "stars": 4.9
+      },
+      {
+        "name": "Name Picker Random",
+        "ratings": 49,
+        "stars": 4.6
+      },
+      {
+        "name": "Random Name Picker Tools",
+        "ratings": 889,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Spin The Wheel - Random Picker",
+      "Name Picker Random",
+      "Random Name Picker Tools",
+      "Spin the Wheel - Pick Me",
+      "Wheel +: Spin Roulette Picker",
+      "Random Generator - Picker",
+      "Random Name Picker & Wheel",
+      "Random Number Generator. RNG",
+      "Wheel of Names: Random Name",
+      "Raffle Wheel: Name Picker"
+    ]
+  },
+  {
+    "keyword": "random picker app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 267691,
+    "avg_rating_count": 26769,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.6,
+    "top_3_apps": [
+      {
+        "name": "Spin The Wheel - Random Picker",
+        "ratings": 87441,
+        "stars": 4.9
+      },
+      {
+        "name": "Random Picker",
+        "ratings": 1759,
+        "stars": 4.8
+      },
+      {
+        "name": "Tiny Decisions",
+        "ratings": 88720,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Spin The Wheel - Random Picker",
+      "Random Picker",
+      "Tiny Decisions",
+      "Chooser!",
+      "Wheel +: Spin Roulette Picker",
+      "Raffle Name",
+      "Gotcha - Random Picker",
+      "Lucky Draw - Random Picker",
+      "Spin Wheel Decisions",
+      "Spin the Wheel - Pick Me"
+    ]
+  },
+  {
+    "keyword": "bug identifier app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 97324,
+    "avg_rating_count": 10813,
+    "avg_star_rating": 4.4,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 44,
+    "concentration_index": 0.66,
+    "top_3_apps": [
+      {
+        "name": "Picture Insect: Bug Identifier",
+        "ratings": 41122,
+        "stars": 4.6
+      },
+      {
+        "name": "Seek by iNaturalist",
+        "ratings": 30746,
+        "stars": 4.8
+      },
+      {
+        "name": "Bug Identifier: AI Insect id",
+        "ratings": 8474,
+        "stars": 4.3
+      }
+    ],
+    "top_10_names": [
+      "Picture Insect: Bug Identifier",
+      "Seek by iNaturalist",
+      "Bug Identifier: AI Insect id",
+      "Bug Identifier: Spider",
+      "Bug Identifier: Insect, Spider",
+      "Insect Identifier-Bug ScannerY",
+      "Lens Scan: Identify Anything",
+      "Insect Identifier - BugWise",
+      "Bug Identifier App - Insect ID"
+    ]
+  },
+  {
+    "keyword": "magnifier loupe app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 147407,
+    "avg_rating_count": 14740,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.71,
+    "top_3_apps": [
+      {
+        "name": "Magnifying Glass - handy loupe",
+        "ratings": 9141,
+        "stars": 4.7
+      },
+      {
+        "name": "Magnifying Glass + Flashlight",
+        "ratings": 89591,
+        "stars": 4.7
+      },
+      {
+        "name": "Magnifying Glass +++ Magnifier",
+        "ratings": 6561,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Magnifying Glass - handy loupe",
+      "Magnifying Glass + Flashlight",
+      "Magnifying Glass +++ Magnifier",
+      "Magnifying Glass With Light",
+      "Magnifying Glass & Mirror",
+      "Magnifying glass ++",
+      "Magnifying Glass - Loupe 32x",
+      "Magnifier",
+      "Magnifier with Flash Light",
+      "Magnifier: Magnifying Glass"
+    ]
+  },
+  {
     "keyword": "sourdough starter tracker",
     "score": 38,
     "opportunity": "SMALL NICHE \u2014 low risk, low reward",
@@ -38624,6 +43427,224 @@
     ]
   },
   {
+    "keyword": "display color test",
+    "score": 38,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "total_ratings_top10": 13361,
+    "avg_rating_count": 1484,
+    "avg_star_rating": 4.2,
+    "stale_apps": 6,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.82,
+    "top_3_apps": [
+      {
+        "name": "Color Test For Your Screen",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Colorblind Eye Exam Test",
+        "ratings": 305,
+        "stars": 3.7
+      },
+      {
+        "name": "Color Portfolio",
+        "ratings": 11200,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Color Test For Your Screen",
+      "Colorblind Eye Exam Test",
+      "Color Portfolio",
+      "Color Challenge - Test Your Color Vision",
+      "Kuku Kube - Color Test",
+      "Eye test - color vision",
+      "One Color",
+      "Paint Tester",
+      "Eye DPI Test"
+    ]
+  },
+  {
+    "keyword": "color picker camera",
+    "score": 38,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "total_ratings_top10": 12400,
+    "avg_rating_count": 1240,
+    "avg_star_rating": 4.5,
+    "stale_apps": 7,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 8,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Color Identifier: Color Picker",
+        "ratings": 1712,
+        "stars": 4.6
+      },
+      {
+        "name": "Color Picker Camera: HEX RGB",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Color Name AR",
+        "ratings": 8182,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Color Identifier: Color Picker",
+      "Color Picker Camera: HEX RGB",
+      "Color Name AR",
+      "ColorSlurp",
+      "Color picker and helper",
+      "Pixel Picker - Image Color Picker",
+      "Color Collect - Palette Studio",
+      "Color Picker - Pixel Color",
+      "Color Identifier",
+      "Cone Color Picker & Identifier"
+    ]
+  },
+  {
+    "keyword": "bird identifier ai",
+    "score": 38,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 19,
+    "avg_rating_count": 2,
+    "avg_star_rating": 3.4,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 0,
+    "concentration_index": 0.76,
+    "top_3_apps": [
+      {
+        "name": "Bird Identifier: AI",
+        "ratings": 1,
+        "stars": 1
+      },
+      {
+        "name": "Bird Identifier AI",
+        "ratings": 1,
+        "stars": 5
+      },
+      {
+        "name": "Bird identifier - Birding AI",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Bird Identifier: AI",
+      "Bird Identifier AI",
+      "Bird identifier - Birding AI",
+      "Bird Identifier AI ~ Sound ID",
+      "Bird Identifier AI: Bird ID",
+      "Bird Identifier AI: Birdie",
+      "Bird Identifier: AI Scan",
+      "Bird Guru: Bird Identifier AI",
+      "Bird Identifier AI \u2013 Birdpicx"
+    ]
+  },
+  {
+    "keyword": "fish identifier ai",
+    "score": 38,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "total_ratings_top10": 6195,
+    "avg_rating_count": 619,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 10,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "Fish Identifier AI: Fish ID",
+        "ratings": 6,
+        "stars": 4.5
+      },
+      {
+        "name": "Pic Fish - Fish Identifier AI",
+        "ratings": 1,
+        "stars": 5
+      },
+      {
+        "name": "Fish Identifier AI: FishSnap",
+        "ratings": 2,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "Fish Identifier AI: Fish ID",
+      "Pic Fish - Fish Identifier AI",
+      "Fish Identifier AI: FishSnap",
+      "Fish Identifier: AI Scanner",
+      "Fish Identifier AI: Fishly",
+      "Fish Identifier: Scan & Find",
+      "Fish Identifier - AI Angler",
+      "Fish Identifier - AI ID Verify",
+      "Fish Identifier - AI Verify",
+      "Fishing App - Pro Angler"
+    ]
+  },
+  {
+    "keyword": "exif viewer app",
+    "score": 38,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "total_ratings_top10": 13486,
+    "avg_rating_count": 1348,
+    "avg_star_rating": 4.5,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.57,
+    "top_3_apps": [
+      {
+        "name": "EXIF Viewer LITE by Fluntro",
+        "ratings": 596,
+        "stars": 4.5
+      },
+      {
+        "name": "Exif Metadata",
+        "ratings": 5875,
+        "stars": 4.6
+      },
+      {
+        "name": "EXIF Viewer by Fluntro",
+        "ratings": 1850,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "EXIF Viewer LITE by Fluntro",
+      "Exif Metadata",
+      "EXIF Viewer by Fluntro",
+      "Photo Metadata Viewer",
+      "Metapho",
+      "Exif Viewer - Photo Metadata",
+      "Simple Exif Viewer",
+      "The Photo Investigator",
+      "Exif Metadata Editor & IPTC",
+      "TwinViewer"
+    ]
+  },
+  {
     "keyword": "lucid dream trainer",
     "score": 35,
     "opportunity": "SMALL NICHE \u2014 low risk, low reward",
@@ -38707,6 +43728,50 @@
       "Siren Ringtones",
       "Siren & Air Horn Sounds",
       "Police Siren - Lights & Sounds"
+    ]
+  },
+  {
+    "keyword": "photo metadata viewer",
+    "score": 35,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "total_ratings_top10": 14876,
+    "avg_rating_count": 1487,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.57,
+    "top_3_apps": [
+      {
+        "name": "Photo Metadata Viewer",
+        "ratings": 569,
+        "stars": 4.4
+      },
+      {
+        "name": "Exif Metadata",
+        "ratings": 5875,
+        "stars": 4.6
+      },
+      {
+        "name": "The Photo Investigator",
+        "ratings": 1441,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Photo Metadata Viewer",
+      "Exif Metadata",
+      "The Photo Investigator",
+      "Metapho",
+      "EXIF Viewer LITE by Fluntro",
+      "EXIF Viewer by Fluntro",
+      "Photo Metadata Inspector",
+      "PixInfo: Exif Metadata Viewer",
+      "HashPhotos",
+      "Exif Metadata Remover Viewer"
     ]
   },
   {
@@ -40615,6 +45680,94 @@
     ]
   },
   {
+    "keyword": "audio joiner app",
+    "score": 13,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 57195,
+    "avg_rating_count": 5719,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 40,
+    "concentration_index": 0.73,
+    "top_3_apps": [
+      {
+        "name": "Audio Editor - Music editor",
+        "ratings": 28828,
+        "stars": 4.5
+      },
+      {
+        "name": "Combine Audio Files",
+        "ratings": 99,
+        "stars": 4.7
+      },
+      {
+        "name": "Audio File Merger & Joiner",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Audio Editor - Music editor",
+      "Combine Audio Files",
+      "Audio File Merger & Joiner",
+      "Audio Joiner: Merge & Recorder",
+      "Audio Editor - Music Mixer",
+      "Audio Editor - AudioLab, Mixer",
+      "Merge Audio Files",
+      "SoundLab - Audio Editor",
+      "Audio Editor: MP3 Converter",
+      "Audio Editor - AI Music Editor"
+    ]
+  },
+  {
+    "keyword": "lottery number generator",
+    "score": 13,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 31822,
+    "avg_rating_count": 3182,
+    "avg_star_rating": 4.2,
+    "stale_apps": 4,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.79,
+    "top_3_apps": [
+      {
+        "name": "Lottery Generator & Statistics",
+        "ratings": 883,
+        "stars": 4.6
+      },
+      {
+        "name": "Lottery Balls - Random Picker",
+        "ratings": 278,
+        "stars": 4.4
+      },
+      {
+        "name": "JackpotAI: Lottery Predictor",
+        "ratings": 4,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "Lottery Generator & Statistics",
+      "Lottery Balls - Random Picker",
+      "JackpotAI: Lottery Predictor",
+      "Random Number Generator. RNG",
+      "Lottery Number Generator (AI)",
+      "Deep Lotto",
+      "Random Balls - Shake Them!",
+      "MMPB: MegaMillions & Powerball",
+      "Smart Lotto Number Generator",
+      "Powerball Lottery"
+    ]
+  },
+  {
     "keyword": "pelvic floor trainer",
     "score": 10,
     "opportunity": "AVOID \u2014 dominated market",
@@ -41183,6 +46336,94 @@
       "South Surfers",
       "Salt Strong Smart Spots",
       "FishVerify: ID & Regulations"
+    ]
+  },
+  {
+    "keyword": "tone generator app",
+    "score": 10,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 31870,
+    "avg_rating_count": 3187,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.68,
+    "top_3_apps": [
+      {
+        "name": "Tone Generator: Audio Sound Hz",
+        "ratings": 2561,
+        "stars": 4.7
+      },
+      {
+        "name": "Tone Generator App",
+        "ratings": 135,
+        "stars": 4.5
+      },
+      {
+        "name": "Audio Function Generator",
+        "ratings": 2120,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Tone Generator: Audio Sound Hz",
+      "Tone Generator App",
+      "Audio Function Generator",
+      "Frequency: Healing Sounds",
+      "Frequency Sound Generator App",
+      "Sonic | Water Eject",
+      "Frequency: Sound Generator",
+      "Tone generator",
+      "Tone Generator: Frequency App",
+      "MultiTone Generator"
+    ]
+  },
+  {
+    "keyword": "app lock privacy",
+    "score": 10,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 33606,
+    "avg_rating_count": 3360,
+    "avg_star_rating": 4.3,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.54,
+    "top_3_apps": [
+      {
+        "name": "App Lock",
+        "ratings": 4707,
+        "stars": 4.6
+      },
+      {
+        "name": "Calculator Lock - Secure Vault",
+        "ratings": 5489,
+        "stars": 4.6
+      },
+      {
+        "name": "APP LOCK - Privacy Shield",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "App Lock",
+      "Calculator Lock - Secure Vault",
+      "APP LOCK - Privacy Shield",
+      "Note Lock~Lock your Tales Safe",
+      "AppLock - photo lock",
+      "Hide Apps : Lock App & Photos",
+      "AppLock: Hide & Secure Apps",
+      "App Locker -privacy lock",
+      "Vault - Hide photos & videos",
+      "Lockdown Privacy: AdBlock VPN"
     ]
   },
   {
@@ -42232,6 +47473,94 @@
       "Spogenie-Badminton Scoring App",
       "Racketly: Padel Tennis Tracker",
       "Birdie - Badminton Training"
+    ]
+  },
+  {
+    "keyword": "heic to jpg converter",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 44141,
+    "avg_rating_count": 4414,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.72,
+    "top_3_apps": [
+      {
+        "name": "HEIC to JPEG : image converter",
+        "ratings": 121,
+        "stars": 4.6
+      },
+      {
+        "name": "The Image Converter \u25a1",
+        "ratings": 16419,
+        "stars": 4.6
+      },
+      {
+        "name": "HEIC to JPG Converter - H2JPG",
+        "ratings": 38,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "HEIC to JPEG : image converter",
+      "The Image Converter \u25a1",
+      "HEIC to JPG Converter - H2JPG",
+      "HEIC to JPEG - Image Converter",
+      "JPEG-PNG Image file converter",
+      "HEIC Converter - HEIC to JPG",
+      "Image Converter: JPEG PDF HEIC",
+      "HEIC to JPG, PNG Converter",
+      "HEIC TO JPG Converter+",
+      "HEIC to JPG Converter (Bulk)"
+    ]
+  },
+  {
+    "keyword": "burst photo picker",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 54314,
+    "avg_rating_count": 5431,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "Photoscope: Best Photo Picker",
+        "ratings": 123,
+        "stars": 4.7
+      },
+      {
+        "name": "Lens Buddy - Self Timer Camera",
+        "ratings": 32216,
+        "stars": 4.9
+      },
+      {
+        "name": "Fast Camera",
+        "ratings": 652,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Photoscope: Best Photo Picker",
+      "Lens Buddy - Self Timer Camera",
+      "Fast Camera",
+      "Pickora: Best Photo Picker",
+      "Slidebox: Photo Cleaner App",
+      "Best Shot: Best Photo Picker",
+      "Picker AI - Best Photo Picker",
+      "Round Photo",
+      "The Burst App",
+      "Camera+ Legacy"
     ]
   },
   {
@@ -43587,5 +48916,271 @@
       "WiFi Finder + Map",
       "WiFinder: Wifi Location Map"
     ]
+  },
+  {
+    "keyword": "phone screen cleaner",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 50815,
+    "avg_rating_count": 5646,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 44,
+    "concentration_index": 0.43,
+    "top_3_apps": [
+      {
+        "name": "Screen Recorder \u2011 Record Video",
+        "ratings": 9690,
+        "stars": 4.7
+      },
+      {
+        "name": "Phone Cleaner -Clean Storage X",
+        "ratings": 233,
+        "stars": 4.6
+      },
+      {
+        "name": "Cleaner - Smart Cleanup",
+        "ratings": 8387,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Screen Recorder \u2011 Record Video",
+      "Phone Cleaner -Clean Storage X",
+      "Cleaner - Smart Cleanup",
+      "Puppy Screen Cleaner",
+      "CleanX: Photo Storage Cleaner",
+      "Cleaner PRO:photos cleaner",
+      "Phone Cleaner:AI Clean Storage",
+      "Auto Cleanup:gallery cleaner",
+      "Phone Security: Privacy Shield"
+    ]
+  },
+  {
+    "keyword": "pink noise generator",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 38046,
+    "avg_rating_count": 4227,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "Noise Generator: Full Spectrum",
+        "ratings": 1952,
+        "stars": 4.7
+      },
+      {
+        "name": "Pink Noise Generator",
+        "ratings": 583,
+        "stars": 4.7
+      },
+      {
+        "name": "Audio Function Generator",
+        "ratings": 2120,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Noise Generator: Full Spectrum",
+      "Pink Noise Generator",
+      "Audio Function Generator",
+      "White & Pink Noise",
+      "ColorSleep: Green, Brown Noise",
+      "Noise Machine - Brown, White",
+      "Audio Signal Generator",
+      "Sleep Noise Machine",
+      "White Noise HQ: sound machine"
+    ]
+  },
+  {
+    "keyword": "video compressor app",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 51473,
+    "avg_rating_count": 5147,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.53,
+    "top_3_apps": [
+      {
+        "name": "Compress Videos & Resize Video",
+        "ratings": 16416,
+        "stars": 4.7
+      },
+      {
+        "name": "Video Compress - Shrink Videos",
+        "ratings": 11266,
+        "stars": 4.5
+      },
+      {
+        "name": "Video Compressor : Save Space",
+        "ratings": 384,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Compress Videos & Resize Video",
+      "Video Compress - Shrink Videos",
+      "Video Compressor : Save Space",
+      "Video Compressor - resize all",
+      "Video Compressor - HQ Compress",
+      "Video Compressor-Shrink videos",
+      "Video Compress - Shrink Vids",
+      "Video compressor - save space",
+      "Video Converter and Compressor",
+      "The Video Compressor : Zippy"
+    ]
+  },
+  {
+    "keyword": "pdf merger app",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 58859,
+    "avg_rating_count": 5885,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.65,
+    "top_3_apps": [
+      {
+        "name": "PDF Merge - Combine & Join PDF",
+        "ratings": 1565,
+        "stars": 4.7
+      },
+      {
+        "name": "PDF Merger | Merge & Split It",
+        "ratings": 284,
+        "stars": 4.8
+      },
+      {
+        "name": "PDF Merge X: PDF Merger",
+        "ratings": 91,
+        "stars": 4.1
+      }
+    ],
+    "top_10_names": [
+      "PDF Merge - Combine & Join PDF",
+      "PDF Merger | Merge & Split It",
+      "PDF Merge X: PDF Merger",
+      "Genius Scan Enterprise - PDF",
+      "PDFelement: PDF Editor, Viewer",
+      "PDFs Split & Merge: PDF Editor",
+      "PDF Merge - Document Sign PDF",
+      "PDF Reader & PDF Editor",
+      "PDF Editor ,PDF Book Reader \u00ae",
+      "PDF Gear - PDF Editor & Reader"
+    ]
+  },
+  {
+    "keyword": "distance meter ar",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 47382,
+    "avg_rating_count": 4738,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.57,
+    "top_3_apps": [
+      {
+        "name": "Measuring Tape, Photo Ruler",
+        "ratings": 2529,
+        "stars": 4.2
+      },
+      {
+        "name": "CamToPlan - AR tape measure",
+        "ratings": 16288,
+        "stars": 4.7
+      },
+      {
+        "name": "Measure Distance\u2122",
+        "ratings": 1640,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Measuring Tape, Photo Ruler",
+      "CamToPlan - AR tape measure",
+      "Measure Distance\u2122",
+      "EasyMeasure \u2013 Camera Ruler",
+      "Measuring Tape +\u3164",
+      "Smart Meter - AR",
+      "Pupil Distance Meter - Eye PD",
+      "Ruler AR - Tape Measure Camera",
+      "PD Meter - Pupillary Distance",
+      "CamToPlan PRO"
+    ]
+  },
+  {
+    "keyword": "contact merger app",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 32260,
+    "avg_rating_count": 3584,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.52,
+    "top_3_apps": [
+      {
+        "name": "Contact Cleanup",
+        "ratings": 9429,
+        "stars": 4.6
+      },
+      {
+        "name": "Contacts+ | Address Book",
+        "ratings": 5779,
+        "stars": 4.5
+      },
+      {
+        "name": "Contact Cleaner & Merge",
+        "ratings": 240,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Contact Cleanup",
+      "Contacts+ | Address Book",
+      "Contact Cleaner & Merge",
+      "Cleanup Duplicate Contacts!",
+      "Cleaner - Merge Contacts",
+      "Cardhop Contacts",
+      "CircleBack - Updated Contacts",
+      "Contact Snapper",
+      "iContacts: Contact Group Tool"
+    ]
+  },
+  {
+    "keyword": "yes no decision",
+    "score": 0,
+    "error": "403 Client Error: Forbidden for url: https://itunes.apple.com/search?term=yes+no+decision&entity=software&country=us&limit=10"
   }
 ]

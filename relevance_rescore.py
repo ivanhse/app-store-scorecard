@@ -29,6 +29,10 @@ sys.path.insert(0, ROOT)
 
 from batch_evaluate import KEYWORDS as KW1
 from batch_evaluate_2 import KEYWORDS as KW2
+try:
+    from utilities_ext import UTILITIES as KW3
+except ImportError:
+    KW3 = []
 
 ITUNES = "https://itunes.apple.com/search"
 NOW = datetime.now()
@@ -364,7 +368,7 @@ def evaluate(keyword: str, top10: list[dict]) -> dict:
 
 
 def main():
-    all_keywords = list(dict.fromkeys(KW1 + KW2))  # preserve order, dedupe
+    all_keywords = list(dict.fromkeys(KW1 + KW2 + KW3))  # preserve order, dedupe
     print(f"Total unique keywords: {len(all_keywords)}", flush=True)
 
     cache = {}
