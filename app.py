@@ -3,6 +3,7 @@
 
 from flask import Flask, request, jsonify, send_from_directory
 from itunes_api import search_apps, analyze_competition
+from relevance_rescore import evaluate as relevance_evaluate
 import os
 import json
 
@@ -98,6 +99,10 @@ def _analyze_keyword(kw, country, limit):
     apps = search_apps(kw, country=country, limit=limit)
     analysis = analyze_competition(apps)
     display_apps = apps[:limit]
+    try:
+        relevance = relevance_evaluate(kw, apps[:10])
+    except Exception as e:
+        relevance = {"error": str(e)}
 
     rating_counts = sorted([a["rating_count"] for a in apps])
     p25 = rating_counts[len(rating_counts) // 4] if len(rating_counts) >= 4 else 0
@@ -129,6 +134,7 @@ def _analyze_keyword(kw, country, limit):
         "keyword": kw,
         "apps": display_apps,
         "analysis": analysis,
+        "relevance": relevance,
         "percentiles": {"p25": p25, "p50": p50, "p75": p75},
         "free_vs_paid": {"free": free_count, "paid": len(apps) - free_count},
         "star_distribution": star_buckets,

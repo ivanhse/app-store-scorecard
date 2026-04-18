@@ -1545,6 +1545,14 @@ function renderAll() {
   let html = '<div class="comparison">';
   allData.forEach((d, i) => {
     const a = d.analysis;
+    const r = d.relevance || {};
+    const rel = r.intent_relevance;
+    const relPct = rel != null ? Math.round(rel * 100) + '%' : '—';
+    const relColor = rel == null ? 'var(--muted)'
+                    : rel >= 0.5 ? 'var(--green)'
+                    : rel >= 0.3 ? 'var(--yellow)' : 'var(--red)';
+    const relVerdict = r.verdict || '—';
+    const relDemand = r.demand_rel_label;
     html += `
       <div class="comp-card ${i === 0 ? 'active' : ''}" onclick="showDetail(${i})">
         <div class="kw">${d.keyword}</div>
@@ -1557,7 +1565,13 @@ function renderAll() {
             <div class="ds-label">Supply</div>
             <div class="ds-level">${a.supply_level}</div>
           </div>
+          <div class="ds-box" style="background:rgba(108,92,231,.15);border:1px solid rgba(108,92,231,.35)">
+            <div class="ds-label">Intent</div>
+            <div class="ds-level" style="color:${relColor}">${relPct}</div>
+          </div>
         </div>
+        <div class="metric"><span class="label">Relevant apps in top 10</span><span class="val">${r.relevant_count != null ? r.relevant_count + '/10' : '—'}</span></div>
+        <div class="metric"><span class="label">Demand (on-intent only)</span><span class="val" style="color:${relColor}">${relDemand || '—'}</span></div>
         <div class="metric"><span class="label">Total ratings (top 10)</span><span class="val">${fmt(a.total_ratings_top10 || a.total_ratings_all)}</span></div>
         <div class="metric"><span class="label">#1 app ratings</span><span class="val">${fmt(a.max_rating_count)}</span></div>
         <div class="metric"><span class="label">Avg ratings (top 10)</span><span class="val">${fmt(a.avg_rating_count)}</span></div>
@@ -1567,7 +1581,12 @@ function renderAll() {
         <div class="metric"><span class="label">Concentration index (Gini)</span><span class="val" style="color:${a.concentration_index != null ? (a.concentration_index > 0.7 ? 'var(--red)' : a.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${a.concentration_index != null ? a.concentration_index.toFixed(2) : '—'}</span></div>
         <div class="metric"><span class="label">Est. CPI — Meta</span><span class="val" style="color:var(--green)">$${d.benchmarks.meta_cpi.toFixed(2)}</span></div>
         <div class="metric"><span class="label">Est. CPI — Google</span><span class="val" style="color:var(--green)">$${d.benchmarks.google_cpi.toFixed(2)}</span></div>
-        <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Raw verdict</div>
+          <div><span class="opportunity-badge ${opportunityClass(a.opportunity)}">${a.opportunity}</span></div>
+          <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:4px">Intent-filtered verdict</div>
+          <div style="font-size:12px;color:${relColor};font-weight:600">${relVerdict}</div>
+        </div>
       </div>`;
   });
   html += '</div>';
@@ -1591,9 +1610,38 @@ function showDetail(idx) {
 function renderDetail(d, idx) {
   const a = d.analysis;
   const p = d.percentiles;
+  const r = d.relevance || {};
+  const relByName = {};
+  (r.top10_scored || []).forEach(app => { relByName[app.name] = app.relevance; });
   const maxRating = d.apps.length ? Math.max(...d.apps.map(a => a.rating_count)) : 1;
 
   let html = `<div class="detail-header">Results for <span>"${d.keyword}"</span></div>`;
+
+  // Intent / relevance block
+  if (r.intent_relevance != null) {
+    const rel = r.intent_relevance;
+    const relPct = Math.round(rel * 100) + '%';
+    const relColor = rel >= 0.5 ? 'var(--green)' : rel >= 0.3 ? 'var(--yellow)' : 'var(--red)';
+    const toks = (r.domain_tokens || []).join(', ') || '(none)';
+    const ease = r.ease_of_entry || {};
+    html += `<div class="ds-detail">
+      <div class="ds-detail-box" style="border:1px solid rgba(108,92,231,.35);background:rgba(108,92,231,.08)">
+        <h3 style="color:#a29bfe">Intent relevance (keyword vs top-10 names)</h3>
+        <div class="ds-stat"><span class="lbl">On-intent apps in top 10</span><span class="val" style="color:${relColor}">${r.relevant_count}/10 (${relPct})</span></div>
+        <div class="ds-stat"><span class="lbl">Domain tokens matched against</span><span class="val" style="font-family:monospace;font-size:12px">${toks}</span></div>
+        <div class="ds-stat"><span class="lbl">Demand (on-intent only)</span><span class="val" style="color:${relColor}">${r.demand_rel_label || '—'}</span></div>
+        <div class="ds-stat"><span class="lbl">Total ratings (on-intent)</span><span class="val">${fmt(r.rel_total_ratings || 0)}</span></div>
+        <div class="ds-stat"><span class="lbl">Top on-intent rating count</span><span class="val">${fmt(r.rel_max_rating_count || 0)}</span></div>
+        <div class="ds-stat"><span class="lbl">Gini (on-intent)</span><span class="val">${r.rel_gini != null ? r.rel_gini.toFixed(2) : '—'}</span></div>
+        <div class="ds-stat"><span class="lbl">Ease of entry</span><span class="val">${ease.label || '—'}</span></div>
+        <div style="margin-top:10px;padding:10px;border-radius:6px;background:rgba(0,0,0,.25);font-size:12px;color:var(--muted)">
+          ${ease.reason || ''}
+        </div>
+        <div style="margin-top:10px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Intent-filtered verdict</div>
+        <div style="margin-top:4px;font-size:14px;color:${relColor};font-weight:700">${r.verdict || '—'}</div>
+      </div>
+    </div>`;
+  }
 
   // Demand vs Supply detail
   html += '<div class="ds-detail">';
@@ -1662,6 +1710,7 @@ function renderDetail(d, idx) {
       <th data-col="rating_count" data-type="num">Ratings</th>
       <th>Volume</th>
       <th data-col="star_rating" data-type="num">Stars</th>
+      <th data-col="relevance" data-type="num" title="Domain-token match against app name (0–1). <0.5 is off-intent.">Rel</th>
       <th data-col="price" data-type="num">Price</th>
       <th data-col="released">Released</th>
       <th data-col="last_updated">Updated</th>
@@ -1670,13 +1719,18 @@ function renderDetail(d, idx) {
 
   d.apps.forEach((app, i) => {
     const pct = maxRating > 0 ? (app.rating_count / maxRating * 100) : 0;
-    html += `<tr>
+    const relScore = i < 10 ? relByName[app.name] : undefined;
+    const offIntent = relScore != null && relScore < 0.5;
+    const relCell = relScore == null ? '<span style="color:var(--muted)">—</span>'
+      : `<span style="color:${relScore >= 0.5 ? 'var(--green)' : relScore >= 0.3 ? 'var(--yellow)' : 'var(--red)'};font-weight:600">${relScore.toFixed(2)}</span>`;
+    html += `<tr style="${offIntent ? 'opacity:.45' : ''}">
       <td>${i + 1}</td>
       <td class="app-name" title="${app.name}">${app.name}</td>
       <td style="color:var(--muted);max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${app.developer}">${app.developer}</td>
       <td>${fmt(app.rating_count)}</td>
       <td class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:${pct}%"></div></div></td>
       <td><span class="star">★</span> ${app.star_rating}</td>
+      <td>${relCell}</td>
       <td>${app.price === 0 ? 'Free' : '$' + app.price}</td>
       <td style="color:var(--muted)">${app.released}</td>
       <td style="color:var(--muted)">${app.last_updated}</td>
