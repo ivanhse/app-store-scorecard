@@ -699,6 +699,94 @@
     ]
   },
   {
+    "keyword": "reaction time test",
+    "score": 83,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 3431,
+    "avg_rating_count": 343,
+    "avg_star_rating": 4.5,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 8,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.75,
+    "top_3_apps": [
+      {
+        "name": "Reaction Time Test - How fast?",
+        "ratings": 54,
+        "stars": 4.5
+      },
+      {
+        "name": "Reaction Time & Reflex Test",
+        "ratings": 1692,
+        "stars": 4.5
+      },
+      {
+        "name": "Reaction Speed Reflex Trainer",
+        "ratings": 1256,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Reaction Time Test - How fast?",
+      "Reaction Time & Reflex Test",
+      "Reaction Speed Reflex Trainer",
+      "Reflex Training - RTap",
+      "Race Start Test-Formula Reflex",
+      "Reaction Time Test - RTT",
+      "Reaction Time Test Touch",
+      "Reaction Time Test - Simple",
+      "CogniTrack: Reaction Time Test",
+      "Reaction Time: Reflex Test"
+    ]
+  },
+  {
+    "keyword": "math keyboard app",
+    "score": 83,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 16424,
+    "avg_rating_count": 1642,
+    "avg_star_rating": 3.9,
+    "stale_apps": 7,
+    "low_rated_apps": 3,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.76,
+    "top_3_apps": [
+      {
+        "name": "Symbol Keyboard - 2000+ Signs",
+        "ratings": 7274,
+        "stars": 4.6
+      },
+      {
+        "name": "Nuten : The Math Keyboard",
+        "ratings": 51,
+        "stars": 3.6
+      },
+      {
+        "name": "SciKey - Scientific Keyboard",
+        "ratings": 70,
+        "stars": 3.0
+      }
+    ],
+    "top_10_names": [
+      "Symbol Keyboard - 2000+ Signs",
+      "Nuten : The Math Keyboard",
+      "SciKey - Scientific Keyboard",
+      "Numboard \u2013 Scientific Keyboard",
+      "Symbol Keyboard+",
+      "Math keyboard - Calcuboard",
+      "Math Keyboard For Equations",
+      "The Math Keyboard",
+      "Math Notes - Solver & Editor",
+      "All Symbol Keyboard Fonts Art"
+    ]
+  },
+  {
     "keyword": "skateboard trick tracker",
     "score": 81,
     "opportunity": "GOOD OPPORTUNITY",
@@ -2748,6 +2836,50 @@
       "Screen Mirroring\u30fbSmart View TV",
       "Mirror for iPhone",
       "Mirror Deluxe"
+    ]
+  },
+  {
+    "keyword": "emoji keyboard cool",
+    "score": 80,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 487004,
+    "avg_rating_count": 48700,
+    "avg_star_rating": 4.3,
+    "stale_apps": 8,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.76,
+    "top_3_apps": [
+      {
+        "name": "Emoji Free \u2013 Emoticons Art and Cool Fonts Keyboard",
+        "ratings": 1314,
+        "stars": 4.1
+      },
+      {
+        "name": "Facemoji AI Emoji Keyboard",
+        "ratings": 324454,
+        "stars": 4.7
+      },
+      {
+        "name": "GO Keyboard-Emojis&Cool Themes",
+        "ratings": 9767,
+        "stars": 4.3
+      }
+    ],
+    "top_10_names": [
+      "Emoji Free \u2013 Emoticons Art and Cool Fonts Keyboard",
+      "Facemoji AI Emoji Keyboard",
+      "GO Keyboard-Emojis&Cool Themes",
+      "Fonts keyboard iphones app",
+      "Text Fonts, Emojis & Symbols",
+      "New Emoji & Fonts - RainbowKey",
+      "Better Font-s Cool Keyboard-s",
+      "Font: Cool Design Keyboard App",
+      "Symbolizer Fonts Keyboard with Fancy Emoji Symbols for Facebook and Instagram",
+      "iKeyboard -Cool Keyboard Theme"
     ]
   },
   {
@@ -5635,6 +5767,136 @@
       "Magic 8 Ball 3D",
       "Magic Ball 8: Crystal Ball",
       "AI8: AI Magic 8 Ball"
+    ]
+  },
+  {
+    "keyword": "id photo maker",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 71539,
+    "avg_rating_count": 7948,
+    "avg_star_rating": 4.7,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.59,
+    "top_3_apps": [
+      {
+        "name": "Passport Photo - ID Photo App",
+        "ratings": 8653,
+        "stars": 4.7
+      },
+      {
+        "name": "ID Photo Maker document photos",
+        "ratings": 137,
+        "stars": 4.8
+      },
+      {
+        "name": "ID Photo-Passport Photo maker",
+        "ratings": 25136,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Passport Photo - ID Photo App",
+      "ID Photo Maker document photos",
+      "ID Photo-Passport Photo maker",
+      "Passport Photo-ID Photo Cutout",
+      "Passport Picture ID Photo Size",
+      "Passport Photo - ID Photo",
+      "ID Photo - Passport Photo App",
+      "IDPhoto Maker: Photo ID Maker",
+      "ID Photo application"
+    ]
+  },
+  {
+    "keyword": "crystal ball app",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 17141,
+    "avg_rating_count": 1714,
+    "avg_star_rating": 4.3,
+    "stale_apps": 6,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 8,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.85,
+    "top_3_apps": [
+      {
+        "name": "Magic Crystal Ball: Divination",
+        "ratings": 294,
+        "stars": 4.5
+      },
+      {
+        "name": "Psychic 4U - Fortune teller",
+        "ratings": 501,
+        "stars": 4.4
+      },
+      {
+        "name": "Magic Ball 8: Crystal Ball",
+        "ratings": 86,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "Magic Crystal Ball: Divination",
+      "Psychic 4U - Fortune teller",
+      "Magic Ball 8: Crystal Ball",
+      "Magic 8 Ball x Destiny Fantasy",
+      "Crystal Oracle",
+      "CrystaBall Predictions",
+      "Crystal Ball",
+      "Magic 8 bit 8 ball",
+      "Magic Crystal Ball Photo Frame",
+      "Crystal Ball Advisor"
+    ]
+  },
+  {
+    "keyword": "magic 8 ball app",
+    "score": 78,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 76878,
+    "avg_rating_count": 8542,
+    "avg_star_rating": 4.5,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Magic 8 bit 8 ball",
+        "ratings": 14709,
+        "stars": 4.5
+      },
+      {
+        "name": "Magic 8 Ball Fortune Teller",
+        "ratings": 1027,
+        "stars": 4.7
+      },
+      {
+        "name": "Magic (8) Ball",
+        "ratings": 51,
+        "stars": 3.9
+      }
+    ],
+    "top_10_names": [
+      "Magic 8 bit 8 ball",
+      "Magic 8 Ball Fortune Teller",
+      "Magic (8) Ball",
+      "Magic 8 Ball x Destiny Fantasy",
+      "Magic Ball: Fortune Teller 3D",
+      "Lucky Wheel - Decision Maker",
+      "Magic Ball 8: Crystal Ball",
+      "Magic 8 Ball 3D",
+      "Tiles Hop: Music Ball Clash"
     ]
   },
   {
@@ -9880,6 +10142,181 @@
     ]
   },
   {
+    "keyword": "ai voice cleaner",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 473756,
+    "avg_rating_count": 47375,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 40,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "AI Cleaner: Clean Up Storage",
+        "ratings": 191490,
+        "stars": 4.6
+      },
+      {
+        "name": "Voice Changer - Audio Effects",
+        "ratings": 51018,
+        "stars": 4.6
+      },
+      {
+        "name": "Voices AI: Change Your Voice",
+        "ratings": 22358,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "AI Cleaner: Clean Up Storage",
+      "Voice Changer - Audio Effects",
+      "Voices AI: Change Your Voice",
+      "MyTunes : AI Music Generator",
+      "Revoice: AI Voice Changer",
+      "ElevenLabs: AI Voice Generator",
+      "Parrot: Voice Generator AI App",
+      "Fame Voice Generator & Changer",
+      "AI Voice Changer\u30fbSound Effects",
+      "AI Voice Clone Generator"
+    ]
+  },
+  {
+    "keyword": "ai book summarizer",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 328563,
+    "avg_rating_count": 32856,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "Chat Smith: AI Chatbot & Agent",
+        "ratings": 160167,
+        "stars": 4.6
+      },
+      {
+        "name": "Summary AI: TLDR Summarizer",
+        "ratings": 258,
+        "stars": 4.5
+      },
+      {
+        "name": "AI Book Summaries - BookPal",
+        "ratings": 42,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "Chat Smith: AI Chatbot & Agent",
+      "Summary AI: TLDR Summarizer",
+      "AI Book Summaries - BookPal",
+      "AI Chatbot - Ask Me Anything",
+      "ParagraphAI: Writer & Keyboard",
+      "Blinkist: Book Summaries Daily",
+      "Sudowrite - AI Novel Writing",
+      "Shortform Daily Book Summaries",
+      "Summarizer - AI Text Summary",
+      "Sumora: AI Book Summaries"
+    ]
+  },
+  {
+    "keyword": "ai pdf translator",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 350290,
+    "avg_rating_count": 35029,
+    "avg_star_rating": 4.6,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "AI PDF-PDF Translate & AI Chat",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "WPS Office-AI Doc, PDF, Sheet",
+        "ratings": 17262,
+        "stars": 4.8
+      },
+      {
+        "name": "PDF Expert: Editor & Converter",
+        "ratings": 214489,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "AI PDF-PDF Translate & AI Chat",
+      "WPS Office-AI Doc, PDF, Sheet",
+      "PDF Expert: Editor & Converter",
+      "PDF-AI Document Translator",
+      "Book Translator: EPUB & PDF",
+      "Naver Papago - AI Translator",
+      "Scanner Translator \u062a\u0631\u062c\u0645\u0647 \u0645\u062a\u0631\u062c\u0645",
+      "PDF AI: Reader & Translator",
+      "AI Scanner : Image to Text",
+      "PDF AI: Editor, Scanner, Chat"
+    ]
+  },
+  {
+    "keyword": "hidden tracker detector",
+    "score": 75,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 25787,
+    "avg_rating_count": 2865,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.45,
+    "top_3_apps": [
+      {
+        "name": "tracker detect",
+        "ratings": 7944,
+        "stars": 4.6
+      },
+      {
+        "name": "AirGuard - Tracking Protection",
+        "ratings": 4948,
+        "stars": 4.7
+      },
+      {
+        "name": "Device Detector: Wifi Analyzer",
+        "ratings": 3562,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "tracker detect",
+      "AirGuard - Tracking Protection",
+      "Device Detector: Wifi Analyzer",
+      "SpyTracker: Wireless Detector",
+      "Hidden Camera DETECTOR - WLAN",
+      "Hidden Tracker-WirelessTracker",
+      "Hidden Camera Spy Detector Hid",
+      "Hidden Spy Camera Detector App",
+      "Hidden Camera Detector FindSpy"
+    ]
+  },
+  {
     "keyword": "side hustle income tracker",
     "score": 73,
     "opportunity": "GOOD OPPORTUNITY",
@@ -12453,6 +12890,224 @@
     ]
   },
   {
+    "keyword": "ai subtitle generator",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 96767,
+    "avg_rating_count": 9676,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 30,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "invideo AI: AI Video Generator",
+        "ratings": 26538,
+        "stars": 4.6
+      },
+      {
+        "name": "Auto Captions: Video Subtitles",
+        "ratings": 1277,
+        "stars": 4.6
+      },
+      {
+        "name": "AI Song Generator : Vibe",
+        "ratings": 6051,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "invideo AI: AI Video Generator",
+      "Auto Captions: Video Subtitles",
+      "AI Song Generator : Vibe",
+      "HeyGen: AI Video Generator",
+      "Captions AI Subtitle Generator",
+      "Subcap: Captions AI, Subtitles",
+      "VideoAI: AI Video Generator+",
+      "Captions: AI Edits Your Video",
+      "AI Caption: Subtitle Generator",
+      "Video Subtitle Generator"
+    ]
+  },
+  {
+    "keyword": "audio noise remover",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 80203,
+    "avg_rating_count": 8020,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "Noise Reducer - audio enhancer",
+        "ratings": 3068,
+        "stars": 4.5
+      },
+      {
+        "name": "ByeNoise - Video Audio Editor",
+        "ratings": 2000,
+        "stars": 4.4
+      },
+      {
+        "name": "Moises: The Musician's App",
+        "ratings": 26019,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Noise Reducer - audio enhancer",
+      "ByeNoise - Video Audio Editor",
+      "Moises: The Musician's App",
+      "Audio Editor - Music editor",
+      "Audio Editor : Audiolab",
+      "Audio Noise Reducer & Recorder",
+      "AudioFix: Video Volume Booster",
+      "SoundLab - Audio Editor",
+      "Lexis Audio Editor",
+      "Voice Recorder & Noise Remover"
+    ]
+  },
+  {
+    "keyword": "nfc tag reader",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 19812,
+    "avg_rating_count": 1981,
+    "avg_star_rating": 4.3,
+    "stale_apps": 1,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 8,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "NFC Tools",
+        "ratings": 12325,
+        "stars": 4.6
+      },
+      {
+        "name": "NFC.cool Tools Tag Reader",
+        "ratings": 6486,
+        "stars": 4.5
+      },
+      {
+        "name": "NFC Tag Reader & Writer Tools",
+        "ratings": 2,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "NFC Tools",
+      "NFC.cool Tools Tag Reader",
+      "NFC Tag Reader & Writer Tools",
+      "NFC Tag Reader and Writer",
+      "NFC Tools: Tag Reader,Writer\u3164",
+      "NFC Reader & Scanner\u3164",
+      "NFC Tools: Tag Reader, Writer",
+      "NFC Tag Manager",
+      "NFC Tap",
+      "NFC Reader & Writer Tools"
+    ]
+  },
+  {
+    "keyword": "screen flicker test",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 80069,
+    "avg_rating_count": 8006,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.6,
+    "top_3_apps": [
+      {
+        "name": "Opensignal Speed Test Ad Free",
+        "ratings": 17374,
+        "stars": 4.5
+      },
+      {
+        "name": "Flicker Meter for Light - PWM",
+        "ratings": 38,
+        "stars": 4.4
+      },
+      {
+        "name": "ScreenTest - Dead Pixel Check",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Opensignal Speed Test Ad Free",
+      "Flicker Meter for Light - PWM",
+      "ScreenTest - Dead Pixel Check",
+      "Speed Test | HighSpeedInternet",
+      "V-SPEED Speed Test",
+      "Speedtest by Ookla",
+      "WIFI & Internet Speed Test",
+      "nPerf internet speed test",
+      "Speed Test+ -HW Test,Toolbox",
+      "Internet Speed Test - 5G 4G"
+    ]
+  },
+  {
+    "keyword": "lung capacity test",
+    "score": 73,
+    "opportunity": "GOOD OPPORTUNITY",
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "total_ratings_top10": 21699,
+    "avg_rating_count": 2712,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 88,
+    "concentration_index": 0.8,
+    "top_3_apps": [
+      {
+        "name": "Airofit",
+        "ratings": 1337,
+        "stars": 4.5
+      },
+      {
+        "name": "INSIGHT LUNG",
+        "ratings": 11,
+        "stars": 4.5
+      },
+      {
+        "name": "Breathwrk: Breathing Exercises",
+        "ratings": 18001,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Airofit",
+      "INSIGHT LUNG",
+      "Breathwrk: Breathing Exercises",
+      "FivePointFive: Breathwork",
+      "Aluna - Lung Health Management",
+      "Lung Breathing Exercise",
+      "ZEPHYRx Breathe Easy",
+      "Breathe2Relax"
+    ]
+  },
+  {
     "keyword": "skin condition tracker",
     "score": 70,
     "opportunity": "GOOD OPPORTUNITY",
@@ -13586,6 +14241,137 @@
       "Barcode Generator + Scanner",
       "Code128 creator",
       "QR Code Reader \u00b7"
+    ]
+  },
+  {
+    "keyword": "ai email writer",
+    "score": 53,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 6652398,
+    "avg_rating_count": 739155,
+    "avg_star_rating": 4.7,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 33,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "AI Email Writer - Boss",
+        "ratings": 899,
+        "stars": 4.8
+      },
+      {
+        "name": "Friday AI Email Writer",
+        "ratings": 9538,
+        "stars": 4.8
+      },
+      {
+        "name": "ChatGPT",
+        "ratings": 6634583,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "AI Email Writer - Boss",
+      "Friday AI Email Writer",
+      "ChatGPT",
+      "AI Email Writer - QuickMail",
+      "AI Email Writer - aiMail",
+      "AI Writer: Email Letter Essay",
+      "AI Email Writer - ComposeAI",
+      "Email Writer : AI Email Writer",
+      "AI Email Writer - Write E-mail"
+    ]
+  },
+  {
+    "keyword": "pixel test app",
+    "score": 53,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1725420,
+    "avg_rating_count": 172542,
+    "avg_star_rating": 4.4,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Pixel Control",
+        "ratings": 4,
+        "stars": 3.5
+      },
+      {
+        "name": "Speed Test+ -HW Test,Toolbox",
+        "ratings": 57,
+        "stars": 4.5
+      },
+      {
+        "name": "Check My Device : 40+ Tests",
+        "ratings": 65,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Pixel Control",
+      "Speed Test+ -HW Test,Toolbox",
+      "Check My Device : 40+ Tests",
+      "Phone repair screen color test",
+      "Divoom: Pixel art community",
+      "Pixel Art \uff0d Color by Number",
+      "Eye DPI Test",
+      "ScreenTest - Dead Pixel Check",
+      "Pixquare - Pixel Art Studio",
+      "Sandbox - Pixel Art Coloring"
+    ]
+  },
+  {
+    "keyword": "screen test utility",
+    "score": 53,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 783944,
+    "avg_rating_count": 78394,
+    "avg_star_rating": 4.0,
+    "stale_apps": 3,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.9,
+    "top_3_apps": [
+      {
+        "name": "Phone Diagnostics",
+        "ratings": 85,
+        "stars": 3.7
+      },
+      {
+        "name": "TouchScreenCheck",
+        "ratings": 46,
+        "stars": 4.7
+      },
+      {
+        "name": "Screen Test Utility",
+        "ratings": 8,
+        "stars": 4
+      }
+    ],
+    "top_10_names": [
+      "Phone Diagnostics",
+      "TouchScreenCheck",
+      "Screen Test Utility",
+      "NSYS-Test",
+      "Phone Tester",
+      "Speed Test+ -HW Test,Toolbox",
+      "ScreenTest - Dead Pixel Check",
+      "Eye DPI Test",
+      "Pixel Control",
+      "TestFlight"
     ]
   },
   {
@@ -17255,6 +18041,94 @@
       "Cleaner - Merge Contacts",
       "Master Cleanup Contact Cleaner",
       "Cleaner Kit - Clean Up Storage"
+    ]
+  },
+  {
+    "keyword": "resume photo maker",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 3438602,
+    "avg_rating_count": 343860,
+    "avg_star_rating": 4.6,
+    "stale_apps": 3,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Passport Photo-ID Photo Cutout",
+        "ratings": 5838,
+        "stars": 4.8
+      },
+      {
+        "name": "Canva: AI Video & Photo Editor",
+        "ratings": 3301228,
+        "stars": 4.9
+      },
+      {
+        "name": "PicMonkey Photo + Video Design",
+        "ratings": 28337,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Passport Photo-ID Photo Cutout",
+      "Canva: AI Video & Photo Editor",
+      "PicMonkey Photo + Video Design",
+      "Resume Builder\u207a",
+      "ID Maker: Passport Photo Maker",
+      "Resume Builder: PDF Resume App",
+      "Quick Resume Pro",
+      "POTO",
+      "BeFunky",
+      "Resume Builder by Nobody"
+    ]
+  },
+  {
+    "keyword": "ascii art keyboard",
+    "score": 50,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 764069,
+    "avg_rating_count": 76406,
+    "avg_star_rating": 4.7,
+    "stale_apps": 6,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 100,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Ascii Art Keyboard",
+        "ratings": 216,
+        "stars": 4.6
+      },
+      {
+        "name": "Emoji for Message - Text Maker",
+        "ratings": 5833,
+        "stars": 4.6
+      },
+      {
+        "name": "Emoticon Dictionary",
+        "ratings": 2048,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "Ascii Art Keyboard",
+      "Emoji for Message - Text Maker",
+      "Emoticon Dictionary",
+      "Fonts - AI Stickers",
+      "Text Faces for Texting",
+      "Image to ASCII Art",
+      "Monapo for ASCII Art",
+      "Symbol Pad & Icons for Texting",
+      "Fonts Art: Keyboard for iPhone",
+      "Symbol Keyboard - 2000+ Signs"
     ]
   },
   {
@@ -21451,6 +22325,92 @@
     ]
   },
   {
+    "keyword": "anti stalking app",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 1123948,
+    "avg_rating_count": 124883,
+    "avg_star_rating": 4.1,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 78,
+    "concentration_index": 0.87,
+    "top_3_apps": [
+      {
+        "name": "Clario AntiSpy",
+        "ratings": 839,
+        "stars": 3.9
+      },
+      {
+        "name": "Norton AntiTrack",
+        "ratings": 44,
+        "stars": 3.7
+      },
+      {
+        "name": "Tracker Protection",
+        "ratings": 76,
+        "stars": 4.3
+      }
+    ],
+    "top_10_names": [
+      "Clario AntiSpy",
+      "Norton AntiTrack",
+      "Tracker Protection",
+      "happn: dating app",
+      "Crook Catcher Anti Theft Alarm",
+      "Hinge Dating App: Match & Date",
+      "Dating.com: Global Chat & Date",
+      "Hunch Dating App: Vibe & Meet",
+      "True Phone Security AntiSpy"
+    ]
+  },
+  {
+    "keyword": "bluetooth tracker finder",
+    "score": 48,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 199422,
+    "avg_rating_count": 22158,
+    "avg_star_rating": 4.4,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 89,
+    "concentration_index": 0.69,
+    "top_3_apps": [
+      {
+        "name": "Bluetooth BLE Device Finder",
+        "ratings": 26835,
+        "stars": 4.4
+      },
+      {
+        "name": "Find Bluetooth Device Tracker",
+        "ratings": 1747,
+        "stars": 4.4
+      },
+      {
+        "name": "Wunderfind: Find Lost Device",
+        "ratings": 115050,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Bluetooth BLE Device Finder",
+      "Find Bluetooth Device Tracker",
+      "Wunderfind: Find Lost Device",
+      "Find Bluetooth: device tracker",
+      "Find my Bluetooth Device App",
+      "Find My Device & Track Friends",
+      "Device Tracker",
+      "Find My Lost Bluetooth Device",
+      "Find Device & Bluetooth Track"
+    ]
+  },
+  {
     "keyword": "posture corrector app",
     "score": 46,
     "opportunity": "COMPETITIVE \u2014 differentiate to win",
@@ -22973,6 +23933,50 @@
       "Protractor+",
       "Angle Gradient Inclinometer",
       "Digital Angle Finder: 3D Meter"
+    ]
+  },
+  {
+    "keyword": "projector remote app",
+    "score": 46,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 192519,
+    "avg_rating_count": 19251,
+    "avg_star_rating": 4.0,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Smart Projector Control",
+        "ratings": 17,
+        "stars": 2.8
+      },
+      {
+        "name": "Universal Remote | Smart TV",
+        "ratings": 11356,
+        "stars": 4.7
+      },
+      {
+        "name": "PJ Quick Connection",
+        "ratings": 1,
+        "stars": 5
+      }
+    ],
+    "top_10_names": [
+      "Smart Projector Control",
+      "Universal Remote | Smart TV",
+      "PJ Quick Connection",
+      "InstaControl",
+      "Universal Remote TV Control",
+      "vRemote",
+      "DP Smart Control",
+      "Projector: Mirroring & Remote",
+      "Universal Remote TV Control \u00b7",
+      "Smart TV Remote Control Plus"
     ]
   },
   {
@@ -33083,6 +34087,355 @@
     ]
   },
   {
+    "keyword": "ai dictation app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 543947,
+    "avg_rating_count": 60438,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 44,
+    "concentration_index": 0.83,
+    "top_3_apps": [
+      {
+        "name": "Otter Transcribe Voice Notes",
+        "ratings": 50161,
+        "stars": 4.7
+      },
+      {
+        "name": "Wispr Flow: AI Voice Keyboard",
+        "ratings": 7150,
+        "stars": 4.8
+      },
+      {
+        "name": "SpeakApp AI: Voice Notes",
+        "ratings": 7398,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Otter Transcribe Voice Notes",
+      "Wispr Flow: AI Voice Keyboard",
+      "SpeakApp AI: Voice Notes",
+      "Speechify \u2013 Text to Speech PDF",
+      "AI Note Taker \u2013 VoicePen",
+      "Voice Memo Dictation to Text",
+      "Transcribe AI: Voice to Text",
+      "Aardvark AI: Dictate & Journal",
+      "Dictate\u207a"
+    ]
+  },
+  {
+    "keyword": "ai document reader",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 4043146,
+    "avg_rating_count": 404314,
+    "avg_star_rating": 4.8,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.82,
+    "top_3_apps": [
+      {
+        "name": "Voice Aloud Reader",
+        "ratings": 18321,
+        "stars": 4.6
+      },
+      {
+        "name": "FineReader: PDF Scanner & OCR",
+        "ratings": 19276,
+        "stars": 4.7
+      },
+      {
+        "name": "Google Docs",
+        "ratings": 3048914,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Voice Aloud Reader",
+      "FineReader: PDF Scanner & OCR",
+      "Google Docs",
+      "Adobe Acrobat Reader: Sign PDF",
+      "AI Assistant: Images & Writing",
+      "SwiftScan AI Document Scanner",
+      "TurboScan\u2122 Pro: PDF scanner",
+      "WPS Office-AI Doc, PDF, Sheet",
+      "PDF Scanner AI: Scan Documents",
+      "Atlas AI: PDF Document Scanner"
+    ]
+  },
+  {
+    "keyword": "ai read aloud app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 538436,
+    "avg_rating_count": 59826,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 56,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "Voice Aloud Reader",
+        "ratings": 18321,
+        "stars": 4.6
+      },
+      {
+        "name": "Speechify \u2013 Text to Speech PDF",
+        "ratings": 466033,
+        "stars": 4.7
+      },
+      {
+        "name": "Readability - Learn to Read",
+        "ratings": 19763,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Voice Aloud Reader",
+      "Speechify \u2013 Text to Speech PDF",
+      "Readability - Learn to Read",
+      "NaturalReader - Text To Speech",
+      "ElevenReader: Read Books Aloud",
+      "Read Aloud AI - Text to Speech",
+      "Speak4Me Text to Speech Reader",
+      "Text to Speech - Listen AI",
+      "AI Reader: Read Aloud Pdf Book"
+    ]
+  },
+  {
+    "keyword": "ai research assistant",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 2053466,
+    "avg_rating_count": 205346,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 1,
+    "mature_apps_pct": 40,
+    "concentration_index": 0.71,
+    "top_3_apps": [
+      {
+        "name": "Perplexity - AI Search & Chat",
+        "ratings": 447278,
+        "stars": 4.8
+      },
+      {
+        "name": "Chat Smith: AI Chatbot & Agent",
+        "ratings": 160167,
+        "stars": 4.6
+      },
+      {
+        "name": "Claude by Anthropic",
+        "ratings": 109095,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Perplexity - AI Search & Chat",
+      "Chat Smith: AI Chatbot & Agent",
+      "Claude by Anthropic",
+      "Chunk: AI Research Assistant",
+      "Comet - AI Browser & Assistant",
+      "Manus - AI Agent & Automation",
+      "Grok - AI Chat & Video",
+      "You.com - Enterprise grade AI",
+      "ChatLLM: AI Assistant & Chat",
+      "Chatbot AI Assistant - Genie"
+    ]
+  },
+  {
+    "keyword": "linkedin headshot app",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 866274,
+    "avg_rating_count": 86627,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 40,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "LinkedIn: Community & Network",
+        "ratings": 632961,
+        "stars": 4.8
+      },
+      {
+        "name": "Headshot Pro AI: Perfect Photo",
+        "ratings": 2249,
+        "stars": 4.6
+      },
+      {
+        "name": "AI Headshot Photo Generator",
+        "ratings": 5960,
+        "stars": 4.2
+      }
+    ],
+    "top_10_names": [
+      "LinkedIn: Community & Network",
+      "Headshot Pro AI: Perfect Photo",
+      "AI Headshot Photo Generator",
+      "Headshot Pro: Business Photos",
+      "Momo: AI Photo & Video Maker",
+      "Dr. Headshot: Corporate Photos",
+      "AI Headshot Generator",
+      "Photoleap: AI Photo Generator",
+      "Headshot Studio: AI Pic Editor",
+      "LinkedIn Recruiter"
+    ]
+  },
+  {
+    "keyword": "ai headshot generator",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 717752,
+    "avg_rating_count": 79750,
+    "avg_star_rating": 4.4,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 33,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "Photoleap: AI Photo Generator",
+        "ratings": 136851,
+        "stars": 4.7
+      },
+      {
+        "name": "AI Headshot Generator: Reshot",
+        "ratings": 190,
+        "stars": 4.3
+      },
+      {
+        "name": "Momo: AI Photo & Video Maker",
+        "ratings": 75921,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Photoleap: AI Photo Generator",
+      "AI Headshot Generator: Reshot",
+      "Momo: AI Photo & Video Maker",
+      "AI Headshot Photo Generator",
+      "Reface: Face Edit AI Photo App",
+      "ReCrea - AI Photo & Headshot",
+      "AI Headshot Generator - HiShot",
+      "AI Photo Generator: Remake AI",
+      "AI Headshot Generator"
+    ]
+  },
+  {
+    "keyword": "tv remote universal",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 978130,
+    "avg_rating_count": 97813,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.62,
+    "top_3_apps": [
+      {
+        "name": "TV Remote - Universal",
+        "ratings": 49797,
+        "stars": 4.6
+      },
+      {
+        "name": "Universal TV Remote \u00b7",
+        "ratings": 76012,
+        "stars": 4.6
+      },
+      {
+        "name": "Universal TV Remote Control\u30fb",
+        "ratings": 68395,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "TV Remote - Universal",
+      "Universal TV Remote \u00b7",
+      "Universal TV Remote Control\u30fb",
+      "TV Remote - Universal Control",
+      "Universal TV Remote Control\uff0a",
+      "TV Remote Universal",
+      "Universal Remote TV Control \u00b7",
+      "Universal TV Remote\u2122 Control",
+      "Universal Remote TV Control",
+      "TV Remote Control - Flicky"
+    ]
+  },
+  {
+    "keyword": "speed camera detector",
+    "score": 45,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "total_ratings_top10": 3380035,
+    "avg_rating_count": 338003,
+    "avg_star_rating": 4.6,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.88,
+    "top_3_apps": [
+      {
+        "name": "Radarbot: Speed Cameras | GPS",
+        "ratings": 95873,
+        "stars": 4.6
+      },
+      {
+        "name": "Waze Navigation & Live Traffic",
+        "ratings": 3157414,
+        "stars": 4.8
+      },
+      {
+        "name": "Speed Cameras Radar",
+        "ratings": 1305,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Radarbot: Speed Cameras | GPS",
+      "Waze Navigation & Live Traffic",
+      "Speed Cameras Radar",
+      "Speed Camera Detector",
+      "Speed Camera Radar Detector",
+      "RadarAll Speed Camera Detector",
+      "Speedometer Simple",
+      "Speed Cameras Radar Detector",
+      "Radar Detector: Camera Tracker",
+      "GPS Speedometer MPH Tracker"
+    ]
+  },
+  {
     "keyword": "wrist pain exercises",
     "score": 43,
     "opportunity": "COMPETITIVE \u2014 differentiate to win",
@@ -42083,6 +43436,356 @@
     ]
   },
   {
+    "keyword": "ai audio cleaner",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 281534,
+    "avg_rating_count": 28153,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.77,
+    "top_3_apps": [
+      {
+        "name": "Noise Reducer - audio enhancer",
+        "ratings": 3068,
+        "stars": 4.5
+      },
+      {
+        "name": "KLIN: AI Video Sound Cleaner",
+        "ratings": 449,
+        "stars": 4.7
+      },
+      {
+        "name": "AI Cleaner: Clean Up Storage",
+        "ratings": 191490,
+        "stars": 4.6
+      }
+    ],
+    "top_10_names": [
+      "Noise Reducer - audio enhancer",
+      "KLIN: AI Video Sound Cleaner",
+      "AI Cleaner: Clean Up Storage",
+      "ByeNoise - Video Audio Editor",
+      "SoundLab - Audio Editor",
+      "Sonic | Water Eject",
+      "AI CleanKit: Phone Cleaner Pro",
+      "Cleaner AI: Photo Cleanup",
+      "Audio Cleaner: Volume Booster",
+      "Podcast Cleaner AI Denoise Fix"
+    ]
+  },
+  {
+    "keyword": "ai voice clone app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 202994,
+    "avg_rating_count": 22554,
+    "avg_star_rating": 4.5,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 22,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Voice Clone:AI Voice Generator",
+        "ratings": 172,
+        "stars": 4.5
+      },
+      {
+        "name": "ElevenLabs: AI Voice Generator",
+        "ratings": 9546,
+        "stars": 4.9
+      },
+      {
+        "name": "Voice & Face Cloning: Clony AI",
+        "ratings": 2604,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Voice Clone:AI Voice Generator",
+      "ElevenLabs: AI Voice Generator",
+      "Voice & Face Cloning: Clony AI",
+      "AI Voice Clone: TenLabs",
+      "Voices AI: Change Your Voice",
+      "AI Voice Clone Generator",
+      "AI Voice Clone Voice Generator",
+      "invideo AI: AI Video Generator",
+      "Parrot: Voice Generator AI App"
+    ]
+  },
+  {
+    "keyword": "ai transcription app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 155917,
+    "avg_rating_count": 17324,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 0,
+    "mature_apps_pct": 33,
+    "concentration_index": 0.42,
+    "top_3_apps": [
+      {
+        "name": "Otter Transcribe Voice Notes",
+        "ratings": 50161,
+        "stars": 4.7
+      },
+      {
+        "name": "Summary - AI Note Taker",
+        "ratings": 34706,
+        "stars": 4.7
+      },
+      {
+        "name": "Plaud: AI Note Taker",
+        "ratings": 17897,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "Otter Transcribe Voice Notes",
+      "Summary - AI Note Taker",
+      "Plaud: AI Note Taker",
+      "Noted: Record & AI Transcribe",
+      "Wave AI Note Taker & Recorder",
+      "Minutes: AI Meeting Note Taker",
+      "Transcribe - Speech to Text",
+      "Voicenotes AI Notes & Meetings",
+      "SpeakApp AI: Voice Notes"
+    ]
+  },
+  {
+    "keyword": "ai pdf summarizer",
+    "score": 43,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 271,
+    "avg_rating_count": 27,
+    "avg_star_rating": 4.3,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 10,
+    "mature_apps_pct": 20,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "AI PDF Summarizer \u2013 Textara",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "AI PDF Summarizer: Chat PDF",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "AI PDF Summarizer & Doc Chat",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "AI PDF Summarizer \u2013 Textara",
+      "AI PDF Summarizer: Chat PDF",
+      "AI PDF Summarizer & Doc Chat",
+      "PDF AI: PDF Summarizer & Chat",
+      "Pdf Summerizer: AI Summerize",
+      "AI PDF: Scan Summarize Chat",
+      "ChatPDF AI: Scan & Summarize",
+      "Summary AI: TLDR Summarizer",
+      "PDFwow \u2014 AI PDF Editor",
+      "ChatPDF: AI PDF Summarizer"
+    ]
+  },
+  {
+    "keyword": "passport photo maker",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 102133,
+    "avg_rating_count": 10213,
+    "avg_star_rating": 4.7,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 2,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.46,
+    "top_3_apps": [
+      {
+        "name": "Passport Photo - ID Photo App",
+        "ratings": 8653,
+        "stars": 4.7
+      },
+      {
+        "name": "Passport Photo - ID Photo",
+        "ratings": 20778,
+        "stars": 4.5
+      },
+      {
+        "name": "Passport Photo - PhotoAiD",
+        "ratings": 15175,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "Passport Photo - ID Photo App",
+      "Passport Photo - ID Photo",
+      "Passport Photo - PhotoAiD",
+      "Passport Booth",
+      "ID Photo-Passport Photo maker",
+      "Passport Photo Maker ID Photo\u30fb",
+      "Passport Photo Maker: ID, Visa",
+      "ID Photo - Passport Photo App",
+      "Global Passport Photo Maker",
+      "Passport Size Photo Maker App"
+    ]
+  },
+  {
+    "keyword": "visa photo app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 100075,
+    "avg_rating_count": 10007,
+    "avg_star_rating": 4.6,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 3,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.48,
+    "top_3_apps": [
+      {
+        "name": "ID Photo-Passport Photo maker",
+        "ratings": 25136,
+        "stars": 4.7
+      },
+      {
+        "name": "Passport Photo - ID Photo App",
+        "ratings": 8653,
+        "stars": 4.7
+      },
+      {
+        "name": "Passport Photo - ID Photo",
+        "ratings": 20778,
+        "stars": 4.5
+      }
+    ],
+    "top_10_names": [
+      "ID Photo-Passport Photo maker",
+      "Passport Photo - ID Photo App",
+      "Passport Photo - ID Photo",
+      "Passport Booth",
+      "Passport Photo - PhotoAiD",
+      "Passport Photo Maker: ID, Visa",
+      "ID Photo - Passport Photo App",
+      "Passport Picture ID Photo Size",
+      "Biometric Passport Photo",
+      "Passport ID & Visa Photo Edit"
+    ]
+  },
+  {
+    "keyword": "oled burn in test",
+    "score": 43,
+    "opportunity": "SMALL NICHE \u2014 low risk, low reward",
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "total_ratings_top10": 567,
+    "avg_rating_count": 56,
+    "avg_star_rating": 4.2,
+    "stale_apps": 4,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 10,
+    "mature_apps_pct": 50,
+    "concentration_index": 0.65,
+    "top_3_apps": [
+      {
+        "name": "Doctor OLED X",
+        "ratings": 74,
+        "stars": 4.1
+      },
+      {
+        "name": "ScreenTest - Dead Pixel Check",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Dead Pixel Test - Screen Check",
+        "ratings": 0,
+        "stars": 0
+      }
+    ],
+    "top_10_names": [
+      "Doctor OLED X",
+      "ScreenTest - Dead Pixel Check",
+      "Dead Pixel Test - Screen Check",
+      "Colorblind Eye Exam Test",
+      "ScreenDoctor",
+      "Pixel Pulse: OLED Screen Care",
+      "Check My Device : 40+ Tests",
+      "Test & Check for iPhone",
+      "Eye Test: Vision & Color Blind",
+      "TouchScreenCheck"
+    ]
+  },
+  {
+    "keyword": "ouija board app",
+    "score": 43,
+    "opportunity": "COMPETITIVE \u2014 differentiate to win",
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "total_ratings_top10": 122069,
+    "avg_rating_count": 12206,
+    "avg_star_rating": 4.0,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.74,
+    "top_3_apps": [
+      {
+        "name": "Spirit Board (very scary)",
+        "ratings": 51669,
+        "stars": 4.3
+      },
+      {
+        "name": "Ghost Board Game",
+        "ratings": 705,
+        "stars": 4.1
+      },
+      {
+        "name": "3D Spirit Board",
+        "ratings": 221,
+        "stars": 2.6
+      }
+    ],
+    "top_10_names": [
+      "Spirit Board (very scary)",
+      "Ghost Board Game",
+      "3D Spirit Board",
+      "Charlie Charlie Challenge!",
+      "Spirit Board - Arcanis",
+      "Ghost Camera Detector Radar",
+      "Spirit Entities Talker",
+      "GhostTube SLS Camera",
+      "Spirit Board - Spirit Guide",
+      "Spirit Board Voice"
+    ]
+  },
+  {
     "keyword": "sourdough starter tracker",
     "score": 38,
     "opportunity": "SMALL NICHE \u2014 low risk, low reward",
@@ -45768,6 +47471,93 @@
     ]
   },
   {
+    "keyword": "hearing test frequency",
+    "score": 13,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 50225,
+    "avg_rating_count": 5580,
+    "avg_star_rating": 4.5,
+    "stale_apps": 3,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 67,
+    "concentration_index": 0.85,
+    "top_3_apps": [
+      {
+        "name": "Mimi Hearing Test",
+        "ratings": 42638,
+        "stars": 4.8
+      },
+      {
+        "name": "Hearing Test & Ear Age Test",
+        "ratings": 198,
+        "stars": 4.5
+      },
+      {
+        "name": "ListenUp Hearing Test",
+        "ratings": 20,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "Mimi Hearing Test",
+      "Hearing Test & Ear Age Test",
+      "ListenUp Hearing Test",
+      "Sound Scouts Hearing Test",
+      "Tinnitus Relief: Hearing Test",
+      "Decibel X PRO: dBA Noise Meter",
+      "Hearing Test+ Audiogram",
+      "AudioCardio Hearing & Tinnitus",
+      "Sennheiser Hearing Test"
+    ]
+  },
+  {
+    "keyword": "color blindness test",
+    "score": 13,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 49399,
+    "avg_rating_count": 4939,
+    "avg_star_rating": 4.3,
+    "stale_apps": 5,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 9,
+    "mature_apps_pct": 70,
+    "concentration_index": 0.89,
+    "top_3_apps": [
+      {
+        "name": "Color Blindness Checker",
+        "ratings": 92,
+        "stars": 4.8
+      },
+      {
+        "name": "Color Blindness Test Ishihara",
+        "ratings": 1,
+        "stars": 3
+      },
+      {
+        "name": "Eye Test & Vision Checker",
+        "ratings": 29,
+        "stars": 3.6
+      }
+    ],
+    "top_10_names": [
+      "Color Blindness Checker",
+      "Color Blindness Test Ishihara",
+      "Eye Test & Vision Checker",
+      "I Love Hue",
+      "Color Guess - Vision Test",
+      "Color Blindness Exam",
+      "Color Detector-Identifier,Test",
+      "Dehancer Color Test",
+      "Hue Perceive",
+      "PseudoChromatic ColorTest"
+    ]
+  },
+  {
     "keyword": "pelvic floor trainer",
     "score": 10,
     "opportunity": "AVOID \u2014 dominated market",
@@ -46424,6 +48214,50 @@
       "App Locker -privacy lock",
       "Vault - Hide photos & videos",
       "Lockdown Privacy: AdBlock VPN"
+    ]
+  },
+  {
+    "keyword": "monitor color test",
+    "score": 10,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 37577,
+    "avg_rating_count": 3757,
+    "avg_star_rating": 4.4,
+    "stale_apps": 5,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 4,
+    "mature_apps_pct": 90,
+    "concentration_index": 0.58,
+    "top_3_apps": [
+      {
+        "name": "Color Test For Your Screen",
+        "ratings": 0,
+        "stars": 0
+      },
+      {
+        "name": "Device Monitor\u00b2",
+        "ratings": 8643,
+        "stars": 4.7
+      },
+      {
+        "name": "Colorblind Eye Exam Test",
+        "ratings": 305,
+        "stars": 3.7
+      }
+    ],
+    "top_10_names": [
+      "Color Test For Your Screen",
+      "Device Monitor\u00b2",
+      "Colorblind Eye Exam Test",
+      "System Status: hw monitor",
+      "Color Portfolio",
+      "System Status Pro: hw monitor",
+      "Paint Tester",
+      "Kuku Kube - Color Test",
+      "Color Challenge - Test Your Color Vision",
+      "Color Name AR"
     ]
   },
   {
@@ -47561,6 +49395,225 @@
       "Round Photo",
       "The Burst App",
       "Camera+ Legacy"
+    ]
+  },
+  {
+    "keyword": "voice isolation app",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 53738,
+    "avg_rating_count": 5373,
+    "avg_star_rating": 4.5,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.72,
+    "top_3_apps": [
+      {
+        "name": "Moises: The Musician's App",
+        "ratings": 26019,
+        "stars": 4.7
+      },
+      {
+        "name": "Noise Reducer - audio enhancer",
+        "ratings": 3068,
+        "stars": 4.5
+      },
+      {
+        "name": "Stemz: remover vocal audio pro",
+        "ratings": 15664,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Moises: The Musician's App",
+      "Noise Reducer - audio enhancer",
+      "Stemz: remover vocal audio pro",
+      "AudioAI - TTS & Isolate Voice",
+      "Vocal Remover & AI Separator",
+      "Vocal Separator - Remove Music",
+      "Denoise.FX for Audio & Video",
+      "Vocal Remover: Music Separator",
+      "Voice Tools",
+      "Music Separator: Voice Remover"
+    ]
+  },
+  {
+    "keyword": "ai contract reader",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 34696,
+    "avg_rating_count": 3469,
+    "avg_star_rating": 4.7,
+    "stale_apps": 0,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 20,
+    "concentration_index": 0.81,
+    "top_3_apps": [
+      {
+        "name": "AI Contract Analyzer & Sign",
+        "ratings": 54,
+        "stars": 5
+      },
+      {
+        "name": "You.com - Enterprise grade AI",
+        "ratings": 4835,
+        "stars": 4.8
+      },
+      {
+        "name": "Atlas AI: PDF Document Scanner",
+        "ratings": 717,
+        "stars": 4.9
+      }
+    ],
+    "top_10_names": [
+      "AI Contract Analyzer & Sign",
+      "You.com - Enterprise grade AI",
+      "Atlas AI: PDF Document Scanner",
+      "Manus - AI Agent & Automation",
+      "AI Reads Law: Legal Assistant",
+      "Contract Maker: Legal Draft",
+      "ChatLLM: AI Assistant & Chat",
+      "Google AI Edge Gallery",
+      "Legal AI Assistant: Law Help",
+      "On-Device AI: TTS, STT & Agent"
+    ]
+  },
+  {
+    "keyword": "airtag scanner app",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 45193,
+    "avg_rating_count": 4519,
+    "avg_star_rating": 4.5,
+    "stale_apps": 2,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 6,
+    "mature_apps_pct": 30,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "AirGuard - Tracking Protection",
+        "ratings": 4948,
+        "stars": 4.7
+      },
+      {
+        "name": "tracker detect",
+        "ratings": 7944,
+        "stars": 4.6
+      },
+      {
+        "name": "Air Tracker: BLE Tag Detector",
+        "ratings": 1423,
+        "stars": 4.4
+      }
+    ],
+    "top_10_names": [
+      "AirGuard - Tracking Protection",
+      "tracker detect",
+      "Air Tracker: BLE Tag Detector",
+      "Bluetooth BLE Finder & Scanner",
+      "Find Device use Phone",
+      "Device Finder: Easy Find",
+      "Bluetooth Scanner: Finder App",
+      "Bluetooth Scanner, Find Device",
+      "Bluetooth Device: Finder Tool",
+      "JotNot Scanner App Pro"
+    ]
+  },
+  {
+    "keyword": "vision test eye chart",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 45837,
+    "avg_rating_count": 4583,
+    "avg_star_rating": 4.0,
+    "stale_apps": 2,
+    "low_rated_apps": 2,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 80,
+    "concentration_index": 0.78,
+    "top_3_apps": [
+      {
+        "name": "Virtual Vision Test",
+        "ratings": 18336,
+        "stars": 4.8
+      },
+      {
+        "name": "EyeChart - Vision Screening",
+        "ratings": 17,
+        "stars": 2.8
+      },
+      {
+        "name": "Eye Test & Vision Checker",
+        "ratings": 29,
+        "stars": 3.6
+      }
+    ],
+    "top_10_names": [
+      "Virtual Vision Test",
+      "EyeChart - Vision Screening",
+      "Eye Test & Vision Checker",
+      "UbiVision Eye Chart",
+      "Vision test and Eye exercises",
+      "EyeMed",
+      "Eye Chart HD",
+      "VSP Vision Care On the Go",
+      "Eye Handbook",
+      "Smart Optometry"
+    ]
+  },
+  {
+    "keyword": "ac remote universal",
+    "score": 8,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 46715,
+    "avg_rating_count": 5190,
+    "avg_star_rating": 4.5,
+    "stale_apps": 1,
+    "low_rated_apps": 0,
+    "weak_apps_in_top10": 7,
+    "mature_apps_pct": 11,
+    "concentration_index": 0.85,
+    "top_3_apps": [
+      {
+        "name": "Universal AC Remote Control +",
+        "ratings": 3043,
+        "stars": 4.6
+      },
+      {
+        "name": "AC Remote: Universal Control.",
+        "ratings": 316,
+        "stars": 4.5
+      },
+      {
+        "name": "AC remote - aircon control",
+        "ratings": 60,
+        "stars": 4.7
+      }
+    ],
+    "top_10_names": [
+      "Universal AC Remote Control +",
+      "AC Remote: Universal Control.",
+      "AC remote - aircon control",
+      "Universal AC Remote Control .",
+      "AC Remote - Universal Control",
+      "Universal AC Remote Control \u207a\u207a",
+      "Air Conditioner Controller",
+      "Universal remote tv smart",
+      "AC Remote\u30fbAir Conditioner"
     ]
   },
   {
@@ -49176,6 +51229,50 @@
       "CircleBack - Updated Contacts",
       "Contact Snapper",
       "iContacts: Contact Group Tool"
+    ]
+  },
+  {
+    "keyword": "tile tracker scanner",
+    "score": 5,
+    "opportunity": "AVOID \u2014 dominated market",
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "total_ratings_top10": 56869,
+    "avg_rating_count": 5686,
+    "avg_star_rating": 4.4,
+    "stale_apps": 2,
+    "low_rated_apps": 1,
+    "weak_apps_in_top10": 5,
+    "mature_apps_pct": 60,
+    "concentration_index": 0.79,
+    "top_3_apps": [
+      {
+        "name": "AirGuard - Tracking Protection",
+        "ratings": 4948,
+        "stars": 4.7
+      },
+      {
+        "name": "TrackerScan - Detect Trackers",
+        "ratings": 79,
+        "stars": 4.9
+      },
+      {
+        "name": "Scan App +",
+        "ratings": 7033,
+        "stars": 4.8
+      }
+    ],
+    "top_10_names": [
+      "AirGuard - Tracking Protection",
+      "TrackerScan - Detect Trackers",
+      "Scan App +",
+      "Barcode Scanner - Orca Scan",
+      "Code Scanner by ScanLife",
+      "Barcode Scanner for Walmart",
+      "Polycam 3D Scans & Floor Plans",
+      "Room Scanner - Easy Measure Rm",
+      "Tracker Detect +",
+      "QR Code Scanner:Barcode Reader"
     ]
   },
   {

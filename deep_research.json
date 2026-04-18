@@ -5175,6 +5175,80 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "interval timer workout",
+    "keyword_normalized": "interval timer workout",
+    "total_ratings_top10": 239858,
+    "max_rating_count": 83159,
+    "avg_rating_count": 26650,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.79,
+    "concentration_index": 0.439,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 1.0,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 100,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Interval Timer \u25a1 HIIT Timer",
+        "rating_count": 83159,
+        "star_rating": 4.84,
+        "price": 0.0,
+        "developer": "Float Tech, LLC",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Timer Plus - Workouts Timer",
+        "rating_count": 55152,
+        "star_rating": 4.84,
+        "price": 0.0,
+        "developer": "VGFIT LLC",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Seconds Interval Timer",
+        "rating_count": 23092,
+        "star_rating": 4.69,
+        "price": 0.0,
+        "developer": "Runloop Ltd",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Interval Timer \u25a1 HIIT Timer",
+      "Timer Plus - Workouts Timer",
+      "Seconds Interval Timer",
+      "Interval Timer - Tabata Timer",
+      "Tabata Pro HIIT Interval Timer",
+      "Interval Timer ++",
+      "Intervals Pro: HIIT Timer",
+      "Tabata Timer: Interval Timer.",
+      "Interval Timer Plus",
+      "Tabata Timer and HIIT Timer"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 2.14,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.28,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "potty training tracker",
     "keyword_normalized": "potty training tracker",
     "total_ratings_top10": 19674,
@@ -5329,80 +5403,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
-  },
-  {
-    "keyword_original": "interval timer workout",
-    "keyword_normalized": "interval timer workout",
-    "total_ratings_top10": 239858,
-    "max_rating_count": 83159,
-    "avg_rating_count": 26650,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 4.79,
-    "concentration_index": 0.439,
-    "dominant_category": "Health & Fitness",
-    "category_focus": 1.0,
-    "free_count": 9,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 100,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Interval Timer \u25a1 HIIT Timer",
-        "rating_count": 83159,
-        "star_rating": 4.84,
-        "price": 0.0,
-        "developer": "Float Tech, LLC",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Timer Plus - Workouts Timer",
-        "rating_count": 55152,
-        "star_rating": 4.84,
-        "price": 0.0,
-        "developer": "VGFIT LLC",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Seconds Interval Timer",
-        "rating_count": 23092,
-        "star_rating": 4.69,
-        "price": 0.0,
-        "developer": "Runloop Ltd",
-        "category": "Health & Fitness"
-      }
-    ],
-    "top10_names": [
-      "Interval Timer \u25a1 HIIT Timer",
-      "Timer Plus - Workouts Timer",
-      "Seconds Interval Timer",
-      "Interval Timer - Tabata Timer",
-      "Tabata Pro HIIT Interval Timer",
-      "Interval Timer ++",
-      "Intervals Pro: HIIT Timer",
-      "Tabata Timer: Interval Timer.",
-      "Interval Timer Plus",
-      "Tabata Timer and HIIT Timer"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 2.14,
-    "ltv": 2.1,
-    "payback_months": 12.57,
-    "roas_6mo": 0.48,
-    "arpu_est": 7.0,
-    "cpi_est": 4.4,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.28,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
   },
   {
     "keyword_original": "white noise machine app",
@@ -8428,6 +8428,80 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "vision test eye chart",
+    "keyword_normalized": "vision test eye chart",
+    "total_ratings_top10": 20478,
+    "max_rating_count": 18336,
+    "avg_rating_count": 2559,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 3.78,
+    "concentration_index": 0.832,
+    "dominant_category": "Medical",
+    "category_focus": 0.62,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 80,
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Virtual Vision Test",
+        "rating_count": 18336,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "Warby Parker Inc",
+        "category": "Medical"
+      },
+      {
+        "name": "Eye Handbook",
+        "rating_count": 1128,
+        "star_rating": 4.81,
+        "price": 0.0,
+        "developer": "Cloud Nine Development LLC",
+        "category": "Medical"
+      },
+      {
+        "name": "VSP Vision Care On the Go",
+        "rating_count": 691,
+        "star_rating": 1.22,
+        "price": 0.0,
+        "developer": "VSP Global",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Vision test and Eye exercises",
+      "Eye Test & Vision Checker",
+      "Virtual Vision Test",
+      "Eye Handbook",
+      "VSP Vision Care On the Go",
+      "EyeChart - Vision Screening",
+      "Eye Chart HD",
+      "UbiVision Eye Chart",
+      "EyeMed",
+      "Smart Optometry"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.79,
+    "ltv": 2.4,
+    "payback_months": 20.82,
+    "roas_6mo": 0.29,
+    "arpu_est": 8.0,
+    "cpi_est": 8.33,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.45,
+    "supply_room": 0.38,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
+  },
+  {
     "keyword_original": "grocery list app",
     "keyword_normalized": "grocery list",
     "total_ratings_top10": 294075,
@@ -9429,6 +9503,80 @@
     "relevant_count": 5
   },
   {
+    "keyword_original": "passport photo maker",
+    "keyword_normalized": "passport photo maker",
+    "total_ratings_top10": 102133,
+    "max_rating_count": 25136,
+    "avg_rating_count": 10213,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.66,
+    "concentration_index": 0.463,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.7,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 80,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "ID Photo-Passport Photo maker",
+        "rating_count": 25136,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "\u82cf\u5a1f \u9648",
+        "category": "Productivity"
+      },
+      {
+        "name": "Passport Photo - ID Photo",
+        "rating_count": 20778,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Vitalij Schaefer",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Passport Booth",
+        "rating_count": 16093,
+        "star_rating": 4.77,
+        "price": 0.0,
+        "developer": "TAPUNIVERSE LLC",
+        "category": "Graphics & Design"
+      }
+    ],
+    "top10_names": [
+      "ID Photo-Passport Photo maker",
+      "Passport Photo - ID Photo",
+      "Passport Photo - PhotoAiD",
+      "ID Photo - Passport Photo App",
+      "Passport Photo - ID Photo App",
+      "Global Passport Photo Maker",
+      "Passport Size Photo Maker App",
+      "Passport Photo Maker ID Photo\u30fb",
+      "Passport Photo Maker: ID, Visa",
+      "Passport Booth"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.73,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.37,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "baby development tracker",
     "keyword_normalized": "baby development tracker",
     "total_ratings_top10": 580695,
@@ -9510,6 +9658,80 @@
     "penalty_mult": 0.35,
     "intent_relevance": 0.7,
     "relevant_count": 7
+  },
+  {
+    "keyword_original": "ai transcription app",
+    "keyword_normalized": "ai transcription",
+    "total_ratings_top10": 90863,
+    "max_rating_count": 34706,
+    "avg_rating_count": 11357,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.75,
+    "concentration_index": 0.483,
+    "dominant_category": "Productivity",
+    "category_focus": 1.0,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 30,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Summary - AI Note Taker",
+        "rating_count": 34706,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "Labhouse Mobile",
+        "category": "Productivity"
+      },
+      {
+        "name": "Plaud: AI Note Taker",
+        "rating_count": 17897,
+        "star_rating": 4.9,
+        "price": 0.0,
+        "developer": "PLAUD LLC",
+        "category": "Productivity"
+      },
+      {
+        "name": "Minutes: AI Meeting Note Taker",
+        "rating_count": 13971,
+        "star_rating": 4.88,
+        "price": 0.0,
+        "developer": "Minutes AI",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Noted: Record & AI Transcribe",
+      "Summary - AI Note Taker",
+      "Plaud: AI Note Taker",
+      "Minutes: AI Meeting Note Taker",
+      "Wave AI Note Taker & Recorder",
+      "Voicenotes AI Notes & Meetings",
+      "AI Note Taker - Voice to Notes",
+      "OtterNotes AI: Audio to Text",
+      "Otter Transcribe Voice Notes",
+      "Transcribe - Speech to Text"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.72,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.95,
+    "supply_room": 0.26,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "tinnitus relief app",
@@ -9890,6 +10112,80 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "ai dictation app",
+    "keyword_normalized": "ai dictation",
+    "total_ratings_top10": 53648,
+    "max_rating_count": 26538,
+    "avg_rating_count": 7664,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.68,
+    "concentration_index": 0.574,
+    "dominant_category": "Productivity",
+    "category_focus": 0.86,
+    "free_count": 7,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 40,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "invideo AI: AI Video Generator",
+        "rating_count": 26538,
+        "star_rating": 4.58,
+        "price": 0.0,
+        "developer": "Invideo Inc",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Voice Memo Dictation to Text",
+        "rating_count": 11260,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "Christian Neubauer",
+        "category": "Productivity"
+      },
+      {
+        "name": "SpeakApp AI: Voice Notes",
+        "rating_count": 7398,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "VoicePop Inc.",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Aardvark AI: Dictate & Journal",
+      "invideo AI: AI Video Generator",
+      "Voice Memo Dictation to Text",
+      "SpeakApp AI: Voice Notes",
+      "Wispr Flow: AI Voice Keyboard",
+      "Transcribe AI: Voice to Text",
+      "AI Note Taker \u2013 VoicePen",
+      "Dictate\u207a",
+      "Speechify \u2013 Text to Speech PDF",
+      "Otter Transcribe Voice Notes"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.69,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.73,
+    "supply_room": 0.36,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.7,
+    "relevant_count": 7
+  },
+  {
     "keyword_original": "binaural beats app",
     "keyword_normalized": "binaural beats",
     "total_ratings_top10": 74472,
@@ -9962,6 +10258,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "visa photo app",
+    "keyword_normalized": "visa photo",
+    "total_ratings_top10": 83954,
+    "max_rating_count": 25136,
+    "avg_rating_count": 9328,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.56,
+    "concentration_index": 0.523,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.78,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 70,
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "ID Photo-Passport Photo maker",
+        "rating_count": 25136,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "\u82cf\u5a1f \u9648",
+        "category": "Productivity"
+      },
+      {
+        "name": "Passport Photo - ID Photo",
+        "rating_count": 20778,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Vitalij Schaefer",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Passport Photo - PhotoAiD",
+        "rating_count": 15175,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "Photo Aid",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Passport Photo Maker: ID, Visa",
+      "ID Photo-Passport Photo maker",
+      "Passport Photo - ID Photo",
+      "Passport Photo - PhotoAiD",
+      "ID Photo - Passport Photo App",
+      "Passport Photo - ID Photo App",
+      "Biometric Passport Photo",
+      "Passport Picture ID Photo Size",
+      "Passport Photo Maker (ID)",
+      "Passport Booth"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.68,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.92,
+    "supply_room": 0.39,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "allergy symptom tracker",
@@ -10343,6 +10713,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "ai subtitle generator",
+    "keyword_normalized": "ai subtitle generator",
+    "total_ratings_top10": 95490,
+    "max_rating_count": 33301,
+    "avg_rating_count": 10610,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.67,
+    "concentration_index": 0.592,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.67,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 30,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Captions: AI Edits Your Video",
+        "rating_count": 33301,
+        "star_rating": 4.74,
+        "price": 0.0,
+        "developer": "Captions, LLC (US)",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "invideo AI: AI Video Generator",
+        "rating_count": 26538,
+        "star_rating": 4.58,
+        "price": 0.0,
+        "developer": "Invideo Inc",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "VideoAI: AI Video Generator+",
+        "rating_count": 15792,
+        "star_rating": 4.18,
+        "price": 0.0,
+        "developer": "Koi Apps",
+        "category": "Graphics & Design"
+      }
+    ],
+    "top10_names": [
+      "AI Caption: Subtitle Generator",
+      "Captions AI Subtitle Generator",
+      "Subcap: Captions AI, Subtitles",
+      "Captions: AI Edits Your Video",
+      "invideo AI: AI Video Generator",
+      "VideoAI: AI Video Generator+",
+      "HeyGen: AI Video Generator",
+      "AI Song Generator : Vibe",
+      "Video Subtitle Generator",
+      "Auto Captions: Video Subtitles"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.67,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.98,
+    "supply_room": 0.35,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "horse hoof tracker",
@@ -11334,6 +11778,84 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.5,
     "relevant_count": 5
+  },
+  {
+    "keyword_original": "hidden tracker detector",
+    "keyword_normalized": "hidden tracker detector",
+    "total_ratings_top10": 14463,
+    "max_rating_count": 3950,
+    "avg_rating_count": 1807,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.48,
+    "concentration_index": 0.378,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 4,
+    "mature_apps_pct": 70,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Hidden Camera Detector FindSpy",
+        "rating_count": 3950,
+        "star_rating": 4.45,
+        "price": 0.0,
+        "developer": "Kain Suite Pte. Ltd.",
+        "category": "Utilities"
+      },
+      {
+        "name": "Device Detector: Wifi Analyzer",
+        "rating_count": 3562,
+        "star_rating": 4.44,
+        "price": 0.0,
+        "developer": "\u957f\u91d1 \u80e1",
+        "category": "Utilities"
+      },
+      {
+        "name": "Hidden Camera DETECTOR - WLAN",
+        "rating_count": 1842,
+        "star_rating": 4.37,
+        "price": 0.0,
+        "developer": "Davit Kipiani",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Hidden Camera Detector FindSpy",
+      "Hidden Camera DETECTOR - WLAN",
+      "Hidden Spy Camera Detector App",
+      "Find Camera - Hidden Detector",
+      "Hidden Camera Spy Detector Hid",
+      "Device Detector: Wifi Analyzer",
+      "SpyTracker: Wireless Detector",
+      "Hidden Tracker-WirelessTracker",
+      "tracker detect",
+      "AirGuard - Tracking Protection"
+    ],
+    "kills": [],
+    "wins": [
+      "sticky_tracker"
+    ],
+    "reasons": [
+      "win:sticky_tracker(x1.25)"
+    ],
+    "vibe_roi": 1.61,
+    "ltv": 1.8,
+    "payback_months": 11.55,
+    "roas_6mo": 0.78,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 9,
+    "paying_conv": 0.05,
+    "demand_signal": 0.38,
+    "supply_room": 0.41,
+    "boost_mult": 1.25,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "college comparison app",
@@ -16305,6 +16827,80 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "ai email writer",
+    "keyword_normalized": "ai email writer",
+    "total_ratings_top10": 17815,
+    "max_rating_count": 9538,
+    "avg_rating_count": 2226,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 4.72,
+    "concentration_index": 0.712,
+    "dominant_category": "Productivity",
+    "category_focus": 0.88,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 40,
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Friday AI Email Writer",
+        "rating_count": 9538,
+        "star_rating": 4.78,
+        "price": 0.0,
+        "developer": "Sekterra GmbH",
+        "category": "Productivity"
+      },
+      {
+        "name": "AI Writer: Email Letter Essay",
+        "rating_count": 6446,
+        "star_rating": 4.8,
+        "price": 0.0,
+        "developer": "Tuling Network Limited",
+        "category": "Reference"
+      },
+      {
+        "name": "AI Email Writer - Boss",
+        "rating_count": 899,
+        "star_rating": 4.81,
+        "price": 0.0,
+        "developer": "Curious Creators Co.",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Friday AI Email Writer",
+      "AI Writer: Email Letter Essay",
+      "AI Email Writer - Boss",
+      "AI Email Writer - aiMail",
+      "Email Writer : AI Email Writer",
+      "AI Email Writer - QuickMail",
+      "AI Email Writer - ComposeAI",
+      "AI Email Writer - Write E-mail",
+      "Grammarly: AI Keyboard & Notes",
+      "ChatGPT"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.4,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.42,
+    "supply_room": 0.44,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
+  },
+  {
     "keyword_original": "startup idea validator",
     "keyword_normalized": "startup idea validator",
     "total_ratings_top10": 19,
@@ -17146,6 +17742,80 @@
     "relevant_count": 6
   },
   {
+    "keyword_original": "video compressor app",
+    "keyword_normalized": "video compressor",
+    "total_ratings_top10": 51971,
+    "max_rating_count": 16416,
+    "avg_rating_count": 5197,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.69,
+    "concentration_index": 0.516,
+    "dominant_category": "Photo & Video",
+    "category_focus": 1.0,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 100,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Compress Videos & Resize Video",
+        "rating_count": 16416,
+        "star_rating": 4.69,
+        "price": 0.0,
+        "developer": "New Marketing Lab, Inc",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Video Compress - Shrink Videos",
+        "rating_count": 11266,
+        "star_rating": 4.48,
+        "price": 0.0,
+        "developer": "\u5a1c \u5f6d",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Video Compressor-Shrink videos",
+        "rating_count": 9643,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "\u4e3d\u8b5e \u725b",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Video Compressor-Shrink videos",
+      "Video compressor - save space",
+      "Video Compressor - HQ Compress",
+      "Video Converter and Compressor",
+      "Video Compressor & Reduce size",
+      "Video Compressor - resize all",
+      "Video Compressor : Save Space",
+      "Compress Videos & Resize Video",
+      "Video Compress - Shrink Videos",
+      "Video Compress - Shrink Vids"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.36,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.72,
+    "supply_room": 0.34,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "backpacking meal planner",
     "keyword_normalized": "backpacking meal planner",
     "total_ratings_top10": 355884,
@@ -17292,80 +17962,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
-  },
-  {
-    "keyword_original": "video compressor app",
-    "keyword_normalized": "video compressor",
-    "total_ratings_top10": 51971,
-    "max_rating_count": 16416,
-    "avg_rating_count": 5197,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.69,
-    "concentration_index": 0.516,
-    "dominant_category": "Photo & Video",
-    "category_focus": 1.0,
-    "free_count": 10,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 100,
-    "demand_level": "MODERATE",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Compress Videos & Resize Video",
-        "rating_count": 16416,
-        "star_rating": 4.69,
-        "price": 0.0,
-        "developer": "New Marketing Lab, Inc",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Video Compress - Shrink Videos",
-        "rating_count": 11266,
-        "star_rating": 4.48,
-        "price": 0.0,
-        "developer": "\u5a1c \u5f6d",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Video Compressor-Shrink videos",
-        "rating_count": 9643,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "\u4e3d\u8b5e \u725b",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "Video Compressor-Shrink videos",
-      "Video compressor - save space",
-      "Video Compressor - HQ Compress",
-      "Video Converter and Compressor",
-      "Video Compressor & Reduce size",
-      "Video Compressor - resize all",
-      "Video Compressor : Save Space",
-      "Compress Videos & Resize Video",
-      "Video Compress - Shrink Videos",
-      "Video Compress - Shrink Vids"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.36,
-    "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.72,
-    "supply_room": 0.34,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 1.0,
-    "relevant_count": 10
   },
   {
     "keyword_original": "advent calendar app",
@@ -17816,6 +18412,80 @@
     "relevant_count": 10
   },
   {
+    "keyword_original": "ai voice cleaner",
+    "keyword_normalized": "ai voice cleaner",
+    "total_ratings_top10": 382103,
+    "max_rating_count": 191490,
+    "avg_rating_count": 54586,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.59,
+    "concentration_index": 0.628,
+    "dominant_category": "Entertainment",
+    "category_focus": 0.43,
+    "free_count": 7,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 40,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "AI Cleaner: Clean Up Storage",
+        "rating_count": 191490,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "GRIMLAX TRADE, S.L.",
+        "category": "Utilities"
+      },
+      {
+        "name": "Parrot: Voice Generator AI App",
+        "rating_count": 136535,
+        "star_rating": 4.62,
+        "price": 0.0,
+        "developer": "parrot ai",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Voices AI: Change Your Voice",
+        "rating_count": 22358,
+        "star_rating": 4.55,
+        "price": 0.0,
+        "developer": "Fiedler Tech LLC",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "AI Cleaner: Clean Up Storage",
+      "Parrot: Voice Generator AI App",
+      "Voices AI: Change Your Voice",
+      "Revoice: AI Voice Changer",
+      "ElevenLabs: AI Voice Generator",
+      "AI Voice Clone Generator",
+      "AI Voice Changer\u30fbSound Effects",
+      "Voice Changer - Audio Effects",
+      "MyTunes : AI Music Generator",
+      "Fame Voice Generator & Changer"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.32,
+    "ltv": 1.5,
+    "payback_months": 11.36,
+    "roas_6mo": 0.53,
+    "arpu_est": 5.0,
+    "cpi_est": 2.84,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.19,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.7,
+    "relevant_count": 7
+  },
+  {
     "keyword_original": "trading card scanner",
     "keyword_normalized": "trading card scanner",
     "total_ratings_top10": 166095,
@@ -18036,6 +18706,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.9,
     "relevant_count": 9
+  },
+  {
+    "keyword_original": "color blindness test",
+    "keyword_normalized": "color blindness test",
+    "total_ratings_top10": 534,
+    "max_rating_count": 266,
+    "avg_rating_count": 89,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 4.41,
+    "concentration_index": 0.501,
+    "dominant_category": "Medical",
+    "category_focus": 0.67,
+    "free_count": 5,
+    "paid_count": 1,
+    "stale_apps": 5,
+    "mature_apps_pct": 70,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Color Guess - Vision Test",
+        "rating_count": 266,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "Kiplio",
+        "category": "Games"
+      },
+      {
+        "name": "Dehancer Color Test",
+        "rating_count": 93,
+        "star_rating": 4.95,
+        "price": 0.0,
+        "developer": "Dehancer L.L.C-FZ",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Color Blindness Checker",
+        "rating_count": 92,
+        "star_rating": 4.8,
+        "price": 0.0,
+        "developer": "Stefan Collette",
+        "category": "Medical"
+      }
+    ],
+    "top10_names": [
+      "Color Blindness Checker",
+      "Color Blindness Exam",
+      "Color Blindness Test Ishihara",
+      "Color Guess - Vision Test",
+      "Dehancer Color Test",
+      "Color Detector-Identifier,Test",
+      "PseudoChromatic ColorTest",
+      "I Love Hue",
+      "Eye Test & Vision Checker",
+      "Hue Perceive"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.31,
+    "ltv": 2.4,
+    "payback_months": 20.82,
+    "roas_6mo": 0.29,
+    "arpu_est": 8.0,
+    "cpi_est": 8.33,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.07,
+    "supply_room": 0.55,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
   },
   {
     "keyword_original": "offline maps app",
@@ -18862,6 +19606,80 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "sticker maker app",
+    "keyword_normalized": "sticker maker",
+    "total_ratings_top10": 541797,
+    "max_rating_count": 147908,
+    "avg_rating_count": 60199,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.67,
+    "concentration_index": 0.379,
+    "dominant_category": "Utilities",
+    "category_focus": 0.67,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Sticker.ly - Sticker Maker",
+        "rating_count": 147908,
+        "star_rating": 4.77,
+        "price": 0.0,
+        "developer": "NAVER Z Corporation",
+        "category": "Social Networking"
+      },
+      {
+        "name": "Top Sticker Maker - WaSticker",
+        "rating_count": 98535,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Aplicativos Legais",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Sticker Maker Studio",
+        "rating_count": 80127,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "Tamara Vardanyan",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Sticker.ly - Sticker Maker",
+      "Top Sticker Maker - WaSticker",
+      "Sticker Maker Studio",
+      "WhatSticker - Sticker Maker",
+      "Sticker Maker + Stickers",
+      "Sticker Maker !",
+      "WaSticker - Sticker Maker",
+      "AI Sticker Maker - Funny Memes",
+      "Sticker Maker Hub - WASticker",
+      "HelloBlink"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.28,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.31,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "origami instructions app",
     "keyword_normalized": "origami instructions",
     "total_ratings_top10": 4069,
@@ -18936,78 +19754,78 @@
     "relevant_count": 10
   },
   {
-    "keyword_original": "sticker maker app",
-    "keyword_normalized": "sticker maker",
-    "total_ratings_top10": 541797,
-    "max_rating_count": 147908,
-    "avg_rating_count": 60199,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 4.67,
-    "concentration_index": 0.379,
-    "dominant_category": "Utilities",
-    "category_focus": 0.67,
-    "free_count": 9,
+    "keyword_original": "ai pdf translator",
+    "keyword_normalized": "ai pdf translator",
+    "total_ratings_top10": 20760,
+    "max_rating_count": 17262,
+    "avg_rating_count": 2965,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.65,
+    "concentration_index": 0.807,
+    "dominant_category": "Productivity",
+    "category_focus": 0.71,
+    "free_count": 7,
     "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 90,
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
+    "stale_apps": 0,
+    "mature_apps_pct": 50,
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
     "incumbent": null,
     "top3": [
       {
-        "name": "Sticker.ly - Sticker Maker",
-        "rating_count": 147908,
+        "name": "WPS Office-AI Doc, PDF, Sheet",
+        "rating_count": 17262,
+        "star_rating": 4.78,
+        "price": 0.0,
+        "developer": "KINGSOFT OFFICE SOFTWARE CORPORATION LIMITED",
+        "category": "Productivity"
+      },
+      {
+        "name": "Naver Papago - AI Translator",
+        "rating_count": 3365,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "NAVER Corp.",
+        "category": "Reference"
+      },
+      {
+        "name": "PDF AI: Editor, Scanner, Chat",
+        "rating_count": 102,
         "star_rating": 4.77,
         "price": 0.0,
-        "developer": "NAVER Z Corporation",
-        "category": "Social Networking"
-      },
-      {
-        "name": "Top Sticker Maker - WaSticker",
-        "rating_count": 98535,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Aplicativos Legais",
-        "category": "Entertainment"
-      },
-      {
-        "name": "Sticker Maker Studio",
-        "rating_count": 80127,
-        "star_rating": 4.72,
-        "price": 0.0,
-        "developer": "Tamara Vardanyan",
-        "category": "Utilities"
+        "developer": "Yang Yang",
+        "category": "Productivity"
       }
     ],
     "top10_names": [
-      "Sticker.ly - Sticker Maker",
-      "Top Sticker Maker - WaSticker",
-      "Sticker Maker Studio",
-      "WhatSticker - Sticker Maker",
-      "Sticker Maker + Stickers",
-      "Sticker Maker !",
-      "WaSticker - Sticker Maker",
-      "AI Sticker Maker - Funny Memes",
-      "Sticker Maker Hub - WASticker",
-      "HelloBlink"
+      "PDF AI: Reader & Translator",
+      "PDF-AI Document Translator",
+      "AI PDF-PDF Translate & AI Chat",
+      "WPS Office-AI Doc, PDF, Sheet",
+      "Naver Papago - AI Translator",
+      "PDF AI: Editor, Scanner, Chat",
+      "Book Translator: EPUB & PDF",
+      "PDF Expert: Editor & Converter",
+      "Scanner Translator \u062a\u0631\u062c\u0645\u0647 \u0645\u062a\u0631\u062c\u0645",
+      "AI Scanner : Image to Text"
     ],
     "kills": [],
     "wins": [],
     "reasons": [],
     "vibe_roi": 1.28,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
     "retention_months": 6,
     "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.31,
+    "demand_signal": 0.46,
+    "supply_room": 0.35,
     "boost_mult": 1.0,
     "penalty_mult": 1.0,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
+    "intent_relevance": 0.7,
+    "relevant_count": 7
   },
   {
     "keyword_original": "sobriety counter app",
@@ -20505,6 +21323,80 @@
     "relevant_count": 10
   },
   {
+    "keyword_original": "projector remote app",
+    "keyword_normalized": "projector remote",
+    "total_ratings_top10": 172419,
+    "max_rating_count": 111978,
+    "avg_rating_count": 34483,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.12,
+    "concentration_index": 0.633,
+    "dominant_category": "Utilities",
+    "category_focus": 0.8,
+    "free_count": 5,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 70,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Universal Remote TV Control \u00b7",
+        "rating_count": 111978,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "BEGAMOB GLOBAL LIMITED",
+        "category": "Utilities"
+      },
+      {
+        "name": "Universal Remote TV Control",
+        "rating_count": 49059,
+        "star_rating": 4.28,
+        "price": 0.0,
+        "developer": "Desidari Holding Ltd.",
+        "category": "Utilities"
+      },
+      {
+        "name": "Universal Remote | Smart TV",
+        "rating_count": 11356,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "Level Clash Apps S.L.",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Projector: Mirroring & Remote",
+      "Universal Remote TV Control \u00b7",
+      "Universal Remote TV Control",
+      "Universal Remote | Smart TV",
+      "Smart Projector Control",
+      "vRemote",
+      "FzRemote Universal Control",
+      "PJ Quick Connection",
+      "InstaControl",
+      "DP Smart Control"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.23,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.28,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.5,
+    "relevant_count": 5
+  },
+  {
     "keyword_original": "aquarium planner app",
     "keyword_normalized": "aquarium planner",
     "total_ratings_top10": 18549,
@@ -20882,6 +21774,80 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "ai audio cleaner",
+    "keyword_normalized": "ai audio cleaner",
+    "total_ratings_top10": 244467,
+    "max_rating_count": 191490,
+    "avg_rating_count": 40744,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.54,
+    "concentration_index": 0.747,
+    "dominant_category": "Utilities",
+    "category_focus": 0.5,
+    "free_count": 6,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 50,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "AI Cleaner: Clean Up Storage",
+        "rating_count": 191490,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "GRIMLAX TRADE, S.L.",
+        "category": "Utilities"
+      },
+      {
+        "name": "Cleaner AI: Photo Cleanup",
+        "rating_count": 43490,
+        "star_rating": 4.58,
+        "price": 0.0,
+        "developer": "Codespace Dijital Hizmetler Anonim \u015eirketi",
+        "category": "Utilities"
+      },
+      {
+        "name": "AI CleanKit: Phone Cleaner Pro",
+        "rating_count": 8780,
+        "star_rating": 4.36,
+        "price": 0.0,
+        "developer": "STAR LIGHTHOUSE TECHNOLOGY PTE. LTD.",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "AI Cleaner: Clean Up Storage",
+      "Cleaner AI: Photo Cleanup",
+      "AI CleanKit: Phone Cleaner Pro",
+      "KLIN: AI Video Sound Cleaner",
+      "Audio Cleaner: Volume Booster",
+      "Podcast Cleaner AI Denoise Fix",
+      "SoundLab - Audio Editor",
+      "Noise Reducer - audio enhancer",
+      "ByeNoise - Video Audio Editor",
+      "Sonic | Water Eject"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.22,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.28,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
+  },
+  {
     "keyword_original": "kids allowance app",
     "keyword_normalized": "kids allowance",
     "total_ratings_top10": 524610,
@@ -21187,6 +22153,80 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "room scanner 3d",
+    "keyword_normalized": "room scanner 3d",
+    "total_ratings_top10": 75486,
+    "max_rating_count": 41412,
+    "avg_rating_count": 7548,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.56,
+    "concentration_index": 0.724,
+    "dominant_category": "Utilities",
+    "category_focus": 0.5,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 50,
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Polycam 3D Scans & Floor Plans",
+        "rating_count": 41412,
+        "star_rating": 4.67,
+        "price": 0.0,
+        "developer": "Polycam Inc.",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "3d Scanner App\u2122",
+        "rating_count": 15301,
+        "star_rating": 4.53,
+        "price": 0.0,
+        "developer": "AI Photo Editor Lab SRL",
+        "category": "Utilities"
+      },
+      {
+        "name": "Scaniverse - 3D Scanner",
+        "rating_count": 11258,
+        "star_rating": 4.79,
+        "price": 0.0,
+        "developer": "Niantic Spatial, Inc.",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "ScanSphere - Scan PDF 3D Room",
+      "Metaroom - 3D Room Scanner",
+      "Polycam 3D Scans & Floor Plans",
+      "3d Scanner App\u2122",
+      "Scaniverse - 3D Scanner",
+      "The Tape Measure & 3D Scanner",
+      "3D Snap: LiDAR Scanner & Ruler",
+      "AR Plan: Measure, Room Scanner",
+      "LiDAR Room Scanner: Floor Plan",
+      "Room Scanner - Easy Measure Rm"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.21,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.87,
+    "supply_room": 0.34,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "internet speed test app",
     "keyword_normalized": "internet speed test",
     "total_ratings_top10": 232585,
@@ -21333,80 +22373,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.6,
     "relevant_count": 6
-  },
-  {
-    "keyword_original": "room scanner 3d",
-    "keyword_normalized": "room scanner 3d",
-    "total_ratings_top10": 75486,
-    "max_rating_count": 41412,
-    "avg_rating_count": 7548,
-    "weak_apps_in_top10": 4,
-    "avg_star_rating": 4.56,
-    "concentration_index": 0.724,
-    "dominant_category": "Utilities",
-    "category_focus": 0.5,
-    "free_count": 10,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 50,
-    "demand_level": "HIGH",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Polycam 3D Scans & Floor Plans",
-        "rating_count": 41412,
-        "star_rating": 4.67,
-        "price": 0.0,
-        "developer": "Polycam Inc.",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "3d Scanner App\u2122",
-        "rating_count": 15301,
-        "star_rating": 4.53,
-        "price": 0.0,
-        "developer": "AI Photo Editor Lab SRL",
-        "category": "Utilities"
-      },
-      {
-        "name": "Scaniverse - 3D Scanner",
-        "rating_count": 11258,
-        "star_rating": 4.79,
-        "price": 0.0,
-        "developer": "Niantic Spatial, Inc.",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "ScanSphere - Scan PDF 3D Room",
-      "Metaroom - 3D Room Scanner",
-      "Polycam 3D Scans & Floor Plans",
-      "3d Scanner App\u2122",
-      "Scaniverse - 3D Scanner",
-      "The Tape Measure & 3D Scanner",
-      "3D Snap: LiDAR Scanner & Ruler",
-      "AR Plan: Measure, Room Scanner",
-      "LiDAR Room Scanner: Floor Plan",
-      "Room Scanner - Easy Measure Rm"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.21,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.87,
-    "supply_room": 0.34,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 1.0,
-    "relevant_count": 10
   },
   {
     "keyword_original": "obd2 scanner app",
@@ -23195,6 +24161,80 @@
     "relevant_count": 8
   },
   {
+    "keyword_original": "pixel test app",
+    "keyword_normalized": "pixel test",
+    "total_ratings_top10": 748562,
+    "max_rating_count": 737447,
+    "avg_rating_count": 149712,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.32,
+    "concentration_index": 0.794,
+    "dominant_category": "Utilities",
+    "category_focus": 0.6,
+    "free_count": 5,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 70,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Pixel Art \uff0d Color by Number",
+        "rating_count": 737447,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "Easybrain Ltd",
+        "category": "Games"
+      },
+      {
+        "name": "Divoom: Pixel art community",
+        "rating_count": 11111,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Divoom Lab (Hong Kong) International Co.,Limited",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Pixel Control",
+        "rating_count": 4,
+        "star_rating": 3.5,
+        "price": 0.0,
+        "developer": "safak helvaci",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Pixel Art \uff0d Color by Number",
+      "Divoom: Pixel art community",
+      "Pixel Control",
+      "ScreenTest - Dead Pixel Check",
+      "Dead Pixel Test - Screen Check",
+      "Opensignal Speed Test Ad Free",
+      "Check My Device : 40+ Tests",
+      "Speed Test+ -HW Test,Toolbox",
+      "Eye DPI Test",
+      "Phone repair screen color test"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.18,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.25,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.5,
+    "relevant_count": 5
+  },
+  {
     "keyword_original": "stamp collection tracker",
     "keyword_normalized": "stamp collection tracker",
     "total_ratings_top10": 4885,
@@ -24161,80 +25201,6 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "airport lounge finder",
-    "keyword_normalized": "airport lounge finder",
-    "total_ratings_top10": 36174,
-    "max_rating_count": 22190,
-    "avg_rating_count": 7234,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.69,
-    "concentration_index": 0.622,
-    "dominant_category": "Travel",
-    "category_focus": 1.0,
-    "free_count": 5,
-    "paid_count": 0,
-    "stale_apps": 0,
-    "mature_apps_pct": 70,
-    "demand_level": "MODERATE",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Visa Airport Companion",
-        "rating_count": 22190,
-        "star_rating": 4.84,
-        "price": 0.0,
-        "developer": "Dragon Pass Company Limited",
-        "category": "Travel"
-      },
-      {
-        "name": "Mastercard Airport Experiences",
-        "rating_count": 11864,
-        "star_rating": 4.72,
-        "price": 0.0,
-        "developer": "Lounge Key Ltd",
-        "category": "Travel"
-      },
-      {
-        "name": "MIA Airport Official",
-        "rating_count": 2100,
-        "star_rating": 4.78,
-        "price": 0.0,
-        "developer": "Miami-Dade County",
-        "category": "Travel"
-      }
-    ],
-    "top10_names": [
-      "Airport Lounge List",
-      "LoungeReview: Airport Lounges",
-      "Visa Airport Companion",
-      "Mastercard Airport Experiences",
-      "MIA Airport Official",
-      "LoungeKey",
-      "Priority Pass\u2122",
-      "Plane Finder \u2043 Flight Tracker",
-      "The Parking Spot\u00ae",
-      "Priority Pass+"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.14,
-    "ltv": 1.5,
-    "payback_months": 23.64,
-    "roas_6mo": 0.25,
-    "arpu_est": 5.0,
-    "cpi_est": 5.91,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.6,
-    "supply_room": 0.29,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.5,
-    "relevant_count": 5
-  },
-  {
     "keyword_original": "call blocker app",
     "keyword_normalized": "call blocker",
     "total_ratings_top10": 1223329,
@@ -24307,6 +25273,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "airport lounge finder",
+    "keyword_normalized": "airport lounge finder",
+    "total_ratings_top10": 36174,
+    "max_rating_count": 22190,
+    "avg_rating_count": 7234,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.69,
+    "concentration_index": 0.622,
+    "dominant_category": "Travel",
+    "category_focus": 1.0,
+    "free_count": 5,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 70,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Visa Airport Companion",
+        "rating_count": 22190,
+        "star_rating": 4.84,
+        "price": 0.0,
+        "developer": "Dragon Pass Company Limited",
+        "category": "Travel"
+      },
+      {
+        "name": "Mastercard Airport Experiences",
+        "rating_count": 11864,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "Lounge Key Ltd",
+        "category": "Travel"
+      },
+      {
+        "name": "MIA Airport Official",
+        "rating_count": 2100,
+        "star_rating": 4.78,
+        "price": 0.0,
+        "developer": "Miami-Dade County",
+        "category": "Travel"
+      }
+    ],
+    "top10_names": [
+      "Airport Lounge List",
+      "LoungeReview: Airport Lounges",
+      "Visa Airport Companion",
+      "Mastercard Airport Experiences",
+      "MIA Airport Official",
+      "LoungeKey",
+      "Priority Pass\u2122",
+      "Plane Finder \u2043 Flight Tracker",
+      "The Parking Spot\u00ae",
+      "Priority Pass+"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.14,
+    "ltv": 1.5,
+    "payback_months": 23.64,
+    "roas_6mo": 0.25,
+    "arpu_est": 5.0,
+    "cpi_est": 5.91,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.6,
+    "supply_room": 0.29,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.5,
+    "relevant_count": 5
   },
   {
     "keyword_original": "septic tank tracker",
@@ -24909,6 +25949,80 @@
     "relevant_count": 8
   },
   {
+    "keyword_original": "water eject phone",
+    "keyword_normalized": "water eject phone",
+    "total_ratings_top10": 61241,
+    "max_rating_count": 27910,
+    "avg_rating_count": 6804,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.68,
+    "concentration_index": 0.66,
+    "dominant_category": "Music",
+    "category_focus": 0.56,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 20,
+    "demand_level": "HIGH",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Water Eject \u2012 Speaker Cleaner",
+        "rating_count": 27910,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "Tiny Boom Ltd.",
+        "category": "Music"
+      },
+      {
+        "name": "Sonic | Water Eject",
+        "rating_count": 18566,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "VonBruno LLC",
+        "category": "Music"
+      },
+      {
+        "name": "Water Eject\u00b0",
+        "rating_count": 7313,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "Barbarossa Apps",
+        "category": "Music"
+      }
+    ],
+    "top10_names": [
+      "Water Eject \u2012 Speaker Cleaner",
+      "Sonic | Water Eject",
+      "Water Eject\u00b0",
+      "Water Eject \u06ec",
+      "Water Eject \u00b7",
+      "Water Eject - Clear Wave PRO",
+      "Water Eject",
+      "Water Eject Airpods: WaterDrop",
+      "Water Eject: Eject Water",
+      "Clear Wave"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.11,
+    "ltv": 1.2,
+    "payback_months": 15.0,
+    "roas_6mo": 0.4,
+    "arpu_est": 4.0,
+    "cpi_est": 3.0,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.78,
+    "supply_room": 0.32,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "cross stitch pattern",
     "keyword_normalized": "cross stitch pattern",
     "total_ratings_top10": 27375,
@@ -25129,80 +26243,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
-  },
-  {
-    "keyword_original": "water eject phone",
-    "keyword_normalized": "water eject phone",
-    "total_ratings_top10": 61241,
-    "max_rating_count": 27910,
-    "avg_rating_count": 6804,
-    "weak_apps_in_top10": 3,
-    "avg_star_rating": 4.68,
-    "concentration_index": 0.66,
-    "dominant_category": "Music",
-    "category_focus": 0.56,
-    "free_count": 9,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 20,
-    "demand_level": "HIGH",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Water Eject \u2012 Speaker Cleaner",
-        "rating_count": 27910,
-        "star_rating": 4.75,
-        "price": 0.0,
-        "developer": "Tiny Boom Ltd.",
-        "category": "Music"
-      },
-      {
-        "name": "Sonic | Water Eject",
-        "rating_count": 18566,
-        "star_rating": 4.72,
-        "price": 0.0,
-        "developer": "VonBruno LLC",
-        "category": "Music"
-      },
-      {
-        "name": "Water Eject\u00b0",
-        "rating_count": 7313,
-        "star_rating": 4.59,
-        "price": 0.0,
-        "developer": "Barbarossa Apps",
-        "category": "Music"
-      }
-    ],
-    "top10_names": [
-      "Water Eject \u2012 Speaker Cleaner",
-      "Sonic | Water Eject",
-      "Water Eject\u00b0",
-      "Water Eject \u06ec",
-      "Water Eject \u00b7",
-      "Water Eject - Clear Wave PRO",
-      "Water Eject",
-      "Water Eject Airpods: WaterDrop",
-      "Water Eject: Eject Water",
-      "Clear Wave"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.11,
-    "ltv": 1.2,
-    "payback_months": 15.0,
-    "roas_6mo": 0.4,
-    "arpu_est": 4.0,
-    "cpi_est": 3.0,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.78,
-    "supply_room": 0.32,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
   },
   {
     "keyword_original": "medical id app",
@@ -25799,6 +26839,84 @@
     "penalty_mult": 1.0,
     "intent_relevance": 1.0,
     "relevant_count": 10
+  },
+  {
+    "keyword_original": "ai document reader",
+    "keyword_normalized": "ai document reader",
+    "total_ratings_top10": 26235,
+    "max_rating_count": 18956,
+    "avg_rating_count": 8745,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.78,
+    "concentration_index": 0.463,
+    "dominant_category": "Business",
+    "category_focus": 0.67,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 90,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "SwiftScan AI Document Scanner",
+        "rating_count": 18956,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "Maple Media Apps, LLC",
+        "category": "Utilities"
+      },
+      {
+        "name": "PDF Scanner AI: Scan Documents",
+        "rating_count": 6562,
+        "star_rating": 4.71,
+        "price": 0.0,
+        "developer": "Cacao Mobile",
+        "category": "Business"
+      },
+      {
+        "name": "Atlas AI: PDF Document Scanner",
+        "rating_count": 717,
+        "star_rating": 4.87,
+        "price": 0.0,
+        "developer": "Atlas Documents LLC",
+        "category": "Business"
+      }
+    ],
+    "top10_names": [
+      "SwiftScan AI Document Scanner",
+      "PDF Scanner AI: Scan Documents",
+      "Atlas AI: PDF Document Scanner",
+      "Adobe Acrobat Reader: Sign PDF",
+      "Voice Aloud Reader",
+      "WPS Office-AI Doc, PDF, Sheet",
+      "AI Assistant: Images & Writing",
+      "Google Docs",
+      "TurboScan\u2122 Pro: PDF scanner",
+      "FineReader: PDF Scanner & OCR"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 1.09,
+    "ltv": 3.0,
+    "payback_months": 15.6,
+    "roas_6mo": 0.38,
+    "arpu_est": 10.0,
+    "cpi_est": 7.8,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.51,
+    "supply_room": 0.32,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
   },
   {
     "keyword_original": "cold plunge timer",
@@ -26753,6 +27871,80 @@
     "roas_6mo": 0.44,
     "arpu_est": 4.0,
     "cpi_est": 2.74,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.19,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
+    "keyword_original": "tv remote universal",
+    "keyword_normalized": "tv remote universal",
+    "total_ratings_top10": 978130,
+    "max_rating_count": 556404,
+    "avg_rating_count": 97813,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.47,
+    "concentration_index": 0.619,
+    "dominant_category": "Utilities",
+    "category_focus": 0.9,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 60,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "TV Remote - Universal Control",
+        "rating_count": 556404,
+        "star_rating": 4.44,
+        "price": 0.0,
+        "developer": "EVOLLY.APP",
+        "category": "Utilities"
+      },
+      {
+        "name": "Universal Remote TV Control \u00b7",
+        "rating_count": 111978,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "BEGAMOB GLOBAL LIMITED",
+        "category": "Utilities"
+      },
+      {
+        "name": "Universal TV Remote \u00b7",
+        "rating_count": 76012,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "KRAFTWERK 9 LTD",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "TV Remote - Universal Control",
+      "Universal Remote TV Control \u00b7",
+      "Universal TV Remote \u00b7",
+      "Universal TV Remote Control\u30fb",
+      "TV Remote - Universal",
+      "Universal Remote TV Control",
+      "Universal TV Remote\u2122 Control",
+      "Universal TV Remote Control\uff0a",
+      "TV Remote Universal",
+      "TV Remote Control - Flicky"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.06,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
     "retention_months": 6,
     "paying_conv": 0.05,
     "demand_signal": 1.0,
@@ -28406,78 +29598,78 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "anger management app",
-    "keyword_normalized": "anger management",
-    "total_ratings_top10": 901,
-    "max_rating_count": 657,
-    "avg_rating_count": 180,
-    "weak_apps_in_top10": 5,
-    "avg_star_rating": 4.24,
-    "concentration_index": 0.668,
-    "dominant_category": "Health & Fitness",
-    "category_focus": 0.8,
+    "keyword_original": "math keyboard app",
+    "keyword_normalized": "math keyboard",
+    "total_ratings_top10": 33457,
+    "max_rating_count": 25998,
+    "avg_rating_count": 4182,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 3.87,
+    "concentration_index": 0.816,
+    "dominant_category": "Utilities",
+    "category_focus": 0.62,
     "free_count": 5,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 70,
-    "demand_level": "VERY LOW",
-    "supply_level": "VERY LOW",
+    "paid_count": 3,
+    "stale_apps": 7,
+    "mature_apps_pct": 80,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
     "incumbent": null,
     "top3": [
       {
-        "name": "Quit Anger: Anger Management",
-        "rating_count": 657,
-        "star_rating": 4.63,
+        "name": "Symbolab - AI Math Solver App",
+        "rating_count": 25998,
+        "star_rating": 4.57,
         "price": 0.0,
-        "developer": "Akash Jain",
-        "category": "Health & Fitness"
+        "developer": "Symbolab",
+        "category": "Education"
       },
       {
-        "name": "Anger Test (Clinical)",
-        "rating_count": 202,
-        "star_rating": 4.71,
+        "name": "Symbol Keyboard - 2000+ Signs",
+        "rating_count": 7274,
+        "star_rating": 4.64,
         "price": 0.0,
-        "developer": "Inquiry Health LLC",
-        "category": "Medical"
+        "developer": "\u5c71 \u949f",
+        "category": "Productivity"
       },
       {
-        "name": "AIMS for Anger Management",
-        "rating_count": 32,
-        "star_rating": 3.34,
+        "name": "SciKey - Scientific Keyboard",
+        "rating_count": 70,
+        "star_rating": 2.96,
         "price": 0.0,
-        "developer": "US Department of Veterans Affairs (VA)",
-        "category": "Health & Fitness"
+        "developer": "Shazino",
+        "category": "Utilities"
       }
     ],
     "top10_names": [
-      "Quit Anger: Anger Management",
-      "AIMS for Anger Management",
-      "Calmify: Anger Management",
-      "Anger Test (Clinical)",
-      "Flush It: Anger venting app",
-      "AngerKit",
-      "Headspace: Meditation & Sleep",
-      "MindDoc: Mental Health Support",
-      "Ahead: Emotional Companion",
-      "Stress Relief & Relaxing Games"
+      "Nuten : The Math Keyboard",
+      "The Math Keyboard",
+      "Math Keyboard For Equations",
+      "Math keyboard - Calcuboard",
+      "Symbolab - AI Math Solver App",
+      "Symbol Keyboard - 2000+ Signs",
+      "SciKey - Scientific Keyboard",
+      "Numboard \u2013 Scientific Keyboard",
+      "Symbol Keyboard+",
+      "Desmos Graphing Calculator"
     ],
     "kills": [],
     "wins": [],
     "reasons": [],
     "vibe_roi": 1.02,
-    "ltv": 2.1,
-    "payback_months": 12.57,
-    "roas_6mo": 0.48,
-    "arpu_est": 7.0,
-    "cpi_est": 4.4,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
     "retention_months": 6,
     "paying_conv": 0.05,
-    "demand_signal": 0.09,
-    "supply_room": 0.42,
+    "demand_signal": 0.58,
+    "supply_room": 0.39,
     "boost_mult": 1.0,
     "penalty_mult": 1.0,
-    "intent_relevance": 0.5,
-    "relevant_count": 5
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "battery capacity tester",
@@ -28552,6 +29744,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 1.0,
     "relevant_count": 10
+  },
+  {
+    "keyword_original": "anger management app",
+    "keyword_normalized": "anger management",
+    "total_ratings_top10": 901,
+    "max_rating_count": 657,
+    "avg_rating_count": 180,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.24,
+    "concentration_index": 0.668,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.8,
+    "free_count": 5,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 70,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Quit Anger: Anger Management",
+        "rating_count": 657,
+        "star_rating": 4.63,
+        "price": 0.0,
+        "developer": "Akash Jain",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Anger Test (Clinical)",
+        "rating_count": 202,
+        "star_rating": 4.71,
+        "price": 0.0,
+        "developer": "Inquiry Health LLC",
+        "category": "Medical"
+      },
+      {
+        "name": "AIMS for Anger Management",
+        "rating_count": 32,
+        "star_rating": 3.34,
+        "price": 0.0,
+        "developer": "US Department of Veterans Affairs (VA)",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Quit Anger: Anger Management",
+      "AIMS for Anger Management",
+      "Calmify: Anger Management",
+      "Anger Test (Clinical)",
+      "Flush It: Anger venting app",
+      "AngerKit",
+      "Headspace: Meditation & Sleep",
+      "MindDoc: Mental Health Support",
+      "Ahead: Emotional Companion",
+      "Stress Relief & Relaxing Games"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.02,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.09,
+    "supply_room": 0.42,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.5,
+    "relevant_count": 5
   },
   {
     "keyword_original": "scoreboard app simple",
@@ -28700,6 +29966,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.5,
     "relevant_count": 5
+  },
+  {
+    "keyword_original": "linkedin headshot app",
+    "keyword_normalized": "linkedin headshot",
+    "total_ratings_top10": 9527,
+    "max_rating_count": 5960,
+    "avg_rating_count": 1190,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 4.03,
+    "concentration_index": 0.728,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.88,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 20,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "AI Headshot Photo Generator",
+        "rating_count": 5960,
+        "star_rating": 4.25,
+        "price": 0.0,
+        "developer": "Funny Media Labs, S.L.",
+        "category": "Graphics & Design"
+      },
+      {
+        "name": "Headshot Pro AI: Perfect Photo",
+        "rating_count": 2249,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "MXY Ventures Private Limited",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Headshot Pro: Business Photos",
+        "rating_count": 975,
+        "star_rating": 3.06,
+        "price": 0.0,
+        "developer": "maile",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "AI Headshot Photo Generator",
+      "Headshot Pro AI: Perfect Photo",
+      "Headshot Pro: Business Photos",
+      "Dr. Headshot: Corporate Photos",
+      "AI Headshot Generator: HeadAI",
+      "AI Professional Headshot - HS9",
+      "PhotoToHeadshot - AI headshots",
+      "AIHeadshot for LinkedIn",
+      "Photoleap: AI Photo Generator",
+      "Momo: AI Photo & Video Maker"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.01,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.31,
+    "supply_room": 0.44,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "food expiration tracker",
@@ -29834,6 +31174,80 @@
     "relevant_count": 6
   },
   {
+    "keyword_original": "altimeter app",
+    "keyword_normalized": "altimeter",
+    "total_ratings_top10": 24335,
+    "max_rating_count": 9109,
+    "avg_rating_count": 3041,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.64,
+    "concentration_index": 0.549,
+    "dominant_category": "Navigation",
+    "category_focus": 0.62,
+    "free_count": 7,
+    "paid_count": 1,
+    "stale_apps": 6,
+    "mature_apps_pct": 100,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Barometer & Altimeter & Thermo",
+        "rating_count": 9109,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "ExaMobile S.A.",
+        "category": "Utilities"
+      },
+      {
+        "name": "My Altitude: GPS Altimeter",
+        "rating_count": 8443,
+        "star_rating": 4.63,
+        "price": 0.0,
+        "developer": "Gaurav Babbar",
+        "category": "Navigation"
+      },
+      {
+        "name": "Compass & Altimeter",
+        "rating_count": 2372,
+        "star_rating": 4.6,
+        "price": 0.0,
+        "developer": "\u660e\u529b \u738b",
+        "category": "Navigation"
+      }
+    ],
+    "top10_names": [
+      "Barometer & Altimeter & Thermo",
+      "My Altitude: GPS Altimeter",
+      "Compass & Altimeter",
+      "Altimeter GPS & Barometer",
+      "Altimeter \u221e Current Altitude",
+      "Altimeter for Aviators",
+      "Realtime Altimeter",
+      "Altimeter+",
+      "My Altitude",
+      "Current Altitude"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.98,
+    "ltv": 1.2,
+    "payback_months": 13.7,
+    "roas_6mo": 0.44,
+    "arpu_est": 4.0,
+    "cpi_est": 2.74,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.49,
+    "supply_room": 0.43,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
+  },
+  {
     "keyword_original": "handicap parking finder",
     "keyword_normalized": "handicap parking finder",
     "total_ratings_top10": 624766,
@@ -29980,80 +31394,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.9,
     "relevant_count": 9
-  },
-  {
-    "keyword_original": "altimeter app",
-    "keyword_normalized": "altimeter",
-    "total_ratings_top10": 24335,
-    "max_rating_count": 9109,
-    "avg_rating_count": 3041,
-    "weak_apps_in_top10": 4,
-    "avg_star_rating": 4.64,
-    "concentration_index": 0.549,
-    "dominant_category": "Navigation",
-    "category_focus": 0.62,
-    "free_count": 7,
-    "paid_count": 1,
-    "stale_apps": 6,
-    "mature_apps_pct": 100,
-    "demand_level": "MODERATE",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Barometer & Altimeter & Thermo",
-        "rating_count": 9109,
-        "star_rating": 4.76,
-        "price": 0.0,
-        "developer": "ExaMobile S.A.",
-        "category": "Utilities"
-      },
-      {
-        "name": "My Altitude: GPS Altimeter",
-        "rating_count": 8443,
-        "star_rating": 4.63,
-        "price": 0.0,
-        "developer": "Gaurav Babbar",
-        "category": "Navigation"
-      },
-      {
-        "name": "Compass & Altimeter",
-        "rating_count": 2372,
-        "star_rating": 4.6,
-        "price": 0.0,
-        "developer": "\u660e\u529b \u738b",
-        "category": "Navigation"
-      }
-    ],
-    "top10_names": [
-      "Barometer & Altimeter & Thermo",
-      "My Altitude: GPS Altimeter",
-      "Compass & Altimeter",
-      "Altimeter GPS & Barometer",
-      "Altimeter \u221e Current Altitude",
-      "Altimeter for Aviators",
-      "Realtime Altimeter",
-      "Altimeter+",
-      "My Altitude",
-      "Current Altitude"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 0.98,
-    "ltv": 1.2,
-    "payback_months": 13.7,
-    "roas_6mo": 0.44,
-    "arpu_est": 4.0,
-    "cpi_est": 2.74,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.49,
-    "supply_room": 0.43,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
   },
   {
     "keyword_original": "reiki practice timer",
@@ -30662,6 +32002,84 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "nutrition label scanner",
+    "keyword_normalized": "nutrition label scanner",
+    "total_ratings_top10": 84403,
+    "max_rating_count": 77476,
+    "avg_rating_count": 21100,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.73,
+    "concentration_index": 0.708,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 1.0,
+    "free_count": 4,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 70,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Fooducate: Nutrition Coach",
+        "rating_count": 77476,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "Maple Media Apps, LLC",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Nutrition Tracker: Foodnoms",
+        "rating_count": 6778,
+        "star_rating": 4.74,
+        "price": 0.0,
+        "developer": "Algebraic Labs, LLC",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Label AI: Food & Cosmetic Scan",
+        "rating_count": 145,
+        "star_rating": 4.52,
+        "price": 0.0,
+        "developer": "AutoTasker",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Fooducate: Nutrition Coach",
+      "Nutrition Tracker: Foodnoms",
+      "Label AI: Food & Cosmetic Scan",
+      "Munched: Nutrition Scanner",
+      "Calorie Counter - MyNetDiary",
+      "Bobby Approved - Food Scanner",
+      "Yuka - Food & Cosmetic Scanner",
+      "AI Calorie Tracker by Yazio",
+      "OneLabel - Product Scanner",
+      "Open Food Facts - Product Scan"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.4)"
+    ],
+    "vibe_roi": 0.96,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.92,
+    "supply_room": 0.25,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.4,
+    "relevant_count": 4
+  },
+  {
     "keyword_original": "referee whistle app",
     "keyword_normalized": "referee whistle",
     "total_ratings_top10": 19443,
@@ -30808,84 +32226,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.6,
     "relevant_count": 6
-  },
-  {
-    "keyword_original": "nutrition label scanner",
-    "keyword_normalized": "nutrition label scanner",
-    "total_ratings_top10": 84403,
-    "max_rating_count": 77476,
-    "avg_rating_count": 21100,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.73,
-    "concentration_index": 0.708,
-    "dominant_category": "Health & Fitness",
-    "category_focus": 1.0,
-    "free_count": 4,
-    "paid_count": 0,
-    "stale_apps": 0,
-    "mature_apps_pct": 70,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Fooducate: Nutrition Coach",
-        "rating_count": 77476,
-        "star_rating": 4.65,
-        "price": 0.0,
-        "developer": "Maple Media Apps, LLC",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Nutrition Tracker: Foodnoms",
-        "rating_count": 6778,
-        "star_rating": 4.74,
-        "price": 0.0,
-        "developer": "Algebraic Labs, LLC",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Label AI: Food & Cosmetic Scan",
-        "rating_count": 145,
-        "star_rating": 4.52,
-        "price": 0.0,
-        "developer": "AutoTasker",
-        "category": "Health & Fitness"
-      }
-    ],
-    "top10_names": [
-      "Fooducate: Nutrition Coach",
-      "Nutrition Tracker: Foodnoms",
-      "Label AI: Food & Cosmetic Scan",
-      "Munched: Nutrition Scanner",
-      "Calorie Counter - MyNetDiary",
-      "Bobby Approved - Food Scanner",
-      "Yuka - Food & Cosmetic Scanner",
-      "AI Calorie Tracker by Yazio",
-      "OneLabel - Product Scanner",
-      "Open Food Facts - Product Scan"
-    ],
-    "kills": [
-      "weak_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:weak_intent(rel=0.4)"
-    ],
-    "vibe_roi": 0.96,
-    "ltv": 2.1,
-    "payback_months": 12.57,
-    "roas_6mo": 0.48,
-    "arpu_est": 7.0,
-    "cpi_est": 4.4,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.92,
-    "supply_room": 0.25,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.5,
-    "intent_relevance": 0.4,
-    "relevant_count": 4
   },
   {
     "keyword_original": "grounding exercises app",
@@ -31112,6 +32452,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.5,
     "relevant_count": 5
+  },
+  {
+    "keyword_original": "ai pdf summarizer",
+    "keyword_normalized": "ai pdf summarizer",
+    "total_ratings_top10": 271,
+    "max_rating_count": 258,
+    "avg_rating_count": 27,
+    "weak_apps_in_top10": 10,
+    "avg_star_rating": 4.28,
+    "concentration_index": 0.89,
+    "dominant_category": "Productivity",
+    "category_focus": 0.8,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 20,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Summary AI: TLDR Summarizer",
+        "rating_count": 258,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "KREATIVITY APPS SRL",
+        "category": "Productivity"
+      },
+      {
+        "name": "PDF AI: PDF Summarizer & Chat",
+        "rating_count": 13,
+        "star_rating": 4.08,
+        "price": 0.0,
+        "developer": "Foyer Tech, Inc",
+        "category": "Productivity"
+      },
+      {
+        "name": "AI PDF Summarizer \u2013 Textara",
+        "rating_count": 0,
+        "star_rating": 0.0,
+        "price": 0.0,
+        "developer": "Manuel Martinez Gomez",
+        "category": "Education"
+      }
+    ],
+    "top10_names": [
+      "PDF AI: PDF Summarizer & Chat",
+      "AI PDF Summarizer \u2013 Textara",
+      "AI PDF Summarizer: Chat PDF",
+      "AI PDF Summarizer & Doc Chat",
+      "ChatPDF: AI PDF Summarizer",
+      "AI PDF: Scan Summarize Chat",
+      "Summary AI: TLDR Summarizer",
+      "Pdf Summerizer: AI Summerize",
+      "PDFwow \u2014 AI PDF Editor",
+      "ChatPDF AI: Scan & Summarize"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.95,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.05,
+    "supply_room": 0.55,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
   },
   {
     "keyword_original": "hiking trail tracker",
@@ -34590,6 +36004,80 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "magic 8 ball app",
+    "keyword_normalized": "magic 8 ball",
+    "total_ratings_top10": 17919,
+    "max_rating_count": 14709,
+    "avg_rating_count": 1991,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 4.43,
+    "concentration_index": 0.807,
+    "dominant_category": "Games",
+    "category_focus": 0.56,
+    "free_count": 8,
+    "paid_count": 1,
+    "stale_apps": 4,
+    "mature_apps_pct": 90,
+    "demand_level": "MODERATE",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Magic 8 bit 8 ball",
+        "rating_count": 14709,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "Richard Shilton",
+        "category": "Games"
+      },
+      {
+        "name": "Magic 8 Ball x Destiny Fantasy",
+        "rating_count": 1438,
+        "star_rating": 4.45,
+        "price": 0.0,
+        "developer": "Mobilegion Yaz\u0131l\u0131m Tasar\u0131m Ve Bilisim Sanayi Ticaret Limited Sirketi",
+        "category": "Games"
+      },
+      {
+        "name": "Magic 8 Ball Fortune Teller",
+        "rating_count": 1027,
+        "star_rating": 4.68,
+        "price": 0.0,
+        "developer": "Oleg Poroshin",
+        "category": "Lifestyle"
+      }
+    ],
+    "top10_names": [
+      "Magic 8 bit 8 ball",
+      "Magic 8 Ball x Destiny Fantasy",
+      "Magic 8 Ball Fortune Teller",
+      "Modern Magic Ball",
+      "Magic 8 Ball 3D",
+      "Magic Ball: Fortune Teller 3D",
+      "Magic Ball 8: Crystal Ball",
+      "Magic (8) Ball",
+      "AI8: AI Magic 8 Ball",
+      "Lucky Wheel - Decision Maker"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.88,
+    "ltv": 1.2,
+    "payback_months": 13.6,
+    "roas_6mo": 0.44,
+    "arpu_est": 4.0,
+    "cpi_est": 2.72,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.42,
+    "supply_room": 0.4,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "horse training log",
     "keyword_normalized": "horse training log",
     "total_ratings_top10": 156787,
@@ -35952,6 +37440,84 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "hearing test frequency",
+    "keyword_normalized": "hearing test frequency",
+    "total_ratings_top10": 43507,
+    "max_rating_count": 42638,
+    "avg_rating_count": 4834,
+    "weak_apps_in_top10": 8,
+    "avg_star_rating": 4.51,
+    "concentration_index": 0.878,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.67,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 70,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Mimi Hearing Test",
+        "rating_count": 42638,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "Mimi Hearing Technologies",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "AudioCardio Hearing & Tinnitus",
+        "rating_count": 338,
+        "star_rating": 4.23,
+        "price": 0.0,
+        "developer": "Audio Cardio, Inc",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Hearing Test & Ear Age Test",
+        "rating_count": 198,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Yuichi Sakashita",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Mimi Hearing Test",
+      "AudioCardio Hearing & Tinnitus",
+      "Hearing Test & Ear Age Test",
+      "Tone Generator: Frequency App",
+      "Sennheiser Hearing Test",
+      "Sound Scouts Hearing Test",
+      "ListenUp Hearing Test",
+      "Tinnitus Relief: Hearing Test",
+      "Hearing Test+ Audiogram",
+      "Decibel X PRO: dBA Noise Meter"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.84,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.66,
+    "supply_room": 0.46,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "news summary app",
@@ -38158,6 +39724,84 @@
     "relevant_count": 4
   },
   {
+    "keyword_original": "ai research assistant",
+    "keyword_normalized": "ai research assistant",
+    "total_ratings_top10": 202456,
+    "max_rating_count": 195749,
+    "avg_rating_count": 50614,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.71,
+    "concentration_index": 0.728,
+    "dominant_category": "Productivity",
+    "category_focus": 0.75,
+    "free_count": 4,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 40,
+    "demand_level": "HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Chatbot AI Assistant - Genie",
+        "rating_count": 195749,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "APPNATION YAZILIM HIZMETLERI TICARET ANONIM SIRKETI",
+        "category": "Productivity"
+      },
+      {
+        "name": "Comet - AI Browser & Assistant",
+        "rating_count": 4637,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "Perplexity AI, Inc.",
+        "category": "Utilities"
+      },
+      {
+        "name": "ChatLLM: AI Assistant & Chat",
+        "rating_count": 2039,
+        "star_rating": 4.82,
+        "price": 0.0,
+        "developer": "Abacus.AI",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Chunk: AI Research Assistant",
+      "Chatbot AI Assistant - Genie",
+      "Comet - AI Browser & Assistant",
+      "ChatLLM: AI Assistant & Chat",
+      "Grok - AI Chat & Video",
+      "Perplexity - AI Search & Chat",
+      "Chat Smith: AI Chatbot & Agent",
+      "Manus - AI Agent & Automation",
+      "You.com - Enterprise grade AI",
+      "Claude by Anthropic"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.4)"
+    ],
+    "vibe_roi": 0.79,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.19,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.4,
+    "relevant_count": 4
+  },
+  {
     "keyword_original": "matcha preparation guide",
     "keyword_normalized": "matcha preparation guide",
     "total_ratings_top10": 236,
@@ -38549,6 +40193,80 @@
     "relevant_count": 8
   },
   {
+    "keyword_original": "nfc tag reader",
+    "keyword_normalized": "nfc tag reader",
+    "total_ratings_top10": 7260,
+    "max_rating_count": 6486,
+    "avg_rating_count": 907,
+    "weak_apps_in_top10": 7,
+    "avg_star_rating": 4.26,
+    "concentration_index": 0.824,
+    "dominant_category": "Utilities",
+    "category_focus": 0.75,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 50,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "NFC.cool Tools Tag Reader",
+        "rating_count": 6486,
+        "star_rating": 4.48,
+        "price": 0.0,
+        "developer": "Nicolo Stanciu",
+        "category": "Utilities"
+      },
+      {
+        "name": "NFC Reader & Scanner\u3164",
+        "rating_count": 411,
+        "star_rating": 4.48,
+        "price": 0.0,
+        "developer": "Sarmite Balodis",
+        "category": "Business"
+      },
+      {
+        "name": "NFC Tag Manager",
+        "rating_count": 154,
+        "star_rating": 4.68,
+        "price": 0.0,
+        "developer": "Bruno Goncalves",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "NFC.cool Tools Tag Reader",
+      "NFC Tools: Tag Reader,Writer\u3164",
+      "NFC Tools: Tag Reader, Writer",
+      "NFC Tag Reader and Writer",
+      "NFC Tag Reader & Writer Tools",
+      "NFC Reader & Scanner\u3164",
+      "NFC Tag Manager",
+      "NFC Reader & Writer Tools",
+      "NFC Tools",
+      "NFC Tap"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.77,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.27,
+    "supply_room": 0.44,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
+  },
+  {
     "keyword_original": "dopamine detox timer",
     "keyword_normalized": "dopamine detox timer",
     "total_ratings_top10": 425,
@@ -38923,6 +40641,80 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "crystal ball app",
+    "keyword_normalized": "crystal ball",
+    "total_ratings_top10": 1905,
+    "max_rating_count": 1438,
+    "avg_rating_count": 317,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.24,
+    "concentration_index": 0.703,
+    "dominant_category": "Entertainment",
+    "category_focus": 0.5,
+    "free_count": 5,
+    "paid_count": 1,
+    "stale_apps": 6,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Magic 8 Ball x Destiny Fantasy",
+        "rating_count": 1438,
+        "star_rating": 4.45,
+        "price": 0.0,
+        "developer": "Mobilegion Yaz\u0131l\u0131m Tasar\u0131m Ve Bilisim Sanayi Ticaret Limited Sirketi",
+        "category": "Games"
+      },
+      {
+        "name": "Magic Crystal Ball: Divination",
+        "rating_count": 294,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Carlos Colado Molina",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Magic Ball 8: Crystal Ball",
+        "rating_count": 86,
+        "star_rating": 4.36,
+        "price": 0.0,
+        "developer": "Eyermin Colon Sanchez",
+        "category": "Entertainment"
+      }
+    ],
+    "top10_names": [
+      "Magic Crystal Ball: Divination",
+      "Magic Ball 8: Crystal Ball",
+      "Crystal Ball",
+      "Magic Crystal Ball Photo Frame",
+      "Magic 8 Ball x Destiny Fantasy",
+      "Crystal Oracle",
+      "CrystaBall Predictions",
+      "Tarot Card Reading & Astrology",
+      "Psychic 4U - Fortune teller",
+      "iPredict - The Funny Fortune Teller"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.76,
+    "ltv": 1.5,
+    "payback_months": 11.36,
+    "roas_6mo": 0.53,
+    "arpu_est": 5.0,
+    "cpi_est": 2.84,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.14,
+    "supply_room": 0.4,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
+  },
+  {
     "keyword_original": "protractor app",
     "keyword_normalized": "protractor",
     "total_ratings_top10": 11535,
@@ -39291,6 +41083,84 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "ascii art keyboard",
+    "keyword_normalized": "ascii art keyboard",
+    "total_ratings_top10": 464297,
+    "max_rating_count": 464047,
+    "avg_rating_count": 116074,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.67,
+    "concentration_index": 0.75,
+    "dominant_category": "Entertainment",
+    "category_focus": 0.5,
+    "free_count": 4,
+    "paid_count": 0,
+    "stale_apps": 6,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Fonts Art: Keyboard for iPhone",
+        "rating_count": 464047,
+        "star_rating": 4.6,
+        "price": 0.0,
+        "developer": "AIBY",
+        "category": "Utilities"
+      },
+      {
+        "name": "Ascii Art Keyboard",
+        "rating_count": 216,
+        "star_rating": 4.56,
+        "price": 0.0,
+        "developer": "Jewelsapps S. L.",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Image to ASCII Art",
+        "rating_count": 32,
+        "star_rating": 4.53,
+        "price": 0.0,
+        "developer": "Liam Rosenfeld",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Ascii Art Keyboard",
+      "Fonts Art: Keyboard for iPhone",
+      "Image to ASCII Art",
+      "Monapo for ASCII Art",
+      "Symbol Keyboard - 2000+ Signs",
+      "Fonts - AI Stickers",
+      "Emoji for Message - Text Maker",
+      "Symbol Pad & Icons for Texting",
+      "Text Faces for Texting",
+      "Emoticon Dictionary"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.4)"
+    ],
+    "vibe_roi": 0.76,
+    "ltv": 1.5,
+    "payback_months": 11.36,
+    "roas_6mo": 0.53,
+    "arpu_est": 5.0,
+    "cpi_est": 2.84,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.28,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.4,
+    "relevant_count": 4
   },
   {
     "keyword_original": "air fryer recipes app",
@@ -41204,6 +43074,80 @@
     "relevant_count": 4
   },
   {
+    "keyword_original": "vibration motor test",
+    "keyword_normalized": "vibration motor test",
+    "total_ratings_top10": 1467,
+    "max_rating_count": 678,
+    "avg_rating_count": 183,
+    "weak_apps_in_top10": 8,
+    "avg_star_rating": 4.28,
+    "concentration_index": 0.7,
+    "dominant_category": "Utilities",
+    "category_focus": 0.5,
+    "free_count": 6,
+    "paid_count": 2,
+    "stale_apps": 4,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Massager - Strong Vibration",
+        "rating_count": 678,
+        "star_rating": 4.17,
+        "price": 0.0,
+        "developer": "Wachanga Inc.",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Strong Vibration",
+        "rating_count": 674,
+        "star_rating": 4.0,
+        "price": 0.0,
+        "developer": "Sick App Developers GmbH",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "ZOONZOON - Gamepad Vibration",
+        "rating_count": 45,
+        "star_rating": 2.91,
+        "price": 1.99,
+        "developer": "SeaShore",
+        "category": "Lifestyle"
+      }
+    ],
+    "top10_names": [
+      "Massager - Strong Vibration",
+      "Strong Vibration",
+      "ZOONZOON - Gamepad Vibration",
+      "Vibration analysis",
+      "VR Mobile - Vibration Testing",
+      "Vibration",
+      "Vibration Utilities",
+      "Haptics Touch: Vibration Test",
+      "Quick Vibrator",
+      "Vibra Test"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.71,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.12,
+    "supply_room": 0.55,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
+  },
+  {
     "keyword_original": "marathon training plan",
     "keyword_normalized": "marathon training plan",
     "total_ratings_top10": 19681,
@@ -41728,80 +43672,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.6,
     "relevant_count": 6
-  },
-  {
-    "keyword_original": "vibration motor test",
-    "keyword_normalized": "vibration motor test",
-    "total_ratings_top10": 1467,
-    "max_rating_count": 678,
-    "avg_rating_count": 183,
-    "weak_apps_in_top10": 8,
-    "avg_star_rating": 4.28,
-    "concentration_index": 0.7,
-    "dominant_category": "Utilities",
-    "category_focus": 0.5,
-    "free_count": 6,
-    "paid_count": 2,
-    "stale_apps": 4,
-    "mature_apps_pct": 90,
-    "demand_level": "VERY LOW",
-    "supply_level": "VERY LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Massager - Strong Vibration",
-        "rating_count": 678,
-        "star_rating": 4.17,
-        "price": 0.0,
-        "developer": "Wachanga Inc.",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Strong Vibration",
-        "rating_count": 674,
-        "star_rating": 4.0,
-        "price": 0.0,
-        "developer": "Sick App Developers GmbH",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "ZOONZOON - Gamepad Vibration",
-        "rating_count": 45,
-        "star_rating": 2.91,
-        "price": 1.99,
-        "developer": "SeaShore",
-        "category": "Lifestyle"
-      }
-    ],
-    "top10_names": [
-      "Massager - Strong Vibration",
-      "Strong Vibration",
-      "ZOONZOON - Gamepad Vibration",
-      "Vibration analysis",
-      "VR Mobile - Vibration Testing",
-      "Vibration",
-      "Vibration Utilities",
-      "Haptics Touch: Vibration Test",
-      "Quick Vibrator",
-      "Vibra Test"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 0.71,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.12,
-    "supply_room": 0.55,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
   },
   {
     "keyword_original": "morning routine app",
@@ -43737,6 +45607,84 @@
     "relevant_count": 6
   },
   {
+    "keyword_original": "ai read aloud app",
+    "keyword_normalized": "ai read aloud",
+    "total_ratings_top10": 27118,
+    "max_rating_count": 18321,
+    "avg_rating_count": 9039,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.79,
+    "concentration_index": 0.45,
+    "dominant_category": "Productivity",
+    "category_focus": 0.67,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 60,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Voice Aloud Reader",
+        "rating_count": 18321,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "Marcin Olawski",
+        "category": "Productivity"
+      },
+      {
+        "name": "ElevenReader: Read Books Aloud",
+        "rating_count": 8789,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "ElevenLabs, Inc.",
+        "category": "Productivity"
+      },
+      {
+        "name": "Read Aloud AI - Text to Speech",
+        "rating_count": 8,
+        "star_rating": 5.0,
+        "price": 0.0,
+        "developer": "Dekiru AI LLC",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Read Aloud AI - Text to Speech",
+      "Voice Aloud Reader",
+      "ElevenReader: Read Books Aloud",
+      "Talkie Lab - AI Playground",
+      "Voice Dream - Natural Reader",
+      "Speak4Me Text to Speech Reader",
+      "Peech: Text to Speech Reader",
+      "Text to Speech - Listen AI",
+      "Speechify \u2013 Text to Speech PDF",
+      "NaturalReader - Text To Speech"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 0.67,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.52,
+    "supply_room": 0.33,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
+  },
+  {
     "keyword_original": "emergency contact app",
     "keyword_normalized": "emergency contact",
     "total_ratings_top10": 477,
@@ -44113,6 +46061,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
+  },
+  {
+    "keyword_original": "reaction time test",
+    "keyword_normalized": "reaction time test",
+    "total_ratings_top10": 3005,
+    "max_rating_count": 1692,
+    "avg_rating_count": 375,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 4.52,
+    "concentration_index": 0.761,
+    "dominant_category": "Games",
+    "category_focus": 0.75,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 4,
+    "mature_apps_pct": 60,
+    "demand_level": "LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Reaction Time & Reflex Test",
+        "rating_count": 1692,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Thinkabout",
+        "category": "Games"
+      },
+      {
+        "name": "Reaction Speed Reflex Trainer",
+        "rating_count": 1256,
+        "star_rating": 4.62,
+        "price": 0.0,
+        "developer": "Vicki Partridge",
+        "category": "Games"
+      },
+      {
+        "name": "Reaction Time Test - How fast?",
+        "rating_count": 54,
+        "star_rating": 4.46,
+        "price": 0.0,
+        "developer": "HUNG-PIN YU",
+        "category": "Games"
+      }
+    ],
+    "top10_names": [
+      "Reaction Time & Reflex Test",
+      "Reaction Time Test - How fast?",
+      "CogniTrack: Reaction Time Test",
+      "Reaction Time Test Touch",
+      "Reaction Time Test - RTT",
+      "Reaction Time Test - Simple",
+      "Reaction Time: Reflex Test",
+      "Reaction Speed Reflex Trainer",
+      "Race Start Test-Formula Reflex",
+      "Reflex Training - RTap"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.66,
+    "ltv": 1.2,
+    "payback_months": 13.6,
+    "roas_6mo": 0.44,
+    "arpu_est": 4.0,
+    "cpi_est": 2.72,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.17,
+    "supply_room": 0.42,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "knot tying guide app",
@@ -45193,6 +47215,79 @@
     "relevant_count": 10
   },
   {
+    "keyword_original": "ai contract reader",
+    "keyword_normalized": "ai contract reader",
+    "total_ratings_top10": 143,
+    "max_rating_count": 89,
+    "avg_rating_count": 71,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.81,
+    "concentration_index": 0.122,
+    "dominant_category": "Business",
+    "category_focus": 0.5,
+    "free_count": 2,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 20,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "AI Reads Law: Legal Assistant",
+        "rating_count": 89,
+        "star_rating": 4.62,
+        "price": 0.0,
+        "developer": "Ondrej Stanek",
+        "category": "Productivity"
+      },
+      {
+        "name": "AI Contract Analyzer & Sign",
+        "rating_count": 54,
+        "star_rating": 5.0,
+        "price": 0.0,
+        "developer": "AppLiks Sp. z O.O.",
+        "category": "Business"
+      }
+    ],
+    "top10_names": [
+      "AI Reads Law: Legal Assistant",
+      "AI Contract Analyzer & Sign",
+      "Manus - AI Agent & Automation",
+      "You.com - Enterprise grade AI",
+      "ChatLLM: AI Assistant & Chat",
+      "Atlas AI: PDF Document Scanner",
+      "Legal AI Assistant: Law Help",
+      "Contract Maker: Legal Draft",
+      "On-Device AI: TTS, STT & Agent",
+      "Google AI Edge Gallery"
+    ],
+    "kills": [
+      "off_intent"
+    ],
+    "wins": [
+      "vertical_ai"
+    ],
+    "reasons": [
+      "win:vertical_ai(x1.3)",
+      "kill:off_intent(rel=0.2)"
+    ],
+    "vibe_roi": 0.63,
+    "ltv": 9.6,
+    "payback_months": 9.75,
+    "roas_6mo": 1.23,
+    "arpu_est": 10.0,
+    "cpi_est": 7.8,
+    "retention_months": 12,
+    "paying_conv": 0.08,
+    "demand_signal": 0.04,
+    "supply_room": 0.54,
+    "boost_mult": 1.3,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.2,
+    "relevant_count": 2
+  },
+  {
     "keyword_original": "couple games app",
     "keyword_normalized": "couple games",
     "total_ratings_top10": 401707,
@@ -45979,6 +48074,84 @@
     "relevant_count": 5
   },
   {
+    "keyword_original": "monitor color test",
+    "keyword_normalized": "monitor color test",
+    "total_ratings_top10": 19878,
+    "max_rating_count": 11200,
+    "avg_rating_count": 3313,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.3,
+    "concentration_index": 0.676,
+    "dominant_category": "Utilities",
+    "category_focus": 0.33,
+    "free_count": 6,
+    "paid_count": 0,
+    "stale_apps": 5,
+    "mature_apps_pct": 90,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Color Portfolio",
+        "rating_count": 11200,
+        "star_rating": 4.52,
+        "price": 0.0,
+        "developer": "Benjamin Moore & Co",
+        "category": "Lifestyle"
+      },
+      {
+        "name": "Color Name AR",
+        "rating_count": 8182,
+        "star_rating": 4.39,
+        "price": 0.0,
+        "developer": "Vlad Polyanskiy",
+        "category": "Utilities"
+      },
+      {
+        "name": "Colorblind Eye Exam Test",
+        "rating_count": 305,
+        "star_rating": 3.73,
+        "price": 0.0,
+        "developer": "Yohann Taieb",
+        "category": "Medical"
+      }
+    ],
+    "top10_names": [
+      "Color Portfolio",
+      "Color Name AR",
+      "Kuku Kube - Color Test",
+      "Color Challenge - Test Your Color Vision",
+      "Color Test For Your Screen",
+      "Colorblind Eye Exam Test",
+      "Device Monitor\u00b2",
+      "System Status Pro: hw monitor",
+      "System Status: hw monitor",
+      "Paint Tester"
+    ],
+    "kills": [
+      "fuzzy_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:fuzzy_search_intent"
+    ],
+    "vibe_roi": 0.61,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.45,
+    "supply_room": 0.36,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.7,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
+  },
+  {
     "keyword_original": "haptic tester app",
     "keyword_normalized": "haptic tester",
     "total_ratings_top10": 207,
@@ -46739,6 +48912,162 @@
     "relevant_count": 10
   },
   {
+    "keyword_original": "ai headshot generator",
+    "keyword_normalized": "ai headshot generator",
+    "total_ratings_top10": 748299,
+    "max_rating_count": 491834,
+    "avg_rating_count": 74829,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.46,
+    "concentration_index": 0.782,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.6,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 30,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Reface: Face Edit AI Photo App",
+        "rating_count": 491834,
+        "star_rating": 4.77,
+        "price": 0.0,
+        "developer": "NEOCORTEXT, INC.",
+        "category": "Graphics & Design"
+      },
+      {
+        "name": "Photoleap: AI Photo Generator",
+        "rating_count": 136851,
+        "star_rating": 4.68,
+        "price": 0.0,
+        "developer": "Lightricks Ltd.",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Momo: AI Photo & Video Maker",
+        "rating_count": 75921,
+        "star_rating": 4.5,
+        "price": 0.0,
+        "developer": "SCALEUP YAZILIM HIZMETLERI",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "AI Headshot Photo Generator",
+      "AI Headshot Generator",
+      "AI Headshot Generator: Reshot",
+      "AI Headshot Generator - HiShot",
+      "ReCrea - AI Photo & Headshot",
+      "Reface: Face Edit AI Photo App",
+      "Photoleap: AI Photo Generator",
+      "Momo: AI Photo & Video Maker",
+      "GIO - AI Photoshoot Generator",
+      "AI Photo Generator: Remake AI"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.59,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.26,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
+    "keyword_original": "ai voice clone app",
+    "keyword_normalized": "ai voice clone",
+    "total_ratings_top10": 177512,
+    "max_rating_count": 136535,
+    "avg_rating_count": 19723,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.48,
+    "concentration_index": 0.795,
+    "dominant_category": "Entertainment",
+    "category_focus": 0.44,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 30,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Parrot: Voice Generator AI App",
+        "rating_count": 136535,
+        "star_rating": 4.62,
+        "price": 0.0,
+        "developer": "parrot ai",
+        "category": "Entertainment"
+      },
+      {
+        "name": "Voices AI: Change Your Voice",
+        "rating_count": 22358,
+        "star_rating": 4.55,
+        "price": 0.0,
+        "developer": "Fiedler Tech LLC",
+        "category": "Productivity"
+      },
+      {
+        "name": "ElevenLabs: AI Voice Generator",
+        "rating_count": 9546,
+        "star_rating": 4.85,
+        "price": 0.0,
+        "developer": "ElevenLabs, Inc.",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "AI Voice Clone Generator",
+      "AI Voice Clone Text To Speech",
+      "Voice Clone:AI Voice Generator",
+      "AI Voice Clone: TenLabs",
+      "AI Voice Clone Voice Generator",
+      "Parrot: Voice Generator AI App",
+      "Voices AI: Change Your Voice",
+      "ElevenLabs: AI Voice Generator",
+      "Voice & Face Cloning: Clony AI",
+      "invideo AI: AI Video Generator"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.59,
+    "ltv": 1.5,
+    "payback_months": 11.36,
+    "roas_6mo": 0.53,
+    "arpu_est": 5.0,
+    "cpi_est": 2.84,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.25,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "sprinkler schedule app",
     "keyword_normalized": "sprinkler schedule",
     "total_ratings_top10": 13,
@@ -47354,6 +49683,87 @@
     "demand_signal": 1.0,
     "supply_room": 0.22,
     "boost_mult": 1.0,
+    "penalty_mult": 0.35,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
+  },
+  {
+    "keyword_original": "bluetooth tracker finder",
+    "keyword_normalized": "bluetooth tracker finder",
+    "total_ratings_top10": 39464,
+    "max_rating_count": 26835,
+    "avg_rating_count": 6577,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.36,
+    "concentration_index": 0.606,
+    "dominant_category": "Utilities",
+    "category_focus": 0.67,
+    "free_count": 5,
+    "paid_count": 1,
+    "stale_apps": 4,
+    "mature_apps_pct": 90,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": "find my",
+    "top3": [
+      {
+        "name": "Bluetooth BLE Device Finder",
+        "rating_count": 26835,
+        "star_rating": 4.39,
+        "price": 0.0,
+        "developer": "Raymond NG",
+        "category": "Productivity"
+      },
+      {
+        "name": "Find my Bluetooth Device App",
+        "rating_count": 4560,
+        "star_rating": 4.39,
+        "price": 0.0,
+        "developer": "Plane Cubes",
+        "category": "Utilities"
+      },
+      {
+        "name": "Find Bluetooth: device tracker",
+        "rating_count": 3657,
+        "star_rating": 4.55,
+        "price": 1.99,
+        "developer": "\u5efa\u6167 \u6731",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Bluetooth BLE Device Finder",
+      "Find my Bluetooth Device App",
+      "Find Bluetooth: device tracker",
+      "Find My Lost Bluetooth Device",
+      "Find Bluetooth Device Tracker",
+      "Find Device & Bluetooth Track",
+      "Wunderfind: Find Lost Device",
+      "Device Tracker",
+      "Find Air - My Device Tracker",
+      "Find My Device & Track Friends"
+    ],
+    "kills": [
+      "incumbent:find my"
+    ],
+    "wins": [
+      "sticky_tracker"
+    ],
+    "reasons": [
+      "win:sticky_tracker(x1.25)",
+      "kill:incumbent=find my"
+    ],
+    "vibe_roi": 0.57,
+    "ltv": 1.8,
+    "payback_months": 11.55,
+    "roas_6mo": 0.78,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 9,
+    "paying_conv": 0.05,
+    "demand_signal": 0.63,
+    "supply_room": 0.25,
+    "boost_mult": 1.25,
     "penalty_mult": 0.35,
     "intent_relevance": 0.6,
     "relevant_count": 6
@@ -48840,80 +51250,6 @@
     "relevant_count": 6
   },
   {
-    "keyword_original": "laundry care symbols",
-    "keyword_normalized": "laundry care symbols",
-    "total_ratings_top10": 80,
-    "max_rating_count": 60,
-    "avg_rating_count": 16,
-    "weak_apps_in_top10": 5,
-    "avg_star_rating": 4.01,
-    "concentration_index": 0.66,
-    "dominant_category": "Utilities",
-    "category_focus": 0.4,
-    "free_count": 4,
-    "paid_count": 1,
-    "stale_apps": 4,
-    "mature_apps_pct": 90,
-    "demand_level": "VERY LOW",
-    "supply_level": "VERY LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Laundry Day - Care Symbol Reader",
-        "rating_count": 60,
-        "star_rating": 4.15,
-        "price": 0.99,
-        "developer": "Jan Plesek",
-        "category": "Productivity"
-      },
-      {
-        "name": "Laundry Symbols: AI Scanner",
-        "rating_count": 14,
-        "star_rating": 4.14,
-        "price": 0.0,
-        "developer": "Johannes Bauer",
-        "category": "Utilities"
-      },
-      {
-        "name": "Complete Laundry Care",
-        "rating_count": 4,
-        "star_rating": 4.75,
-        "price": 0.0,
-        "developer": "Renowne, LLC",
-        "category": "Productivity"
-      }
-    ],
-    "top10_names": [
-      "Laundry Day - Care Symbol Reader",
-      "Laundry Care Symbol Scanner",
-      "Laundry Symbols: AI Scanner",
-      "Complete Laundry Care",
-      "Laundry Care",
-      "Poplin: Laundry Service",
-      "Laundry Connect Pay",
-      "Rinse | Laundry & Dry Cleaning",
-      "Laundry Lens",
-      "CSC GO"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 0.52,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.03,
-    "supply_room": 0.42,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.5,
-    "relevant_count": 5
-  },
-  {
     "keyword_original": "2fa authenticator app",
     "keyword_normalized": "2fa authenticator",
     "total_ratings_top10": 1924171,
@@ -48990,6 +51326,80 @@
     "penalty_mult": 0.35,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "laundry care symbols",
+    "keyword_normalized": "laundry care symbols",
+    "total_ratings_top10": 80,
+    "max_rating_count": 60,
+    "avg_rating_count": 16,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.01,
+    "concentration_index": 0.66,
+    "dominant_category": "Utilities",
+    "category_focus": 0.4,
+    "free_count": 4,
+    "paid_count": 1,
+    "stale_apps": 4,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Laundry Day - Care Symbol Reader",
+        "rating_count": 60,
+        "star_rating": 4.15,
+        "price": 0.99,
+        "developer": "Jan Plesek",
+        "category": "Productivity"
+      },
+      {
+        "name": "Laundry Symbols: AI Scanner",
+        "rating_count": 14,
+        "star_rating": 4.14,
+        "price": 0.0,
+        "developer": "Johannes Bauer",
+        "category": "Utilities"
+      },
+      {
+        "name": "Complete Laundry Care",
+        "rating_count": 4,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "Renowne, LLC",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Laundry Day - Care Symbol Reader",
+      "Laundry Care Symbol Scanner",
+      "Laundry Symbols: AI Scanner",
+      "Complete Laundry Care",
+      "Laundry Care",
+      "Poplin: Laundry Service",
+      "Laundry Connect Pay",
+      "Rinse | Laundry & Dry Cleaning",
+      "Laundry Lens",
+      "CSC GO"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.52,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.03,
+    "supply_room": 0.42,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.5,
+    "relevant_count": 5
   },
   {
     "keyword_original": "scoliosis exercises app",
@@ -50005,6 +52415,84 @@
     "relevant_count": 6
   },
   {
+    "keyword_original": "lung capacity test",
+    "keyword_normalized": "lung capacity test",
+    "total_ratings_top10": 152,
+    "max_rating_count": 103,
+    "avg_rating_count": 50,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.33,
+    "concentration_index": 0.404,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.67,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Lung Breathing Exercise",
+        "rating_count": 103,
+        "star_rating": 4.61,
+        "price": 0.0,
+        "developer": "Enrique Villahermosa Juara",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Aluna - Lung Health Management",
+        "rating_count": 38,
+        "star_rating": 3.84,
+        "price": 0.0,
+        "developer": "Aluna",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "INSIGHT LUNG",
+        "rating_count": 11,
+        "star_rating": 4.55,
+        "price": 0.0,
+        "developer": "ANIMA RES",
+        "category": "Medical"
+      }
+    ],
+    "top10_names": [
+      "Lung Breathing Exercise",
+      "Aluna - Lung Health Management",
+      "INSIGHT LUNG",
+      "Breathwrk: Breathing Exercises",
+      "Breathing Zone",
+      "FivePointFive: Breathwork",
+      "Airofit",
+      "Breathe2Relax",
+      "ZEPHYRx Breathe Easy",
+      "Pneumotox."
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 0.48,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.04,
+    "supply_room": 0.45,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
+  },
+  {
     "keyword_original": "resin art guide",
     "keyword_normalized": "resin art guide",
     "total_ratings_top10": 110062,
@@ -50469,6 +52957,84 @@
     "penalty_mult": 0.7,
     "intent_relevance": 1.0,
     "relevant_count": 10
+  },
+  {
+    "keyword_original": "ac remote universal",
+    "keyword_normalized": "ac remote universal",
+    "total_ratings_top10": 46467,
+    "max_rating_count": 42413,
+    "avg_rating_count": 5163,
+    "weak_apps_in_top10": 7,
+    "avg_star_rating": 4.52,
+    "concentration_index": 0.857,
+    "dominant_category": "Utilities",
+    "category_focus": 0.89,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 10,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Universal remote tv smart",
+        "rating_count": 42413,
+        "star_rating": 4.17,
+        "price": 0.0,
+        "developer": "yohan teixeira",
+        "category": "Utilities"
+      },
+      {
+        "name": "Universal AC Remote Control +",
+        "rating_count": 3043,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "JokDev Company",
+        "category": "Utilities"
+      },
+      {
+        "name": "AC Remote: Universal Control.",
+        "rating_count": 316,
+        "star_rating": 4.49,
+        "price": 0.0,
+        "developer": "KALID EL WAHBI",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Universal AC Remote Control +",
+      "AC Remote: Universal Control.",
+      "AC Remote - Universal Control",
+      "Universal AC Remote Control .",
+      "Universal AC Remote Control \u207a\u207a",
+      "Universal remote tv smart",
+      "AC Remote\u30fbAir Conditioner",
+      "Air Conditioner\u30fbAC Remote App",
+      "AC remote - aircon control",
+      "Air Conditioner Controller"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.47,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.68,
+    "supply_room": 0.42,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "lullaby music app",
@@ -51258,6 +53824,84 @@
     "relevant_count": 4
   },
   {
+    "keyword_original": "network monitor app",
+    "keyword_normalized": "network monitor",
+    "total_ratings_top10": 133011,
+    "max_rating_count": 114465,
+    "avg_rating_count": 22168,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.65,
+    "concentration_index": 0.753,
+    "dominant_category": "Utilities",
+    "category_focus": 0.67,
+    "free_count": 5,
+    "paid_count": 1,
+    "stale_apps": 1,
+    "mature_apps_pct": 90,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Fing - Network Scanner",
+        "rating_count": 114465,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "Fing Limited",
+        "category": "Productivity"
+      },
+      {
+        "name": "Network Analyzer Pro",
+        "rating_count": 8870,
+        "star_rating": 4.78,
+        "price": 3.99,
+        "developer": "Techet",
+        "category": "Utilities"
+      },
+      {
+        "name": "Network Analyzer: net tools",
+        "rating_count": 6519,
+        "star_rating": 4.6,
+        "price": 0.0,
+        "developer": "Techet",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Fing - Network Scanner",
+      "Network Analyzer Pro",
+      "Network Analyzer: net tools",
+      "iNet - Network Scanner",
+      "Network Utility",
+      "Ping \u2013 Network Tools",
+      "UniFi",
+      "iNetTools - Ping,DNS,Port Scan",
+      "PRTG - Monitoring",
+      "CPU Z: Device Monitor x Dasher"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.45,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.22,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
+  },
+  {
     "keyword_original": "pink noise generator",
     "keyword_normalized": "pink noise generator",
     "total_ratings_top10": 237186,
@@ -51729,84 +54373,6 @@
     "penalty_mult": 0.24,
     "intent_relevance": 0.9,
     "relevant_count": 9
-  },
-  {
-    "keyword_original": "network monitor app",
-    "keyword_normalized": "network monitor",
-    "total_ratings_top10": 133011,
-    "max_rating_count": 114465,
-    "avg_rating_count": 22168,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.65,
-    "concentration_index": 0.753,
-    "dominant_category": "Utilities",
-    "category_focus": 0.67,
-    "free_count": 5,
-    "paid_count": 1,
-    "stale_apps": 1,
-    "mature_apps_pct": 90,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Fing - Network Scanner",
-        "rating_count": 114465,
-        "star_rating": 4.65,
-        "price": 0.0,
-        "developer": "Fing Limited",
-        "category": "Productivity"
-      },
-      {
-        "name": "Network Analyzer Pro",
-        "rating_count": 8870,
-        "star_rating": 4.78,
-        "price": 3.99,
-        "developer": "Techet",
-        "category": "Utilities"
-      },
-      {
-        "name": "Network Analyzer: net tools",
-        "rating_count": 6519,
-        "star_rating": 4.6,
-        "price": 0.0,
-        "developer": "Techet",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "Fing - Network Scanner",
-      "Network Analyzer Pro",
-      "Network Analyzer: net tools",
-      "iNet - Network Scanner",
-      "Network Utility",
-      "Ping \u2013 Network Tools",
-      "UniFi",
-      "iNetTools - Ping,DNS,Port Scan",
-      "PRTG - Monitoring",
-      "CPU Z: Device Monitor x Dasher"
-    ],
-    "kills": [
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.45,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.22,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.4,
-    "intent_relevance": 0.6,
-    "relevant_count": 6
   },
   {
     "keyword_original": "audio extractor mp3",
@@ -53075,6 +55641,84 @@
     "relevant_count": 8
   },
   {
+    "keyword_original": "emoji keyboard cool",
+    "keyword_normalized": "emoji keyboard cool",
+    "total_ratings_top10": 432008,
+    "max_rating_count": 324454,
+    "avg_rating_count": 61715,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.4,
+    "concentration_index": 0.76,
+    "dominant_category": "Utilities",
+    "category_focus": 0.86,
+    "free_count": 7,
+    "paid_count": 0,
+    "stale_apps": 8,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Facemoji AI Emoji Keyboard",
+        "rating_count": 324454,
+        "star_rating": 4.67,
+        "price": 0.0,
+        "developer": "NEXILEAP PRIVATE LIMITED",
+        "category": "Utilities"
+      },
+      {
+        "name": "Better Font-s Cool Keyboard-s",
+        "rating_count": 86670,
+        "star_rating": 4.43,
+        "price": 0.0,
+        "developer": "Daneco Ltd.",
+        "category": "Utilities"
+      },
+      {
+        "name": "GO Keyboard-Emojis&Cool Themes",
+        "rating_count": 9767,
+        "star_rating": 4.29,
+        "price": 0.0,
+        "developer": "Sungy Mobile Limited.",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "GO Keyboard-Emojis&Cool Themes",
+      "Emoji Free \u2013 Emoticons Art and Cool Fonts Keyboard",
+      "Facemoji AI Emoji Keyboard",
+      "Better Font-s Cool Keyboard-s",
+      "Font: Cool Design Keyboard App",
+      "iKeyboard -Cool Keyboard Theme",
+      "Symbolizer Fonts Keyboard with Fancy Emoji Symbols for Facebook and Instagram",
+      "Text Fonts, Emojis & Symbols",
+      "New Emoji & Fonts - RainbowKey",
+      "Fonts keyboard iphones app"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.41,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.17,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.7,
+    "relevant_count": 7
+  },
+  {
     "keyword_original": "rent collection app",
     "keyword_normalized": "rent collection",
     "total_ratings_top10": 363122,
@@ -53209,6 +55853,84 @@
     "paying_conv": 0.05,
     "demand_signal": 0.12,
     "supply_room": 0.45,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
+  },
+  {
+    "keyword_original": "photo date stamp",
+    "keyword_normalized": "photo date stamp",
+    "total_ratings_top10": 7332,
+    "max_rating_count": 6745,
+    "avg_rating_count": 2444,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.71,
+    "concentration_index": 0.613,
+    "dominant_category": "Photo & Video",
+    "category_focus": 1.0,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 90,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Timestamp Camera: Photo Date",
+        "rating_count": 6745,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Artify Inc.",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Timestamp Camera: Date Stamper",
+        "rating_count": 587,
+        "star_rating": 4.68,
+        "price": 0.0,
+        "developer": "SUSAMP INFOTECH",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Photo Date Stamp",
+        "rating_count": 0,
+        "star_rating": 0.0,
+        "price": 0.0,
+        "developer": "Kunlunxu Pty Ltd",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Photo Date Stamp",
+      "Timestamp Camera: Photo Date",
+      "Timestamp Camera: Date Stamper",
+      "Timemark: #1 Job Photo App",
+      "Timestamp Camera: Photo&Video",
+      "Timestamp photo and video",
+      "1998 Cam - Vintage Camera",
+      "Timestamp Camera Basic",
+      "DateStamper",
+      "Timestamp It - Proof Camera"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 0.4,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.27,
+    "supply_room": 0.29,
     "boost_mult": 1.0,
     "penalty_mult": 0.5,
     "intent_relevance": 0.3,
@@ -53839,84 +56561,6 @@
     "penalty_mult": 0.24,
     "intent_relevance": 1.0,
     "relevant_count": 10
-  },
-  {
-    "keyword_original": "photo date stamp",
-    "keyword_normalized": "photo date stamp",
-    "total_ratings_top10": 7332,
-    "max_rating_count": 6745,
-    "avg_rating_count": 2444,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.71,
-    "concentration_index": 0.613,
-    "dominant_category": "Photo & Video",
-    "category_focus": 1.0,
-    "free_count": 3,
-    "paid_count": 0,
-    "stale_apps": 0,
-    "mature_apps_pct": 90,
-    "demand_level": "LOW",
-    "supply_level": "LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Timestamp Camera: Photo Date",
-        "rating_count": 6745,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Artify Inc.",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Timestamp Camera: Date Stamper",
-        "rating_count": 587,
-        "star_rating": 4.68,
-        "price": 0.0,
-        "developer": "SUSAMP INFOTECH",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Photo Date Stamp",
-        "rating_count": 0,
-        "star_rating": 0.0,
-        "price": 0.0,
-        "developer": "Kunlunxu Pty Ltd",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "Photo Date Stamp",
-      "Timestamp Camera: Photo Date",
-      "Timestamp Camera: Date Stamper",
-      "Timemark: #1 Job Photo App",
-      "Timestamp Camera: Photo&Video",
-      "Timestamp photo and video",
-      "1998 Cam - Vintage Camera",
-      "Timestamp Camera Basic",
-      "DateStamper",
-      "Timestamp It - Proof Camera"
-    ],
-    "kills": [
-      "weak_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:weak_intent(rel=0.3)"
-    ],
-    "vibe_roi": 0.4,
-    "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.27,
-    "supply_room": 0.29,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.5,
-    "intent_relevance": 0.3,
-    "relevant_count": 3
   },
   {
     "keyword_original": "screenplay formatter app",
@@ -55801,86 +58445,6 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "pet feeding schedule",
-    "keyword_normalized": "pet feeding schedule",
-    "total_ratings_top10": 4471,
-    "max_rating_count": 4469,
-    "avg_rating_count": 1490,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 3.65,
-    "concentration_index": 0.666,
-    "dominant_category": "Health & Fitness",
-    "category_focus": 0.33,
-    "free_count": 3,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 80,
-    "demand_level": "LOW",
-    "supply_level": "LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Pet Vet Care Wash Feed Animals",
-        "rating_count": 4469,
-        "star_rating": 4.29,
-        "price": 0.0,
-        "developer": "build a house tractor game truck building cars wash games for kids Juegos para ni\u00f1os",
-        "category": "Games"
-      },
-      {
-        "name": "Pawfolio: Pet Feeding Tracker",
-        "rating_count": 2,
-        "star_rating": 3.0,
-        "price": 0.0,
-        "developer": "Haashim Malik",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Pet Feeder App",
-        "rating_count": 0,
-        "star_rating": 0.0,
-        "price": 0.0,
-        "developer": "WebMovement, Limited Liability Company",
-        "category": "Lifestyle"
-      }
-    ],
-    "top10_names": [
-      "Pet Vet Care Wash Feed Animals",
-      "Pawfolio: Pet Feeding Tracker",
-      "Pet Feeder App",
-      "Chewy - Pet Care & Pharmacy",
-      "Petco: The Pet Parents Partner",
-      "Pet Zero",
-      "DogNote - Pet Journal & Walks",
-      "Furiend - Pet Health Tracker",
-      "PetSmart",
-      "Petlibro"
-    ],
-    "kills": [
-      "fuzzy_intent",
-      "weak_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:fuzzy_search_intent",
-      "kill:weak_intent(rel=0.3)"
-    ],
-    "vibe_roi": 0.35,
-    "ltv": 2.1,
-    "payback_months": 12.57,
-    "roas_6mo": 0.48,
-    "arpu_est": 7.0,
-    "cpi_est": 4.4,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.21,
-    "supply_room": 0.27,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.35,
-    "intent_relevance": 0.3,
-    "relevant_count": 3
-  },
-  {
     "keyword_original": "pdf compressor app",
     "keyword_normalized": "pdf compressor",
     "total_ratings_top10": 671233,
@@ -55959,6 +58523,86 @@
     "penalty_mult": 0.24,
     "intent_relevance": 1.0,
     "relevant_count": 10
+  },
+  {
+    "keyword_original": "pet feeding schedule",
+    "keyword_normalized": "pet feeding schedule",
+    "total_ratings_top10": 4471,
+    "max_rating_count": 4469,
+    "avg_rating_count": 1490,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 3.65,
+    "concentration_index": 0.666,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.33,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 80,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Pet Vet Care Wash Feed Animals",
+        "rating_count": 4469,
+        "star_rating": 4.29,
+        "price": 0.0,
+        "developer": "build a house tractor game truck building cars wash games for kids Juegos para ni\u00f1os",
+        "category": "Games"
+      },
+      {
+        "name": "Pawfolio: Pet Feeding Tracker",
+        "rating_count": 2,
+        "star_rating": 3.0,
+        "price": 0.0,
+        "developer": "Haashim Malik",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Pet Feeder App",
+        "rating_count": 0,
+        "star_rating": 0.0,
+        "price": 0.0,
+        "developer": "WebMovement, Limited Liability Company",
+        "category": "Lifestyle"
+      }
+    ],
+    "top10_names": [
+      "Pet Vet Care Wash Feed Animals",
+      "Pawfolio: Pet Feeding Tracker",
+      "Pet Feeder App",
+      "Chewy - Pet Care & Pharmacy",
+      "Petco: The Pet Parents Partner",
+      "Pet Zero",
+      "DogNote - Pet Journal & Walks",
+      "Furiend - Pet Health Tracker",
+      "PetSmart",
+      "Petlibro"
+    ],
+    "kills": [
+      "fuzzy_intent",
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:fuzzy_search_intent",
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 0.35,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.21,
+    "supply_room": 0.27,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.35,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
   },
   {
     "keyword_original": "iron intake tracker",
@@ -56120,6 +58764,84 @@
     "penalty_mult": 0.5,
     "intent_relevance": 0.3,
     "relevant_count": 3
+  },
+  {
+    "keyword_original": "burst photo picker",
+    "keyword_normalized": "burst photo picker",
+    "total_ratings_top10": 330,
+    "max_rating_count": 207,
+    "avg_rating_count": 82,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.63,
+    "concentration_index": 0.564,
+    "dominant_category": "Photo & Video",
+    "category_focus": 1.0,
+    "free_count": 4,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 60,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Picker AI - Best Photo Picker",
+        "rating_count": 207,
+        "star_rating": 4.57,
+        "price": 0.0,
+        "developer": "Lionary LLC",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Photoscope: Best Photo Picker",
+        "rating_count": 123,
+        "star_rating": 4.69,
+        "price": 0.0,
+        "developer": "Leitmotif GmbH",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Pickora: Best Photo Picker",
+        "rating_count": 0,
+        "star_rating": 0.0,
+        "price": 0.0,
+        "developer": "Muhammet Erdem",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Picker AI - Best Photo Picker",
+      "Photoscope: Best Photo Picker",
+      "Pickora: Best Photo Picker",
+      "Best Shot: Best Photo Picker",
+      "Slidebox: Photo Cleaner App",
+      "Round Photo",
+      "The Burst App",
+      "Lens Buddy - Self Timer Camera",
+      "Camera+ Legacy",
+      "Fast Camera"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.4)"
+    ],
+    "vibe_roi": 0.34,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.06,
+    "supply_room": 0.42,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.4,
+    "relevant_count": 4
   },
   {
     "keyword_original": "cloud identification app",
@@ -56601,82 +59323,84 @@
     "relevant_count": 6
   },
   {
-    "keyword_original": "burst photo picker",
-    "keyword_normalized": "burst photo picker",
-    "total_ratings_top10": 330,
-    "max_rating_count": 207,
-    "avg_rating_count": 82,
-    "weak_apps_in_top10": 4,
-    "avg_star_rating": 4.63,
-    "concentration_index": 0.564,
-    "dominant_category": "Photo & Video",
+    "keyword_original": "ouija board app",
+    "keyword_normalized": "ouija board",
+    "total_ratings_top10": 52616,
+    "max_rating_count": 51669,
+    "avg_rating_count": 8769,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 3.71,
+    "concentration_index": 0.826,
+    "dominant_category": "Entertainment",
     "category_focus": 1.0,
-    "free_count": 4,
+    "free_count": 6,
     "paid_count": 0,
-    "stale_apps": 0,
-    "mature_apps_pct": 60,
-    "demand_level": "VERY LOW",
-    "supply_level": "VERY LOW",
+    "stale_apps": 2,
+    "mature_apps_pct": 70,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
     "incumbent": null,
     "top3": [
       {
-        "name": "Picker AI - Best Photo Picker",
-        "rating_count": 207,
-        "star_rating": 4.57,
+        "name": "Spirit Board (very scary)",
+        "rating_count": 51669,
+        "star_rating": 4.27,
         "price": 0.0,
-        "developer": "Lionary LLC",
-        "category": "Photo & Video"
+        "developer": "First Class Media B.V.",
+        "category": "Entertainment"
       },
       {
-        "name": "Photoscope: Best Photo Picker",
-        "rating_count": 123,
-        "star_rating": 4.69,
+        "name": "Ghost Board Game",
+        "rating_count": 705,
+        "star_rating": 4.08,
         "price": 0.0,
-        "developer": "Leitmotif GmbH",
-        "category": "Photo & Video"
+        "developer": "Baciones",
+        "category": "Entertainment"
       },
       {
-        "name": "Pickora: Best Photo Picker",
-        "rating_count": 0,
-        "star_rating": 0.0,
+        "name": "3D Spirit Board",
+        "rating_count": 221,
+        "star_rating": 2.59,
         "price": 0.0,
-        "developer": "Muhammet Erdem",
-        "category": "Photo & Video"
+        "developer": "Samuel Neblett",
+        "category": "Entertainment"
       }
     ],
     "top10_names": [
-      "Picker AI - Best Photo Picker",
-      "Photoscope: Best Photo Picker",
-      "Pickora: Best Photo Picker",
-      "Best Shot: Best Photo Picker",
-      "Slidebox: Photo Cleaner App",
-      "Round Photo",
-      "The Burst App",
-      "Lens Buddy - Self Timer Camera",
-      "Camera+ Legacy",
-      "Fast Camera"
+      "Spirit Board (very scary)",
+      "Ghost Board Game",
+      "3D Spirit Board",
+      "Spirit Board - Arcanis",
+      "Spirit Board Voice",
+      "S\u00e9ance: Spirit Board",
+      "Ghost Camera Detector Radar",
+      "GhostTube SLS Camera",
+      "Charlie Charlie Challenge!",
+      "Spirit Entities Talker"
     ],
     "kills": [
-      "weak_intent"
+      "concentrated_top",
+      "off_intent_dominant"
     ],
     "wins": [],
     "reasons": [
-      "kill:weak_intent(rel=0.4)"
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
     ],
-    "vibe_roi": 0.34,
+    "vibe_roi": 0.33,
     "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
+    "payback_months": 11.36,
+    "roas_6mo": 0.53,
     "arpu_est": 5.0,
-    "cpi_est": 2.43,
+    "cpi_est": 2.84,
     "retention_months": 6,
     "paying_conv": 0.05,
-    "demand_signal": 0.06,
-    "supply_room": 0.42,
+    "demand_signal": 0.73,
+    "supply_room": 0.34,
     "boost_mult": 1.0,
-    "penalty_mult": 0.5,
-    "intent_relevance": 0.4,
-    "relevant_count": 4
+    "penalty_mult": 0.24,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
   },
   {
     "keyword_original": "garden planting calendar",
@@ -56991,6 +59715,86 @@
     "penalty_mult": 0.24,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "id photo maker",
+    "keyword_normalized": "id photo maker",
+    "total_ratings_top10": 1261400,
+    "max_rating_count": 1189861,
+    "avg_rating_count": 126140,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.69,
+    "concentration_index": 0.873,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.7,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 80,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Picsart AI Photo Editor, Video",
+        "rating_count": 1189861,
+        "star_rating": 4.67,
+        "price": 0.0,
+        "developer": "PicsArt, Inc.",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "ID Photo-Passport Photo maker",
+        "rating_count": 25136,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "\u82cf\u5a1f \u9648",
+        "category": "Productivity"
+      },
+      {
+        "name": "Passport Photo - ID Photo",
+        "rating_count": 20778,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Vitalij Schaefer",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "ID Photo-Passport Photo maker",
+      "Passport Photo - ID Photo",
+      "ID Photo - Passport Photo App",
+      "Passport Photo - ID Photo App",
+      "Passport Photo-ID Photo Cutout",
+      "ID Photo application",
+      "Passport Picture ID Photo Size",
+      "ID Photo Maker document photos",
+      "IDPhoto Maker: Photo ID Maker",
+      "Picsart AI Photo Editor, Video"
+    ],
+    "kills": [
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.33,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.21,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.24,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
   },
   {
     "keyword_original": "kitchen layout planner",
@@ -57690,6 +60494,88 @@
     "penalty_mult": 0.1,
     "intent_relevance": 0.2,
     "relevant_count": 2
+  },
+  {
+    "keyword_original": "ai book summarizer",
+    "keyword_normalized": "ai book summarizer",
+    "total_ratings_top10": 150967,
+    "max_rating_count": 149247,
+    "avg_rating_count": 25161,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.66,
+    "concentration_index": 0.828,
+    "dominant_category": "Productivity",
+    "category_focus": 0.33,
+    "free_count": 6,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 60,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Blinkist: Book Summaries Daily",
+        "rating_count": 149247,
+        "star_rating": 4.78,
+        "price": 0.0,
+        "developer": "Blinks Labs",
+        "category": "Education"
+      },
+      {
+        "name": "Shortform Daily Book Summaries",
+        "rating_count": 1314,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "Shortform Inc.",
+        "category": "Education"
+      },
+      {
+        "name": "Summary AI: TLDR Summarizer",
+        "rating_count": 258,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "KREATIVITY APPS SRL",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "AI Book Summaries - BookPal",
+      "Sumora: AI Book Summaries",
+      "Summary AI: TLDR Summarizer",
+      "Summarizer - AI Text Summary",
+      "Blinkist: Book Summaries Daily",
+      "Shortform Daily Book Summaries",
+      "Chat Smith: AI Chatbot & Agent",
+      "AI Chatbot - Ask Me Anything",
+      "Sudowrite - AI Novel Writing",
+      "ParagraphAI: Writer & Keyboard"
+    ],
+    "kills": [
+      "fuzzy_intent",
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:fuzzy_search_intent",
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.31,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.29,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.17,
+    "intent_relevance": 0.6,
+    "relevant_count": 6
   },
   {
     "keyword_original": "phone screen cleaner",
@@ -58556,6 +61442,86 @@
     "relevant_count": 4
   },
   {
+    "keyword_original": "speed camera detector",
+    "keyword_normalized": "speed camera detector",
+    "total_ratings_top10": 98062,
+    "max_rating_count": 95873,
+    "avg_rating_count": 14008,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.55,
+    "concentration_index": 0.847,
+    "dominant_category": "Navigation",
+    "category_focus": 1.0,
+    "free_count": 7,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 70,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Radarbot: Speed Cameras | GPS",
+        "rating_count": 95873,
+        "star_rating": 4.6,
+        "price": 0.0,
+        "developer": "Iteration Mobile S.L",
+        "category": "Navigation"
+      },
+      {
+        "name": "Speed Cameras Radar",
+        "rating_count": 1305,
+        "star_rating": 4.6,
+        "price": 0.0,
+        "developer": "Bigdream Corporation",
+        "category": "Navigation"
+      },
+      {
+        "name": "RadarAll Speed Camera Detector",
+        "rating_count": 626,
+        "star_rating": 4.45,
+        "price": 0.0,
+        "developer": "Little Mouse Software",
+        "category": "Navigation"
+      }
+    ],
+    "top10_names": [
+      "RadarAll Speed Camera Detector",
+      "Speed Cameras Radar Detector",
+      "Speed Camera Radar Detector",
+      "Speed Camera Detector",
+      "Radarbot: Speed Cameras | GPS",
+      "Speed Cameras Radar",
+      "Radar Detector: Camera Tracker",
+      "Speedometer Simple",
+      "GPS Speedometer MPH Tracker",
+      "Waze Navigation & Live Traffic"
+    ],
+    "kills": [
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.31,
+    "ltv": 1.2,
+    "payback_months": 13.7,
+    "roas_6mo": 0.44,
+    "arpu_est": 4.0,
+    "cpi_est": 2.74,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.99,
+    "supply_room": 0.33,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.24,
+    "intent_relevance": 0.7,
+    "relevant_count": 7
+  },
+  {
     "keyword_original": "couple journal app",
     "keyword_normalized": "couple journal",
     "total_ratings_top10": 197222,
@@ -58789,6 +61755,84 @@
     "penalty_mult": 0.24,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "audio noise remover",
+    "keyword_normalized": "audio noise remover",
+    "total_ratings_top10": 4313,
+    "max_rating_count": 3068,
+    "avg_rating_count": 1437,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.58,
+    "concentration_index": 0.467,
+    "dominant_category": "Utilities",
+    "category_focus": 0.67,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 100,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Noise Reducer - audio enhancer",
+        "rating_count": 3068,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "Arthur Eduardo Skaetta Alvarez Desenvolvimento de Software LTDA.",
+        "category": "Utilities"
+      },
+      {
+        "name": "Audio Noise Reducer & Recorder",
+        "rating_count": 1200,
+        "star_rating": 4.5,
+        "price": 0.0,
+        "developer": "Inverse.AI",
+        "category": "Music"
+      },
+      {
+        "name": "Voice Recorder & Noise Remover",
+        "rating_count": 45,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "Inverse.AI",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Noise Reducer - audio enhancer",
+      "Audio Noise Reducer & Recorder",
+      "Voice Recorder & Noise Remover",
+      "Audio Editor - Music editor",
+      "SoundLab - Audio Editor",
+      "Audio Editor : Audiolab",
+      "ByeNoise - Video Audio Editor",
+      "Lexis Audio Editor",
+      "AudioFix: Video Volume Booster",
+      "Moises: The Musician's App"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 0.3,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.21,
+    "supply_room": 0.32,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
   },
   {
     "keyword_original": "router login helper",
@@ -61918,6 +64962,88 @@
     "penalty_mult": 0.08,
     "intent_relevance": 0.9,
     "relevant_count": 9
+  },
+  {
+    "keyword_original": "resume photo maker",
+    "keyword_normalized": "resume photo maker",
+    "total_ratings_top10": 3423775,
+    "max_rating_count": 3301228,
+    "avg_rating_count": 427971,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.59,
+    "concentration_index": 0.859,
+    "dominant_category": "Business",
+    "category_focus": 0.5,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": "canva",
+    "top3": [
+      {
+        "name": "Canva: AI Video & Photo Editor",
+        "rating_count": 3301228,
+        "star_rating": 4.88,
+        "price": 0.0,
+        "developer": "Canva",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Resume Builder\u207a",
+        "rating_count": 69213,
+        "star_rating": 4.83,
+        "price": 0.0,
+        "developer": "Rounding Squares BV",
+        "category": "Business"
+      },
+      {
+        "name": "PicMonkey Photo + Video Design",
+        "rating_count": 28337,
+        "star_rating": 4.8,
+        "price": 0.0,
+        "developer": "Shutterstock Inc.",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Canva: AI Video & Photo Editor",
+      "Resume Builder\u207a",
+      "PicMonkey Photo + Video Design",
+      "Resume Builder: PDF Resume App",
+      "Passport Photo-ID Photo Cutout",
+      "Resume Builder by Nobody",
+      "Quick Resume Pro",
+      "ID Maker: Passport Photo Maker",
+      "BeFunky",
+      "POTO"
+    ],
+    "kills": [
+      "incumbent:canva",
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:incumbent=canva",
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.22,
+    "ltv": 3.0,
+    "payback_months": 15.6,
+    "roas_6mo": 0.38,
+    "arpu_est": 10.0,
+    "cpi_est": 7.8,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.17,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.08,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "geiger counter app",
@@ -69882,6 +73008,64 @@
     "relevant_count": 1
   },
   {
+    "keyword_original": "tile tracker scanner",
+    "keyword_normalized": "tile tracker scanner",
+    "total_ratings_top10": 0,
+    "max_rating_count": 0,
+    "avg_rating_count": 0,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 0,
+    "concentration_index": 0,
+    "dominant_category": "Utilities",
+    "category_focus": 0,
+    "free_count": 0,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 60,
+    "demand_level": "NONE",
+    "supply_level": "NONE",
+    "incumbent": null,
+    "top3": [],
+    "top10_names": [
+      "Polycam 3D Scans & Floor Plans",
+      "Scan App +",
+      "AirGuard - Tracking Protection",
+      "Barcode Scanner - Orca Scan",
+      "QR Code Scanner:Barcode Reader",
+      "Barcode Scanner for Walmart",
+      "TrackerScan - Detect Trackers",
+      "Room Scanner - Easy Measure Rm",
+      "Tracker Detect +",
+      "Code Scanner by ScanLife"
+    ],
+    "kills": [
+      "fuzzy_intent",
+      "off_intent"
+    ],
+    "wins": [
+      "sticky_tracker"
+    ],
+    "reasons": [
+      "win:sticky_tracker(x1.25)",
+      "kill:fuzzy_search_intent",
+      "kill:off_intent(rel=0.0)"
+    ],
+    "vibe_roi": 0.07,
+    "ltv": 1.8,
+    "payback_months": 11.55,
+    "roas_6mo": 0.78,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 9,
+    "paying_conv": 0.05,
+    "demand_signal": 0.0,
+    "supply_room": 0.5,
+    "boost_mult": 1.25,
+    "penalty_mult": 0.07,
+    "intent_relevance": 0.0,
+    "relevant_count": 0
+  },
+  {
     "keyword_original": "hand grip trainer app",
     "keyword_normalized": "hand grip trainer",
     "total_ratings_top10": 0,
@@ -71302,6 +74486,68 @@
     "relevant_count": 1
   },
   {
+    "keyword_original": "screen flicker test",
+    "keyword_normalized": "screen flicker test",
+    "total_ratings_top10": 38,
+    "max_rating_count": 38,
+    "avg_rating_count": 38,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.45,
+    "concentration_index": 0,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 1,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Flicker Meter for Light - PWM",
+        "rating_count": 38,
+        "star_rating": 4.45,
+        "price": 0.0,
+        "developer": "Contechity AB",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Flicker Meter for Light - PWM",
+      "ScreenTest - Dead Pixel Check",
+      "Speedtest by Ookla",
+      "Speed Test | HighSpeedInternet",
+      "Opensignal Speed Test Ad Free",
+      "WIFI & Internet Speed Test",
+      "nPerf internet speed test",
+      "Internet Speed Test - 5G 4G",
+      "V-SPEED Speed Test",
+      "Speed Test+ -HW Test,Toolbox"
+    ],
+    "kills": [
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent(rel=0.1)"
+    ],
+    "vibe_roi": 0.06,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.02,
+    "supply_room": 0.55,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.1,
+    "relevant_count": 1
+  },
+  {
     "keyword_original": "ping tester app",
     "keyword_normalized": "ping tester",
     "total_ratings_top10": 1393,
@@ -71722,6 +74968,76 @@
     "relevant_count": 2
   },
   {
+    "keyword_original": "proximity sensor test",
+    "keyword_normalized": "proximity sensor test",
+    "total_ratings_top10": 14,
+    "max_rating_count": 8,
+    "avg_rating_count": 7,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.71,
+    "concentration_index": 0.071,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 2,
+    "paid_count": 0,
+    "stale_apps": 5,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Acceleration sensor logger",
+        "rating_count": 8,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "REGREX Co.,Ltd.",
+        "category": "Utilities"
+      },
+      {
+        "name": "Necto Sensor",
+        "rating_count": 6,
+        "star_rating": 4.67,
+        "price": 0.0,
+        "developer": "YT INNOVATIONS LLC",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Acceleration sensor logger",
+      "Necto Sensor",
+      "TI SensorTag",
+      "phyphox",
+      "Touchscreen Test",
+      "Temp Stick",
+      "Test Pro: protection & check",
+      "Check My Device : 40+ Tests",
+      "Test & Check for iPhone",
+      "Phone Checker - Test My Device"
+    ],
+    "kills": [
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent(rel=0.2)"
+    ],
+    "vibe_roi": 0.06,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.01,
+    "supply_room": 0.56,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.2,
+    "relevant_count": 2
+  },
+  {
     "keyword_original": "screen burn in test",
     "keyword_normalized": "screen burn in test",
     "total_ratings_top10": 0,
@@ -72057,76 +75373,6 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "proximity sensor test",
-    "keyword_normalized": "proximity sensor test",
-    "total_ratings_top10": 14,
-    "max_rating_count": 8,
-    "avg_rating_count": 7,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.71,
-    "concentration_index": 0.071,
-    "dominant_category": "Utilities",
-    "category_focus": 1.0,
-    "free_count": 2,
-    "paid_count": 0,
-    "stale_apps": 5,
-    "mature_apps_pct": 90,
-    "demand_level": "VERY LOW",
-    "supply_level": "VERY LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Acceleration sensor logger",
-        "rating_count": 8,
-        "star_rating": 4.75,
-        "price": 0.0,
-        "developer": "REGREX Co.,Ltd.",
-        "category": "Utilities"
-      },
-      {
-        "name": "Necto Sensor",
-        "rating_count": 6,
-        "star_rating": 4.67,
-        "price": 0.0,
-        "developer": "YT INNOVATIONS LLC",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "Acceleration sensor logger",
-      "Necto Sensor",
-      "TI SensorTag",
-      "phyphox",
-      "Touchscreen Test",
-      "Temp Stick",
-      "Test Pro: protection & check",
-      "Check My Device : 40+ Tests",
-      "Test & Check for iPhone",
-      "Phone Checker - Test My Device"
-    ],
-    "kills": [
-      "off_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:off_intent(rel=0.2)"
-    ],
-    "vibe_roi": 0.06,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.01,
-    "supply_room": 0.56,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.1,
-    "intent_relevance": 0.2,
-    "relevant_count": 2
-  },
-  {
     "keyword_original": "flight delay predictor",
     "keyword_normalized": "flight delay predictor",
     "total_ratings_top10": 0,
@@ -72235,6 +75481,76 @@
     "penalty_mult": 0.07,
     "intent_relevance": 0.0,
     "relevant_count": 0
+  },
+  {
+    "keyword_original": "voice isolation app",
+    "keyword_normalized": "voice isolation",
+    "total_ratings_top10": 33,
+    "max_rating_count": 25,
+    "avg_rating_count": 16,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.39,
+    "concentration_index": 0.258,
+    "dominant_category": "Utilities",
+    "category_focus": 0.5,
+    "free_count": 2,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 50,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Music Separator: Voice Remover",
+        "rating_count": 25,
+        "star_rating": 4.28,
+        "price": 0.0,
+        "developer": "\u529b\u514b \u96f7",
+        "category": "Music"
+      },
+      {
+        "name": "AudioAI - TTS & Isolate Voice",
+        "rating_count": 8,
+        "star_rating": 4.5,
+        "price": 0.0,
+        "developer": "Dmitrii Medvedev",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "AudioAI - TTS & Isolate Voice",
+      "Music Separator: Voice Remover",
+      "Moises: The Musician's App",
+      "Stemz: remover vocal audio pro",
+      "Vocal Remover: Music Separator",
+      "Noise Reducer - audio enhancer",
+      "Stem Split - AI Vocal Remover",
+      "Denoise.FX for Audio & Video",
+      "Vocal Remover & AI Separator",
+      "Vocal Separator - Remove Music"
+    ],
+    "kills": [
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent(rel=0.2)"
+    ],
+    "vibe_roi": 0.05,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.02,
+    "supply_room": 0.47,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.2,
+    "relevant_count": 2
   },
   {
     "keyword_original": "bbq smoker temperature",
@@ -72627,6 +75943,76 @@
     "relevant_count": 2
   },
   {
+    "keyword_original": "oled burn in test",
+    "keyword_normalized": "oled burn in test",
+    "total_ratings_top10": 81,
+    "max_rating_count": 74,
+    "avg_rating_count": 40,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 3.84,
+    "concentration_index": 0.414,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 1,
+    "paid_count": 1,
+    "stale_apps": 4,
+    "mature_apps_pct": 50,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Doctor OLED X",
+        "rating_count": 74,
+        "star_rating": 4.12,
+        "price": 1.99,
+        "developer": "Robin Bollen",
+        "category": "Utilities"
+      },
+      {
+        "name": "Pixel Pulse: OLED Screen Care",
+        "rating_count": 7,
+        "star_rating": 3.57,
+        "price": 0.0,
+        "developer": "Maksym Kiryanov",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Doctor OLED X",
+      "Pixel Pulse: OLED Screen Care",
+      "Colorblind Eye Exam Test",
+      "Check My Device : 40+ Tests",
+      "TouchScreenCheck",
+      "Test & Check for iPhone",
+      "Eye Test: Vision & Color Blind",
+      "ScreenDoctor",
+      "ScreenTest - Dead Pixel Check",
+      "Dead Pixel Test - Screen Check"
+    ],
+    "kills": [
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent(rel=0.2)"
+    ],
+    "vibe_roi": 0.05,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.03,
+    "supply_room": 0.39,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.2,
+    "relevant_count": 2
+  },
+  {
     "keyword_original": "hot sauce recipe app",
     "keyword_normalized": "hot sauce recipe",
     "total_ratings_top10": 0,
@@ -72878,6 +76264,76 @@
     "paying_conv": 0.05,
     "demand_signal": 0.01,
     "supply_room": 0.48,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.2,
+    "relevant_count": 2
+  },
+  {
+    "keyword_original": "screen test utility",
+    "keyword_normalized": "screen test utility",
+    "total_ratings_top10": 8,
+    "max_rating_count": 8,
+    "avg_rating_count": 4,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.0,
+    "concentration_index": 0.5,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 1,
+    "paid_count": 1,
+    "stale_apps": 3,
+    "mature_apps_pct": 80,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Screen Test Utility",
+        "rating_count": 8,
+        "star_rating": 4.0,
+        "price": 1.99,
+        "developer": "Twosome Solutions LLC",
+        "category": "Utilities"
+      },
+      {
+        "name": "ScreenTest - Dead Pixel Check",
+        "rating_count": 0,
+        "star_rating": 0.0,
+        "price": 0.0,
+        "developer": "Son Nguyen",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Screen Test Utility",
+      "ScreenTest - Dead Pixel Check",
+      "TestFlight",
+      "Phone Diagnostics",
+      "Speed Test+ -HW Test,Toolbox",
+      "TouchScreenCheck",
+      "Phone Tester",
+      "NSYS-Test",
+      "Pixel Control",
+      "Eye DPI Test"
+    ],
+    "kills": [
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent(rel=0.2)"
+    ],
+    "vibe_roi": 0.05,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.01,
+    "supply_room": 0.35,
     "boost_mult": 1.0,
     "penalty_mult": 0.1,
     "intent_relevance": 0.2,
@@ -74046,6 +77502,61 @@
     "relevant_count": 1
   },
   {
+    "keyword_original": "airtag scanner app",
+    "keyword_normalized": "airtag scanner",
+    "total_ratings_top10": 0,
+    "max_rating_count": 0,
+    "avg_rating_count": 0,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 0,
+    "concentration_index": 0,
+    "dominant_category": "Utilities",
+    "category_focus": 0,
+    "free_count": 0,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 20,
+    "demand_level": "NONE",
+    "supply_level": "NONE",
+    "incumbent": null,
+    "top3": [],
+    "top10_names": [
+      "tracker detect",
+      "AirGuard - Tracking Protection",
+      "Air Tracker: BLE Tag Detector",
+      "Bluetooth Scanner: Finder App",
+      "Bluetooth BLE Finder & Scanner",
+      "Find Device use Phone",
+      "Device Finder: Easy Find",
+      "Bluetooth Scanner, Find Device",
+      "Bluetooth Device: Finder Tool",
+      "Bluetooth Tracker: Find Signal"
+    ],
+    "kills": [
+      "fuzzy_intent",
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:fuzzy_search_intent",
+      "kill:off_intent(rel=0.0)"
+    ],
+    "vibe_roi": 0.04,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.0,
+    "supply_room": 0.5,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.07,
+    "intent_relevance": 0.0,
+    "relevant_count": 0
+  },
+  {
     "keyword_original": "wetsuit thickness guide",
     "keyword_normalized": "wetsuit thickness guide",
     "total_ratings_top10": 0,
@@ -74262,6 +77773,61 @@
       "ScanNet - Network Scanner",
       "Network Analyzer: WiFi Scanner",
       "LANScanner"
+    ],
+    "kills": [
+      "fuzzy_intent",
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:fuzzy_search_intent",
+      "kill:off_intent(rel=0.0)"
+    ],
+    "vibe_roi": 0.04,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.0,
+    "supply_room": 0.5,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.07,
+    "intent_relevance": 0.0,
+    "relevant_count": 0
+  },
+  {
+    "keyword_original": "anti stalking app",
+    "keyword_normalized": "anti stalking",
+    "total_ratings_top10": 0,
+    "max_rating_count": 0,
+    "avg_rating_count": 0,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 0,
+    "concentration_index": 0,
+    "dominant_category": "Utilities",
+    "category_focus": 0,
+    "free_count": 0,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 70,
+    "demand_level": "NONE",
+    "supply_level": "NONE",
+    "incumbent": null,
+    "top3": [],
+    "top10_names": [
+      "Find my Phone - Family Locator",
+      "Cheater AI: Social Catfish",
+      "Clario AntiSpy",
+      "MySecure: Internet Protect",
+      "GVRD Pro: Security Tool",
+      "Tracker Protection",
+      "True Phone Security AntiSpy",
+      "Norton AntiTrack",
+      "Whooming",
+      "Never Alone personal security"
     ],
     "kills": [
       "fuzzy_intent",
@@ -75616,84 +79182,6 @@
     "relevant_count": 10
   },
   {
-    "keyword_original": "ruler measurement app",
-    "keyword_normalized": "ruler measurement",
-    "total_ratings_top10": 53575,
-    "max_rating_count": 35031,
-    "avg_rating_count": 5952,
-    "weak_apps_in_top10": 4,
-    "avg_star_rating": 4.23,
-    "concentration_index": 0.682,
-    "dominant_category": "Utilities",
-    "category_focus": 0.89,
-    "free_count": 7,
-    "paid_count": 2,
-    "stale_apps": 1,
-    "mature_apps_pct": 100,
-    "demand_level": "MODERATE",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Ruler\u00ae",
-        "rating_count": 35031,
-        "star_rating": 4.34,
-        "price": 0.0,
-        "developer": "Tue Nguyen Minh",
-        "category": "Utilities"
-      },
-      {
-        "name": "EasyMeasure \u2013 Camera Ruler",
-        "rating_count": 6076,
-        "star_rating": 4.23,
-        "price": 0.0,
-        "developer": "Caramba App Development",
-        "category": "Utilities"
-      },
-      {
-        "name": "Tape Measure & Ruler \u0410\u0440\u0440",
-        "rating_count": 3887,
-        "star_rating": 4.21,
-        "price": 0.0,
-        "developer": "Free Style Dev LCC",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "Tape Measure & Ruler \u0410\u0440\u0440",
-      "Ruler AR - Tape Measure Camera",
-      "Measuring Tape, Photo Ruler",
-      "Ruler, Measuring Tape - AR App",
-      "AR Ruler: Measuring tape ruler",
-      "Ruler - tape measure length",
-      "Flying Ruler: 3D Tape Measure",
-      "Ruler\u00ae",
-      "EasyMeasure \u2013 Camera Ruler",
-      "Tape Measure\u00ae"
-    ],
-    "kills": [
-      "ios_builtin"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:ios_builtin"
-    ],
-    "vibe_roi": 0.04,
-    "ltv": 0.04,
-    "payback_months": 57.75,
-    "roas_6mo": 0.02,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 1,
-    "paying_conv": 0.01,
-    "demand_signal": 0.73,
-    "supply_room": 0.36,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
-  },
-  {
     "keyword_original": "sound level meter",
     "keyword_normalized": "sound level meter",
     "total_ratings_top10": 269725,
@@ -75770,6 +79258,84 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "ruler measurement app",
+    "keyword_normalized": "ruler measurement",
+    "total_ratings_top10": 53575,
+    "max_rating_count": 35031,
+    "avg_rating_count": 5952,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.23,
+    "concentration_index": 0.682,
+    "dominant_category": "Utilities",
+    "category_focus": 0.89,
+    "free_count": 7,
+    "paid_count": 2,
+    "stale_apps": 1,
+    "mature_apps_pct": 100,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Ruler\u00ae",
+        "rating_count": 35031,
+        "star_rating": 4.34,
+        "price": 0.0,
+        "developer": "Tue Nguyen Minh",
+        "category": "Utilities"
+      },
+      {
+        "name": "EasyMeasure \u2013 Camera Ruler",
+        "rating_count": 6076,
+        "star_rating": 4.23,
+        "price": 0.0,
+        "developer": "Caramba App Development",
+        "category": "Utilities"
+      },
+      {
+        "name": "Tape Measure & Ruler \u0410\u0440\u0440",
+        "rating_count": 3887,
+        "star_rating": 4.21,
+        "price": 0.0,
+        "developer": "Free Style Dev LCC",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Tape Measure & Ruler \u0410\u0440\u0440",
+      "Ruler AR - Tape Measure Camera",
+      "Measuring Tape, Photo Ruler",
+      "Ruler, Measuring Tape - AR App",
+      "AR Ruler: Measuring tape ruler",
+      "Ruler - tape measure length",
+      "Flying Ruler: 3D Tape Measure",
+      "Ruler\u00ae",
+      "EasyMeasure \u2013 Camera Ruler",
+      "Tape Measure\u00ae"
+    ],
+    "kills": [
+      "ios_builtin"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:ios_builtin"
+    ],
+    "vibe_roi": 0.04,
+    "ltv": 0.04,
+    "payback_months": 57.75,
+    "roas_6mo": 0.02,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 1,
+    "paying_conv": 0.01,
+    "demand_signal": 0.73,
+    "supply_room": 0.36,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "ar ruler app",
@@ -78434,6 +82000,86 @@
     "relevant_count": 10
   },
   {
+    "keyword_original": "video to gif converter",
+    "keyword_normalized": "video to gif converter",
+    "total_ratings_top10": 142632,
+    "max_rating_count": 87326,
+    "avg_rating_count": 14263,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.57,
+    "concentration_index": 0.796,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.5,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 3,
+    "mature_apps_pct": 60,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "GIF Maker - Memes & GIFs",
+        "rating_count": 87326,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "Brain Craft Ltd",
+        "category": "Utilities"
+      },
+      {
+        "name": "ImgPlay: GIF Maker & Meme",
+        "rating_count": 44864,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "ImgBase, Inc.",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "GIF to Video",
+        "rating_count": 4608,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "Macrobian Games",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "GIF to Video",
+      "Video to GIF - GIF Maker",
+      "Video To GIF Converter - GIFit",
+      "Video to gif Converter - Convert Gif from Video",
+      "Video to GIF Maker & Editor",
+      "Video To GIF Converter - PyMax",
+      "Video to GIF Converter ,Maker",
+      "GIF Maker - Memes & GIFs",
+      "ImgPlay: GIF Maker & Meme",
+      "Convert: GIF Maker & Wallpaper"
+    ],
+    "kills": [
+      "one_shot_calc",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_shot_calc",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.02,
+    "ltv": 0.05,
+    "payback_months": 48.6,
+    "roas_6mo": 0.02,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 1,
+    "paying_conv": 0.01,
+    "demand_signal": 1.0,
+    "supply_room": 0.35,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "car cost calculator",
     "keyword_normalized": "car cost calculator",
     "total_ratings_top10": 124071,
@@ -79308,86 +82954,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
-  },
-  {
-    "keyword_original": "video to gif converter",
-    "keyword_normalized": "video to gif converter",
-    "total_ratings_top10": 142632,
-    "max_rating_count": 87326,
-    "avg_rating_count": 14263,
-    "weak_apps_in_top10": 5,
-    "avg_star_rating": 4.57,
-    "concentration_index": 0.796,
-    "dominant_category": "Photo & Video",
-    "category_focus": 0.5,
-    "free_count": 10,
-    "paid_count": 0,
-    "stale_apps": 3,
-    "mature_apps_pct": 60,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "GIF Maker - Memes & GIFs",
-        "rating_count": 87326,
-        "star_rating": 4.64,
-        "price": 0.0,
-        "developer": "Brain Craft Ltd",
-        "category": "Utilities"
-      },
-      {
-        "name": "ImgPlay: GIF Maker & Meme",
-        "rating_count": 44864,
-        "star_rating": 4.75,
-        "price": 0.0,
-        "developer": "ImgBase, Inc.",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "GIF to Video",
-        "rating_count": 4608,
-        "star_rating": 4.64,
-        "price": 0.0,
-        "developer": "Macrobian Games",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "GIF to Video",
-      "Video to GIF - GIF Maker",
-      "Video To GIF Converter - GIFit",
-      "Video to gif Converter - Convert Gif from Video",
-      "Video to GIF Maker & Editor",
-      "Video To GIF Converter - PyMax",
-      "Video to GIF Converter ,Maker",
-      "GIF Maker - Memes & GIFs",
-      "ImgPlay: GIF Maker & Meme",
-      "Convert: GIF Maker & Wallpaper"
-    ],
-    "kills": [
-      "one_shot_calc",
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:one_shot_calc",
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.02,
-    "ltv": 0.05,
-    "payback_months": 48.6,
-    "roas_6mo": 0.02,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 1,
-    "paying_conv": 0.01,
-    "demand_signal": 1.0,
-    "supply_room": 0.35,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.4,
-    "intent_relevance": 1.0,
-    "relevant_count": 10
   },
   {
     "keyword_original": "home value estimator app",
@@ -81720,6 +85286,78 @@
     "penalty_mult": 0.1,
     "intent_relevance": 0.1,
     "relevant_count": 1
+  },
+  {
+    "keyword_original": "webp to jpg converter",
+    "keyword_normalized": "webp to jpg converter",
+    "total_ratings_top10": 1,
+    "max_rating_count": 1,
+    "avg_rating_count": 0,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 1.0,
+    "concentration_index": 0.5,
+    "dominant_category": "Utilities",
+    "category_focus": 0.5,
+    "free_count": 1,
+    "paid_count": 1,
+    "stale_apps": 2,
+    "mature_apps_pct": 80,
+    "demand_level": "VERY LOW",
+    "supply_level": "NONE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "WEBP to JPG Converter",
+        "rating_count": 1,
+        "star_rating": 1.0,
+        "price": 1.99,
+        "developer": "OpsOh LLC",
+        "category": "Utilities"
+      },
+      {
+        "name": "WebP to PNG & JPEG Converter",
+        "rating_count": 0,
+        "star_rating": 0.0,
+        "price": 0.0,
+        "developer": "Riadh Daoued",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "WEBP to JPG Converter",
+      "WebP to PNG & JPEG Converter",
+      "Photos PDF : Scanner Converter",
+      "PDF Converter - Word to PDF",
+      "JPEG-PNG Image file converter",
+      "The Image Converter \u25a1",
+      "Photo to PDF Converter Scanner",
+      "Image Converter: JPEG PDF HEIC",
+      "The Vector Converter",
+      "Image Converter: photos to PDF"
+    ],
+    "kills": [
+      "one_shot_calc",
+      "off_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_shot_calc",
+      "kill:off_intent(rel=0.2)"
+    ],
+    "vibe_roi": 0.0,
+    "ltv": 0.04,
+    "payback_months": 57.75,
+    "roas_6mo": 0.02,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 1,
+    "paying_conv": 0.01,
+    "demand_signal": 0.0,
+    "supply_room": 0.35,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.1,
+    "intent_relevance": 0.2,
+    "relevant_count": 2
   },
   {
     "keyword_original": "paver calculator app",
@@ -84186,78 +87824,6 @@
     "roas_6mo": 0.01,
     "arpu_est": 8.0,
     "cpi_est": 8.33,
-    "retention_months": 1,
-    "paying_conv": 0.01,
-    "demand_signal": 0.0,
-    "supply_room": 0.35,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.1,
-    "intent_relevance": 0.2,
-    "relevant_count": 2
-  },
-  {
-    "keyword_original": "webp to jpg converter",
-    "keyword_normalized": "webp to jpg converter",
-    "total_ratings_top10": 1,
-    "max_rating_count": 1,
-    "avg_rating_count": 0,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 1.0,
-    "concentration_index": 0.5,
-    "dominant_category": "Utilities",
-    "category_focus": 0.5,
-    "free_count": 1,
-    "paid_count": 1,
-    "stale_apps": 2,
-    "mature_apps_pct": 80,
-    "demand_level": "VERY LOW",
-    "supply_level": "NONE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "WEBP to JPG Converter",
-        "rating_count": 1,
-        "star_rating": 1.0,
-        "price": 1.99,
-        "developer": "OpsOh LLC",
-        "category": "Utilities"
-      },
-      {
-        "name": "WebP to PNG & JPEG Converter",
-        "rating_count": 0,
-        "star_rating": 0.0,
-        "price": 0.0,
-        "developer": "Riadh Daoued",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "WEBP to JPG Converter",
-      "WebP to PNG & JPEG Converter",
-      "Photos PDF : Scanner Converter",
-      "PDF Converter - Word to PDF",
-      "JPEG-PNG Image file converter",
-      "The Image Converter \u25a1",
-      "Photo to PDF Converter Scanner",
-      "Image Converter: JPEG PDF HEIC",
-      "The Vector Converter",
-      "Image Converter: photos to PDF"
-    ],
-    "kills": [
-      "one_shot_calc",
-      "off_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:one_shot_calc",
-      "kill:off_intent(rel=0.2)"
-    ],
-    "vibe_roi": 0.0,
-    "ltv": 0.04,
-    "payback_months": 57.75,
-    "roas_6mo": 0.02,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
     "retention_months": 1,
     "paying_conv": 0.01,
     "demand_signal": 0.0,

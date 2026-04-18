@@ -9,3 +9,4 @@ relevance_cache.json
 .gitignore.add
 pipeline.log
 retry_pipeline.log
+pipeline_v2.log

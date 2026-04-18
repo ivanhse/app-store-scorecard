@@ -33,6 +33,10 @@ try:
     from utilities_ext import UTILITIES as KW3
 except ImportError:
     KW3 = []
+try:
+    from utilities_ext_v2 import UTILITIES_V2 as KW4
+except ImportError:
+    KW4 = []
 
 ITUNES = "https://itunes.apple.com/search"
 NOW = datetime.now()
@@ -368,7 +372,7 @@ def evaluate(keyword: str, top10: list[dict]) -> dict:
 
 
 def main():
-    all_keywords = list(dict.fromkeys(KW1 + KW2 + KW3))  # preserve order, dedupe
+    all_keywords = list(dict.fromkeys(KW1 + KW2 + KW3 + KW4))  # preserve order, dedupe
     print(f"Total unique keywords: {len(all_keywords)}", flush=True)
 
     cache = {}
