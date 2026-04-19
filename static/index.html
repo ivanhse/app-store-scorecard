@@ -364,12 +364,12 @@
   .cc-chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); }
   .cc-chip.chip-roi .dot { background: currentColor; opacity: .6; }
 
-  /* body grid */
-  .cc-body {
-    display: grid; grid-template-columns: 1fr 360px; gap: 20px;
-  }
-  @media (max-width: 880px) {
-    .cc-body { grid-template-columns: 1fr; }
+  /* body (stacked: keywords full width, then top-apps strip below) */
+  .cc-body { display: flex; flex-direction: column; gap: 14px; }
+  .cc-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 4px 20px;
   }
 
   .cc-section-label {
@@ -595,7 +595,7 @@
       <select id="clustersMaxGini" onchange="renderClusters()" title="Filter out clusters where one app dominates. 0.85 hides extreme single-app monopolies.">
         <option value="1">Any</option>
         <option value="0.9">≤ 0.90</option>
-        <option value="0.85">≤ 0.85</option>
+        <option value="0.85" selected>≤ 0.85</option>
         <option value="0.8">≤ 0.80</option>
         <option value="0.7">≤ 0.70</option>
       </select>
@@ -606,7 +606,7 @@
         <option value="0">Any</option>
         <option value="1000">≥ 1K</option>
         <option value="5000">≥ 5K</option>
-        <option value="10000">≥ 10K</option>
+        <option value="10000" selected>≥ 10K</option>
         <option value="25000">≥ 25K</option>
         <option value="50000">≥ 50K</option>
         <option value="100000">≥ 100K</option>
@@ -619,6 +619,7 @@
         <option value="1000000">≤ 1M</option>
         <option value="500000">≤ 500K</option>
         <option value="250000">≤ 250K</option>
+        <option value="200000" selected>≤ 200K</option>
         <option value="100000">≤ 100K</option>
         <option value="50000">≤ 50K</option>
       </select>
@@ -1556,9 +1557,9 @@ function resetClusterFilters() {
   document.getElementById('clustersSort').value = 'best_vibe_roi';
   document.getElementById('clustersMinSize').value = '2';
   document.getElementById('clustersMinVerdict').value = '0';
-  document.getElementById('clustersMaxGini').value = '1';
-  document.getElementById('clustersMaxTopRatings').value = '0';
-  document.getElementById('clustersMinTopRatings').value = '0';
+  document.getElementById('clustersMaxGini').value = '0.85';
+  document.getElementById('clustersMaxTopRatings').value = '200000';
+  document.getElementById('clustersMinTopRatings').value = '10000';
   document.getElementById('clustersSearch').value = '';
   renderClusters();
 }
@@ -1731,7 +1732,9 @@ function renderClusters() {
         </div>
         <div class="cc-apps">
           <div class="cc-apps-head"><span>Top apps across cluster</span><span class="hint">× = # kw it appears in</span></div>
-          ${topAppsHtml || '<div style="color:var(--muted);font-size:12px;padding:8px 0">No relevant apps.</div>'}
+          <div class="cc-apps-grid">
+            ${topAppsHtml || '<div style="color:var(--muted);font-size:12px;padding:8px 0">No relevant apps.</div>'}
+          </div>
         </div>
       </div>
     </div>`;
