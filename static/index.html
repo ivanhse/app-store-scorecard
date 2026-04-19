@@ -454,6 +454,18 @@
       </select>
     </div>
     <div class="ctrl-group">
+      <label>Min top-app ratings</label>
+      <select id="clustersMinTopRatings" onchange="renderClusters()" title="Hide clusters where the biggest app has fewer ratings than this — filters out unproven niches with no demand signal.">
+        <option value="0">Any</option>
+        <option value="1000">≥ 1K</option>
+        <option value="5000">≥ 5K</option>
+        <option value="10000">≥ 10K</option>
+        <option value="25000">≥ 25K</option>
+        <option value="50000">≥ 50K</option>
+        <option value="100000">≥ 100K</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
       <label>Max top-app ratings</label>
       <select id="clustersMaxTopRatings" onchange="renderClusters()" title="Hide clusters whose biggest app has more ratings than this — no point entering if a 1M-review incumbent owns the space.">
         <option value="0">Any</option>
@@ -1399,6 +1411,7 @@ function resetClusterFilters() {
   document.getElementById('clustersMinVerdict').value = '0';
   document.getElementById('clustersMaxGini').value = '1';
   document.getElementById('clustersMaxTopRatings').value = '0';
+  document.getElementById('clustersMinTopRatings').value = '0';
   document.getElementById('clustersSearch').value = '';
   renderClusters();
 }
@@ -1429,6 +1442,7 @@ function renderClusters() {
   const minVerdict = parseInt(document.getElementById('clustersMinVerdict').value) || 0;
   const maxGini = parseFloat(document.getElementById('clustersMaxGini').value);
   const maxTopRatings = parseInt(document.getElementById('clustersMaxTopRatings').value) || 0;
+  const minTopRatings = parseInt(document.getElementById('clustersMinTopRatings').value) || 0;
   const search = document.getElementById('clustersSearch').value.trim().toLowerCase();
 
   const topAppRatings = (c) => (c.top_apps && c.top_apps.length) ? (c.top_apps[0].rating_count || 0) : 0;
@@ -1445,6 +1459,7 @@ function renderClusters() {
     (c.unique_relevant_apps || 0) < 3 || (c.rating_gini || 0) <= maxGini
   );
   if (maxTopRatings > 0) items = items.filter(c => topAppRatings(c) <= maxTopRatings);
+  if (minTopRatings > 0) items = items.filter(c => topAppRatings(c) >= minTopRatings);
   if (search) {
     items = items.filter(c =>
       c.id.toLowerCase().includes(search) ||
