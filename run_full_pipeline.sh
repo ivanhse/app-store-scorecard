@@ -16,4 +16,7 @@ python3 apply_relevance_to_deep_research.py
 echo "==> build_clusters.py (rebuild clusters.json)"
 python3 build_clusters.py
 
+echo "==> merge_relevance_into_brainstorm.py (enrich batch_results.json with intent signals)"
+python3 merge_relevance_into_brainstorm.py
+
 echo "==> done."
