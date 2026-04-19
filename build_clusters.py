@@ -76,6 +76,22 @@ VERDICT_RANK = {
 }
 
 
+def gini(values: list[int]) -> float:
+    """Standard Gini coefficient on non-negative values.
+
+    0 = perfectly equal (all apps share ratings evenly), 1 = all ratings on
+    one app. Returns None-equivalent 0.0 for empty / single-item / all-zero
+    lists so it's always comparable as a float.
+    """
+    xs = sorted(v for v in values if v is not None)
+    n = len(xs)
+    total = sum(xs)
+    if n < 2 or total <= 0:
+        return 0.0
+    weighted = sum((i + 1) * x for i, x in enumerate(xs))
+    return (2 * weighted) / (n * total) - (n + 1) / n
+
+
 def primary_buckets(
     token_by_kw: dict[str, set],
     category_by_kw: dict[str, str],
@@ -198,6 +214,11 @@ def build_cluster(
 
     unique_apps = sorted(seen_apps.values(), key=lambda x: -x["rating_count"])
     unique_total_ratings = sum(a["rating_count"] for a in unique_apps)
+    rating_gini = round(gini([a["rating_count"] for a in unique_apps]), 3)
+    top_app_share = (
+        round(unique_apps[0]["rating_count"] / unique_total_ratings, 3)
+        if unique_apps and unique_total_ratings > 0 else 0.0
+    )
 
     member_rows: list[dict] = []
     intent_sum, intent_n = 0.0, 0
@@ -272,6 +293,8 @@ def build_cluster(
         "size": len(members),
         "unique_relevant_apps": len(unique_apps),
         "unique_total_ratings": unique_total_ratings,
+        "rating_gini": rating_gini,
+        "top_app_share": top_app_share,
         "best_verdict": best_verdict_label,
         "best_verdict_rank": best_verdict_rank,
         "best_vibe_roi": round(best_vibe, 2),

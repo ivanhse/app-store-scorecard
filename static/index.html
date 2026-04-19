@@ -434,11 +434,23 @@
         <option value="size">Cluster size</option>
         <option value="unique_apps">Unique relevant apps</option>
         <option value="avg_intent">Avg intent relevance</option>
+        <option value="gini_asc">Least concentrated (Gini ↑)</option>
+        <option value="gini_desc">Most concentrated (Gini ↓)</option>
       </select>
     </div>
     <div class="ctrl-group">
       <label>Min size</label>
       <input type="number" id="clustersMinSize" value="2" min="1" onchange="renderClusters()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
+    </div>
+    <div class="ctrl-group">
+      <label>Max Gini</label>
+      <select id="clustersMaxGini" onchange="renderClusters()" title="Filter out clusters where one app dominates. 0.85 hides extreme single-app monopolies.">
+        <option value="1">Any</option>
+        <option value="0.9">≤ 0.90</option>
+        <option value="0.85">≤ 0.85</option>
+        <option value="0.8">≤ 0.80</option>
+        <option value="0.7">≤ 0.70</option>
+      </select>
     </div>
     <div class="ctrl-group">
       <label>Verdict ≥</label>
@@ -1373,6 +1385,7 @@ function resetClusterFilters() {
   document.getElementById('clustersSort').value = 'best_vibe_roi';
   document.getElementById('clustersMinSize').value = '2';
   document.getElementById('clustersMinVerdict').value = '0';
+  document.getElementById('clustersMaxGini').value = '1';
   document.getElementById('clustersSearch').value = '';
   renderClusters();
 }
@@ -1395,6 +1408,7 @@ function renderClusters() {
   const sortKey = document.getElementById('clustersSort').value;
   const minSize = parseInt(document.getElementById('clustersMinSize').value) || 1;
   const minVerdict = parseInt(document.getElementById('clustersMinVerdict').value) || 0;
+  const maxGini = parseFloat(document.getElementById('clustersMaxGini').value);
   const search = document.getElementById('clustersSearch').value.trim().toLowerCase();
 
   // When the user is searching, ignore the theme-length filter so that a
@@ -1404,6 +1418,10 @@ function renderClusters() {
     (search || (c.theme_length || 1) === themeLen) && c.size >= minSize
   );
   if (minVerdict > 0) items = items.filter(c => (c.best_verdict_rank || 0) >= minVerdict);
+  // Gini filter ignores clusters with <3 apps (Gini on 1-2 items isn't meaningful).
+  if (maxGini < 1) items = items.filter(c =>
+    (c.unique_relevant_apps || 0) < 3 || (c.rating_gini || 0) <= maxGini
+  );
   if (search) {
     items = items.filter(c =>
       c.id.toLowerCase().includes(search) ||
@@ -1415,6 +1433,8 @@ function renderClusters() {
     if (sortKey === 'size') return b.size - a.size;
     if (sortKey === 'unique_apps') return (b.unique_relevant_apps || 0) - (a.unique_relevant_apps || 0);
     if (sortKey === 'avg_intent') return (b.avg_intent_relevance || 0) - (a.avg_intent_relevance || 0);
+    if (sortKey === 'gini_asc') return (a.rating_gini || 0) - (b.rating_gini || 0);
+    if (sortKey === 'gini_desc') return (b.rating_gini || 0) - (a.rating_gini || 0);
     return (b.best_vibe_roi || 0) - (a.best_vibe_roi || 0);
   });
 
@@ -1436,6 +1456,17 @@ function renderClusters() {
     const totalRatings = fmt(c.unique_total_ratings || 0);
     const roiColor = (c.best_vibe_roi || 0) >= 4 ? 'var(--green)' :
                      (c.best_vibe_roi || 0) >= 1.5 ? 'var(--yellow)' : 'var(--muted)';
+    const giniVal = c.rating_gini;
+    const giniShown = giniVal != null ? giniVal.toFixed(2) : '—';
+    const topShare = c.top_app_share != null ? Math.round(c.top_app_share * 100) : null;
+    // Color: red = extreme monopoly, yellow = heavy skew, muted = healthy spread.
+    // Only flag when the cluster has enough apps that Gini is meaningful (>=3).
+    const giniColor = (c.unique_relevant_apps || 0) < 3 ? 'var(--muted)'
+                    : (giniVal >= 0.85 ? 'var(--red)'
+                    : giniVal >= 0.75 ? 'var(--yellow)' : 'var(--text)');
+    const giniTip = topShare != null
+      ? `Top app has ${topShare}% of cluster ratings. 0 = evenly spread, 1 = single-app monopoly.`
+      : 'Gini concentration — 0 evenly spread, 1 single-app monopoly.';
 
     const hasSubgroups = (c.subgroups || []).length > 0;
     const leftPane = hasSubgroups
@@ -1486,10 +1517,11 @@ function renderClusters() {
       </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
         <div>
-          <div style="display:flex;gap:14px;margin-bottom:10px;font-size:12px;color:var(--muted)">
+          <div style="display:flex;gap:14px;margin-bottom:10px;font-size:12px;color:var(--muted);flex-wrap:wrap">
             <span>Best Vibe-ROI <strong style="color:${roiColor}">${bestRoi}</strong></span>
             <span>Worst <strong style="color:var(--text)">${worstRoi}</strong></span>
             <span>Avg intent <strong style="color:var(--text)">${avgIntent}</strong></span>
+            <span title="${giniTip}">Gini <strong style="color:${giniColor}">${giniShown}</strong>${topShare != null ? `<span style="opacity:.6;margin-left:4px">· top ${topShare}%</span>` : ''}</span>
           </div>
           ${leftPane}
         </div>
