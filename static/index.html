@@ -381,6 +381,15 @@
       <input type="number" id="researchMinWeak" placeholder="e.g. 15" min="0" onchange="renderResearch()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:70px" />
     </div>
     <div class="ctrl-group">
+      <label>Min intent</label>
+      <select id="researchMinIntent" onchange="renderResearch()" title="Hide keywords where top-10 is mostly off-intent (Sony headphones on noise cancellation, etc)">
+        <option value="">Any</option>
+        <option value="0.3">≥ 0.3 (exclude OFF-INTENT)</option>
+        <option value="0.5">≥ 0.5 (half relevant)</option>
+        <option value="0.7">≥ 0.7 (mostly relevant)</option>
+      </select>
+    </div>
+    <div class="ctrl-group">
       <label>Keyword search</label>
       <input type="text" id="researchKeywordSearch" placeholder="e.g. tracker" oninput="renderResearch()" style="padding:8px 10px;background:var(--card);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;width:140px" />
     </div>
@@ -534,8 +543,20 @@ function switchPage(name) {
   if (name === 'shortlist' && !shortlistLoaded) loadShortlist();
 }
 
-const DEMAND_SCORES = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
+const DEMAND_SCORES = { "NONE": -1, "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
 const SUPPLY_SCORES = { "VERY LOW": 0, "LOW": 1, "MODERATE": 2, "HIGH": 3, "VERY HIGH": 4 };
+const EASE_SCORES = { "EASY": 4, "OPEN": 3, "MODERATE": 2, "HARD": 1, "VERY HARD": 0 };
+function tierScoreFor(verdict) {
+  const v = verdict || '';
+  if (v.startsWith('GREAT')) return 6;
+  if (v.startsWith('GOOD')) return 5;
+  if (v.startsWith('COMPETITIVE')) return 4;
+  if (v.startsWith('NICHE') || v.startsWith('SMALL') || v.startsWith('UNPROVEN')) return 3;
+  if (v.startsWith('HARD')) return 2;
+  if (v.startsWith('THIN') || v.startsWith('AVOID') || v.startsWith('OVERSUPPLIED')) return 1;
+  if (v.startsWith('OFF-INTENT')) return 0;
+  return -1;
+}
 
 let shortlistData = [];
 let shortlistLoaded = false;
@@ -1063,6 +1084,7 @@ function resetResearchFilters() {
   document.getElementById('researchMinScore').value = '';
   document.getElementById('researchMinStale').value = '';
   document.getElementById('researchMinWeak').value = '';
+  document.getElementById('researchMinIntent').value = '';
   document.getElementById('researchKeywordSearch').value = '';
   researchSort = { col: 'score', dir: 'desc' };
   renderResearch();
@@ -1086,7 +1108,10 @@ function getResearchSortVal(r, col) {
     case 'ltv': return r.ltv ?? -1;
     case 'score': return r.score || 0;
     case 'keyword': return r.keyword_normalized || r.keyword || '';
-    case 'opportunity': return TIER_SCORES[r.opportunity] ?? -1;
+    case 'opportunity': return tierScoreFor(r.verdict_intent || r.opportunity);
+    case 'intent_relevance': return r.intent_relevance ?? -1;
+    case 'demand_rel_label': return DEMAND_SCORES[r.demand_rel_label] ?? -1;
+    case 'ease_label': return EASE_SCORES[(r.ease_of_entry && r.ease_of_entry.label || '').split(' — ')[0]] ?? -1;
     case 'demand_level': return DEMAND_SCORES[r.demand_level] ?? 0;
     case 'supply_level': return SUPPLY_SCORES[r.supply_level] ?? 0;
     case 'total_ratings_top10': return r.total_ratings_top10 || r.total_ratings_all || 0;
@@ -1116,25 +1141,33 @@ function renderResearch() {
   const minScore = document.getElementById('researchMinScore').value;
   const minStale = document.getElementById('researchMinStale').value;
   const minWeak = document.getElementById('researchMinWeak').value;
+  const minIntent = document.getElementById('researchMinIntent').value;
   const kwSearch = document.getElementById('researchKeywordSearch').value.toLowerCase().trim();
 
   let items = researchData.filter(r => !r.error);
 
+  // Verdict filter prefers intent-filtered verdict when available, falls back to raw opportunity
+  const vText = (r) => r.verdict_intent || r.opportunity || '';
   if (tierFilter === 'great') {
-    items = items.filter(r => (r.opportunity || '').includes('GREAT'));
+    items = items.filter(r => vText(r).includes('GREAT'));
   } else if (tierFilter === 'good') {
-    items = items.filter(r => (r.opportunity || '').includes('GOOD') && !(r.opportunity || '').includes('GREAT'));
+    items = items.filter(r => vText(r).includes('GOOD') && !vText(r).includes('GREAT'));
   } else if (tierFilter === 'great+good') {
-    items = items.filter(r => (r.opportunity || '').includes('GREAT') || (r.opportunity || '').includes('GOOD'));
+    items = items.filter(r => vText(r).includes('GREAT') || vText(r).includes('GOOD'));
   } else if (tierFilter === 'competitive') {
-    items = items.filter(r => (r.opportunity || '').includes('COMPETITIVE'));
+    items = items.filter(r => vText(r).includes('COMPETITIVE'));
+  } else if (tierFilter === 'niche') {
+    items = items.filter(r => vText(r).includes('NICHE'));
+  } else if (tierFilter === 'avoid') {
+    items = items.filter(r => vText(r).includes('AVOID') || vText(r).includes('OFF-INTENT') || vText(r).includes('HARD') || vText(r).includes('THIN'));
   }
 
-  if (minDemand) items = items.filter(r => (DEMAND_SCORES[r.demand_level] ?? 0) >= parseInt(minDemand));
+  if (minDemand) items = items.filter(r => (DEMAND_SCORES[r.demand_rel_label || r.demand_level] ?? 0) >= parseInt(minDemand));
   if (maxSupply) items = items.filter(r => (SUPPLY_SCORES[r.supply_level] ?? 0) <= parseInt(maxSupply));
   if (minScore) items = items.filter(r => (r.score || 0) >= parseFloat(minScore));
   if (minStale) items = items.filter(r => (r.stale_apps || 0) >= parseInt(minStale));
   if (minWeak) items = items.filter(r => (r.weak_apps_in_top10 || r.weak_apps_in_top25 || 0) >= parseInt(minWeak));
+  if (minIntent) items = items.filter(r => (r.intent_relevance ?? 0) >= parseFloat(minIntent));
   if (kwSearch) items = items.filter(r => r.keyword.toLowerCase().includes(kwSearch));
 
   const { col, dir } = researchSort;
@@ -1164,38 +1197,50 @@ function renderResearch() {
   html += thHtml('Score', 'score', 'left');
   html += thHtml('Keyword', 'keyword', 'left');
   html += thHtml('Verdict', 'opportunity', 'left');
-  html += thHtml('Demand', 'demand_level', 'left');
-  html += thHtml('Supply', 'supply_level', 'left');
+  html += thHtml('Intent', 'intent_relevance', 'right');
+  html += thHtml('Rel Demand', 'demand_rel_label', 'left');
+  html += thHtml('Ease', 'ease_label', 'left');
+  html += thHtml('Raw Demand', 'demand_level', 'left');
+  html += thHtml('Raw Supply', 'supply_level', 'left');
   html += thHtml('Market Ratings', 'total_ratings_top10', 'right');
-  html += thHtml('Avg Incumbent', 'avg_rating_count', 'right');
   html += thHtml('Avg Stars', 'avg_star_rating', 'right');
   html += thHtml('Stale', 'stale_apps', 'right');
-  html += thHtml('Low Rated', 'low_rated_apps', 'right');
   html += thHtml('Weak', 'weak_apps_in_top10', 'right');
-  html += thHtml('Mature %', 'mature_apps_pct', 'right');
   html += thHtml('Gini', 'concentration_index', 'right');
   html += `<th style="${thStyle};text-align:left">Top 3 Apps</th>`;
   html += '</tr></thead><tbody>';
 
   items.forEach((r, i) => {
-    const oppClass = opportunityClass(r.opportunity || '');
+    const shownVerdict = r.verdict_intent || r.opportunity || '';
+    const oppClass = opportunityClass(shownVerdict);
     const top3 = (r.top_3_apps || []).map(a => `${a.name.substring(0, 20)}${a.name.length > 20 ? '…' : ''} (${fmt(a.ratings)})`).join(', ');
     const kw = r.keyword.replace(/'/g, "\\'");
-    html += `<tr style="border-top:1px solid var(--border)" onmouseover="this.style.background='rgba(108,92,231,.06)'" onmouseout="this.style.background=''">
+    const intent = r.intent_relevance;
+    const isOff = intent != null && intent < 0.3;
+    const rowOpacity = isOff ? '.55' : '1';
+    const intentColor = intent == null ? 'var(--muted)' : (intent >= 0.7 ? 'var(--green)' : intent >= 0.3 ? 'var(--yellow)' : 'var(--red)');
+    const intentStr = intent == null ? '—' : intent.toFixed(2);
+    const relDemand = r.demand_rel_label || '—';
+    const relDemandColor = (relDemand === 'VERY HIGH' || relDemand === 'HIGH') ? 'var(--green)' : relDemand === 'MODERATE' ? 'var(--blue)' : 'var(--muted)';
+    const easeLabel = (r.ease_of_entry && r.ease_of_entry.label) ? r.ease_of_entry.label.split(' — ')[0] : '—';
+    const easeColor = easeLabel === 'EASY' ? 'var(--green)' : easeLabel === 'MODERATE' ? 'var(--blue)' : easeLabel === 'HARD' ? 'var(--yellow)' : easeLabel === 'VERY HARD' ? 'var(--red)' : easeLabel === 'OPEN' ? 'var(--muted)' : 'var(--muted)';
+    const easeReason = (r.ease_of_entry && r.ease_of_entry.reason) ? r.ease_of_entry.reason : '';
+    const verdictShort = shownVerdict.split(' — ')[0];
+    html += `<tr style="border-top:1px solid var(--border);opacity:${rowOpacity}" onmouseover="this.style.background='rgba(108,92,231,.06)'" onmouseout="this.style.background=''">
       <td style="padding:8px 10px;color:var(--muted)">${i + 1}</td>
       <td style="padding:8px 10px;font-weight:700">${r.score}</td>
       <td style="padding:8px 10px;font-weight:600"><a href="#" onclick="analyzeFromResearch('${kw}');return false" style="color:var(--text);text-decoration:underline;text-decoration-color:var(--border)">${r.keyword}</a></td>
-      <td style="padding:8px 10px"><span class="opportunity-badge ${oppClass}" style="white-space:nowrap;font-size:10px">${r.opportunity}</span></td>
-      <td style="padding:8px 10px;color:var(--blue);font-weight:600;white-space:nowrap">${r.demand_level}</td>
-      <td style="padding:8px 10px;color:var(--red);font-weight:600;white-space:nowrap">${r.supply_level}</td>
+      <td style="padding:8px 10px"><span class="opportunity-badge ${oppClass}" style="white-space:nowrap;font-size:10px" title="${shownVerdict}${r.opportunity && r.opportunity !== shownVerdict ? '\n(raw: ' + r.opportunity + ')' : ''}">${verdictShort}</span></td>
+      <td style="padding:8px 10px;text-align:right;color:${intentColor};font-weight:600" title="Share of top-10 that matches intent">${intentStr}</td>
+      <td style="padding:8px 10px;color:${relDemandColor};font-weight:600;white-space:nowrap" title="Sum of ratings among relevant apps only">${relDemand}</td>
+      <td style="padding:8px 10px;color:${easeColor};font-weight:600;white-space:nowrap" title="${easeReason}">${easeLabel}</td>
+      <td style="padding:8px 10px;color:var(--muted);white-space:nowrap" title="Raw sum(ratings top-10) — unfiltered by intent">${r.demand_level}</td>
+      <td style="padding:8px 10px;color:var(--muted);white-space:nowrap" title="Raw avg(ratings top-10) — unfiltered by intent">${r.supply_level}</td>
       <td style="padding:8px 10px;text-align:right">${fmt(r.total_ratings_top10 || r.total_ratings_all || 0)}</td>
-      <td style="padding:8px 10px;text-align:right">${fmt(r.avg_rating_count || 0)}</td>
       <td style="padding:8px 10px;text-align:right">${r.avg_star_rating || '—'}</td>
       <td style="padding:8px 10px;text-align:right">${r.stale_apps || 0}</td>
-      <td style="padding:8px 10px;text-align:right">${r.low_rated_apps || 0}</td>
       <td style="padding:8px 10px;text-align:right">${r.weak_apps_in_top10 || r.weak_apps_in_top25 || 0}</td>
-      <td style="padding:8px 10px;text-align:right">${r.mature_apps_pct != null ? r.mature_apps_pct + '%' : '—'}</td>
-      <td style="padding:8px 10px;text-align:right;color:${r.concentration_index != null ? (r.concentration_index > 0.7 ? 'var(--red)' : r.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--green)') : 'var(--muted)'}">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
+      <td style="padding:8px 10px;text-align:right;color:${r.concentration_index != null ? (r.concentration_index > 0.7 ? 'var(--red)' : r.concentration_index > 0.5 ? 'var(--yellow)' : 'var(--muted)') : 'var(--muted)'}">${r.concentration_index != null ? r.concentration_index.toFixed(2) : '—'}</td>
       <td style="padding:8px 10px;color:var(--muted);font-size:11px;max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${top3}">${top3}</td>
     </tr>`;
   });
@@ -1505,7 +1550,7 @@ function opportunityClass(opp) {
   if (opp.startsWith('GREAT')) return 'great';
   if (opp.startsWith('GOOD')) return 'good';
   if (opp.startsWith('COMPETITIVE')) return 'competitive';
-  if (opp.startsWith('SMALL')) return 'niche';
+  if (opp.startsWith('SMALL') || opp.startsWith('NICHE') || opp.startsWith('UNPROVEN')) return 'niche';
   if (opp.startsWith('OVERSUPPLIED')) return 'oversupplied';
   return 'avoid';
 }
