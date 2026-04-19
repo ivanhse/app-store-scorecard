@@ -291,13 +291,13 @@
 <p class="subtitle">Find the fastest-to-build, highest-ROI app for a paid-ads playbook.</p>
 
 <div class="tabs">
-  <button class="tab active" onclick="switchPage('research')">Brainstorm 1100+</button>
-  <button class="tab" onclick="switchPage('clusters')">Clusters</button>
+  <button class="tab" onclick="switchPage('research')" style="display:none">Brainstorm 1100+</button>
+  <button class="tab active" onclick="switchPage('clusters')">Clusters</button>
   <button class="tab" onclick="switchPage('shortlist')" style="display:none">Top Picks</button>
   <button class="tab" onclick="switchPage('analyzer')">Analyzer</button>
 </div>
 
-<div class="page visible" id="page-research">
+<div class="page" id="page-research">
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
     <h3 style="font-size:16px;margin-bottom:10px">How this was generated</h3>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
@@ -402,7 +402,7 @@
   <div id="research-results"><div class="loading"><div class="spinner"></div>Loading research data...</div></div>
 </div>
 
-<div class="page" id="page-clusters">
+<div class="page visible" id="page-clusters">
   <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:20px">
     <h3 style="font-size:16px;margin-bottom:10px">Keyword clusters — grouped by theme · category</h3>
     <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:8px">
@@ -1936,8 +1936,8 @@ document.getElementById('keywords').addEventListener('keydown', e => {
   if (e.key === 'Enter') analyze();
 });
 
-// Research is the default landing tab — kick off its load immediately.
-loadResearch();
+// Clusters is the default landing tab — kick off its load immediately.
+loadClusters();
 </script>
 </body>
 </html>
