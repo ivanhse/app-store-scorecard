@@ -366,11 +366,7 @@
 
   /* body (stacked: keywords full width, then top-apps strip below) */
   .cc-body { display: flex; flex-direction: column; gap: 14px; }
-  .cc-apps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: 4px 20px;
-  }
+  .cc-apps-grid { display: block; }
 
   .cc-section-label {
     font-size: 10px; color: var(--muted); text-transform: uppercase;
