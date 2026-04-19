@@ -24,6 +24,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Inter', sans-serif;
     background: var(--bg); color: var(--text);
     min-height: 100vh; padding: 24px;
+    max-width: 1400px; margin: 0 auto;
   }
   h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
   .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
@@ -364,8 +365,16 @@
   .cc-chip .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); }
   .cc-chip.chip-roi .dot { background: currentColor; opacity: .6; }
 
-  /* body (stacked: keywords full width, then top-apps strip below) */
-  .cc-body { display: flex; flex-direction: column; gap: 14px; }
+  /* body: keywords on the left, top-apps sidebar on the right */
+  .cc-body {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 20px;
+    align-items: start;
+  }
+  @media (max-width: 880px) {
+    .cc-body { grid-template-columns: 1fr; }
+  }
   .cc-apps-grid { display: block; }
 
   .cc-section-label {
