@@ -1487,7 +1487,8 @@ function renderClusters() {
   }
 
   let html = '';
-  items.forEach(c => {
+  items.forEach((c, idx) => {
+    const rank = idx + 1;
     const vClass = deepVerdictClass(c.best_verdict);
     const bestRoi = (c.best_vibe_roi || 0).toFixed(2);
     const worstRoi = (c.worst_vibe_roi || 0).toFixed(2);
@@ -1549,6 +1550,7 @@ function renderClusters() {
     const tlBadge = `<span style="font-size:10px;padding:2px 6px;border:1px solid var(--border);border-radius:4px;color:var(--muted);font-weight:600">${c.theme_length || 1}w</span>`;
     html += `<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:14px">
       <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+        <div style="font-size:13px;font-weight:700;color:var(--muted);min-width:28px;text-align:right;font-variant-numeric:tabular-nums" title="Rank in the current filtered + sorted view">${rank}.</div>
         <div style="font-size:18px;font-weight:700;color:var(--text)">#${themeLabel} ${catLabel}</div>
         ${tlBadge}
         <span class="opportunity-badge ${vClass}" style="font-size:10px">${c.best_verdict}</span>
