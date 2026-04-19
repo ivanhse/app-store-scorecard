@@ -3214,17 +3214,17 @@
       "Hydro Coach - Hydration App",
       "Water Reminder - Daily Tracker"
     ],
-    "intent_relevance": 0.0,
-    "relevant_count": 0,
-    "rel_total_ratings": 0,
-    "demand_rel_label": "NONE",
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 596066,
+    "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
-      "label": "UNPROVEN \u2014 search intent unclear",
-      "reason": "top-10 is mostly off-intent generic apps; no evidence of real demand",
-      "top_relevant_rating": 0,
+      "label": "VERY HARD \u2014 entrenched incumbent",
+      "reason": "top relevant app has 151,983 ratings",
+      "top_relevant_rating": 151983,
       "weak_relevant_pct": 0.0
     },
-    "verdict_intent": "OFF-INTENT \u2014 App Store returns generic apps; real demand unclear"
+    "verdict_intent": "AVOID \u2014 entrenched leader"
   },
   {
     "keyword": "van life checklist",
@@ -8142,15 +8142,15 @@
       "Photo Compress: Compress Photo",
       "Photo Scanner Plus"
     ],
-    "intent_relevance": 0.9,
-    "relevant_count": 9,
-    "rel_total_ratings": 26366,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 56028,
     "demand_rel_label": "MODERATE",
     "ease_of_entry": {
       "label": "MODERATE \u2014 mid-size incumbents, room to niche down",
-      "reason": "top relevant app has 21,975 ratings",
-      "top_relevant_rating": 21975,
-      "weak_relevant_pct": 0.78
+      "reason": "top relevant app has 29,662 ratings",
+      "top_relevant_rating": 29662,
+      "weak_relevant_pct": 0.7
     },
     "verdict_intent": "NICHE \u2014 small but contestable"
   },
@@ -12517,17 +12517,17 @@
       "Upscale 4x AI:Photo Enlarger",
       "Pixelo : AI Image Upscaler"
     ],
-    "intent_relevance": 0.7,
-    "relevant_count": 7,
-    "rel_total_ratings": 10851,
-    "demand_rel_label": "LOW",
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 434835,
+    "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
-      "label": "MODERATE \u2014 mid-size incumbents, room to niche down",
-      "reason": "top relevant app has 9,116 ratings",
-      "top_relevant_rating": 9116,
-      "weak_relevant_pct": 0.71
+      "label": "VERY HARD \u2014 entrenched incumbent",
+      "reason": "top relevant app has 336,335 ratings",
+      "top_relevant_rating": 336335,
+      "weak_relevant_pct": 0.5
     },
-    "verdict_intent": "NICHE \u2014 small but contestable"
+    "verdict_intent": "AVOID \u2014 entrenched leader"
   },
   {
     "keyword": "incognito browser app",
@@ -17817,15 +17817,15 @@
       "Code128 creator",
       "QR Code Reader \u00b7"
     ],
-    "intent_relevance": 0.8,
-    "relevant_count": 8,
-    "rel_total_ratings": 112407,
+    "intent_relevance": 0.9,
+    "relevant_count": 9,
+    "rel_total_ratings": 129175,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "HARD \u2014 established leader(s)",
       "reason": "top relevant app has 90,944 ratings",
       "top_relevant_rating": 90944,
-      "weak_relevant_pct": 0.75
+      "weak_relevant_pct": 0.67
     },
     "verdict_intent": "HARD \u2014 incumbents will out-spend you"
   },
@@ -20108,14 +20108,14 @@
       "JotNot Scanner App",
       "Scanner App - Scan PDF & Docs"
     ],
-    "intent_relevance": 0.6,
-    "relevant_count": 6,
-    "rel_total_ratings": 268314,
-    "demand_rel_label": "HIGH",
+    "intent_relevance": 0.8,
+    "relevant_count": 8,
+    "rel_total_ratings": 2074546,
+    "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
-      "reason": "top relevant app has 219,447 ratings",
-      "top_relevant_rating": 219447,
+      "reason": "top relevant app has 1,788,963 ratings",
+      "top_relevant_rating": 1788963,
       "weak_relevant_pct": 0.0
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
@@ -22464,15 +22464,15 @@
       "Translator Offline",
       "Microsoft Translator"
     ],
-    "intent_relevance": 0.9,
-    "relevant_count": 9,
-    "rel_total_ratings": 919518,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 1002043,
     "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
       "reason": "top relevant app has 521,718 ratings",
       "top_relevant_rating": 521718,
-      "weak_relevant_pct": 0.44
+      "weak_relevant_pct": 0.4
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
   },
@@ -22519,17 +22519,17 @@
       "QR Code Reader, Scan Barcode",
       "QR Code & Barcode Scanner app."
     ],
-    "intent_relevance": 0.6,
-    "relevant_count": 6,
-    "rel_total_ratings": 144867,
-    "demand_rel_label": "HIGH",
+    "intent_relevance": 0.8,
+    "relevant_count": 8,
+    "rel_total_ratings": 858299,
+    "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
-      "label": "HARD \u2014 established leader(s)",
-      "reason": "top relevant app has 90,969 ratings",
-      "top_relevant_rating": 90969,
-      "weak_relevant_pct": 0.17
+      "label": "VERY HARD \u2014 entrenched incumbent",
+      "reason": "top relevant app has 667,862 ratings",
+      "top_relevant_rating": 667862,
+      "weak_relevant_pct": 0.12
     },
-    "verdict_intent": "HARD \u2014 incumbents will out-spend you"
+    "verdict_intent": "AVOID \u2014 entrenched leader"
   },
   {
     "keyword": "duplicate contact cleaner",
@@ -27167,15 +27167,15 @@
       "White Noise Sound Machine",
       "Louder Sound App"
     ],
-    "intent_relevance": 0.8,
-    "relevant_count": 8,
-    "rel_total_ratings": 150855,
+    "intent_relevance": 0.9,
+    "relevant_count": 9,
+    "rel_total_ratings": 166922,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "HARD \u2014 established leader(s)",
       "reason": "top relevant app has 134,533 ratings",
       "top_relevant_rating": 134533,
-      "weak_relevant_pct": 0.25
+      "weak_relevant_pct": 0.22
     },
     "verdict_intent": "HARD \u2014 incumbents will out-spend you"
   },
@@ -30986,14 +30986,14 @@
       "Scanner - Edit PDF & documents",
       "Scanner PDF \u2013 scan document"
     ],
-    "intent_relevance": 0.5,
-    "relevant_count": 5,
-    "rel_total_ratings": 1654357,
+    "intent_relevance": 0.9,
+    "relevant_count": 9,
+    "rel_total_ratings": 5108613,
     "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
-      "reason": "top relevant app has 1,371,198 ratings",
-      "top_relevant_rating": 1371198,
+      "reason": "top relevant app has 1,789,465 ratings",
+      "top_relevant_rating": 1789465,
       "weak_relevant_pct": 0.0
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
@@ -33267,9 +33267,9 @@
       "Microsoft Translator",
       "Translator GO: AI Translate"
     ],
-    "intent_relevance": 0.8,
-    "relevant_count": 8,
-    "rel_total_ratings": 1330379,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 1422203,
     "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
@@ -35563,15 +35563,15 @@
       "TransEase: Realtime Translator",
       "Translate Now - AI Translator"
     ],
-    "intent_relevance": 0.9,
-    "relevant_count": 9,
-    "rel_total_ratings": 168984,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 176083,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
       "reason": "top relevant app has 158,329 ratings",
       "top_relevant_rating": 158329,
-      "weak_relevant_pct": 0.44
+      "weak_relevant_pct": 0.4
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
   },
@@ -40260,15 +40260,15 @@
       "Text to Speech - SayTXT Reader",
       "Text to Speech - Listen AI"
     ],
-    "intent_relevance": 0.8,
-    "relevant_count": 8,
-    "rel_total_ratings": 531911,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 563860,
     "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
       "reason": "top relevant app has 466,000 ratings",
       "top_relevant_rating": 466000,
-      "weak_relevant_pct": 0.12
+      "weak_relevant_pct": 0.1
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
   },
@@ -42447,9 +42447,9 @@
       "DeepL Translate",
       "Translate -  Camera Translator"
     ],
-    "intent_relevance": 0.8,
-    "relevant_count": 8,
-    "rel_total_ratings": 938533,
+    "intent_relevance": 0.9,
+    "relevant_count": 9,
+    "rel_total_ratings": 1021058,
     "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
@@ -42774,17 +42774,17 @@
       "PDF Scanner AI: Scan Documents",
       "Atlas AI: PDF Document Scanner"
     ],
-    "intent_relevance": 0.3,
-    "relevant_count": 3,
-    "rel_total_ratings": 26235,
-    "demand_rel_label": "MODERATE",
+    "intent_relevance": 0.5,
+    "relevant_count": 5,
+    "rel_total_ratings": 656924,
+    "demand_rel_label": "VERY HIGH",
     "ease_of_entry": {
-      "label": "MODERATE \u2014 mid-size incumbents, room to niche down",
-      "reason": "top relevant app has 18,956 ratings",
-      "top_relevant_rating": 18956,
-      "weak_relevant_pct": 0.33
+      "label": "VERY HARD \u2014 entrenched incumbent",
+      "reason": "top relevant app has 613,427 ratings",
+      "top_relevant_rating": 613427,
+      "weak_relevant_pct": 0.2
     },
-    "verdict_intent": "NICHE \u2014 small but contestable"
+    "verdict_intent": "AVOID \u2014 entrenched leader"
   },
   {
     "keyword": "ai read aloud app",
@@ -43925,15 +43925,15 @@
       "Voice Recorder: AI Note Taker",
       "iTranscribe - Audio to Text"
     ],
-    "intent_relevance": 0.6,
-    "relevant_count": 6,
-    "rel_total_ratings": 86792,
+    "intent_relevance": 0.7,
+    "relevant_count": 7,
+    "rel_total_ratings": 97271,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "HARD \u2014 established leader(s)",
       "reason": "top relevant app has 50,142 ratings",
       "top_relevant_rating": 50142,
-      "weak_relevant_pct": 0.17
+      "weak_relevant_pct": 0.14
     },
     "verdict_intent": "HARD \u2014 incumbents will out-spend you"
   },
@@ -45073,15 +45073,15 @@
       "Decibel - sound level meter",
       "Decibel Meter - dB Noise Level"
     ],
-    "intent_relevance": 0.6,
-    "relevant_count": 6,
-    "rel_total_ratings": 212830,
+    "intent_relevance": 0.9,
+    "relevant_count": 9,
+    "rel_total_ratings": 269720,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
       "reason": "top relevant app has 155,962 ratings",
       "top_relevant_rating": 155962,
-      "weak_relevant_pct": 0.33
+      "weak_relevant_pct": 0.22
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
   },
@@ -50786,15 +50786,15 @@
       "White Noise Baby",
       "Baby Sleep Sounds: White Noise"
     ],
-    "intent_relevance": 0.9,
-    "relevant_count": 9,
-    "rel_total_ratings": 224181,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 224710,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
       "reason": "top relevant app has 201,331 ratings",
       "top_relevant_rating": 201331,
-      "weak_relevant_pct": 0.33
+      "weak_relevant_pct": 0.4
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
   },
@@ -53669,15 +53669,15 @@
       "Decibel Meter Master",
       "Decibel dB Sound Meter Ultra"
     ],
-    "intent_relevance": 0.8,
-    "relevant_count": 8,
-    "rel_total_ratings": 269725,
+    "intent_relevance": 0.9,
+    "relevant_count": 9,
+    "rel_total_ratings": 269736,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "VERY HARD \u2014 entrenched incumbent",
       "reason": "top relevant app has 155,973 ratings",
       "top_relevant_rating": 155973,
-      "weak_relevant_pct": 0.12
+      "weak_relevant_pct": 0.22
     },
     "verdict_intent": "AVOID \u2014 entrenched leader"
   },
@@ -54707,15 +54707,15 @@
       "Biometric Passport Photo",
       "Passport ID & Visa Photo Edit"
     ],
-    "intent_relevance": 0.9,
-    "relevant_count": 9,
-    "rel_total_ratings": 83954,
+    "intent_relevance": 1.0,
+    "relevant_count": 10,
+    "rel_total_ratings": 100047,
     "demand_rel_label": "HIGH",
     "ease_of_entry": {
       "label": "MODERATE \u2014 mid-size incumbents, room to niche down",
       "reason": "top relevant app has 25,136 ratings",
       "top_relevant_rating": 25136,
-      "weak_relevant_pct": 0.33
+      "weak_relevant_pct": 0.3
     },
     "verdict_intent": "COMPETITIVE \u2014 differentiate to win"
   },
@@ -58074,13 +58074,13 @@
       "Photo & Image Resizer",
       "Image resizer, converter iSize"
     ],
-    "intent_relevance": 0.7,
-    "relevant_count": 7,
-    "rel_total_ratings": 1009,
+    "intent_relevance": 0.8,
+    "relevant_count": 8,
+    "rel_total_ratings": 1100,
     "demand_rel_label": "VERY LOW",
     "ease_of_entry": {
       "label": "EASY \u2014 all relevant competitors are small",
-      "reason": "strongest relevant app has 505 ratings, 7 are weak",
+      "reason": "strongest relevant app has 505 ratings, 8 are weak",
       "top_relevant_rating": 505,
       "weak_relevant_pct": 1.0
     },
@@ -62013,17 +62013,17 @@
       "Bluetooth Device: Finder Tool",
       "JotNot Scanner App Pro"
     ],
-    "intent_relevance": 0.0,
-    "relevant_count": 0,
-    "rel_total_ratings": 0,
-    "demand_rel_label": "NONE",
+    "intent_relevance": 0.4,
+    "relevant_count": 4,
+    "rel_total_ratings": 14352,
+    "demand_rel_label": "LOW",
     "ease_of_entry": {
-      "label": "UNPROVEN \u2014 search intent unclear",
-      "reason": "top-10 is mostly off-intent generic apps; no evidence of real demand",
-      "top_relevant_rating": 0,
-      "weak_relevant_pct": 0.0
+      "label": "MODERATE \u2014 mid-size incumbents, room to niche down",
+      "reason": "top relevant app has 7,944 ratings",
+      "top_relevant_rating": 7944,
+      "weak_relevant_pct": 0.25
     },
-    "verdict_intent": "OFF-INTENT \u2014 App Store returns generic apps; real demand unclear"
+    "verdict_intent": "NICHE \u2014 small but contestable"
   },
   {
     "keyword": "vision test eye chart",
@@ -64199,17 +64199,17 @@
       "Tracker Detect +",
       "QR Code Scanner:Barcode Reader"
     ],
-    "intent_relevance": 0.0,
-    "relevant_count": 0,
-    "rel_total_ratings": 0,
-    "demand_rel_label": "NONE",
+    "intent_relevance": 0.3,
+    "relevant_count": 3,
+    "rel_total_ratings": 5098,
+    "demand_rel_label": "LOW",
     "ease_of_entry": {
-      "label": "UNPROVEN \u2014 search intent unclear",
-      "reason": "top-10 is mostly off-intent generic apps; no evidence of real demand",
-      "top_relevant_rating": 0,
-      "weak_relevant_pct": 0.0
+      "label": "EASY \u2014 all relevant competitors are small",
+      "reason": "strongest relevant app has 4,948 ratings, 2 are weak",
+      "top_relevant_rating": 4948,
+      "weak_relevant_pct": 0.67
     },
-    "verdict_intent": "OFF-INTENT \u2014 App Store returns generic apps; real demand unclear"
+    "verdict_intent": "GOOD \u2014 weak competition, modest demand"
   },
   {
     "keyword": "yes no decision",

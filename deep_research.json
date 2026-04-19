@@ -3390,6 +3390,80 @@
     "relevant_count": 6
   },
   {
+    "keyword_original": "document scanner app",
+    "keyword_normalized": "document scanner",
+    "total_ratings_top10": 5108613,
+    "max_rating_count": 1789465,
+    "avg_rating_count": 567623,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.72,
+    "concentration_index": 0.634,
+    "dominant_category": "Business",
+    "category_focus": 0.67,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "CamScanner - PDF Scanner App",
+        "rating_count": 1789465,
+        "star_rating": 4.85,
+        "price": 0.0,
+        "developer": "INTSIG Information Co., Ltd",
+        "category": "Productivity"
+      },
+      {
+        "name": "Adobe Scan: PDF & OCR Scanner",
+        "rating_count": 1539779,
+        "star_rating": 4.88,
+        "price": 0.0,
+        "developer": "Adobe Inc.",
+        "category": "Business"
+      },
+      {
+        "name": "iScanner: PDF Document Scanner",
+        "rating_count": 1371198,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "BPMobile",
+        "category": "Business"
+      }
+    ],
+    "top10_names": [
+      "CamScanner - PDF Scanner App",
+      "Adobe Scan: PDF & OCR Scanner",
+      "iScanner: PDF Document Scanner",
+      "Scanner \u2013 Scan PDF & Document",
+      "Scanner App. JPG, Photo to PDF",
+      "Scan to PDF\uff0dDocument Scanner",
+      "Mobile Scanner App - Scan PDF",
+      "Document Scanner App- PDF Scan",
+      "Document Scanner by Lufick",
+      "Scanner App: Genius Scan"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 2.62,
+    "ltv": 3.0,
+    "payback_months": 15.6,
+    "roas_6mo": 0.38,
+    "arpu_est": 10.0,
+    "cpi_est": 7.8,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.18,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "flight tracker app",
     "keyword_normalized": "flight tracker",
     "total_ratings_top10": 1663101,
@@ -3544,6 +3618,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
+  },
+  {
+    "keyword_original": "ai document reader",
+    "keyword_normalized": "ai document reader",
+    "total_ratings_top10": 656924,
+    "max_rating_count": 613427,
+    "avg_rating_count": 131384,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.76,
+    "concentration_index": 0.754,
+    "dominant_category": "Business",
+    "category_focus": 0.6,
+    "free_count": 5,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 90,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Adobe Acrobat Reader: Sign PDF",
+        "rating_count": 613427,
+        "star_rating": 4.66,
+        "price": 0.0,
+        "developer": "Adobe Inc.",
+        "category": "Business"
+      },
+      {
+        "name": "SwiftScan AI Document Scanner",
+        "rating_count": 18956,
+        "star_rating": 4.76,
+        "price": 0.0,
+        "developer": "Maple Media Apps, LLC",
+        "category": "Utilities"
+      },
+      {
+        "name": "WPS Office-AI Doc, PDF, Sheet",
+        "rating_count": 17262,
+        "star_rating": 4.78,
+        "price": 0.0,
+        "developer": "KINGSOFT OFFICE SOFTWARE CORPORATION LIMITED",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Adobe Acrobat Reader: Sign PDF",
+      "SwiftScan AI Document Scanner",
+      "WPS Office-AI Doc, PDF, Sheet",
+      "PDF Scanner AI: Scan Documents",
+      "Atlas AI: PDF Document Scanner",
+      "TurboScan\u2122 Pro: PDF scanner",
+      "FineReader: PDF Scanner & OCR",
+      "Voice Aloud Reader",
+      "AI Assistant: Images & Writing",
+      "Google Docs"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 2.58,
+    "ltv": 3.0,
+    "payback_months": 15.6,
+    "roas_6mo": 0.38,
+    "arpu_est": 10.0,
+    "cpi_est": 7.8,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.17,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.5,
+    "relevant_count": 5
   },
   {
     "keyword_original": "gratitude journal app",
@@ -3704,80 +3852,6 @@
     "relevant_count": 5
   },
   {
-    "keyword_original": "legal document scanner",
-    "keyword_normalized": "legal document scanner",
-    "total_ratings_top10": 268314,
-    "max_rating_count": 219447,
-    "avg_rating_count": 44719,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 4.72,
-    "concentration_index": 0.683,
-    "dominant_category": "Business",
-    "category_focus": 0.83,
-    "free_count": 6,
-    "paid_count": 0,
-    "stale_apps": 6,
-    "mature_apps_pct": 100,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Scanner \u2013 Scan PDF & Document",
-        "rating_count": 219447,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Luni",
-        "category": "Business"
-      },
-      {
-        "name": "Rocket Lawyer Legal & Law Help",
-        "rating_count": 15076,
-        "star_rating": 4.88,
-        "price": 0.0,
-        "developer": "Rocket Lawyer Incorporated",
-        "category": "Productivity"
-      },
-      {
-        "name": "Scanner - Edit PDF & documents",
-        "rating_count": 11725,
-        "star_rating": 4.65,
-        "price": 0.0,
-        "developer": "App Rover",
-        "category": "Business"
-      }
-    ],
-    "top10_names": [
-      "Scanner \u2013 Scan PDF & Document",
-      "Rocket Lawyer Legal & Law Help",
-      "Scanner - Edit PDF & documents",
-      "Scanner: Scan Documents\u00b7",
-      "Scanner: Scan Documents",
-      "PDF & Document Scanner\u00b7",
-      "CamScanner - PDF Scanner App",
-      "JotNot Scanner App Pro",
-      "Scanner App - Scan PDF & Docs",
-      "JotNot Scanner App"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 2.51,
-    "ltv": 3.0,
-    "payback_months": 15.6,
-    "roas_6mo": 0.38,
-    "arpu_est": 10.0,
-    "cpi_est": 7.8,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.16,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.6,
-    "relevant_count": 6
-  },
-  {
     "keyword_original": "chimney cleaning tracker",
     "keyword_normalized": "chimney cleaning tracker",
     "total_ratings_top10": 29965,
@@ -3931,80 +4005,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.6,
     "relevant_count": 6
-  },
-  {
-    "keyword_original": "document scanner app",
-    "keyword_normalized": "document scanner",
-    "total_ratings_top10": 1654357,
-    "max_rating_count": 1371198,
-    "avg_rating_count": 330871,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 4.64,
-    "concentration_index": 0.715,
-    "dominant_category": "Business",
-    "category_focus": 0.8,
-    "free_count": 5,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 100,
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "iScanner: PDF Document Scanner",
-        "rating_count": 1371198,
-        "star_rating": 4.76,
-        "price": 0.0,
-        "developer": "BPMobile",
-        "category": "Business"
-      },
-      {
-        "name": "Scanner \u2013 Scan PDF & Document",
-        "rating_count": 219459,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Luni",
-        "category": "Business"
-      },
-      {
-        "name": "Scan to PDF\uff0dDocument Scanner",
-        "rating_count": 60721,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "Scanner App PDF Tool",
-        "category": "Business"
-      }
-    ],
-    "top10_names": [
-      "iScanner: PDF Document Scanner",
-      "Scanner \u2013 Scan PDF & Document",
-      "Scan to PDF\uff0dDocument Scanner",
-      "Document Scanner App- PDF Scan",
-      "Document Scanner by Lufick",
-      "CamScanner - PDF Scanner App",
-      "Adobe Scan: PDF & OCR Scanner",
-      "Scanner App: Genius Scan",
-      "Scanner App. JPG, Photo to PDF",
-      "Mobile Scanner App - Scan PDF"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 2.44,
-    "ltv": 3.0,
-    "payback_months": 15.6,
-    "roas_6mo": 0.38,
-    "arpu_est": 10.0,
-    "cpi_est": 7.8,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.14,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.5,
-    "relevant_count": 5
   },
   {
     "keyword_original": "pill reminder simple",
@@ -6082,6 +6082,80 @@
     "relevant_count": 6
   },
   {
+    "keyword_original": "hydration reminder app",
+    "keyword_normalized": "hydration reminder",
+    "total_ratings_top10": 596066,
+    "max_rating_count": 151983,
+    "avg_rating_count": 59606,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.64,
+    "concentration_index": 0.493,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.9,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Drink Water Reminder N Tracker",
+        "rating_count": 151983,
+        "star_rating": 4.5,
+        "price": 0.0,
+        "developer": "Phoenix Games LLP",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Water tracker Waterllama",
+        "rating_count": 150712,
+        "star_rating": 4.87,
+        "price": 0.0,
+        "developer": "Llama Luna Apps",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Plant Nanny Cute Water Tracker",
+        "rating_count": 104718,
+        "star_rating": 4.72,
+        "price": 0.0,
+        "developer": "SPARKFUL INC.",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Drink Water Reminder N Tracker",
+      "Water tracker Waterllama",
+      "Plant Nanny Cute Water Tracker",
+      "Water Reminder - Daily Tracker",
+      "Water Tracker by WaterMinder\u00ae",
+      "Drink Water \u2219 Daily Reminder",
+      "My Water: Daily Drink Tracker",
+      "Drink water: Drinking reminder",
+      "Daily Water Tracker Reminder",
+      "Daily Water - Drink Reminder"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 2.06,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.25,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "calisthenics workout app",
     "keyword_normalized": "calisthenics workout",
     "total_ratings_top10": 786424,
@@ -7832,6 +7906,80 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "voice memo transcriber",
+    "keyword_normalized": "voice memo transcriber",
+    "total_ratings_top10": 97271,
+    "max_rating_count": 50142,
+    "avg_rating_count": 13895,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.53,
+    "concentration_index": 0.508,
+    "dominant_category": "Productivity",
+    "category_focus": 0.43,
+    "free_count": 7,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 90,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Otter Transcribe Voice Notes",
+        "rating_count": 50142,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Otter.ai, Inc.",
+        "category": "Productivity"
+      },
+      {
+        "name": "Voice Memos & Sound Recorder",
+        "rating_count": 13490,
+        "star_rating": 4.63,
+        "price": 0.0,
+        "developer": "Protection & Security App LLC",
+        "category": "Utilities"
+      },
+      {
+        "name": "Voice Memo Dictation to Text",
+        "rating_count": 11260,
+        "star_rating": 4.47,
+        "price": 0.0,
+        "developer": "Christian Neubauer",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "iRecord: Transcribe Voice Memo",
+      "Voice Memos & Sound Recorder",
+      "Voice Memo Dictation to Text",
+      "Voice Recorder \u2014 Audio Memos",
+      "Voice Transcriber - Dictation",
+      "Otter Transcribe Voice Notes",
+      "Transcribe - Speech to Text",
+      "Voice Recorder: AI Note Taker",
+      "Transcribe Audio to Text Notes",
+      "iTranscribe - Audio to Text"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.86,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.99,
+    "supply_room": 0.3,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.7,
+    "relevant_count": 7
+  },
+  {
     "keyword_original": "email template app",
     "keyword_normalized": "email template",
     "total_ratings_top10": 146979,
@@ -8204,6 +8352,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.6,
     "relevant_count": 6
+  },
+  {
+    "keyword_original": "visa photo app",
+    "keyword_normalized": "visa photo",
+    "total_ratings_top10": 100047,
+    "max_rating_count": 25136,
+    "avg_rating_count": 10004,
+    "weak_apps_in_top10": 3,
+    "avg_star_rating": 4.58,
+    "concentration_index": 0.483,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.7,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 70,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "ID Photo-Passport Photo maker",
+        "rating_count": 25136,
+        "star_rating": 4.65,
+        "price": 0.0,
+        "developer": "\u82cf\u5a1f \u9648",
+        "category": "Productivity"
+      },
+      {
+        "name": "Passport Photo - ID Photo",
+        "rating_count": 20778,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "Vitalij Schaefer",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Passport Booth",
+        "rating_count": 16093,
+        "star_rating": 4.77,
+        "price": 0.0,
+        "developer": "TAPUNIVERSE LLC",
+        "category": "Graphics & Design"
+      }
+    ],
+    "top10_names": [
+      "ID Photo-Passport Photo maker",
+      "Passport Photo - ID Photo",
+      "Passport Photo - PhotoAiD",
+      "ID Photo - Passport Photo App",
+      "Passport Photo - ID Photo App",
+      "Biometric Passport Photo",
+      "Passport Picture ID Photo Size",
+      "Passport Photo Maker: ID, Visa",
+      "Passport Photo Maker (ID)",
+      "Passport Booth"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.82,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.41,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
   },
   {
     "keyword_original": "brown noise generator",
@@ -9281,80 +9503,6 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "voice memo transcriber",
-    "keyword_normalized": "voice memo transcriber",
-    "total_ratings_top10": 86792,
-    "max_rating_count": 50142,
-    "avg_rating_count": 14465,
-    "weak_apps_in_top10": 1,
-    "avg_star_rating": 4.54,
-    "concentration_index": 0.543,
-    "dominant_category": "Productivity",
-    "category_focus": 0.5,
-    "free_count": 6,
-    "paid_count": 0,
-    "stale_apps": 0,
-    "mature_apps_pct": 90,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Otter Transcribe Voice Notes",
-        "rating_count": 50142,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Otter.ai, Inc.",
-        "category": "Productivity"
-      },
-      {
-        "name": "Voice Memos & Sound Recorder",
-        "rating_count": 13490,
-        "star_rating": 4.63,
-        "price": 0.0,
-        "developer": "Protection & Security App LLC",
-        "category": "Utilities"
-      },
-      {
-        "name": "Voice Memo Dictation to Text",
-        "rating_count": 11260,
-        "star_rating": 4.47,
-        "price": 0.0,
-        "developer": "Christian Neubauer",
-        "category": "Productivity"
-      }
-    ],
-    "top10_names": [
-      "iRecord: Transcribe Voice Memo",
-      "Voice Memos & Sound Recorder",
-      "Voice Memo Dictation to Text",
-      "Voice Recorder \u2014 Audio Memos",
-      "Voice Transcriber - Dictation",
-      "Otter Transcribe Voice Notes",
-      "Voice Recorder: AI Note Taker",
-      "Transcribe - Speech to Text",
-      "Transcribe Audio to Text Notes",
-      "iTranscribe - Audio to Text"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.75,
-    "ltv": 1.8,
-    "payback_months": 17.6,
-    "roas_6mo": 0.34,
-    "arpu_est": 6.0,
-    "cpi_est": 5.28,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.93,
-    "supply_room": 0.28,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.6,
-    "relevant_count": 6
-  },
-  {
     "keyword_original": "cash envelope budget",
     "keyword_normalized": "cash envelope budget",
     "total_ratings_top10": 4186,
@@ -10260,80 +10408,6 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "visa photo app",
-    "keyword_normalized": "visa photo",
-    "total_ratings_top10": 83954,
-    "max_rating_count": 25136,
-    "avg_rating_count": 9328,
-    "weak_apps_in_top10": 3,
-    "avg_star_rating": 4.56,
-    "concentration_index": 0.523,
-    "dominant_category": "Photo & Video",
-    "category_focus": 0.78,
-    "free_count": 9,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 70,
-    "demand_level": "HIGH",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "ID Photo-Passport Photo maker",
-        "rating_count": 25136,
-        "star_rating": 4.65,
-        "price": 0.0,
-        "developer": "\u82cf\u5a1f \u9648",
-        "category": "Productivity"
-      },
-      {
-        "name": "Passport Photo - ID Photo",
-        "rating_count": 20778,
-        "star_rating": 4.54,
-        "price": 0.0,
-        "developer": "Vitalij Schaefer",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Passport Photo - PhotoAiD",
-        "rating_count": 15175,
-        "star_rating": 4.47,
-        "price": 0.0,
-        "developer": "Photo Aid",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "Passport Photo Maker: ID, Visa",
-      "ID Photo-Passport Photo maker",
-      "Passport Photo - ID Photo",
-      "Passport Photo - PhotoAiD",
-      "ID Photo - Passport Photo App",
-      "Passport Photo - ID Photo App",
-      "Biometric Passport Photo",
-      "Passport Picture ID Photo Size",
-      "Passport Photo Maker (ID)",
-      "Passport Booth"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.68,
-    "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.92,
-    "supply_room": 0.39,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
-  },
-  {
     "keyword_original": "allergy symptom tracker",
     "keyword_normalized": "allergy symptom tracker",
     "total_ratings_top10": 156667,
@@ -11176,80 +11250,6 @@
     "relevant_count": 6
   },
   {
-    "keyword_original": "language translator app",
-    "keyword_normalized": "language translator",
-    "total_ratings_top10": 1330379,
-    "max_rating_count": 521686,
-    "avg_rating_count": 166297,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 4.64,
-    "concentration_index": 0.575,
-    "dominant_category": "Productivity",
-    "category_focus": 0.62,
-    "free_count": 8,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 100,
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "iTranslate Translator",
-        "rating_count": 521686,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Mosaic S.r.l.",
-        "category": "Productivity"
-      },
-      {
-        "name": "Translate Now - AI Translator",
-        "rating_count": 342312,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "Air Apps Systems",
-        "category": "Reference"
-      },
-      {
-        "name": "Speak & Translate - Translator",
-        "rating_count": 256593,
-        "star_rating": 4.55,
-        "price": 0.0,
-        "developer": "Mosaic S.r.l.",
-        "category": "Productivity"
-      }
-    ],
-    "top10_names": [
-      "Translate Free - Language Translator & Dictionary",
-      "iTranslate Translator",
-      "Translate Now - AI Translator",
-      "Speak & Translate - Translator",
-      "Microsoft Translator",
-      "Translator GO: AI Translate",
-      "Voice Translator: Translate AI",
-      "Translator \u00bb",
-      "Google Translate",
-      "Translate"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.65,
-    "ltv": 1.8,
-    "payback_months": 17.6,
-    "roas_6mo": 0.34,
-    "arpu_est": 6.0,
-    "cpi_est": 5.28,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.21,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
-  },
-  {
     "keyword_original": "thrift flip tracker",
     "keyword_normalized": "thrift flip tracker",
     "total_ratings_top10": 303014,
@@ -11706,6 +11706,80 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "language translator app",
+    "keyword_normalized": "language translator",
+    "total_ratings_top10": 1422203,
+    "max_rating_count": 521686,
+    "avg_rating_count": 142220,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.37,
+    "concentration_index": 0.61,
+    "dominant_category": "Productivity",
+    "category_focus": 0.5,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "iTranslate Translator",
+        "rating_count": 521686,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Mosaic S.r.l.",
+        "category": "Productivity"
+      },
+      {
+        "name": "Translate Now - AI Translator",
+        "rating_count": 342312,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "Air Apps Systems",
+        "category": "Reference"
+      },
+      {
+        "name": "Speak & Translate - Translator",
+        "rating_count": 256593,
+        "star_rating": 4.55,
+        "price": 0.0,
+        "developer": "Mosaic S.r.l.",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "iTranslate Translator",
+      "Translate Now - AI Translator",
+      "Speak & Translate - Translator",
+      "Microsoft Translator",
+      "Google Translate",
+      "Translator GO: AI Translate",
+      "Translate Free - Language Translator & Dictionary",
+      "Voice Translator: Translate AI",
+      "Translate",
+      "Translator \u00bb"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.61,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.2,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "time blocking app",
     "keyword_normalized": "time blocking",
     "total_ratings_top10": 81954,
@@ -11856,6 +11930,80 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "photo compressor app",
+    "keyword_normalized": "photo compressor",
+    "total_ratings_top10": 56028,
+    "max_rating_count": 29662,
+    "avg_rating_count": 5602,
+    "weak_apps_in_top10": 7,
+    "avg_star_rating": 4.4,
+    "concentration_index": 0.784,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.6,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 70,
+    "demand_level": "MODERATE",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Image Size",
+        "rating_count": 29662,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "Vitalij Schaefer",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Compress Photos & Pictures",
+        "rating_count": 21975,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "New Marketing Lab, Inc",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Photo Compress - Shrink Pics",
+        "rating_count": 3485,
+        "star_rating": 4.6,
+        "price": 0.0,
+        "developer": "Brachmann Online Marketing GmbH & Co. KG",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "Compressor: Photos & Pictures",
+      "Photo Compressor & Resize",
+      "Easy Photo Compressor",
+      "The Image Compressor",
+      "Photo Compressor - Pixoma",
+      "Compress Photos & Pictures",
+      "Photo Compress - Shrink Pics",
+      "Compress Photos: Image & Video",
+      "Photo Compress: Compress Photo",
+      "Image Size"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 1.61,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.75,
+    "supply_room": 0.46,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
   },
   {
     "keyword_original": "college comparison app",
@@ -14546,8 +14694,8 @@
       }
     ],
     "top10_names": [
-      "Background Remover - PNG Maker",
       "Background Eraser: AI Remove",
+      "Background Remover - PNG Maker",
       "Background Eraser - Remove BG*",
       "Magic Eraser Background Editor",
       "Background Eraser \u301c Stickers",
@@ -15018,80 +15166,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.5,
     "relevant_count": 5
-  },
-  {
-    "keyword_original": "translator camera app",
-    "keyword_normalized": "translator camera",
-    "total_ratings_top10": 938533,
-    "max_rating_count": 521718,
-    "avg_rating_count": 117316,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 4.49,
-    "concentration_index": 0.719,
-    "dominant_category": "Productivity",
-    "category_focus": 0.38,
-    "free_count": 8,
-    "paid_count": 0,
-    "stale_apps": 0,
-    "mature_apps_pct": 100,
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "iTranslate Translator",
-        "rating_count": 521718,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Mosaic S.r.l.",
-        "category": "Productivity"
-      },
-      {
-        "name": "Translate Now - AI Translator",
-        "rating_count": 342414,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "Air Apps Systems",
-        "category": "Reference"
-      },
-      {
-        "name": "Photo Translator - Translate",
-        "rating_count": 26721,
-        "star_rating": 4.4,
-        "price": 0.0,
-        "developer": "EVOLLY.APP",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "Camera Translator - AI OCR +",
-      "Translate -  Camera Translator",
-      "Translate Photo & Camera Scan",
-      "iTranslate Translator",
-      "Translate Now - AI Translator",
-      "Photo Translator - Translate",
-      "AI Photo Translator",
-      "AR Translator: Translate Photo",
-      "Google Translate",
-      "Scan & Translate+ Text Grabber"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.46,
-    "ltv": 1.8,
-    "payback_months": 17.6,
-    "roas_6mo": 0.34,
-    "arpu_est": 6.0,
-    "cpi_est": 5.28,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.14,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
   },
   {
     "keyword_original": "school bus tracker",
@@ -20198,80 +20272,6 @@
     "relevant_count": 5
   },
   {
-    "keyword_original": "photo compressor app",
-    "keyword_normalized": "photo compressor",
-    "total_ratings_top10": 26366,
-    "max_rating_count": 21975,
-    "avg_rating_count": 2929,
-    "weak_apps_in_top10": 7,
-    "avg_star_rating": 4.36,
-    "concentration_index": 0.837,
-    "dominant_category": "Photo & Video",
-    "category_focus": 0.56,
-    "free_count": 9,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 70,
-    "demand_level": "MODERATE",
-    "supply_level": "LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Compress Photos & Pictures",
-        "rating_count": 21975,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "New Marketing Lab, Inc",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Photo Compress - Shrink Pics",
-        "rating_count": 3485,
-        "star_rating": 4.6,
-        "price": 0.0,
-        "developer": "Brachmann Online Marketing GmbH & Co. KG",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Compressor: Photos & Pictures",
-        "rating_count": 382,
-        "star_rating": 4.64,
-        "price": 0.0,
-        "developer": "Arthur Eduardo Skaetta Alvarez Desenvolvimento de Software LTDA.",
-        "category": "Productivity"
-      }
-    ],
-    "top10_names": [
-      "Compressor: Photos & Pictures",
-      "Photo Compressor & Resize",
-      "Easy Photo Compressor",
-      "Photo Compressor - Pixoma",
-      "Compress Photos & Pictures",
-      "Photo Compress - Shrink Pics",
-      "Compress Photos: Image & Video",
-      "Photo Compress: Compress Photo",
-      "The Image Compressor",
-      "Image Size"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.26,
-    "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.51,
-    "supply_room": 0.43,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
-  },
-  {
     "keyword_original": "solfeggio frequency app",
     "keyword_normalized": "solfeggio frequency",
     "total_ratings_top10": 5846,
@@ -23024,8 +23024,8 @@
       "Robokiller: Spam Call Blocker",
       "Hiya: Spam Blocker & Caller ID",
       "YouMail: Block Spam on iPhone",
-      "Verizon Call Filter",
       "T-Mobile Scam Shield",
+      "Verizon Call Filter",
       "AT&T ActiveArmor\u00ae"
     ],
     "kills": [],
@@ -25649,80 +25649,6 @@
     "relevant_count": 8
   },
   {
-    "keyword_original": "medicine barcode scanner",
-    "keyword_normalized": "medicine barcode scanner",
-    "total_ratings_top10": 144867,
-    "max_rating_count": 90969,
-    "avg_rating_count": 24144,
-    "weak_apps_in_top10": 1,
-    "avg_star_rating": 4.57,
-    "concentration_index": 0.654,
-    "dominant_category": "Utilities",
-    "category_focus": 0.67,
-    "free_count": 6,
-    "paid_count": 0,
-    "stale_apps": 4,
-    "mature_apps_pct": 80,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "QR Code & Barcode Scanner \u30fb",
-        "rating_count": 90969,
-        "star_rating": 4.61,
-        "price": 0.0,
-        "developer": "TeaCapps",
-        "category": "Utilities"
-      },
-      {
-        "name": "Barcode Scanner - QR Scanner",
-        "rating_count": 41695,
-        "star_rating": 4.46,
-        "price": 0.0,
-        "developer": "MD Mokammal Hossain",
-        "category": "Shopping"
-      },
-      {
-        "name": "QR Code & Barcode Scanner app.",
-        "rating_count": 4984,
-        "star_rating": 4.72,
-        "price": 0.0,
-        "developer": "Minimodev Technologies LTD",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "QR Code & Barcode Scanner \u30fb",
-      "Barcode Scanner - QR Scanner",
-      "QR Code & Barcode Scanner app.",
-      "QR Code Barcode Scanner & Read",
-      "QR Code Reader, Scan Barcode",
-      "Barcode Scanners",
-      "QR Code Reader \u00b7",
-      "QR Code Reader & Code Scanner",
-      "Code Scanner by ScanLife",
-      "Bar-Code"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 1.12,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.22,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.6,
-    "relevant_count": 6
-  },
-  {
     "keyword_original": "glucose monitor app",
     "keyword_normalized": "glucose monitor",
     "total_ratings_top10": 53639,
@@ -26839,84 +26765,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 1.0,
     "relevant_count": 10
-  },
-  {
-    "keyword_original": "ai document reader",
-    "keyword_normalized": "ai document reader",
-    "total_ratings_top10": 26235,
-    "max_rating_count": 18956,
-    "avg_rating_count": 8745,
-    "weak_apps_in_top10": 1,
-    "avg_star_rating": 4.78,
-    "concentration_index": 0.463,
-    "dominant_category": "Business",
-    "category_focus": 0.67,
-    "free_count": 3,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 90,
-    "demand_level": "MODERATE",
-    "supply_level": "MODERATE",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "SwiftScan AI Document Scanner",
-        "rating_count": 18956,
-        "star_rating": 4.76,
-        "price": 0.0,
-        "developer": "Maple Media Apps, LLC",
-        "category": "Utilities"
-      },
-      {
-        "name": "PDF Scanner AI: Scan Documents",
-        "rating_count": 6562,
-        "star_rating": 4.71,
-        "price": 0.0,
-        "developer": "Cacao Mobile",
-        "category": "Business"
-      },
-      {
-        "name": "Atlas AI: PDF Document Scanner",
-        "rating_count": 717,
-        "star_rating": 4.87,
-        "price": 0.0,
-        "developer": "Atlas Documents LLC",
-        "category": "Business"
-      }
-    ],
-    "top10_names": [
-      "SwiftScan AI Document Scanner",
-      "PDF Scanner AI: Scan Documents",
-      "Atlas AI: PDF Document Scanner",
-      "Adobe Acrobat Reader: Sign PDF",
-      "Voice Aloud Reader",
-      "WPS Office-AI Doc, PDF, Sheet",
-      "AI Assistant: Images & Writing",
-      "Google Docs",
-      "TurboScan\u2122 Pro: PDF scanner",
-      "FineReader: PDF Scanner & OCR"
-    ],
-    "kills": [
-      "weak_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:weak_intent(rel=0.3)"
-    ],
-    "vibe_roi": 1.09,
-    "ltv": 3.0,
-    "payback_months": 15.6,
-    "roas_6mo": 0.38,
-    "arpu_est": 10.0,
-    "cpi_est": 7.8,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.51,
-    "supply_room": 0.32,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.5,
-    "intent_relevance": 0.3,
-    "relevant_count": 3
   },
   {
     "keyword_original": "cold plunge timer",
@@ -28302,10 +28150,10 @@
       }
     ],
     "top10_names": [
+      "LP - Live Image to Video & GIF",
       "Live Photo to Video \u2122",
       "Video to Live Wallpapers Maker",
       "Video to Live \u25e6",
-      "LP - Live Image to Video & GIF",
       "Live Photo Converter .",
       "VideoToLive - Live Wallpapers",
       "intoLive - Live Wallpapers",
@@ -34251,80 +34099,6 @@
     "relevant_count": 6
   },
   {
-    "keyword_original": "image upscaler ai",
-    "keyword_normalized": "image upscaler ai",
-    "total_ratings_top10": 10851,
-    "max_rating_count": 9116,
-    "avg_rating_count": 1550,
-    "weak_apps_in_top10": 5,
-    "avg_star_rating": 4.62,
-    "concentration_index": 0.8,
-    "dominant_category": "Photo & Video",
-    "category_focus": 0.86,
-    "free_count": 7,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 30,
-    "demand_level": "LOW",
-    "supply_level": "LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Leonardo.Ai - Image Generator",
-        "rating_count": 9116,
-        "star_rating": 4.82,
-        "price": 0.0,
-        "developer": "Leonardo Interactive Pty Ltd",
-        "category": "Graphics & Design"
-      },
-      {
-        "name": "AI Enlarger \u2013 Image Upscaler",
-        "rating_count": 1392,
-        "star_rating": 4.59,
-        "price": 0.0,
-        "developer": "\u901a \u5f20",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Upscale 4x AI:Photo Enlarger",
-        "rating_count": 269,
-        "star_rating": 4.35,
-        "price": 0.0,
-        "developer": "\u4e3d\u8b5e \u725b",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "AI Enlarger \u2013 Image Upscaler",
-      "Image Upscaler - AI Upscale",
-      "Pixelo : AI Image Upscaler",
-      "Image Upscaler AI",
-      "Leonardo.Ai - Image Generator",
-      "AI Photo Enhancer - Upscaler",
-      "Upscale 4x AI:Photo Enlarger",
-      "Remini - AI Photo Enhancer",
-      "PhotoApp - AI Photo Enhancer",
-      "Photo Enhancer: Gigapixel AI"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 0.93,
-    "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.33,
-    "supply_room": 0.35,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.7,
-    "relevant_count": 7
-  },
-  {
     "keyword_original": "candle making guide",
     "keyword_normalized": "candle making guide",
     "total_ratings_top10": 21194,
@@ -34623,6 +34397,163 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
+  },
+  {
+    "keyword_original": "white noise baby app",
+    "keyword_normalized": "white noise baby",
+    "total_ratings_top10": 224710,
+    "max_rating_count": 201331,
+    "avg_rating_count": 22471,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.74,
+    "concentration_index": 0.853,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.7,
+    "free_count": 9,
+    "paid_count": 1,
+    "stale_apps": 0,
+    "mature_apps_pct": 100,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "White Noise Deep Sleep Sounds",
+        "rating_count": 201331,
+        "star_rating": 4.8,
+        "price": 0.0,
+        "developer": "Slumber Studios, LLC",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "White Noise Sleep Sounds- Guva",
+        "rating_count": 13477,
+        "star_rating": 4.8,
+        "price": 0.0,
+        "developer": "Ertan Eksi",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Sleeptot - Baby White Noise",
+        "rating_count": 2811,
+        "star_rating": 4.71,
+        "price": 0.0,
+        "developer": "Burleigh Creative Apps",
+        "category": "Health & Fitness"
+      }
+    ],
+    "top10_names": [
+      "Sleeptot - Baby White Noise",
+      "Sound Sleeper Baby White Noise",
+      "White Noise Baby",
+      "Baby Sleep Sounds: White Noise",
+      "White Noise Baby Lite",
+      "White Noise Deep Sleep Sounds",
+      "White Noise Sleep Sounds- Guva",
+      "Lull - White Noise For Sleep",
+      "Baby Sleep Sounds: ZenBaby",
+      "White Noise: Sleep Sounds"
+    ],
+    "kills": [
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [
+      "parent_wtp"
+    ],
+    "reasons": [
+      "win:parent_wtp(x1.2)",
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.92,
+    "ltv": 3.15,
+    "payback_months": 12.57,
+    "roas_6mo": 0.72,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 9,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.27,
+    "boost_mult": 1.2,
+    "penalty_mult": 0.24,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
+    "keyword_original": "batch image resizer",
+    "keyword_normalized": "batch image resizer",
+    "total_ratings_top10": 1100,
+    "max_rating_count": 505,
+    "avg_rating_count": 137,
+    "weak_apps_in_top10": 8,
+    "avg_star_rating": 4.5,
+    "concentration_index": 0.575,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.62,
+    "free_count": 7,
+    "paid_count": 1,
+    "stale_apps": 3,
+    "mature_apps_pct": 80,
+    "demand_level": "VERY LOW",
+    "supply_level": "VERY LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Batch Resize",
+        "rating_count": 505,
+        "star_rating": 4.58,
+        "price": 0.0,
+        "developer": "Vitalij Schaefer",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Image Resizer - Photo Compress",
+        "rating_count": 202,
+        "star_rating": 4.57,
+        "price": 0.0,
+        "developer": "Supagarn Pattananuchart",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Photo & Image Resizer",
+        "rating_count": 166,
+        "star_rating": 4.23,
+        "price": 0.0,
+        "developer": "Nalin Savaliya",
+        "category": "Photo & Video"
+      }
+    ],
+    "top10_names": [
+      "PhotoFlow: Batch Image Resizer",
+      "Batch Image Resize",
+      "Image Resizer - Photo Compress",
+      "Photo & Image Resizer",
+      "Image resizer, converter iSize",
+      "NoCrop Photo - Picture Resizer",
+      "Batch Resize",
+      "Resize Images ~Perform batch processing~",
+      "Image Size",
+      "Photo Compressor - Pixoma"
+    ],
+    "kills": [],
+    "wins": [],
+    "reasons": [],
+    "vibe_roi": 0.92,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.1,
+    "supply_room": 0.61,
+    "boost_mult": 1.0,
+    "penalty_mult": 1.0,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "bullet journal app",
@@ -36685,89 +36616,6 @@
     "relevant_count": 9
   },
   {
-    "keyword_original": "white noise baby app",
-    "keyword_normalized": "white noise baby",
-    "total_ratings_top10": 224181,
-    "max_rating_count": 201331,
-    "avg_rating_count": 24909,
-    "weak_apps_in_top10": 3,
-    "avg_star_rating": 4.74,
-    "concentration_index": 0.841,
-    "dominant_category": "Health & Fitness",
-    "category_focus": 0.67,
-    "free_count": 8,
-    "paid_count": 1,
-    "stale_apps": 0,
-    "mature_apps_pct": 100,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "White Noise Deep Sleep Sounds",
-        "rating_count": 201331,
-        "star_rating": 4.8,
-        "price": 0.0,
-        "developer": "Slumber Studios, LLC",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "White Noise Sleep Sounds- Guva",
-        "rating_count": 13477,
-        "star_rating": 4.8,
-        "price": 0.0,
-        "developer": "Ertan Eksi",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Sleeptot - Baby White Noise",
-        "rating_count": 2811,
-        "star_rating": 4.71,
-        "price": 0.0,
-        "developer": "Burleigh Creative Apps",
-        "category": "Health & Fitness"
-      }
-    ],
-    "top10_names": [
-      "Sleeptot - Baby White Noise",
-      "Sound Sleeper Baby White Noise",
-      "White Noise Baby",
-      "Baby Sleep Sounds: White Noise",
-      "White Noise Baby Lite",
-      "White Noise Deep Sleep Sounds",
-      "White Noise Sleep Sounds- Guva",
-      "Lull - White Noise For Sleep",
-      "White Noise: Sleep Sounds",
-      "Baby Sleep Sounds: ZenBaby"
-    ],
-    "kills": [
-      "concentrated_top",
-      "off_intent_dominant"
-    ],
-    "wins": [
-      "parent_wtp"
-    ],
-    "reasons": [
-      "win:parent_wtp(x1.2)",
-      "kill:one_app_owns_category",
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.86,
-    "ltv": 3.15,
-    "payback_months": 12.57,
-    "roas_6mo": 0.72,
-    "arpu_est": 7.0,
-    "cpi_est": 4.4,
-    "retention_months": 9,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.23,
-    "boost_mult": 1.2,
-    "penalty_mult": 0.24,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
-  },
-  {
     "keyword_original": "swimming lap counter",
     "keyword_normalized": "swimming lap counter",
     "total_ratings_top10": 37,
@@ -36840,80 +36688,6 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.5,
     "relevant_count": 5
-  },
-  {
-    "keyword_original": "batch image resizer",
-    "keyword_normalized": "batch image resizer",
-    "total_ratings_top10": 1009,
-    "max_rating_count": 505,
-    "avg_rating_count": 144,
-    "weak_apps_in_top10": 7,
-    "avg_star_rating": 4.5,
-    "concentration_index": 0.588,
-    "dominant_category": "Photo & Video",
-    "category_focus": 0.57,
-    "free_count": 6,
-    "paid_count": 1,
-    "stale_apps": 3,
-    "mature_apps_pct": 80,
-    "demand_level": "VERY LOW",
-    "supply_level": "VERY LOW",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Batch Resize",
-        "rating_count": 505,
-        "star_rating": 4.58,
-        "price": 0.0,
-        "developer": "Vitalij Schaefer",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Image Resizer - Photo Compress",
-        "rating_count": 202,
-        "star_rating": 4.57,
-        "price": 0.0,
-        "developer": "Supagarn Pattananuchart",
-        "category": "Photo & Video"
-      },
-      {
-        "name": "Photo & Image Resizer",
-        "rating_count": 166,
-        "star_rating": 4.23,
-        "price": 0.0,
-        "developer": "Nalin Savaliya",
-        "category": "Photo & Video"
-      }
-    ],
-    "top10_names": [
-      "PhotoFlow: Batch Image Resizer",
-      "Batch Image Resize",
-      "Image Resizer - Photo Compress",
-      "Photo & Image Resizer",
-      "Image resizer, converter iSize",
-      "Batch Resize",
-      "Resize Images ~Perform batch processing~",
-      "Image Size",
-      "NoCrop Photo - Picture Resizer",
-      "Photo Compressor - Pixoma"
-    ],
-    "kills": [],
-    "wins": [],
-    "reasons": [],
-    "vibe_roi": 0.86,
-    "ltv": 1.5,
-    "payback_months": 9.72,
-    "roas_6mo": 0.62,
-    "arpu_est": 5.0,
-    "cpi_est": 2.43,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.1,
-    "supply_room": 0.56,
-    "boost_mult": 1.0,
-    "penalty_mult": 1.0,
-    "intent_relevance": 0.7,
-    "relevant_count": 7
   },
   {
     "keyword_original": "dark sky finder app",
@@ -37182,15 +36956,15 @@
       }
     ],
     "top10_names": [
-      "Fan Noise - Sleep Sounds",
       "Bedtime Fan: White Noise Baby",
       "Sleep Aid Fan - White Noise",
+      "Fan Noise - Sleep Sounds",
+      "Fan Noise: White Noise Machine",
+      "Fan Noise Generator",
       "Sleep Fan",
       "Louder Sound App",
       "Sound Machine - White Noise",
       "Sonic Pitch Sound Generator",
-      "Fan Noise: White Noise Machine",
-      "Fan Noise Generator",
       "Audio Function Generator"
     ],
     "kills": [
@@ -41235,6 +41009,84 @@
     "penalty_mult": 1.0,
     "intent_relevance": 0.7,
     "relevant_count": 7
+  },
+  {
+    "keyword_original": "rain sound generator",
+    "keyword_normalized": "rain sound generator",
+    "total_ratings_top10": 166922,
+    "max_rating_count": 134533,
+    "avg_rating_count": 18546,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.39,
+    "concentration_index": 0.797,
+    "dominant_category": "Health & Fitness",
+    "category_focus": 0.44,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 4,
+    "mature_apps_pct": 100,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Rain Rain Sleep Sounds",
+        "rating_count": 134533,
+        "star_rating": 4.85,
+        "price": 0.0,
+        "developer": "Tim Gostony",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "ColorSleep: Green, Brown Noise",
+        "rating_count": 16067,
+        "star_rating": 4.83,
+        "price": 0.0,
+        "developer": "EaseHere Limited",
+        "category": "Health & Fitness"
+      },
+      {
+        "name": "Louder Sound App",
+        "rating_count": 6545,
+        "star_rating": 4.54,
+        "price": 0.0,
+        "developer": "CBD APPLICATIONS SRL",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "Rain Rain Sleep Sounds",
+      "Rain Sounds - Relax and Focus",
+      "Rain Sounds FREE",
+      "ColorSleep: Green, Brown Noise",
+      "Louder Sound App",
+      "Frequency Sound Generator App",
+      "Sonic Pitch Sound Generator",
+      "White Noise Sound Machine",
+      "Sleepmaker Rain 1",
+      "Audio Function Generator"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.76,
+    "ltv": 2.1,
+    "payback_months": 12.57,
+    "roas_6mo": 0.48,
+    "arpu_est": 7.0,
+    "cpi_est": 4.4,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.2,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "eco product scanner",
@@ -46647,9 +46499,9 @@
       "Ocean Sounds FREE",
       "Ocean Sound",
       "Ocean Sound Effects",
+      "White Noise Lite",
       "Sleep Orbit: Relaxing 3D Sound",
-      "Sleepmaker Waves",
-      "White Noise Lite"
+      "Sleepmaker Waves"
     ],
     "kills": [
       "fuzzy_intent"
@@ -49220,6 +49072,84 @@
     "relevant_count": 7
   },
   {
+    "keyword_original": "text to speech app",
+    "keyword_normalized": "text to speech",
+    "total_ratings_top10": 563860,
+    "max_rating_count": 466000,
+    "avg_rating_count": 56386,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.57,
+    "concentration_index": 0.8,
+    "dominant_category": "Productivity",
+    "category_focus": 0.5,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 80,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Speechify \u2013 Text to Speech PDF",
+        "rating_count": 466000,
+        "star_rating": 4.66,
+        "price": 0.0,
+        "developer": "Speechify Inc.",
+        "category": "Productivity"
+      },
+      {
+        "name": "Text to Speech!",
+        "rating_count": 32590,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "Gwyn Durbridge",
+        "category": "Productivity"
+      },
+      {
+        "name": "Voice Aloud Reader",
+        "rating_count": 18321,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "Marcin Olawski",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "Speechify \u2013 Text to Speech PDF",
+      "Text to Speech!",
+      "Speak4Me Text to Speech Reader",
+      "NaturalReader - Text To Speech",
+      "Peech: Text to Speech Reader",
+      "Text to Speech - Listen AI",
+      "Text to Speech: Voice Reader",
+      "Text to Speech - SayTXT Reader",
+      "Voice Aloud Reader",
+      "Voice Dream - Natural Reader"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.59,
+    "ltv": 1.8,
+    "payback_months": 17.6,
+    "roas_6mo": 0.34,
+    "arpu_est": 6.0,
+    "cpi_est": 5.28,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.15,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "physical therapy exercises",
     "keyword_normalized": "physical therapy exercises",
     "total_ratings_top10": 3626,
@@ -49686,6 +49616,84 @@
     "penalty_mult": 0.35,
     "intent_relevance": 0.6,
     "relevant_count": 6
+  },
+  {
+    "keyword_original": "barcode generator app",
+    "keyword_normalized": "barcode generator",
+    "total_ratings_top10": 129175,
+    "max_rating_count": 90944,
+    "avg_rating_count": 14352,
+    "weak_apps_in_top10": 6,
+    "avg_star_rating": 4.44,
+    "concentration_index": 0.792,
+    "dominant_category": "Utilities",
+    "category_focus": 0.78,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 4,
+    "mature_apps_pct": 80,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "QR Code & Barcode Scanner \u30fb",
+        "rating_count": 90944,
+        "star_rating": 4.61,
+        "price": 0.0,
+        "developer": "TeaCapps",
+        "category": "Utilities"
+      },
+      {
+        "name": "QR Code Reader\uff0aBarcode Scanner",
+        "rating_count": 20860,
+        "star_rating": 4.48,
+        "price": 0.0,
+        "developer": "VISARGERD, S.L.",
+        "category": "Utilities"
+      },
+      {
+        "name": "QR Code Generator, QR Template",
+        "rating_count": 16768,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "Gulooloo Tech",
+        "category": "Productivity"
+      }
+    ],
+    "top10_names": [
+      "QR Code & Barcode Scanner \u30fb",
+      "QR Code Reader\uff0aBarcode Scanner",
+      "QR Code Generator, QR Template",
+      "Barcode Generator Barcode Guru",
+      "Barcode Generator + Scanner",
+      "Barcode Generator \u25cc",
+      "Barcode Generator +",
+      "Advanced Barcode Generator",
+      "Barcode Generator - CreateCode",
+      "Code128 creator"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.58,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.4,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "bluetooth tracker finder",
@@ -50381,6 +50389,87 @@
     "relevant_count": 4
   },
   {
+    "keyword_original": "tile tracker scanner",
+    "keyword_normalized": "tile tracker scanner",
+    "total_ratings_top10": 5098,
+    "max_rating_count": 4948,
+    "avg_rating_count": 1699,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.65,
+    "concentration_index": 0.638,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 3,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 60,
+    "demand_level": "LOW",
+    "supply_level": "LOW",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "AirGuard - Tracking Protection",
+        "rating_count": 4948,
+        "star_rating": 4.74,
+        "price": 0.0,
+        "developer": "Technische Universit\u00e4t Darmstadt",
+        "category": "Utilities"
+      },
+      {
+        "name": "TrackerScan - Detect Trackers",
+        "rating_count": 79,
+        "star_rating": 4.9,
+        "price": 0.0,
+        "developer": "Leon Boettger",
+        "category": "Utilities"
+      },
+      {
+        "name": "Tracker Detect +",
+        "rating_count": 71,
+        "star_rating": 4.32,
+        "price": 0.0,
+        "developer": "MEHMET KORDACI",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "AirGuard - Tracking Protection",
+      "TrackerScan - Detect Trackers",
+      "Tracker Detect +",
+      "Polycam 3D Scans & Floor Plans",
+      "Scan App +",
+      "Barcode Scanner - Orca Scan",
+      "QR Code Scanner:Barcode Reader",
+      "Barcode Scanner for Walmart",
+      "Room Scanner - Easy Measure Rm",
+      "Code Scanner by ScanLife"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [
+      "sticky_tracker"
+    ],
+    "reasons": [
+      "win:sticky_tracker(x1.25)",
+      "kill:weak_intent(rel=0.3)"
+    ],
+    "vibe_roi": 0.56,
+    "ltv": 1.8,
+    "payback_months": 11.55,
+    "roas_6mo": 0.78,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 9,
+    "paying_conv": 0.05,
+    "demand_signal": 0.23,
+    "supply_room": 0.28,
+    "boost_mult": 1.25,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.3,
+    "relevant_count": 3
+  },
+  {
     "keyword_original": "guinea pig care app",
     "keyword_normalized": "guinea pig care",
     "total_ratings_top10": 480,
@@ -50765,6 +50854,86 @@
     "penalty_mult": 0.7,
     "intent_relevance": 0.9,
     "relevant_count": 9
+  },
+  {
+    "keyword_original": "legal document scanner",
+    "keyword_normalized": "legal document scanner",
+    "total_ratings_top10": 2074546,
+    "max_rating_count": 1788963,
+    "avg_rating_count": 259318,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.72,
+    "concentration_index": 0.818,
+    "dominant_category": "Business",
+    "category_focus": 0.75,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 6,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "CamScanner - PDF Scanner App",
+        "rating_count": 1788963,
+        "star_rating": 4.85,
+        "price": 0.0,
+        "developer": "INTSIG Information Co., Ltd",
+        "category": "Productivity"
+      },
+      {
+        "name": "Scanner \u2013 Scan PDF & Document",
+        "rating_count": 219447,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Luni",
+        "category": "Business"
+      },
+      {
+        "name": "Scanner App - Scan PDF & Docs",
+        "rating_count": 17269,
+        "star_rating": 4.59,
+        "price": 0.0,
+        "developer": "TAPSUITE YAZILIM HIZMETLERI ANONIM SIRKETI",
+        "category": "Business"
+      }
+    ],
+    "top10_names": [
+      "CamScanner - PDF Scanner App",
+      "Scanner \u2013 Scan PDF & Document",
+      "Scanner App - Scan PDF & Docs",
+      "Rocket Lawyer Legal & Law Help",
+      "Scanner - Edit PDF & documents",
+      "Scanner: Scan Documents\u00b7",
+      "Scanner: Scan Documents",
+      "PDF & Document Scanner\u00b7",
+      "JotNot Scanner App Pro",
+      "JotNot Scanner App"
+    ],
+    "kills": [
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.53,
+    "ltv": 3.0,
+    "payback_months": 15.6,
+    "roas_6mo": 0.38,
+    "arpu_est": 10.0,
+    "cpi_est": 7.8,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.09,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.24,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "ferry schedule app",
@@ -51745,15 +51914,15 @@
       }
     ],
     "top10_names": [
-      "White Noise Lite",
-      "White Noise Deep Sleep Sounds",
       "Noise Reducer - audio enhancer",
-      "Noise Generator: Full Spectrum",
       "Audio Noise Reducer & Recorder",
-      "Noise Eraser",
       "Audio Video Noise Reducer AI",
       "Boost Audio Voice Reduce Noise",
       "Audio Noise Reducer: Denoise",
+      "White Noise Lite",
+      "White Noise Deep Sleep Sounds",
+      "Noise Generator: Full Spectrum",
+      "Noise Eraser",
       "ByeNoise - Video Audio Editor"
     ],
     "kills": [
@@ -55211,14 +55380,14 @@
       }
     ],
     "top10_names": [
+      "Speechify \u2013 Text to Speech PDF",
+      "Text to Speech!",
       "Voice Memo Dictation to Text",
+      "Transcribe - Speech to Text",
       "Transcribe AI: Voice to Text",
       "Speech to Text \u2013 Voice Typing",
       "WhisperBoard: Voice to Text",
-      "Speechify \u2013 Text to Speech PDF",
       "Otter Transcribe Voice Notes",
-      "Text to Speech!",
-      "Transcribe - Speech to Text",
       "Wispr Flow: AI Voice Keyboard",
       "iTranscribe - Audio to Text"
     ],
@@ -55323,6 +55492,84 @@
     "penalty_mult": 0.5,
     "intent_relevance": 0.3,
     "relevant_count": 3
+  },
+  {
+    "keyword_original": "medicine barcode scanner",
+    "keyword_normalized": "medicine barcode scanner",
+    "total_ratings_top10": 858299,
+    "max_rating_count": 667862,
+    "avg_rating_count": 107287,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.55,
+    "concentration_index": 0.768,
+    "dominant_category": "Utilities",
+    "category_focus": 0.75,
+    "free_count": 8,
+    "paid_count": 0,
+    "stale_apps": 4,
+    "mature_apps_pct": 80,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "QR Code Reader \u00b7",
+        "rating_count": 667862,
+        "star_rating": 4.71,
+        "price": 0.0,
+        "developer": "App Lock LLC",
+        "category": "Utilities"
+      },
+      {
+        "name": "QR Code & Barcode Scanner \u30fb",
+        "rating_count": 90969,
+        "star_rating": 4.61,
+        "price": 0.0,
+        "developer": "TeaCapps",
+        "category": "Utilities"
+      },
+      {
+        "name": "QR Code Reader & Code Scanner",
+        "rating_count": 45570,
+        "star_rating": 4.28,
+        "price": 0.0,
+        "developer": "ShopSavvy, Inc.",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "QR Code Reader \u00b7",
+      "QR Code & Barcode Scanner \u30fb",
+      "QR Code Reader & Code Scanner",
+      "Barcode Scanner - QR Scanner",
+      "QR Code & Barcode Scanner app.",
+      "QR Code Barcode Scanner & Read",
+      "QR Code Reader, Scan Barcode",
+      "Barcode Scanners",
+      "Code Scanner by ScanLife",
+      "Bar-Code"
+    ],
+    "kills": [
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.41,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.17,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.4,
+    "intent_relevance": 0.8,
+    "relevant_count": 8
   },
   {
     "keyword_original": "lease renewal reminder",
@@ -56563,6 +56810,86 @@
     "relevant_count": 10
   },
   {
+    "keyword_original": "image upscaler ai",
+    "keyword_normalized": "image upscaler ai",
+    "total_ratings_top10": 434835,
+    "max_rating_count": 336335,
+    "avg_rating_count": 43483,
+    "weak_apps_in_top10": 5,
+    "avg_star_rating": 4.62,
+    "concentration_index": 0.846,
+    "dominant_category": "Photo & Video",
+    "category_focus": 0.9,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 30,
+    "demand_level": "VERY HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Remini - AI Photo Enhancer",
+        "rating_count": 336335,
+        "star_rating": 4.62,
+        "price": 0.0,
+        "developer": "Bending Spoons Apps ApS",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "PhotoApp - AI Photo Enhancer",
+        "rating_count": 85725,
+        "star_rating": 4.64,
+        "price": 0.0,
+        "developer": "SCALEUP YAZILIM HIZMETLERI",
+        "category": "Photo & Video"
+      },
+      {
+        "name": "Leonardo.Ai - Image Generator",
+        "rating_count": 9116,
+        "star_rating": 4.82,
+        "price": 0.0,
+        "developer": "Leonardo Interactive Pty Ltd",
+        "category": "Graphics & Design"
+      }
+    ],
+    "top10_names": [
+      "AI Enlarger \u2013 Image Upscaler",
+      "Image Upscaler - AI Upscale",
+      "Pixelo : AI Image Upscaler",
+      "AI Photo Enhancer - Upscaler",
+      "Image Upscaler AI",
+      "Upscale 4x AI:Photo Enlarger",
+      "Remini - AI Photo Enhancer",
+      "PhotoApp - AI Photo Enhancer",
+      "Leonardo.Ai - Image Generator",
+      "Photo Enhancer: Gigapixel AI"
+    ],
+    "kills": [
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.39,
+    "ltv": 1.5,
+    "payback_months": 9.72,
+    "roas_6mo": 0.62,
+    "arpu_est": 5.0,
+    "cpi_est": 2.43,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.33,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.24,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
     "keyword_original": "screenplay formatter app",
     "keyword_normalized": "screenplay formatter",
     "total_ratings_top10": 58,
@@ -56795,84 +57122,6 @@
     "penalty_mult": 0.5,
     "intent_relevance": 0.4,
     "relevant_count": 4
-  },
-  {
-    "keyword_original": "offline translator app",
-    "keyword_normalized": "offline translator",
-    "total_ratings_top10": 919518,
-    "max_rating_count": 521718,
-    "avg_rating_count": 102168,
-    "weak_apps_in_top10": 4,
-    "avg_star_rating": 4.48,
-    "concentration_index": 0.767,
-    "dominant_category": "Reference",
-    "category_focus": 0.44,
-    "free_count": 9,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 70,
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "iTranslate Translator",
-        "rating_count": 521718,
-        "star_rating": 4.73,
-        "price": 0.0,
-        "developer": "Mosaic S.r.l.",
-        "category": "Productivity"
-      },
-      {
-        "name": "Translate Now - AI Translator",
-        "rating_count": 342414,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "Air Apps Systems",
-        "category": "Reference"
-      },
-      {
-        "name": "Spanish Translator Offline",
-        "rating_count": 20303,
-        "star_rating": 4.65,
-        "price": 0.0,
-        "developer": "Xung Le",
-        "category": "Reference"
-      }
-    ],
-    "top10_names": [
-      "Spanish Translator Offline",
-      "Persian Translator Offline",
-      "Translator Offline",
-      "Offline Translator - OT Pro",
-      "Offline Language Translator",
-      "Offline Translator: Phrasify",
-      "iTranslate Translator",
-      "Translate Now - AI Translator",
-      "Translator GO: AI Translate",
-      "Google Translate"
-    ],
-    "kills": [
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.39,
-    "ltv": 0.9,
-    "payback_months": 19.07,
-    "roas_6mo": 0.31,
-    "arpu_est": 3.0,
-    "cpi_est": 2.86,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.32,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.4,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
   },
   {
     "keyword_original": "meal plan tracker college",
@@ -57737,6 +57986,84 @@
     "relevant_count": 4
   },
   {
+    "keyword_original": "airtag scanner app",
+    "keyword_normalized": "airtag scanner",
+    "total_ratings_top10": 14352,
+    "max_rating_count": 7944,
+    "avg_rating_count": 3588,
+    "weak_apps_in_top10": 1,
+    "avg_star_rating": 4.58,
+    "concentration_index": 0.475,
+    "dominant_category": "Utilities",
+    "category_focus": 1.0,
+    "free_count": 4,
+    "paid_count": 0,
+    "stale_apps": 1,
+    "mature_apps_pct": 20,
+    "demand_level": "LOW",
+    "supply_level": "MODERATE",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "tracker detect",
+        "rating_count": 7944,
+        "star_rating": 4.61,
+        "price": 0.0,
+        "developer": "Mustafa Uz",
+        "category": "Utilities"
+      },
+      {
+        "name": "AirGuard - Tracking Protection",
+        "rating_count": 4948,
+        "star_rating": 4.74,
+        "price": 0.0,
+        "developer": "Technische Universit\u00e4t Darmstadt",
+        "category": "Utilities"
+      },
+      {
+        "name": "Air Tracker: BLE Tag Detector",
+        "rating_count": 1423,
+        "star_rating": 4.44,
+        "price": 0.0,
+        "developer": "Dmitriy Isachenko",
+        "category": "Utilities"
+      }
+    ],
+    "top10_names": [
+      "tracker detect",
+      "AirGuard - Tracking Protection",
+      "Air Tracker: BLE Tag Detector",
+      "Bluetooth Tracker: Find Signal",
+      "Bluetooth Scanner: Finder App",
+      "Bluetooth BLE Finder & Scanner",
+      "Find Device use Phone",
+      "Device Finder: Easy Find",
+      "Bluetooth Scanner, Find Device",
+      "Bluetooth Device: Finder Tool"
+    ],
+    "kills": [
+      "weak_intent"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:weak_intent(rel=0.4)"
+    ],
+    "vibe_roi": 0.38,
+    "ltv": 1.2,
+    "payback_months": 11.55,
+    "roas_6mo": 0.52,
+    "arpu_est": 4.0,
+    "cpi_est": 2.31,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 0.38,
+    "supply_room": 0.31,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.5,
+    "intent_relevance": 0.4,
+    "relevant_count": 4
+  },
+  {
     "keyword_original": "zero waste guide app",
     "keyword_normalized": "zero waste guide",
     "total_ratings_top10": 1971,
@@ -58365,86 +58692,6 @@
     "relevant_count": 7
   },
   {
-    "keyword_original": "text to speech app",
-    "keyword_normalized": "text to speech",
-    "total_ratings_top10": 531911,
-    "max_rating_count": 466000,
-    "avg_rating_count": 66488,
-    "weak_apps_in_top10": 1,
-    "avg_star_rating": 4.58,
-    "concentration_index": 0.81,
-    "dominant_category": "Productivity",
-    "category_focus": 0.5,
-    "free_count": 8,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 80,
-    "demand_level": "VERY HIGH",
-    "supply_level": "VERY HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Speechify \u2013 Text to Speech PDF",
-        "rating_count": 466000,
-        "star_rating": 4.66,
-        "price": 0.0,
-        "developer": "Speechify Inc.",
-        "category": "Productivity"
-      },
-      {
-        "name": "Text to Speech!",
-        "rating_count": 32590,
-        "star_rating": 4.64,
-        "price": 0.0,
-        "developer": "Gwyn Durbridge",
-        "category": "Productivity"
-      },
-      {
-        "name": "Speak4Me Text to Speech Reader",
-        "rating_count": 13126,
-        "star_rating": 4.54,
-        "price": 0.0,
-        "developer": "Bakery Scent",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "Speechify \u2013 Text to Speech PDF",
-      "Text to Speech!",
-      "Speak4Me Text to Speech Reader",
-      "NaturalReader - Text To Speech",
-      "Peech: Text to Speech Reader",
-      "Text to Speech - Listen AI",
-      "Text to Speech: Voice Reader",
-      "Text to Speech - SayTXT Reader",
-      "Voice Aloud Reader",
-      "Voice Dream - Natural Reader"
-    ],
-    "kills": [
-      "concentrated_top",
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:one_app_owns_category",
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.35,
-    "ltv": 1.8,
-    "payback_months": 17.6,
-    "roas_6mo": 0.34,
-    "arpu_est": 6.0,
-    "cpi_est": 5.28,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.14,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.24,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
-  },
-  {
     "keyword_original": "pdf compressor app",
     "keyword_normalized": "pdf compressor",
     "total_ratings_top10": 671233,
@@ -59007,86 +59254,6 @@
     "relevant_count": 6
   },
   {
-    "keyword_original": "barcode generator app",
-    "keyword_normalized": "barcode generator",
-    "total_ratings_top10": 112407,
-    "max_rating_count": 90944,
-    "avg_rating_count": 14050,
-    "weak_apps_in_top10": 6,
-    "avg_star_rating": 4.4,
-    "concentration_index": 0.825,
-    "dominant_category": "Utilities",
-    "category_focus": 0.88,
-    "free_count": 8,
-    "paid_count": 0,
-    "stale_apps": 4,
-    "mature_apps_pct": 80,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "QR Code & Barcode Scanner \u30fb",
-        "rating_count": 90944,
-        "star_rating": 4.61,
-        "price": 0.0,
-        "developer": "TeaCapps",
-        "category": "Utilities"
-      },
-      {
-        "name": "QR Code Reader\uff0aBarcode Scanner",
-        "rating_count": 20860,
-        "star_rating": 4.48,
-        "price": 0.0,
-        "developer": "VISARGERD, S.L.",
-        "category": "Utilities"
-      },
-      {
-        "name": "Barcode Generator Barcode Guru",
-        "rating_count": 344,
-        "star_rating": 4.61,
-        "price": 0.0,
-        "developer": "Gulooloo Tech",
-        "category": "Productivity"
-      }
-    ],
-    "top10_names": [
-      "QR Code & Barcode Scanner \u30fb",
-      "QR Code Reader\uff0aBarcode Scanner",
-      "Barcode Generator Barcode Guru",
-      "Barcode Generator + Scanner",
-      "Barcode Generator \u25cc",
-      "Barcode Generator +",
-      "Advanced Barcode Generator",
-      "Barcode Generator - CreateCode",
-      "QR Code Generator, QR Template",
-      "Code128 creator"
-    ],
-    "kills": [
-      "concentrated_top",
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:one_app_owns_category",
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.34,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.39,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.24,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
-  },
-  {
     "keyword_original": "videographer shot list",
     "keyword_normalized": "videographer shot list",
     "total_ratings_top10": 252,
@@ -59525,13 +59692,13 @@
       }
     ],
     "top10_names": [
+      "Phone Temperature",
       "Dont Touch My Phone: Antitheft",
       "ClapRing: Find Phone By Clap",
       "Clap to Find My Phone & Finder",
       "Don\u2019t Touch My Phone: Alarm",
       "Heat Safety",
       "OSHA-NIOSH Heat Safety Tool",
-      "Phone Temperature",
       "Burglar Alarm... FREE!",
       "Thermometer++ App",
       "Smart911"
@@ -63657,6 +63824,84 @@
     "relevant_count": 9
   },
   {
+    "keyword_original": "translator camera app",
+    "keyword_normalized": "translator camera",
+    "total_ratings_top10": 1021058,
+    "max_rating_count": 521718,
+    "avg_rating_count": 113450,
+    "weak_apps_in_top10": 0,
+    "avg_star_rating": 4.47,
+    "concentration_index": 0.71,
+    "dominant_category": "Reference",
+    "category_focus": 0.44,
+    "free_count": 9,
+    "paid_count": 0,
+    "stale_apps": 0,
+    "mature_apps_pct": 100,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": "google translate",
+    "top3": [
+      {
+        "name": "iTranslate Translator",
+        "rating_count": 521718,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Mosaic S.r.l.",
+        "category": "Productivity"
+      },
+      {
+        "name": "Translate Now - AI Translator",
+        "rating_count": 342414,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "Air Apps Systems",
+        "category": "Reference"
+      },
+      {
+        "name": "Google Translate",
+        "rating_count": 82525,
+        "star_rating": 4.3,
+        "price": 0.0,
+        "developer": "Google",
+        "category": "Reference"
+      }
+    ],
+    "top10_names": [
+      "Camera Translator - AI OCR +",
+      "Translate Photo & Camera Scan",
+      "Translate -  Camera Translator",
+      "iTranslate Translator",
+      "Translate Now - AI Translator",
+      "Google Translate",
+      "Photo Translator - Translate",
+      "AI Photo Translator",
+      "AR Translator: Translate Photo",
+      "Scan & Translate+ Text Grabber"
+    ],
+    "kills": [
+      "incumbent:google translate"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:incumbent=google translate"
+    ],
+    "vibe_roi": 0.26,
+    "ltv": 0.9,
+    "payback_months": 19.07,
+    "roas_6mo": 0.31,
+    "arpu_est": 3.0,
+    "cpi_est": 2.86,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.15,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.35,
+    "intent_relevance": 0.9,
+    "relevant_count": 9
+  },
+  {
     "keyword_original": "lymphedema tracker",
     "keyword_normalized": "lymphedema tracker",
     "total_ratings_top10": 950,
@@ -63871,86 +64116,6 @@
     "penalty_mult": 0.5,
     "intent_relevance": 0.4,
     "relevant_count": 4
-  },
-  {
-    "keyword_original": "rain sound generator",
-    "keyword_normalized": "rain sound generator",
-    "total_ratings_top10": 150855,
-    "max_rating_count": 134533,
-    "avg_rating_count": 18856,
-    "weak_apps_in_top10": 2,
-    "avg_star_rating": 4.34,
-    "concentration_index": 0.814,
-    "dominant_category": "Utilities",
-    "category_focus": 0.38,
-    "free_count": 8,
-    "paid_count": 0,
-    "stale_apps": 4,
-    "mature_apps_pct": 100,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Rain Rain Sleep Sounds",
-        "rating_count": 134533,
-        "star_rating": 4.85,
-        "price": 0.0,
-        "developer": "Tim Gostony",
-        "category": "Health & Fitness"
-      },
-      {
-        "name": "Louder Sound App",
-        "rating_count": 6545,
-        "star_rating": 4.54,
-        "price": 0.0,
-        "developer": "CBD APPLICATIONS SRL",
-        "category": "Utilities"
-      },
-      {
-        "name": "Frequency Sound Generator App",
-        "rating_count": 4835,
-        "star_rating": 4.5,
-        "price": 0.0,
-        "developer": "Min Ku",
-        "category": "Utilities"
-      }
-    ],
-    "top10_names": [
-      "Rain Rain Sleep Sounds",
-      "Rain Sounds - Relax and Focus",
-      "Rain Sounds FREE",
-      "Louder Sound App",
-      "Frequency Sound Generator App",
-      "Sonic Pitch Sound Generator",
-      "White Noise Sound Machine",
-      "Sleepmaker Rain 1",
-      "ColorSleep: Green, Brown Noise",
-      "Audio Function Generator"
-    ],
-    "kills": [
-      "concentrated_top",
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:one_app_owns_category",
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.26,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.19,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.24,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
   },
   {
     "keyword_original": "dnd dice roller app",
@@ -65044,6 +65209,86 @@
     "penalty_mult": 0.08,
     "intent_relevance": 0.8,
     "relevant_count": 8
+  },
+  {
+    "keyword_original": "binary translator app",
+    "keyword_normalized": "binary translator",
+    "total_ratings_top10": 176083,
+    "max_rating_count": 158329,
+    "avg_rating_count": 17608,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.13,
+    "concentration_index": 0.852,
+    "dominant_category": "Reference",
+    "category_focus": 0.4,
+    "free_count": 8,
+    "paid_count": 2,
+    "stale_apps": 4,
+    "mature_apps_pct": 60,
+    "demand_level": "HIGH",
+    "supply_level": "HIGH",
+    "incumbent": null,
+    "top3": [
+      {
+        "name": "Microsoft Translator",
+        "rating_count": 158329,
+        "star_rating": 4.75,
+        "price": 0.0,
+        "developer": "Microsoft Corporation",
+        "category": "Productivity"
+      },
+      {
+        "name": "Yandex Translate",
+        "rating_count": 7099,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "Direct Cursus Computer Systems Trading",
+        "category": "Reference"
+      },
+      {
+        "name": "Naver Papago - AI Translator",
+        "rating_count": 3364,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "NAVER Corp.",
+        "category": "Reference"
+      }
+    ],
+    "top10_names": [
+      "Binary Translator - Converter",
+      "Binarrator - binary translator",
+      "Microsoft Translator",
+      "Yandex Translate",
+      "Naver Papago - AI Translator",
+      "Translator*",
+      "Translate Go: AI Translator",
+      "Translate Voice: AI Translator",
+      "Binary Converter Calculator",
+      "Text-To-Binary Converter"
+    ],
+    "kills": [
+      "concentrated_top",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:one_app_owns_category",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.22,
+    "ltv": 0.9,
+    "payback_months": 19.07,
+    "roas_6mo": 0.31,
+    "arpu_est": 3.0,
+    "cpi_est": 2.86,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.27,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.24,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
   },
   {
     "keyword_original": "geiger counter app",
@@ -67371,88 +67616,6 @@
     "relevant_count": 2
   },
   {
-    "keyword_original": "binary translator app",
-    "keyword_normalized": "binary translator",
-    "total_ratings_top10": 168984,
-    "max_rating_count": 158329,
-    "avg_rating_count": 18776,
-    "weak_apps_in_top10": 4,
-    "avg_star_rating": 4.07,
-    "concentration_index": 0.856,
-    "dominant_category": "Reference",
-    "category_focus": 0.33,
-    "free_count": 7,
-    "paid_count": 2,
-    "stale_apps": 4,
-    "mature_apps_pct": 60,
-    "demand_level": "HIGH",
-    "supply_level": "HIGH",
-    "incumbent": null,
-    "top3": [
-      {
-        "name": "Microsoft Translator",
-        "rating_count": 158329,
-        "star_rating": 4.75,
-        "price": 0.0,
-        "developer": "Microsoft Corporation",
-        "category": "Productivity"
-      },
-      {
-        "name": "Naver Papago - AI Translator",
-        "rating_count": 3364,
-        "star_rating": 4.7,
-        "price": 0.0,
-        "developer": "NAVER Corp.",
-        "category": "Reference"
-      },
-      {
-        "name": "Translator*",
-        "rating_count": 2787,
-        "star_rating": 4.41,
-        "price": 0.0,
-        "developer": "Appios Bilisim",
-        "category": "Productivity"
-      }
-    ],
-    "top10_names": [
-      "Binary Translator - Converter",
-      "Binarrator - binary translator",
-      "Microsoft Translator",
-      "Naver Papago - AI Translator",
-      "Translator*",
-      "Translate Go: AI Translator",
-      "Translate Voice: AI Translator",
-      "Binary Converter Calculator",
-      "Text-To-Binary Converter",
-      "Yandex Translate"
-    ],
-    "kills": [
-      "fuzzy_intent",
-      "concentrated_top",
-      "off_intent_dominant"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:fuzzy_search_intent",
-      "kill:one_app_owns_category",
-      "kill:off_intent_single_app_hijacks_search"
-    ],
-    "vibe_roi": 0.15,
-    "ltv": 0.9,
-    "payback_months": 19.07,
-    "roas_6mo": 0.31,
-    "arpu_est": 3.0,
-    "cpi_est": 2.86,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 1.0,
-    "supply_room": 0.27,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.17,
-    "intent_relevance": 0.9,
-    "relevant_count": 9
-  },
-  {
     "keyword_original": "daily bible verse app",
     "keyword_normalized": "daily bible verse",
     "total_ratings_top10": 14587046,
@@ -67529,6 +67692,86 @@
     "supply_room": 0.07,
     "boost_mult": 1.0,
     "penalty_mult": 0.24,
+    "intent_relevance": 1.0,
+    "relevant_count": 10
+  },
+  {
+    "keyword_original": "offline translator app",
+    "keyword_normalized": "offline translator",
+    "total_ratings_top10": 1002043,
+    "max_rating_count": 521718,
+    "avg_rating_count": 100204,
+    "weak_apps_in_top10": 4,
+    "avg_star_rating": 4.46,
+    "concentration_index": 0.755,
+    "dominant_category": "Reference",
+    "category_focus": 0.5,
+    "free_count": 10,
+    "paid_count": 0,
+    "stale_apps": 2,
+    "mature_apps_pct": 70,
+    "demand_level": "VERY HIGH",
+    "supply_level": "VERY HIGH",
+    "incumbent": "google translate",
+    "top3": [
+      {
+        "name": "iTranslate Translator",
+        "rating_count": 521718,
+        "star_rating": 4.73,
+        "price": 0.0,
+        "developer": "Mosaic S.r.l.",
+        "category": "Productivity"
+      },
+      {
+        "name": "Translate Now - AI Translator",
+        "rating_count": 342414,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "Air Apps Systems",
+        "category": "Reference"
+      },
+      {
+        "name": "Google Translate",
+        "rating_count": 82525,
+        "star_rating": 4.3,
+        "price": 0.0,
+        "developer": "Google",
+        "category": "Reference"
+      }
+    ],
+    "top10_names": [
+      "Spanish Translator Offline",
+      "Persian Translator Offline",
+      "Translator Offline",
+      "Offline Translator - OT Pro",
+      "Offline Language Translator",
+      "Offline Translator: Phrasify",
+      "iTranslate Translator",
+      "Translate Now - AI Translator",
+      "Google Translate",
+      "Translator GO: AI Translate"
+    ],
+    "kills": [
+      "incumbent:google translate",
+      "off_intent_dominant"
+    ],
+    "wins": [],
+    "reasons": [
+      "kill:incumbent=google translate",
+      "kill:off_intent_single_app_hijacks_search"
+    ],
+    "vibe_roi": 0.14,
+    "ltv": 0.9,
+    "payback_months": 19.07,
+    "roas_6mo": 0.31,
+    "arpu_est": 3.0,
+    "cpi_est": 2.86,
+    "retention_months": 6,
+    "paying_conv": 0.05,
+    "demand_signal": 1.0,
+    "supply_room": 0.32,
+    "boost_mult": 1.0,
+    "penalty_mult": 0.14,
     "intent_relevance": 1.0,
     "relevant_count": 10
   },
@@ -72454,61 +72697,6 @@
     "relevant_count": 0
   },
   {
-    "keyword_original": "hydration reminder app",
-    "keyword_normalized": "hydration reminder",
-    "total_ratings_top10": 0,
-    "max_rating_count": 0,
-    "avg_rating_count": 0,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 0,
-    "concentration_index": 0,
-    "dominant_category": "Health & Fitness",
-    "category_focus": 0,
-    "free_count": 0,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 100,
-    "demand_level": "NONE",
-    "supply_level": "NONE",
-    "incumbent": null,
-    "top3": [],
-    "top10_names": [
-      "Drink Water Reminder N Tracker",
-      "Water tracker Waterllama",
-      "Plant Nanny Cute Water Tracker",
-      "Water Reminder - Daily Tracker",
-      "Water Tracker by WaterMinder\u00ae",
-      "Drink Water \u2219 Daily Reminder",
-      "My Water: Daily Drink Tracker",
-      "Drink water: Drinking reminder",
-      "Daily Water Tracker Reminder",
-      "Daily Water - Drink Reminder"
-    ],
-    "kills": [
-      "fuzzy_intent",
-      "off_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:fuzzy_search_intent",
-      "kill:off_intent(rel=0.0)"
-    ],
-    "vibe_roi": 0.07,
-    "ltv": 2.1,
-    "payback_months": 12.57,
-    "roas_6mo": 0.48,
-    "arpu_est": 7.0,
-    "cpi_est": 4.4,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.0,
-    "supply_room": 0.5,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.07,
-    "intent_relevance": 0.0,
-    "relevant_count": 0
-  },
-  {
     "keyword_original": "plantar fasciitis exercises",
     "keyword_normalized": "plantar fasciitis exercises",
     "total_ratings_top10": 0,
@@ -73006,64 +73194,6 @@
     "penalty_mult": 0.1,
     "intent_relevance": 0.1,
     "relevant_count": 1
-  },
-  {
-    "keyword_original": "tile tracker scanner",
-    "keyword_normalized": "tile tracker scanner",
-    "total_ratings_top10": 0,
-    "max_rating_count": 0,
-    "avg_rating_count": 0,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 0,
-    "concentration_index": 0,
-    "dominant_category": "Utilities",
-    "category_focus": 0,
-    "free_count": 0,
-    "paid_count": 0,
-    "stale_apps": 2,
-    "mature_apps_pct": 60,
-    "demand_level": "NONE",
-    "supply_level": "NONE",
-    "incumbent": null,
-    "top3": [],
-    "top10_names": [
-      "Polycam 3D Scans & Floor Plans",
-      "Scan App +",
-      "AirGuard - Tracking Protection",
-      "Barcode Scanner - Orca Scan",
-      "QR Code Scanner:Barcode Reader",
-      "Barcode Scanner for Walmart",
-      "TrackerScan - Detect Trackers",
-      "Room Scanner - Easy Measure Rm",
-      "Tracker Detect +",
-      "Code Scanner by ScanLife"
-    ],
-    "kills": [
-      "fuzzy_intent",
-      "off_intent"
-    ],
-    "wins": [
-      "sticky_tracker"
-    ],
-    "reasons": [
-      "win:sticky_tracker(x1.25)",
-      "kill:fuzzy_search_intent",
-      "kill:off_intent(rel=0.0)"
-    ],
-    "vibe_roi": 0.07,
-    "ltv": 1.8,
-    "payback_months": 11.55,
-    "roas_6mo": 0.78,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 9,
-    "paying_conv": 0.05,
-    "demand_signal": 0.0,
-    "supply_room": 0.5,
-    "boost_mult": 1.25,
-    "penalty_mult": 0.07,
-    "intent_relevance": 0.0,
-    "relevant_count": 0
   },
   {
     "keyword_original": "hand grip trainer app",
@@ -77502,61 +77632,6 @@
     "relevant_count": 1
   },
   {
-    "keyword_original": "airtag scanner app",
-    "keyword_normalized": "airtag scanner",
-    "total_ratings_top10": 0,
-    "max_rating_count": 0,
-    "avg_rating_count": 0,
-    "weak_apps_in_top10": 0,
-    "avg_star_rating": 0,
-    "concentration_index": 0,
-    "dominant_category": "Utilities",
-    "category_focus": 0,
-    "free_count": 0,
-    "paid_count": 0,
-    "stale_apps": 1,
-    "mature_apps_pct": 20,
-    "demand_level": "NONE",
-    "supply_level": "NONE",
-    "incumbent": null,
-    "top3": [],
-    "top10_names": [
-      "tracker detect",
-      "AirGuard - Tracking Protection",
-      "Air Tracker: BLE Tag Detector",
-      "Bluetooth Scanner: Finder App",
-      "Bluetooth BLE Finder & Scanner",
-      "Find Device use Phone",
-      "Device Finder: Easy Find",
-      "Bluetooth Scanner, Find Device",
-      "Bluetooth Device: Finder Tool",
-      "Bluetooth Tracker: Find Signal"
-    ],
-    "kills": [
-      "fuzzy_intent",
-      "off_intent"
-    ],
-    "wins": [],
-    "reasons": [
-      "kill:fuzzy_search_intent",
-      "kill:off_intent(rel=0.0)"
-    ],
-    "vibe_roi": 0.04,
-    "ltv": 1.2,
-    "payback_months": 11.55,
-    "roas_6mo": 0.52,
-    "arpu_est": 4.0,
-    "cpi_est": 2.31,
-    "retention_months": 6,
-    "paying_conv": 0.05,
-    "demand_signal": 0.0,
-    "supply_room": 0.5,
-    "boost_mult": 1.0,
-    "penalty_mult": 0.07,
-    "intent_relevance": 0.0,
-    "relevant_count": 0
-  },
-  {
     "keyword_original": "wetsuit thickness guide",
     "keyword_normalized": "wetsuit thickness guide",
     "total_ratings_top10": 0,
@@ -79028,15 +79103,15 @@
   {
     "keyword_original": "noise level meter app",
     "keyword_normalized": "noise level meter",
-    "total_ratings_top10": 212830,
+    "total_ratings_top10": 269720,
     "max_rating_count": 155962,
-    "avg_rating_count": 35471,
+    "avg_rating_count": 29968,
     "weak_apps_in_top10": 2,
     "avg_star_rating": 4.64,
-    "concentration_index": 0.704,
+    "concentration_index": 0.709,
     "dominant_category": "Utilities",
-    "category_focus": 1.0,
-    "free_count": 6,
+    "category_focus": 0.89,
+    "free_count": 9,
     "paid_count": 0,
     "stale_apps": 2,
     "mature_apps_pct": 70,
@@ -79053,33 +79128,33 @@
         "category": "Utilities"
       },
       {
+        "name": "Decibel Meter Sound Detector",
+        "rating_count": 51961,
+        "star_rating": 4.7,
+        "price": 0.0,
+        "developer": "Ashraf Thoppukadavil",
+        "category": "Productivity"
+      },
+      {
         "name": "Decibel : dB sound level meter",
         "rating_count": 36054,
         "star_rating": 4.64,
         "price": 0.0,
         "developer": "Vlad Polyanskiy",
         "category": "Utilities"
-      },
-      {
-        "name": "NIOSH Sound Level Meter",
-        "rating_count": 16119,
-        "star_rating": 4.67,
-        "price": 0.0,
-        "developer": "EA LAB",
-        "category": "Utilities"
       }
     ],
     "top10_names": [
-      "Decibel Meter - dB Noise Level",
       "Decibel X:dB Sound Level Meter",
       "Decibel : dB sound level meter",
       "NIOSH Sound Level Meter",
       "Decibel - sound level meter",
-      "Decibel Meter- dB Noise TT",
+      "Decibel Meter - dB Noise Level",
       "Decibel Meter Sound Detector",
-      "Decibel Meter Master",
       "Sound Meter (Decibel)",
-      "Decibel dB Sound Meter Ultra"
+      "Decibel dB Sound Meter Ultra",
+      "Decibel Meter- dB Noise TT",
+      "Decibel Meter Master"
     ],
     "kills": [
       "ios_builtin"
@@ -79100,8 +79175,8 @@
     "supply_room": 0.25,
     "boost_mult": 1.0,
     "penalty_mult": 1.0,
-    "intent_relevance": 0.6,
-    "relevant_count": 6
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "compass navigation app",
@@ -79184,15 +79259,15 @@
   {
     "keyword_original": "sound level meter",
     "keyword_normalized": "sound level meter",
-    "total_ratings_top10": 269725,
+    "total_ratings_top10": 269736,
     "max_rating_count": 155973,
-    "avg_rating_count": 33715,
-    "weak_apps_in_top10": 1,
-    "avg_star_rating": 4.61,
-    "concentration_index": 0.673,
+    "avg_rating_count": 29970,
+    "weak_apps_in_top10": 2,
+    "avg_star_rating": 4.6,
+    "concentration_index": 0.709,
     "dominant_category": "Utilities",
-    "category_focus": 0.75,
-    "free_count": 8,
+    "category_focus": 0.78,
+    "free_count": 9,
     "paid_count": 0,
     "stale_apps": 2,
     "mature_apps_pct": 70,
@@ -79234,8 +79309,8 @@
       "Sound Meter (Decibel)",
       "Decibel dB Sound Meter Ultra",
       "Sound Meter (dB) - dBShift",
-      "Decibel Meter Master",
-      "Decibel Meter- dB Noise TT"
+      "Decibel Meter- dB Noise TT",
+      "Decibel Meter Master"
     ],
     "kills": [
       "ios_builtin"
@@ -79253,11 +79328,11 @@
     "retention_months": 1,
     "paying_conv": 0.01,
     "demand_signal": 1.0,
-    "supply_room": 0.21,
+    "supply_room": 0.25,
     "boost_mult": 1.0,
     "penalty_mult": 1.0,
-    "intent_relevance": 0.8,
-    "relevant_count": 8
+    "intent_relevance": 0.9,
+    "relevant_count": 9
   },
   {
     "keyword_original": "ruler measurement app",

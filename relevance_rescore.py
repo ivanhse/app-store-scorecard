@@ -77,6 +77,47 @@ GENERIC_TOKENS = {
 # but we treat them as soft-domain, not hard. Currently empty — keeping pure split.
 
 
+# Domain synonyms — tokens in the same group are treated as equivalent
+# when matching keyword-domain tokens against app-name tokens.
+# Stored as raw words; normalized to stems at load time (see below).
+SYNONYM_GROUPS_RAW = [
+    {"hydration", "water", "drink"},             # hydration reminder ↔ water tracker
+    {"noise", "sound"},                          # noise cancellation ↔ sound masker
+    {"cancellation", "cancel", "reducer", "reduce", "masker", "mask"},
+    {"decibel", "db", "loudness"},
+    {"thermal", "temperature", "temp", "heat", "cool", "cooler"},  # phone cooler ↔ cpu temp
+    {"cpu", "processor"},
+    {"document", "pdf", "doc"},                  # pdf reader ↔ document reader
+    {"translator", "translate", "language"},
+    {"image", "photo", "picture"},
+    {"voice", "speech"},                         # voice transcriber ↔ speech to text
+    {"eject", "remover", "remove"},              # water eject ↔ water remover
+    {"passport", "visa", "id", "headshot"},      # passport photo ↔ headshot maker
+    {"airtag", "tracker", "tile"},               # airtag scanner ↔ tracker detector (intentional — tracker is in GENERIC but we allow via synonym)
+    {"spam", "scam", "robocall", "telemarket"},  # spam blocker ↔ robocall filter
+    {"qr", "barcode"},                           # qr scanner ↔ barcode reader
+    {"flashlight", "torch"},
+    {"metronome", "beat", "tempo"},
+    {"meditation", "mindful"},
+    {"pregnancy", "gestation"},
+    {"period", "menstrual", "cycle"},
+]
+
+
+def _build_synonym_map(groups):
+    """Normalize each token via stem_lite, dedupe, build token→equivalence-class map."""
+    out = {}
+    for group in groups:
+        normed = {stem_lite(t) for t in group}
+        for t in normed:
+            out.setdefault(t, set()).update(normed)
+    return out
+
+
+# Populated after stem_lite is defined — see bottom of module setup.
+SYNONYM_MAP: dict[str, set[str]] = {}
+
+
 def normalize_keyword(kw: str) -> str:
     kw = kw.lower().strip()
     for suf in [" apps", " app"]:
@@ -103,6 +144,10 @@ def stem_lite(tok: str) -> str:
     return tok
 
 
+# Build synonym map now that stem_lite is defined.
+SYNONYM_MAP = _build_synonym_map(SYNONYM_GROUPS_RAW)
+
+
 def domain_tokens(keyword: str) -> list[str]:
     toks = tokenize(keyword)
     stemmed = [stem_lite(t) for t in toks]
@@ -126,10 +171,15 @@ def app_relevance(app_name: str, app_category: str, d_tokens: list[str]) -> floa
         return 0.5  # no domain tokens to match → neutral
 
     name_toks = {stem_lite(t) for t in tokenize(app_name)}
-    # Count domain tokens that appear (exact or stem) in the app name
+    # Count domain tokens that appear (exact / synonym / prefix) in the app name
     hits = 0
     for dt in d_tokens:
         if dt in name_toks:
+            hits += 1
+            continue
+        # synonym match: any equivalent token present in the name counts full hit
+        aliases = SYNONYM_MAP.get(dt)
+        if aliases and aliases & name_toks:
             hits += 1
             continue
         # soft: prefix match if len >= 5
